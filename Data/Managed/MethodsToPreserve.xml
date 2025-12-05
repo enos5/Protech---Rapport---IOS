@@ -1,0 +1,22 @@
+<linker>
+	<assembly fullname="Assembly-CSharp" ignoreIfMissing="1">
+		<type fullname="DrawingTool">
+			<method name="cancelAndClose"/>
+			<method name="ClearCanvas"/>
+			<method name="Undo"/>
+			<method name="UpdateBrushColour"/>
+			<method name="UpdateBrushColour"/>
+			<method name="UpdateBrushColour"/>
+			<method name="UpdateBrushColour"/>
+		</type>
+		<type fullname="DrawingToolUiController">
+			<method name="UpdateWidth"/>
+		</type>
+		<type fullname="IconManager">
+			<method name="startDrawing"/>
+		</type>
+		<type fullname="RenderTextureToPng">
+			<method name="SaveImage"/>
+		</type>
+	</assembly>
+</linker>
