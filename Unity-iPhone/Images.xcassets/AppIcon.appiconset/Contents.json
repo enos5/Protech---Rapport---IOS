@@ -1,60 +1,6 @@
 {
 	"images" : [
 		{
-			"filename" : "Icon-iPhone-120.png",
-			"idiom" : "iphone",
-			"scale" : "2x",
-			"size" : "60x60"
-		},
-		{
-			"filename" : "Icon-iPhone-180.png",
-			"idiom" : "iphone",
-			"scale" : "3x",
-			"size" : "60x60"
-		},
-		{
-			"filename" : "Icon-iPhone-Settings-29.png",
-			"idiom" : "iphone",
-			"scale" : "1x",
-			"size" : "29x29"
-		},
-		{
-			"filename" : "Icon-iPhone-Settings-58.png",
-			"idiom" : "iphone",
-			"scale" : "2x",
-			"size" : "29x29"
-		},
-		{
-			"filename" : "Icon-iPhone-Settings-87.png",
-			"idiom" : "iphone",
-			"scale" : "3x",
-			"size" : "29x29"
-		},
-		{
-			"filename" : "Icon-iPhone-Spotlight-80.png",
-			"idiom" : "iphone",
-			"scale" : "2x",
-			"size" : "40x40"
-		},
-		{
-			"filename" : "Icon-iPhone-Spotlight-120.png",
-			"idiom" : "iphone",
-			"scale" : "3x",
-			"size" : "40x40"
-		},
-		{
-			"filename" : "Icon-iPhone-Notification-40.png",
-			"idiom" : "iphone",
-			"scale" : "2x",
-			"size" : "20x20"
-		},
-		{
-			"filename" : "Icon-iPhone-Notification-60.png",
-			"idiom" : "iphone",
-			"scale" : "3x",
-			"size" : "20x20"
-		},
-		{
 			"filename" : "Icon-iPad-Settings-29.png",
 			"idiom" : "ipad",
 			"scale" : "1x",
