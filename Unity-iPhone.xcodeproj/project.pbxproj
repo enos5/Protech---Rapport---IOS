@@ -771,6 +771,7 @@
 		922E42848CA09C85B566D11F /* System.Core__2.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = System.Core__2.cpp; path = Classes/Native/System.Core__2.cpp; sourceTree = SOURCE_ROOT; };
 		92BE4366A6AECF5EA2622CF2 /* UnityEngine.SpriteShapeModule.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = UnityEngine.SpriteShapeModule.cpp; path = Classes/Native/UnityEngine.SpriteShapeModule.cpp; sourceTree = SOURCE_ROOT; };
 		935D4BF4BF4437F1AEDBB501 /* UnityEngine.PhysicsModule_CodeGen.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = UnityEngine.PhysicsModule_CodeGen.c; path = Classes/Native/UnityEngine.PhysicsModule_CodeGen.c; sourceTree = SOURCE_ROOT; };
+		9464C5262EE75C9700F88E9A /* support.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = support.html; sourceTree = "<group>"; };
 		948A47228F1A56DE7ABA4123 /* mscorlib__3.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = mscorlib__3.cpp; path = Classes/Native/mscorlib__3.cpp; sourceTree = SOURCE_ROOT; };
 		95324754881FD5D793CE8D06 /* System.Core__1.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = System.Core__1.cpp; path = Classes/Native/System.Core__1.cpp; sourceTree = SOURCE_ROOT; };
 		958B41C4858CB37ED1F728B3 /* System.Xml__14.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = System.Xml__14.cpp; path = Classes/Native/System.Xml__14.cpp; sourceTree = SOURCE_ROOT; };
@@ -990,6 +991,7 @@
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
+				9464C5262EE75C9700F88E9A /* support.html */,
 				AA31BF961B55660D0013FB1B /* Data */,
 				9DA3B0422174CB96001678C7 /* MainApp */,
 				D82DCFB50E8000A5005D6AD8 /* Classes */,
