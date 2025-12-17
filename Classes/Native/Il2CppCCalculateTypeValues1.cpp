@@ -5675,8 +5675,10 @@ struct U3CconnexionU3Ed__6_tA500134A2562504F432FD4B6D35547C4E6C51CA0  : public R
 	ConnexionManager_tDB0BFE9B0519A3E1CEAFD9E405D24A2675D1EF4E* ___U3CU3E4__this_2;
 	// System.String ConnexionManager/<connexion>d__6::<apiurl>5__2
 	String_t* ___U3CapiurlU3E5__2_3;
-	// UnityEngine.Networking.UnityWebRequest ConnexionManager/<connexion>d__6::<webRequest>5__3
-	UnityWebRequest_t6233B8E22992FC2364A831C1ACB033EF3260C39F* ___U3CwebRequestU3E5__3_4;
+	// System.String ConnexionManager/<connexion>d__6::<param>5__3
+	String_t* ___U3CparamU3E5__3_4;
+	// UnityEngine.Networking.UnityWebRequest ConnexionManager/<connexion>d__6::<webRequest>5__4
+	UnityWebRequest_t6233B8E22992FC2364A831C1ACB033EF3260C39F* ___U3CwebRequestU3E5__4_5;
 };
 
 // ContenuRapportManager/<>c
