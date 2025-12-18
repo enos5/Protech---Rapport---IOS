@@ -24,11 +24,11 @@ workflows:
           cd $CM_BUILD_DIR
           LATEST_BUILD_NUMBER=$(app-store-connect get-latest-app-store-build-number "$APP_STORE_APPLE_ID")
           agvtool new-version -all $(($LATEST_BUILD_NUMBER + 1))
-      - name: Debug bundle & version
+      - name: Override bundle identifier
         script: |
-          /usr/libexec/PlistBuddy -c "Print :CFBundleIdentifier" "$CM_BUILD_DIR/Info.plist"
-          /usr/libexec/PlistBuddy -c "Print :CFBundleShortVersionString" "$CM_BUILD_DIR/Info.plist"
-          /usr/libexec/PlistBuddy -c "Print :CFBundleVersion" "$CM_BUILD_DIR/Info.plist"
+          cd $CM_BUILD_DIR
+          /usr/libexec/PlistBuddy -c "Set :CFBundleIdentifier $BUNDLE_ID" Info.plist
+          echo "Bundle identifier set to $BUNDLE_ID"
       - name: Build ipa for distribution
         script: | 
           xcode-project build-ipa \
