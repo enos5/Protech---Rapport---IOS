@@ -26,9 +26,9 @@ workflows:
           agvtool new-version -all $(($LATEST_BUILD_NUMBER + 1))
       - name: Debug bundle & version
         script: |
-          /usr/libexec/PlistBuddy -c "Print :CFBundleIdentifier" "$CM_BUILD_DIR/ios/Unity-iPhone/Info.plist"
-          /usr/libexec/PlistBuddy -c "Print :CFBundleShortVersionString" "$CM_BUILD_DIR/ios/Unity-iPhone/Info.plist"
-          /usr/libexec/PlistBuddy -c "Print :CFBundleVersion" "$CM_BUILD_DIR/ios/Unity-iPhone/Info.plist"
+          /usr/libexec/PlistBuddy -c "Print :CFBundleIdentifier" "$CM_BUILD_DIR/Info.plist"
+          /usr/libexec/PlistBuddy -c "Print :CFBundleShortVersionString" "$CM_BUILD_DIR/Info.plist"
+          /usr/libexec/PlistBuddy -c "Print :CFBundleVersion" "$CM_BUILD_DIR/Info.plist"
       - name: Build ipa for distribution
         script: | 
           xcode-project build-ipa \
