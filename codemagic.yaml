@@ -8,12 +8,12 @@ workflows:
     environment:
       ios_signing:
         distribution_type: app_store
-        bundle_identifier: com.Protech.Protech---Rapports
+        bundle_identifier: com.protech.service
       vars:
-        BUNDLE_ID: "com.Protech.Protech---Rapports"
+        BUNDLE_ID: "com.protech.service"
         XCODE_PROJECT: "Unity-iPhone.xcodeproj"
         XCODE_SCHEME: "Unity-iPhone"
-        APP_STORE_APPLE_ID: 6756185736
+        APP_STORE_APPLE_ID: 6756748642
       xcode: latest # <-- set to specific version e.g. 14.3, 15.0 to avoid unexpected updates.
       cocoapods: default
     scripts:
