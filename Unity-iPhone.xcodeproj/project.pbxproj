@@ -112,7 +112,7 @@
 		54884E6692ABEEC38A3E0C72 /* Microsoft.CognitiveServices.Speech.csharp_CodeGen.c in Sources */ = {isa = PBXBuildFile; fileRef = 0F214C878D60DA9B7C337E58 /* Microsoft.CognitiveServices.Speech.csharp_CodeGen.c */; };
 		5623C57617FDCB0800090B9E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
 		5623C57717FDCB0800090B9E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 830B5C100E5ED4C100C7819F /* UIKit.framework */; };
-		5623C57D17FDCB0900090B9E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5623C57B17FDCB0900090B9E /* InfoPlist.strings */; };
+		5623C57D17FDCB0900090B9E = {isa = PBXBuildFile; fileRef = 5623C57B17FDCB0900090B9E /* InfoPlist.strings */; };
 		5623C57F17FDCB0900090B9E /* Unity_iPhone_Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5623C57E17FDCB0900090B9E /* Unity_iPhone_Tests.m */; };
 		57B34C75BD98F0A0F5E7D6DD /* Unity.VectorGraphics.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FBEF42CC8F82F7FE228C298C /* Unity.VectorGraphics.cpp */; };
 		58FD482CBA7D2D2C451FD7A2 /* UnityEngine.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EC6E4649B14002D08FDA1F68 /* UnityEngine.cpp */; };
@@ -1765,7 +1765,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5623C57D17FDCB0900090B9E /* InfoPlist.strings in Resources */,
+				5623C57D17FDCB0900090B9E,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2219,7 +2219,7 @@
 					"$(inherited)",
 					"$(OTHER_CFLAGS)",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.protech.service;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Protech.Protech---Rapports";
 				PRODUCT_NAME = "$(PRODUCT_NAME_APP)";
 				PROVISIONING_PROFILE = "$(PROVISIONING_PROFILE_APP)";
 				PROVISIONING_PROFILE_APP = "";
@@ -2261,7 +2261,7 @@
 					"$(inherited)",
 					"$(OTHER_CFLAGS)",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.protech.service;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Protech.Protech---Rapports";
 				PRODUCT_NAME = "$(PRODUCT_NAME_APP)";
 				PROVISIONING_PROFILE = "$(PROVISIONING_PROFILE_APP)";
 				PROVISIONING_PROFILE_APP = "";
@@ -2441,7 +2441,7 @@
 					"$(inherited)",
 					"$(OTHER_CFLAGS)",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.protech.service;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Protech.Protech---Rapports";
 				PRODUCT_NAME = "$(PRODUCT_NAME_APP)";
 				PROVISIONING_PROFILE = "$(PROVISIONING_PROFILE_APP)";
 				PROVISIONING_PROFILE_APP = "";
@@ -2568,7 +2568,7 @@
 					"$(inherited)",
 					"$(OTHER_CFLAGS)",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.protech.service;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Protech.Protech---Rapports";
 				PRODUCT_NAME = "$(PRODUCT_NAME_APP)";
 				PROVISIONING_PROFILE = "$(PROVISIONING_PROFILE_APP)";
 				PROVISIONING_PROFILE_APP = "";
@@ -2698,6 +2698,10 @@
 					PhotosUI,
 					"-framework",
 					Photos,
+					"-framework MobileCoreServices",
+					"-framework ImageIO",
+					"-weak_framework PhotosUI",
+					"-framework Photos",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.unity3d.framework;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
@@ -2784,6 +2788,10 @@
 					PhotosUI,
 					"-framework",
 					Photos,
+					"-framework MobileCoreServices",
+					"-framework ImageIO",
+					"-weak_framework PhotosUI",
+					"-framework Photos",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.unity3d.framework;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
@@ -2871,6 +2879,10 @@
 					PhotosUI,
 					"-framework",
 					Photos,
+					"-framework MobileCoreServices",
+					"-framework ImageIO",
+					"-weak_framework PhotosUI",
+					"-framework Photos",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.unity3d.framework;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
@@ -2959,6 +2971,10 @@
 					PhotosUI,
 					"-framework",
 					Photos,
+					"-framework MobileCoreServices",
+					"-framework ImageIO",
+					"-weak_framework PhotosUI",
+					"-framework Photos",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.unity3d.framework;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
