@@ -6174,8 +6174,10 @@ struct U3CU3Ec__DisplayClass83_0_tF8DEAC83515C901D0D88E2AC48961A00C6A6B4A2  : pu
 // ContenuRapportManager/<>c__DisplayClass85_0
 struct U3CU3Ec__DisplayClass85_0_t4FA00EA01DCC489580F044D6FA591B2AEEE03C9F  : public RuntimeObject
 {
+	// Option ContenuRapportManager/<>c__DisplayClass85_0::opt
+	Option_t12C5B91C2C20CE174E1260BE6A02B61251A115B6* ___opt_0;
 	// Parametre ContenuRapportManager/<>c__DisplayClass85_0::param
-	Parametre_tD66492969FD6D0B3E3E7AF0075994E8F6C2432EA* ___param_0;
+	Parametre_tD66492969FD6D0B3E3E7AF0075994E8F6C2432EA* ___param_1;
 };
 
 // ContenuRapportManager/<>c__DisplayClass86_0

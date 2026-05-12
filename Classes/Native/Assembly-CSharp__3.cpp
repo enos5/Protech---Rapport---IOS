@@ -15908,7 +15908,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RapportManager_SauvegarderRapport_m7F10F
 		L_9 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_8, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
 		if (!L_9)
 		{
-			goto IL_0321;
+			goto IL_0323;
 		}
 	}
 	{
@@ -15945,7 +15945,7 @@ IL_0062:
 		int32_t L_17 = L_16->___indexClient_1;
 		if ((((int32_t)L_17) < ((int32_t)0)))
 		{
-			goto IL_02fb;
+			goto IL_02fd;
 		}
 	}
 	{
@@ -15960,7 +15960,7 @@ IL_0062:
 		int32_t L_22 = L_21->___indexClient_1;
 		if ((((int32_t)L_20) <= ((int32_t)L_22)))
 		{
-			goto IL_02fb;
+			goto IL_02fd;
 		}
 	}
 	{
@@ -15969,7 +15969,7 @@ IL_0062:
 		int32_t L_24 = L_23->___indexRapport_2;
 		if ((((int32_t)L_24) == ((int32_t)(-1))))
 		{
-			goto IL_02fb;
+			goto IL_02fd;
 		}
 	}
 	{
@@ -16110,7 +16110,7 @@ IL_0172:
 		SectionU5BU5D_tB015CDAE7B4B809E138D37CF59FE8AAA35FE49A6* L_84 = L_83->___sections_17;
 		V_4 = L_84;
 		V_5 = 0;
-		goto IL_0229;
+		goto IL_022b;
 	}
 
 IL_018e:
@@ -16126,7 +16126,7 @@ IL_018e:
 		ChampU5BU5D_tE8910EB97F117F9579CA1A6C02D5E4979BFEA499* L_89 = L_88->___champs_5;
 		V_6 = L_89;
 		V_7 = 0;
-		goto IL_0218;
+		goto IL_021a;
 	}
 
 IL_019f:
@@ -16155,11 +16155,11 @@ IL_019f:
 		L_99 = String_op_Equality_m030E1B219352228970A076136E455C4E568C02C1(L_98, _stringLiteral20135236ACAC8CA02BD18D741CE0368F170EEE58, NULL);
 		if (!L_99)
 		{
-			goto IL_01e9;
+			goto IL_01eb;
 		}
 	}
 	{
-		// champL.reponses.RemoveAll(x => champL.options.FirstOrDefault(y => y.parametres.editable == 1 && y.id == x.id_ligne) == null);
+		// champL.reponses.RemoveAll(x => champL.options.FirstOrDefault(y => y.parametres.editable == 1 && y.id == x.id_ligne) != null);
 		U3CU3Ec__DisplayClass7_1_t93803F39114BCF660D10CFA7792E2E2464029638* L_100 = V_8;
 		NullCheck(L_100);
 		Champ_tD2B96901967ACAD5FC515CC6FD7C38CEF1540CE8* L_101 = L_100->___champL_0;
@@ -16172,11 +16172,12 @@ IL_019f:
 		NullCheck(L_102);
 		int32_t L_105;
 		L_105 = List_1_RemoveAll_m1308651748A98F58D3A9115C19BC57053F8AF25E(L_102, L_104, List_1_RemoveAll_m1308651748A98F58D3A9115C19BC57053F8AF25E_RuntimeMethod_var);
+		goto IL_0214;
 	}
 
-IL_01e9:
+IL_01eb:
 	{
-		// if (champL.type != "systeme"){
+		// } else if (champL.type != "systeme"){
 		U3CU3Ec__DisplayClass7_1_t93803F39114BCF660D10CFA7792E2E2464029638* L_106 = V_8;
 		NullCheck(L_106);
 		Champ_tD2B96901967ACAD5FC515CC6FD7C38CEF1540CE8* L_107 = L_106->___champL_0;
@@ -16186,7 +16187,7 @@ IL_01e9:
 		L_109 = String_op_Inequality_m8C940F3CFC42866709D7CA931B3D77B4BE94BCB6(L_108, _stringLiteralA0DF5503FC844B496D9FD3F7D79C892871E626B7, NULL);
 		if (!L_109)
 		{
-			goto IL_0212;
+			goto IL_0214;
 		}
 	}
 	{
@@ -16200,13 +16201,13 @@ IL_01e9:
 		List_1_Clear_m1D830782C18FD3B7FA4073C3171362E705AF85D3_inline(L_112, List_1_Clear_m1D830782C18FD3B7FA4073C3171362E705AF85D3_RuntimeMethod_var);
 	}
 
-IL_0212:
+IL_0214:
 	{
 		int32_t L_113 = V_7;
 		V_7 = ((int32_t)il2cpp_codegen_add(L_113, 1));
 	}
 
-IL_0218:
+IL_021a:
 	{
 		// foreach (Champ champL in sectionL.champs){
 		int32_t L_114 = V_7;
@@ -16222,7 +16223,7 @@ IL_0218:
 		V_5 = ((int32_t)il2cpp_codegen_add(L_116, 1));
 	}
 
-IL_0229:
+IL_022b:
 	{
 		// foreach (Section sectionL in rapportMaj.rapports[indexRapport].sections){
 		int32_t L_117 = V_5;
@@ -16241,7 +16242,7 @@ IL_0229:
 		int32_t L_120 = __this->___nbrChampsVides_6;
 		if ((((int32_t)L_120) <= ((int32_t)0)))
 		{
-			goto IL_0282;
+			goto IL_0284;
 		}
 	}
 	{
@@ -16266,10 +16267,10 @@ IL_0229:
 		L_127 = StyleEnum_1_op_Implicit_mE2664CDFC678F602380EED12BA228071E6F49030(0, StyleEnum_1_op_Implicit_mE2664CDFC678F602380EED12BA228071E6F49030_RuntimeMethod_var);
 		NullCheck(L_126);
 		InterfaceActionInvoker1< StyleEnum_1_t3B02FFF55849C9C8E6A7C0AA9C7E5F65F10C9C69 >::Invoke(18 /* System.Void UnityEngine.UIElements.IStyle::set_display(UnityEngine.UIElements.StyleEnum`1<UnityEngine.UIElements.DisplayStyle>) */, IStyle_t4FD66C97CA5F46BFE328FED0C65277A37E0A89F7_il2cpp_TypeInfo_var, L_126, L_127);
-		goto IL_02a7;
+		goto IL_02a9;
 	}
 
-IL_0282:
+IL_0284:
 	{
 		// Utils.EcrireJson(rapportMaj, Application.persistentDataPath + "/rapports/" + rapportMaj.id_service.ToString() + ".json");
 		ServiceClient_t07C84893BDB4121BAF09BDF559688F4714F9541D* L_128 = V_1;
@@ -16286,7 +16287,7 @@ IL_0282:
 		Utils_EcrireJson_mC2EF31823D2912EF3CCF2E8917E731C899C6BBE2(L_128, L_133, NULL);
 	}
 
-IL_02a7:
+IL_02a9:
 	{
 		// if (Utils.EstConnecteInternet() && envoi) { // Si connect? ? internet on valide avec l'API backus la liste des services et des rapports
 		bool L_134;
@@ -16294,7 +16295,7 @@ IL_02a7:
 		bool L_135 = ___1_envoi;
 		if (!((int32_t)((int32_t)L_134&(int32_t)L_135)))
 		{
-			goto IL_02cf;
+			goto IL_02d1;
 		}
 	}
 	{
@@ -16318,7 +16319,7 @@ IL_02a7:
 		return;
 	}
 
-IL_02cf:
+IL_02d1:
 	{
 		// Utils.ChangerFenetre(GameObject.Find("UIListeRapports"), UIPostEnregistrement);
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_141;
@@ -16335,7 +16336,7 @@ IL_02cf:
 		return;
 	}
 
-IL_02fb:
+IL_02fd:
 	{
 		// Debug.LogWarning("Aucun ?l?ment dans la liste, index client : " + indexClient.ToString());
 		U3CU3Ec__DisplayClass7_0_t7EDEDE0909FE2D005FF87D7B796DD22BA2C091C5* L_144 = V_0;
@@ -16353,7 +16354,7 @@ IL_02fb:
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_148, (bool)0, NULL);
 	}
 
-IL_0321:
+IL_0323:
 	{
 		// }
 		return;
@@ -19364,7 +19365,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool U3CU3Ec__DisplayClass7_1_U3CSauvegarderR
 		NullCheck(L_1);
 		L_1->___x_0 = L_2;
 		Il2CppCodeGenWriteBarrier((void**)(&L_1->___x_0), (void*)L_2);
-		// champL.reponses.RemoveAll(x => champL.options.FirstOrDefault(y => y.parametres.editable == 1 && y.id == x.id_ligne) == null);
+		// champL.reponses.RemoveAll(x => champL.options.FirstOrDefault(y => y.parametres.editable == 1 && y.id == x.id_ligne) != null);
 		Champ_tD2B96901967ACAD5FC515CC6FD7C38CEF1540CE8* L_3 = __this->___champL_0;
 		NullCheck(L_3);
 		OptionU5BU5D_t7485913FCB110CE30CBC527AB9CFB655C3FEE867* L_4 = L_3->___options_12;
@@ -19374,7 +19375,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool U3CU3Ec__DisplayClass7_1_U3CSauvegarderR
 		Func_2__ctor_m739F9E3B381B5A40A0AEBA4000B4D0274F209744(L_6, L_5, (intptr_t)((void*)U3CU3Ec__DisplayClass7_2_U3CSauvegarderRapportU3Eb__2_m7610F7113735EC64AFE6348885F13EF94E5AFE54_RuntimeMethod_var), NULL);
 		Option_t12C5B91C2C20CE174E1260BE6A02B61251A115B6* L_7;
 		L_7 = Enumerable_FirstOrDefault_TisOption_t12C5B91C2C20CE174E1260BE6A02B61251A115B6_m744ABB3F7052DCFF806CCBD0AD4BC510302F445E((RuntimeObject*)L_4, L_6, Enumerable_FirstOrDefault_TisOption_t12C5B91C2C20CE174E1260BE6A02B61251A115B6_m744ABB3F7052DCFF806CCBD0AD4BC510302F445E_RuntimeMethod_var);
-		return (bool)((((RuntimeObject*)(Option_t12C5B91C2C20CE174E1260BE6A02B61251A115B6*)L_7) == ((RuntimeObject*)(RuntimeObject*)NULL))? 1 : 0);
+		return (bool)((!(((RuntimeObject*)(Option_t12C5B91C2C20CE174E1260BE6A02B61251A115B6*)L_7) <= ((RuntimeObject*)(RuntimeObject*)NULL)))? 1 : 0);
 	}
 }
 #ifdef __clang__
@@ -19397,7 +19398,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__DisplayClass7_2__ctor_mAD689A79
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool U3CU3Ec__DisplayClass7_2_U3CSauvegarderRapportU3Eb__2_m7610F7113735EC64AFE6348885F13EF94E5AFE54 (U3CU3Ec__DisplayClass7_2_tC4749968888756A28C699F3095265D25CEB9455D* __this, Option_t12C5B91C2C20CE174E1260BE6A02B61251A115B6* ___0_y, const RuntimeMethod* method) 
 {
 	{
-		// champL.reponses.RemoveAll(x => champL.options.FirstOrDefault(y => y.parametres.editable == 1 && y.id == x.id_ligne) == null);
+		// champL.reponses.RemoveAll(x => champL.options.FirstOrDefault(y => y.parametres.editable == 1 && y.id == x.id_ligne) != null);
 		Option_t12C5B91C2C20CE174E1260BE6A02B61251A115B6* L_0 = ___0_y;
 		NullCheck(L_0);
 		Parametre_tD66492969FD6D0B3E3E7AF0075994E8F6C2432EA* L_1 = L_0->___parametres_6;

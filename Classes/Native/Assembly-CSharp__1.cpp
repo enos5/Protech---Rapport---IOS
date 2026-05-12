@@ -2731,8 +2731,10 @@ struct U3CU3Ec__DisplayClass83_0_tF8DEAC83515C901D0D88E2AC48961A00C6A6B4A2  : pu
 // ContenuRapportManager/<>c__DisplayClass85_0
 struct U3CU3Ec__DisplayClass85_0_t4FA00EA01DCC489580F044D6FA591B2AEEE03C9F  : public RuntimeObject
 {
+	// Option ContenuRapportManager/<>c__DisplayClass85_0::opt
+	Option_t12C5B91C2C20CE174E1260BE6A02B61251A115B6* ___opt_0;
 	// Parametre ContenuRapportManager/<>c__DisplayClass85_0::param
-	Parametre_tD66492969FD6D0B3E3E7AF0075994E8F6C2432EA* ___param_0;
+	Parametre_tD66492969FD6D0B3E3E7AF0075994E8F6C2432EA* ___param_1;
 };
 
 // ContenuRapportManager/<>c__DisplayClass86_0
@@ -25647,16 +25649,33 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__DisplayClass85_0__ctor_m40457BD
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool U3CU3Ec__DisplayClass85_0_U3CInfoRapportU3Eb__0_m2F8D3E69D42D960C480452279A58DB1212EF9080 (U3CU3Ec__DisplayClass85_0_t4FA00EA01DCC489580F044D6FA591B2AEEE03C9F* __this, Reponse_t4F6AF0B9622A3050B0627A92E0A7EF9C2604A40B* ___0_x, const RuntimeMethod* method) 
 {
 	{
-		// string valueChamp = champ.reponses.FirstOrDefault(x => x.reponse_autre == param.autofill_service)?.reponse;
+		// string valueChamp = champ.reponses.FirstOrDefault(x => x.reponse_autre == param.autofill_service || x.id_ligne == opt.id)?.reponse;
 		Reponse_t4F6AF0B9622A3050B0627A92E0A7EF9C2604A40B* L_0 = ___0_x;
 		NullCheck(L_0);
 		String_t* L_1 = L_0->___reponse_autre_5;
-		Parametre_tD66492969FD6D0B3E3E7AF0075994E8F6C2432EA* L_2 = __this->___param_0;
+		Parametre_tD66492969FD6D0B3E3E7AF0075994E8F6C2432EA* L_2 = __this->___param_1;
 		NullCheck(L_2);
 		String_t* L_3 = L_2->___autofill_service_18;
 		bool L_4;
 		L_4 = String_op_Equality_m030E1B219352228970A076136E455C4E568C02C1(L_1, L_3, NULL);
-		return L_4;
+		if (L_4)
+		{
+			goto IL_002c;
+		}
+	}
+	{
+		Reponse_t4F6AF0B9622A3050B0627A92E0A7EF9C2604A40B* L_5 = ___0_x;
+		NullCheck(L_5);
+		int32_t L_6 = L_5->___id_ligne_1;
+		Option_t12C5B91C2C20CE174E1260BE6A02B61251A115B6* L_7 = __this->___opt_0;
+		NullCheck(L_7);
+		int32_t L_8 = L_7->___id_0;
+		return (bool)((((int32_t)L_6) == ((int32_t)L_8))? 1 : 0);
+	}
+
+IL_002c:
+	{
+		return (bool)1;
 	}
 }
 #ifdef __clang__
