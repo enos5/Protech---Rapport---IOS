@@ -25378,7 +25378,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool U3CU3Ec_U3CsetImageBGU3Eb__90_1_m7219A4E
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t U3CU3Ec_U3CTableU3Eb__92_1_m873ECF437AE59E7D87749C307864D1E75A8C244C (U3CU3Ec_t5A36F8FD6233E7D3BC713A835D85C348242B294B* __this, Reponse_t4F6AF0B9622A3050B0627A92E0A7EF9C2604A40B* ___0_x, const RuntimeMethod* method) 
 {
 	{
-		// int nbrLignes = Math.Max(currentSoustableau?0:champ.parametres.nb_lignes_tbl, (lstReponses.Count == 0) ? 0 : lstReponses.Max(x => Utils.getIntVal(x.reponse)));
+		// nbrLignes = lstReponses.Max(x => Utils.getIntVal(x.reponse));
 		Reponse_t4F6AF0B9622A3050B0627A92E0A7EF9C2604A40B* L_0 = ___0_x;
 		NullCheck(L_0);
 		String_t* L_1 = L_0->___reponse_4;
