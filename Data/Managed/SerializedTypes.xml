@@ -6,6 +6,7 @@
 		<type fullname="PieceJointe" preserve="nothing" serialized="true"/>
 		<type fullname="ReportTemplateTable" preserve="nothing" serialized="true"/>
 		<type fullname="UnityEngine.UIElements.DatePickerElement/UxmlFactory" preserve="nothing" serialized="true"/>
+		<type fullname="UnityEngine.UIElements.NumberPadElement/UxmlFactory" preserve="nothing" serialized="true"/>
 		<type fullname="Utilisateur" preserve="nothing" serialized="true"/>
 	</assembly>
 	<assembly fullname="Unity.InputSystem">
