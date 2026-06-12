@@ -241,6 +241,8 @@ struct EventCallback_1_tBBA53E55C115D4F540747F2DC1EC5547F5F54D6F;
 struct EventCallback_1_tED92C39D3D539693A36E8EB8A1D9EE15E2CBEB17;
 // UnityEngine.UIElements.EventCallback`1<System.Object>
 struct EventCallback_1_t15E400616AB56B841F72D09E503D6377E8366E07;
+// UnityEngine.UIElements.EventCallback`1<UnityEngine.UIElements.PointerDownEvent>
+struct EventCallback_1_tBC1DA4FF1E26FC091E77AD11B6F780C5D237AF2C;
 // UnityEngine.UIElements.EventCallback`1<UnityEngine.UIElements.PointerMoveEvent>
 struct EventCallback_1_t7C6768AD962B0B50514570724A38E07DA18FB1FA;
 // UnityEngine.UIElements.EventCallback`1<UnityEngine.UIElements.PointerUpEvent>
@@ -359,6 +361,8 @@ struct ObjectPool_1_t10DF1D7B915FABBA839F55B1C8F8A53EF636E395;
 struct ObjectPool_1_tFD015A99DC45F4AADDAFE8F44225A6FF6289EB10;
 // UnityEngine.UIElements.ObjectPool`1<System.Object>
 struct ObjectPool_1_tC06B45D8A0C7CBBDAE418090727D1DF1F2FCB9F6;
+// UnityEngine.UIElements.ObjectPool`1<UnityEngine.UIElements.PointerDownEvent>
+struct ObjectPool_1_tD9D36AAF97C27AAA8F8C10396B70EE8016C3DB39;
 // UnityEngine.UIElements.StyleDataRef`1/RefCounted<UnityEngine.UIElements.InheritedData>
 struct RefCounted_t6B975CD3D06E8D955346FC0D66E8F6E449D49A44;
 // UnityEngine.UIElements.StyleDataRef`1/RefCounted<UnityEngine.UIElements.LayoutData>
@@ -653,6 +657,8 @@ struct NumberPadElement_t2473EBEAADDD2206BBD7B7A415B72546CCE7A011;
 struct Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C;
 // UnityEngine.Events.PersistentCallGroup
 struct PersistentCallGroup_tB826EDF15DC80F71BCBCD8E410FD959A04C33F25;
+// UnityEngine.UIElements.PointerDownEvent
+struct PointerDownEvent_tABAAD1BACBB98156D6BCCED51E11883EAFE03A51;
 // UnityEngine.UIElements.PropagationPaths
 struct PropagationPaths_tA17A0F2CAFF1A86B552ED6D984DAA2F14AB2B0E5;
 // Recorder.Recorder
@@ -868,6 +874,7 @@ IL2CPP_EXTERN_C RuntimeClass* Dictionary_2_t1BB202712737CD34783F260093503EF1EFB6
 IL2CPP_EXTERN_C RuntimeClass* Dictionary_2_t46B2DB028096FA2B828359E52F37F3105A83AD83_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* DirectoryNotFoundException_tBE92A20AAC24C3B22DE38973ABE6886FA97419BF_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* EventCallback_1_tBBA53E55C115D4F540747F2DC1EC5547F5F54D6F_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* EventCallback_1_tBC1DA4FF1E26FC091E77AD11B6F780C5D237AF2C_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* EventCallback_1_tE289119F9BA48602BE51A2112527278A47AE5E3F_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* EventCallback_1_tED92C39D3D539693A36E8EB8A1D9EE15E2CBEB17_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* FormatException_tCD210E92627903FFEDAAA706C08FB6222B4D012B_il2cpp_TypeInfo_var;
@@ -1061,6 +1068,7 @@ IL2CPP_EXTERN_C String_t* _stringLiteralFECC2463870C6302461EC941F34A4339E5E39A34
 IL2CPP_EXTERN_C const RuntimeMethod* Array_IndexOf_TisChar_t521A6F19B456D956AF452D926C32709DC03D6B17_m6E2BDAD7B5A1E51CA8029C65DCA4E847D543DDF9_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* CallbackEventHandler_RegisterCallback_TisFocusEvent_tC285901ACF2EA5EB98D216AC0ADD95937DBBD40F_mB6BEC6CAB9FBEE05C80B283B9DBFE6F6FFE8A8DC_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* CallbackEventHandler_RegisterCallback_TisMouseDownEvent_tD798610B9C34C7D1CA93C66034A67D330D4A83CD_mAC1E05B609A9515A8FA74F4B59DE2B04920BCC24_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* CallbackEventHandler_RegisterCallback_TisPointerDownEvent_tABAAD1BACBB98156D6BCCED51E11883EAFE03A51_mB50EABDE414D7C266411468DE2497738C902B820_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* CallbackEventHandler_UnregisterCallback_TisMouseDownEvent_tD798610B9C34C7D1CA93C66034A67D330D4A83CD_mC9D851A09DE940C7F3D8C12F74FFB775C9483948_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* ChangeEvent_1_get_newValue_m6437E6333E876EDE34EF3A7B7BBEF2919D4946F8_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Component_GetComponent_TisAudioSource_t871AC2272F896738252F04EE949AEF5B241D3299_m42DA4DEA19EB60D80CBED7413ADEB27FA033C77B_RuntimeMethod_var;
@@ -1175,6 +1183,8 @@ IL2CPP_EXTERN_C const RuntimeMethod* NumberPadElement_OnCancelClicked_m019C3EEE4
 IL2CPP_EXTERN_C const RuntimeMethod* NumberPadElement_OnClearClicked_mDB387F6109BDDE27BDBCF964E5C5C387A4EFD803_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* NumberPadElement_OnConfirmClicked_m8E4022A67DFBEF9837D0F95DB983AE034D4DB94B_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* NumberPadElement_OnTextFieldFocus_m80AC6129EF977D7A7C51726533681B1449C7C551_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* NumberPadElement_OnTextFieldMouseDown_mF0859C7064A98061C8E48F00AAABD2243C47E2FE_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* NumberPadElement_OnTextFieldPointerDown_mE8F89637DBE8FD361F6BA44129B9F1594D646D06_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Resources_Load_TisStyleSheet_t6FAF43FCDB45BC6BED0522A222FD4C1A9BB10428_mD7F81615121708620C5F09720358AF0C3F4B1B28_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Resources_Load_TisVisualTreeAsset_tFB5BF81F0780A412AE5A7C2C552B3EEA64EA2EEB_m39FEEB7CF99989547BDAC2B9746A356D1FEFCB42_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* SoundManager_SceneManagerSceneLoaded_m8E50D4D5235D559D7642501F22AE01286357A31A_RuntimeMethod_var;
@@ -4571,6 +4581,13 @@ struct EventBase_1_t2B9B970022841F58172C0C783B7E1040BEF85AC1  : public EventBase
 	int32_t ___m_RefCount_17;
 };
 
+// UnityEngine.UIElements.EventBase`1<UnityEngine.UIElements.PointerDownEvent>
+struct EventBase_1_t7D3D212E8AD9C53105AAC51DBD4FA5F700586F68  : public EventBase_tD7F89B936EB8074AE31E7B15976C072277371F7C
+{
+	// System.Int32 UnityEngine.UIElements.EventBase`1::m_RefCount
+	int32_t ___m_RefCount_17;
+};
+
 // UnityEngine.UIElements.EventCallback`1<UnityEngine.UIElements.ChangeEvent`1<System.String>>
 struct EventCallback_1_tE289119F9BA48602BE51A2112527278A47AE5E3F  : public MulticastDelegate_t
 {
@@ -4583,6 +4600,11 @@ struct EventCallback_1_tBBA53E55C115D4F540747F2DC1EC5547F5F54D6F  : public Multi
 
 // UnityEngine.UIElements.EventCallback`1<UnityEngine.UIElements.MouseDownEvent>
 struct EventCallback_1_tED92C39D3D539693A36E8EB8A1D9EE15E2CBEB17  : public MulticastDelegate_t
+{
+};
+
+// UnityEngine.UIElements.EventCallback`1<UnityEngine.UIElements.PointerDownEvent>
+struct EventCallback_1_tBC1DA4FF1E26FC091E77AD11B6F780C5D237AF2C  : public MulticastDelegate_t
 {
 };
 
@@ -5361,6 +5383,51 @@ struct MouseEventBase_1_t5B5081D29C8BECF72DF89EF50BB137E251C48228  : public Even
 	RuntimeObject* ___U3CUnityEngine_UIElements_IMouseEventInternal_sourcePointerEventU3Ek__BackingField_27;
 };
 
+// UnityEngine.UIElements.PointerEventBase`1<UnityEngine.UIElements.PointerDownEvent>
+struct PointerEventBase_1_t7591EB7533D2DA4AE63C7E535343F090911843C9  : public EventBase_1_t7D3D212E8AD9C53105AAC51DBD4FA5F700586F68
+{
+	// System.Int32 UnityEngine.UIElements.PointerEventBase`1::<pointerId>k__BackingField
+	int32_t ___U3CpointerIdU3Ek__BackingField_18;
+	// System.String UnityEngine.UIElements.PointerEventBase`1::<pointerType>k__BackingField
+	String_t* ___U3CpointerTypeU3Ek__BackingField_19;
+	// System.Boolean UnityEngine.UIElements.PointerEventBase`1::<isPrimary>k__BackingField
+	bool ___U3CisPrimaryU3Ek__BackingField_20;
+	// System.Int32 UnityEngine.UIElements.PointerEventBase`1::<button>k__BackingField
+	int32_t ___U3CbuttonU3Ek__BackingField_21;
+	// System.Int32 UnityEngine.UIElements.PointerEventBase`1::<pressedButtons>k__BackingField
+	int32_t ___U3CpressedButtonsU3Ek__BackingField_22;
+	// UnityEngine.Vector3 UnityEngine.UIElements.PointerEventBase`1::<position>k__BackingField
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___U3CpositionU3Ek__BackingField_23;
+	// UnityEngine.Vector3 UnityEngine.UIElements.PointerEventBase`1::<localPosition>k__BackingField
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___U3ClocalPositionU3Ek__BackingField_24;
+	// UnityEngine.Vector3 UnityEngine.UIElements.PointerEventBase`1::<deltaPosition>k__BackingField
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___U3CdeltaPositionU3Ek__BackingField_25;
+	// System.Single UnityEngine.UIElements.PointerEventBase`1::<deltaTime>k__BackingField
+	float ___U3CdeltaTimeU3Ek__BackingField_26;
+	// System.Int32 UnityEngine.UIElements.PointerEventBase`1::<clickCount>k__BackingField
+	int32_t ___U3CclickCountU3Ek__BackingField_27;
+	// System.Single UnityEngine.UIElements.PointerEventBase`1::<pressure>k__BackingField
+	float ___U3CpressureU3Ek__BackingField_28;
+	// System.Single UnityEngine.UIElements.PointerEventBase`1::<tangentialPressure>k__BackingField
+	float ___U3CtangentialPressureU3Ek__BackingField_29;
+	// System.Single UnityEngine.UIElements.PointerEventBase`1::<altitudeAngle>k__BackingField
+	float ___U3CaltitudeAngleU3Ek__BackingField_30;
+	// System.Single UnityEngine.UIElements.PointerEventBase`1::<azimuthAngle>k__BackingField
+	float ___U3CazimuthAngleU3Ek__BackingField_31;
+	// System.Single UnityEngine.UIElements.PointerEventBase`1::<twist>k__BackingField
+	float ___U3CtwistU3Ek__BackingField_32;
+	// UnityEngine.Vector2 UnityEngine.UIElements.PointerEventBase`1::<radius>k__BackingField
+	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___U3CradiusU3Ek__BackingField_33;
+	// UnityEngine.Vector2 UnityEngine.UIElements.PointerEventBase`1::<radiusVariance>k__BackingField
+	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___U3CradiusVarianceU3Ek__BackingField_34;
+	// UnityEngine.EventModifiers UnityEngine.UIElements.PointerEventBase`1::<modifiers>k__BackingField
+	int32_t ___U3CmodifiersU3Ek__BackingField_35;
+	// System.Boolean UnityEngine.UIElements.PointerEventBase`1::<UnityEngine.UIElements.IPointerEventInternal.triggeredByOS>k__BackingField
+	bool ___U3CUnityEngine_UIElements_IPointerEventInternal_triggeredByOSU3Ek__BackingField_36;
+	// System.Boolean UnityEngine.UIElements.PointerEventBase`1::<UnityEngine.UIElements.IPointerEventInternal.recomputeTopElementUnderPointer>k__BackingField
+	bool ___U3CUnityEngine_UIElements_IPointerEventInternal_recomputeTopElementUnderPointerU3Ek__BackingField_37;
+};
+
 // TMPro.TMP_TextProcessingStack`1<TMPro.WordWrapState>
 struct TMP_TextProcessingStack_1_t2DDA00FFC64AF6E3AFD475AB2086D16C34787E0F 
 {
@@ -5592,6 +5659,11 @@ struct NumberPadElement_t2473EBEAADDD2206BBD7B7A415B72546CCE7A011  : public Visu
 	String_t* ___pendingValue_72;
 	// UnityEngine.Vector2 UnityEngine.UIElements.NumberPadElement::numberPadSize
 	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___numberPadSize_73;
+};
+
+// UnityEngine.UIElements.PointerDownEvent
+struct PointerDownEvent_tABAAD1BACBB98156D6BCCED51E11883EAFE03A51  : public PointerEventBase_1_t7591EB7533D2DA4AE63C7E535343F090911843C9
+{
 };
 
 // Recorder.Recorder
@@ -7332,6 +7404,10 @@ struct JSONObject_t8EDF02FD857855C9DC72DE51C3FD37EEABC5EBCC_StaticFields
 
 // UnityEngine.UIElements.EventCallback`1<UnityEngine.UIElements.MouseDownEvent>
 
+// UnityEngine.UIElements.EventCallback`1<UnityEngine.UIElements.PointerDownEvent>
+
+// UnityEngine.UIElements.EventCallback`1<UnityEngine.UIElements.PointerDownEvent>
+
 // UnityEngine.Events.UnityAction`2<UnityEngine.SceneManagement.Scene,UnityEngine.SceneManagement.LoadSceneMode>
 
 // UnityEngine.Events.UnityAction`2<UnityEngine.SceneManagement.Scene,UnityEngine.SceneManagement.LoadSceneMode>
@@ -7480,6 +7556,10 @@ struct VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115_StaticFields
 // UnityEngine.UIElements.NumberPadElement
 
 // UnityEngine.UIElements.NumberPadElement
+
+// UnityEngine.UIElements.PointerDownEvent
+
+// UnityEngine.UIElements.PointerDownEvent
 
 // Recorder.Recorder
 struct Recorder_t1F610CC41AB9ACCC89FBD4A4750BF4604E3F8E62_StaticFields
@@ -9429,6 +9509,16 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UxmlTraits__ctor_m99053329DC8F0D4087968F
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DatePickerElement_OnDayClicked_mC0D38CE907236D3FD62C9FC7C2615111E9834A25 (DatePickerElement_tC9F7AB0EB29119E72FB3F9B2C005AFE1C9442266* __this, DateTime_t66193957C73913903DDAD89FEDC46139BCA5802D ___0_date, Button_t8EC3B431665F84C0B637C11B0EA29236828646C2* ___1_dayButton, const RuntimeMethod* method) ;
 // System.Void UnityEngine.UIElements.DatePickerElement::OnYearSelected(System.Int32)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DatePickerElement_OnYearSelected_mDF2ED8946D8FC454ED2123AF5DC547A9FA67D763 (DatePickerElement_tC9F7AB0EB29119E72FB3F9B2C005AFE1C9442266* __this, int32_t ___0_year, const RuntimeMethod* method) ;
+// System.Void UnityEngine.UIElements.EventCallback`1<UnityEngine.UIElements.PointerDownEvent>::.ctor(System.Object,System.IntPtr)
+inline void EventCallback_1__ctor_mCDF2316FE391D783EF33C433EB59E5DF474C5398 (EventCallback_1_tBC1DA4FF1E26FC091E77AD11B6F780C5D237AF2C* __this, RuntimeObject* ___0_object, intptr_t ___1_method, const RuntimeMethod* method)
+{
+	((  void (*) (EventCallback_1_tBC1DA4FF1E26FC091E77AD11B6F780C5D237AF2C*, RuntimeObject*, intptr_t, const RuntimeMethod*))EventCallback_1__ctor_m8E83F917FC9541DE1168E498CDF99D58A6DC329B_gshared)(__this, ___0_object, ___1_method, method);
+}
+// System.Void UnityEngine.UIElements.CallbackEventHandler::RegisterCallback<UnityEngine.UIElements.PointerDownEvent>(UnityEngine.UIElements.EventCallback`1<TEventType>,UnityEngine.UIElements.TrickleDown)
+inline void CallbackEventHandler_RegisterCallback_TisPointerDownEvent_tABAAD1BACBB98156D6BCCED51E11883EAFE03A51_mB50EABDE414D7C266411468DE2497738C902B820 (CallbackEventHandler_t99E35735225B4ACEAD1BA981632FD2D46E9CB2B4* __this, EventCallback_1_tBC1DA4FF1E26FC091E77AD11B6F780C5D237AF2C* ___0_callback, int32_t ___1_useTrickleDown, const RuntimeMethod* method)
+{
+	((  void (*) (CallbackEventHandler_t99E35735225B4ACEAD1BA981632FD2D46E9CB2B4*, EventCallback_1_tBC1DA4FF1E26FC091E77AD11B6F780C5D237AF2C*, int32_t, const RuntimeMethod*))CallbackEventHandler_RegisterCallback_TisRuntimeObject_m221D8BDDC2D60A7D22B11CBCC628C7990BE1C8F9_gshared)(__this, ___0_callback, ___1_useTrickleDown, method);
+}
 // System.Void UnityEngine.UIElements.NumberPadElement::RegisterKeypadButton(System.String,System.String)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void NumberPadElement_RegisterKeypadButton_mBB459980A80574CDDEFA92C49EF655818790C459 (NumberPadElement_t2473EBEAADDD2206BBD7B7A415B72546CCE7A011* __this, String_t* ___0_buttonName, String_t* ___1_value, const RuntimeMethod* method) ;
 // System.Void UnityEngine.UIElements.NumberPadElement::UpdateSelectedNumberField(System.Boolean)
@@ -19683,13 +19773,19 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void NumberPadElement__ctor_mD3C9A291EFDC2F82
 	{
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&CallbackEventHandler_RegisterCallback_TisFocusEvent_tC285901ACF2EA5EB98D216AC0ADD95937DBBD40F_mB6BEC6CAB9FBEE05C80B283B9DBFE6F6FFE8A8DC_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&CallbackEventHandler_RegisterCallback_TisMouseDownEvent_tD798610B9C34C7D1CA93C66034A67D330D4A83CD_mAC1E05B609A9515A8FA74F4B59DE2B04920BCC24_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&CallbackEventHandler_RegisterCallback_TisPointerDownEvent_tABAAD1BACBB98156D6BCCED51E11883EAFE03A51_mB50EABDE414D7C266411468DE2497738C902B820_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&EventCallback_1_tBBA53E55C115D4F540747F2DC1EC5547F5F54D6F_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&EventCallback_1_tBC1DA4FF1E26FC091E77AD11B6F780C5D237AF2C_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&EventCallback_1_tED92C39D3D539693A36E8EB8A1D9EE15E2CBEB17_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&IStyle_t4FD66C97CA5F46BFE328FED0C65277A37E0A89F7_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&NumberPadElement_OnBackspaceClicked_m5928422AFC57A2CD942B5772F033A81BC173BFA1_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&NumberPadElement_OnCancelClicked_m019C3EEE4A2CA07607E45064B5AC37F15EAEB4D7_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&NumberPadElement_OnClearClicked_mDB387F6109BDDE27BDBCF964E5C5C387A4EFD803_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&NumberPadElement_OnConfirmClicked_m8E4022A67DFBEF9837D0F95DB983AE034D4DB94B_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&NumberPadElement_OnTextFieldFocus_m80AC6129EF977D7A7C51726533681B1449C7C551_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&NumberPadElement_OnTextFieldMouseDown_mF0859C7064A98061C8E48F00AAABD2243C47E2FE_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&NumberPadElement_OnTextFieldPointerDown_mE8F89637DBE8FD361F6BA44129B9F1594D646D06_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Resources_Load_TisStyleSheet_t6FAF43FCDB45BC6BED0522A222FD4C1A9BB10428_mD7F81615121708620C5F09720358AF0C3F4B1B28_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Resources_Load_TisVisualTreeAsset_tFB5BF81F0780A412AE5A7C2C552B3EEA64EA2EEB_m39FEEB7CF99989547BDAC2B9746A356D1FEFCB42_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&TextInputBaseField_1_set_isReadOnly_m729D141F29016AE7F03F41BA4E14C24709F9DEEF_RuntimeMethod_var);
@@ -19836,6 +19932,20 @@ IL_00ec:
 		EventCallback_1__ctor_m0D38C77E31A784ACCFD4322569B7751EF13BF9EC(L_22, __this, (intptr_t)((void*)NumberPadElement_OnTextFieldFocus_m80AC6129EF977D7A7C51726533681B1449C7C551_RuntimeMethod_var), NULL);
 		NullCheck(L_21);
 		CallbackEventHandler_RegisterCallback_TisFocusEvent_tC285901ACF2EA5EB98D216AC0ADD95937DBBD40F_mB6BEC6CAB9FBEE05C80B283B9DBFE6F6FFE8A8DC(L_21, L_22, 0, CallbackEventHandler_RegisterCallback_TisFocusEvent_tC285901ACF2EA5EB98D216AC0ADD95937DBBD40F_mB6BEC6CAB9FBEE05C80B283B9DBFE6F6FFE8A8DC_RuntimeMethod_var);
+		// selectedNumberField.RegisterCallback<PointerDownEvent>(OnTextFieldPointerDown);
+		TextField_tDB34369F9468D7F02670087D9444EC23115827D9* L_23 = __this->___selectedNumberField_65;
+		EventCallback_1_tBC1DA4FF1E26FC091E77AD11B6F780C5D237AF2C* L_24 = (EventCallback_1_tBC1DA4FF1E26FC091E77AD11B6F780C5D237AF2C*)il2cpp_codegen_object_new(EventCallback_1_tBC1DA4FF1E26FC091E77AD11B6F780C5D237AF2C_il2cpp_TypeInfo_var);
+		NullCheck(L_24);
+		EventCallback_1__ctor_mCDF2316FE391D783EF33C433EB59E5DF474C5398(L_24, __this, (intptr_t)((void*)NumberPadElement_OnTextFieldPointerDown_mE8F89637DBE8FD361F6BA44129B9F1594D646D06_RuntimeMethod_var), NULL);
+		NullCheck(L_23);
+		CallbackEventHandler_RegisterCallback_TisPointerDownEvent_tABAAD1BACBB98156D6BCCED51E11883EAFE03A51_mB50EABDE414D7C266411468DE2497738C902B820(L_23, L_24, 0, CallbackEventHandler_RegisterCallback_TisPointerDownEvent_tABAAD1BACBB98156D6BCCED51E11883EAFE03A51_mB50EABDE414D7C266411468DE2497738C902B820_RuntimeMethod_var);
+		// selectedNumberField.RegisterCallback<MouseDownEvent>(OnTextFieldMouseDown);
+		TextField_tDB34369F9468D7F02670087D9444EC23115827D9* L_25 = __this->___selectedNumberField_65;
+		EventCallback_1_tED92C39D3D539693A36E8EB8A1D9EE15E2CBEB17* L_26 = (EventCallback_1_tED92C39D3D539693A36E8EB8A1D9EE15E2CBEB17*)il2cpp_codegen_object_new(EventCallback_1_tED92C39D3D539693A36E8EB8A1D9EE15E2CBEB17_il2cpp_TypeInfo_var);
+		NullCheck(L_26);
+		EventCallback_1__ctor_m709C5400BF973916ABE27FC11BD3B70EA36C5CE1(L_26, __this, (intptr_t)((void*)NumberPadElement_OnTextFieldMouseDown_mF0859C7064A98061C8E48F00AAABD2243C47E2FE_RuntimeMethod_var), NULL);
+		NullCheck(L_25);
+		CallbackEventHandler_RegisterCallback_TisMouseDownEvent_tD798610B9C34C7D1CA93C66034A67D330D4A83CD_mAC1E05B609A9515A8FA74F4B59DE2B04920BCC24(L_25, L_26, 0, CallbackEventHandler_RegisterCallback_TisMouseDownEvent_tD798610B9C34C7D1CA93C66034A67D330D4A83CD_mAC1E05B609A9515A8FA74F4B59DE2B04920BCC24_RuntimeMethod_var);
 		// RegisterKeypadButton("digit-0", "0");
 		NumberPadElement_RegisterKeypadButton_mBB459980A80574CDDEFA92C49EF655818790C459(__this, _stringLiteralAD2B4BBC5148C15D887C64D39BDF1DE375B13C09, _stringLiteralF944DCD635F9801F7AC90A407FBC479964DEC024, NULL);
 		// RegisterKeypadButton("digit-1", "1");
@@ -19860,37 +19970,37 @@ IL_00ec:
 		NumberPadElement_RegisterKeypadButton_mBB459980A80574CDDEFA92C49EF655818790C459(__this, _stringLiteral260A142DE0376946233F47667ACA1403C8D83ABC, _stringLiteralF3E84B722399601AD7E281754E917478AA9AD48D, NULL);
 		// this.Q<Button>("digit-backspace").clicked += OnBackspaceClicked;
 		il2cpp_codegen_runtime_class_init_inline(UQueryExtensions_t1271382882DF1B8FEEDE5EFA510405ABA7BD3426_il2cpp_TypeInfo_var);
-		Button_t8EC3B431665F84C0B637C11B0EA29236828646C2* L_23;
-		L_23 = UQueryExtensions_Q_TisButton_t8EC3B431665F84C0B637C11B0EA29236828646C2_m36B6EBB624A0831C6B20C70F93EF0517B65A8D75(__this, _stringLiteralDB3B770A620B0198576250E0A94D6D1CEB46E1EE, (String_t*)NULL, UQueryExtensions_Q_TisButton_t8EC3B431665F84C0B637C11B0EA29236828646C2_m36B6EBB624A0831C6B20C70F93EF0517B65A8D75_RuntimeMethod_var);
-		Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* L_24 = (Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07*)il2cpp_codegen_object_new(Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07_il2cpp_TypeInfo_var);
-		NullCheck(L_24);
-		Action__ctor_mBDC7B0B4A3F583B64C2896F01BDED360772F67DC(L_24, __this, (intptr_t)((void*)NumberPadElement_OnBackspaceClicked_m5928422AFC57A2CD942B5772F033A81BC173BFA1_RuntimeMethod_var), NULL);
-		NullCheck(L_23);
-		Button_add_clicked_m8F3895E73CAC223492F25142874FFF38A1830C81(L_23, L_24, NULL);
-		// this.Q<Button>("clear").clicked += OnClearClicked;
-		Button_t8EC3B431665F84C0B637C11B0EA29236828646C2* L_25;
-		L_25 = UQueryExtensions_Q_TisButton_t8EC3B431665F84C0B637C11B0EA29236828646C2_m36B6EBB624A0831C6B20C70F93EF0517B65A8D75(__this, _stringLiteral04903ADF9251898117A03317544B696DE57F1B76, (String_t*)NULL, UQueryExtensions_Q_TisButton_t8EC3B431665F84C0B637C11B0EA29236828646C2_m36B6EBB624A0831C6B20C70F93EF0517B65A8D75_RuntimeMethod_var);
-		Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* L_26 = (Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07*)il2cpp_codegen_object_new(Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07_il2cpp_TypeInfo_var);
-		NullCheck(L_26);
-		Action__ctor_mBDC7B0B4A3F583B64C2896F01BDED360772F67DC(L_26, __this, (intptr_t)((void*)NumberPadElement_OnClearClicked_mDB387F6109BDDE27BDBCF964E5C5C387A4EFD803_RuntimeMethod_var), NULL);
-		NullCheck(L_25);
-		Button_add_clicked_m8F3895E73CAC223492F25142874FFF38A1830C81(L_25, L_26, NULL);
-		// this.Q<Button>("cancel").clicked += OnCancelClicked;
 		Button_t8EC3B431665F84C0B637C11B0EA29236828646C2* L_27;
-		L_27 = UQueryExtensions_Q_TisButton_t8EC3B431665F84C0B637C11B0EA29236828646C2_m36B6EBB624A0831C6B20C70F93EF0517B65A8D75(__this, _stringLiteral39F2389D0FCAC5B1FAF79ECA2AEB00BBAA5F516D, (String_t*)NULL, UQueryExtensions_Q_TisButton_t8EC3B431665F84C0B637C11B0EA29236828646C2_m36B6EBB624A0831C6B20C70F93EF0517B65A8D75_RuntimeMethod_var);
+		L_27 = UQueryExtensions_Q_TisButton_t8EC3B431665F84C0B637C11B0EA29236828646C2_m36B6EBB624A0831C6B20C70F93EF0517B65A8D75(__this, _stringLiteralDB3B770A620B0198576250E0A94D6D1CEB46E1EE, (String_t*)NULL, UQueryExtensions_Q_TisButton_t8EC3B431665F84C0B637C11B0EA29236828646C2_m36B6EBB624A0831C6B20C70F93EF0517B65A8D75_RuntimeMethod_var);
 		Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* L_28 = (Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07*)il2cpp_codegen_object_new(Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07_il2cpp_TypeInfo_var);
 		NullCheck(L_28);
-		Action__ctor_mBDC7B0B4A3F583B64C2896F01BDED360772F67DC(L_28, __this, (intptr_t)((void*)NumberPadElement_OnCancelClicked_m019C3EEE4A2CA07607E45064B5AC37F15EAEB4D7_RuntimeMethod_var), NULL);
+		Action__ctor_mBDC7B0B4A3F583B64C2896F01BDED360772F67DC(L_28, __this, (intptr_t)((void*)NumberPadElement_OnBackspaceClicked_m5928422AFC57A2CD942B5772F033A81BC173BFA1_RuntimeMethod_var), NULL);
 		NullCheck(L_27);
 		Button_add_clicked_m8F3895E73CAC223492F25142874FFF38A1830C81(L_27, L_28, NULL);
-		// this.Q<Button>("confirm").clicked += OnConfirmClicked;
+		// this.Q<Button>("clear").clicked += OnClearClicked;
 		Button_t8EC3B431665F84C0B637C11B0EA29236828646C2* L_29;
-		L_29 = UQueryExtensions_Q_TisButton_t8EC3B431665F84C0B637C11B0EA29236828646C2_m36B6EBB624A0831C6B20C70F93EF0517B65A8D75(__this, _stringLiteral834E1A8DE1317C2E9FC91739044807AB44FFC5AC, (String_t*)NULL, UQueryExtensions_Q_TisButton_t8EC3B431665F84C0B637C11B0EA29236828646C2_m36B6EBB624A0831C6B20C70F93EF0517B65A8D75_RuntimeMethod_var);
+		L_29 = UQueryExtensions_Q_TisButton_t8EC3B431665F84C0B637C11B0EA29236828646C2_m36B6EBB624A0831C6B20C70F93EF0517B65A8D75(__this, _stringLiteral04903ADF9251898117A03317544B696DE57F1B76, (String_t*)NULL, UQueryExtensions_Q_TisButton_t8EC3B431665F84C0B637C11B0EA29236828646C2_m36B6EBB624A0831C6B20C70F93EF0517B65A8D75_RuntimeMethod_var);
 		Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* L_30 = (Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07*)il2cpp_codegen_object_new(Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07_il2cpp_TypeInfo_var);
 		NullCheck(L_30);
-		Action__ctor_mBDC7B0B4A3F583B64C2896F01BDED360772F67DC(L_30, __this, (intptr_t)((void*)NumberPadElement_OnConfirmClicked_m8E4022A67DFBEF9837D0F95DB983AE034D4DB94B_RuntimeMethod_var), NULL);
+		Action__ctor_mBDC7B0B4A3F583B64C2896F01BDED360772F67DC(L_30, __this, (intptr_t)((void*)NumberPadElement_OnClearClicked_mDB387F6109BDDE27BDBCF964E5C5C387A4EFD803_RuntimeMethod_var), NULL);
 		NullCheck(L_29);
 		Button_add_clicked_m8F3895E73CAC223492F25142874FFF38A1830C81(L_29, L_30, NULL);
+		// this.Q<Button>("cancel").clicked += OnCancelClicked;
+		Button_t8EC3B431665F84C0B637C11B0EA29236828646C2* L_31;
+		L_31 = UQueryExtensions_Q_TisButton_t8EC3B431665F84C0B637C11B0EA29236828646C2_m36B6EBB624A0831C6B20C70F93EF0517B65A8D75(__this, _stringLiteral39F2389D0FCAC5B1FAF79ECA2AEB00BBAA5F516D, (String_t*)NULL, UQueryExtensions_Q_TisButton_t8EC3B431665F84C0B637C11B0EA29236828646C2_m36B6EBB624A0831C6B20C70F93EF0517B65A8D75_RuntimeMethod_var);
+		Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* L_32 = (Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07*)il2cpp_codegen_object_new(Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07_il2cpp_TypeInfo_var);
+		NullCheck(L_32);
+		Action__ctor_mBDC7B0B4A3F583B64C2896F01BDED360772F67DC(L_32, __this, (intptr_t)((void*)NumberPadElement_OnCancelClicked_m019C3EEE4A2CA07607E45064B5AC37F15EAEB4D7_RuntimeMethod_var), NULL);
+		NullCheck(L_31);
+		Button_add_clicked_m8F3895E73CAC223492F25142874FFF38A1830C81(L_31, L_32, NULL);
+		// this.Q<Button>("confirm").clicked += OnConfirmClicked;
+		Button_t8EC3B431665F84C0B637C11B0EA29236828646C2* L_33;
+		L_33 = UQueryExtensions_Q_TisButton_t8EC3B431665F84C0B637C11B0EA29236828646C2_m36B6EBB624A0831C6B20C70F93EF0517B65A8D75(__this, _stringLiteral834E1A8DE1317C2E9FC91739044807AB44FFC5AC, (String_t*)NULL, UQueryExtensions_Q_TisButton_t8EC3B431665F84C0B637C11B0EA29236828646C2_m36B6EBB624A0831C6B20C70F93EF0517B65A8D75_RuntimeMethod_var);
+		Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* L_34 = (Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07*)il2cpp_codegen_object_new(Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07_il2cpp_TypeInfo_var);
+		NullCheck(L_34);
+		Action__ctor_mBDC7B0B4A3F583B64C2896F01BDED360772F67DC(L_34, __this, (intptr_t)((void*)NumberPadElement_OnConfirmClicked_m8E4022A67DFBEF9837D0F95DB983AE034D4DB94B_RuntimeMethod_var), NULL);
+		NullCheck(L_33);
+		Button_add_clicked_m8F3895E73CAC223492F25142874FFF38A1830C81(L_33, L_34, NULL);
 		// UpdateSelectedNumberField(false);
 		NumberPadElement_UpdateSelectedNumberField_mD2E1A84FBFE692F4D4B670A83CA5B6034AE1A5B4(__this, (bool)0, NULL);
 		// }
@@ -20170,6 +20280,26 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void NumberPadElement_OnConfirmClicked_m8E402
 }
 // System.Void UnityEngine.UIElements.NumberPadElement::OnTextFieldFocus(UnityEngine.UIElements.FocusEvent)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void NumberPadElement_OnTextFieldFocus_m80AC6129EF977D7A7C51726533681B1449C7C551 (NumberPadElement_t2473EBEAADDD2206BBD7B7A415B72546CCE7A011* __this, FocusEvent_tC285901ACF2EA5EB98D216AC0ADD95937DBBD40F* ___0_evt, const RuntimeMethod* method) 
+{
+	{
+		// OpenNumberPad();
+		NumberPadElement_OpenNumberPad_m45B1A5F94C652A580878FFF04E6689C8009AB5BE(__this, NULL);
+		// }
+		return;
+	}
+}
+// System.Void UnityEngine.UIElements.NumberPadElement::OnTextFieldPointerDown(UnityEngine.UIElements.PointerDownEvent)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void NumberPadElement_OnTextFieldPointerDown_mE8F89637DBE8FD361F6BA44129B9F1594D646D06 (NumberPadElement_t2473EBEAADDD2206BBD7B7A415B72546CCE7A011* __this, PointerDownEvent_tABAAD1BACBB98156D6BCCED51E11883EAFE03A51* ___0_evt, const RuntimeMethod* method) 
+{
+	{
+		// OpenNumberPad();
+		NumberPadElement_OpenNumberPad_m45B1A5F94C652A580878FFF04E6689C8009AB5BE(__this, NULL);
+		// }
+		return;
+	}
+}
+// System.Void UnityEngine.UIElements.NumberPadElement::OnTextFieldMouseDown(UnityEngine.UIElements.MouseDownEvent)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void NumberPadElement_OnTextFieldMouseDown_mF0859C7064A98061C8E48F00AAABD2243C47E2FE (NumberPadElement_t2473EBEAADDD2206BBD7B7A415B72546CCE7A011* __this, MouseDownEvent_tD798610B9C34C7D1CA93C66034A67D330D4A83CD* ___0_evt, const RuntimeMethod* method) 
 {
 	{
 		// OpenNumberPad();
