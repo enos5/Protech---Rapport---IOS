@@ -1172,6 +1172,7 @@ IL2CPP_EXTERN_C const RuntimeMethod* List_1_get_Count_mEB75B8F271887FEF633D6A01F
 IL2CPP_EXTERN_C const RuntimeMethod* List_1_get_Item_m276AB789110C244B4D1545B4E9F14BF74041E6AE_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* List_1_get_Item_m39EA964CE85827ED829C14D54979E42B2F9D33BE_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* List_1_get_Item_m39EDDFB4EF7DA1D70754CA9E59200E1F55D17014_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Nullable_1__ctor_mF3D65C30ACED71826A2F8078A5D10F3CC827E420_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* String_Contains_m6D77B121FADA7CA5F397C0FABB65DA62DF03B6C3_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* StyleEnum_1_op_Equality_m0A305FB462EE2B52AD8BBC87CFCDAA27BA4B94CD_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* StyleEnum_1_op_Implicit_m9CC7BE6DFC463FD482DC9D6E3A496FCD0017FCCD_RuntimeMethod_var;
@@ -1750,6 +1751,12 @@ struct Parametre_tD66492969FD6D0B3E3E7AF0075994E8F6C2432EA  : public RuntimeObje
 	int32_t ___valeur_source_38;
 	// System.Int32 Parametre::valeur_destination
 	int32_t ___valeur_destination_39;
+	// System.Single Parametre::min
+	float ___min_40;
+	// System.Single Parametre::max
+	float ___max_41;
+	// System.Single Parametre::step
+	float ___step_42;
 };
 
 // PieceJointe
@@ -2714,6 +2721,15 @@ struct Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28
 	bool ___hasValue_0;
 	// T System.Nullable`1::value
 	int32_t ___value_1;
+};
+
+// System.Nullable`1<System.Single>
+struct Nullable_1_t3D746CBB6123D4569FF4DEA60BC4240F32C6FE75 
+{
+	// System.Boolean System.Nullable`1::hasValue
+	bool ___hasValue_0;
+	// T System.Nullable`1::value
+	float ___value_1;
 };
 
 // UnityEngine.UIElements.StyleDataRef`1<UnityEngine.UIElements.InheritedData>
@@ -4853,20 +4869,38 @@ struct NumberPadElement_t2473EBEAADDD2206BBD7B7A415B72546CCE7A011  : public Visu
 	TextField_tDB34369F9468D7F02670087D9444EC23115827D9* ___selectedNumberField_65;
 	// UnityEngine.UIElements.Label UnityEngine.UIElements.NumberPadElement::currentValueLabel
 	Label_tC160668F9119CE0F5567021FB208E64A5B1C5B70* ___currentValueLabel_66;
+	// UnityEngine.UIElements.Label UnityEngine.UIElements.NumberPadElement::validationLabel
+	Label_tC160668F9119CE0F5567021FB208E64A5B1C5B70* ___validationLabel_67;
 	// UnityEngine.UIElements.VisualElement UnityEngine.UIElements.NumberPadElement::numberPadContainer
-	VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* ___numberPadContainer_67;
+	VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* ___numberPadContainer_68;
 	// UnityEngine.UIElements.VisualElement UnityEngine.UIElements.NumberPadElement::originalParent
-	VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* ___originalParent_68;
+	VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* ___originalParent_69;
 	// UnityEngine.UIElements.VisualElement UnityEngine.UIElements.NumberPadElement::rootContainer
-	VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* ___rootContainer_69;
+	VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* ___rootContainer_70;
+	// UnityEngine.UIElements.Button UnityEngine.UIElements.NumberPadElement::dotButton
+	Button_t8EC3B431665F84C0B637C11B0EA29236828646C2* ___dotButton_71;
+	// UnityEngine.UIElements.Button UnityEngine.UIElements.NumberPadElement::confirmButton
+	Button_t8EC3B431665F84C0B637C11B0EA29236828646C2* ___confirmButton_72;
 	// System.Boolean UnityEngine.UIElements.NumberPadElement::isOpen
-	bool ___isOpen_70;
+	bool ___isOpen_73;
 	// System.String UnityEngine.UIElements.NumberPadElement::committedValue
-	String_t* ___committedValue_71;
+	String_t* ___committedValue_74;
 	// System.String UnityEngine.UIElements.NumberPadElement::pendingValue
-	String_t* ___pendingValue_72;
+	String_t* ___pendingValue_75;
+	// System.Nullable`1<System.Single> UnityEngine.UIElements.NumberPadElement::minValue
+	Nullable_1_t3D746CBB6123D4569FF4DEA60BC4240F32C6FE75 ___minValue_76;
+	// System.Nullable`1<System.Single> UnityEngine.UIElements.NumberPadElement::maxValue
+	Nullable_1_t3D746CBB6123D4569FF4DEA60BC4240F32C6FE75 ___maxValue_77;
+	// System.Nullable`1<System.Single> UnityEngine.UIElements.NumberPadElement::stepValue
+	Nullable_1_t3D746CBB6123D4569FF4DEA60BC4240F32C6FE75 ___stepValue_78;
+	// System.Boolean UnityEngine.UIElements.NumberPadElement::allowDecimal
+	bool ___allowDecimal_79;
+	// System.Boolean UnityEngine.UIElements.NumberPadElement::currentValidity
+	bool ___currentValidity_80;
+	// System.String UnityEngine.UIElements.NumberPadElement::currentValidationMessage
+	String_t* ___currentValidationMessage_81;
 	// UnityEngine.Vector2 UnityEngine.UIElements.NumberPadElement::numberPadSize
-	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___numberPadSize_73;
+	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___numberPadSize_82;
 };
 
 // RapportManager
@@ -5963,6 +5997,10 @@ struct U3CU3Ec_t5A36F8FD6233E7D3BC713A835D85C348242B294B_StaticFields
 // System.Nullable`1<System.Int32>
 
 // System.Nullable`1<System.Int32>
+
+// System.Nullable`1<System.Single>
+
+// System.Nullable`1<System.Single>
 
 // System.Boolean
 struct Boolean_t09A6377A54BE2F9E6985A8149F19234FD7DDFE22_StaticFields
@@ -7244,6 +7282,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool INotifyValueChangedExtensions_RegisterVa
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* List_1_Find_m5E78A210541B0D844FE27B94F509313623BE33D3_gshared (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* __this, Predicate_1_t8342C85FF4E41CD1F7024AC0CDC3E5312A32CB12* ___0_match, const RuntimeMethod* method) ;
 // TSource System.Linq.Enumerable::First<System.Object>(System.Collections.Generic.IEnumerable`1<TSource>,System.Func`2<TSource,System.Boolean>)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Enumerable_First_TisRuntimeObject_mC6FA107934316BE28EA02DDB9EADA7AE8DD1916B_gshared (RuntimeObject* ___0_source, Func_2_tE1F0D41563EE092E5E5540B061449FDE88F1DC00* ___1_predicate, const RuntimeMethod* method) ;
+// System.Void System.Nullable`1<System.Single>::.ctor(T)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Nullable_1__ctor_mF3D65C30ACED71826A2F8078A5D10F3CC827E420_gshared (Nullable_1_t3D746CBB6123D4569FF4DEA60BC4240F32C6FE75* __this, float ___0_value, const RuntimeMethod* method) ;
 // TSource System.Linq.Enumerable::SingleOrDefault<System.Object>(System.Collections.Generic.IEnumerable`1<TSource>,System.Func`2<TSource,System.Boolean>)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Enumerable_SingleOrDefault_TisRuntimeObject_m96E15D999D3DAF8B31946255524EBB46907CFF17_gshared (RuntimeObject* ___0_source, Func_2_tE1F0D41563EE092E5E5540B061449FDE88F1DC00* ___1_predicate, const RuntimeMethod* method) ;
 // UnityEngine.UIElements.Label UnityEngine.UIElements.BaseField`1<System.Object>::get_labelElement()
@@ -7769,6 +7809,13 @@ inline NumberPadElement_t2473EBEAADDD2206BBD7B7A415B72546CCE7A011* UQueryExtensi
 }
 // System.Void UnityEngine.UIElements.NumberPadElement::setValue(System.String)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void NumberPadElement_setValue_m23A24F284FD995B535AC649B6053B53F9D0FBD9D (NumberPadElement_t2473EBEAADDD2206BBD7B7A415B72546CCE7A011* __this, String_t* ___0_newValue, const RuntimeMethod* method) ;
+// System.Void System.Nullable`1<System.Single>::.ctor(T)
+inline void Nullable_1__ctor_mF3D65C30ACED71826A2F8078A5D10F3CC827E420 (Nullable_1_t3D746CBB6123D4569FF4DEA60BC4240F32C6FE75* __this, float ___0_value, const RuntimeMethod* method)
+{
+	((  void (*) (Nullable_1_t3D746CBB6123D4569FF4DEA60BC4240F32C6FE75*, float, const RuntimeMethod*))Nullable_1__ctor_mF3D65C30ACED71826A2F8078A5D10F3CC827E420_gshared)(__this, ___0_value, method);
+}
+// System.Void UnityEngine.UIElements.NumberPadElement::SetConstraints(System.Nullable`1<System.Single>,System.Nullable`1<System.Single>,System.Nullable`1<System.Single>)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void NumberPadElement_SetConstraints_m3A28D535B7591AE87694F0C2869A7620E04285DE (NumberPadElement_t2473EBEAADDD2206BBD7B7A415B72546CCE7A011* __this, Nullable_1_t3D746CBB6123D4569FF4DEA60BC4240F32C6FE75 ___0_min, Nullable_1_t3D746CBB6123D4569FF4DEA60BC4240F32C6FE75 ___1_max, Nullable_1_t3D746CBB6123D4569FF4DEA60BC4240F32C6FE75 ___2_step, const RuntimeMethod* method) ;
 // System.Void ContenuRapportManager::RegisterTypedFieldChange(UnityEngine.UIElements.TextField)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ContenuRapportManager_RegisterTypedFieldChange_m9F62BF6F06AEAA9ECD00591E056D61ACE424A5C9 (ContenuRapportManager_t1246C45A36047FA097C07FFB64574E5974E068E4* __this, TextField_tDB34369F9468D7F02670087D9444EC23115827D9* ___0_field, const RuntimeMethod* method) ;
 // System.Void ContenuRapportManager/<>c__DisplayClass88_0::.ctor()
@@ -14383,6 +14430,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR List_1_t6AC2A2EEF7243A7458635C3EE29AE3FCB637C
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_Find_mB17700732660B3F275A73B7B9BF683DF53EF9F85_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1__ctor_mB85F38493FD5EA3BBC8139113E27EA52C2C28877_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_t6AC2A2EEF7243A7458635C3EE29AE3FCB637CC6D_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Nullable_1__ctor_mF3D65C30ACED71826A2F8078A5D10F3CC827E420_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Predicate_1_tC1B065174C422E64D6D4F46F27D3D37E86D8F925_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&U3CU3Ec__DisplayClass87_0_U3CNumberU3Eb__0_m666745066F7DBDA2DA24E1A98ECE2DE0F1DBFBE7_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&U3CU3Ec__DisplayClass87_0_U3CNumberU3Eb__1_m992449888BA6660ABF7E9A38717ACA6B2FA424E9_RuntimeMethod_var);
@@ -14528,7 +14576,7 @@ IL_00c0:
 		NumberPadElement_t2473EBEAADDD2206BBD7B7A415B72546CCE7A011* L_37 = V_3;
 		if (!L_37)
 		{
-			goto IL_00e3;
+			goto IL_0128;
 		}
 	}
 	{
@@ -14537,54 +14585,88 @@ IL_00c0:
 		String_t* L_39 = V_2;
 		NullCheck(L_38);
 		NumberPadElement_setValue_m23A24F284FD995B535AC649B6053B53F9D0FBD9D(L_38, L_39, NULL);
+		// myElem.SetConstraints(champ.parametres.min, champ.parametres.max, champ.parametres.step);
+		NumberPadElement_t2473EBEAADDD2206BBD7B7A415B72546CCE7A011* L_40 = V_3;
+		U3CU3Ec__DisplayClass87_0_t639EE2A020024E3A3BD1DDC761E9AE91564C0542* L_41 = V_0;
+		NullCheck(L_41);
+		Champ_tD2B96901967ACAD5FC515CC6FD7C38CEF1540CE8* L_42 = L_41->___champ_0;
+		NullCheck(L_42);
+		Parametre_tD66492969FD6D0B3E3E7AF0075994E8F6C2432EA* L_43 = L_42->___parametres_10;
+		NullCheck(L_43);
+		float L_44 = L_43->___min_40;
+		Nullable_1_t3D746CBB6123D4569FF4DEA60BC4240F32C6FE75 L_45;
+		memset((&L_45), 0, sizeof(L_45));
+		Nullable_1__ctor_mF3D65C30ACED71826A2F8078A5D10F3CC827E420((&L_45), L_44, /*hidden argument*/Nullable_1__ctor_mF3D65C30ACED71826A2F8078A5D10F3CC827E420_RuntimeMethod_var);
+		U3CU3Ec__DisplayClass87_0_t639EE2A020024E3A3BD1DDC761E9AE91564C0542* L_46 = V_0;
+		NullCheck(L_46);
+		Champ_tD2B96901967ACAD5FC515CC6FD7C38CEF1540CE8* L_47 = L_46->___champ_0;
+		NullCheck(L_47);
+		Parametre_tD66492969FD6D0B3E3E7AF0075994E8F6C2432EA* L_48 = L_47->___parametres_10;
+		NullCheck(L_48);
+		float L_49 = L_48->___max_41;
+		Nullable_1_t3D746CBB6123D4569FF4DEA60BC4240F32C6FE75 L_50;
+		memset((&L_50), 0, sizeof(L_50));
+		Nullable_1__ctor_mF3D65C30ACED71826A2F8078A5D10F3CC827E420((&L_50), L_49, /*hidden argument*/Nullable_1__ctor_mF3D65C30ACED71826A2F8078A5D10F3CC827E420_RuntimeMethod_var);
+		U3CU3Ec__DisplayClass87_0_t639EE2A020024E3A3BD1DDC761E9AE91564C0542* L_51 = V_0;
+		NullCheck(L_51);
+		Champ_tD2B96901967ACAD5FC515CC6FD7C38CEF1540CE8* L_52 = L_51->___champ_0;
+		NullCheck(L_52);
+		Parametre_tD66492969FD6D0B3E3E7AF0075994E8F6C2432EA* L_53 = L_52->___parametres_10;
+		NullCheck(L_53);
+		float L_54 = L_53->___step_42;
+		Nullable_1_t3D746CBB6123D4569FF4DEA60BC4240F32C6FE75 L_55;
+		memset((&L_55), 0, sizeof(L_55));
+		Nullable_1__ctor_mF3D65C30ACED71826A2F8078A5D10F3CC827E420((&L_55), L_54, /*hidden argument*/Nullable_1__ctor_mF3D65C30ACED71826A2F8078A5D10F3CC827E420_RuntimeMethod_var);
+		NullCheck(L_40);
+		NumberPadElement_SetConstraints_m3A28D535B7591AE87694F0C2869A7620E04285DE(L_40, L_45, L_50, L_55, NULL);
 		// RegisterTypedFieldChange(instanceTemplateClassique.Q<TextField>());
-		TemplateContainer_tDF6DDDD82C75A6332F0194C2B39AF157F6342DA2* L_40 = V_1;
+		TemplateContainer_tDF6DDDD82C75A6332F0194C2B39AF157F6342DA2* L_56 = V_1;
 		il2cpp_codegen_runtime_class_init_inline(UQueryExtensions_t1271382882DF1B8FEEDE5EFA510405ABA7BD3426_il2cpp_TypeInfo_var);
-		TextField_tDB34369F9468D7F02670087D9444EC23115827D9* L_41;
-		L_41 = UQueryExtensions_Q_TisTextField_tDB34369F9468D7F02670087D9444EC23115827D9_m2CFED749235AD79D994C869E4ACBFE918E628A08(L_40, (String_t*)NULL, (String_t*)NULL, UQueryExtensions_Q_TisTextField_tDB34369F9468D7F02670087D9444EC23115827D9_m2CFED749235AD79D994C869E4ACBFE918E628A08_RuntimeMethod_var);
-		ContenuRapportManager_RegisterTypedFieldChange_m9F62BF6F06AEAA9ECD00591E056D61ACE424A5C9(__this, L_41, NULL);
-		goto IL_0109;
+		TextField_tDB34369F9468D7F02670087D9444EC23115827D9* L_57;
+		L_57 = UQueryExtensions_Q_TisTextField_tDB34369F9468D7F02670087D9444EC23115827D9_m2CFED749235AD79D994C869E4ACBFE918E628A08(L_56, (String_t*)NULL, (String_t*)NULL, UQueryExtensions_Q_TisTextField_tDB34369F9468D7F02670087D9444EC23115827D9_m2CFED749235AD79D994C869E4ACBFE918E628A08_RuntimeMethod_var);
+		ContenuRapportManager_RegisterTypedFieldChange_m9F62BF6F06AEAA9ECD00591E056D61ACE424A5C9(__this, L_57, NULL);
+		goto IL_014e;
 	}
 
-IL_00e3:
+IL_0128:
 	{
 		// else if (instanceTemplateClassique.Q<TextField>() != null)
-		TemplateContainer_tDF6DDDD82C75A6332F0194C2B39AF157F6342DA2* L_42 = V_1;
+		TemplateContainer_tDF6DDDD82C75A6332F0194C2B39AF157F6342DA2* L_58 = V_1;
 		il2cpp_codegen_runtime_class_init_inline(UQueryExtensions_t1271382882DF1B8FEEDE5EFA510405ABA7BD3426_il2cpp_TypeInfo_var);
-		TextField_tDB34369F9468D7F02670087D9444EC23115827D9* L_43;
-		L_43 = UQueryExtensions_Q_TisTextField_tDB34369F9468D7F02670087D9444EC23115827D9_m2CFED749235AD79D994C869E4ACBFE918E628A08(L_42, (String_t*)NULL, (String_t*)NULL, UQueryExtensions_Q_TisTextField_tDB34369F9468D7F02670087D9444EC23115827D9_m2CFED749235AD79D994C869E4ACBFE918E628A08_RuntimeMethod_var);
-		if (!L_43)
+		TextField_tDB34369F9468D7F02670087D9444EC23115827D9* L_59;
+		L_59 = UQueryExtensions_Q_TisTextField_tDB34369F9468D7F02670087D9444EC23115827D9_m2CFED749235AD79D994C869E4ACBFE918E628A08(L_58, (String_t*)NULL, (String_t*)NULL, UQueryExtensions_Q_TisTextField_tDB34369F9468D7F02670087D9444EC23115827D9_m2CFED749235AD79D994C869E4ACBFE918E628A08_RuntimeMethod_var);
+		if (!L_59)
 		{
-			goto IL_0109;
+			goto IL_014e;
 		}
 	}
 	{
 		// instanceTemplateClassique.Q<TextField>().value = valueChamp;
-		TemplateContainer_tDF6DDDD82C75A6332F0194C2B39AF157F6342DA2* L_44 = V_1;
+		TemplateContainer_tDF6DDDD82C75A6332F0194C2B39AF157F6342DA2* L_60 = V_1;
 		il2cpp_codegen_runtime_class_init_inline(UQueryExtensions_t1271382882DF1B8FEEDE5EFA510405ABA7BD3426_il2cpp_TypeInfo_var);
-		TextField_tDB34369F9468D7F02670087D9444EC23115827D9* L_45;
-		L_45 = UQueryExtensions_Q_TisTextField_tDB34369F9468D7F02670087D9444EC23115827D9_m2CFED749235AD79D994C869E4ACBFE918E628A08(L_44, (String_t*)NULL, (String_t*)NULL, UQueryExtensions_Q_TisTextField_tDB34369F9468D7F02670087D9444EC23115827D9_m2CFED749235AD79D994C869E4ACBFE918E628A08_RuntimeMethod_var);
-		String_t* L_46 = V_2;
-		NullCheck(L_45);
-		VirtualActionInvoker1< String_t* >::Invoke(103 /* System.Void UnityEngine.UIElements.BaseField`1<System.String>::set_value(TValueType) */, L_45, L_46);
+		TextField_tDB34369F9468D7F02670087D9444EC23115827D9* L_61;
+		L_61 = UQueryExtensions_Q_TisTextField_tDB34369F9468D7F02670087D9444EC23115827D9_m2CFED749235AD79D994C869E4ACBFE918E628A08(L_60, (String_t*)NULL, (String_t*)NULL, UQueryExtensions_Q_TisTextField_tDB34369F9468D7F02670087D9444EC23115827D9_m2CFED749235AD79D994C869E4ACBFE918E628A08_RuntimeMethod_var);
+		String_t* L_62 = V_2;
+		NullCheck(L_61);
+		VirtualActionInvoker1< String_t* >::Invoke(103 /* System.Void UnityEngine.UIElements.BaseField`1<System.String>::set_value(TValueType) */, L_61, L_62);
 		// handleTextareaChange(instanceTemplateClassique.Q<TextField>());
-		TemplateContainer_tDF6DDDD82C75A6332F0194C2B39AF157F6342DA2* L_47 = V_1;
-		TextField_tDB34369F9468D7F02670087D9444EC23115827D9* L_48;
-		L_48 = UQueryExtensions_Q_TisTextField_tDB34369F9468D7F02670087D9444EC23115827D9_m2CFED749235AD79D994C869E4ACBFE918E628A08(L_47, (String_t*)NULL, (String_t*)NULL, UQueryExtensions_Q_TisTextField_tDB34369F9468D7F02670087D9444EC23115827D9_m2CFED749235AD79D994C869E4ACBFE918E628A08_RuntimeMethod_var);
-		ContenuRapportManager_handleTextareaChange_mF83FE58524EA71CF5A6DBB0112D67131F5B1DB47(__this, L_48, NULL);
+		TemplateContainer_tDF6DDDD82C75A6332F0194C2B39AF157F6342DA2* L_63 = V_1;
+		TextField_tDB34369F9468D7F02670087D9444EC23115827D9* L_64;
+		L_64 = UQueryExtensions_Q_TisTextField_tDB34369F9468D7F02670087D9444EC23115827D9_m2CFED749235AD79D994C869E4ACBFE918E628A08(L_63, (String_t*)NULL, (String_t*)NULL, UQueryExtensions_Q_TisTextField_tDB34369F9468D7F02670087D9444EC23115827D9_m2CFED749235AD79D994C869E4ACBFE918E628A08_RuntimeMethod_var);
+		ContenuRapportManager_handleTextareaChange_mF83FE58524EA71CF5A6DBB0112D67131F5B1DB47(__this, L_64, NULL);
 	}
 
-IL_0109:
+IL_014e:
 	{
 		// return new List<TemplateContainer>() { instanceTemplateClassique };
-		List_1_t6AC2A2EEF7243A7458635C3EE29AE3FCB637CC6D* L_49 = (List_1_t6AC2A2EEF7243A7458635C3EE29AE3FCB637CC6D*)il2cpp_codegen_object_new(List_1_t6AC2A2EEF7243A7458635C3EE29AE3FCB637CC6D_il2cpp_TypeInfo_var);
-		NullCheck(L_49);
-		List_1__ctor_mB85F38493FD5EA3BBC8139113E27EA52C2C28877(L_49, List_1__ctor_mB85F38493FD5EA3BBC8139113E27EA52C2C28877_RuntimeMethod_var);
-		List_1_t6AC2A2EEF7243A7458635C3EE29AE3FCB637CC6D* L_50 = L_49;
-		TemplateContainer_tDF6DDDD82C75A6332F0194C2B39AF157F6342DA2* L_51 = V_1;
-		NullCheck(L_50);
-		List_1_Add_m296690580A37647525B1DD510FFFEB4314E2E5BA_inline(L_50, L_51, List_1_Add_m296690580A37647525B1DD510FFFEB4314E2E5BA_RuntimeMethod_var);
-		return L_50;
+		List_1_t6AC2A2EEF7243A7458635C3EE29AE3FCB637CC6D* L_65 = (List_1_t6AC2A2EEF7243A7458635C3EE29AE3FCB637CC6D*)il2cpp_codegen_object_new(List_1_t6AC2A2EEF7243A7458635C3EE29AE3FCB637CC6D_il2cpp_TypeInfo_var);
+		NullCheck(L_65);
+		List_1__ctor_mB85F38493FD5EA3BBC8139113E27EA52C2C28877(L_65, List_1__ctor_mB85F38493FD5EA3BBC8139113E27EA52C2C28877_RuntimeMethod_var);
+		List_1_t6AC2A2EEF7243A7458635C3EE29AE3FCB637CC6D* L_66 = L_65;
+		TemplateContainer_tDF6DDDD82C75A6332F0194C2B39AF157F6342DA2* L_67 = V_1;
+		NullCheck(L_66);
+		List_1_Add_m296690580A37647525B1DD510FFFEB4314E2E5BA_inline(L_66, L_67, List_1_Add_m296690580A37647525B1DD510FFFEB4314E2E5BA_RuntimeMethod_var);
+		return L_66;
 	}
 }
 // ReportTemplateTable ContenuRapportManager::GetTypedTemplate(System.String,UnityEngine.UIElements.VisualTreeAsset)
@@ -15932,6 +16014,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR VisualElement_t2667F9D19E62C7A315927506C06F22
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1__ctor_mCA8DD57EAC70C2B5923DBB9D5A77CEAC22E7068E_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_get_Item_m39EDDFB4EF7DA1D70754CA9E59200E1F55D17014_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_tF470A3BE5C1B5B68E1325EF3F109D172E60BD7CD_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Nullable_1__ctor_mF3D65C30ACED71826A2F8078A5D10F3CC827E420_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&String_Contains_m6D77B121FADA7CA5F397C0FABB65DA62DF03B6C3_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&StyleEnum_1_op_Implicit_mE2664CDFC678F602380EED12BA228071E6F49030_RuntimeMethod_var);
@@ -16782,7 +16865,7 @@ IL_049a:
 		TemplateContainer_tDF6DDDD82C75A6332F0194C2B39AF157F6342DA2* L_224 = V_8;
 		NullCheck(L_223);
 		VisualElement_Add_mE2571CCB23C09103F8732EEC73833683F7236A7F(L_223, L_224, NULL);
-		goto IL_0903;
+		goto IL_094c;
 	}
 
 IL_04b2:
@@ -16793,7 +16876,7 @@ IL_04b2:
 		DonneeItemU5BU5D_t42699C264DDCDC91AE5C218EC8EF8903FF899DC5* L_226 = L_225->___items_2;
 		V_11 = L_226;
 		V_12 = 0;
-		goto IL_08f8;
+		goto IL_0941;
 	}
 
 IL_04c3:
@@ -16809,7 +16892,7 @@ IL_04c3:
 		int32_t L_231 = L_230->___actif_2;
 		if ((!(((uint32_t)L_231) == ((uint32_t)1))))
 		{
-			goto IL_08f2;
+			goto IL_093b;
 		}
 	}
 	{
@@ -17179,7 +17262,7 @@ IL_06ea:
 	{
 		bool L_325;
 		L_325 = INotifyValueChangedExtensions_RegisterValueChangedCallback_TisString_t_m6F93F2AE286CAFC60A8470D9C847D03DB1B8D14F(G_B57_1, G_B57_0, INotifyValueChangedExtensions_RegisterValueChangedCallback_TisString_t_m6F93F2AE286CAFC60A8470D9C847D03DB1B8D14F_RuntimeMethod_var);
-		goto IL_08d9;
+		goto IL_0922;
 	}
 
 IL_06f5:
@@ -17196,7 +17279,7 @@ IL_06f5:
 		L_330 = String_Concat_m9E3155FB84015C823606188F53B47CB44C444991(_stringLiteral1512B22A829F4421A636A9C52D1A94CBEDAB44C8, L_329, NULL);
 		NullCheck(L_327);
 		VirtualActionInvoker1< String_t* >::Invoke(103 /* System.Void UnityEngine.UIElements.BaseField`1<System.String>::set_value(TValueType) */, L_327, L_330);
-		goto IL_08d9;
+		goto IL_0922;
 	}
 
 IL_0719:
@@ -17209,7 +17292,7 @@ IL_0719:
 		L_333 = String_op_Equality_m030E1B219352228970A076136E455C4E568C02C1(L_332, _stringLiteral7A05A136E34451BA838B56C57A62ABDD1887D741, NULL);
 		if (!L_333)
 		{
-			goto IL_076f;
+			goto IL_07b8;
 		}
 	}
 	{
@@ -17225,7 +17308,7 @@ IL_0719:
 		Reponse_t4F6AF0B9622A3050B0627A92E0A7EF9C2604A40B* L_336 = ___4_repAct;
 		if (!L_336)
 		{
-			goto IL_074b;
+			goto IL_074e;
 		}
 	}
 	{
@@ -17236,13 +17319,13 @@ IL_0719:
 		V_25 = L_338;
 	}
 
-IL_074b:
+IL_074e:
 	{
 		// if (myElem != null)
 		NumberPadElement_t2473EBEAADDD2206BBD7B7A415B72546CCE7A011* L_339 = V_24;
 		if (!L_339)
 		{
-			goto IL_08d9;
+			goto IL_0922;
 		}
 	}
 	{
@@ -17251,102 +17334,136 @@ IL_074b:
 		String_t* L_341 = V_25;
 		NullCheck(L_340);
 		NumberPadElement_setValue_m23A24F284FD995B535AC649B6053B53F9D0FBD9D(L_340, L_341, NULL);
-		// RegisterTypedFieldChange(myElem.Q<TextField>());
+		// myElem.SetConstraints(optIn.parametres.min, optIn.parametres.max, optIn.parametres.step);
 		NumberPadElement_t2473EBEAADDD2206BBD7B7A415B72546CCE7A011* L_342 = V_24;
+		U3CU3Ec__DisplayClass94_0_t20DF146D9AAB335C790F7A93C162CC3B2EE4C781* L_343 = V_0;
+		NullCheck(L_343);
+		Option_t12C5B91C2C20CE174E1260BE6A02B61251A115B6* L_344 = L_343->___optIn_0;
+		NullCheck(L_344);
+		Parametre_tD66492969FD6D0B3E3E7AF0075994E8F6C2432EA* L_345 = L_344->___parametres_6;
+		NullCheck(L_345);
+		float L_346 = L_345->___min_40;
+		Nullable_1_t3D746CBB6123D4569FF4DEA60BC4240F32C6FE75 L_347;
+		memset((&L_347), 0, sizeof(L_347));
+		Nullable_1__ctor_mF3D65C30ACED71826A2F8078A5D10F3CC827E420((&L_347), L_346, /*hidden argument*/Nullable_1__ctor_mF3D65C30ACED71826A2F8078A5D10F3CC827E420_RuntimeMethod_var);
+		U3CU3Ec__DisplayClass94_0_t20DF146D9AAB335C790F7A93C162CC3B2EE4C781* L_348 = V_0;
+		NullCheck(L_348);
+		Option_t12C5B91C2C20CE174E1260BE6A02B61251A115B6* L_349 = L_348->___optIn_0;
+		NullCheck(L_349);
+		Parametre_tD66492969FD6D0B3E3E7AF0075994E8F6C2432EA* L_350 = L_349->___parametres_6;
+		NullCheck(L_350);
+		float L_351 = L_350->___max_41;
+		Nullable_1_t3D746CBB6123D4569FF4DEA60BC4240F32C6FE75 L_352;
+		memset((&L_352), 0, sizeof(L_352));
+		Nullable_1__ctor_mF3D65C30ACED71826A2F8078A5D10F3CC827E420((&L_352), L_351, /*hidden argument*/Nullable_1__ctor_mF3D65C30ACED71826A2F8078A5D10F3CC827E420_RuntimeMethod_var);
+		U3CU3Ec__DisplayClass94_0_t20DF146D9AAB335C790F7A93C162CC3B2EE4C781* L_353 = V_0;
+		NullCheck(L_353);
+		Option_t12C5B91C2C20CE174E1260BE6A02B61251A115B6* L_354 = L_353->___optIn_0;
+		NullCheck(L_354);
+		Parametre_tD66492969FD6D0B3E3E7AF0075994E8F6C2432EA* L_355 = L_354->___parametres_6;
+		NullCheck(L_355);
+		float L_356 = L_355->___step_42;
+		Nullable_1_t3D746CBB6123D4569FF4DEA60BC4240F32C6FE75 L_357;
+		memset((&L_357), 0, sizeof(L_357));
+		Nullable_1__ctor_mF3D65C30ACED71826A2F8078A5D10F3CC827E420((&L_357), L_356, /*hidden argument*/Nullable_1__ctor_mF3D65C30ACED71826A2F8078A5D10F3CC827E420_RuntimeMethod_var);
+		NullCheck(L_342);
+		NumberPadElement_SetConstraints_m3A28D535B7591AE87694F0C2869A7620E04285DE(L_342, L_347, L_352, L_357, NULL);
+		// RegisterTypedFieldChange(myElem.Q<TextField>());
+		NumberPadElement_t2473EBEAADDD2206BBD7B7A415B72546CCE7A011* L_358 = V_24;
 		il2cpp_codegen_runtime_class_init_inline(UQueryExtensions_t1271382882DF1B8FEEDE5EFA510405ABA7BD3426_il2cpp_TypeInfo_var);
-		TextField_tDB34369F9468D7F02670087D9444EC23115827D9* L_343;
-		L_343 = UQueryExtensions_Q_TisTextField_tDB34369F9468D7F02670087D9444EC23115827D9_m2CFED749235AD79D994C869E4ACBFE918E628A08(L_342, (String_t*)NULL, (String_t*)NULL, UQueryExtensions_Q_TisTextField_tDB34369F9468D7F02670087D9444EC23115827D9_m2CFED749235AD79D994C869E4ACBFE918E628A08_RuntimeMethod_var);
-		ContenuRapportManager_RegisterTypedFieldChange_m9F62BF6F06AEAA9ECD00591E056D61ACE424A5C9(__this, L_343, NULL);
-		goto IL_08d9;
+		TextField_tDB34369F9468D7F02670087D9444EC23115827D9* L_359;
+		L_359 = UQueryExtensions_Q_TisTextField_tDB34369F9468D7F02670087D9444EC23115827D9_m2CFED749235AD79D994C869E4ACBFE918E628A08(L_358, (String_t*)NULL, (String_t*)NULL, UQueryExtensions_Q_TisTextField_tDB34369F9468D7F02670087D9444EC23115827D9_m2CFED749235AD79D994C869E4ACBFE918E628A08_RuntimeMethod_var);
+		ContenuRapportManager_RegisterTypedFieldChange_m9F62BF6F06AEAA9ECD00591E056D61ACE424A5C9(__this, L_359, NULL);
+		goto IL_0922;
 	}
 
-IL_076f:
+IL_07b8:
 	{
 		// string value = "";
 		V_26 = _stringLiteralDA39A3EE5E6B4B0D3255BFEF95601890AFD80709;
 		// if (repAct != null) {
-		Reponse_t4F6AF0B9622A3050B0627A92E0A7EF9C2604A40B* L_344 = ___4_repAct;
-		if (!L_344)
+		Reponse_t4F6AF0B9622A3050B0627A92E0A7EF9C2604A40B* L_360 = ___4_repAct;
+		if (!L_360)
 		{
-			goto IL_0783;
+			goto IL_07cc;
 		}
 	}
 	{
 		// value = repAct.reponse_autre;
-		Reponse_t4F6AF0B9622A3050B0627A92E0A7EF9C2604A40B* L_345 = ___4_repAct;
-		NullCheck(L_345);
-		String_t* L_346 = L_345->___reponse_autre_5;
-		V_26 = L_346;
+		Reponse_t4F6AF0B9622A3050B0627A92E0A7EF9C2604A40B* L_361 = ___4_repAct;
+		NullCheck(L_361);
+		String_t* L_362 = L_361->___reponse_autre_5;
+		V_26 = L_362;
 	}
 
-IL_0783:
+IL_07cc:
 	{
 		// if (textualValue.Any(currentType.type.Contains))
-		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_347 = V_19;
-		TypeDonnee_t327813B35AB71130080569ACD168334ED2D397B1* L_348 = V_4;
-		NullCheck(L_348);
-		String_t* L_349 = L_348->___type_1;
-		Func_2_tAB9727E0C937894E19032D575D98A8A9AB5EE47D* L_350 = (Func_2_tAB9727E0C937894E19032D575D98A8A9AB5EE47D*)il2cpp_codegen_object_new(Func_2_tAB9727E0C937894E19032D575D98A8A9AB5EE47D_il2cpp_TypeInfo_var);
-		NullCheck(L_350);
-		Func_2__ctor_m247D5044A4E1F518CA84A38B9A9F30E66BDD8184(L_350, L_349, (intptr_t)((void*)String_Contains_m6D77B121FADA7CA5F397C0FABB65DA62DF03B6C3_RuntimeMethod_var), NULL);
-		bool L_351;
-		L_351 = Enumerable_Any_TisString_t_m3FE24CD50CFE82BB1A8D4AD1E53ECA8A5F53F501((RuntimeObject*)L_347, L_350, Enumerable_Any_TisString_t_m3FE24CD50CFE82BB1A8D4AD1E53ECA8A5F53F501_RuntimeMethod_var);
-		if (!L_351)
+		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_363 = V_19;
+		TypeDonnee_t327813B35AB71130080569ACD168334ED2D397B1* L_364 = V_4;
+		NullCheck(L_364);
+		String_t* L_365 = L_364->___type_1;
+		Func_2_tAB9727E0C937894E19032D575D98A8A9AB5EE47D* L_366 = (Func_2_tAB9727E0C937894E19032D575D98A8A9AB5EE47D*)il2cpp_codegen_object_new(Func_2_tAB9727E0C937894E19032D575D98A8A9AB5EE47D_il2cpp_TypeInfo_var);
+		NullCheck(L_366);
+		Func_2__ctor_m247D5044A4E1F518CA84A38B9A9F30E66BDD8184(L_366, L_365, (intptr_t)((void*)String_Contains_m6D77B121FADA7CA5F397C0FABB65DA62DF03B6C3_RuntimeMethod_var), NULL);
+		bool L_367;
+		L_367 = Enumerable_Any_TisString_t_m3FE24CD50CFE82BB1A8D4AD1E53ECA8A5F53F501((RuntimeObject*)L_363, L_366, Enumerable_Any_TisString_t_m3FE24CD50CFE82BB1A8D4AD1E53ECA8A5F53F501_RuntimeMethod_var);
+		if (!L_367)
 		{
-			goto IL_07c2;
+			goto IL_080b;
 		}
 	}
 	{
 		// currentTemplate.Q<TextField>().value = value;
-		TemplateContainer_tDF6DDDD82C75A6332F0194C2B39AF157F6342DA2* L_352 = V_17;
+		TemplateContainer_tDF6DDDD82C75A6332F0194C2B39AF157F6342DA2* L_368 = V_17;
 		il2cpp_codegen_runtime_class_init_inline(UQueryExtensions_t1271382882DF1B8FEEDE5EFA510405ABA7BD3426_il2cpp_TypeInfo_var);
-		TextField_tDB34369F9468D7F02670087D9444EC23115827D9* L_353;
-		L_353 = UQueryExtensions_Q_TisTextField_tDB34369F9468D7F02670087D9444EC23115827D9_m2CFED749235AD79D994C869E4ACBFE918E628A08(L_352, (String_t*)NULL, (String_t*)NULL, UQueryExtensions_Q_TisTextField_tDB34369F9468D7F02670087D9444EC23115827D9_m2CFED749235AD79D994C869E4ACBFE918E628A08_RuntimeMethod_var);
-		String_t* L_354 = V_26;
-		NullCheck(L_353);
-		VirtualActionInvoker1< String_t* >::Invoke(103 /* System.Void UnityEngine.UIElements.BaseField`1<System.String>::set_value(TValueType) */, L_353, L_354);
+		TextField_tDB34369F9468D7F02670087D9444EC23115827D9* L_369;
+		L_369 = UQueryExtensions_Q_TisTextField_tDB34369F9468D7F02670087D9444EC23115827D9_m2CFED749235AD79D994C869E4ACBFE918E628A08(L_368, (String_t*)NULL, (String_t*)NULL, UQueryExtensions_Q_TisTextField_tDB34369F9468D7F02670087D9444EC23115827D9_m2CFED749235AD79D994C869E4ACBFE918E628A08_RuntimeMethod_var);
+		String_t* L_370 = V_26;
+		NullCheck(L_369);
+		VirtualActionInvoker1< String_t* >::Invoke(103 /* System.Void UnityEngine.UIElements.BaseField`1<System.String>::set_value(TValueType) */, L_369, L_370);
 		// handleTextareaChange(currentTemplate.Q<TextField>());
-		TemplateContainer_tDF6DDDD82C75A6332F0194C2B39AF157F6342DA2* L_355 = V_17;
-		TextField_tDB34369F9468D7F02670087D9444EC23115827D9* L_356;
-		L_356 = UQueryExtensions_Q_TisTextField_tDB34369F9468D7F02670087D9444EC23115827D9_m2CFED749235AD79D994C869E4ACBFE918E628A08(L_355, (String_t*)NULL, (String_t*)NULL, UQueryExtensions_Q_TisTextField_tDB34369F9468D7F02670087D9444EC23115827D9_m2CFED749235AD79D994C869E4ACBFE918E628A08_RuntimeMethod_var);
-		ContenuRapportManager_handleTextareaChange_mF83FE58524EA71CF5A6DBB0112D67131F5B1DB47(__this, L_356, NULL);
-		goto IL_08d9;
+		TemplateContainer_tDF6DDDD82C75A6332F0194C2B39AF157F6342DA2* L_371 = V_17;
+		TextField_tDB34369F9468D7F02670087D9444EC23115827D9* L_372;
+		L_372 = UQueryExtensions_Q_TisTextField_tDB34369F9468D7F02670087D9444EC23115827D9_m2CFED749235AD79D994C869E4ACBFE918E628A08(L_371, (String_t*)NULL, (String_t*)NULL, UQueryExtensions_Q_TisTextField_tDB34369F9468D7F02670087D9444EC23115827D9_m2CFED749235AD79D994C869E4ACBFE918E628A08_RuntimeMethod_var);
+		ContenuRapportManager_handleTextareaChange_mF83FE58524EA71CF5A6DBB0112D67131F5B1DB47(__this, L_372, NULL);
+		goto IL_0922;
 	}
 
-IL_07c2:
+IL_080b:
 	{
 		// else if (currentType.type == "check")
-		TypeDonnee_t327813B35AB71130080569ACD168334ED2D397B1* L_357 = V_4;
-		NullCheck(L_357);
-		String_t* L_358 = L_357->___type_1;
-		bool L_359;
-		L_359 = String_op_Equality_m030E1B219352228970A076136E455C4E568C02C1(L_358, _stringLiteralB576AB2A3002768C4BC218935565240988B14E45, NULL);
-		if (!L_359)
+		TypeDonnee_t327813B35AB71130080569ACD168334ED2D397B1* L_373 = V_4;
+		NullCheck(L_373);
+		String_t* L_374 = L_373->___type_1;
+		bool L_375;
+		L_375 = String_op_Equality_m030E1B219352228970A076136E455C4E568C02C1(L_374, _stringLiteralB576AB2A3002768C4BC218935565240988B14E45, NULL);
+		if (!L_375)
 		{
-			goto IL_0822;
+			goto IL_086b;
 		}
 	}
 	{
 		// if (!String.IsNullOrEmpty(value))
-		String_t* L_360 = V_26;
-		bool L_361;
-		L_361 = String_IsNullOrEmpty_mEA9E3FB005AC28FE02E69FCF95A7B8456192B478(L_360, NULL);
-		if (L_361)
+		String_t* L_376 = V_26;
+		bool L_377;
+		L_377 = String_IsNullOrEmpty_mEA9E3FB005AC28FE02E69FCF95A7B8456192B478(L_376, NULL);
+		if (L_377)
 		{
-			goto IL_07ed;
+			goto IL_0836;
 		}
 	}
 	{
 		// currentTemplate.Q<Toggle>().value = true;
-		TemplateContainer_tDF6DDDD82C75A6332F0194C2B39AF157F6342DA2* L_362 = V_17;
+		TemplateContainer_tDF6DDDD82C75A6332F0194C2B39AF157F6342DA2* L_378 = V_17;
 		il2cpp_codegen_runtime_class_init_inline(UQueryExtensions_t1271382882DF1B8FEEDE5EFA510405ABA7BD3426_il2cpp_TypeInfo_var);
-		Toggle_t27BE43456B97DD7A793D272D3318F9FE682B844C* L_363;
-		L_363 = UQueryExtensions_Q_TisToggle_t27BE43456B97DD7A793D272D3318F9FE682B844C_m5E8F6142F47C5B5A96F866B2955BAD07AEA28ECA(L_362, (String_t*)NULL, (String_t*)NULL, UQueryExtensions_Q_TisToggle_t27BE43456B97DD7A793D272D3318F9FE682B844C_m5E8F6142F47C5B5A96F866B2955BAD07AEA28ECA_RuntimeMethod_var);
-		NullCheck(L_363);
-		VirtualActionInvoker1< bool >::Invoke(103 /* System.Void UnityEngine.UIElements.BaseField`1<System.Boolean>::set_value(TValueType) */, L_363, (bool)1);
+		Toggle_t27BE43456B97DD7A793D272D3318F9FE682B844C* L_379;
+		L_379 = UQueryExtensions_Q_TisToggle_t27BE43456B97DD7A793D272D3318F9FE682B844C_m5E8F6142F47C5B5A96F866B2955BAD07AEA28ECA(L_378, (String_t*)NULL, (String_t*)NULL, UQueryExtensions_Q_TisToggle_t27BE43456B97DD7A793D272D3318F9FE682B844C_m5E8F6142F47C5B5A96F866B2955BAD07AEA28ECA_RuntimeMethod_var);
+		NullCheck(L_379);
+		VirtualActionInvoker1< bool >::Invoke(103 /* System.Void UnityEngine.UIElements.BaseField`1<System.Boolean>::set_value(TValueType) */, L_379, (bool)1);
 	}
 
-IL_07ed:
+IL_0836:
 	{
 		// currentTemplate.Q<Toggle>().RegisterValueChangedCallback(evt =>
 		// {
@@ -17356,89 +17473,89 @@ IL_07ed:
 		//         this.has_changes = true;
 		//     }
 		// });
-		TemplateContainer_tDF6DDDD82C75A6332F0194C2B39AF157F6342DA2* L_364 = V_17;
+		TemplateContainer_tDF6DDDD82C75A6332F0194C2B39AF157F6342DA2* L_380 = V_17;
 		il2cpp_codegen_runtime_class_init_inline(UQueryExtensions_t1271382882DF1B8FEEDE5EFA510405ABA7BD3426_il2cpp_TypeInfo_var);
-		Toggle_t27BE43456B97DD7A793D272D3318F9FE682B844C* L_365;
-		L_365 = UQueryExtensions_Q_TisToggle_t27BE43456B97DD7A793D272D3318F9FE682B844C_m5E8F6142F47C5B5A96F866B2955BAD07AEA28ECA(L_364, (String_t*)NULL, (String_t*)NULL, UQueryExtensions_Q_TisToggle_t27BE43456B97DD7A793D272D3318F9FE682B844C_m5E8F6142F47C5B5A96F866B2955BAD07AEA28ECA_RuntimeMethod_var);
-		U3CU3Ec__DisplayClass94_0_t20DF146D9AAB335C790F7A93C162CC3B2EE4C781* L_366 = V_0;
-		NullCheck(L_366);
-		EventCallback_1_t0FE3F70E94CC4C4904A9F1C171A3DE56EE41F103* L_367 = L_366->___U3CU3E9__5_3;
-		EventCallback_1_t0FE3F70E94CC4C4904A9F1C171A3DE56EE41F103* L_368 = L_367;
-		G_B72_0 = L_368;
-		G_B72_1 = L_365;
-		if (L_368)
+		Toggle_t27BE43456B97DD7A793D272D3318F9FE682B844C* L_381;
+		L_381 = UQueryExtensions_Q_TisToggle_t27BE43456B97DD7A793D272D3318F9FE682B844C_m5E8F6142F47C5B5A96F866B2955BAD07AEA28ECA(L_380, (String_t*)NULL, (String_t*)NULL, UQueryExtensions_Q_TisToggle_t27BE43456B97DD7A793D272D3318F9FE682B844C_m5E8F6142F47C5B5A96F866B2955BAD07AEA28ECA_RuntimeMethod_var);
+		U3CU3Ec__DisplayClass94_0_t20DF146D9AAB335C790F7A93C162CC3B2EE4C781* L_382 = V_0;
+		NullCheck(L_382);
+		EventCallback_1_t0FE3F70E94CC4C4904A9F1C171A3DE56EE41F103* L_383 = L_382->___U3CU3E9__5_3;
+		EventCallback_1_t0FE3F70E94CC4C4904A9F1C171A3DE56EE41F103* L_384 = L_383;
+		G_B72_0 = L_384;
+		G_B72_1 = L_381;
+		if (L_384)
 		{
-			G_B73_0 = L_368;
-			G_B73_1 = L_365;
-			goto IL_0817;
+			G_B73_0 = L_384;
+			G_B73_1 = L_381;
+			goto IL_0860;
 		}
 	}
 	{
-		U3CU3Ec__DisplayClass94_0_t20DF146D9AAB335C790F7A93C162CC3B2EE4C781* L_369 = V_0;
-		U3CU3Ec__DisplayClass94_0_t20DF146D9AAB335C790F7A93C162CC3B2EE4C781* L_370 = V_0;
-		EventCallback_1_t0FE3F70E94CC4C4904A9F1C171A3DE56EE41F103* L_371 = (EventCallback_1_t0FE3F70E94CC4C4904A9F1C171A3DE56EE41F103*)il2cpp_codegen_object_new(EventCallback_1_t0FE3F70E94CC4C4904A9F1C171A3DE56EE41F103_il2cpp_TypeInfo_var);
-		NullCheck(L_371);
-		EventCallback_1__ctor_m2AECF13AF3DE354C723AC2C870875E894C4D96C9(L_371, L_370, (intptr_t)((void*)U3CU3Ec__DisplayClass94_0_U3CtableCellU3Eb__5_mCA7330A09967549E631E5E5349725241C94AF862_RuntimeMethod_var), NULL);
-		EventCallback_1_t0FE3F70E94CC4C4904A9F1C171A3DE56EE41F103* L_372 = L_371;
-		V_27 = L_372;
-		NullCheck(L_369);
-		L_369->___U3CU3E9__5_3 = L_372;
-		Il2CppCodeGenWriteBarrier((void**)(&L_369->___U3CU3E9__5_3), (void*)L_372);
-		EventCallback_1_t0FE3F70E94CC4C4904A9F1C171A3DE56EE41F103* L_373 = V_27;
-		G_B73_0 = L_373;
+		U3CU3Ec__DisplayClass94_0_t20DF146D9AAB335C790F7A93C162CC3B2EE4C781* L_385 = V_0;
+		U3CU3Ec__DisplayClass94_0_t20DF146D9AAB335C790F7A93C162CC3B2EE4C781* L_386 = V_0;
+		EventCallback_1_t0FE3F70E94CC4C4904A9F1C171A3DE56EE41F103* L_387 = (EventCallback_1_t0FE3F70E94CC4C4904A9F1C171A3DE56EE41F103*)il2cpp_codegen_object_new(EventCallback_1_t0FE3F70E94CC4C4904A9F1C171A3DE56EE41F103_il2cpp_TypeInfo_var);
+		NullCheck(L_387);
+		EventCallback_1__ctor_m2AECF13AF3DE354C723AC2C870875E894C4D96C9(L_387, L_386, (intptr_t)((void*)U3CU3Ec__DisplayClass94_0_U3CtableCellU3Eb__5_mCA7330A09967549E631E5E5349725241C94AF862_RuntimeMethod_var), NULL);
+		EventCallback_1_t0FE3F70E94CC4C4904A9F1C171A3DE56EE41F103* L_388 = L_387;
+		V_27 = L_388;
+		NullCheck(L_385);
+		L_385->___U3CU3E9__5_3 = L_388;
+		Il2CppCodeGenWriteBarrier((void**)(&L_385->___U3CU3E9__5_3), (void*)L_388);
+		EventCallback_1_t0FE3F70E94CC4C4904A9F1C171A3DE56EE41F103* L_389 = V_27;
+		G_B73_0 = L_389;
 		G_B73_1 = G_B72_1;
 	}
 
-IL_0817:
+IL_0860:
 	{
-		bool L_374;
-		L_374 = INotifyValueChangedExtensions_RegisterValueChangedCallback_TisBoolean_t09A6377A54BE2F9E6985A8149F19234FD7DDFE22_m21346157EFCB13A3F77EDC25116E4898A4C1FB90(G_B73_1, G_B73_0, INotifyValueChangedExtensions_RegisterValueChangedCallback_TisBoolean_t09A6377A54BE2F9E6985A8149F19234FD7DDFE22_m21346157EFCB13A3F77EDC25116E4898A4C1FB90_RuntimeMethod_var);
-		goto IL_08d9;
+		bool L_390;
+		L_390 = INotifyValueChangedExtensions_RegisterValueChangedCallback_TisBoolean_t09A6377A54BE2F9E6985A8149F19234FD7DDFE22_m21346157EFCB13A3F77EDC25116E4898A4C1FB90(G_B73_1, G_B73_0, INotifyValueChangedExtensions_RegisterValueChangedCallback_TisBoolean_t09A6377A54BE2F9E6985A8149F19234FD7DDFE22_m21346157EFCB13A3F77EDC25116E4898A4C1FB90_RuntimeMethod_var);
+		goto IL_0922;
 	}
 
-IL_0822:
+IL_086b:
 	{
 		// else if (currentType.type == "stableau") {
-		TypeDonnee_t327813B35AB71130080569ACD168334ED2D397B1* L_375 = V_4;
-		NullCheck(L_375);
-		String_t* L_376 = L_375->___type_1;
-		bool L_377;
-		L_377 = String_op_Equality_m030E1B219352228970A076136E455C4E568C02C1(L_376, _stringLiteralC187B7086544F0A55881082D374079879919EE9C, NULL);
-		if (!L_377)
+		TypeDonnee_t327813B35AB71130080569ACD168334ED2D397B1* L_391 = V_4;
+		NullCheck(L_391);
+		String_t* L_392 = L_391->___type_1;
+		bool L_393;
+		L_393 = String_op_Equality_m030E1B219352228970A076136E455C4E568C02C1(L_392, _stringLiteralC187B7086544F0A55881082D374079879919EE9C, NULL);
+		if (!L_393)
 		{
-			goto IL_088d;
+			goto IL_08d6;
 		}
 	}
 	{
 		// if (!String.IsNullOrEmpty(value) && value == "chkSousTableau")
-		String_t* L_378 = V_26;
-		bool L_379;
-		L_379 = String_IsNullOrEmpty_mEA9E3FB005AC28FE02E69FCF95A7B8456192B478(L_378, NULL);
-		if (L_379)
+		String_t* L_394 = V_26;
+		bool L_395;
+		L_395 = String_IsNullOrEmpty_mEA9E3FB005AC28FE02E69FCF95A7B8456192B478(L_394, NULL);
+		if (L_395)
 		{
-			goto IL_085b;
+			goto IL_08a4;
 		}
 	}
 	{
-		String_t* L_380 = V_26;
-		bool L_381;
-		L_381 = String_op_Equality_m030E1B219352228970A076136E455C4E568C02C1(L_380, _stringLiteralE45C5C9AD9901CDB34EAAE29EA50E2A3711006B4, NULL);
-		if (!L_381)
+		String_t* L_396 = V_26;
+		bool L_397;
+		L_397 = String_op_Equality_m030E1B219352228970A076136E455C4E568C02C1(L_396, _stringLiteralE45C5C9AD9901CDB34EAAE29EA50E2A3711006B4, NULL);
+		if (!L_397)
 		{
-			goto IL_085b;
+			goto IL_08a4;
 		}
 	}
 	{
 		// currentTemplate.Q<Toggle>().value = true;
-		TemplateContainer_tDF6DDDD82C75A6332F0194C2B39AF157F6342DA2* L_382 = V_17;
+		TemplateContainer_tDF6DDDD82C75A6332F0194C2B39AF157F6342DA2* L_398 = V_17;
 		il2cpp_codegen_runtime_class_init_inline(UQueryExtensions_t1271382882DF1B8FEEDE5EFA510405ABA7BD3426_il2cpp_TypeInfo_var);
-		Toggle_t27BE43456B97DD7A793D272D3318F9FE682B844C* L_383;
-		L_383 = UQueryExtensions_Q_TisToggle_t27BE43456B97DD7A793D272D3318F9FE682B844C_m5E8F6142F47C5B5A96F866B2955BAD07AEA28ECA(L_382, (String_t*)NULL, (String_t*)NULL, UQueryExtensions_Q_TisToggle_t27BE43456B97DD7A793D272D3318F9FE682B844C_m5E8F6142F47C5B5A96F866B2955BAD07AEA28ECA_RuntimeMethod_var);
-		NullCheck(L_383);
-		VirtualActionInvoker1< bool >::Invoke(103 /* System.Void UnityEngine.UIElements.BaseField`1<System.Boolean>::set_value(TValueType) */, L_383, (bool)1);
+		Toggle_t27BE43456B97DD7A793D272D3318F9FE682B844C* L_399;
+		L_399 = UQueryExtensions_Q_TisToggle_t27BE43456B97DD7A793D272D3318F9FE682B844C_m5E8F6142F47C5B5A96F866B2955BAD07AEA28ECA(L_398, (String_t*)NULL, (String_t*)NULL, UQueryExtensions_Q_TisToggle_t27BE43456B97DD7A793D272D3318F9FE682B844C_m5E8F6142F47C5B5A96F866B2955BAD07AEA28ECA_RuntimeMethod_var);
+		NullCheck(L_399);
+		VirtualActionInvoker1< bool >::Invoke(103 /* System.Void UnityEngine.UIElements.BaseField`1<System.Boolean>::set_value(TValueType) */, L_399, (bool)1);
 	}
 
-IL_085b:
+IL_08a4:
 	{
 		// currentTemplate.Q<Toggle>().RegisterValueChangedCallback(evt =>
 		// {
@@ -17448,141 +17565,141 @@ IL_085b:
 		//         this.has_changes = true;
 		//     }
 		// });
-		TemplateContainer_tDF6DDDD82C75A6332F0194C2B39AF157F6342DA2* L_384 = V_17;
+		TemplateContainer_tDF6DDDD82C75A6332F0194C2B39AF157F6342DA2* L_400 = V_17;
 		il2cpp_codegen_runtime_class_init_inline(UQueryExtensions_t1271382882DF1B8FEEDE5EFA510405ABA7BD3426_il2cpp_TypeInfo_var);
-		Toggle_t27BE43456B97DD7A793D272D3318F9FE682B844C* L_385;
-		L_385 = UQueryExtensions_Q_TisToggle_t27BE43456B97DD7A793D272D3318F9FE682B844C_m5E8F6142F47C5B5A96F866B2955BAD07AEA28ECA(L_384, (String_t*)NULL, (String_t*)NULL, UQueryExtensions_Q_TisToggle_t27BE43456B97DD7A793D272D3318F9FE682B844C_m5E8F6142F47C5B5A96F866B2955BAD07AEA28ECA_RuntimeMethod_var);
-		U3CU3Ec__DisplayClass94_0_t20DF146D9AAB335C790F7A93C162CC3B2EE4C781* L_386 = V_0;
-		NullCheck(L_386);
-		EventCallback_1_t0FE3F70E94CC4C4904A9F1C171A3DE56EE41F103* L_387 = L_386->___U3CU3E9__6_4;
-		EventCallback_1_t0FE3F70E94CC4C4904A9F1C171A3DE56EE41F103* L_388 = L_387;
-		G_B79_0 = L_388;
-		G_B79_1 = L_385;
-		if (L_388)
+		Toggle_t27BE43456B97DD7A793D272D3318F9FE682B844C* L_401;
+		L_401 = UQueryExtensions_Q_TisToggle_t27BE43456B97DD7A793D272D3318F9FE682B844C_m5E8F6142F47C5B5A96F866B2955BAD07AEA28ECA(L_400, (String_t*)NULL, (String_t*)NULL, UQueryExtensions_Q_TisToggle_t27BE43456B97DD7A793D272D3318F9FE682B844C_m5E8F6142F47C5B5A96F866B2955BAD07AEA28ECA_RuntimeMethod_var);
+		U3CU3Ec__DisplayClass94_0_t20DF146D9AAB335C790F7A93C162CC3B2EE4C781* L_402 = V_0;
+		NullCheck(L_402);
+		EventCallback_1_t0FE3F70E94CC4C4904A9F1C171A3DE56EE41F103* L_403 = L_402->___U3CU3E9__6_4;
+		EventCallback_1_t0FE3F70E94CC4C4904A9F1C171A3DE56EE41F103* L_404 = L_403;
+		G_B79_0 = L_404;
+		G_B79_1 = L_401;
+		if (L_404)
 		{
-			G_B80_0 = L_388;
-			G_B80_1 = L_385;
-			goto IL_0885;
+			G_B80_0 = L_404;
+			G_B80_1 = L_401;
+			goto IL_08ce;
 		}
 	}
 	{
-		U3CU3Ec__DisplayClass94_0_t20DF146D9AAB335C790F7A93C162CC3B2EE4C781* L_389 = V_0;
-		U3CU3Ec__DisplayClass94_0_t20DF146D9AAB335C790F7A93C162CC3B2EE4C781* L_390 = V_0;
-		EventCallback_1_t0FE3F70E94CC4C4904A9F1C171A3DE56EE41F103* L_391 = (EventCallback_1_t0FE3F70E94CC4C4904A9F1C171A3DE56EE41F103*)il2cpp_codegen_object_new(EventCallback_1_t0FE3F70E94CC4C4904A9F1C171A3DE56EE41F103_il2cpp_TypeInfo_var);
-		NullCheck(L_391);
-		EventCallback_1__ctor_m2AECF13AF3DE354C723AC2C870875E894C4D96C9(L_391, L_390, (intptr_t)((void*)U3CU3Ec__DisplayClass94_0_U3CtableCellU3Eb__6_m3E6777BEB07BF900834613FCD15B5B6C27CE5E83_RuntimeMethod_var), NULL);
-		EventCallback_1_t0FE3F70E94CC4C4904A9F1C171A3DE56EE41F103* L_392 = L_391;
-		V_27 = L_392;
-		NullCheck(L_389);
-		L_389->___U3CU3E9__6_4 = L_392;
-		Il2CppCodeGenWriteBarrier((void**)(&L_389->___U3CU3E9__6_4), (void*)L_392);
-		EventCallback_1_t0FE3F70E94CC4C4904A9F1C171A3DE56EE41F103* L_393 = V_27;
-		G_B80_0 = L_393;
+		U3CU3Ec__DisplayClass94_0_t20DF146D9AAB335C790F7A93C162CC3B2EE4C781* L_405 = V_0;
+		U3CU3Ec__DisplayClass94_0_t20DF146D9AAB335C790F7A93C162CC3B2EE4C781* L_406 = V_0;
+		EventCallback_1_t0FE3F70E94CC4C4904A9F1C171A3DE56EE41F103* L_407 = (EventCallback_1_t0FE3F70E94CC4C4904A9F1C171A3DE56EE41F103*)il2cpp_codegen_object_new(EventCallback_1_t0FE3F70E94CC4C4904A9F1C171A3DE56EE41F103_il2cpp_TypeInfo_var);
+		NullCheck(L_407);
+		EventCallback_1__ctor_m2AECF13AF3DE354C723AC2C870875E894C4D96C9(L_407, L_406, (intptr_t)((void*)U3CU3Ec__DisplayClass94_0_U3CtableCellU3Eb__6_m3E6777BEB07BF900834613FCD15B5B6C27CE5E83_RuntimeMethod_var), NULL);
+		EventCallback_1_t0FE3F70E94CC4C4904A9F1C171A3DE56EE41F103* L_408 = L_407;
+		V_27 = L_408;
+		NullCheck(L_405);
+		L_405->___U3CU3E9__6_4 = L_408;
+		Il2CppCodeGenWriteBarrier((void**)(&L_405->___U3CU3E9__6_4), (void*)L_408);
+		EventCallback_1_t0FE3F70E94CC4C4904A9F1C171A3DE56EE41F103* L_409 = V_27;
+		G_B80_0 = L_409;
 		G_B80_1 = G_B79_1;
 	}
 
-IL_0885:
+IL_08ce:
 	{
-		bool L_394;
-		L_394 = INotifyValueChangedExtensions_RegisterValueChangedCallback_TisBoolean_t09A6377A54BE2F9E6985A8149F19234FD7DDFE22_m21346157EFCB13A3F77EDC25116E4898A4C1FB90(G_B80_1, G_B80_0, INotifyValueChangedExtensions_RegisterValueChangedCallback_TisBoolean_t09A6377A54BE2F9E6985A8149F19234FD7DDFE22_m21346157EFCB13A3F77EDC25116E4898A4C1FB90_RuntimeMethod_var);
-		goto IL_08d9;
+		bool L_410;
+		L_410 = INotifyValueChangedExtensions_RegisterValueChangedCallback_TisBoolean_t09A6377A54BE2F9E6985A8149F19234FD7DDFE22_m21346157EFCB13A3F77EDC25116E4898A4C1FB90(G_B80_1, G_B80_0, INotifyValueChangedExtensions_RegisterValueChangedCallback_TisBoolean_t09A6377A54BE2F9E6985A8149F19234FD7DDFE22_m21346157EFCB13A3F77EDC25116E4898A4C1FB90_RuntimeMethod_var);
+		goto IL_0922;
 	}
 
-IL_088d:
+IL_08d6:
 	{
 		// else if (currentType.type != "text")
-		TypeDonnee_t327813B35AB71130080569ACD168334ED2D397B1* L_395 = V_4;
-		NullCheck(L_395);
-		String_t* L_396 = L_395->___type_1;
-		bool L_397;
-		L_397 = String_op_Inequality_m8C940F3CFC42866709D7CA931B3D77B4BE94BCB6(L_396, _stringLiteralBFCC6EE94F1B7AA05A04750903E25F93A7188AE0, NULL);
-		if (!L_397)
+		TypeDonnee_t327813B35AB71130080569ACD168334ED2D397B1* L_411 = V_4;
+		NullCheck(L_411);
+		String_t* L_412 = L_411->___type_1;
+		bool L_413;
+		L_413 = String_op_Inequality_m8C940F3CFC42866709D7CA931B3D77B4BE94BCB6(L_412, _stringLiteralBFCC6EE94F1B7AA05A04750903E25F93A7188AE0, NULL);
+		if (!L_413)
 		{
-			goto IL_08d9;
+			goto IL_0922;
 		}
 	}
 	{
 		// if (currentTemplate.Q<TextField>() != null)
-		TemplateContainer_tDF6DDDD82C75A6332F0194C2B39AF157F6342DA2* L_398 = V_17;
+		TemplateContainer_tDF6DDDD82C75A6332F0194C2B39AF157F6342DA2* L_414 = V_17;
 		il2cpp_codegen_runtime_class_init_inline(UQueryExtensions_t1271382882DF1B8FEEDE5EFA510405ABA7BD3426_il2cpp_TypeInfo_var);
-		TextField_tDB34369F9468D7F02670087D9444EC23115827D9* L_399;
-		L_399 = UQueryExtensions_Q_TisTextField_tDB34369F9468D7F02670087D9444EC23115827D9_m2CFED749235AD79D994C869E4ACBFE918E628A08(L_398, (String_t*)NULL, (String_t*)NULL, UQueryExtensions_Q_TisTextField_tDB34369F9468D7F02670087D9444EC23115827D9_m2CFED749235AD79D994C869E4ACBFE918E628A08_RuntimeMethod_var);
-		if (!L_399)
+		TextField_tDB34369F9468D7F02670087D9444EC23115827D9* L_415;
+		L_415 = UQueryExtensions_Q_TisTextField_tDB34369F9468D7F02670087D9444EC23115827D9_m2CFED749235AD79D994C869E4ACBFE918E628A08(L_414, (String_t*)NULL, (String_t*)NULL, UQueryExtensions_Q_TisTextField_tDB34369F9468D7F02670087D9444EC23115827D9_m2CFED749235AD79D994C869E4ACBFE918E628A08_RuntimeMethod_var);
+		if (!L_415)
 		{
-			goto IL_08ca;
+			goto IL_0913;
 		}
 	}
 	{
 		// currentTemplate.Q<TextField>().value = "TYPE : " + currentType.type;
-		TemplateContainer_tDF6DDDD82C75A6332F0194C2B39AF157F6342DA2* L_400 = V_17;
+		TemplateContainer_tDF6DDDD82C75A6332F0194C2B39AF157F6342DA2* L_416 = V_17;
 		il2cpp_codegen_runtime_class_init_inline(UQueryExtensions_t1271382882DF1B8FEEDE5EFA510405ABA7BD3426_il2cpp_TypeInfo_var);
-		TextField_tDB34369F9468D7F02670087D9444EC23115827D9* L_401;
-		L_401 = UQueryExtensions_Q_TisTextField_tDB34369F9468D7F02670087D9444EC23115827D9_m2CFED749235AD79D994C869E4ACBFE918E628A08(L_400, (String_t*)NULL, (String_t*)NULL, UQueryExtensions_Q_TisTextField_tDB34369F9468D7F02670087D9444EC23115827D9_m2CFED749235AD79D994C869E4ACBFE918E628A08_RuntimeMethod_var);
-		TypeDonnee_t327813B35AB71130080569ACD168334ED2D397B1* L_402 = V_4;
-		NullCheck(L_402);
-		String_t* L_403 = L_402->___type_1;
-		String_t* L_404;
-		L_404 = String_Concat_m9E3155FB84015C823606188F53B47CB44C444991(_stringLiteral1512B22A829F4421A636A9C52D1A94CBEDAB44C8, L_403, NULL);
-		NullCheck(L_401);
-		VirtualActionInvoker1< String_t* >::Invoke(103 /* System.Void UnityEngine.UIElements.BaseField`1<System.String>::set_value(TValueType) */, L_401, L_404);
+		TextField_tDB34369F9468D7F02670087D9444EC23115827D9* L_417;
+		L_417 = UQueryExtensions_Q_TisTextField_tDB34369F9468D7F02670087D9444EC23115827D9_m2CFED749235AD79D994C869E4ACBFE918E628A08(L_416, (String_t*)NULL, (String_t*)NULL, UQueryExtensions_Q_TisTextField_tDB34369F9468D7F02670087D9444EC23115827D9_m2CFED749235AD79D994C869E4ACBFE918E628A08_RuntimeMethod_var);
+		TypeDonnee_t327813B35AB71130080569ACD168334ED2D397B1* L_418 = V_4;
+		NullCheck(L_418);
+		String_t* L_419 = L_418->___type_1;
+		String_t* L_420;
+		L_420 = String_Concat_m9E3155FB84015C823606188F53B47CB44C444991(_stringLiteral1512B22A829F4421A636A9C52D1A94CBEDAB44C8, L_419, NULL);
+		NullCheck(L_417);
+		VirtualActionInvoker1< String_t* >::Invoke(103 /* System.Void UnityEngine.UIElements.BaseField`1<System.String>::set_value(TValueType) */, L_417, L_420);
 	}
 
-IL_08ca:
+IL_0913:
 	{
 		// handleTextareaChange(currentTemplate.Q<TextField>());
-		TemplateContainer_tDF6DDDD82C75A6332F0194C2B39AF157F6342DA2* L_405 = V_17;
+		TemplateContainer_tDF6DDDD82C75A6332F0194C2B39AF157F6342DA2* L_421 = V_17;
 		il2cpp_codegen_runtime_class_init_inline(UQueryExtensions_t1271382882DF1B8FEEDE5EFA510405ABA7BD3426_il2cpp_TypeInfo_var);
-		TextField_tDB34369F9468D7F02670087D9444EC23115827D9* L_406;
-		L_406 = UQueryExtensions_Q_TisTextField_tDB34369F9468D7F02670087D9444EC23115827D9_m2CFED749235AD79D994C869E4ACBFE918E628A08(L_405, (String_t*)NULL, (String_t*)NULL, UQueryExtensions_Q_TisTextField_tDB34369F9468D7F02670087D9444EC23115827D9_m2CFED749235AD79D994C869E4ACBFE918E628A08_RuntimeMethod_var);
-		ContenuRapportManager_handleTextareaChange_mF83FE58524EA71CF5A6DBB0112D67131F5B1DB47(__this, L_406, NULL);
+		TextField_tDB34369F9468D7F02670087D9444EC23115827D9* L_422;
+		L_422 = UQueryExtensions_Q_TisTextField_tDB34369F9468D7F02670087D9444EC23115827D9_m2CFED749235AD79D994C869E4ACBFE918E628A08(L_421, (String_t*)NULL, (String_t*)NULL, UQueryExtensions_Q_TisTextField_tDB34369F9468D7F02670087D9444EC23115827D9_m2CFED749235AD79D994C869E4ACBFE918E628A08_RuntimeMethod_var);
+		ContenuRapportManager_handleTextareaChange_mF83FE58524EA71CF5A6DBB0112D67131F5B1DB47(__this, L_422, NULL);
 	}
 
-IL_08d9:
+IL_0922:
 	{
 		// instanceTemplateCelluleRep.Q<VisualElement>("cellule").Add(currentTemplate);
-		TemplateContainer_tDF6DDDD82C75A6332F0194C2B39AF157F6342DA2* L_407 = V_2;
+		TemplateContainer_tDF6DDDD82C75A6332F0194C2B39AF157F6342DA2* L_423 = V_2;
 		il2cpp_codegen_runtime_class_init_inline(UQueryExtensions_t1271382882DF1B8FEEDE5EFA510405ABA7BD3426_il2cpp_TypeInfo_var);
-		VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_408;
-		L_408 = UQueryExtensions_Q_TisVisualElement_t2667F9D19E62C7A315927506C06F223AB9234115_m9FBF22C0E270F6EC6772878355A935E4AC2119EB(L_407, _stringLiteralCD5E467F98DA9AF641D8679674E430D446B6D317, (String_t*)NULL, UQueryExtensions_Q_TisVisualElement_t2667F9D19E62C7A315927506C06F223AB9234115_m9FBF22C0E270F6EC6772878355A935E4AC2119EB_RuntimeMethod_var);
-		TemplateContainer_tDF6DDDD82C75A6332F0194C2B39AF157F6342DA2* L_409 = V_17;
-		NullCheck(L_408);
-		VisualElement_Add_mE2571CCB23C09103F8732EEC73833683F7236A7F(L_408, L_409, NULL);
+		VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_424;
+		L_424 = UQueryExtensions_Q_TisVisualElement_t2667F9D19E62C7A315927506C06F223AB9234115_m9FBF22C0E270F6EC6772878355A935E4AC2119EB(L_423, _stringLiteralCD5E467F98DA9AF641D8679674E430D446B6D317, (String_t*)NULL, UQueryExtensions_Q_TisVisualElement_t2667F9D19E62C7A315927506C06F223AB9234115_m9FBF22C0E270F6EC6772878355A935E4AC2119EB_RuntimeMethod_var);
+		TemplateContainer_tDF6DDDD82C75A6332F0194C2B39AF157F6342DA2* L_425 = V_17;
+		NullCheck(L_424);
+		VisualElement_Add_mE2571CCB23C09103F8732EEC73833683F7236A7F(L_424, L_425, NULL);
 		// noLigne++;
-		int32_t L_410 = V_6;
-		V_6 = ((int32_t)il2cpp_codegen_add(L_410, 1));
+		int32_t L_426 = V_6;
+		V_6 = ((int32_t)il2cpp_codegen_add(L_426, 1));
 	}
 
-IL_08f2:
+IL_093b:
 	{
-		int32_t L_411 = V_12;
-		V_12 = ((int32_t)il2cpp_codegen_add(L_411, 1));
+		int32_t L_427 = V_12;
+		V_12 = ((int32_t)il2cpp_codegen_add(L_427, 1));
 	}
 
-IL_08f8:
+IL_0941:
 	{
 		// foreach (DonneeItem item in currentType.items)
-		int32_t L_412 = V_12;
-		DonneeItemU5BU5D_t42699C264DDCDC91AE5C218EC8EF8903FF899DC5* L_413 = V_11;
-		NullCheck(L_413);
-		if ((((int32_t)L_412) < ((int32_t)((int32_t)(((RuntimeArray*)L_413)->max_length)))))
+		int32_t L_428 = V_12;
+		DonneeItemU5BU5D_t42699C264DDCDC91AE5C218EC8EF8903FF899DC5* L_429 = V_11;
+		NullCheck(L_429);
+		if ((((int32_t)L_428) < ((int32_t)((int32_t)(((RuntimeArray*)L_429)->max_length)))))
 		{
 			goto IL_04c3;
 		}
 	}
 
-IL_0903:
+IL_094c:
 	{
 		// tpl_ligne.Q<VisualElement>("ligne").Add(instanceTemplateCelluleRep);
-		TemplateContainer_tDF6DDDD82C75A6332F0194C2B39AF157F6342DA2* L_414 = ___0_tpl_ligne;
+		TemplateContainer_tDF6DDDD82C75A6332F0194C2B39AF157F6342DA2* L_430 = ___0_tpl_ligne;
 		il2cpp_codegen_runtime_class_init_inline(UQueryExtensions_t1271382882DF1B8FEEDE5EFA510405ABA7BD3426_il2cpp_TypeInfo_var);
-		VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_415;
-		L_415 = UQueryExtensions_Q_TisVisualElement_t2667F9D19E62C7A315927506C06F223AB9234115_m9FBF22C0E270F6EC6772878355A935E4AC2119EB(L_414, _stringLiteral6173C9D8B8F8FD46EA9AAC887AEC4C6DCE3EB358, (String_t*)NULL, UQueryExtensions_Q_TisVisualElement_t2667F9D19E62C7A315927506C06F223AB9234115_m9FBF22C0E270F6EC6772878355A935E4AC2119EB_RuntimeMethod_var);
-		TemplateContainer_tDF6DDDD82C75A6332F0194C2B39AF157F6342DA2* L_416 = V_2;
-		NullCheck(L_415);
-		VisualElement_Add_mE2571CCB23C09103F8732EEC73833683F7236A7F(L_415, L_416, NULL);
+		VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_431;
+		L_431 = UQueryExtensions_Q_TisVisualElement_t2667F9D19E62C7A315927506C06F223AB9234115_m9FBF22C0E270F6EC6772878355A935E4AC2119EB(L_430, _stringLiteral6173C9D8B8F8FD46EA9AAC887AEC4C6DCE3EB358, (String_t*)NULL, UQueryExtensions_Q_TisVisualElement_t2667F9D19E62C7A315927506C06F223AB9234115_m9FBF22C0E270F6EC6772878355A935E4AC2119EB_RuntimeMethod_var);
+		TemplateContainer_tDF6DDDD82C75A6332F0194C2B39AF157F6342DA2* L_432 = V_2;
+		NullCheck(L_431);
+		VisualElement_Add_mE2571CCB23C09103F8732EEC73833683F7236A7F(L_431, L_432, NULL);
 		// return instanceTemplateCelluleRep;
-		TemplateContainer_tDF6DDDD82C75A6332F0194C2B39AF157F6342DA2* L_417 = V_2;
-		return L_417;
+		TemplateContainer_tDF6DDDD82C75A6332F0194C2B39AF157F6342DA2* L_433 = V_2;
+		return L_433;
 	}
 }
 // System.Collections.Generic.List`1<UnityEngine.UIElements.TemplateContainer> ContenuRapportManager::Table(System.String,System.String,Champ,UnityEngine.UIElements.VisualElement,System.Int32,System.Int32)

@@ -1992,6 +1992,12 @@ struct Parametre_tD66492969FD6D0B3E3E7AF0075994E8F6C2432EA  : public RuntimeObje
 	int32_t ___valeur_source_38;
 	// System.Int32 Parametre::valeur_destination
 	int32_t ___valeur_destination_39;
+	// System.Single Parametre::min
+	float ___min_40;
+	// System.Single Parametre::max
+	float ___max_41;
+	// System.Single Parametre::step
+	float ___step_42;
 };
 
 // PieceJointe
