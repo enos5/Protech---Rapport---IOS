@@ -11,7 +11,7 @@ workflows:
         bundle_identifier: com.protech.service
       vars:
         BUNDLE_ID: "com.protech.service"
-        XCODE_PROJECT: "Unity-iPhone.xcodeproj"
+        XCODE_PROJECT: "ios-export/Unity-iPhone.xcodeproj"
         XCODE_SCHEME: "Unity-iPhone"
         APP_STORE_APPLE_ID: 6756748642
       xcode: latest # <-- set to specific version e.g. 14.3, 15.0 to avoid unexpected updates.
@@ -21,7 +21,7 @@ workflows:
         script: xcode-project use-profiles
       - name: Increment build number
         script: | 
-          cd $CM_BUILD_DIR
+          cd "$CM_BUILD_DIR/ios-export"
           LATEST_BUILD_NUMBER=$(app-store-connect get-latest-app-store-build-number "$APP_STORE_APPLE_ID")
           agvtool new-version -all $(($LATEST_BUILD_NUMBER + 1))
       - name: Build ipa for distribution
