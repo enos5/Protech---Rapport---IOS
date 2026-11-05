@@ -546,10 +546,6 @@ void RegisterAllStrippedInternalCalls()
 		void Register_UnityEngine_AudioClip_GetData();
 		Register_UnityEngine_AudioClip_GetData();
 
-		//System.Boolean UnityEngine.AudioClip::SetData(UnityEngine.AudioClip,System.Single[],System.Int32,System.Int32)
-		void Register_UnityEngine_AudioClip_SetData();
-		Register_UnityEngine_AudioClip_SetData();
-
 		//System.Int32 UnityEngine.AudioClip::get_channels()
 		void Register_UnityEngine_AudioClip_get_channels();
 		Register_UnityEngine_AudioClip_get_channels();
@@ -569,14 +565,6 @@ void RegisterAllStrippedInternalCalls()
 		//System.String UnityEngine.AudioClip::GetName()
 		void Register_UnityEngine_AudioClip_GetName();
 		Register_UnityEngine_AudioClip_GetName();
-
-		//System.Void UnityEngine.AudioClip::CreateUserSound(System.String,System.Int32,System.Int32,System.Int32,System.Boolean)
-		void Register_UnityEngine_AudioClip_CreateUserSound();
-		Register_UnityEngine_AudioClip_CreateUserSound();
-
-		//UnityEngine.AudioClip UnityEngine.AudioClip::Construct_Internal()
-		void Register_UnityEngine_AudioClip_Construct_Internal();
-		Register_UnityEngine_AudioClip_Construct_Internal();
 
 	//End Registrations for type : UnityEngine.AudioClip
 
@@ -1414,10 +1402,6 @@ void RegisterAllStrippedInternalCalls()
 		void Register_UnityEngine_GameObject_Internal_AddComponentWithType();
 		Register_UnityEngine_GameObject_Internal_AddComponentWithType();
 
-		//UnityEngine.GameObject UnityEngine.GameObject::CreatePrimitive(UnityEngine.PrimitiveType)
-		void Register_UnityEngine_GameObject_CreatePrimitive();
-		Register_UnityEngine_GameObject_CreatePrimitive();
-
 		//UnityEngine.GameObject UnityEngine.GameObject::Find(System.String)
 		void Register_UnityEngine_GameObject_Find();
 		Register_UnityEngine_GameObject_Find();
@@ -2170,10 +2154,6 @@ void RegisterAllStrippedInternalCalls()
 		void Register_UnityEngine_Material_set_shader();
 		Register_UnityEngine_Material_set_shader();
 
-		//UnityEngine.Shader UnityEngine.Material::get_shader()
-		void Register_UnityEngine_Material_get_shader();
-		Register_UnityEngine_Material_get_shader();
-
 		//UnityEngine.Texture UnityEngine.Material::GetTextureImpl(System.Int32)
 		void Register_UnityEngine_Material_GetTextureImpl();
 		Register_UnityEngine_Material_GetTextureImpl();
@@ -2468,6 +2448,18 @@ void RegisterAllStrippedInternalCalls()
 
 	//End Registrations for type : UnityEngine.Networking.DownloadHandlerBuffer
 
+	//Start Registrations for type : UnityEngine.Networking.DownloadHandlerFile
+
+		//System.IntPtr UnityEngine.Networking.DownloadHandlerFile::Create(UnityEngine.Networking.DownloadHandlerFile,System.String,System.Boolean)
+		void Register_UnityEngine_Networking_DownloadHandlerFile_Create();
+		Register_UnityEngine_Networking_DownloadHandlerFile_Create();
+
+		//System.Void UnityEngine.Networking.DownloadHandlerFile::set_removeFileOnAbort(System.Boolean)
+		void Register_UnityEngine_Networking_DownloadHandlerFile_set_removeFileOnAbort();
+		Register_UnityEngine_Networking_DownloadHandlerFile_set_removeFileOnAbort();
+
+	//End Registrations for type : UnityEngine.Networking.DownloadHandlerFile
+
 	//Start Registrations for type : UnityEngine.Networking.DownloadHandlerTexture
 
 		//System.IntPtr UnityEngine.Networking.DownloadHandlerTexture::Create(UnityEngine.Networking.DownloadHandlerTexture,System.Boolean)
@@ -2649,6 +2641,10 @@ void RegisterAllStrippedInternalCalls()
 		//UnityEngine.Object UnityEngine.Object::Internal_InstantiateSingle_Injected(UnityEngine.Object,UnityEngine.Vector3&,UnityEngine.Quaternion&)
 		void Register_UnityEngine_Object_Internal_InstantiateSingle_Injected();
 		Register_UnityEngine_Object_Internal_InstantiateSingle_Injected();
+
+		//UnityEngine.Object[] UnityEngine.Object::FindObjectsOfType(System.Type,System.Boolean)
+		void Register_UnityEngine_Object_FindObjectsOfType();
+		Register_UnityEngine_Object_FindObjectsOfType();
 
 	//End Registrations for type : UnityEngine.Object
 
@@ -3289,10 +3285,6 @@ void RegisterAllStrippedInternalCalls()
 	//End Registrations for type : UnityEngine.ScriptingRuntime
 
 	//Start Registrations for type : UnityEngine.Shader
-
-		//System.Boolean UnityEngine.Shader::get_isSupported()
-		void Register_UnityEngine_Shader_get_isSupported();
-		Register_UnityEngine_Shader_get_isSupported();
 
 		//System.Int32 UnityEngine.Shader::PropertyToID(System.String)
 		void Register_UnityEngine_Shader_PropertyToID();
@@ -4057,10 +4049,6 @@ void RegisterAllStrippedInternalCalls()
 		//UnityEngine.Transform UnityEngine.Transform::GetParent()
 		void Register_UnityEngine_Transform_GetParent();
 		Register_UnityEngine_Transform_GetParent();
-
-		//UnityEngine.Transform UnityEngine.Transform::GetRoot()
-		void Register_UnityEngine_Transform_GetRoot();
-		Register_UnityEngine_Transform_GetRoot();
 
 	//End Registrations for type : UnityEngine.Transform
 

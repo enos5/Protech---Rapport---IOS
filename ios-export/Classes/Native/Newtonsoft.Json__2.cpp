@@ -17818,7 +17818,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool JsonSerializerInternalReader_ReadMetadat
 		JToken_tFD7D9015F3F97A09AD93E439ACE894D12C06E8B3* L_11 = V_5;
 		NullCheck(L_11);
 		int32_t L_12;
-		L_12 = VirtualFuncInvoker0< int32_t >::Invoke(12 /* Newtonsoft.Json.Linq.JTokenType Newtonsoft.Json.Linq.JToken::get_Type() */, L_11);
+		L_12 = VirtualFuncInvoker0< int32_t >::Invoke(13 /* Newtonsoft.Json.Linq.JTokenType Newtonsoft.Json.Linq.JToken::get_Type() */, L_11);
 		if ((((int32_t)L_12) == ((int32_t)8)))
 		{
 			goto IL_0074;
@@ -17828,7 +17828,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool JsonSerializerInternalReader_ReadMetadat
 		JToken_tFD7D9015F3F97A09AD93E439ACE894D12C06E8B3* L_13 = V_5;
 		NullCheck(L_13);
 		int32_t L_14;
-		L_14 = VirtualFuncInvoker0< int32_t >::Invoke(12 /* Newtonsoft.Json.Linq.JTokenType Newtonsoft.Json.Linq.JToken::get_Type() */, L_13);
+		L_14 = VirtualFuncInvoker0< int32_t >::Invoke(13 /* Newtonsoft.Json.Linq.JTokenType Newtonsoft.Json.Linq.JToken::get_Type() */, L_13);
 		if ((((int32_t)L_14) == ((int32_t)((int32_t)10))))
 		{
 			goto IL_0074;
@@ -28700,7 +28700,7 @@ IL_0186:
 		JsonConverterU5BU5D_tF69203E66D4FCB82A6F64A24EF7785E26E9E957E* L_95;
 		L_95 = Enumerable_ToArray_TisJsonConverter_tE765D011CD34CDF28759E6D58FDBF05AA5EA0F16_mFA37C5F56616A7689513E08FDE5AE05065DBA94B(L_94, Enumerable_ToArray_TisJsonConverter_tE765D011CD34CDF28759E6D58FDBF05AA5EA0F16_mFA37C5F56616A7689513E08FDE5AE05065DBA94B_RuntimeMethod_var);
 		NullCheck(((JToken_tFD7D9015F3F97A09AD93E439ACE894D12C06E8B3*)CastclassClass((RuntimeObject*)L_91, JToken_tFD7D9015F3F97A09AD93E439ACE894D12C06E8B3_il2cpp_TypeInfo_var)));
-		VirtualActionInvoker2< JsonWriter_t1750495CE81BD2D7BF7335A8468E2F960CA3ABC3*, JsonConverterU5BU5D_tF69203E66D4FCB82A6F64A24EF7785E26E9E957E* >::Invoke(17 /* System.Void Newtonsoft.Json.Linq.JToken::WriteTo(Newtonsoft.Json.JsonWriter,Newtonsoft.Json.JsonConverter[]) */, ((JToken_tFD7D9015F3F97A09AD93E439ACE894D12C06E8B3*)CastclassClass((RuntimeObject*)L_91, JToken_tFD7D9015F3F97A09AD93E439ACE894D12C06E8B3_il2cpp_TypeInfo_var)), L_92, L_95);
+		VirtualActionInvoker2< JsonWriter_t1750495CE81BD2D7BF7335A8468E2F960CA3ABC3*, JsonConverterU5BU5D_tF69203E66D4FCB82A6F64A24EF7785E26E9E957E* >::Invoke(19 /* System.Void Newtonsoft.Json.Linq.JToken::WriteTo(Newtonsoft.Json.JsonWriter,Newtonsoft.Json.JsonConverter[]) */, ((JToken_tFD7D9015F3F97A09AD93E439ACE894D12C06E8B3*)CastclassClass((RuntimeObject*)L_91, JToken_tFD7D9015F3F97A09AD93E439ACE894D12C06E8B3_il2cpp_TypeInfo_var)), L_92, L_95);
 		return;
 	}
 }
