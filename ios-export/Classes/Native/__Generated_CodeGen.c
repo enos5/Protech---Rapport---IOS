@@ -26,8 +26,8 @@ static Il2CppMethodPointer s_methodPointers[3] =
 static const int32_t s_InvokerIndices[3] = 
 {
 	0,
-	6359,
-	6359,
+	6366,
+	6366,
 };
 IL2CPP_EXTERN_C const Il2CppCodeGenModule g___Generated_CodeGenModule;
 const Il2CppCodeGenModule g___Generated_CodeGenModule = 

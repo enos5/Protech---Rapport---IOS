@@ -1,1 +1,5 @@
-No Required Reason C# APIs detected
+File timestamp APIs usage:
+	"System.IO.File::GetLastWriteTime" used in assemblies:
+		Assembly-CSharp
+	"System.IO.File::GetLastWriteTimeUtc" used in assemblies:
+		Assembly-CSharp
