@@ -23,7 +23,7 @@
     <key>CFBundlePackageType</key>
     <string>APPL</string>
     <key>CFBundleShortVersionString</key>
-    <string>1.3.4</string>
+    <string>1.3.5</string>
     <key>CFBundleVersion</key>
     <string>0</string>
     <key>LSRequiresIPhoneOS</key>
@@ -38,9 +38,9 @@
     <key>NSMicrophoneUsageDescription</key>
     <string>The app will capture microphone input in the recorded video.</string>
     <key>NSPhotoLibraryAddUsageDescription</key>
-    <string>The app requires access to Photos to save media to it.</string>
+    <string>Enregistrer des médias dans votre photothèque.</string>
     <key>NSPhotoLibraryUsageDescription</key>
-    <string>The app requires access to Photos to interact with it.</string>
+    <string>Choisir des photos et des vidéos à joindre à vos rapports.</string>
     <key>PHPhotoLibraryPreventAutomaticLimitedAccessAlert</key>
     <true />
     <key>UILaunchStoryboardName</key>

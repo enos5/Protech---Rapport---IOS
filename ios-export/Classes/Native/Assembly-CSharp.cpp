@@ -8097,8 +8097,8 @@ inline WebCamPhotoCamera_t9012ECCDB28660ED206FDE043EBBF32F914995F8* Component_Ge
 }
 // System.Int32 UnityEngine.Screen::get_width()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Screen_get_width_mF608FF3252213E7EFA1F0D2F744C28110E9E5AC9 (const RuntimeMethod* method) ;
-// System.Void WebCamPhotoCamera::TakePicture(System.Int32,System.Boolean,System.String,System.String,System.String)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WebCamPhotoCamera_TakePicture_m3CB62E6C0E46EA7C1D839B9ACFA3ABDFF434B406 (WebCamPhotoCamera_t9012ECCDB28660ED206FDE043EBBF32F914995F8* __this, int32_t ___0_maxSize, bool ___1_estOnglet, String_t* ___2_idChamp, String_t* ___3_titreChampAffichage, String_t* ___4_idSection, const RuntimeMethod* method) ;
+// System.Void WebCamPhotoCamera::ChoosePhotoSource(System.Int32,System.Boolean,System.String,System.String,System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WebCamPhotoCamera_ChoosePhotoSource_m334B45A0DD37CBEC391F4440C2A14325FDC0F7E6 (WebCamPhotoCamera_t9012ECCDB28660ED206FDE043EBBF32F914995F8* __this, int32_t ___0_maxSize, bool ___1_estOnglet, String_t* ___2_idChamp, String_t* ___3_titreChampAffichage, String_t* ___4_idSection, const RuntimeMethod* method) ;
 // System.Boolean NativeCamera::IsCameraBusy()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool NativeCamera_IsCameraBusy_m3373F1A16F70303B7F53D47A1143BED4152C2F54 (const RuntimeMethod* method) ;
 // T UnityEngine.Component::GetComponent<VideoRecording>()
@@ -8106,8 +8106,8 @@ inline VideoRecording_tF9BDBE286EFA7F9DE6C9B5051F1657BAB17F49B0* Component_GetCo
 {
 	return ((  VideoRecording_tF9BDBE286EFA7F9DE6C9B5051F1657BAB17F49B0* (*) (Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3*, const RuntimeMethod*))Component_GetComponent_TisRuntimeObject_m7181F81CAEC2CF53F5D2BC79B7425C16E1F80D33_gshared)(__this, method);
 }
-// System.Void VideoRecording::RecordVideo(System.Boolean,System.String,System.String,System.String)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VideoRecording_RecordVideo_m1BED5AECF57D6C5EAD83F816D575A73BB23D9EA7 (VideoRecording_tF9BDBE286EFA7F9DE6C9B5051F1657BAB17F49B0* __this, bool ___0_estOnglet, String_t* ___1_idChamp, String_t* ___2_titreChampAffichage, String_t* ___3_idSection, const RuntimeMethod* method) ;
+// System.Void VideoRecording::ChooseVideoSource(System.Boolean,System.String,System.String,System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VideoRecording_ChooseVideoSource_m686B025DFDCB2BA66F9B3F0722B2193625F7B56E (VideoRecording_tF9BDBE286EFA7F9DE6C9B5051F1657BAB17F49B0* __this, bool ___0_estOnglet, String_t* ___1_idChamp, String_t* ___2_titreChampAffichage, String_t* ___3_idSection, const RuntimeMethod* method) ;
 // System.Boolean UnityEngine.UIElements.StyleEnum`1<UnityEngine.UIElements.DisplayStyle>::op_Equality(UnityEngine.UIElements.StyleEnum`1<T>,UnityEngine.UIElements.StyleEnum`1<T>)
 inline bool StyleEnum_1_op_Equality_m0A305FB462EE2B52AD8BBC87CFCDAA27BA4B94CD (StyleEnum_1_t3B02FFF55849C9C8E6A7C0AA9C7E5F65F10C9C69 ___0_lhs, StyleEnum_1_t3B02FFF55849C9C8E6A7C0AA9C7E5F65F10C9C69 ___1_rhs, const RuntimeMethod* method)
 {
@@ -24747,7 +24747,7 @@ IL_0047:
 
 IL_0062:
 	{
-		// GetComponent<WebCamPhotoCamera>().TakePicture(Screen.width, handlerParams.isOnglet, handlerParams.idChamp, handlerParams.titreAffichage, handlerParams.idSection);
+		// GetComponent<WebCamPhotoCamera>().ChoosePhotoSource(Screen.width, handlerParams.isOnglet, handlerParams.idChamp, handlerParams.titreAffichage, handlerParams.idSection);
 		WebCamPhotoCamera_t9012ECCDB28660ED206FDE043EBBF32F914995F8* L_14;
 		L_14 = Component_GetComponent_TisWebCamPhotoCamera_t9012ECCDB28660ED206FDE043EBBF32F914995F8_mEA0D6AFB50176701B61A96D28ECDD2D99993A38A(__this, Component_GetComponent_TisWebCamPhotoCamera_t9012ECCDB28660ED206FDE043EBBF32F914995F8_mEA0D6AFB50176701B61A96D28ECDD2D99993A38A_RuntimeMethod_var);
 		int32_t L_15;
@@ -24765,7 +24765,7 @@ IL_0062:
 		NullCheck(L_22);
 		String_t* L_23 = L_22->___idSection_1;
 		NullCheck(L_14);
-		WebCamPhotoCamera_TakePicture_m3CB62E6C0E46EA7C1D839B9ACFA3ABDFF434B406(L_14, L_15, L_17, L_19, L_21, L_23, NULL);
+		WebCamPhotoCamera_ChoosePhotoSource_m334B45A0DD37CBEC391F4440C2A14325FDC0F7E6(L_14, L_15, L_17, L_19, L_21, L_23, NULL);
 		// GameObject.Find("UINotesRapport").GetComponent<NotesManager>().ResetPopupContent();
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_24;
 		L_24 = GameObject_Find_m7A669B4EEC2617AB82F6E3FF007CDCD9F21DB300(_stringLiteral65D4409A6586BDCF234E20D69672EF2428A96F59, NULL);
@@ -24899,7 +24899,7 @@ IL_004e:
 
 IL_0069:
 	{
-		// GetComponent<VideoRecording>().RecordVideo(handlerParams.isOnglet, handlerParams.idChamp, handlerParams.titreAffichage, handlerParams.idSection);
+		// GetComponent<VideoRecording>().ChooseVideoSource(handlerParams.isOnglet, handlerParams.idChamp, handlerParams.titreAffichage, handlerParams.idSection);
 		VideoRecording_tF9BDBE286EFA7F9DE6C9B5051F1657BAB17F49B0* L_15;
 		L_15 = Component_GetComponent_TisVideoRecording_tF9BDBE286EFA7F9DE6C9B5051F1657BAB17F49B0_m40B57459E0B547B847E124912B16C475D86E707B(__this, Component_GetComponent_TisVideoRecording_tF9BDBE286EFA7F9DE6C9B5051F1657BAB17F49B0_m40B57459E0B547B847E124912B16C475D86E707B_RuntimeMethod_var);
 		handlerNotesParams_tCA2C1C1152114492B2F94923DD8B0016191E41E1* L_16 = ___1_handlerParams;
@@ -24915,7 +24915,7 @@ IL_0069:
 		NullCheck(L_22);
 		String_t* L_23 = L_22->___idSection_1;
 		NullCheck(L_15);
-		VideoRecording_RecordVideo_m1BED5AECF57D6C5EAD83F816D575A73BB23D9EA7(L_15, L_17, L_19, L_21, L_23, NULL);
+		VideoRecording_ChooseVideoSource_m686B025DFDCB2BA66F9B3F0722B2193625F7B56E(L_15, L_17, L_19, L_21, L_23, NULL);
 		// GameObject.Find("UINotesRapport").GetComponent<NotesManager>().ResetPopupContent();
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_24;
 		L_24 = GameObject_Find_m7A669B4EEC2617AB82F6E3FF007CDCD9F21DB300(_stringLiteral65D4409A6586BDCF234E20D69672EF2428A96F59, NULL);

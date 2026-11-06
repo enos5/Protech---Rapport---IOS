@@ -936,8 +936,10 @@ struct UriInfo_t5F91F77A93545DDDA6BB24A609BAF5E232CC1A09;
 struct CustomStyleAccess_t170C852102B4D09FB478B620A75B14D096F9F2B1;
 // UnityEngine.UIElements.VisualElement/TypeData
 struct TypeData_t01D670B4E71B5571B38C7412B1E652A47D6AF66A;
-// ReportAttachmentStore/Context/<>c__DisplayClass12_0
-struct U3CU3Ec__DisplayClass12_0_t36F0CB8D7A59DEE4C8739A8A564C0696503AA56B;
+// ReportAttachmentStore/Context/<>c__DisplayClass10_0
+struct U3CU3Ec__DisplayClass10_0_tE557F110F07AFEB998305B94E43B6001D4178E38;
+// ReportAttachmentStore/Context/<>c__DisplayClass14_0
+struct U3CU3Ec__DisplayClass14_0_t8037E1808819F6EC927A8DFCC390697D15FE5A3D;
 // ReportAttachmentStore/Context/<>c__DisplayClass9_0
 struct U3CU3Ec__DisplayClass9_0_t17693E4D2FBC1034CDCA43E9740B56BB98383A86;
 // SyncConflictModal/Session/<>c__DisplayClass36_0
@@ -1658,9 +1660,9 @@ IL2CPP_EXTERN_C const RuntimeMethod* U3CU3Ec_U3CValidateReviewU3Eb__7_5_m30D148D
 IL2CPP_EXTERN_C const RuntimeMethod* U3CU3Ec__DisplayClass0_0_U3CEntryPointU3Eb__0_m0DDA9F0175EDD17FC2EBA871BF455D1B1AE0E61C_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* U3CU3Ec__DisplayClass10_0_U3CPrepareFormForDisplayU3Eb__2_m4154ADD1CCCD8D1700F227EBC655C544DF4905FA_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* U3CU3Ec__DisplayClass12_0_U3CBuildSummaryU3Eb__0_m91A16D1A25C20067AC66B77C816DB7EB257968EF_RuntimeMethod_var;
-IL2CPP_EXTERN_C const RuntimeMethod* U3CU3Ec__DisplayClass12_0_U3CSaveDrawingU3Eb__2_mFA050D9E231B35201C46E06DC2DBEE76DA9D3263_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* U3CU3Ec__DisplayClass13_0_U3COnUpU3Eb__0_m0D0882571606CFAB4BC482A6668E68ADE839255C_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* U3CU3Ec__DisplayClass14_0_U3CAnswerMapU3Eb__3_mF0210F7696136CF7E1BF7E1E4FFE1B4FB4D67C2E_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* U3CU3Ec__DisplayClass14_0_U3CSaveDrawingU3Eb__2_m02421162A6E55124328702CDEF020AE7F68FB792_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* U3CU3Ec__DisplayClass21_0_U3CTryReadCachedReviewU3Eb__0_m8B52C1D1DEDD14AC5914651CE034B54B620A79C2_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* U3CU3Ec__DisplayClass25_0_U3CWriteReviewCacheU3Eb__0_m2056609616B6A6DDB1A6FDC541B2C481D2586A76_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* U3CU3Ec__DisplayClass27_0_U3CCacheMediaInBackgroundU3Eb__0_m5E07BD5A3568E45FA0F855BBED6C9D26AF8F1897_RuntimeMethod_var;
@@ -3244,6 +3246,13 @@ struct U3CU3Ec__DisplayClass0_0_tFE99D10808F4B79B2EF6AE274B50DF0613F80A7E  : pub
 	MainScript_tE5DA41EF9F6C72F24338683BF923785400FDC5FF* ___owner_0;
 };
 
+// ReportAttachmentStore/Context/<>c__DisplayClass10_0
+struct U3CU3Ec__DisplayClass10_0_tE557F110F07AFEB998305B94E43B6001D4178E38  : public RuntimeObject
+{
+	// System.Byte[] ReportAttachmentStore/Context/<>c__DisplayClass10_0::bytes
+	ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___bytes_0;
+};
+
 // ReportAttachmentStore/Context/<>c__DisplayClass9_0
 struct U3CU3Ec__DisplayClass9_0_t17693E4D2FBC1034CDCA43E9740B56BB98383A86  : public RuntimeObject
 {
@@ -4672,20 +4681,20 @@ struct FileStatusFlags_tB53E2B9A54305CDCEA49884DEEDB8C62C8ACC9C9
 	int32_t ___value___2;
 };
 
-// ReportAttachmentStore/Context/<>c__DisplayClass12_0
-struct U3CU3Ec__DisplayClass12_0_t36F0CB8D7A59DEE4C8739A8A564C0696503AA56B  : public RuntimeObject
+// ReportAttachmentStore/Context/<>c__DisplayClass14_0
+struct U3CU3Ec__DisplayClass14_0_t8037E1808819F6EC927A8DFCC390697D15FE5A3D  : public RuntimeObject
 {
-	// ReportAttachmentStore/Context ReportAttachmentStore/Context/<>c__DisplayClass12_0::<>4__this
+	// ReportAttachmentStore/Context ReportAttachmentStore/Context/<>c__DisplayClass14_0::<>4__this
 	Context_t350B2077E12ACB5CE89479357E0A55A207873FA2* ___U3CU3E4__this_0;
-	// System.Byte[] ReportAttachmentStore/Context/<>c__DisplayClass12_0::bytes
+	// System.Byte[] ReportAttachmentStore/Context/<>c__DisplayClass14_0::bytes
 	ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___bytes_1;
-	// System.Boolean ReportAttachmentStore/Context/<>c__DisplayClass12_0::system
+	// System.Boolean ReportAttachmentStore/Context/<>c__DisplayClass14_0::system
 	bool ___system_2;
-	// System.Nullable`1<System.Int32> ReportAttachmentStore/Context/<>c__DisplayClass12_0::row
+	// System.Nullable`1<System.Int32> ReportAttachmentStore/Context/<>c__DisplayClass14_0::row
 	Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28 ___row_3;
-	// System.Nullable`1<System.Int32> ReportAttachmentStore/Context/<>c__DisplayClass12_0::column
+	// System.Nullable`1<System.Int32> ReportAttachmentStore/Context/<>c__DisplayClass14_0::column
 	Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28 ___column_4;
-	// Champ ReportAttachmentStore/Context/<>c__DisplayClass12_0::field
+	// Champ ReportAttachmentStore/Context/<>c__DisplayClass14_0::field
 	Champ_tD2B96901967ACAD5FC515CC6FD7C38CEF1540CE8* ___field_5;
 };
 
@@ -7812,6 +7821,10 @@ struct U3CU3Ec_tC2F2027299BE1FFF6752C7605D673D6009AED7E9_StaticFields
 
 // SyncConflictModal/<>c__DisplayClass0_0
 
+// ReportAttachmentStore/Context/<>c__DisplayClass10_0
+
+// ReportAttachmentStore/Context/<>c__DisplayClass10_0
+
 // ReportAttachmentStore/Context/<>c__DisplayClass9_0
 
 // ReportAttachmentStore/Context/<>c__DisplayClass9_0
@@ -8204,9 +8217,9 @@ struct Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_StaticFields
 
 // UnityEngine.Networking.UnityWebRequest/Result
 
-// ReportAttachmentStore/Context/<>c__DisplayClass12_0
+// ReportAttachmentStore/Context/<>c__DisplayClass14_0
 
-// ReportAttachmentStore/Context/<>c__DisplayClass12_0
+// ReportAttachmentStore/Context/<>c__DisplayClass14_0
 
 // SyncConflictModal/Session/<ApplySelected>d__49
 
@@ -11716,16 +11729,46 @@ IL_0032:
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// System.Void ReportAttachmentStore/Context/<>c__DisplayClass12_0::.ctor()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__DisplayClass12_0__ctor_m0BF81ADADE37D93AF72D28AEF300A13C1362FFFD (U3CU3Ec__DisplayClass12_0_t36F0CB8D7A59DEE4C8739A8A564C0696503AA56B* __this, const RuntimeMethod* method) 
+// System.Void ReportAttachmentStore/Context/<>c__DisplayClass10_0::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__DisplayClass10_0__ctor_m9D706675804A4A910BE41D5FAF74F1048A1B8641 (U3CU3Ec__DisplayClass10_0_tE557F110F07AFEB998305B94E43B6001D4178E38* __this, const RuntimeMethod* method) 
 {
 	{
 		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
 		return;
 	}
 }
-// System.Boolean ReportAttachmentStore/Context/<>c__DisplayClass12_0::<SaveDrawing>b__0(Section)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool U3CU3Ec__DisplayClass12_0_U3CSaveDrawingU3Eb__0_m885879D4C2E438472FB524C3BA630D9BC138775E (U3CU3Ec__DisplayClass12_0_t36F0CB8D7A59DEE4C8739A8A564C0696503AA56B* __this, Section_t30B5C31DA3A0671379311A92A5EE2506C87489F9* ___0_item, const RuntimeMethod* method) 
+// System.Void ReportAttachmentStore/Context/<>c__DisplayClass10_0::<ImportImage>b__0(System.IO.FileStream)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__DisplayClass10_0_U3CImportImageU3Eb__0_m1B146D0B91BF3FC90FC53731BEA3C64DB4BB8E6A (U3CU3Ec__DisplayClass10_0_tE557F110F07AFEB998305B94E43B6001D4178E38* __this, FileStream_t07C7222EE10B75F352B89B76E60820160FF10AD8* ___0_output, const RuntimeMethod* method) 
+{
+	{
+		// ImportFile(".jpg", "screens", output => output.Write(bytes, 0, bytes.Length));
+		FileStream_t07C7222EE10B75F352B89B76E60820160FF10AD8* L_0 = ___0_output;
+		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_1 = __this->___bytes_0;
+		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_2 = __this->___bytes_0;
+		NullCheck(L_2);
+		NullCheck(L_0);
+		VirtualActionInvoker3< ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*, int32_t, int32_t >::Invoke(34 /* System.Void System.IO.Stream::Write(System.Byte[],System.Int32,System.Int32) */, L_0, L_1, 0, ((int32_t)(((RuntimeArray*)L_2)->max_length)));
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void ReportAttachmentStore/Context/<>c__DisplayClass14_0::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__DisplayClass14_0__ctor_mC275882B68C24886A01E656DD1D70674C4A789B2 (U3CU3Ec__DisplayClass14_0_t8037E1808819F6EC927A8DFCC390697D15FE5A3D* __this, const RuntimeMethod* method) 
+{
+	{
+		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
+		return;
+	}
+}
+// System.Boolean ReportAttachmentStore/Context/<>c__DisplayClass14_0::<SaveDrawing>b__0(Section)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool U3CU3Ec__DisplayClass14_0_U3CSaveDrawingU3Eb__0_mDDA4D1EAC6494A0C9A2ABCA300E58C6B38C8F5EC (U3CU3Ec__DisplayClass14_0_t8037E1808819F6EC927A8DFCC390697D15FE5A3D* __this, Section_t30B5C31DA3A0671379311A92A5EE2506C87489F9* ___0_item, const RuntimeMethod* method) 
 {
 	{
 		// var section = report.sections.Single(item => item.id == association.id_section);
@@ -11740,8 +11783,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool U3CU3Ec__DisplayClass12_0_U3CSaveDrawing
 		return (bool)((((int32_t)L_1) == ((int32_t)L_4))? 1 : 0);
 	}
 }
-// System.Boolean ReportAttachmentStore/Context/<>c__DisplayClass12_0::<SaveDrawing>b__1(Champ)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool U3CU3Ec__DisplayClass12_0_U3CSaveDrawingU3Eb__1_mC1CB048246C8D9E7AE778974667C2CC48B9C5922 (U3CU3Ec__DisplayClass12_0_t36F0CB8D7A59DEE4C8739A8A564C0696503AA56B* __this, Champ_tD2B96901967ACAD5FC515CC6FD7C38CEF1540CE8* ___0_item, const RuntimeMethod* method) 
+// System.Boolean ReportAttachmentStore/Context/<>c__DisplayClass14_0::<SaveDrawing>b__1(Champ)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool U3CU3Ec__DisplayClass14_0_U3CSaveDrawingU3Eb__1_m42943EA59A787E7BDDB6499668B0BF79050C1854 (U3CU3Ec__DisplayClass14_0_t8037E1808819F6EC927A8DFCC390697D15FE5A3D* __this, Champ_tD2B96901967ACAD5FC515CC6FD7C38CEF1540CE8* ___0_item, const RuntimeMethod* method) 
 {
 	{
 		// var field = section.champs.Single(item => item.id == association.id_champ);
@@ -11756,8 +11799,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool U3CU3Ec__DisplayClass12_0_U3CSaveDrawing
 		return (bool)((((int32_t)L_1) == ((int32_t)L_4))? 1 : 0);
 	}
 }
-// System.Void ReportAttachmentStore/Context/<>c__DisplayClass12_0::<SaveDrawing>b__2(System.IO.FileStream)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__DisplayClass12_0_U3CSaveDrawingU3Eb__2_mFA050D9E231B35201C46E06DC2DBEE76DA9D3263 (U3CU3Ec__DisplayClass12_0_t36F0CB8D7A59DEE4C8739A8A564C0696503AA56B* __this, FileStream_t07C7222EE10B75F352B89B76E60820160FF10AD8* ___0_stream, const RuntimeMethod* method) 
+// System.Void ReportAttachmentStore/Context/<>c__DisplayClass14_0::<SaveDrawing>b__2(System.IO.FileStream)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__DisplayClass14_0_U3CSaveDrawingU3Eb__2_m02421162A6E55124328702CDEF020AE7F68FB792 (U3CU3Ec__DisplayClass14_0_t8037E1808819F6EC927A8DFCC390697D15FE5A3D* __this, FileStream_t07C7222EE10B75F352B89B76E60820160FF10AD8* ___0_stream, const RuntimeMethod* method) 
 {
 	{
 		// if (bytes == null || bytes.Length == 0) throw new IOException("Le dessin est vide.");
@@ -11782,7 +11825,7 @@ IL_0011:
 		IOException_t5D599190B003D41D45D4839A9B6B9AB53A755910* L_2 = (IOException_t5D599190B003D41D45D4839A9B6B9AB53A755910*)il2cpp_codegen_object_new(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&IOException_t5D599190B003D41D45D4839A9B6B9AB53A755910_il2cpp_TypeInfo_var)));
 		NullCheck(L_2);
 		IOException__ctor_mE0612A16064F93C7EBB468D6874777BD70CB50CA(L_2, ((String_t*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&_stringLiteral6C4EF5B95B8F347D72AF619326F3CCB2C62B14E0)), NULL);
-		IL2CPP_RAISE_MANAGED_EXCEPTION(L_2, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&U3CU3Ec__DisplayClass12_0_U3CSaveDrawingU3Eb__2_mFA050D9E231B35201C46E06DC2DBEE76DA9D3263_RuntimeMethod_var)));
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_2, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&U3CU3Ec__DisplayClass14_0_U3CSaveDrawingU3Eb__2_m02421162A6E55124328702CDEF020AE7F68FB792_RuntimeMethod_var)));
 	}
 
 IL_001c:
@@ -11798,8 +11841,8 @@ IL_001c:
 		return;
 	}
 }
-// System.Boolean ReportAttachmentStore/Context/<>c__DisplayClass12_0::<SaveDrawing>b__3(Note)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool U3CU3Ec__DisplayClass12_0_U3CSaveDrawingU3Eb__3_mC6550D032D6789804D659117757A8B88C3F939F9 (U3CU3Ec__DisplayClass12_0_t36F0CB8D7A59DEE4C8739A8A564C0696503AA56B* __this, Note_tA2285A184DB020998838A4973465183177E99DE1* ___0_note, const RuntimeMethod* method) 
+// System.Boolean ReportAttachmentStore/Context/<>c__DisplayClass14_0::<SaveDrawing>b__3(Note)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool U3CU3Ec__DisplayClass14_0_U3CSaveDrawingU3Eb__3_mDBE5DA0FDE2DEA9DE79350B95BDA8B8822E90BA7 (U3CU3Ec__DisplayClass14_0_t8037E1808819F6EC927A8DFCC390697D15FE5A3D* __this, Note_tA2285A184DB020998838A4973465183177E99DE1* ___0_note, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -11863,8 +11906,8 @@ IL_0040:
 		return (bool)0;
 	}
 }
-// System.Boolean ReportAttachmentStore/Context/<>c__DisplayClass12_0::<SaveDrawing>b__4(Reponse)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool U3CU3Ec__DisplayClass12_0_U3CSaveDrawingU3Eb__4_m9D6276BB4901CA6E800B35FF5897B65A20ADB338 (U3CU3Ec__DisplayClass12_0_t36F0CB8D7A59DEE4C8739A8A564C0696503AA56B* __this, Reponse_t4F6AF0B9622A3050B0627A92E0A7EF9C2604A40B* ___0_answer, const RuntimeMethod* method) 
+// System.Boolean ReportAttachmentStore/Context/<>c__DisplayClass14_0::<SaveDrawing>b__4(Reponse)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool U3CU3Ec__DisplayClass14_0_U3CSaveDrawingU3Eb__4_m7A3F7AA72DDE25E912AB3C2DFCA715FE88D55925 (U3CU3Ec__DisplayClass14_0_t8037E1808819F6EC927A8DFCC390697D15FE5A3D* __this, Reponse_t4F6AF0B9622A3050B0627A92E0A7EF9C2604A40B* ___0_answer, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -11906,8 +11949,8 @@ IL_0032:
 		return (bool)0;
 	}
 }
-// System.Boolean ReportAttachmentStore/Context/<>c__DisplayClass12_0::<SaveDrawing>b__5(PieceJointe)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool U3CU3Ec__DisplayClass12_0_U3CSaveDrawingU3Eb__5_m3B00E63926868AD0B0BF61E7A915A1B05FDBA68A (U3CU3Ec__DisplayClass12_0_t36F0CB8D7A59DEE4C8739A8A564C0696503AA56B* __this, PieceJointe_t9949CFCAF865772221881C9F92E4D8B19F28A67B* ___0_file, const RuntimeMethod* method) 
+// System.Boolean ReportAttachmentStore/Context/<>c__DisplayClass14_0::<SaveDrawing>b__5(PieceJointe)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool U3CU3Ec__DisplayClass14_0_U3CSaveDrawingU3Eb__5_mC621A5D2E7CEEC78FC3CECA9E95AE575E752E62F (U3CU3Ec__DisplayClass14_0_t8037E1808819F6EC927A8DFCC390697D15FE5A3D* __this, PieceJointe_t9949CFCAF865772221881C9F92E4D8B19F28A67B* ___0_file, const RuntimeMethod* method) 
 {
 	{
 		// service.pieces_jointes?.RemoveAll(file => file.id_entite == field.id && file.id_parent == report.id_service_rapport);
