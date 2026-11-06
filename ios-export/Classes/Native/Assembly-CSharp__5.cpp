@@ -8462,8 +8462,8 @@ inline StyleEnum_1_t51D7E66C8AB4DE362954A97F01141AD6D749CAE2 StyleEnum_1_op_Impl
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Button__ctor_mDDBCEAD06FE245D4A0DAB4D0C903FBBB79278222 (Button_t8EC3B431665F84C0B637C11B0EA29236828646C2* __this, const RuntimeMethod* method) ;
 // System.Void UnityEngine.UIElements.Button::add_clicked(System.Action)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Button_add_clicked_m8F3895E73CAC223492F25142874FFF38A1830C81 (Button_t8EC3B431665F84C0B637C11B0EA29236828646C2* __this, Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* ___0_value, const RuntimeMethod* method) ;
-// System.Void AttachmentJournal::Prepare(ServiceClient)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AttachmentJournal_Prepare_m9CCD7375EBAF3E8AE91718EBC897BAB9433777A0 (ServiceClient_t07C84893BDB4121BAF09BDF559688F4714F9541D* ___0_service, const RuntimeMethod* method) ;
+// Newtonsoft.Json.Linq.JObject AttachmentJournal::Prepare(ServiceClient)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR JObject_t22BBBA7A90517B7E66E8C9D8D16DE84CB5054DE1* AttachmentJournal_Prepare_m91FD7C750C1248A40EBDA78F5703D97899805DD1 (ServiceClient_t07C84893BDB4121BAF09BDF559688F4714F9541D* ___0_service, const RuntimeMethod* method) ;
 // System.String System.IO.Path::Combine(System.String,System.String)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* Path_Combine_m1ADAC05CDA2D1D61B172DF65A81E86592696BEAE (String_t* ___0_path1, String_t* ___1_path2, const RuntimeMethod* method) ;
 // System.IO.DirectoryInfo System.IO.Directory::CreateDirectory(System.String)
@@ -8478,8 +8478,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FileStream__ctor_mA39506EF7A1F33FCA0199B
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void File_Replace_m2850C0BC483E696258D433AEF1DBFAA82185CD47 (String_t* ___0_sourceFileName, String_t* ___1_destinationFileName, String_t* ___2_destinationBackupFileName, const RuntimeMethod* method) ;
 // System.Void System.IO.File::Move(System.String,System.String)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void File_Move_mBC9450111E0144A55D893A720F19E612D658AC37 (String_t* ___0_sourceFileName, String_t* ___1_destFileName, const RuntimeMethod* method) ;
-// System.Void AttachmentJournal::Commit(ServiceClient)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AttachmentJournal_Commit_mBA5614F940524CD16ACB47E5C3D3EE7BEE4F970E (ServiceClient_t07C84893BDB4121BAF09BDF559688F4714F9541D* ___0_service, const RuntimeMethod* method) ;
+// System.Void AttachmentJournal::Commit(ServiceClient,Newtonsoft.Json.Linq.JObject)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AttachmentJournal_Commit_m8E4B21C8541FF13AC95D03F9352FD95DFFC659B1 (ServiceClient_t07C84893BDB4121BAF09BDF559688F4714F9541D* ___0_service, JObject_t22BBBA7A90517B7E66E8C9D8D16DE84CB5054DE1* ___1_prepared, const RuntimeMethod* method) ;
 // System.Void TabletSyncClient/<>c__DisplayClass6_0::.ctor()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__DisplayClass6_0__ctor_m5DA62FEF9E909EAA48B7DAB99C33DECE43614B39 (U3CU3Ec__DisplayClass6_0_t60A7DBDB07CA5FFF9EB84936897B20558C9873FB* __this, const RuntimeMethod* method) ;
 // T UnityEngine.GameObject::GetComponent<AlerteManager>()
@@ -21493,83 +21493,86 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TabletSyncClient_Persist_m73D88221EE9429
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralE42E8BB820D4F7550A0F04619F4E15FDC56943B9);
 		s_Il2CppMethodInitialized = true;
 	}
-	String_t* V_0 = NULL;
+	JObject_t22BBBA7A90517B7E66E8C9D8D16DE84CB5054DE1* V_0 = NULL;
 	String_t* V_1 = NULL;
 	String_t* V_2 = NULL;
-	Guid_t V_3;
-	memset((&V_3), 0, sizeof(V_3));
-	ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* V_4 = NULL;
-	FileStream_t07C7222EE10B75F352B89B76E60820160FF10AD8* V_5 = NULL;
+	String_t* V_3 = NULL;
+	Guid_t V_4;
+	memset((&V_4), 0, sizeof(V_4));
+	ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* V_5 = NULL;
+	FileStream_t07C7222EE10B75F352B89B76E60820160FF10AD8* V_6 = NULL;
 	{
-		// AttachmentJournal.Prepare(service);
+		// var attachmentIndex = AttachmentJournal.Prepare(service);
 		ServiceClient_t07C84893BDB4121BAF09BDF559688F4714F9541D* L_0 = ___0_service;
 		il2cpp_codegen_runtime_class_init_inline(AttachmentJournal_t7811DD6C25F46001608874B672A127EE396D55CD_il2cpp_TypeInfo_var);
-		AttachmentJournal_Prepare_m9CCD7375EBAF3E8AE91718EBC897BAB9433777A0(L_0, NULL);
+		JObject_t22BBBA7A90517B7E66E8C9D8D16DE84CB5054DE1* L_1;
+		L_1 = AttachmentJournal_Prepare_m91FD7C750C1248A40EBDA78F5703D97899805DD1(L_0, NULL);
+		V_0 = L_1;
 		// string reports = Path.Combine(Application.persistentDataPath, "rapports");
-		String_t* L_1;
-		L_1 = Application_get_persistentDataPath_mC58BD3E1A20732E0A536491DBCAE6505B1624399(NULL);
-		il2cpp_codegen_runtime_class_init_inline(Path_t8A38A801D0219E8209C1B1D90D82D4D755D998BC_il2cpp_TypeInfo_var);
 		String_t* L_2;
-		L_2 = Path_Combine_m1ADAC05CDA2D1D61B172DF65A81E86592696BEAE(L_1, _stringLiteral09599EB05E0779D81698B46E85FABDDAB3BE4B0A, NULL);
-		// string recovery = Path.Combine(Application.persistentDataPath, "recovery");
+		L_2 = Application_get_persistentDataPath_mC58BD3E1A20732E0A536491DBCAE6505B1624399(NULL);
+		il2cpp_codegen_runtime_class_init_inline(Path_t8A38A801D0219E8209C1B1D90D82D4D755D998BC_il2cpp_TypeInfo_var);
 		String_t* L_3;
-		L_3 = Application_get_persistentDataPath_mC58BD3E1A20732E0A536491DBCAE6505B1624399(NULL);
+		L_3 = Path_Combine_m1ADAC05CDA2D1D61B172DF65A81E86592696BEAE(L_2, _stringLiteral09599EB05E0779D81698B46E85FABDDAB3BE4B0A, NULL);
+		// string recovery = Path.Combine(Application.persistentDataPath, "recovery");
 		String_t* L_4;
-		L_4 = Path_Combine_m1ADAC05CDA2D1D61B172DF65A81E86592696BEAE(L_3, _stringLiteral6EFBB35A96B960247BDCA909E7F7CE7DFBC1F347, NULL);
-		V_0 = L_4;
+		L_4 = Application_get_persistentDataPath_mC58BD3E1A20732E0A536491DBCAE6505B1624399(NULL);
+		String_t* L_5;
+		L_5 = Path_Combine_m1ADAC05CDA2D1D61B172DF65A81E86592696BEAE(L_4, _stringLiteral6EFBB35A96B960247BDCA909E7F7CE7DFBC1F347, NULL);
+		V_1 = L_5;
 		// Directory.CreateDirectory(reports);
-		String_t* L_5 = L_2;
-		DirectoryInfo_tEAEEC018EB49B4A71907FFEAFE935FAA8F9C1FE2* L_6;
-		L_6 = Directory_CreateDirectory_m16EC5CE8561A997C6635E06DC24C77590F29D94F(L_5, NULL);
+		String_t* L_6 = L_3;
+		DirectoryInfo_tEAEEC018EB49B4A71907FFEAFE935FAA8F9C1FE2* L_7;
+		L_7 = Directory_CreateDirectory_m16EC5CE8561A997C6635E06DC24C77590F29D94F(L_6, NULL);
 		// Directory.CreateDirectory(recovery);
-		String_t* L_7 = V_0;
-		DirectoryInfo_tEAEEC018EB49B4A71907FFEAFE935FAA8F9C1FE2* L_8;
-		L_8 = Directory_CreateDirectory_m16EC5CE8561A997C6635E06DC24C77590F29D94F(L_7, NULL);
+		String_t* L_8 = V_1;
+		DirectoryInfo_tEAEEC018EB49B4A71907FFEAFE935FAA8F9C1FE2* L_9;
+		L_9 = Directory_CreateDirectory_m16EC5CE8561A997C6635E06DC24C77590F29D94F(L_8, NULL);
 		// string destination = Path.Combine(reports, service.id_service + ".json");
-		ServiceClient_t07C84893BDB4121BAF09BDF559688F4714F9541D* L_9 = ___0_service;
-		NullCheck(L_9);
-		String_t* L_10 = L_9->___id_service_1;
-		String_t* L_11;
-		L_11 = String_Concat_m9E3155FB84015C823606188F53B47CB44C444991(L_10, _stringLiteral0CF6E760F4429CA66FCDDB0BC125023158962742, NULL);
+		ServiceClient_t07C84893BDB4121BAF09BDF559688F4714F9541D* L_10 = ___0_service;
+		NullCheck(L_10);
+		String_t* L_11 = L_10->___id_service_1;
 		String_t* L_12;
-		L_12 = Path_Combine_m1ADAC05CDA2D1D61B172DF65A81E86592696BEAE(L_5, L_11, NULL);
-		V_1 = L_12;
+		L_12 = String_Concat_m9E3155FB84015C823606188F53B47CB44C444991(L_11, _stringLiteral0CF6E760F4429CA66FCDDB0BC125023158962742, NULL);
+		String_t* L_13;
+		L_13 = Path_Combine_m1ADAC05CDA2D1D61B172DF65A81E86592696BEAE(L_6, L_12, NULL);
+		V_2 = L_13;
 		// string temporary = Path.Combine(recovery, Guid.NewGuid().ToString("N") + ".tmp");
-		String_t* L_13 = V_0;
-		Guid_t L_14;
-		L_14 = Guid_NewGuid_m1F4894E8DC089811D6252148AD5858E58D43A7BD(NULL);
-		V_3 = L_14;
-		String_t* L_15;
-		L_15 = Guid_ToString_mDAA91A4A993E3A7AD8339665E3F0CC35FE00E833((&V_3), _stringLiteralE42E8BB820D4F7550A0F04619F4E15FDC56943B9, NULL);
+		String_t* L_14 = V_1;
+		Guid_t L_15;
+		L_15 = Guid_NewGuid_m1F4894E8DC089811D6252148AD5858E58D43A7BD(NULL);
+		V_4 = L_15;
 		String_t* L_16;
-		L_16 = String_Concat_m9E3155FB84015C823606188F53B47CB44C444991(L_15, _stringLiteral2F67EDD17F502E8BE5C9CE81D80F4F4BC64E79B1, NULL);
+		L_16 = Guid_ToString_mDAA91A4A993E3A7AD8339665E3F0CC35FE00E833((&V_4), _stringLiteralE42E8BB820D4F7550A0F04619F4E15FDC56943B9, NULL);
 		String_t* L_17;
-		L_17 = Path_Combine_m1ADAC05CDA2D1D61B172DF65A81E86592696BEAE(L_13, L_16, NULL);
-		V_2 = L_17;
+		L_17 = String_Concat_m9E3155FB84015C823606188F53B47CB44C444991(L_16, _stringLiteral2F67EDD17F502E8BE5C9CE81D80F4F4BC64E79B1, NULL);
+		String_t* L_18;
+		L_18 = Path_Combine_m1ADAC05CDA2D1D61B172DF65A81E86592696BEAE(L_14, L_17, NULL);
+		V_3 = L_18;
 	}
 	{
 		auto __finallyBlock = il2cpp::utils::Finally([&]
 		{
 
-FINALLY_00eb:
+FINALLY_00ee:
 			{// begin finally (depth: 1)
 				{
 					// finally { if (File.Exists(temporary)) File.Delete(temporary); }
-					String_t* L_18 = V_2;
-					bool L_19;
-					L_19 = File_Exists_m95E329ABBE3EAD6750FE1989BBA6884457136D4A(L_18, NULL);
-					if (!L_19)
+					String_t* L_19 = V_3;
+					bool L_20;
+					L_20 = File_Exists_m95E329ABBE3EAD6750FE1989BBA6884457136D4A(L_19, NULL);
+					if (!L_20)
 					{
-						goto IL_00f9;
+						goto IL_00fc;
 					}
 				}
 				{
 					// finally { if (File.Exists(temporary)) File.Delete(temporary); }
-					String_t* L_20 = V_2;
-					File_Delete_mE29829DA504F3E1B8BCB78F21E2862C9ED7EC386(L_20, NULL);
+					String_t* L_21 = V_3;
+					File_Delete_mE29829DA504F3E1B8BCB78F21E2862C9ED7EC386(L_21, NULL);
 				}
 
-IL_00f9:
+IL_00fc:
 				{
 					// finally { if (File.Exists(temporary)) File.Delete(temporary); }
 					return;
@@ -21580,43 +21583,43 @@ IL_00f9:
 		{// begin try (depth: 1)
 			{
 				// byte[] bytes = System.Text.Encoding.UTF8.GetBytes(JsonConvert.SerializeObject(service, Formatting.Indented));
-				Encoding_t65CDEF28CF20A7B8C92E85A4E808920C2465F095* L_21;
-				L_21 = Encoding_get_UTF8_m9FA98A53CE96FD6D02982625C5246DD36C1235C9(NULL);
-				ServiceClient_t07C84893BDB4121BAF09BDF559688F4714F9541D* L_22 = ___0_service;
+				Encoding_t65CDEF28CF20A7B8C92E85A4E808920C2465F095* L_22;
+				L_22 = Encoding_get_UTF8_m9FA98A53CE96FD6D02982625C5246DD36C1235C9(NULL);
+				ServiceClient_t07C84893BDB4121BAF09BDF559688F4714F9541D* L_23 = ___0_service;
 				il2cpp_codegen_runtime_class_init_inline(JsonConvert_t01281FFED14CC2AEFABB6608315D90ED5C46E0C2_il2cpp_TypeInfo_var);
-				String_t* L_23;
-				L_23 = JsonConvert_SerializeObject_m2AB5818117B98B4B91A9362D8F222763D390F414(L_22, 1, NULL);
-				NullCheck(L_21);
-				ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_24;
-				L_24 = VirtualFuncInvoker1< ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*, String_t* >::Invoke(18 /* System.Byte[] System.Text.Encoding::GetBytes(System.String) */, L_21, L_23);
-				V_4 = L_24;
+				String_t* L_24;
+				L_24 = JsonConvert_SerializeObject_m2AB5818117B98B4B91A9362D8F222763D390F414(L_23, 1, NULL);
+				NullCheck(L_22);
+				ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_25;
+				L_25 = VirtualFuncInvoker1< ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*, String_t* >::Invoke(18 /* System.Byte[] System.Text.Encoding::GetBytes(System.String) */, L_22, L_24);
+				V_5 = L_25;
 				// using (var stream = new FileStream(temporary, FileMode.CreateNew, FileAccess.Write, FileShare.None))
-				String_t* L_25 = V_2;
-				FileStream_t07C7222EE10B75F352B89B76E60820160FF10AD8* L_26 = (FileStream_t07C7222EE10B75F352B89B76E60820160FF10AD8*)il2cpp_codegen_object_new(FileStream_t07C7222EE10B75F352B89B76E60820160FF10AD8_il2cpp_TypeInfo_var);
-				NullCheck(L_26);
-				FileStream__ctor_mA39506EF7A1F33FCA0199B880BE1D82217E33EEC(L_26, L_25, 1, 2, 0, NULL);
-				V_5 = L_26;
+				String_t* L_26 = V_3;
+				FileStream_t07C7222EE10B75F352B89B76E60820160FF10AD8* L_27 = (FileStream_t07C7222EE10B75F352B89B76E60820160FF10AD8*)il2cpp_codegen_object_new(FileStream_t07C7222EE10B75F352B89B76E60820160FF10AD8_il2cpp_TypeInfo_var);
+				NullCheck(L_27);
+				FileStream__ctor_mA39506EF7A1F33FCA0199B880BE1D82217E33EEC(L_27, L_26, 1, 2, 0, NULL);
+				V_6 = L_27;
 			}
 			{
 				auto __finallyBlock = il2cpp::utils::Finally([&]
 				{
 
-FINALLY_00a2_1:
+FINALLY_00a4_1:
 					{// begin finally (depth: 2)
 						{
-							FileStream_t07C7222EE10B75F352B89B76E60820160FF10AD8* L_27 = V_5;
-							if (!L_27)
+							FileStream_t07C7222EE10B75F352B89B76E60820160FF10AD8* L_28 = V_6;
+							if (!L_28)
 							{
-								goto IL_00ad_1;
+								goto IL_00af_1;
 							}
 						}
 						{
-							FileStream_t07C7222EE10B75F352B89B76E60820160FF10AD8* L_28 = V_5;
-							NullCheck(L_28);
-							InterfaceActionInvoker0::Invoke(0 /* System.Void System.IDisposable::Dispose() */, IDisposable_t030E0496B4E0E4E4F086825007979AF51F7248C5_il2cpp_TypeInfo_var, L_28);
+							FileStream_t07C7222EE10B75F352B89B76E60820160FF10AD8* L_29 = V_6;
+							NullCheck(L_29);
+							InterfaceActionInvoker0::Invoke(0 /* System.Void System.IDisposable::Dispose() */, IDisposable_t030E0496B4E0E4E4F086825007979AF51F7248C5_il2cpp_TypeInfo_var, L_29);
 						}
 
-IL_00ad_1:
+IL_00af_1:
 						{
 							return;
 						}
@@ -21625,18 +21628,18 @@ IL_00ad_1:
 				try
 				{// begin try (depth: 2)
 					// stream.Write(bytes, 0, bytes.Length);
-					FileStream_t07C7222EE10B75F352B89B76E60820160FF10AD8* L_29 = V_5;
-					ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_30 = V_4;
-					ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_31 = V_4;
-					NullCheck(L_31);
-					NullCheck(L_29);
-					VirtualActionInvoker3< ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*, int32_t, int32_t >::Invoke(34 /* System.Void System.IO.Stream::Write(System.Byte[],System.Int32,System.Int32) */, L_29, L_30, 0, ((int32_t)(((RuntimeArray*)L_31)->max_length)));
-					// stream.Flush(true);
-					FileStream_t07C7222EE10B75F352B89B76E60820160FF10AD8* L_32 = V_5;
+					FileStream_t07C7222EE10B75F352B89B76E60820160FF10AD8* L_30 = V_6;
+					ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_31 = V_5;
+					ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_32 = V_5;
 					NullCheck(L_32);
-					VirtualActionInvoker1< bool >::Invoke(39 /* System.Void System.IO.FileStream::Flush(System.Boolean) */, L_32, (bool)1);
+					NullCheck(L_30);
+					VirtualActionInvoker3< ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*, int32_t, int32_t >::Invoke(34 /* System.Void System.IO.Stream::Write(System.Byte[],System.Int32,System.Int32) */, L_30, L_31, 0, ((int32_t)(((RuntimeArray*)L_32)->max_length)));
+					// stream.Flush(true);
+					FileStream_t07C7222EE10B75F352B89B76E60820160FF10AD8* L_33 = V_6;
+					NullCheck(L_33);
+					VirtualActionInvoker1< bool >::Invoke(39 /* System.Void System.IO.FileStream::Flush(System.Boolean) */, L_33, (bool)1);
 					// }
-					goto IL_00ae_1;
+					goto IL_00b0_1;
 				}// end try (depth: 2)
 				catch(Il2CppExceptionWrapper& e)
 				{
@@ -21644,56 +21647,57 @@ IL_00ad_1:
 				}
 			}
 
-IL_00ae_1:
+IL_00b0_1:
 			{
 				// if (File.Exists(destination)) File.Replace(temporary, destination, Path.Combine(recovery, service.id_service + ".json.bak"));
-				String_t* L_33 = V_1;
-				bool L_34;
-				L_34 = File_Exists_m95E329ABBE3EAD6750FE1989BBA6884457136D4A(L_33, NULL);
-				if (!L_34)
+				String_t* L_34 = V_2;
+				bool L_35;
+				L_35 = File_Exists_m95E329ABBE3EAD6750FE1989BBA6884457136D4A(L_34, NULL);
+				if (!L_35)
 				{
-					goto IL_00d5_1;
+					goto IL_00d7_1;
 				}
 			}
 			{
 				// if (File.Exists(destination)) File.Replace(temporary, destination, Path.Combine(recovery, service.id_service + ".json.bak"));
-				String_t* L_35 = V_2;
-				String_t* L_36 = V_1;
-				String_t* L_37 = V_0;
-				ServiceClient_t07C84893BDB4121BAF09BDF559688F4714F9541D* L_38 = ___0_service;
-				NullCheck(L_38);
-				String_t* L_39 = L_38->___id_service_1;
-				String_t* L_40;
-				L_40 = String_Concat_m9E3155FB84015C823606188F53B47CB44C444991(L_39, _stringLiteral6FDDCBEEDCFD51B5BA467E0568AD91920269A730, NULL);
-				il2cpp_codegen_runtime_class_init_inline(Path_t8A38A801D0219E8209C1B1D90D82D4D755D998BC_il2cpp_TypeInfo_var);
+				String_t* L_36 = V_3;
+				String_t* L_37 = V_2;
+				String_t* L_38 = V_1;
+				ServiceClient_t07C84893BDB4121BAF09BDF559688F4714F9541D* L_39 = ___0_service;
+				NullCheck(L_39);
+				String_t* L_40 = L_39->___id_service_1;
 				String_t* L_41;
-				L_41 = Path_Combine_m1ADAC05CDA2D1D61B172DF65A81E86592696BEAE(L_37, L_40, NULL);
-				File_Replace_m2850C0BC483E696258D433AEF1DBFAA82185CD47(L_35, L_36, L_41, NULL);
-				goto IL_00dc_1;
+				L_41 = String_Concat_m9E3155FB84015C823606188F53B47CB44C444991(L_40, _stringLiteral6FDDCBEEDCFD51B5BA467E0568AD91920269A730, NULL);
+				il2cpp_codegen_runtime_class_init_inline(Path_t8A38A801D0219E8209C1B1D90D82D4D755D998BC_il2cpp_TypeInfo_var);
+				String_t* L_42;
+				L_42 = Path_Combine_m1ADAC05CDA2D1D61B172DF65A81E86592696BEAE(L_38, L_41, NULL);
+				File_Replace_m2850C0BC483E696258D433AEF1DBFAA82185CD47(L_36, L_37, L_42, NULL);
+				goto IL_00de_1;
 			}
 
-IL_00d5_1:
+IL_00d7_1:
 			{
 				// else File.Move(temporary, destination);
-				String_t* L_42 = V_2;
-				String_t* L_43 = V_1;
-				File_Move_mBC9450111E0144A55D893A720F19E612D658AC37(L_42, L_43, NULL);
+				String_t* L_43 = V_3;
+				String_t* L_44 = V_2;
+				File_Move_mBC9450111E0144A55D893A720F19E612D658AC37(L_43, L_44, NULL);
 			}
 
-IL_00dc_1:
+IL_00de_1:
 			{
 				// service.nomFichier = destination;
-				ServiceClient_t07C84893BDB4121BAF09BDF559688F4714F9541D* L_44 = ___0_service;
-				String_t* L_45 = V_1;
-				NullCheck(L_44);
-				L_44->___nomFichier_0 = L_45;
-				Il2CppCodeGenWriteBarrier((void**)(&L_44->___nomFichier_0), (void*)L_45);
-				// AttachmentJournal.Commit(service);
-				ServiceClient_t07C84893BDB4121BAF09BDF559688F4714F9541D* L_46 = ___0_service;
+				ServiceClient_t07C84893BDB4121BAF09BDF559688F4714F9541D* L_45 = ___0_service;
+				String_t* L_46 = V_2;
+				NullCheck(L_45);
+				L_45->___nomFichier_0 = L_46;
+				Il2CppCodeGenWriteBarrier((void**)(&L_45->___nomFichier_0), (void*)L_46);
+				// AttachmentJournal.Commit(service, attachmentIndex);
+				ServiceClient_t07C84893BDB4121BAF09BDF559688F4714F9541D* L_47 = ___0_service;
+				JObject_t22BBBA7A90517B7E66E8C9D8D16DE84CB5054DE1* L_48 = V_0;
 				il2cpp_codegen_runtime_class_init_inline(AttachmentJournal_t7811DD6C25F46001608874B672A127EE396D55CD_il2cpp_TypeInfo_var);
-				AttachmentJournal_Commit_mBA5614F940524CD16ACB47E5C3D3EE7BEE4F970E(L_46, NULL);
+				AttachmentJournal_Commit_m8E4B21C8541FF13AC95D03F9352FD95DFFC659B1(L_47, L_48, NULL);
 				// }
-				goto IL_00fa;
+				goto IL_00fd;
 			}
 		}// end try (depth: 1)
 		catch(Il2CppExceptionWrapper& e)
@@ -21702,7 +21706,7 @@ IL_00dc_1:
 		}
 	}
 
-IL_00fa:
+IL_00fd:
 	{
 		// }
 		return;

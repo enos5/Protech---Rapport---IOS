@@ -107,6 +107,8 @@ struct Action_1_t3DC3411926243F1DB9C330F8E105B904E38C1A0B;
 struct Action_1_t6F9EB113EB3F16226AEF811A2744F4111C116C87;
 // System.Action`1<UnityEngine.Object>
 struct Action_1_t7F8A08D55E64F30F0E9A4213699C99903459421A;
+// System.Action`1<System.String>
+struct Action_1_t3CB5D1A819C3ED3F99E9E39F890F18633253949A;
 // System.Action`1<TMPro.TMP_TextInfo>
 struct Action_1_tB93AB717F9D419A1BEC832FF76E74EAA32184CC1;
 // System.Action`2<System.Int32,System.Int32>
@@ -819,8 +821,6 @@ struct WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3;
 struct WaitForSecondsRealtime_tA8CE0AAB4B0C872B843E7973637037D17682BA01;
 // WebCamPhotoCamera
 struct WebCamPhotoCamera_t9012ECCDB28660ED206FDE043EBBF32F914995F8;
-// UnityEngine.WebCamTexture
-struct WebCamTexture_t2021D179149C925AA6D73E6F1898C8D46521C749;
 // UnityEngine.Yoga.YogaNode
 struct YogaNode_t4B5B593220CCB315B5A60CB48BA4795636F04DDA;
 // TMPro.Examples.Benchmark01/<Start>d__10
@@ -1204,6 +1204,7 @@ IL2CPP_EXTERN_C String_t* _stringLiteralD81484FFFC6520629C426B824A975A2F661889A8
 IL2CPP_EXTERN_C String_t* _stringLiteralD92283C044A0CDD99AEF4D92F60543EF4BFB56DD;
 IL2CPP_EXTERN_C String_t* _stringLiteralD99C319B457682A09D028AF022D0B2EE6B4D48A6;
 IL2CPP_EXTERN_C String_t* _stringLiteralDA39A3EE5E6B4B0D3255BFEF95601890AFD80709;
+IL2CPP_EXTERN_C String_t* _stringLiteralDB386D221A216488540D3369B3B024978D94FC84;
 IL2CPP_EXTERN_C String_t* _stringLiteralDC2275F658D888445F0D6AF8B8408B8E5696657B;
 IL2CPP_EXTERN_C String_t* _stringLiteralDECFB8F380101725B06EAE2D3F983211A277171C;
 IL2CPP_EXTERN_C String_t* _stringLiteralE0F301CB41F14286D7C114361DBA1561EE68D114;
@@ -1371,7 +1372,7 @@ IL2CPP_EXTERN_C const RuntimeMethod* VideoPlayer_fct_close_mBBF212724A44C0C13EBE
 IL2CPP_EXTERN_C const RuntimeMethod* VideoRecording_CheckAvailable_mED842EB97E0A822D50F61A5585DA93C02B293667_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* VideoRecording_Complete_mB0739BD28756D2E0A3747A4C1D77E7F6B1CA3C24_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* WebCamPhotoCamera_CheckAvailable_mA6A27F8B5C08184EBE7658226AF14545217498B8_RuntimeMethod_var;
-IL2CPP_EXTERN_C const RuntimeMethod* WebCamPhotoCamera_PickImage_mDFA17F3A1AB68270B84DF1AC06B91853E104BBEB_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* WebCamPhotoCamera_PickImage_m7B006FBB7E30C343184FDB935242888B52F57CFB_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeType* Font_tC95270EA3198038970422D78B74A7F2E218A96B6_0_0_0_var;
 IL2CPP_EXTERN_C const RuntimeType* TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957_0_0_0_var;
 struct Color32_t73C5004937BF5BB8AD55323D51AAA40A898EF48B;
@@ -2114,12 +2115,14 @@ struct U3Cprepare_videoU3Ed__11_t84547CFC7B46490C6E0B1A380CAA68E6BDF8C85B  : pub
 // VideoRecording/<>c__DisplayClass2_0
 struct U3CU3Ec__DisplayClass2_0_t67C4B0CE8A6C68B3E687A267F16351113315F378  : public RuntimeObject
 {
+	// System.Action VideoRecording/<>c__DisplayClass2_0::captureDraft
+	Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* ___captureDraft_0;
 	// VideoRecording VideoRecording/<>c__DisplayClass2_0::<>4__this
-	VideoRecording_tF9BDBE286EFA7F9DE6C9B5051F1657BAB17F49B0* ___U3CU3E4__this_0;
+	VideoRecording_tF9BDBE286EFA7F9DE6C9B5051F1657BAB17F49B0* ___U3CU3E4__this_1;
 	// MainScript VideoRecording/<>c__DisplayClass2_0::owner
-	MainScript_tE5DA41EF9F6C72F24338683BF923785400FDC5FF* ___owner_1;
+	MainScript_tE5DA41EF9F6C72F24338683BF923785400FDC5FF* ___owner_2;
 	// ReportAttachmentStore/Context VideoRecording/<>c__DisplayClass2_0::context
-	Context_t350B2077E12ACB5CE89479357E0A55A207873FA2* ___context_2;
+	Context_t350B2077E12ACB5CE89479357E0A55A207873FA2* ___context_3;
 };
 
 // VideoRecording/<>c__DisplayClass5_0
@@ -2158,14 +2161,16 @@ struct U3CU3Ec__DisplayClass10_0_t4006F915C22260DC75F37EA163C7018815E7F750  : pu
 // WebCamPhotoCamera/<>c__DisplayClass6_0
 struct U3CU3Ec__DisplayClass6_0_t164CE2EA5C300D17C343DE6A23605223D8AE336D  : public RuntimeObject
 {
+	// System.Action WebCamPhotoCamera/<>c__DisplayClass6_0::captureDraft
+	Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* ___captureDraft_0;
 	// WebCamPhotoCamera WebCamPhotoCamera/<>c__DisplayClass6_0::<>4__this
-	WebCamPhotoCamera_t9012ECCDB28660ED206FDE043EBBF32F914995F8* ___U3CU3E4__this_0;
+	WebCamPhotoCamera_t9012ECCDB28660ED206FDE043EBBF32F914995F8* ___U3CU3E4__this_1;
 	// MainScript WebCamPhotoCamera/<>c__DisplayClass6_0::owner
-	MainScript_tE5DA41EF9F6C72F24338683BF923785400FDC5FF* ___owner_1;
+	MainScript_tE5DA41EF9F6C72F24338683BF923785400FDC5FF* ___owner_2;
 	// System.Int32 WebCamPhotoCamera/<>c__DisplayClass6_0::maxSize
-	int32_t ___maxSize_2;
+	int32_t ___maxSize_3;
 	// ReportAttachmentStore/Context WebCamPhotoCamera/<>c__DisplayClass6_0::context
-	Context_t350B2077E12ACB5CE89479357E0A55A207873FA2* ___context_3;
+	Context_t350B2077E12ACB5CE89479357E0A55A207873FA2* ___context_4;
 };
 
 // WebCamPhotoCamera/<>c__DisplayClass9_0
@@ -5055,8 +5060,18 @@ struct FileStatus_tCB96EDE0D0F945F685B9BBED6DBF0731207458C2
 	uint32_t ___UserFlags_15;
 };
 
+// System.Action`1<System.Object>
+struct Action_1_t6F9EB113EB3F16226AEF811A2744F4111C116C87  : public MulticastDelegate_t
+{
+};
+
 // System.Action`1<UnityEngine.Object>
 struct Action_1_t7F8A08D55E64F30F0E9A4213699C99903459421A  : public MulticastDelegate_t
+{
+};
+
+// System.Action`1<System.String>
+struct Action_1_t3CB5D1A819C3ED3F99E9E39F890F18633253949A  : public MulticastDelegate_t
 {
 };
 
@@ -6525,28 +6540,22 @@ struct ObjectSpin_tE4A801A6C63FE0773DE2FD043571CB80CC9F194B  : public MonoBehavi
 // PhotoViewer
 struct PhotoViewer_t53782B85C9BA0C954B6D920DFCC7FBBEF2F919E8  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
 {
-	// UnityEngine.WebCamTexture PhotoViewer::webCamTexture
-	WebCamTexture_t2021D179149C925AA6D73E6F1898C8D46521C749* ___webCamTexture_4;
-	// UnityEngine.WebCamTexture PhotoViewer::webCamTextureFront
-	WebCamTexture_t2021D179149C925AA6D73E6F1898C8D46521C749* ___webCamTextureFront_5;
 	// UnityEngine.GameObject PhotoViewer::goLstRapport
-	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___goLstRapport_6;
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___goLstRapport_4;
 	// UnityEngine.GameObject PhotoViewer::goNotes
-	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___goNotes_7;
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___goNotes_5;
 	// UnityEngine.GameObject PhotoViewer::goRapport
-	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___goRapport_8;
-	// UnityEngine.Texture PhotoViewer::defaultBackground
-	Texture_t791CBB51219779964E0E8A2ED7C1AA5F92A4A700* ___defaultBackground_9;
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___goRapport_6;
 	// UnityEngine.UI.RawImage PhotoViewer::background
-	RawImage_tFF12F7DB574FBDC1863CF607C7A12A5D9F8D6179* ___background_10;
+	RawImage_tFF12F7DB574FBDC1863CF607C7A12A5D9F8D6179* ___background_7;
 	// UnityEngine.UI.AspectRatioFitter PhotoViewer::fit
-	AspectRatioFitter_tEA1004A8240374C9BE7623981F999AA9789CDD09* ___fit_11;
-	// System.Boolean PhotoViewer::camAvailable
-	bool ___camAvailable_12;
+	AspectRatioFitter_tEA1004A8240374C9BE7623981F999AA9789CDD09* ___fit_8;
 	// System.Boolean PhotoViewer::montrerArriere
-	bool ___montrerArriere_13;
+	bool ___montrerArriere_9;
 	// System.String PhotoViewer::nomChamp
-	String_t* ___nomChamp_14;
+	String_t* ___nomChamp_10;
+	// UnityEngine.Texture2D PhotoViewer::ownedImage
+	Texture2D_tE6505BC111DD8A424A9DBE8E05D7D09E11FFFCF4* ___ownedImage_11;
 };
 
 // TMPro.Examples.ShaderPropAnimator
@@ -9032,9 +9041,17 @@ struct Type_t_StaticFields
 
 // System.Type
 
+// System.Action`1<System.Object>
+
+// System.Action`1<System.Object>
+
 // System.Action`1<UnityEngine.Object>
 
 // System.Action`1<UnityEngine.Object>
+
+// System.Action`1<System.String>
+
+// System.Action`1<System.String>
 
 // UnityEngine.UIElements.EventCallback`1<UnityEngine.UIElements.ClickEvent>
 
@@ -10656,6 +10673,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CallbackEventHandler_RegisterCallback_Ti
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Component_GetComponent_TisRuntimeObject_m7181F81CAEC2CF53F5D2BC79B7425C16E1F80D33_gshared (Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3* __this, const RuntimeMethod* method) ;
 // System.Void UnityEngine.UIElements.CallbackEventHandler::UnregisterCallback<System.Object>(UnityEngine.UIElements.EventCallback`1<TEventType>,UnityEngine.UIElements.TrickleDown)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CallbackEventHandler_UnregisterCallback_TisRuntimeObject_m2E6CDD2C9FDA8EDB685996370F77E36063A68CD6_gshared (CallbackEventHandler_t99E35735225B4ACEAD1BA981632FD2D46E9CB2B4* __this, EventCallback_1_t15E400616AB56B841F72D09E503D6377E8366E07* ___0_callback, int32_t ___1_useTrickleDown, const RuntimeMethod* method) ;
+// System.Void System.Action`1<System.Object>::Invoke(T)
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Action_1_Invoke_mF2422B2DD29F74CE66F791C3F68E288EC7C3DB9E_gshared_inline (Action_1_t6F9EB113EB3F16226AEF811A2744F4111C116C87* __this, RuntimeObject* ___0_obj, const RuntimeMethod* method) ;
 // System.Void UnityEngine.Events.UnityAction`1<System.Object>::.ctor(System.Object,System.IntPtr)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UnityAction_1__ctor_m0C2FC6B483B474AE9596A43EBA7FF6E85503A92A_gshared (UnityAction_1_t9C30BCD020745BF400CBACF22C6F34ADBA2DDA6A* __this, RuntimeObject* ___0_object, intptr_t ___1_method, const RuntimeMethod* method) ;
 // System.Void UnityEngine.Events.UnityEvent`1<System.Object>::AddListener(UnityEngine.Events.UnityAction`1<T0>)
@@ -11268,16 +11287,18 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VideoPlayer_finish_video_setup_mC0850541
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void NotSupportedException__ctor_m1398D0CDE19B36AA3DE9392879738C1EA2439CDF (NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A* __this, const RuntimeMethod* method) ;
 // System.Void VideoRecording/<>c__DisplayClass2_0::.ctor()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__DisplayClass2_0__ctor_mE06A70182319615883A833EE400690A345FE3416 (U3CU3Ec__DisplayClass2_0_t67C4B0CE8A6C68B3E687A267F16351113315F378* __this, const RuntimeMethod* method) ;
+// System.Boolean AttachmentSourceChoices::ToggleClosed(UnityEngine.UIElements.VisualElement,System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool AttachmentSourceChoices_ToggleClosed_m32DB781F1A7C1365BE20B0152A01D4EABAE17139 (VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* ___0_container, bool ___1_video, const RuntimeMethod* method) ;
 // System.Void VideoRecording::CheckAvailable(MainScript)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VideoRecording_CheckAvailable_mED842EB97E0A822D50F61A5585DA93C02B293667 (VideoRecording_tF9BDBE286EFA7F9DE6C9B5051F1657BAB17F49B0* __this, MainScript_tE5DA41EF9F6C72F24338683BF923785400FDC5FF* ___0_owner, const RuntimeMethod* method) ;
-// ReportAttachmentStore/Context ReportAttachmentStore::Capture(MainScript,System.Boolean,System.String,System.String)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Context_t350B2077E12ACB5CE89479357E0A55A207873FA2* ReportAttachmentStore_Capture_mBCEE009CAECF2385A49478C7D069965FA87EAE27 (MainScript_tE5DA41EF9F6C72F24338683BF923785400FDC5FF* ___0_owner, bool ___1_sectionScoped, String_t* ___2_sectionId, String_t* ___3_fieldName, const RuntimeMethod* method) ;
+// ReportAttachmentStore/Context ReportAttachmentStore::Capture(MainScript,System.Boolean,System.String,System.String,System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Context_t350B2077E12ACB5CE89479357E0A55A207873FA2* ReportAttachmentStore_Capture_mB71132FA8F030B2A74FF1E74FE1B052AC7897AA6 (MainScript_tE5DA41EF9F6C72F24338683BF923785400FDC5FF* ___0_owner, bool ___1_sectionScoped, String_t* ___2_sectionId, String_t* ___3_fieldName, bool ___4_persist, const RuntimeMethod* method) ;
 // System.Void System.Action::.ctor(System.Object,System.IntPtr)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Action__ctor_mBDC7B0B4A3F583B64C2896F01BDED360772F67DC (Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* __this, RuntimeObject* ___0_object, intptr_t ___1_method, const RuntimeMethod* method) ;
-// System.Void AttachmentSourceModal::Show(MainScript,System.Boolean,System.Action,System.Action)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AttachmentSourceModal_Show_mD37F5FD6F1C4A5BE0301D69ADAD8D76EDD359609 (MainScript_tE5DA41EF9F6C72F24338683BF923785400FDC5FF* ___0_owner, bool ___1_video, Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* ___2_capture, Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* ___3_library, const RuntimeMethod* method) ;
-// System.Void ReportAttachmentStore::Failure(MainScript,System.String)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ReportAttachmentStore_Failure_m34741015DF3E6727ECD417AC7CD25D8021FE7609 (MainScript_tE5DA41EF9F6C72F24338683BF923785400FDC5FF* ___0_owner, String_t* ___1_message, const RuntimeMethod* method) ;
+// System.Void AttachmentSourceChoices::Show(MainScript,UnityEngine.UIElements.VisualElement,System.Boolean,System.Action,System.Action)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AttachmentSourceChoices_Show_mB17CA8AA61FC3FDA40D23EC38BA4987AC5F400A5 (MainScript_tE5DA41EF9F6C72F24338683BF923785400FDC5FF* ___0_owner, VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* ___1_container, bool ___2_video, Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* ___3_capture, Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* ___4_library, const RuntimeMethod* method) ;
+// System.Void AttachmentSourceChoices::ReportFailure(MainScript,System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AttachmentSourceChoices_ReportFailure_m0593752E7BAF9F37D02D4756D2B8A58750D95380 (MainScript_tE5DA41EF9F6C72F24338683BF923785400FDC5FF* ___0_owner, String_t* ___1_message, const RuntimeMethod* method) ;
 // System.Void VideoRecording::CaptureVideo(MainScript,ReportAttachmentStore/Context)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VideoRecording_CaptureVideo_mC45F83C093F34881AF49CF9E0BB22D9993B4BB4A (VideoRecording_tF9BDBE286EFA7F9DE6C9B5051F1657BAB17F49B0* __this, MainScript_tE5DA41EF9F6C72F24338683BF923785400FDC5FF* ___0_owner, Context_t350B2077E12ACB5CE89479357E0A55A207873FA2* ___1_context, const RuntimeMethod* method) ;
 // System.Boolean MainScript::get_SyncInProgress()
@@ -11322,6 +11343,8 @@ inline NotesManager_tD186238281AC6C6DD083D5617258C11C9270050A* GameObject_GetCom
 }
 // System.Void NotesManager::ResetPopupContent()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void NotesManager_ResetPopupContent_m9B1B322D2B06F199419D28AD615D45DB918DBEB0 (NotesManager_tD186238281AC6C6DD083D5617258C11C9270050A* __this, const RuntimeMethod* method) ;
+// System.Void ReportAttachmentStore/Context::Prepare(System.Action)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Context_Prepare_m6364684BFCBD8E1BDFFC39ACD3AB6C115F03F2A5 (Context_t350B2077E12ACB5CE89479357E0A55A207873FA2* __this, Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* ___0_captureDraft, const RuntimeMethod* method) ;
 // System.Void VideoRecording::SelectVideo(MainScript,ReportAttachmentStore/Context)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VideoRecording_SelectVideo_m5BFA52F652D51C6830D86A18677CD77804E3FECC (VideoRecording_tF9BDBE286EFA7F9DE6C9B5051F1657BAB17F49B0* __this, MainScript_tE5DA41EF9F6C72F24338683BF923785400FDC5FF* ___0_owner, Context_t350B2077E12ACB5CE89479357E0A55A207873FA2* ___1_context, const RuntimeMethod* method) ;
 // System.Void VideoRecording::Complete(MainScript,ReportAttachmentStore/Context,System.String)
@@ -11342,17 +11365,22 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__DisplayClass10_0__ctor_m46DF1FF
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t NativeGallery_GetImageFromGallery_m046CBE10C42FBF23C2C265CDA6BBE14534A1BE19 (MediaPickCallback_tC207F6F3EEE18F64B03E23D5C9FA8C79517A5EB6* ___0_callback, String_t* ___1_title, String_t* ___2_mime, const RuntimeMethod* method) ;
 // System.Void ReportAttachmentStore/Context::ImportImage(System.String)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Context_ImportImage_m9720F7BE56314118AEDBC089C95FA240852308AE (Context_t350B2077E12ACB5CE89479357E0A55A207873FA2* __this, String_t* ___0_source, const RuntimeMethod* method) ;
-// UnityEngine.Texture2D NativeGallery::LoadImageAtPath(System.String,System.Int32,System.Boolean,System.Boolean,System.Boolean)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Texture2D_tE6505BC111DD8A424A9DBE8E05D7D09E11FFFCF4* NativeGallery_LoadImageAtPath_m62187A34B7B063FBEFFD7E200DEC2332313A56AE (String_t* ___0_imagePath, int32_t ___1_maxSize, bool ___2_markTextureNonReadable, bool ___3_generateMipmaps, bool ___4_linearColorSpace, const RuntimeMethod* method) ;
-// System.Boolean UnityEngine.Object::op_Equality(UnityEngine.Object,UnityEngine.Object)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Object_op_Equality_mB6120F782D83091EF56A198FCEBCF066DB4A9605 (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C* ___0_x, Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C* ___1_y, const RuntimeMethod* method) ;
 // T UnityEngine.GameObject::GetComponent<PhotoViewer>()
 inline PhotoViewer_t53782B85C9BA0C954B6D920DFCC7FBBEF2F919E8* GameObject_GetComponent_TisPhotoViewer_t53782B85C9BA0C954B6D920DFCC7FBBEF2F919E8_m58B3A47A57CEC6F5F0C8DC04B8980920215F5D33 (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* __this, const RuntimeMethod* method)
 {
 	return ((  PhotoViewer_t53782B85C9BA0C954B6D920DFCC7FBBEF2F919E8* (*) (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F*, const RuntimeMethod*))GameObject_GetComponent_TisRuntimeObject_m6EAED4AA356F0F48288F67899E5958792395563B_gshared)(__this, method);
 }
-// System.Void UnityEngine.UI.RawImage::set_texture(UnityEngine.Texture)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RawImage_set_texture_mC016318C95CC17A826D57DD219DBCB6DFD295C02 (RawImage_tFF12F7DB574FBDC1863CF607C7A12A5D9F8D6179* __this, Texture_t791CBB51219779964E0E8A2ED7C1AA5F92A4A700* ___0_value, const RuntimeMethod* method) ;
+// System.Boolean UnityEngine.Object::op_Equality(UnityEngine.Object,UnityEngine.Object)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Object_op_Equality_mB6120F782D83091EF56A198FCEBCF066DB4A9605 (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C* ___0_x, Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C* ___1_y, const RuntimeMethod* method) ;
+// UnityEngine.Texture2D NativeGallery::LoadImageAtPath(System.String,System.Int32,System.Boolean,System.Boolean,System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Texture2D_tE6505BC111DD8A424A9DBE8E05D7D09E11FFFCF4* NativeGallery_LoadImageAtPath_m62187A34B7B063FBEFFD7E200DEC2332313A56AE (String_t* ___0_imagePath, int32_t ___1_maxSize, bool ___2_markTextureNonReadable, bool ___3_generateMipmaps, bool ___4_linearColorSpace, const RuntimeMethod* method) ;
+// System.Void PhotoViewer::SetImage(UnityEngine.Texture2D)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PhotoViewer_SetImage_mE3619730EA2589C5DD19CA8D707FE2EF47F1635B (PhotoViewer_t53782B85C9BA0C954B6D920DFCC7FBBEF2F919E8* __this, Texture2D_tE6505BC111DD8A424A9DBE8E05D7D09E11FFFCF4* ___0_image, const RuntimeMethod* method) ;
+// System.Void System.Action`1<System.String>::Invoke(T)
+inline void Action_1_Invoke_m690438AAE38F9762172E3AE0A33D0B42ACD35790_inline (Action_1_t3CB5D1A819C3ED3F99E9E39F890F18633253949A* __this, String_t* ___0_obj, const RuntimeMethod* method)
+{
+	((  void (*) (Action_1_t3CB5D1A819C3ED3F99E9E39F890F18633253949A*, String_t*, const RuntimeMethod*))Action_1_Invoke_mF2422B2DD29F74CE66F791C3F68E288EC7C3DB9E_gshared_inline)(__this, ___0_obj, method);
+}
 // System.Void WebCamPhotoCamera::SelectPhoto(MainScript,ReportAttachmentStore/Context)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WebCamPhotoCamera_SelectPhoto_m34AB4A75CE5734F42CE87FBA4A69F81C02A94610 (WebCamPhotoCamera_t9012ECCDB28660ED206FDE043EBBF32F914995F8* __this, MainScript_tE5DA41EF9F6C72F24338683BF923785400FDC5FF* ___0_owner, Context_t350B2077E12ACB5CE89479357E0A55A207873FA2* ___1_context, const RuntimeMethod* method) ;
 // System.Void WebCamPhotoCamera::Complete(MainScript,ReportAttachmentStore/Context,System.String,System.Boolean)
@@ -18496,8 +18524,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3Cprepare_videoU3Ed__11_Syste
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// System.Void VideoRecording::ChooseVideoSource(System.Boolean,System.String,System.String,System.String)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VideoRecording_ChooseVideoSource_m686B025DFDCB2BA66F9B3F0722B2193625F7B56E (VideoRecording_tF9BDBE286EFA7F9DE6C9B5051F1657BAB17F49B0* __this, bool ___0_estOnglet, String_t* ___1_idChamp, String_t* ___2_titreChampAffichage, String_t* ___3_idSection, const RuntimeMethod* method) 
+// System.Void VideoRecording::ChooseVideoSource(UnityEngine.UIElements.VisualElement,System.Boolean,System.String,System.String,System.String,System.Action)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VideoRecording_ChooseVideoSource_m2444E5631936593DC8A81BED2F2663EF83BFB0F2 (VideoRecording_tF9BDBE286EFA7F9DE6C9B5051F1657BAB17F49B0* __this, VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* ___0_container, bool ___1_estOnglet, String_t* ___2_idChamp, String_t* ___3_titreChampAffichage, String_t* ___4_idSection, Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* ___5_captureDraft, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -18520,88 +18548,113 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VideoRecording_ChooseVideoSource_m686B02
 		U3CU3Ec__DisplayClass2_0__ctor_mE06A70182319615883A833EE400690A345FE3416(L_0, NULL);
 		V_0 = L_0;
 		U3CU3Ec__DisplayClass2_0_t67C4B0CE8A6C68B3E687A267F16351113315F378* L_1 = V_0;
+		Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* L_2 = ___5_captureDraft;
 		NullCheck(L_1);
-		L_1->___U3CU3E4__this_0 = __this;
-		Il2CppCodeGenWriteBarrier((void**)(&L_1->___U3CU3E4__this_0), (void*)__this);
-		// var owner = GameObject.Find("Script").GetComponent<MainScript>();
-		U3CU3Ec__DisplayClass2_0_t67C4B0CE8A6C68B3E687A267F16351113315F378* L_2 = V_0;
-		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_3;
-		L_3 = GameObject_Find_m7A669B4EEC2617AB82F6E3FF007CDCD9F21DB300(_stringLiteralA0C14CE26448E50189281A9427CC96D04658B7AE, NULL);
+		L_1->___captureDraft_0 = L_2;
+		Il2CppCodeGenWriteBarrier((void**)(&L_1->___captureDraft_0), (void*)L_2);
+		U3CU3Ec__DisplayClass2_0_t67C4B0CE8A6C68B3E687A267F16351113315F378* L_3 = V_0;
 		NullCheck(L_3);
-		MainScript_tE5DA41EF9F6C72F24338683BF923785400FDC5FF* L_4;
-		L_4 = GameObject_GetComponent_TisMainScript_tE5DA41EF9F6C72F24338683BF923785400FDC5FF_m305B2730E271E73DDF27A138CAEFBF3240A147E9(L_3, GameObject_GetComponent_TisMainScript_tE5DA41EF9F6C72F24338683BF923785400FDC5FF_m305B2730E271E73DDF27A138CAEFBF3240A147E9_RuntimeMethod_var);
-		NullCheck(L_2);
-		L_2->___owner_1 = L_4;
-		Il2CppCodeGenWriteBarrier((void**)(&L_2->___owner_1), (void*)L_4);
+		L_3->___U3CU3E4__this_1 = __this;
+		Il2CppCodeGenWriteBarrier((void**)(&L_3->___U3CU3E4__this_1), (void*)__this);
+		// var owner = GameObject.Find("Script").GetComponent<MainScript>();
+		U3CU3Ec__DisplayClass2_0_t67C4B0CE8A6C68B3E687A267F16351113315F378* L_4 = V_0;
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_5;
+		L_5 = GameObject_Find_m7A669B4EEC2617AB82F6E3FF007CDCD9F21DB300(_stringLiteralA0C14CE26448E50189281A9427CC96D04658B7AE, NULL);
+		NullCheck(L_5);
+		MainScript_tE5DA41EF9F6C72F24338683BF923785400FDC5FF* L_6;
+		L_6 = GameObject_GetComponent_TisMainScript_tE5DA41EF9F6C72F24338683BF923785400FDC5FF_m305B2730E271E73DDF27A138CAEFBF3240A147E9(L_5, GameObject_GetComponent_TisMainScript_tE5DA41EF9F6C72F24338683BF923785400FDC5FF_m305B2730E271E73DDF27A138CAEFBF3240A147E9_RuntimeMethod_var);
+		NullCheck(L_4);
+		L_4->___owner_2 = L_6;
+		Il2CppCodeGenWriteBarrier((void**)(&L_4->___owner_2), (void*)L_6);
 	}
 	try
 	{// begin try (depth: 1)
-		// CheckAvailable(owner);
-		U3CU3Ec__DisplayClass2_0_t67C4B0CE8A6C68B3E687A267F16351113315F378* L_5 = V_0;
-		NullCheck(L_5);
-		MainScript_tE5DA41EF9F6C72F24338683BF923785400FDC5FF* L_6 = L_5->___owner_1;
-		VideoRecording_CheckAvailable_mED842EB97E0A822D50F61A5585DA93C02B293667(__this, L_6, NULL);
-		// var context = ReportAttachmentStore.Capture(owner, estOnglet, idSection, idChamp);
-		U3CU3Ec__DisplayClass2_0_t67C4B0CE8A6C68B3E687A267F16351113315F378* L_7 = V_0;
-		U3CU3Ec__DisplayClass2_0_t67C4B0CE8A6C68B3E687A267F16351113315F378* L_8 = V_0;
-		NullCheck(L_8);
-		MainScript_tE5DA41EF9F6C72F24338683BF923785400FDC5FF* L_9 = L_8->___owner_1;
-		bool L_10 = ___0_estOnglet;
-		String_t* L_11 = ___3_idSection;
-		String_t* L_12 = ___1_idChamp;
-		il2cpp_codegen_runtime_class_init_inline(ReportAttachmentStore_tBDE4E9E4B9BDE1AB90D3BC5303735D5AFD330951_il2cpp_TypeInfo_var);
-		Context_t350B2077E12ACB5CE89479357E0A55A207873FA2* L_13;
-		L_13 = ReportAttachmentStore_Capture_mBCEE009CAECF2385A49478C7D069965FA87EAE27(L_9, L_10, L_11, L_12, NULL);
-		NullCheck(L_7);
-		L_7->___context_2 = L_13;
-		Il2CppCodeGenWriteBarrier((void**)(&L_7->___context_2), (void*)L_13);
-		// AttachmentSourceModal.Show(owner, true, () => CaptureVideo(owner, context), () => SelectVideo(owner, context));
-		U3CU3Ec__DisplayClass2_0_t67C4B0CE8A6C68B3E687A267F16351113315F378* L_14 = V_0;
-		NullCheck(L_14);
-		MainScript_tE5DA41EF9F6C72F24338683BF923785400FDC5FF* L_15 = L_14->___owner_1;
-		U3CU3Ec__DisplayClass2_0_t67C4B0CE8A6C68B3E687A267F16351113315F378* L_16 = V_0;
-		Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* L_17 = (Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07*)il2cpp_codegen_object_new(Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07_il2cpp_TypeInfo_var);
-		NullCheck(L_17);
-		Action__ctor_mBDC7B0B4A3F583B64C2896F01BDED360772F67DC(L_17, L_16, (intptr_t)((void*)U3CU3Ec__DisplayClass2_0_U3CChooseVideoSourceU3Eb__0_m90C611F33C35AFEBC9263B18295586BD0FA720C6_RuntimeMethod_var), NULL);
-		U3CU3Ec__DisplayClass2_0_t67C4B0CE8A6C68B3E687A267F16351113315F378* L_18 = V_0;
-		Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* L_19 = (Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07*)il2cpp_codegen_object_new(Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07_il2cpp_TypeInfo_var);
-		NullCheck(L_19);
-		Action__ctor_mBDC7B0B4A3F583B64C2896F01BDED360772F67DC(L_19, L_18, (intptr_t)((void*)U3CU3Ec__DisplayClass2_0_U3CChooseVideoSourceU3Eb__1_m7AD31D26F9B9DA21C5F7773B8C9F074BB10F84DB_RuntimeMethod_var), NULL);
-		AttachmentSourceModal_Show_mD37F5FD6F1C4A5BE0301D69ADAD8D76EDD359609(L_15, (bool)1, L_17, L_19, NULL);
-		// } catch (Exception error) { ReportAttachmentStore.Failure(owner, error.Message); }
-		goto IL_007d;
+		{
+			// if (AttachmentSourceChoices.ToggleClosed(container, true)) return;
+			VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_7 = ___0_container;
+			bool L_8;
+			L_8 = AttachmentSourceChoices_ToggleClosed_m32DB781F1A7C1365BE20B0152A01D4EABAE17139(L_7, (bool)1, NULL);
+			if (!L_8)
+			{
+				goto IL_0035_1;
+			}
+		}
+		{
+			// if (AttachmentSourceChoices.ToggleClosed(container, true)) return;
+			goto IL_0092;
+		}
+
+IL_0035_1:
+		{
+			// CheckAvailable(owner);
+			U3CU3Ec__DisplayClass2_0_t67C4B0CE8A6C68B3E687A267F16351113315F378* L_9 = V_0;
+			NullCheck(L_9);
+			MainScript_tE5DA41EF9F6C72F24338683BF923785400FDC5FF* L_10 = L_9->___owner_2;
+			VideoRecording_CheckAvailable_mED842EB97E0A822D50F61A5585DA93C02B293667(__this, L_10, NULL);
+			// var context = ReportAttachmentStore.Capture(owner, estOnglet, idSection, idChamp, false);
+			U3CU3Ec__DisplayClass2_0_t67C4B0CE8A6C68B3E687A267F16351113315F378* L_11 = V_0;
+			U3CU3Ec__DisplayClass2_0_t67C4B0CE8A6C68B3E687A267F16351113315F378* L_12 = V_0;
+			NullCheck(L_12);
+			MainScript_tE5DA41EF9F6C72F24338683BF923785400FDC5FF* L_13 = L_12->___owner_2;
+			bool L_14 = ___1_estOnglet;
+			String_t* L_15 = ___4_idSection;
+			String_t* L_16 = ___2_idChamp;
+			il2cpp_codegen_runtime_class_init_inline(ReportAttachmentStore_tBDE4E9E4B9BDE1AB90D3BC5303735D5AFD330951_il2cpp_TypeInfo_var);
+			Context_t350B2077E12ACB5CE89479357E0A55A207873FA2* L_17;
+			L_17 = ReportAttachmentStore_Capture_mB71132FA8F030B2A74FF1E74FE1B052AC7897AA6(L_13, L_14, L_15, L_16, (bool)0, NULL);
+			NullCheck(L_11);
+			L_11->___context_3 = L_17;
+			Il2CppCodeGenWriteBarrier((void**)(&L_11->___context_3), (void*)L_17);
+			// AttachmentSourceChoices.Show(owner, container, true,
+			//     () => { context.Prepare(captureDraft); CaptureVideo(owner, context); },
+			//     () => { context.Prepare(captureDraft); SelectVideo(owner, context); });
+			U3CU3Ec__DisplayClass2_0_t67C4B0CE8A6C68B3E687A267F16351113315F378* L_18 = V_0;
+			NullCheck(L_18);
+			MainScript_tE5DA41EF9F6C72F24338683BF923785400FDC5FF* L_19 = L_18->___owner_2;
+			VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_20 = ___0_container;
+			U3CU3Ec__DisplayClass2_0_t67C4B0CE8A6C68B3E687A267F16351113315F378* L_21 = V_0;
+			Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* L_22 = (Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07*)il2cpp_codegen_object_new(Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07_il2cpp_TypeInfo_var);
+			NullCheck(L_22);
+			Action__ctor_mBDC7B0B4A3F583B64C2896F01BDED360772F67DC(L_22, L_21, (intptr_t)((void*)U3CU3Ec__DisplayClass2_0_U3CChooseVideoSourceU3Eb__0_m90C611F33C35AFEBC9263B18295586BD0FA720C6_RuntimeMethod_var), NULL);
+			U3CU3Ec__DisplayClass2_0_t67C4B0CE8A6C68B3E687A267F16351113315F378* L_23 = V_0;
+			Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* L_24 = (Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07*)il2cpp_codegen_object_new(Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07_il2cpp_TypeInfo_var);
+			NullCheck(L_24);
+			Action__ctor_mBDC7B0B4A3F583B64C2896F01BDED360772F67DC(L_24, L_23, (intptr_t)((void*)U3CU3Ec__DisplayClass2_0_U3CChooseVideoSourceU3Eb__1_m7AD31D26F9B9DA21C5F7773B8C9F074BB10F84DB_RuntimeMethod_var), NULL);
+			AttachmentSourceChoices_Show_mB17CA8AA61FC3FDA40D23EC38BA4987AC5F400A5(L_19, L_20, (bool)1, L_22, L_24, NULL);
+			// } catch (Exception error) { AttachmentSourceChoices.ReportFailure(owner, error.Message); }
+			goto IL_0092;
+		}
 	}// end try (depth: 1)
 	catch(Il2CppExceptionWrapper& e)
 	{
 		if(il2cpp_codegen_class_is_assignable_from (((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&Exception_t_il2cpp_TypeInfo_var)), il2cpp_codegen_object_class(e.ex)))
 		{
 			IL2CPP_PUSH_ACTIVE_EXCEPTION(e.ex);
-			goto CATCH_0069;
+			goto CATCH_007e;
 		}
 		throw e;
 	}
 
-CATCH_0069:
+CATCH_007e:
 	{// begin catch(System.Exception)
-		Exception_t* L_20 = ((Exception_t*)IL2CPP_GET_ACTIVE_EXCEPTION(Exception_t*));;
-		// } catch (Exception error) { ReportAttachmentStore.Failure(owner, error.Message); }
-		V_1 = L_20;
-		// } catch (Exception error) { ReportAttachmentStore.Failure(owner, error.Message); }
-		U3CU3Ec__DisplayClass2_0_t67C4B0CE8A6C68B3E687A267F16351113315F378* L_21 = V_0;
-		NullCheck(L_21);
-		MainScript_tE5DA41EF9F6C72F24338683BF923785400FDC5FF* L_22 = L_21->___owner_1;
-		Exception_t* L_23 = V_1;
-		NullCheck(L_23);
-		String_t* L_24;
-		L_24 = VirtualFuncInvoker0< String_t* >::Invoke(5 /* System.String System.Exception::get_Message() */, L_23);
-		il2cpp_codegen_runtime_class_init_inline(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&ReportAttachmentStore_tBDE4E9E4B9BDE1AB90D3BC5303735D5AFD330951_il2cpp_TypeInfo_var)));
-		ReportAttachmentStore_Failure_m34741015DF3E6727ECD417AC7CD25D8021FE7609(L_22, L_24, NULL);
-		// } catch (Exception error) { ReportAttachmentStore.Failure(owner, error.Message); }
+		Exception_t* L_25 = ((Exception_t*)IL2CPP_GET_ACTIVE_EXCEPTION(Exception_t*));;
+		// } catch (Exception error) { AttachmentSourceChoices.ReportFailure(owner, error.Message); }
+		V_1 = L_25;
+		// } catch (Exception error) { AttachmentSourceChoices.ReportFailure(owner, error.Message); }
+		U3CU3Ec__DisplayClass2_0_t67C4B0CE8A6C68B3E687A267F16351113315F378* L_26 = V_0;
+		NullCheck(L_26);
+		MainScript_tE5DA41EF9F6C72F24338683BF923785400FDC5FF* L_27 = L_26->___owner_2;
+		Exception_t* L_28 = V_1;
+		NullCheck(L_28);
+		String_t* L_29;
+		L_29 = VirtualFuncInvoker0< String_t* >::Invoke(5 /* System.String System.Exception::get_Message() */, L_28);
+		AttachmentSourceChoices_ReportFailure_m0593752E7BAF9F37D02D4756D2B8A58750D95380(L_27, L_29, NULL);
+		// } catch (Exception error) { AttachmentSourceChoices.ReportFailure(owner, error.Message); }
 		IL2CPP_POP_ACTIVE_EXCEPTION(Exception_t*);
-		goto IL_007d;
+		goto IL_0092;
 	}// end catch (depth: 1)
 
-IL_007d:
+IL_0092:
 	{
 		// }
 		return;
@@ -18643,42 +18696,41 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VideoRecording_RecordVideo_m1BED5AECF57D
 		String_t* L_7 = ___1_idChamp;
 		il2cpp_codegen_runtime_class_init_inline(ReportAttachmentStore_tBDE4E9E4B9BDE1AB90D3BC5303735D5AFD330951_il2cpp_TypeInfo_var);
 		Context_t350B2077E12ACB5CE89479357E0A55A207873FA2* L_8;
-		L_8 = ReportAttachmentStore_Capture_mBCEE009CAECF2385A49478C7D069965FA87EAE27(L_4, L_5, L_6, L_7, NULL);
+		L_8 = ReportAttachmentStore_Capture_mB71132FA8F030B2A74FF1E74FE1B052AC7897AA6(L_4, L_5, L_6, L_7, (bool)1, NULL);
 		VideoRecording_CaptureVideo_mC45F83C093F34881AF49CF9E0BB22D9993B4BB4A(__this, L_3, L_8, NULL);
-		// } catch (Exception error) { recording = false; ReportAttachmentStore.Failure(owner, error.Message); }
-		goto IL_0040;
+		// } catch (Exception error) { recording = false; AttachmentSourceChoices.ReportFailure(owner, error.Message); }
+		goto IL_0041;
 	}// end try (depth: 1)
 	catch(Il2CppExceptionWrapper& e)
 	{
 		if(il2cpp_codegen_class_is_assignable_from (((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&Exception_t_il2cpp_TypeInfo_var)), il2cpp_codegen_object_class(e.ex)))
 		{
 			IL2CPP_PUSH_ACTIVE_EXCEPTION(e.ex);
-			goto CATCH_002a;
+			goto CATCH_002b;
 		}
 		throw e;
 	}
 
-CATCH_002a:
+CATCH_002b:
 	{// begin catch(System.Exception)
 		Exception_t* L_9 = ((Exception_t*)IL2CPP_GET_ACTIVE_EXCEPTION(Exception_t*));;
-		// } catch (Exception error) { recording = false; ReportAttachmentStore.Failure(owner, error.Message); }
+		// } catch (Exception error) { recording = false; AttachmentSourceChoices.ReportFailure(owner, error.Message); }
 		V_1 = L_9;
-		// } catch (Exception error) { recording = false; ReportAttachmentStore.Failure(owner, error.Message); }
+		// } catch (Exception error) { recording = false; AttachmentSourceChoices.ReportFailure(owner, error.Message); }
 		__this->___recording_5 = (bool)0;
-		// } catch (Exception error) { recording = false; ReportAttachmentStore.Failure(owner, error.Message); }
+		// } catch (Exception error) { recording = false; AttachmentSourceChoices.ReportFailure(owner, error.Message); }
 		MainScript_tE5DA41EF9F6C72F24338683BF923785400FDC5FF* L_10 = V_0;
 		Exception_t* L_11 = V_1;
 		NullCheck(L_11);
 		String_t* L_12;
 		L_12 = VirtualFuncInvoker0< String_t* >::Invoke(5 /* System.String System.Exception::get_Message() */, L_11);
-		il2cpp_codegen_runtime_class_init_inline(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&ReportAttachmentStore_tBDE4E9E4B9BDE1AB90D3BC5303735D5AFD330951_il2cpp_TypeInfo_var)));
-		ReportAttachmentStore_Failure_m34741015DF3E6727ECD417AC7CD25D8021FE7609(L_10, L_12, NULL);
-		// } catch (Exception error) { recording = false; ReportAttachmentStore.Failure(owner, error.Message); }
+		AttachmentSourceChoices_ReportFailure_m0593752E7BAF9F37D02D4756D2B8A58750D95380(L_10, L_12, NULL);
+		// } catch (Exception error) { recording = false; AttachmentSourceChoices.ReportFailure(owner, error.Message); }
 		IL2CPP_POP_ACTIVE_EXCEPTION(Exception_t*);
-		goto IL_0040;
+		goto IL_0041;
 	}// end catch (depth: 1)
 
-IL_0040:
+IL_0041:
 	{
 		// }
 		return;
@@ -18754,7 +18806,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VideoRecording_CaptureVideo_mC45F83C093F
 	if (!s_Il2CppMethodInitialized)
 	{
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&CameraCallback_tF33A274B891CCEC46FF206A2C3907F370B4FF771_il2cpp_TypeInfo_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ReportAttachmentStore_tBDE4E9E4B9BDE1AB90D3BC5303735D5AFD330951_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&U3CU3Ec__DisplayClass5_0_U3CCaptureVideoU3Eb__0_m3342194C0D9FEE8ECD267D9C6C86EFCBBE52D855_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&U3CU3Ec__DisplayClass5_0_tF87AA3E604BD73F819D7235500F3A3932FA76121_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral95F487E0E14533DD791000D21C8C41CA94FED064);
@@ -18815,17 +18866,16 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VideoRecording_CaptureVideo_mC45F83C093F
 		{
 			// recording = false;
 			__this->___recording_5 = (bool)0;
-			// ReportAttachmentStore.Failure(owner, "Autorisez la cam?ra dans les param?tres de la tablette, puis r?essayez. Aucune vid?o n?a ?t? ajout?e.");
+			// AttachmentSourceChoices.ReportFailure(owner, "Autorisez la cam?ra dans les param?tres de la tablette, puis r?essayez. Aucune vid?o n?a ?t? ajout?e.");
 			U3CU3Ec__DisplayClass5_0_tF87AA3E604BD73F819D7235500F3A3932FA76121* L_13 = V_0;
 			NullCheck(L_13);
 			MainScript_tE5DA41EF9F6C72F24338683BF923785400FDC5FF* L_14 = L_13->___owner_1;
-			il2cpp_codegen_runtime_class_init_inline(ReportAttachmentStore_tBDE4E9E4B9BDE1AB90D3BC5303735D5AFD330951_il2cpp_TypeInfo_var);
-			ReportAttachmentStore_Failure_m34741015DF3E6727ECD417AC7CD25D8021FE7609(L_14, _stringLiteral95F487E0E14533DD791000D21C8C41CA94FED064, NULL);
+			AttachmentSourceChoices_ReportFailure_m0593752E7BAF9F37D02D4756D2B8A58750D95380(L_14, _stringLiteral95F487E0E14533DD791000D21C8C41CA94FED064, NULL);
 		}
 
 IL_0069_1:
 		{
-			// } catch (Exception error) { recording = false; ReportAttachmentStore.Failure(owner, error.Message); }
+			// } catch (Exception error) { recording = false; AttachmentSourceChoices.ReportFailure(owner, error.Message); }
 			goto IL_0086;
 		}
 	}// end try (depth: 1)
@@ -18842,11 +18892,11 @@ IL_0069_1:
 CATCH_006b:
 	{// begin catch(System.Exception)
 		Exception_t* L_15 = ((Exception_t*)IL2CPP_GET_ACTIVE_EXCEPTION(Exception_t*));;
-		// } catch (Exception error) { recording = false; ReportAttachmentStore.Failure(owner, error.Message); }
+		// } catch (Exception error) { recording = false; AttachmentSourceChoices.ReportFailure(owner, error.Message); }
 		V_1 = L_15;
-		// } catch (Exception error) { recording = false; ReportAttachmentStore.Failure(owner, error.Message); }
+		// } catch (Exception error) { recording = false; AttachmentSourceChoices.ReportFailure(owner, error.Message); }
 		__this->___recording_5 = (bool)0;
-		// } catch (Exception error) { recording = false; ReportAttachmentStore.Failure(owner, error.Message); }
+		// } catch (Exception error) { recording = false; AttachmentSourceChoices.ReportFailure(owner, error.Message); }
 		U3CU3Ec__DisplayClass5_0_tF87AA3E604BD73F819D7235500F3A3932FA76121* L_16 = V_0;
 		NullCheck(L_16);
 		MainScript_tE5DA41EF9F6C72F24338683BF923785400FDC5FF* L_17 = L_16->___owner_1;
@@ -18854,9 +18904,8 @@ CATCH_006b:
 		NullCheck(L_18);
 		String_t* L_19;
 		L_19 = VirtualFuncInvoker0< String_t* >::Invoke(5 /* System.String System.Exception::get_Message() */, L_18);
-		il2cpp_codegen_runtime_class_init_inline(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&ReportAttachmentStore_tBDE4E9E4B9BDE1AB90D3BC5303735D5AFD330951_il2cpp_TypeInfo_var)));
-		ReportAttachmentStore_Failure_m34741015DF3E6727ECD417AC7CD25D8021FE7609(L_17, L_19, NULL);
-		// } catch (Exception error) { recording = false; ReportAttachmentStore.Failure(owner, error.Message); }
+		AttachmentSourceChoices_ReportFailure_m0593752E7BAF9F37D02D4756D2B8A58750D95380(L_17, L_19, NULL);
+		// } catch (Exception error) { recording = false; AttachmentSourceChoices.ReportFailure(owner, error.Message); }
 		IL2CPP_POP_ACTIVE_EXCEPTION(Exception_t*);
 		goto IL_0086;
 	}// end catch (depth: 1)
@@ -18874,7 +18923,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VideoRecording_SelectVideo_m5BFA52F652D5
 	if (!s_Il2CppMethodInitialized)
 	{
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&MediaPickCallback_tC207F6F3EEE18F64B03E23D5C9FA8C79517A5EB6_il2cpp_TypeInfo_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ReportAttachmentStore_tBDE4E9E4B9BDE1AB90D3BC5303735D5AFD330951_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&U3CU3Ec__DisplayClass6_0_U3CSelectVideoU3Eb__0_mE42419B79DA668AE9C3497833AA0B365E43ED503_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&U3CU3Ec__DisplayClass6_0_tBFFB9CDF42749C0DE9721FB93D7E6D7D825FC99E_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral88D3AF1882A99EF42ED88963253B1967EFDCD6AE);
@@ -18937,17 +18985,16 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VideoRecording_SelectVideo_m5BFA52F652D5
 		{
 			// recording = false;
 			__this->___recording_5 = (bool)0;
-			// ReportAttachmentStore.Failure(owner, "L?acc?s aux vid?os n?est pas autoris?. V?rifiez les param?tres de la tablette, puis r?essayez. Aucune vid?o n?a ?t? ajout?e.");
+			// AttachmentSourceChoices.ReportFailure(owner, "L?acc?s aux vid?os n?est pas autoris?. V?rifiez les param?tres de la tablette, puis r?essayez. Aucune vid?o n?a ?t? ajout?e.");
 			U3CU3Ec__DisplayClass6_0_tBFFB9CDF42749C0DE9721FB93D7E6D7D825FC99E* L_13 = V_0;
 			NullCheck(L_13);
 			MainScript_tE5DA41EF9F6C72F24338683BF923785400FDC5FF* L_14 = L_13->___owner_1;
-			il2cpp_codegen_runtime_class_init_inline(ReportAttachmentStore_tBDE4E9E4B9BDE1AB90D3BC5303735D5AFD330951_il2cpp_TypeInfo_var);
-			ReportAttachmentStore_Failure_m34741015DF3E6727ECD417AC7CD25D8021FE7609(L_14, _stringLiteralAC1135BDB9E57AAA4A7F7DC0694373D5B9D46A69, NULL);
+			AttachmentSourceChoices_ReportFailure_m0593752E7BAF9F37D02D4756D2B8A58750D95380(L_14, _stringLiteralAC1135BDB9E57AAA4A7F7DC0694373D5B9D46A69, NULL);
 		}
 
 IL_006e_1:
 		{
-			// } catch (Exception error) { recording = false; ReportAttachmentStore.Failure(owner, error.Message); }
+			// } catch (Exception error) { recording = false; AttachmentSourceChoices.ReportFailure(owner, error.Message); }
 			goto IL_008b;
 		}
 	}// end try (depth: 1)
@@ -18964,11 +19011,11 @@ IL_006e_1:
 CATCH_0070:
 	{// begin catch(System.Exception)
 		Exception_t* L_15 = ((Exception_t*)IL2CPP_GET_ACTIVE_EXCEPTION(Exception_t*));;
-		// } catch (Exception error) { recording = false; ReportAttachmentStore.Failure(owner, error.Message); }
+		// } catch (Exception error) { recording = false; AttachmentSourceChoices.ReportFailure(owner, error.Message); }
 		V_1 = L_15;
-		// } catch (Exception error) { recording = false; ReportAttachmentStore.Failure(owner, error.Message); }
+		// } catch (Exception error) { recording = false; AttachmentSourceChoices.ReportFailure(owner, error.Message); }
 		__this->___recording_5 = (bool)0;
-		// } catch (Exception error) { recording = false; ReportAttachmentStore.Failure(owner, error.Message); }
+		// } catch (Exception error) { recording = false; AttachmentSourceChoices.ReportFailure(owner, error.Message); }
 		U3CU3Ec__DisplayClass6_0_tBFFB9CDF42749C0DE9721FB93D7E6D7D825FC99E* L_16 = V_0;
 		NullCheck(L_16);
 		MainScript_tE5DA41EF9F6C72F24338683BF923785400FDC5FF* L_17 = L_16->___owner_1;
@@ -18976,9 +19023,8 @@ CATCH_0070:
 		NullCheck(L_18);
 		String_t* L_19;
 		L_19 = VirtualFuncInvoker0< String_t* >::Invoke(5 /* System.String System.Exception::get_Message() */, L_18);
-		il2cpp_codegen_runtime_class_init_inline(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&ReportAttachmentStore_tBDE4E9E4B9BDE1AB90D3BC5303735D5AFD330951_il2cpp_TypeInfo_var)));
-		ReportAttachmentStore_Failure_m34741015DF3E6727ECD417AC7CD25D8021FE7609(L_17, L_19, NULL);
-		// } catch (Exception error) { recording = false; ReportAttachmentStore.Failure(owner, error.Message); }
+		AttachmentSourceChoices_ReportFailure_m0593752E7BAF9F37D02D4756D2B8A58750D95380(L_17, L_19, NULL);
+		// } catch (Exception error) { recording = false; AttachmentSourceChoices.ReportFailure(owner, error.Message); }
 		IL2CPP_POP_ACTIVE_EXCEPTION(Exception_t*);
 		goto IL_008b;
 	}// end catch (depth: 1)
@@ -19203,7 +19249,7 @@ IL_00b4_2:
 
 IL_00b9_2:
 				{
-					// } catch (Exception error) { ReportAttachmentStore.Failure(owner, error.Message); }
+					// } catch (Exception error) { AttachmentSourceChoices.ReportFailure(owner, error.Message); }
 					goto IL_00d2;
 				}
 			}// end try (depth: 2)
@@ -19220,17 +19266,16 @@ IL_00b9_2:
 CATCH_00bb_1:
 			{// begin catch(System.Exception)
 				Exception_t* L_28 = ((Exception_t*)IL2CPP_GET_ACTIVE_EXCEPTION(Exception_t*));;
-				// } catch (Exception error) { ReportAttachmentStore.Failure(owner, error.Message); }
+				// } catch (Exception error) { AttachmentSourceChoices.ReportFailure(owner, error.Message); }
 				V_3 = L_28;
-				// } catch (Exception error) { ReportAttachmentStore.Failure(owner, error.Message); }
+				// } catch (Exception error) { AttachmentSourceChoices.ReportFailure(owner, error.Message); }
 				MainScript_tE5DA41EF9F6C72F24338683BF923785400FDC5FF* L_29 = ___0_owner;
 				Exception_t* L_30 = V_3;
 				NullCheck(L_30);
 				String_t* L_31;
 				L_31 = VirtualFuncInvoker0< String_t* >::Invoke(5 /* System.String System.Exception::get_Message() */, L_30);
-				il2cpp_codegen_runtime_class_init_inline(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&ReportAttachmentStore_tBDE4E9E4B9BDE1AB90D3BC5303735D5AFD330951_il2cpp_TypeInfo_var)));
-				ReportAttachmentStore_Failure_m34741015DF3E6727ECD417AC7CD25D8021FE7609(L_29, L_31, NULL);
-				// } catch (Exception error) { ReportAttachmentStore.Failure(owner, error.Message); }
+				AttachmentSourceChoices_ReportFailure_m0593752E7BAF9F37D02D4756D2B8A58750D95380(L_29, L_31, NULL);
+				// } catch (Exception error) { AttachmentSourceChoices.ReportFailure(owner, error.Message); }
 				IL2CPP_POP_ACTIVE_EXCEPTION(Exception_t*);
 				goto IL_00d2;
 			}// end catch (depth: 2)
@@ -19284,12 +19329,18 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__DisplayClass2_0__ctor_mE06A7018
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__DisplayClass2_0_U3CChooseVideoSourceU3Eb__0_m90C611F33C35AFEBC9263B18295586BD0FA720C6 (U3CU3Ec__DisplayClass2_0_t67C4B0CE8A6C68B3E687A267F16351113315F378* __this, const RuntimeMethod* method) 
 {
 	{
-		// AttachmentSourceModal.Show(owner, true, () => CaptureVideo(owner, context), () => SelectVideo(owner, context));
-		VideoRecording_tF9BDBE286EFA7F9DE6C9B5051F1657BAB17F49B0* L_0 = __this->___U3CU3E4__this_0;
-		MainScript_tE5DA41EF9F6C72F24338683BF923785400FDC5FF* L_1 = __this->___owner_1;
-		Context_t350B2077E12ACB5CE89479357E0A55A207873FA2* L_2 = __this->___context_2;
+		// () => { context.Prepare(captureDraft); CaptureVideo(owner, context); },
+		Context_t350B2077E12ACB5CE89479357E0A55A207873FA2* L_0 = __this->___context_3;
+		Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* L_1 = __this->___captureDraft_0;
 		NullCheck(L_0);
-		VideoRecording_CaptureVideo_mC45F83C093F34881AF49CF9E0BB22D9993B4BB4A(L_0, L_1, L_2, NULL);
+		Context_Prepare_m6364684BFCBD8E1BDFFC39ACD3AB6C115F03F2A5(L_0, L_1, NULL);
+		// () => { context.Prepare(captureDraft); CaptureVideo(owner, context); },
+		VideoRecording_tF9BDBE286EFA7F9DE6C9B5051F1657BAB17F49B0* L_2 = __this->___U3CU3E4__this_1;
+		MainScript_tE5DA41EF9F6C72F24338683BF923785400FDC5FF* L_3 = __this->___owner_2;
+		Context_t350B2077E12ACB5CE89479357E0A55A207873FA2* L_4 = __this->___context_3;
+		NullCheck(L_2);
+		VideoRecording_CaptureVideo_mC45F83C093F34881AF49CF9E0BB22D9993B4BB4A(L_2, L_3, L_4, NULL);
+		// () => { context.Prepare(captureDraft); CaptureVideo(owner, context); },
 		return;
 	}
 }
@@ -19297,12 +19348,18 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__DisplayClass2_0_U3CChooseVideoS
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__DisplayClass2_0_U3CChooseVideoSourceU3Eb__1_m7AD31D26F9B9DA21C5F7773B8C9F074BB10F84DB (U3CU3Ec__DisplayClass2_0_t67C4B0CE8A6C68B3E687A267F16351113315F378* __this, const RuntimeMethod* method) 
 {
 	{
-		// AttachmentSourceModal.Show(owner, true, () => CaptureVideo(owner, context), () => SelectVideo(owner, context));
-		VideoRecording_tF9BDBE286EFA7F9DE6C9B5051F1657BAB17F49B0* L_0 = __this->___U3CU3E4__this_0;
-		MainScript_tE5DA41EF9F6C72F24338683BF923785400FDC5FF* L_1 = __this->___owner_1;
-		Context_t350B2077E12ACB5CE89479357E0A55A207873FA2* L_2 = __this->___context_2;
+		// () => { context.Prepare(captureDraft); SelectVideo(owner, context); });
+		Context_t350B2077E12ACB5CE89479357E0A55A207873FA2* L_0 = __this->___context_3;
+		Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* L_1 = __this->___captureDraft_0;
 		NullCheck(L_0);
-		VideoRecording_SelectVideo_m5BFA52F652D51C6830D86A18677CD77804E3FECC(L_0, L_1, L_2, NULL);
+		Context_Prepare_m6364684BFCBD8E1BDFFC39ACD3AB6C115F03F2A5(L_0, L_1, NULL);
+		// () => { context.Prepare(captureDraft); SelectVideo(owner, context); });
+		VideoRecording_tF9BDBE286EFA7F9DE6C9B5051F1657BAB17F49B0* L_2 = __this->___U3CU3E4__this_1;
+		MainScript_tE5DA41EF9F6C72F24338683BF923785400FDC5FF* L_3 = __this->___owner_2;
+		Context_t350B2077E12ACB5CE89479357E0A55A207873FA2* L_4 = __this->___context_3;
+		NullCheck(L_2);
+		VideoRecording_SelectVideo_m5BFA52F652D51C6830D86A18677CD77804E3FECC(L_2, L_3, L_4, NULL);
+		// () => { context.Prepare(captureDraft); SelectVideo(owner, context); });
 		return;
 	}
 }
@@ -19374,8 +19431,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__DisplayClass6_0_U3CSelectVideoU
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// System.Void WebCamPhotoCamera::ChoosePhotoSource(System.Int32,System.Boolean,System.String,System.String,System.String)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WebCamPhotoCamera_ChoosePhotoSource_m334B45A0DD37CBEC391F4440C2A14325FDC0F7E6 (WebCamPhotoCamera_t9012ECCDB28660ED206FDE043EBBF32F914995F8* __this, int32_t ___0_maxSize, bool ___1_estOnglet, String_t* ___2_idChamp, String_t* ___3_titreChampAffichage, String_t* ___4_idSection, const RuntimeMethod* method) 
+// System.Void WebCamPhotoCamera::ChoosePhotoSource(UnityEngine.UIElements.VisualElement,System.Int32,System.Boolean,System.String,System.String,System.String,System.Action)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WebCamPhotoCamera_ChoosePhotoSource_m0791EBB3C19E6BDF7928FBBD5FD9CED01F0D6720 (WebCamPhotoCamera_t9012ECCDB28660ED206FDE043EBBF32F914995F8* __this, VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* ___0_container, int32_t ___1_maxSize, bool ___2_estOnglet, String_t* ___3_idChamp, String_t* ___4_titreChampAffichage, String_t* ___5_idSection, Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* ___6_captureDraft, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -19398,92 +19455,117 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WebCamPhotoCamera_ChoosePhotoSource_m334
 		U3CU3Ec__DisplayClass6_0__ctor_m41DBA1644BA04D58A37AE1519EE7EC424C1D8FFA(L_0, NULL);
 		V_0 = L_0;
 		U3CU3Ec__DisplayClass6_0_t164CE2EA5C300D17C343DE6A23605223D8AE336D* L_1 = V_0;
+		Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* L_2 = ___6_captureDraft;
 		NullCheck(L_1);
-		L_1->___U3CU3E4__this_0 = __this;
-		Il2CppCodeGenWriteBarrier((void**)(&L_1->___U3CU3E4__this_0), (void*)__this);
-		U3CU3Ec__DisplayClass6_0_t164CE2EA5C300D17C343DE6A23605223D8AE336D* L_2 = V_0;
-		int32_t L_3 = ___0_maxSize;
-		NullCheck(L_2);
-		L_2->___maxSize_2 = L_3;
-		// var owner = GameObject.Find("Script").GetComponent<MainScript>();
+		L_1->___captureDraft_0 = L_2;
+		Il2CppCodeGenWriteBarrier((void**)(&L_1->___captureDraft_0), (void*)L_2);
+		U3CU3Ec__DisplayClass6_0_t164CE2EA5C300D17C343DE6A23605223D8AE336D* L_3 = V_0;
+		NullCheck(L_3);
+		L_3->___U3CU3E4__this_1 = __this;
+		Il2CppCodeGenWriteBarrier((void**)(&L_3->___U3CU3E4__this_1), (void*)__this);
 		U3CU3Ec__DisplayClass6_0_t164CE2EA5C300D17C343DE6A23605223D8AE336D* L_4 = V_0;
-		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_5;
-		L_5 = GameObject_Find_m7A669B4EEC2617AB82F6E3FF007CDCD9F21DB300(_stringLiteralA0C14CE26448E50189281A9427CC96D04658B7AE, NULL);
-		NullCheck(L_5);
-		MainScript_tE5DA41EF9F6C72F24338683BF923785400FDC5FF* L_6;
-		L_6 = GameObject_GetComponent_TisMainScript_tE5DA41EF9F6C72F24338683BF923785400FDC5FF_m305B2730E271E73DDF27A138CAEFBF3240A147E9(L_5, GameObject_GetComponent_TisMainScript_tE5DA41EF9F6C72F24338683BF923785400FDC5FF_m305B2730E271E73DDF27A138CAEFBF3240A147E9_RuntimeMethod_var);
+		int32_t L_5 = ___1_maxSize;
 		NullCheck(L_4);
-		L_4->___owner_1 = L_6;
-		Il2CppCodeGenWriteBarrier((void**)(&L_4->___owner_1), (void*)L_6);
+		L_4->___maxSize_3 = L_5;
+		// var owner = GameObject.Find("Script").GetComponent<MainScript>();
+		U3CU3Ec__DisplayClass6_0_t164CE2EA5C300D17C343DE6A23605223D8AE336D* L_6 = V_0;
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_7;
+		L_7 = GameObject_Find_m7A669B4EEC2617AB82F6E3FF007CDCD9F21DB300(_stringLiteralA0C14CE26448E50189281A9427CC96D04658B7AE, NULL);
+		NullCheck(L_7);
+		MainScript_tE5DA41EF9F6C72F24338683BF923785400FDC5FF* L_8;
+		L_8 = GameObject_GetComponent_TisMainScript_tE5DA41EF9F6C72F24338683BF923785400FDC5FF_m305B2730E271E73DDF27A138CAEFBF3240A147E9(L_7, GameObject_GetComponent_TisMainScript_tE5DA41EF9F6C72F24338683BF923785400FDC5FF_m305B2730E271E73DDF27A138CAEFBF3240A147E9_RuntimeMethod_var);
+		NullCheck(L_6);
+		L_6->___owner_2 = L_8;
+		Il2CppCodeGenWriteBarrier((void**)(&L_6->___owner_2), (void*)L_8);
 	}
 	try
 	{// begin try (depth: 1)
-		// CheckAvailable(owner);
-		U3CU3Ec__DisplayClass6_0_t164CE2EA5C300D17C343DE6A23605223D8AE336D* L_7 = V_0;
-		NullCheck(L_7);
-		MainScript_tE5DA41EF9F6C72F24338683BF923785400FDC5FF* L_8 = L_7->___owner_1;
-		WebCamPhotoCamera_CheckAvailable_mA6A27F8B5C08184EBE7658226AF14545217498B8(L_8, NULL);
-		// var context = ReportAttachmentStore.Capture(owner, estOnglet, idSection, idChamp);
-		U3CU3Ec__DisplayClass6_0_t164CE2EA5C300D17C343DE6A23605223D8AE336D* L_9 = V_0;
-		U3CU3Ec__DisplayClass6_0_t164CE2EA5C300D17C343DE6A23605223D8AE336D* L_10 = V_0;
-		NullCheck(L_10);
-		MainScript_tE5DA41EF9F6C72F24338683BF923785400FDC5FF* L_11 = L_10->___owner_1;
-		bool L_12 = ___1_estOnglet;
-		String_t* L_13 = ___4_idSection;
-		String_t* L_14 = ___2_idChamp;
-		il2cpp_codegen_runtime_class_init_inline(ReportAttachmentStore_tBDE4E9E4B9BDE1AB90D3BC5303735D5AFD330951_il2cpp_TypeInfo_var);
-		Context_t350B2077E12ACB5CE89479357E0A55A207873FA2* L_15;
-		L_15 = ReportAttachmentStore_Capture_mBCEE009CAECF2385A49478C7D069965FA87EAE27(L_11, L_12, L_13, L_14, NULL);
-		NullCheck(L_9);
-		L_9->___context_3 = L_15;
-		Il2CppCodeGenWriteBarrier((void**)(&L_9->___context_3), (void*)L_15);
-		// AttachmentSourceModal.Show(owner, false, () => CapturePhoto(owner, context, maxSize), () => SelectPhoto(owner, context));
-		U3CU3Ec__DisplayClass6_0_t164CE2EA5C300D17C343DE6A23605223D8AE336D* L_16 = V_0;
-		NullCheck(L_16);
-		MainScript_tE5DA41EF9F6C72F24338683BF923785400FDC5FF* L_17 = L_16->___owner_1;
-		U3CU3Ec__DisplayClass6_0_t164CE2EA5C300D17C343DE6A23605223D8AE336D* L_18 = V_0;
-		Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* L_19 = (Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07*)il2cpp_codegen_object_new(Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07_il2cpp_TypeInfo_var);
-		NullCheck(L_19);
-		Action__ctor_mBDC7B0B4A3F583B64C2896F01BDED360772F67DC(L_19, L_18, (intptr_t)((void*)U3CU3Ec__DisplayClass6_0_U3CChoosePhotoSourceU3Eb__0_m3A6E351F69029931FFCCDEFE69FA989183CF822F_RuntimeMethod_var), NULL);
-		U3CU3Ec__DisplayClass6_0_t164CE2EA5C300D17C343DE6A23605223D8AE336D* L_20 = V_0;
-		Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* L_21 = (Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07*)il2cpp_codegen_object_new(Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07_il2cpp_TypeInfo_var);
-		NullCheck(L_21);
-		Action__ctor_mBDC7B0B4A3F583B64C2896F01BDED360772F67DC(L_21, L_20, (intptr_t)((void*)U3CU3Ec__DisplayClass6_0_U3CChoosePhotoSourceU3Eb__1_m9BE20143C8C9DEDBB204E5E7E327A48F8B451294_RuntimeMethod_var), NULL);
-		AttachmentSourceModal_Show_mD37F5FD6F1C4A5BE0301D69ADAD8D76EDD359609(L_17, (bool)0, L_19, L_21, NULL);
-		// } catch (Exception error) { ReportAttachmentStore.Failure(owner, error.Message); }
-		goto IL_0083;
+		{
+			// if (AttachmentSourceChoices.ToggleClosed(container, false)) return;
+			VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_9 = ___0_container;
+			bool L_10;
+			L_10 = AttachmentSourceChoices_ToggleClosed_m32DB781F1A7C1365BE20B0152A01D4EABAE17139(L_9, (bool)0, NULL);
+			if (!L_10)
+			{
+				goto IL_003c_1;
+			}
+		}
+		{
+			// if (AttachmentSourceChoices.ToggleClosed(container, false)) return;
+			goto IL_0099;
+		}
+
+IL_003c_1:
+		{
+			// CheckAvailable(owner);
+			U3CU3Ec__DisplayClass6_0_t164CE2EA5C300D17C343DE6A23605223D8AE336D* L_11 = V_0;
+			NullCheck(L_11);
+			MainScript_tE5DA41EF9F6C72F24338683BF923785400FDC5FF* L_12 = L_11->___owner_2;
+			WebCamPhotoCamera_CheckAvailable_mA6A27F8B5C08184EBE7658226AF14545217498B8(L_12, NULL);
+			// var context = ReportAttachmentStore.Capture(owner, estOnglet, idSection, idChamp, false);
+			U3CU3Ec__DisplayClass6_0_t164CE2EA5C300D17C343DE6A23605223D8AE336D* L_13 = V_0;
+			U3CU3Ec__DisplayClass6_0_t164CE2EA5C300D17C343DE6A23605223D8AE336D* L_14 = V_0;
+			NullCheck(L_14);
+			MainScript_tE5DA41EF9F6C72F24338683BF923785400FDC5FF* L_15 = L_14->___owner_2;
+			bool L_16 = ___2_estOnglet;
+			String_t* L_17 = ___5_idSection;
+			String_t* L_18 = ___3_idChamp;
+			il2cpp_codegen_runtime_class_init_inline(ReportAttachmentStore_tBDE4E9E4B9BDE1AB90D3BC5303735D5AFD330951_il2cpp_TypeInfo_var);
+			Context_t350B2077E12ACB5CE89479357E0A55A207873FA2* L_19;
+			L_19 = ReportAttachmentStore_Capture_mB71132FA8F030B2A74FF1E74FE1B052AC7897AA6(L_15, L_16, L_17, L_18, (bool)0, NULL);
+			NullCheck(L_13);
+			L_13->___context_4 = L_19;
+			Il2CppCodeGenWriteBarrier((void**)(&L_13->___context_4), (void*)L_19);
+			// AttachmentSourceChoices.Show(owner, container, false,
+			//     () => { context.Prepare(captureDraft); CapturePhoto(owner, context, maxSize); },
+			//     () => { context.Prepare(captureDraft); SelectPhoto(owner, context); });
+			U3CU3Ec__DisplayClass6_0_t164CE2EA5C300D17C343DE6A23605223D8AE336D* L_20 = V_0;
+			NullCheck(L_20);
+			MainScript_tE5DA41EF9F6C72F24338683BF923785400FDC5FF* L_21 = L_20->___owner_2;
+			VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_22 = ___0_container;
+			U3CU3Ec__DisplayClass6_0_t164CE2EA5C300D17C343DE6A23605223D8AE336D* L_23 = V_0;
+			Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* L_24 = (Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07*)il2cpp_codegen_object_new(Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07_il2cpp_TypeInfo_var);
+			NullCheck(L_24);
+			Action__ctor_mBDC7B0B4A3F583B64C2896F01BDED360772F67DC(L_24, L_23, (intptr_t)((void*)U3CU3Ec__DisplayClass6_0_U3CChoosePhotoSourceU3Eb__0_m3A6E351F69029931FFCCDEFE69FA989183CF822F_RuntimeMethod_var), NULL);
+			U3CU3Ec__DisplayClass6_0_t164CE2EA5C300D17C343DE6A23605223D8AE336D* L_25 = V_0;
+			Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* L_26 = (Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07*)il2cpp_codegen_object_new(Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07_il2cpp_TypeInfo_var);
+			NullCheck(L_26);
+			Action__ctor_mBDC7B0B4A3F583B64C2896F01BDED360772F67DC(L_26, L_25, (intptr_t)((void*)U3CU3Ec__DisplayClass6_0_U3CChoosePhotoSourceU3Eb__1_m9BE20143C8C9DEDBB204E5E7E327A48F8B451294_RuntimeMethod_var), NULL);
+			AttachmentSourceChoices_Show_mB17CA8AA61FC3FDA40D23EC38BA4987AC5F400A5(L_21, L_22, (bool)0, L_24, L_26, NULL);
+			// } catch (Exception error) { AttachmentSourceChoices.ReportFailure(owner, error.Message); }
+			goto IL_0099;
+		}
 	}// end try (depth: 1)
 	catch(Il2CppExceptionWrapper& e)
 	{
 		if(il2cpp_codegen_class_is_assignable_from (((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&Exception_t_il2cpp_TypeInfo_var)), il2cpp_codegen_object_class(e.ex)))
 		{
 			IL2CPP_PUSH_ACTIVE_EXCEPTION(e.ex);
-			goto CATCH_006f;
+			goto CATCH_0085;
 		}
 		throw e;
 	}
 
-CATCH_006f:
+CATCH_0085:
 	{// begin catch(System.Exception)
-		Exception_t* L_22 = ((Exception_t*)IL2CPP_GET_ACTIVE_EXCEPTION(Exception_t*));;
-		// } catch (Exception error) { ReportAttachmentStore.Failure(owner, error.Message); }
-		V_1 = L_22;
-		// } catch (Exception error) { ReportAttachmentStore.Failure(owner, error.Message); }
-		U3CU3Ec__DisplayClass6_0_t164CE2EA5C300D17C343DE6A23605223D8AE336D* L_23 = V_0;
-		NullCheck(L_23);
-		MainScript_tE5DA41EF9F6C72F24338683BF923785400FDC5FF* L_24 = L_23->___owner_1;
-		Exception_t* L_25 = V_1;
-		NullCheck(L_25);
-		String_t* L_26;
-		L_26 = VirtualFuncInvoker0< String_t* >::Invoke(5 /* System.String System.Exception::get_Message() */, L_25);
-		il2cpp_codegen_runtime_class_init_inline(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&ReportAttachmentStore_tBDE4E9E4B9BDE1AB90D3BC5303735D5AFD330951_il2cpp_TypeInfo_var)));
-		ReportAttachmentStore_Failure_m34741015DF3E6727ECD417AC7CD25D8021FE7609(L_24, L_26, NULL);
-		// } catch (Exception error) { ReportAttachmentStore.Failure(owner, error.Message); }
+		Exception_t* L_27 = ((Exception_t*)IL2CPP_GET_ACTIVE_EXCEPTION(Exception_t*));;
+		// } catch (Exception error) { AttachmentSourceChoices.ReportFailure(owner, error.Message); }
+		V_1 = L_27;
+		// } catch (Exception error) { AttachmentSourceChoices.ReportFailure(owner, error.Message); }
+		U3CU3Ec__DisplayClass6_0_t164CE2EA5C300D17C343DE6A23605223D8AE336D* L_28 = V_0;
+		NullCheck(L_28);
+		MainScript_tE5DA41EF9F6C72F24338683BF923785400FDC5FF* L_29 = L_28->___owner_2;
+		Exception_t* L_30 = V_1;
+		NullCheck(L_30);
+		String_t* L_31;
+		L_31 = VirtualFuncInvoker0< String_t* >::Invoke(5 /* System.String System.Exception::get_Message() */, L_30);
+		AttachmentSourceChoices_ReportFailure_m0593752E7BAF9F37D02D4756D2B8A58750D95380(L_29, L_31, NULL);
+		// } catch (Exception error) { AttachmentSourceChoices.ReportFailure(owner, error.Message); }
 		IL2CPP_POP_ACTIVE_EXCEPTION(Exception_t*);
-		goto IL_0083;
+		goto IL_0099;
 	}// end catch (depth: 1)
 
-IL_0083:
+IL_0099:
 	{
 		// }
 		return;
@@ -19525,41 +19607,40 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WebCamPhotoCamera_TakePicture_m3CB62E6C0
 		String_t* L_7 = ___2_idChamp;
 		il2cpp_codegen_runtime_class_init_inline(ReportAttachmentStore_tBDE4E9E4B9BDE1AB90D3BC5303735D5AFD330951_il2cpp_TypeInfo_var);
 		Context_t350B2077E12ACB5CE89479357E0A55A207873FA2* L_8;
-		L_8 = ReportAttachmentStore_Capture_mBCEE009CAECF2385A49478C7D069965FA87EAE27(L_4, L_5, L_6, L_7, NULL);
+		L_8 = ReportAttachmentStore_Capture_mB71132FA8F030B2A74FF1E74FE1B052AC7897AA6(L_4, L_5, L_6, L_7, (bool)1, NULL);
 		int32_t L_9 = ___0_maxSize;
 		WebCamPhotoCamera_CapturePhoto_mAF7B0699EFF410569BAD5C22950C6FCABFACE0BB(__this, L_3, L_8, L_9, NULL);
-		// } catch (Exception error) { ReportAttachmentStore.Failure(owner, error.Message); }
-		goto IL_0039;
+		// } catch (Exception error) { AttachmentSourceChoices.ReportFailure(owner, error.Message); }
+		goto IL_003a;
 	}// end try (depth: 1)
 	catch(Il2CppExceptionWrapper& e)
 	{
 		if(il2cpp_codegen_class_is_assignable_from (((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&Exception_t_il2cpp_TypeInfo_var)), il2cpp_codegen_object_class(e.ex)))
 		{
 			IL2CPP_PUSH_ACTIVE_EXCEPTION(e.ex);
-			goto CATCH_002a;
+			goto CATCH_002b;
 		}
 		throw e;
 	}
 
-CATCH_002a:
+CATCH_002b:
 	{// begin catch(System.Exception)
 		Exception_t* L_10 = ((Exception_t*)IL2CPP_GET_ACTIVE_EXCEPTION(Exception_t*));;
-		// } catch (Exception error) { ReportAttachmentStore.Failure(owner, error.Message); }
+		// } catch (Exception error) { AttachmentSourceChoices.ReportFailure(owner, error.Message); }
 		V_1 = L_10;
-		// } catch (Exception error) { ReportAttachmentStore.Failure(owner, error.Message); }
+		// } catch (Exception error) { AttachmentSourceChoices.ReportFailure(owner, error.Message); }
 		MainScript_tE5DA41EF9F6C72F24338683BF923785400FDC5FF* L_11 = V_0;
 		Exception_t* L_12 = V_1;
 		NullCheck(L_12);
 		String_t* L_13;
 		L_13 = VirtualFuncInvoker0< String_t* >::Invoke(5 /* System.String System.Exception::get_Message() */, L_12);
-		il2cpp_codegen_runtime_class_init_inline(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&ReportAttachmentStore_tBDE4E9E4B9BDE1AB90D3BC5303735D5AFD330951_il2cpp_TypeInfo_var)));
-		ReportAttachmentStore_Failure_m34741015DF3E6727ECD417AC7CD25D8021FE7609(L_11, L_13, NULL);
-		// } catch (Exception error) { ReportAttachmentStore.Failure(owner, error.Message); }
+		AttachmentSourceChoices_ReportFailure_m0593752E7BAF9F37D02D4756D2B8A58750D95380(L_11, L_13, NULL);
+		// } catch (Exception error) { AttachmentSourceChoices.ReportFailure(owner, error.Message); }
 		IL2CPP_POP_ACTIVE_EXCEPTION(Exception_t*);
-		goto IL_0039;
+		goto IL_003a;
 	}// end catch (depth: 1)
 
-IL_0039:
+IL_003a:
 	{
 		// }
 		return;
@@ -19628,7 +19709,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WebCamPhotoCamera_CapturePhoto_mAF7B0699
 	if (!s_Il2CppMethodInitialized)
 	{
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&CameraCallback_tF33A274B891CCEC46FF206A2C3907F370B4FF771_il2cpp_TypeInfo_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ReportAttachmentStore_tBDE4E9E4B9BDE1AB90D3BC5303735D5AFD330951_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&U3CU3Ec__DisplayClass9_0_U3CCapturePhotoU3Eb__0_mBB536CA6D248D5F0F8611E801E8780530A9F953B_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&U3CU3Ec__DisplayClass9_0_t453693DE45AA81A77BAC149549CA1BCEDDACA096_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral1DC3B6D18259948BADB86FC86F265F30D8189DC0);
@@ -19686,12 +19766,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WebCamPhotoCamera_CapturePhoto_mAF7B0699
 			}
 		}
 		{
-			// ReportAttachmentStore.Failure(owner, "Autorisez la cam?ra dans les param?tres de la tablette, puis r?essayez. Aucune photo n?a ?t? ajout?e.");
+			// AttachmentSourceChoices.ReportFailure(owner, "Autorisez la cam?ra dans les param?tres de la tablette, puis r?essayez. Aucune photo n?a ?t? ajout?e.");
 			U3CU3Ec__DisplayClass9_0_t453693DE45AA81A77BAC149549CA1BCEDDACA096* L_14 = V_0;
 			NullCheck(L_14);
 			MainScript_tE5DA41EF9F6C72F24338683BF923785400FDC5FF* L_15 = L_14->___owner_1;
-			il2cpp_codegen_runtime_class_init_inline(ReportAttachmentStore_tBDE4E9E4B9BDE1AB90D3BC5303735D5AFD330951_il2cpp_TypeInfo_var);
-			ReportAttachmentStore_Failure_m34741015DF3E6727ECD417AC7CD25D8021FE7609(L_15, _stringLiteral1DC3B6D18259948BADB86FC86F265F30D8189DC0, NULL);
+			AttachmentSourceChoices_ReportFailure_m0593752E7BAF9F37D02D4756D2B8A58750D95380(L_15, _stringLiteral1DC3B6D18259948BADB86FC86F265F30D8189DC0, NULL);
 		}
 
 IL_0058_1:
@@ -19713,9 +19792,9 @@ IL_0058_1:
 CATCH_005a:
 	{// begin catch(System.Exception)
 		Exception_t* L_16 = ((Exception_t*)IL2CPP_GET_ACTIVE_EXCEPTION(Exception_t*));;
-		// catch (Exception error) { ReportAttachmentStore.Failure(owner, error.Message); }
+		// catch (Exception error) { AttachmentSourceChoices.ReportFailure(owner, error.Message); }
 		V_1 = L_16;
-		// catch (Exception error) { ReportAttachmentStore.Failure(owner, error.Message); }
+		// catch (Exception error) { AttachmentSourceChoices.ReportFailure(owner, error.Message); }
 		U3CU3Ec__DisplayClass9_0_t453693DE45AA81A77BAC149549CA1BCEDDACA096* L_17 = V_0;
 		NullCheck(L_17);
 		MainScript_tE5DA41EF9F6C72F24338683BF923785400FDC5FF* L_18 = L_17->___owner_1;
@@ -19723,9 +19802,8 @@ CATCH_005a:
 		NullCheck(L_19);
 		String_t* L_20;
 		L_20 = VirtualFuncInvoker0< String_t* >::Invoke(5 /* System.String System.Exception::get_Message() */, L_19);
-		il2cpp_codegen_runtime_class_init_inline(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&ReportAttachmentStore_tBDE4E9E4B9BDE1AB90D3BC5303735D5AFD330951_il2cpp_TypeInfo_var)));
-		ReportAttachmentStore_Failure_m34741015DF3E6727ECD417AC7CD25D8021FE7609(L_18, L_20, NULL);
-		// catch (Exception error) { ReportAttachmentStore.Failure(owner, error.Message); }
+		AttachmentSourceChoices_ReportFailure_m0593752E7BAF9F37D02D4756D2B8A58750D95380(L_18, L_20, NULL);
+		// catch (Exception error) { AttachmentSourceChoices.ReportFailure(owner, error.Message); }
 		IL2CPP_POP_ACTIVE_EXCEPTION(Exception_t*);
 		goto IL_006e;
 	}// end catch (depth: 1)
@@ -19743,7 +19821,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WebCamPhotoCamera_SelectPhoto_m34AB4A75C
 	if (!s_Il2CppMethodInitialized)
 	{
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&MediaPickCallback_tC207F6F3EEE18F64B03E23D5C9FA8C79517A5EB6_il2cpp_TypeInfo_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ReportAttachmentStore_tBDE4E9E4B9BDE1AB90D3BC5303735D5AFD330951_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&U3CU3Ec__DisplayClass10_0_U3CSelectPhotoU3Eb__0_mD20BDA00F800198DE231ADB2486698D25A47D2A5_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&U3CU3Ec__DisplayClass10_0_t4006F915C22260DC75F37EA163C7018815E7F750_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral6759FA5F111D1DC4A539DCDCF4F4CFC6C5100E8E);
@@ -19802,17 +19879,16 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WebCamPhotoCamera_SelectPhoto_m34AB4A75C
 			}
 		}
 		{
-			// ReportAttachmentStore.Failure(owner, "L?acc?s aux photos n?est pas autoris?. V?rifiez les param?tres de la tablette, puis r?essayez. Aucune photo n?a ?t? ajout?e.");
+			// AttachmentSourceChoices.ReportFailure(owner, "L?acc?s aux photos n?est pas autoris?. V?rifiez les param?tres de la tablette, puis r?essayez. Aucune photo n?a ?t? ajout?e.");
 			U3CU3Ec__DisplayClass10_0_t4006F915C22260DC75F37EA163C7018815E7F750* L_13 = V_0;
 			NullCheck(L_13);
 			MainScript_tE5DA41EF9F6C72F24338683BF923785400FDC5FF* L_14 = L_13->___owner_1;
-			il2cpp_codegen_runtime_class_init_inline(ReportAttachmentStore_tBDE4E9E4B9BDE1AB90D3BC5303735D5AFD330951_il2cpp_TypeInfo_var);
-			ReportAttachmentStore_Failure_m34741015DF3E6727ECD417AC7CD25D8021FE7609(L_14, _stringLiteral8505A0B3CEEF700DB8CECE0FB5835DFA8920A5B1, NULL);
+			AttachmentSourceChoices_ReportFailure_m0593752E7BAF9F37D02D4756D2B8A58750D95380(L_14, _stringLiteral8505A0B3CEEF700DB8CECE0FB5835DFA8920A5B1, NULL);
 		}
 
 IL_005f_1:
 		{
-			// } catch (Exception error) { ReportAttachmentStore.Failure(owner, error.Message); }
+			// } catch (Exception error) { AttachmentSourceChoices.ReportFailure(owner, error.Message); }
 			goto IL_0075;
 		}
 	}// end try (depth: 1)
@@ -19829,9 +19905,9 @@ IL_005f_1:
 CATCH_0061:
 	{// begin catch(System.Exception)
 		Exception_t* L_15 = ((Exception_t*)IL2CPP_GET_ACTIVE_EXCEPTION(Exception_t*));;
-		// } catch (Exception error) { ReportAttachmentStore.Failure(owner, error.Message); }
+		// } catch (Exception error) { AttachmentSourceChoices.ReportFailure(owner, error.Message); }
 		V_1 = L_15;
-		// } catch (Exception error) { ReportAttachmentStore.Failure(owner, error.Message); }
+		// } catch (Exception error) { AttachmentSourceChoices.ReportFailure(owner, error.Message); }
 		U3CU3Ec__DisplayClass10_0_t4006F915C22260DC75F37EA163C7018815E7F750* L_16 = V_0;
 		NullCheck(L_16);
 		MainScript_tE5DA41EF9F6C72F24338683BF923785400FDC5FF* L_17 = L_16->___owner_1;
@@ -19839,9 +19915,8 @@ CATCH_0061:
 		NullCheck(L_18);
 		String_t* L_19;
 		L_19 = VirtualFuncInvoker0< String_t* >::Invoke(5 /* System.String System.Exception::get_Message() */, L_18);
-		il2cpp_codegen_runtime_class_init_inline(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&ReportAttachmentStore_tBDE4E9E4B9BDE1AB90D3BC5303735D5AFD330951_il2cpp_TypeInfo_var)));
-		ReportAttachmentStore_Failure_m34741015DF3E6727ECD417AC7CD25D8021FE7609(L_17, L_19, NULL);
-		// } catch (Exception error) { ReportAttachmentStore.Failure(owner, error.Message); }
+		AttachmentSourceChoices_ReportFailure_m0593752E7BAF9F37D02D4756D2B8A58750D95380(L_17, L_19, NULL);
+		// } catch (Exception error) { AttachmentSourceChoices.ReportFailure(owner, error.Message); }
 		IL2CPP_POP_ACTIVE_EXCEPTION(Exception_t*);
 		goto IL_0075;
 	}// end catch (depth: 1)
@@ -20025,7 +20100,7 @@ IL_0080_1:
 
 IL_0085_1:
 		{
-			// } catch (Exception error) { ReportAttachmentStore.Failure(owner, error.Message); }
+			// } catch (Exception error) { AttachmentSourceChoices.ReportFailure(owner, error.Message); }
 			goto IL_0096;
 		}
 	}// end try (depth: 1)
@@ -20042,17 +20117,16 @@ IL_0085_1:
 CATCH_0087:
 	{// begin catch(System.Exception)
 		Exception_t* L_21 = ((Exception_t*)IL2CPP_GET_ACTIVE_EXCEPTION(Exception_t*));;
-		// } catch (Exception error) { ReportAttachmentStore.Failure(owner, error.Message); }
+		// } catch (Exception error) { AttachmentSourceChoices.ReportFailure(owner, error.Message); }
 		V_2 = L_21;
-		// } catch (Exception error) { ReportAttachmentStore.Failure(owner, error.Message); }
+		// } catch (Exception error) { AttachmentSourceChoices.ReportFailure(owner, error.Message); }
 		MainScript_tE5DA41EF9F6C72F24338683BF923785400FDC5FF* L_22 = ___0_owner;
 		Exception_t* L_23 = V_2;
 		NullCheck(L_23);
 		String_t* L_24;
 		L_24 = VirtualFuncInvoker0< String_t* >::Invoke(5 /* System.String System.Exception::get_Message() */, L_23);
-		il2cpp_codegen_runtime_class_init_inline(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&ReportAttachmentStore_tBDE4E9E4B9BDE1AB90D3BC5303735D5AFD330951_il2cpp_TypeInfo_var)));
-		ReportAttachmentStore_Failure_m34741015DF3E6727ECD417AC7CD25D8021FE7609(L_22, L_24, NULL);
-		// } catch (Exception error) { ReportAttachmentStore.Failure(owner, error.Message); }
+		AttachmentSourceChoices_ReportFailure_m0593752E7BAF9F37D02D4756D2B8A58750D95380(L_22, L_24, NULL);
+		// } catch (Exception error) { AttachmentSourceChoices.ReportFailure(owner, error.Message); }
 		IL2CPP_POP_ACTIVE_EXCEPTION(Exception_t*);
 		goto IL_0096;
 	}// end catch (depth: 1)
@@ -20063,8 +20137,8 @@ IL_0096:
 		return;
 	}
 }
-// System.Void WebCamPhotoCamera::PickImage(System.String,System.Int32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WebCamPhotoCamera_PickImage_mDFA17F3A1AB68270B84DF1AC06B91853E104BBEB (WebCamPhotoCamera_t9012ECCDB28660ED206FDE043EBBF32F914995F8* __this, String_t* ___0_path, int32_t ___1_maxSize, const RuntimeMethod* method) 
+// System.Boolean WebCamPhotoCamera::PickImage(System.String,System.Int32,System.Action`1<System.String>)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool WebCamPhotoCamera_PickImage_m7B006FBB7E30C343184FDB935242888B52F57CFB (WebCamPhotoCamera_t9012ECCDB28660ED206FDE043EBBF32F914995F8* __this, String_t* ___0_path, int32_t ___1_maxSize, Action_1_t3CB5D1A819C3ED3F99E9E39F890F18633253949A* ___2_failure, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -20076,9 +20150,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WebCamPhotoCamera_PickImage_mDFA17F3A1AB
 		s_Il2CppMethodInitialized = true;
 	}
 	MainScript_tE5DA41EF9F6C72F24338683BF923785400FDC5FF* V_0 = NULL;
-	Texture2D_tE6505BC111DD8A424A9DBE8E05D7D09E11FFFCF4* V_1 = NULL;
-	Exception_t* V_2 = NULL;
+	PhotoViewer_t53782B85C9BA0C954B6D920DFCC7FBBEF2F919E8* V_1 = NULL;
+	Texture2D_tE6505BC111DD8A424A9DBE8E05D7D09E11FFFCF4* V_2 = NULL;
+	bool V_3 = false;
+	Exception_t* V_4 = NULL;
 	il2cpp::utils::ExceptionSupportStack<RuntimeObject*, 1> __active_exceptions;
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* G_B3_0 = NULL;
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* G_B2_0 = NULL;
+	PhotoViewer_t53782B85C9BA0C954B6D920DFCC7FBBEF2F919E8* G_B4_0 = NULL;
 	{
 		// var owner = GameObject.Find("Script").GetComponent<MainScript>();
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_0;
@@ -20091,59 +20170,100 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WebCamPhotoCamera_PickImage_mDFA17F3A1AB
 	try
 	{// begin try (depth: 1)
 		{
-			// Texture2D texture = NativeGallery.LoadImageAtPath(path, maxSize);
-			String_t* L_2 = ___0_path;
-			int32_t L_3 = ___1_maxSize;
-			Texture2D_tE6505BC111DD8A424A9DBE8E05D7D09E11FFFCF4* L_4;
-			L_4 = NativeGallery_LoadImageAtPath_m62187A34B7B063FBEFFD7E200DEC2332313A56AE(L_2, L_3, (bool)1, (bool)1, (bool)0, NULL);
-			V_1 = L_4;
-			// if (texture == null) throw new InvalidOperationException("Impossible d?ouvrir cette photo sur la tablette.");
-			Texture2D_tE6505BC111DD8A424A9DBE8E05D7D09E11FFFCF4* L_5 = V_1;
+			// var viewer = UICamera?.GetComponent<PhotoViewer>();
+			GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_2 = __this->___UICamera_5;
+			GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_3 = L_2;
+			G_B2_0 = L_3;
+			if (L_3)
+			{
+				G_B3_0 = L_3;
+				goto IL_001d_1;
+			}
+		}
+		{
+			G_B4_0 = ((PhotoViewer_t53782B85C9BA0C954B6D920DFCC7FBBEF2F919E8*)(NULL));
+			goto IL_0022_1;
+		}
+
+IL_001d_1:
+		{
+			NullCheck(G_B3_0);
+			PhotoViewer_t53782B85C9BA0C954B6D920DFCC7FBBEF2F919E8* L_4;
+			L_4 = GameObject_GetComponent_TisPhotoViewer_t53782B85C9BA0C954B6D920DFCC7FBBEF2F919E8_m58B3A47A57CEC6F5F0C8DC04B8980920215F5D33(G_B3_0, GameObject_GetComponent_TisPhotoViewer_t53782B85C9BA0C954B6D920DFCC7FBBEF2F919E8_m58B3A47A57CEC6F5F0C8DC04B8980920215F5D33_RuntimeMethod_var);
+			G_B4_0 = L_4;
+		}
+
+IL_0022_1:
+		{
+			V_1 = G_B4_0;
+			// if (viewer == null || viewer.background == null) throw new InvalidOperationException("L?aper?u photo n?est pas disponible.");
+			PhotoViewer_t53782B85C9BA0C954B6D920DFCC7FBBEF2F919E8* L_5 = V_1;
 			il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 			bool L_6;
 			L_6 = Object_op_Equality_mB6120F782D83091EF56A198FCEBCF066DB4A9605(L_5, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
-			if (!L_6)
+			if (L_6)
 			{
-				goto IL_002f_1;
+				goto IL_003a_1;
+			}
+		}
+		{
+			PhotoViewer_t53782B85C9BA0C954B6D920DFCC7FBBEF2F919E8* L_7 = V_1;
+			NullCheck(L_7);
+			RawImage_tFF12F7DB574FBDC1863CF607C7A12A5D9F8D6179* L_8 = L_7->___background_7;
+			il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+			bool L_9;
+			L_9 = Object_op_Equality_mB6120F782D83091EF56A198FCEBCF066DB4A9605(L_8, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+			if (!L_9)
+			{
+				goto IL_0045_1;
+			}
+		}
+
+IL_003a_1:
+		{
+			// if (viewer == null || viewer.background == null) throw new InvalidOperationException("L?aper?u photo n?est pas disponible.");
+			InvalidOperationException_t5DDE4D49B7405FAAB1E4576F4715A42A3FAD4BAB* L_10 = (InvalidOperationException_t5DDE4D49B7405FAAB1E4576F4715A42A3FAD4BAB*)il2cpp_codegen_object_new(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&InvalidOperationException_t5DDE4D49B7405FAAB1E4576F4715A42A3FAD4BAB_il2cpp_TypeInfo_var)));
+			NullCheck(L_10);
+			InvalidOperationException__ctor_mE4CB6F4712AB6D99A2358FBAE2E052B3EE976162(L_10, ((String_t*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&_stringLiteralDB386D221A216488540D3369B3B024978D94FC84)), NULL);
+			IL2CPP_RAISE_MANAGED_EXCEPTION(L_10, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&WebCamPhotoCamera_PickImage_m7B006FBB7E30C343184FDB935242888B52F57CFB_RuntimeMethod_var)));
+		}
+
+IL_0045_1:
+		{
+			// Texture2D texture = NativeGallery.LoadImageAtPath(path, maxSize);
+			String_t* L_11 = ___0_path;
+			int32_t L_12 = ___1_maxSize;
+			Texture2D_tE6505BC111DD8A424A9DBE8E05D7D09E11FFFCF4* L_13;
+			L_13 = NativeGallery_LoadImageAtPath_m62187A34B7B063FBEFFD7E200DEC2332313A56AE(L_11, L_12, (bool)1, (bool)1, (bool)0, NULL);
+			V_2 = L_13;
+			// if (texture == null) throw new InvalidOperationException("Impossible d?ouvrir cette photo sur la tablette.");
+			Texture2D_tE6505BC111DD8A424A9DBE8E05D7D09E11FFFCF4* L_14 = V_2;
+			il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+			bool L_15;
+			L_15 = Object_op_Equality_mB6120F782D83091EF56A198FCEBCF066DB4A9605(L_14, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+			if (!L_15)
+			{
+				goto IL_0064_1;
 			}
 		}
 		{
 			// if (texture == null) throw new InvalidOperationException("Impossible d?ouvrir cette photo sur la tablette.");
-			InvalidOperationException_t5DDE4D49B7405FAAB1E4576F4715A42A3FAD4BAB* L_7 = (InvalidOperationException_t5DDE4D49B7405FAAB1E4576F4715A42A3FAD4BAB*)il2cpp_codegen_object_new(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&InvalidOperationException_t5DDE4D49B7405FAAB1E4576F4715A42A3FAD4BAB_il2cpp_TypeInfo_var)));
-			NullCheck(L_7);
-			InvalidOperationException__ctor_mE4CB6F4712AB6D99A2358FBAE2E052B3EE976162(L_7, ((String_t*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&_stringLiteral8BC398715D0F3CBEE1DB95330C57C8D1212D2F5A)), NULL);
-			IL2CPP_RAISE_MANAGED_EXCEPTION(L_7, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&WebCamPhotoCamera_PickImage_mDFA17F3A1AB68270B84DF1AC06B91853E104BBEB_RuntimeMethod_var)));
+			InvalidOperationException_t5DDE4D49B7405FAAB1E4576F4715A42A3FAD4BAB* L_16 = (InvalidOperationException_t5DDE4D49B7405FAAB1E4576F4715A42A3FAD4BAB*)il2cpp_codegen_object_new(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&InvalidOperationException_t5DDE4D49B7405FAAB1E4576F4715A42A3FAD4BAB_il2cpp_TypeInfo_var)));
+			NullCheck(L_16);
+			InvalidOperationException__ctor_mE4CB6F4712AB6D99A2358FBAE2E052B3EE976162(L_16, ((String_t*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&_stringLiteral8BC398715D0F3CBEE1DB95330C57C8D1212D2F5A)), NULL);
+			IL2CPP_RAISE_MANAGED_EXCEPTION(L_16, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&WebCamPhotoCamera_PickImage_m7B006FBB7E30C343184FDB935242888B52F57CFB_RuntimeMethod_var)));
 		}
 
-IL_002f_1:
+IL_0064_1:
 		{
-			// if (UICamera != null) UICamera.GetComponent<PhotoViewer>().background.texture = texture;
-			GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_8 = __this->___UICamera_5;
-			il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
-			bool L_9;
-			L_9 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_8, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
-			if (!L_9)
-			{
-				goto IL_0053_1;
-			}
-		}
-		{
-			// if (UICamera != null) UICamera.GetComponent<PhotoViewer>().background.texture = texture;
-			GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_10 = __this->___UICamera_5;
-			NullCheck(L_10);
-			PhotoViewer_t53782B85C9BA0C954B6D920DFCC7FBBEF2F919E8* L_11;
-			L_11 = GameObject_GetComponent_TisPhotoViewer_t53782B85C9BA0C954B6D920DFCC7FBBEF2F919E8_m58B3A47A57CEC6F5F0C8DC04B8980920215F5D33(L_10, GameObject_GetComponent_TisPhotoViewer_t53782B85C9BA0C954B6D920DFCC7FBBEF2F919E8_m58B3A47A57CEC6F5F0C8DC04B8980920215F5D33_RuntimeMethod_var);
-			NullCheck(L_11);
-			RawImage_tFF12F7DB574FBDC1863CF607C7A12A5D9F8D6179* L_12 = L_11->___background_10;
-			Texture2D_tE6505BC111DD8A424A9DBE8E05D7D09E11FFFCF4* L_13 = V_1;
-			NullCheck(L_12);
-			RawImage_set_texture_mC016318C95CC17A826D57DD219DBCB6DFD295C02(L_12, L_13, NULL);
-		}
-
-IL_0053_1:
-		{
-			// } catch (Exception error) { ReportAttachmentStore.Failure(owner, error.Message); }
-			goto IL_0064;
+			// viewer.SetImage(texture);
+			PhotoViewer_t53782B85C9BA0C954B6D920DFCC7FBBEF2F919E8* L_17 = V_1;
+			Texture2D_tE6505BC111DD8A424A9DBE8E05D7D09E11FFFCF4* L_18 = V_2;
+			NullCheck(L_17);
+			PhotoViewer_SetImage_mE3619730EA2589C5DD19CA8D707FE2EF47F1635B(L_17, L_18, NULL);
+			// return true;
+			V_3 = (bool)1;
+			goto IL_0094;
 		}
 	}// end try (depth: 1)
 	catch(Il2CppExceptionWrapper& e)
@@ -20151,33 +20271,61 @@ IL_0053_1:
 		if(il2cpp_codegen_class_is_assignable_from (((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&Exception_t_il2cpp_TypeInfo_var)), il2cpp_codegen_object_class(e.ex)))
 		{
 			IL2CPP_PUSH_ACTIVE_EXCEPTION(e.ex);
-			goto CATCH_0055;
+			goto CATCH_006f;
 		}
 		throw e;
 	}
 
-CATCH_0055:
+CATCH_006f:
 	{// begin catch(System.Exception)
-		Exception_t* L_14 = ((Exception_t*)IL2CPP_GET_ACTIVE_EXCEPTION(Exception_t*));;
-		// } catch (Exception error) { ReportAttachmentStore.Failure(owner, error.Message); }
-		V_2 = L_14;
-		// } catch (Exception error) { ReportAttachmentStore.Failure(owner, error.Message); }
-		MainScript_tE5DA41EF9F6C72F24338683BF923785400FDC5FF* L_15 = V_0;
-		Exception_t* L_16 = V_2;
-		NullCheck(L_16);
-		String_t* L_17;
-		L_17 = VirtualFuncInvoker0< String_t* >::Invoke(5 /* System.String System.Exception::get_Message() */, L_16);
-		il2cpp_codegen_runtime_class_init_inline(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&ReportAttachmentStore_tBDE4E9E4B9BDE1AB90D3BC5303735D5AFD330951_il2cpp_TypeInfo_var)));
-		ReportAttachmentStore_Failure_m34741015DF3E6727ECD417AC7CD25D8021FE7609(L_15, L_17, NULL);
-		// } catch (Exception error) { ReportAttachmentStore.Failure(owner, error.Message); }
-		IL2CPP_POP_ACTIVE_EXCEPTION(Exception_t*);
-		goto IL_0064;
+		{
+			Exception_t* L_19 = ((Exception_t*)IL2CPP_GET_ACTIVE_EXCEPTION(Exception_t*));;
+			// } catch (Exception error) {
+			V_4 = L_19;
+			// if (failure != null) failure(error.Message);
+			Action_1_t3CB5D1A819C3ED3F99E9E39F890F18633253949A* L_20 = ___2_failure;
+			if (!L_20)
+			{
+				goto IL_0083;
+			}
+		}
+		{
+			// if (failure != null) failure(error.Message);
+			Action_1_t3CB5D1A819C3ED3F99E9E39F890F18633253949A* L_21 = ___2_failure;
+			Exception_t* L_22 = V_4;
+			NullCheck(L_22);
+			String_t* L_23;
+			L_23 = VirtualFuncInvoker0< String_t* >::Invoke(5 /* System.String System.Exception::get_Message() */, L_22);
+			NullCheck(L_21);
+			Action_1_Invoke_m690438AAE38F9762172E3AE0A33D0B42ACD35790_inline(L_21, L_23, NULL);
+			goto IL_0090;
+		}
+
+IL_0083:
+		{
+			// else AttachmentSourceChoices.ReportFailure(owner, error.Message);
+			MainScript_tE5DA41EF9F6C72F24338683BF923785400FDC5FF* L_24 = V_0;
+			Exception_t* L_25 = V_4;
+			NullCheck(L_25);
+			String_t* L_26;
+			L_26 = VirtualFuncInvoker0< String_t* >::Invoke(5 /* System.String System.Exception::get_Message() */, L_25);
+			AttachmentSourceChoices_ReportFailure_m0593752E7BAF9F37D02D4756D2B8A58750D95380(L_24, L_26, NULL);
+		}
+
+IL_0090:
+		{
+			// return false;
+			V_3 = (bool)0;
+			IL2CPP_POP_ACTIVE_EXCEPTION(Exception_t*);
+			goto IL_0094;
+		}
 	}// end catch (depth: 1)
 
-IL_0064:
+IL_0094:
 	{
 		// }
-		return;
+		bool L_27 = V_3;
+		return L_27;
 	}
 }
 // System.Void WebCamPhotoCamera::.ctor()
@@ -20210,13 +20358,19 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__DisplayClass6_0__ctor_m41DBA164
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__DisplayClass6_0_U3CChoosePhotoSourceU3Eb__0_m3A6E351F69029931FFCCDEFE69FA989183CF822F (U3CU3Ec__DisplayClass6_0_t164CE2EA5C300D17C343DE6A23605223D8AE336D* __this, const RuntimeMethod* method) 
 {
 	{
-		// AttachmentSourceModal.Show(owner, false, () => CapturePhoto(owner, context, maxSize), () => SelectPhoto(owner, context));
-		WebCamPhotoCamera_t9012ECCDB28660ED206FDE043EBBF32F914995F8* L_0 = __this->___U3CU3E4__this_0;
-		MainScript_tE5DA41EF9F6C72F24338683BF923785400FDC5FF* L_1 = __this->___owner_1;
-		Context_t350B2077E12ACB5CE89479357E0A55A207873FA2* L_2 = __this->___context_3;
-		int32_t L_3 = __this->___maxSize_2;
+		// () => { context.Prepare(captureDraft); CapturePhoto(owner, context, maxSize); },
+		Context_t350B2077E12ACB5CE89479357E0A55A207873FA2* L_0 = __this->___context_4;
+		Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* L_1 = __this->___captureDraft_0;
 		NullCheck(L_0);
-		WebCamPhotoCamera_CapturePhoto_mAF7B0699EFF410569BAD5C22950C6FCABFACE0BB(L_0, L_1, L_2, L_3, NULL);
+		Context_Prepare_m6364684BFCBD8E1BDFFC39ACD3AB6C115F03F2A5(L_0, L_1, NULL);
+		// () => { context.Prepare(captureDraft); CapturePhoto(owner, context, maxSize); },
+		WebCamPhotoCamera_t9012ECCDB28660ED206FDE043EBBF32F914995F8* L_2 = __this->___U3CU3E4__this_1;
+		MainScript_tE5DA41EF9F6C72F24338683BF923785400FDC5FF* L_3 = __this->___owner_2;
+		Context_t350B2077E12ACB5CE89479357E0A55A207873FA2* L_4 = __this->___context_4;
+		int32_t L_5 = __this->___maxSize_3;
+		NullCheck(L_2);
+		WebCamPhotoCamera_CapturePhoto_mAF7B0699EFF410569BAD5C22950C6FCABFACE0BB(L_2, L_3, L_4, L_5, NULL);
+		// () => { context.Prepare(captureDraft); CapturePhoto(owner, context, maxSize); },
 		return;
 	}
 }
@@ -20224,12 +20378,18 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__DisplayClass6_0_U3CChoosePhotoS
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__DisplayClass6_0_U3CChoosePhotoSourceU3Eb__1_m9BE20143C8C9DEDBB204E5E7E327A48F8B451294 (U3CU3Ec__DisplayClass6_0_t164CE2EA5C300D17C343DE6A23605223D8AE336D* __this, const RuntimeMethod* method) 
 {
 	{
-		// AttachmentSourceModal.Show(owner, false, () => CapturePhoto(owner, context, maxSize), () => SelectPhoto(owner, context));
-		WebCamPhotoCamera_t9012ECCDB28660ED206FDE043EBBF32F914995F8* L_0 = __this->___U3CU3E4__this_0;
-		MainScript_tE5DA41EF9F6C72F24338683BF923785400FDC5FF* L_1 = __this->___owner_1;
-		Context_t350B2077E12ACB5CE89479357E0A55A207873FA2* L_2 = __this->___context_3;
+		// () => { context.Prepare(captureDraft); SelectPhoto(owner, context); });
+		Context_t350B2077E12ACB5CE89479357E0A55A207873FA2* L_0 = __this->___context_4;
+		Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* L_1 = __this->___captureDraft_0;
 		NullCheck(L_0);
-		WebCamPhotoCamera_SelectPhoto_m34AB4A75CE5734F42CE87FBA4A69F81C02A94610(L_0, L_1, L_2, NULL);
+		Context_Prepare_m6364684BFCBD8E1BDFFC39ACD3AB6C115F03F2A5(L_0, L_1, NULL);
+		// () => { context.Prepare(captureDraft); SelectPhoto(owner, context); });
+		WebCamPhotoCamera_t9012ECCDB28660ED206FDE043EBBF32F914995F8* L_2 = __this->___U3CU3E4__this_1;
+		MainScript_tE5DA41EF9F6C72F24338683BF923785400FDC5FF* L_3 = __this->___owner_2;
+		Context_t350B2077E12ACB5CE89479357E0A55A207873FA2* L_4 = __this->___context_4;
+		NullCheck(L_2);
+		WebCamPhotoCamera_SelectPhoto_m34AB4A75CE5734F42CE87FBA4A69F81C02A94610(L_2, L_3, L_4, NULL);
+		// () => { context.Prepare(captureDraft); SelectPhoto(owner, context); });
 		return;
 	}
 }
@@ -33658,6 +33818,11 @@ IL_0034:
 		((  void (*) (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D*, RuntimeObject*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 11)))(__this, L_9, il2cpp_rgctx_method(method->klass->rgctx_data, 11));
 		return;
 	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Action_1_Invoke_mF2422B2DD29F74CE66F791C3F68E288EC7C3DB9E_gshared_inline (Action_1_t6F9EB113EB3F16226AEF811A2744F4111C116C87* __this, RuntimeObject* ___0_obj, const RuntimeMethod* method) 
+{
+	typedef void (*FunctionPointerType) (RuntimeObject*, RuntimeObject*, const RuntimeMethod*);
+	((FunctionPointerType)__this->___invoke_impl_1)((Il2CppObject*)__this->___method_code_6, ___0_obj, reinterpret_cast<RuntimeMethod*>(__this->___method_3));
 }
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Mathf_Clamp01_mA7E048DBDA832D399A581BE4D6DED9FA44CE0F14_inline (float ___0_value, const RuntimeMethod* method) 
 {

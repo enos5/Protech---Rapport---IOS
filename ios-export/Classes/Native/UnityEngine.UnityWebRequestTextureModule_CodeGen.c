@@ -52,14 +52,14 @@ static const int32_t s_InvokerIndices[11] =
 {
 	8518,
 	8475,
-	4980,
-	4980,
-	6009,
-	6367,
-	6242,
-	6242,
-	6242,
-	6367,
+	4981,
+	4981,
+	6010,
+	6368,
+	6243,
+	6243,
+	6243,
+	6368,
 	9209,
 };
 IL2CPP_EXTERN_C const Il2CppCodeGenModule g_UnityEngine_UnityWebRequestTextureModule_CodeGenModule;

@@ -693,6 +693,7 @@ struct CustomStyleAccess_t170C852102B4D09FB478B620A75B14D096F9F2B1;
 struct TypeData_t01D670B4E71B5571B38C7412B1E652A47D6AF66A;
 
 IL2CPP_EXTERN_C RuntimeClass* Action_1_t3CB5D1A819C3ED3F99E9E39F890F18633253949A_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* BitConverter_t6E99605185963BC12B3D369E13F2B88997E64A27_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Button_t8EC3B431665F84C0B637C11B0EA29236828646C2_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* ChampU5BU5D_tE8910EB97F117F9579CA1A6C02D5E4979BFEA499_il2cpp_TypeInfo_var;
@@ -1007,6 +1008,8 @@ IL2CPP_EXTERN_C const RuntimeMethod* ContenuRapportManager_U3CCheckboxU3Eb__73_1
 IL2CPP_EXTERN_C const RuntimeMethod* ContenuRapportManager_U3CCheckboxU3Eb__73_4_m63A47386F420A37853025979AC78044F8CFCA5BF_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* ContenuRapportManager_U3CRadioU3Eb__72_0_m59DCFC8D78102436C346701501E12019226FB80D_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* ContenuRapportManager_U3CRegisterTypedFieldChangeU3Eb__85_0_mD218471CE74ED2B0358CFB91488707079AF70165_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* ContenuRapportManager_U3Cfct_btnPhotoU3Eb__129_0_mF890176AFFE7AF2451DD1B080EA2A6FF6CA586C1_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* ContenuRapportManager_U3Cfct_btnVideoU3Eb__131_0_mA3BC13B476ED6707440A5D5A2AD0873EA9C6F669_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* ContenuRapportManager_btnEndReportCompletion_mE88FEC7A9917DDDBBB7B317BA4C4960086CAEFE8_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* ContenuRapportManager_domChanged_mC448480EA17AD0BD76551928F7086EFD4DFA7DAA_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* ContenuRapportManager_fct_BtnEnAtelier_mE3ECB8F99E971BCB478F3F73834C349E34DB8505_RuntimeMethod_var;
@@ -3793,6 +3796,11 @@ struct Predicate_1_tC1B065174C422E64D6D4F46F27D3D37E86D8F925  : public Multicast
 {
 };
 
+// System.Action
+struct Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07  : public MulticastDelegate_t
+{
+};
+
 // UnityEngine.Behaviour
 struct Behaviour_t01970CFBBA658497AE30F311C447DB0440BAB7FA  : public Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3
 {
@@ -6110,6 +6118,10 @@ struct Type_t_StaticFields
 
 // System.Predicate`1<Reponse>
 
+// System.Action
+
+// System.Action
+
 // UnityEngine.UIElements.StyleLength
 
 // UnityEngine.UIElements.StyleLength
@@ -8097,8 +8109,10 @@ inline WebCamPhotoCamera_t9012ECCDB28660ED206FDE043EBBF32F914995F8* Component_Ge
 }
 // System.Int32 UnityEngine.Screen::get_width()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Screen_get_width_mF608FF3252213E7EFA1F0D2F744C28110E9E5AC9 (const RuntimeMethod* method) ;
-// System.Void WebCamPhotoCamera::ChoosePhotoSource(System.Int32,System.Boolean,System.String,System.String,System.String)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WebCamPhotoCamera_ChoosePhotoSource_m334B45A0DD37CBEC391F4440C2A14325FDC0F7E6 (WebCamPhotoCamera_t9012ECCDB28660ED206FDE043EBBF32F914995F8* __this, int32_t ___0_maxSize, bool ___1_estOnglet, String_t* ___2_idChamp, String_t* ___3_titreChampAffichage, String_t* ___4_idSection, const RuntimeMethod* method) ;
+// System.Void System.Action::.ctor(System.Object,System.IntPtr)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Action__ctor_mBDC7B0B4A3F583B64C2896F01BDED360772F67DC (Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* __this, RuntimeObject* ___0_object, intptr_t ___1_method, const RuntimeMethod* method) ;
+// System.Void WebCamPhotoCamera::ChoosePhotoSource(UnityEngine.UIElements.VisualElement,System.Int32,System.Boolean,System.String,System.String,System.String,System.Action)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WebCamPhotoCamera_ChoosePhotoSource_m0791EBB3C19E6BDF7928FBBD5FD9CED01F0D6720 (WebCamPhotoCamera_t9012ECCDB28660ED206FDE043EBBF32F914995F8* __this, VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* ___0_container, int32_t ___1_maxSize, bool ___2_estOnglet, String_t* ___3_idChamp, String_t* ___4_titreChampAffichage, String_t* ___5_idSection, Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* ___6_captureDraft, const RuntimeMethod* method) ;
 // System.Boolean NativeCamera::IsCameraBusy()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool NativeCamera_IsCameraBusy_m3373F1A16F70303B7F53D47A1143BED4152C2F54 (const RuntimeMethod* method) ;
 // T UnityEngine.Component::GetComponent<VideoRecording>()
@@ -8106,8 +8120,10 @@ inline VideoRecording_tF9BDBE286EFA7F9DE6C9B5051F1657BAB17F49B0* Component_GetCo
 {
 	return ((  VideoRecording_tF9BDBE286EFA7F9DE6C9B5051F1657BAB17F49B0* (*) (Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3*, const RuntimeMethod*))Component_GetComponent_TisRuntimeObject_m7181F81CAEC2CF53F5D2BC79B7425C16E1F80D33_gshared)(__this, method);
 }
-// System.Void VideoRecording::ChooseVideoSource(System.Boolean,System.String,System.String,System.String)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VideoRecording_ChooseVideoSource_m686B025DFDCB2BA66F9B3F0722B2193625F7B56E (VideoRecording_tF9BDBE286EFA7F9DE6C9B5051F1657BAB17F49B0* __this, bool ___0_estOnglet, String_t* ___1_idChamp, String_t* ___2_titreChampAffichage, String_t* ___3_idSection, const RuntimeMethod* method) ;
+// System.Void VideoRecording::ChooseVideoSource(UnityEngine.UIElements.VisualElement,System.Boolean,System.String,System.String,System.String,System.Action)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VideoRecording_ChooseVideoSource_m2444E5631936593DC8A81BED2F2663EF83BFB0F2 (VideoRecording_tF9BDBE286EFA7F9DE6C9B5051F1657BAB17F49B0* __this, VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* ___0_container, bool ___1_estOnglet, String_t* ___2_idChamp, String_t* ___3_titreChampAffichage, String_t* ___4_idSection, Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* ___5_captureDraft, const RuntimeMethod* method) ;
+// System.Void AttachmentSourceChoices::Close(UnityEngine.UIElements.VisualElement)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AttachmentSourceChoices_Close_m99524D303103BC1F2019A566569593724640D9A1 (VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* ___0_container, const RuntimeMethod* method) ;
 // System.Boolean UnityEngine.UIElements.StyleEnum`1<UnityEngine.UIElements.DisplayStyle>::op_Equality(UnityEngine.UIElements.StyleEnum`1<T>,UnityEngine.UIElements.StyleEnum`1<T>)
 inline bool StyleEnum_1_op_Equality_m0A305FB462EE2B52AD8BBC87CFCDAA27BA4B94CD (StyleEnum_1_t3B02FFF55849C9C8E6A7C0AA9C7E5F65F10C9C69 ___0_lhs, StyleEnum_1_t3B02FFF55849C9C8E6A7C0AA9C7E5F65F10C9C69 ___1_rhs, const RuntimeMethod* method)
 {
@@ -24685,95 +24701,80 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ContenuRapportManager_fct_btnPhoto_mA2D5
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
 	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Component_GetComponent_TisWebCamPhotoCamera_t9012ECCDB28660ED206FDE043EBBF32F914995F8_mEA0D6AFB50176701B61A96D28ECDD2D99993A38A_RuntimeMethod_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&GameObject_GetComponent_TisNotesManager_tD186238281AC6C6DD083D5617258C11C9270050A_m606FA6C7D4760909C94E97D3A0745F3205B3585C_RuntimeMethod_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&GameObject_GetComponent_TisRapportManager_t2629F591BD0F53BB238268E996B5C2770A07DA0F_m93C15BEE53D1E5BCB2035502CDA3A17FB835C64F_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ContenuRapportManager_U3Cfct_btnPhotoU3Eb__129_0_mF890176AFFE7AF2451DD1B080EA2A6FF6CA586C1_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral128D8D195431E686819545201C5E82EE34ED17C2);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral65D4409A6586BDCF234E20D69672EF2428A96F59);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralA0C14CE26448E50189281A9427CC96D04658B7AE);
 		s_Il2CppMethodInitialized = true;
 	}
 	{
 		// setOldScroll();
 		ContenuRapportManager_setOldScroll_m1FDB7E0EB7CFF3632B3C13775BF047E9BDB4C5EB(__this, NULL);
-		// GameObject.Find("Script").GetComponent<RapportManager>().SauvegarderTemporaire(mainScript.clientSelectionne, this.container_name);
-		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_0;
-		L_0 = GameObject_Find_m7A669B4EEC2617AB82F6E3FF007CDCD9F21DB300(_stringLiteralA0C14CE26448E50189281A9427CC96D04658B7AE, NULL);
-		NullCheck(L_0);
-		RapportManager_t2629F591BD0F53BB238268E996B5C2770A07DA0F* L_1;
-		L_1 = GameObject_GetComponent_TisRapportManager_t2629F591BD0F53BB238268E996B5C2770A07DA0F_m93C15BEE53D1E5BCB2035502CDA3A17FB835C64F(L_0, GameObject_GetComponent_TisRapportManager_t2629F591BD0F53BB238268E996B5C2770A07DA0F_m93C15BEE53D1E5BCB2035502CDA3A17FB835C64F_RuntimeMethod_var);
-		MainScript_tE5DA41EF9F6C72F24338683BF923785400FDC5FF* L_2 = ((AppManager_tD5155B839026DE8E1F63F8868048F9CF8B26ED0C*)__this)->___mainScript_10;
-		NullCheck(L_2);
-		int32_t L_3 = L_2->___clientSelectionne_16;
-		String_t* L_4 = __this->___container_name_60;
-		NullCheck(L_1);
-		RapportManager_SauvegarderTemporaire_m023ACF5BABDF642B3EC7BD64FB8A4FA41E6911B5(L_1, L_3, L_4, (bool)0, NULL);
 		// if(handlerParams.idChamp != null){
-		handlerNotesParams_tCA2C1C1152114492B2F94923DD8B0016191E41E1* L_5 = ___1_handlerParams;
-		NullCheck(L_5);
-		String_t* L_6 = L_5->___idChamp_0;
-		if (!L_6)
+		handlerNotesParams_tCA2C1C1152114492B2F94923DD8B0016191E41E1* L_0 = ___1_handlerParams;
+		NullCheck(L_0);
+		String_t* L_1 = L_0->___idChamp_0;
+		if (!L_1)
 		{
-			goto IL_0047;
+			goto IL_0021;
 		}
 	}
 	{
 		// GetComponent<WebCamPhotoCamera>().nomChamp = handlerParams.idChamp;
-		WebCamPhotoCamera_t9012ECCDB28660ED206FDE043EBBF32F914995F8* L_7;
-		L_7 = Component_GetComponent_TisWebCamPhotoCamera_t9012ECCDB28660ED206FDE043EBBF32F914995F8_mEA0D6AFB50176701B61A96D28ECDD2D99993A38A(__this, Component_GetComponent_TisWebCamPhotoCamera_t9012ECCDB28660ED206FDE043EBBF32F914995F8_mEA0D6AFB50176701B61A96D28ECDD2D99993A38A_RuntimeMethod_var);
-		handlerNotesParams_tCA2C1C1152114492B2F94923DD8B0016191E41E1* L_8 = ___1_handlerParams;
-		NullCheck(L_8);
-		String_t* L_9 = L_8->___idChamp_0;
-		NullCheck(L_7);
-		L_7->___nomChamp_9 = L_9;
-		Il2CppCodeGenWriteBarrier((void**)(&L_7->___nomChamp_9), (void*)L_9);
-		goto IL_0062;
+		WebCamPhotoCamera_t9012ECCDB28660ED206FDE043EBBF32F914995F8* L_2;
+		L_2 = Component_GetComponent_TisWebCamPhotoCamera_t9012ECCDB28660ED206FDE043EBBF32F914995F8_mEA0D6AFB50176701B61A96D28ECDD2D99993A38A(__this, Component_GetComponent_TisWebCamPhotoCamera_t9012ECCDB28660ED206FDE043EBBF32F914995F8_mEA0D6AFB50176701B61A96D28ECDD2D99993A38A_RuntimeMethod_var);
+		handlerNotesParams_tCA2C1C1152114492B2F94923DD8B0016191E41E1* L_3 = ___1_handlerParams;
+		NullCheck(L_3);
+		String_t* L_4 = L_3->___idChamp_0;
+		NullCheck(L_2);
+		L_2->___nomChamp_9 = L_4;
+		Il2CppCodeGenWriteBarrier((void**)(&L_2->___nomChamp_9), (void*)L_4);
+		goto IL_003c;
 	}
 
-IL_0047:
+IL_0021:
 	{
 		// GetComponent<WebCamPhotoCamera>().nomChamp = "section_"+handlerParams.idSection;
-		WebCamPhotoCamera_t9012ECCDB28660ED206FDE043EBBF32F914995F8* L_10;
-		L_10 = Component_GetComponent_TisWebCamPhotoCamera_t9012ECCDB28660ED206FDE043EBBF32F914995F8_mEA0D6AFB50176701B61A96D28ECDD2D99993A38A(__this, Component_GetComponent_TisWebCamPhotoCamera_t9012ECCDB28660ED206FDE043EBBF32F914995F8_mEA0D6AFB50176701B61A96D28ECDD2D99993A38A_RuntimeMethod_var);
-		handlerNotesParams_tCA2C1C1152114492B2F94923DD8B0016191E41E1* L_11 = ___1_handlerParams;
-		NullCheck(L_11);
-		String_t* L_12 = L_11->___idSection_1;
-		String_t* L_13;
-		L_13 = String_Concat_m9E3155FB84015C823606188F53B47CB44C444991(_stringLiteral128D8D195431E686819545201C5E82EE34ED17C2, L_12, NULL);
-		NullCheck(L_10);
-		L_10->___nomChamp_9 = L_13;
-		Il2CppCodeGenWriteBarrier((void**)(&L_10->___nomChamp_9), (void*)L_13);
+		WebCamPhotoCamera_t9012ECCDB28660ED206FDE043EBBF32F914995F8* L_5;
+		L_5 = Component_GetComponent_TisWebCamPhotoCamera_t9012ECCDB28660ED206FDE043EBBF32F914995F8_mEA0D6AFB50176701B61A96D28ECDD2D99993A38A(__this, Component_GetComponent_TisWebCamPhotoCamera_t9012ECCDB28660ED206FDE043EBBF32F914995F8_mEA0D6AFB50176701B61A96D28ECDD2D99993A38A_RuntimeMethod_var);
+		handlerNotesParams_tCA2C1C1152114492B2F94923DD8B0016191E41E1* L_6 = ___1_handlerParams;
+		NullCheck(L_6);
+		String_t* L_7 = L_6->___idSection_1;
+		String_t* L_8;
+		L_8 = String_Concat_m9E3155FB84015C823606188F53B47CB44C444991(_stringLiteral128D8D195431E686819545201C5E82EE34ED17C2, L_7, NULL);
+		NullCheck(L_5);
+		L_5->___nomChamp_9 = L_8;
+		Il2CppCodeGenWriteBarrier((void**)(&L_5->___nomChamp_9), (void*)L_8);
 	}
 
-IL_0062:
+IL_003c:
 	{
-		// GetComponent<WebCamPhotoCamera>().ChoosePhotoSource(Screen.width, handlerParams.isOnglet, handlerParams.idChamp, handlerParams.titreAffichage, handlerParams.idSection);
-		WebCamPhotoCamera_t9012ECCDB28660ED206FDE043EBBF32F914995F8* L_14;
-		L_14 = Component_GetComponent_TisWebCamPhotoCamera_t9012ECCDB28660ED206FDE043EBBF32F914995F8_mEA0D6AFB50176701B61A96D28ECDD2D99993A38A(__this, Component_GetComponent_TisWebCamPhotoCamera_t9012ECCDB28660ED206FDE043EBBF32F914995F8_mEA0D6AFB50176701B61A96D28ECDD2D99993A38A_RuntimeMethod_var);
-		int32_t L_15;
-		L_15 = Screen_get_width_mF608FF3252213E7EFA1F0D2F744C28110E9E5AC9(NULL);
-		handlerNotesParams_tCA2C1C1152114492B2F94923DD8B0016191E41E1* L_16 = ___1_handlerParams;
-		NullCheck(L_16);
-		bool L_17 = L_16->___isOnglet_2;
-		handlerNotesParams_tCA2C1C1152114492B2F94923DD8B0016191E41E1* L_18 = ___1_handlerParams;
-		NullCheck(L_18);
-		String_t* L_19 = L_18->___idChamp_0;
-		handlerNotesParams_tCA2C1C1152114492B2F94923DD8B0016191E41E1* L_20 = ___1_handlerParams;
-		NullCheck(L_20);
-		String_t* L_21 = L_20->___titreAffichage_4;
-		handlerNotesParams_tCA2C1C1152114492B2F94923DD8B0016191E41E1* L_22 = ___1_handlerParams;
-		NullCheck(L_22);
-		String_t* L_23 = L_22->___idSection_1;
-		NullCheck(L_14);
-		WebCamPhotoCamera_ChoosePhotoSource_m334B45A0DD37CBEC391F4440C2A14325FDC0F7E6(L_14, L_15, L_17, L_19, L_21, L_23, NULL);
-		// GameObject.Find("UINotesRapport").GetComponent<NotesManager>().ResetPopupContent();
-		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_24;
-		L_24 = GameObject_Find_m7A669B4EEC2617AB82F6E3FF007CDCD9F21DB300(_stringLiteral65D4409A6586BDCF234E20D69672EF2428A96F59, NULL);
-		NullCheck(L_24);
-		NotesManager_tD186238281AC6C6DD083D5617258C11C9270050A* L_25;
-		L_25 = GameObject_GetComponent_TisNotesManager_tD186238281AC6C6DD083D5617258C11C9270050A_m606FA6C7D4760909C94E97D3A0745F3205B3585C(L_24, GameObject_GetComponent_TisNotesManager_tD186238281AC6C6DD083D5617258C11C9270050A_m606FA6C7D4760909C94E97D3A0745F3205B3585C_RuntimeMethod_var);
-		NullCheck(L_25);
-		NotesManager_ResetPopupContent_m9B1B322D2B06F199419D28AD615D45DB918DBEB0(L_25, NULL);
+		// GetComponent<WebCamPhotoCamera>().ChoosePhotoSource(handlerParams.tpl, Screen.width, handlerParams.isOnglet, handlerParams.idChamp, handlerParams.titreAffichage, handlerParams.idSection,
+		//     () => GameObject.Find("Script").GetComponent<RapportManager>().SauvegarderTemporaire(mainScript.clientSelectionne, this.container_name));
+		WebCamPhotoCamera_t9012ECCDB28660ED206FDE043EBBF32F914995F8* L_9;
+		L_9 = Component_GetComponent_TisWebCamPhotoCamera_t9012ECCDB28660ED206FDE043EBBF32F914995F8_mEA0D6AFB50176701B61A96D28ECDD2D99993A38A(__this, Component_GetComponent_TisWebCamPhotoCamera_t9012ECCDB28660ED206FDE043EBBF32F914995F8_mEA0D6AFB50176701B61A96D28ECDD2D99993A38A_RuntimeMethod_var);
+		handlerNotesParams_tCA2C1C1152114492B2F94923DD8B0016191E41E1* L_10 = ___1_handlerParams;
+		NullCheck(L_10);
+		VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_11 = L_10->___tpl_3;
+		int32_t L_12;
+		L_12 = Screen_get_width_mF608FF3252213E7EFA1F0D2F744C28110E9E5AC9(NULL);
+		handlerNotesParams_tCA2C1C1152114492B2F94923DD8B0016191E41E1* L_13 = ___1_handlerParams;
+		NullCheck(L_13);
+		bool L_14 = L_13->___isOnglet_2;
+		handlerNotesParams_tCA2C1C1152114492B2F94923DD8B0016191E41E1* L_15 = ___1_handlerParams;
+		NullCheck(L_15);
+		String_t* L_16 = L_15->___idChamp_0;
+		handlerNotesParams_tCA2C1C1152114492B2F94923DD8B0016191E41E1* L_17 = ___1_handlerParams;
+		NullCheck(L_17);
+		String_t* L_18 = L_17->___titreAffichage_4;
+		handlerNotesParams_tCA2C1C1152114492B2F94923DD8B0016191E41E1* L_19 = ___1_handlerParams;
+		NullCheck(L_19);
+		String_t* L_20 = L_19->___idSection_1;
+		Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* L_21 = (Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07*)il2cpp_codegen_object_new(Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07_il2cpp_TypeInfo_var);
+		NullCheck(L_21);
+		Action__ctor_mBDC7B0B4A3F583B64C2896F01BDED360772F67DC(L_21, __this, (intptr_t)((void*)ContenuRapportManager_U3Cfct_btnPhotoU3Eb__129_0_mF890176AFFE7AF2451DD1B080EA2A6FF6CA586C1_RuntimeMethod_var), NULL);
+		NullCheck(L_9);
+		WebCamPhotoCamera_ChoosePhotoSource_m0791EBB3C19E6BDF7928FBBD5FD9CED01F0D6720(L_9, L_11, L_12, L_14, L_16, L_18, L_20, L_21, NULL);
 		// }
 		return;
 	}
@@ -24828,105 +24829,90 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ContenuRapportManager_fct_btnVideo_m3830
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
 	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Component_GetComponent_TisVideoRecording_tF9BDBE286EFA7F9DE6C9B5051F1657BAB17F49B0_m40B57459E0B547B847E124912B16C475D86E707B_RuntimeMethod_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&GameObject_GetComponent_TisNotesManager_tD186238281AC6C6DD083D5617258C11C9270050A_m606FA6C7D4760909C94E97D3A0745F3205B3585C_RuntimeMethod_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&GameObject_GetComponent_TisRapportManager_t2629F591BD0F53BB238268E996B5C2770A07DA0F_m93C15BEE53D1E5BCB2035502CDA3A17FB835C64F_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ContenuRapportManager_U3Cfct_btnVideoU3Eb__131_0_mA3BC13B476ED6707440A5D5A2AD0873EA9C6F669_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral128D8D195431E686819545201C5E82EE34ED17C2);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral65D4409A6586BDCF234E20D69672EF2428A96F59);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralA0C14CE26448E50189281A9427CC96D04658B7AE);
 		s_Il2CppMethodInitialized = true;
 	}
 	{
 		// setOldScroll();
 		ContenuRapportManager_setOldScroll_m1FDB7E0EB7CFF3632B3C13775BF047E9BDB4C5EB(__this, NULL);
-		// GameObject.Find("Script").GetComponent<RapportManager>().SauvegarderTemporaire(mainScript.clientSelectionne, this.container_name);
-		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_0;
-		L_0 = GameObject_Find_m7A669B4EEC2617AB82F6E3FF007CDCD9F21DB300(_stringLiteralA0C14CE26448E50189281A9427CC96D04658B7AE, NULL);
-		NullCheck(L_0);
-		RapportManager_t2629F591BD0F53BB238268E996B5C2770A07DA0F* L_1;
-		L_1 = GameObject_GetComponent_TisRapportManager_t2629F591BD0F53BB238268E996B5C2770A07DA0F_m93C15BEE53D1E5BCB2035502CDA3A17FB835C64F(L_0, GameObject_GetComponent_TisRapportManager_t2629F591BD0F53BB238268E996B5C2770A07DA0F_m93C15BEE53D1E5BCB2035502CDA3A17FB835C64F_RuntimeMethod_var);
-		MainScript_tE5DA41EF9F6C72F24338683BF923785400FDC5FF* L_2 = ((AppManager_tD5155B839026DE8E1F63F8868048F9CF8B26ED0C*)__this)->___mainScript_10;
-		NullCheck(L_2);
-		int32_t L_3 = L_2->___clientSelectionne_16;
-		String_t* L_4 = __this->___container_name_60;
-		NullCheck(L_1);
-		RapportManager_SauvegarderTemporaire_m023ACF5BABDF642B3EC7BD64FB8A4FA41E6911B5(L_1, L_3, L_4, (bool)0, NULL);
 		// if (!NativeCamera.IsCameraBusy()){
-		bool L_5;
-		L_5 = NativeCamera_IsCameraBusy_m3373F1A16F70303B7F53D47A1143BED4152C2F54(NULL);
-		if (L_5)
+		bool L_0;
+		L_0 = NativeCamera_IsCameraBusy_m3373F1A16F70303B7F53D47A1143BED4152C2F54(NULL);
+		if (L_0)
 		{
-			goto IL_00a0;
+			goto IL_0078;
 		}
 	}
 	{
 		// if(handlerParams.idChamp != null){
-		handlerNotesParams_tCA2C1C1152114492B2F94923DD8B0016191E41E1* L_6 = ___1_handlerParams;
-		NullCheck(L_6);
-		String_t* L_7 = L_6->___idChamp_0;
-		if (!L_7)
+		handlerNotesParams_tCA2C1C1152114492B2F94923DD8B0016191E41E1* L_1 = ___1_handlerParams;
+		NullCheck(L_1);
+		String_t* L_2 = L_1->___idChamp_0;
+		if (!L_2)
 		{
-			goto IL_004e;
+			goto IL_0028;
 		}
 	}
 	{
 		// GetComponent<VideoRecording>().nomChamp = handlerParams.idChamp;
-		VideoRecording_tF9BDBE286EFA7F9DE6C9B5051F1657BAB17F49B0* L_8;
-		L_8 = Component_GetComponent_TisVideoRecording_tF9BDBE286EFA7F9DE6C9B5051F1657BAB17F49B0_m40B57459E0B547B847E124912B16C475D86E707B(__this, Component_GetComponent_TisVideoRecording_tF9BDBE286EFA7F9DE6C9B5051F1657BAB17F49B0_m40B57459E0B547B847E124912B16C475D86E707B_RuntimeMethod_var);
-		handlerNotesParams_tCA2C1C1152114492B2F94923DD8B0016191E41E1* L_9 = ___1_handlerParams;
-		NullCheck(L_9);
-		String_t* L_10 = L_9->___idChamp_0;
-		NullCheck(L_8);
-		L_8->___nomChamp_4 = L_10;
-		Il2CppCodeGenWriteBarrier((void**)(&L_8->___nomChamp_4), (void*)L_10);
-		goto IL_0069;
+		VideoRecording_tF9BDBE286EFA7F9DE6C9B5051F1657BAB17F49B0* L_3;
+		L_3 = Component_GetComponent_TisVideoRecording_tF9BDBE286EFA7F9DE6C9B5051F1657BAB17F49B0_m40B57459E0B547B847E124912B16C475D86E707B(__this, Component_GetComponent_TisVideoRecording_tF9BDBE286EFA7F9DE6C9B5051F1657BAB17F49B0_m40B57459E0B547B847E124912B16C475D86E707B_RuntimeMethod_var);
+		handlerNotesParams_tCA2C1C1152114492B2F94923DD8B0016191E41E1* L_4 = ___1_handlerParams;
+		NullCheck(L_4);
+		String_t* L_5 = L_4->___idChamp_0;
+		NullCheck(L_3);
+		L_3->___nomChamp_4 = L_5;
+		Il2CppCodeGenWriteBarrier((void**)(&L_3->___nomChamp_4), (void*)L_5);
+		goto IL_0043;
 	}
 
-IL_004e:
+IL_0028:
 	{
 		// GetComponent<VideoRecording>().nomChamp = "section_"+handlerParams.idSection;
-		VideoRecording_tF9BDBE286EFA7F9DE6C9B5051F1657BAB17F49B0* L_11;
-		L_11 = Component_GetComponent_TisVideoRecording_tF9BDBE286EFA7F9DE6C9B5051F1657BAB17F49B0_m40B57459E0B547B847E124912B16C475D86E707B(__this, Component_GetComponent_TisVideoRecording_tF9BDBE286EFA7F9DE6C9B5051F1657BAB17F49B0_m40B57459E0B547B847E124912B16C475D86E707B_RuntimeMethod_var);
-		handlerNotesParams_tCA2C1C1152114492B2F94923DD8B0016191E41E1* L_12 = ___1_handlerParams;
-		NullCheck(L_12);
-		String_t* L_13 = L_12->___idSection_1;
-		String_t* L_14;
-		L_14 = String_Concat_m9E3155FB84015C823606188F53B47CB44C444991(_stringLiteral128D8D195431E686819545201C5E82EE34ED17C2, L_13, NULL);
-		NullCheck(L_11);
-		L_11->___nomChamp_4 = L_14;
-		Il2CppCodeGenWriteBarrier((void**)(&L_11->___nomChamp_4), (void*)L_14);
+		VideoRecording_tF9BDBE286EFA7F9DE6C9B5051F1657BAB17F49B0* L_6;
+		L_6 = Component_GetComponent_TisVideoRecording_tF9BDBE286EFA7F9DE6C9B5051F1657BAB17F49B0_m40B57459E0B547B847E124912B16C475D86E707B(__this, Component_GetComponent_TisVideoRecording_tF9BDBE286EFA7F9DE6C9B5051F1657BAB17F49B0_m40B57459E0B547B847E124912B16C475D86E707B_RuntimeMethod_var);
+		handlerNotesParams_tCA2C1C1152114492B2F94923DD8B0016191E41E1* L_7 = ___1_handlerParams;
+		NullCheck(L_7);
+		String_t* L_8 = L_7->___idSection_1;
+		String_t* L_9;
+		L_9 = String_Concat_m9E3155FB84015C823606188F53B47CB44C444991(_stringLiteral128D8D195431E686819545201C5E82EE34ED17C2, L_8, NULL);
+		NullCheck(L_6);
+		L_6->___nomChamp_4 = L_9;
+		Il2CppCodeGenWriteBarrier((void**)(&L_6->___nomChamp_4), (void*)L_9);
 	}
 
-IL_0069:
+IL_0043:
 	{
-		// GetComponent<VideoRecording>().ChooseVideoSource(handlerParams.isOnglet, handlerParams.idChamp, handlerParams.titreAffichage, handlerParams.idSection);
-		VideoRecording_tF9BDBE286EFA7F9DE6C9B5051F1657BAB17F49B0* L_15;
-		L_15 = Component_GetComponent_TisVideoRecording_tF9BDBE286EFA7F9DE6C9B5051F1657BAB17F49B0_m40B57459E0B547B847E124912B16C475D86E707B(__this, Component_GetComponent_TisVideoRecording_tF9BDBE286EFA7F9DE6C9B5051F1657BAB17F49B0_m40B57459E0B547B847E124912B16C475D86E707B_RuntimeMethod_var);
-		handlerNotesParams_tCA2C1C1152114492B2F94923DD8B0016191E41E1* L_16 = ___1_handlerParams;
-		NullCheck(L_16);
-		bool L_17 = L_16->___isOnglet_2;
-		handlerNotesParams_tCA2C1C1152114492B2F94923DD8B0016191E41E1* L_18 = ___1_handlerParams;
-		NullCheck(L_18);
-		String_t* L_19 = L_18->___idChamp_0;
-		handlerNotesParams_tCA2C1C1152114492B2F94923DD8B0016191E41E1* L_20 = ___1_handlerParams;
-		NullCheck(L_20);
-		String_t* L_21 = L_20->___titreAffichage_4;
-		handlerNotesParams_tCA2C1C1152114492B2F94923DD8B0016191E41E1* L_22 = ___1_handlerParams;
-		NullCheck(L_22);
-		String_t* L_23 = L_22->___idSection_1;
+		// GetComponent<VideoRecording>().ChooseVideoSource(handlerParams.tpl, handlerParams.isOnglet, handlerParams.idChamp, handlerParams.titreAffichage, handlerParams.idSection,
+		//     () => GameObject.Find("Script").GetComponent<RapportManager>().SauvegarderTemporaire(mainScript.clientSelectionne, this.container_name));
+		VideoRecording_tF9BDBE286EFA7F9DE6C9B5051F1657BAB17F49B0* L_10;
+		L_10 = Component_GetComponent_TisVideoRecording_tF9BDBE286EFA7F9DE6C9B5051F1657BAB17F49B0_m40B57459E0B547B847E124912B16C475D86E707B(__this, Component_GetComponent_TisVideoRecording_tF9BDBE286EFA7F9DE6C9B5051F1657BAB17F49B0_m40B57459E0B547B847E124912B16C475D86E707B_RuntimeMethod_var);
+		handlerNotesParams_tCA2C1C1152114492B2F94923DD8B0016191E41E1* L_11 = ___1_handlerParams;
+		NullCheck(L_11);
+		VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_12 = L_11->___tpl_3;
+		handlerNotesParams_tCA2C1C1152114492B2F94923DD8B0016191E41E1* L_13 = ___1_handlerParams;
+		NullCheck(L_13);
+		bool L_14 = L_13->___isOnglet_2;
+		handlerNotesParams_tCA2C1C1152114492B2F94923DD8B0016191E41E1* L_15 = ___1_handlerParams;
 		NullCheck(L_15);
-		VideoRecording_ChooseVideoSource_m686B025DFDCB2BA66F9B3F0722B2193625F7B56E(L_15, L_17, L_19, L_21, L_23, NULL);
-		// GameObject.Find("UINotesRapport").GetComponent<NotesManager>().ResetPopupContent();
-		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_24;
-		L_24 = GameObject_Find_m7A669B4EEC2617AB82F6E3FF007CDCD9F21DB300(_stringLiteral65D4409A6586BDCF234E20D69672EF2428A96F59, NULL);
-		NullCheck(L_24);
-		NotesManager_tD186238281AC6C6DD083D5617258C11C9270050A* L_25;
-		L_25 = GameObject_GetComponent_TisNotesManager_tD186238281AC6C6DD083D5617258C11C9270050A_m606FA6C7D4760909C94E97D3A0745F3205B3585C(L_24, GameObject_GetComponent_TisNotesManager_tD186238281AC6C6DD083D5617258C11C9270050A_m606FA6C7D4760909C94E97D3A0745F3205B3585C_RuntimeMethod_var);
-		NullCheck(L_25);
-		NotesManager_ResetPopupContent_m9B1B322D2B06F199419D28AD615D45DB918DBEB0(L_25, NULL);
+		String_t* L_16 = L_15->___idChamp_0;
+		handlerNotesParams_tCA2C1C1152114492B2F94923DD8B0016191E41E1* L_17 = ___1_handlerParams;
+		NullCheck(L_17);
+		String_t* L_18 = L_17->___titreAffichage_4;
+		handlerNotesParams_tCA2C1C1152114492B2F94923DD8B0016191E41E1* L_19 = ___1_handlerParams;
+		NullCheck(L_19);
+		String_t* L_20 = L_19->___idSection_1;
+		Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* L_21 = (Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07*)il2cpp_codegen_object_new(Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07_il2cpp_TypeInfo_var);
+		NullCheck(L_21);
+		Action__ctor_mBDC7B0B4A3F583B64C2896F01BDED360772F67DC(L_21, __this, (intptr_t)((void*)ContenuRapportManager_U3Cfct_btnVideoU3Eb__131_0_mA3BC13B476ED6707440A5D5A2AD0873EA9C6F669_RuntimeMethod_var), NULL);
+		NullCheck(L_10);
+		VideoRecording_ChooseVideoSource_m2444E5631936593DC8A81BED2F2663EF83BFB0F2(L_10, L_12, L_14, L_16, L_18, L_20, L_21, NULL);
 	}
 
-IL_00a0:
+IL_0078:
 	{
 		// }
 		return;
@@ -25002,146 +24988,151 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ContenuRapportManager_fct_btnTexte_mDA61
 	{
 		// setOldScroll();
 		ContenuRapportManager_setOldScroll_m1FDB7E0EB7CFF3632B3C13775BF047E9BDB4C5EB(__this, NULL);
-		// if (handlerParams.tpl.Q<TemplateContainer>("noteTextuelle").style.display == DisplayStyle.Flex){
+		// AttachmentSourceChoices.Close(handlerParams.tpl);
 		handlerNotesParams_tCA2C1C1152114492B2F94923DD8B0016191E41E1* L_0 = ___1_handlerParams;
 		NullCheck(L_0);
 		VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_1 = L_0->___tpl_3;
-		il2cpp_codegen_runtime_class_init_inline(UQueryExtensions_t1271382882DF1B8FEEDE5EFA510405ABA7BD3426_il2cpp_TypeInfo_var);
-		TemplateContainer_tDF6DDDD82C75A6332F0194C2B39AF157F6342DA2* L_2;
-		L_2 = UQueryExtensions_Q_TisTemplateContainer_tDF6DDDD82C75A6332F0194C2B39AF157F6342DA2_m615DA2A30F91D1312EA543B2BD5A1EAE01E9CA09(L_1, _stringLiteral731C6D84274E6F396E14FFC4F52FBA312D645F95, (String_t*)NULL, UQueryExtensions_Q_TisTemplateContainer_tDF6DDDD82C75A6332F0194C2B39AF157F6342DA2_m615DA2A30F91D1312EA543B2BD5A1EAE01E9CA09_RuntimeMethod_var);
+		AttachmentSourceChoices_Close_m99524D303103BC1F2019A566569593724640D9A1(L_1, NULL);
+		// if (handlerParams.tpl.Q<TemplateContainer>("noteTextuelle").style.display == DisplayStyle.Flex){
+		handlerNotesParams_tCA2C1C1152114492B2F94923DD8B0016191E41E1* L_2 = ___1_handlerParams;
 		NullCheck(L_2);
-		RuntimeObject* L_3;
-		L_3 = VisualElement_get_style_mDCFF8D835BE0AFE412905E108F48B32A83734224(L_2, NULL);
-		NullCheck(L_3);
-		StyleEnum_1_t3B02FFF55849C9C8E6A7C0AA9C7E5F65F10C9C69 L_4;
-		L_4 = InterfaceFuncInvoker0< StyleEnum_1_t3B02FFF55849C9C8E6A7C0AA9C7E5F65F10C9C69 >::Invoke(18 /* UnityEngine.UIElements.StyleEnum`1<UnityEngine.UIElements.DisplayStyle> UnityEngine.UIElements.IStyle::get_display() */, IStyle_t4FD66C97CA5F46BFE328FED0C65277A37E0A89F7_il2cpp_TypeInfo_var, L_3);
-		StyleEnum_1_t3B02FFF55849C9C8E6A7C0AA9C7E5F65F10C9C69 L_5;
-		L_5 = StyleEnum_1_op_Implicit_mE2664CDFC678F602380EED12BA228071E6F49030(0, StyleEnum_1_op_Implicit_mE2664CDFC678F602380EED12BA228071E6F49030_RuntimeMethod_var);
-		bool L_6;
-		L_6 = StyleEnum_1_op_Equality_m0A305FB462EE2B52AD8BBC87CFCDAA27BA4B94CD(L_4, L_5, StyleEnum_1_op_Equality_m0A305FB462EE2B52AD8BBC87CFCDAA27BA4B94CD_RuntimeMethod_var);
-		if (!L_6)
+		VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_3 = L_2->___tpl_3;
+		il2cpp_codegen_runtime_class_init_inline(UQueryExtensions_t1271382882DF1B8FEEDE5EFA510405ABA7BD3426_il2cpp_TypeInfo_var);
+		TemplateContainer_tDF6DDDD82C75A6332F0194C2B39AF157F6342DA2* L_4;
+		L_4 = UQueryExtensions_Q_TisTemplateContainer_tDF6DDDD82C75A6332F0194C2B39AF157F6342DA2_m615DA2A30F91D1312EA543B2BD5A1EAE01E9CA09(L_3, _stringLiteral731C6D84274E6F396E14FFC4F52FBA312D645F95, (String_t*)NULL, UQueryExtensions_Q_TisTemplateContainer_tDF6DDDD82C75A6332F0194C2B39AF157F6342DA2_m615DA2A30F91D1312EA543B2BD5A1EAE01E9CA09_RuntimeMethod_var);
+		NullCheck(L_4);
+		RuntimeObject* L_5;
+		L_5 = VisualElement_get_style_mDCFF8D835BE0AFE412905E108F48B32A83734224(L_4, NULL);
+		NullCheck(L_5);
+		StyleEnum_1_t3B02FFF55849C9C8E6A7C0AA9C7E5F65F10C9C69 L_6;
+		L_6 = InterfaceFuncInvoker0< StyleEnum_1_t3B02FFF55849C9C8E6A7C0AA9C7E5F65F10C9C69 >::Invoke(18 /* UnityEngine.UIElements.StyleEnum`1<UnityEngine.UIElements.DisplayStyle> UnityEngine.UIElements.IStyle::get_display() */, IStyle_t4FD66C97CA5F46BFE328FED0C65277A37E0A89F7_il2cpp_TypeInfo_var, L_5);
+		StyleEnum_1_t3B02FFF55849C9C8E6A7C0AA9C7E5F65F10C9C69 L_7;
+		L_7 = StyleEnum_1_op_Implicit_mE2664CDFC678F602380EED12BA228071E6F49030(0, StyleEnum_1_op_Implicit_mE2664CDFC678F602380EED12BA228071E6F49030_RuntimeMethod_var);
+		bool L_8;
+		L_8 = StyleEnum_1_op_Equality_m0A305FB462EE2B52AD8BBC87CFCDAA27BA4B94CD(L_6, L_7, StyleEnum_1_op_Equality_m0A305FB462EE2B52AD8BBC87CFCDAA27BA4B94CD_RuntimeMethod_var);
+		if (!L_8)
 		{
-			goto IL_0051;
+			goto IL_005c;
 		}
 	}
 	{
 		// handlerParams.tpl.Q<TemplateContainer>("noteTextuelle").style.display = DisplayStyle.None;
-		handlerNotesParams_tCA2C1C1152114492B2F94923DD8B0016191E41E1* L_7 = ___1_handlerParams;
-		NullCheck(L_7);
-		VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_8 = L_7->___tpl_3;
-		il2cpp_codegen_runtime_class_init_inline(UQueryExtensions_t1271382882DF1B8FEEDE5EFA510405ABA7BD3426_il2cpp_TypeInfo_var);
-		TemplateContainer_tDF6DDDD82C75A6332F0194C2B39AF157F6342DA2* L_9;
-		L_9 = UQueryExtensions_Q_TisTemplateContainer_tDF6DDDD82C75A6332F0194C2B39AF157F6342DA2_m615DA2A30F91D1312EA543B2BD5A1EAE01E9CA09(L_8, _stringLiteral731C6D84274E6F396E14FFC4F52FBA312D645F95, (String_t*)NULL, UQueryExtensions_Q_TisTemplateContainer_tDF6DDDD82C75A6332F0194C2B39AF157F6342DA2_m615DA2A30F91D1312EA543B2BD5A1EAE01E9CA09_RuntimeMethod_var);
+		handlerNotesParams_tCA2C1C1152114492B2F94923DD8B0016191E41E1* L_9 = ___1_handlerParams;
 		NullCheck(L_9);
-		RuntimeObject* L_10;
-		L_10 = VisualElement_get_style_mDCFF8D835BE0AFE412905E108F48B32A83734224(L_9, NULL);
-		StyleEnum_1_t3B02FFF55849C9C8E6A7C0AA9C7E5F65F10C9C69 L_11;
-		L_11 = StyleEnum_1_op_Implicit_mE2664CDFC678F602380EED12BA228071E6F49030(1, StyleEnum_1_op_Implicit_mE2664CDFC678F602380EED12BA228071E6F49030_RuntimeMethod_var);
-		NullCheck(L_10);
-		InterfaceActionInvoker1< StyleEnum_1_t3B02FFF55849C9C8E6A7C0AA9C7E5F65F10C9C69 >::Invoke(19 /* System.Void UnityEngine.UIElements.IStyle::set_display(UnityEngine.UIElements.StyleEnum`1<UnityEngine.UIElements.DisplayStyle>) */, IStyle_t4FD66C97CA5F46BFE328FED0C65277A37E0A89F7_il2cpp_TypeInfo_var, L_10, L_11);
-		goto IL_0072;
+		VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_10 = L_9->___tpl_3;
+		il2cpp_codegen_runtime_class_init_inline(UQueryExtensions_t1271382882DF1B8FEEDE5EFA510405ABA7BD3426_il2cpp_TypeInfo_var);
+		TemplateContainer_tDF6DDDD82C75A6332F0194C2B39AF157F6342DA2* L_11;
+		L_11 = UQueryExtensions_Q_TisTemplateContainer_tDF6DDDD82C75A6332F0194C2B39AF157F6342DA2_m615DA2A30F91D1312EA543B2BD5A1EAE01E9CA09(L_10, _stringLiteral731C6D84274E6F396E14FFC4F52FBA312D645F95, (String_t*)NULL, UQueryExtensions_Q_TisTemplateContainer_tDF6DDDD82C75A6332F0194C2B39AF157F6342DA2_m615DA2A30F91D1312EA543B2BD5A1EAE01E9CA09_RuntimeMethod_var);
+		NullCheck(L_11);
+		RuntimeObject* L_12;
+		L_12 = VisualElement_get_style_mDCFF8D835BE0AFE412905E108F48B32A83734224(L_11, NULL);
+		StyleEnum_1_t3B02FFF55849C9C8E6A7C0AA9C7E5F65F10C9C69 L_13;
+		L_13 = StyleEnum_1_op_Implicit_mE2664CDFC678F602380EED12BA228071E6F49030(1, StyleEnum_1_op_Implicit_mE2664CDFC678F602380EED12BA228071E6F49030_RuntimeMethod_var);
+		NullCheck(L_12);
+		InterfaceActionInvoker1< StyleEnum_1_t3B02FFF55849C9C8E6A7C0AA9C7E5F65F10C9C69 >::Invoke(19 /* System.Void UnityEngine.UIElements.IStyle::set_display(UnityEngine.UIElements.StyleEnum`1<UnityEngine.UIElements.DisplayStyle>) */, IStyle_t4FD66C97CA5F46BFE328FED0C65277A37E0A89F7_il2cpp_TypeInfo_var, L_12, L_13);
+		goto IL_007d;
 	}
 
-IL_0051:
+IL_005c:
 	{
 		// handlerParams.tpl.Q<TemplateContainer>("noteTextuelle").style.display = DisplayStyle.Flex;
-		handlerNotesParams_tCA2C1C1152114492B2F94923DD8B0016191E41E1* L_12 = ___1_handlerParams;
-		NullCheck(L_12);
-		VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_13 = L_12->___tpl_3;
-		il2cpp_codegen_runtime_class_init_inline(UQueryExtensions_t1271382882DF1B8FEEDE5EFA510405ABA7BD3426_il2cpp_TypeInfo_var);
-		TemplateContainer_tDF6DDDD82C75A6332F0194C2B39AF157F6342DA2* L_14;
-		L_14 = UQueryExtensions_Q_TisTemplateContainer_tDF6DDDD82C75A6332F0194C2B39AF157F6342DA2_m615DA2A30F91D1312EA543B2BD5A1EAE01E9CA09(L_13, _stringLiteral731C6D84274E6F396E14FFC4F52FBA312D645F95, (String_t*)NULL, UQueryExtensions_Q_TisTemplateContainer_tDF6DDDD82C75A6332F0194C2B39AF157F6342DA2_m615DA2A30F91D1312EA543B2BD5A1EAE01E9CA09_RuntimeMethod_var);
+		handlerNotesParams_tCA2C1C1152114492B2F94923DD8B0016191E41E1* L_14 = ___1_handlerParams;
 		NullCheck(L_14);
-		RuntimeObject* L_15;
-		L_15 = VisualElement_get_style_mDCFF8D835BE0AFE412905E108F48B32A83734224(L_14, NULL);
-		StyleEnum_1_t3B02FFF55849C9C8E6A7C0AA9C7E5F65F10C9C69 L_16;
-		L_16 = StyleEnum_1_op_Implicit_mE2664CDFC678F602380EED12BA228071E6F49030(0, StyleEnum_1_op_Implicit_mE2664CDFC678F602380EED12BA228071E6F49030_RuntimeMethod_var);
-		NullCheck(L_15);
-		InterfaceActionInvoker1< StyleEnum_1_t3B02FFF55849C9C8E6A7C0AA9C7E5F65F10C9C69 >::Invoke(19 /* System.Void UnityEngine.UIElements.IStyle::set_display(UnityEngine.UIElements.StyleEnum`1<UnityEngine.UIElements.DisplayStyle>) */, IStyle_t4FD66C97CA5F46BFE328FED0C65277A37E0A89F7_il2cpp_TypeInfo_var, L_15, L_16);
+		VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_15 = L_14->___tpl_3;
+		il2cpp_codegen_runtime_class_init_inline(UQueryExtensions_t1271382882DF1B8FEEDE5EFA510405ABA7BD3426_il2cpp_TypeInfo_var);
+		TemplateContainer_tDF6DDDD82C75A6332F0194C2B39AF157F6342DA2* L_16;
+		L_16 = UQueryExtensions_Q_TisTemplateContainer_tDF6DDDD82C75A6332F0194C2B39AF157F6342DA2_m615DA2A30F91D1312EA543B2BD5A1EAE01E9CA09(L_15, _stringLiteral731C6D84274E6F396E14FFC4F52FBA312D645F95, (String_t*)NULL, UQueryExtensions_Q_TisTemplateContainer_tDF6DDDD82C75A6332F0194C2B39AF157F6342DA2_m615DA2A30F91D1312EA543B2BD5A1EAE01E9CA09_RuntimeMethod_var);
+		NullCheck(L_16);
+		RuntimeObject* L_17;
+		L_17 = VisualElement_get_style_mDCFF8D835BE0AFE412905E108F48B32A83734224(L_16, NULL);
+		StyleEnum_1_t3B02FFF55849C9C8E6A7C0AA9C7E5F65F10C9C69 L_18;
+		L_18 = StyleEnum_1_op_Implicit_mE2664CDFC678F602380EED12BA228071E6F49030(0, StyleEnum_1_op_Implicit_mE2664CDFC678F602380EED12BA228071E6F49030_RuntimeMethod_var);
+		NullCheck(L_17);
+		InterfaceActionInvoker1< StyleEnum_1_t3B02FFF55849C9C8E6A7C0AA9C7E5F65F10C9C69 >::Invoke(19 /* System.Void UnityEngine.UIElements.IStyle::set_display(UnityEngine.UIElements.StyleEnum`1<UnityEngine.UIElements.DisplayStyle>) */, IStyle_t4FD66C97CA5F46BFE328FED0C65277A37E0A89F7_il2cpp_TypeInfo_var, L_17, L_18);
 	}
 
-IL_0072:
+IL_007d:
 	{
 		// string nom_txt_input = handlerParams.idChamp + "_texte";
-		handlerNotesParams_tCA2C1C1152114492B2F94923DD8B0016191E41E1* L_17 = ___1_handlerParams;
-		NullCheck(L_17);
-		String_t* L_18 = L_17->___idChamp_0;
-		String_t* L_19;
-		L_19 = String_Concat_m9E3155FB84015C823606188F53B47CB44C444991(L_18, _stringLiteralEF1D1290948313FCB75D5518A1A92ABF14196448, NULL);
-		V_0 = L_19;
+		handlerNotesParams_tCA2C1C1152114492B2F94923DD8B0016191E41E1* L_19 = ___1_handlerParams;
+		NullCheck(L_19);
+		String_t* L_20 = L_19->___idChamp_0;
+		String_t* L_21;
+		L_21 = String_Concat_m9E3155FB84015C823606188F53B47CB44C444991(L_20, _stringLiteralEF1D1290948313FCB75D5518A1A92ABF14196448, NULL);
+		V_0 = L_21;
 		// if(handlerParams.idSection != null){
-		handlerNotesParams_tCA2C1C1152114492B2F94923DD8B0016191E41E1* L_20 = ___1_handlerParams;
-		NullCheck(L_20);
-		String_t* L_21 = L_20->___idSection_1;
-		if (!L_21)
+		handlerNotesParams_tCA2C1C1152114492B2F94923DD8B0016191E41E1* L_22 = ___1_handlerParams;
+		NullCheck(L_22);
+		String_t* L_23 = L_22->___idSection_1;
+		if (!L_23)
 		{
-			goto IL_00a1;
+			goto IL_00ac;
 		}
 	}
 	{
 		// nom_txt_input = "section_"+handlerParams.idSection + "_texte";
-		handlerNotesParams_tCA2C1C1152114492B2F94923DD8B0016191E41E1* L_22 = ___1_handlerParams;
-		NullCheck(L_22);
-		String_t* L_23 = L_22->___idSection_1;
-		String_t* L_24;
-		L_24 = String_Concat_m8855A6DE10F84DA7F4EC113CADDB59873A25573B(_stringLiteral128D8D195431E686819545201C5E82EE34ED17C2, L_23, _stringLiteralEF1D1290948313FCB75D5518A1A92ABF14196448, NULL);
-		V_0 = L_24;
+		handlerNotesParams_tCA2C1C1152114492B2F94923DD8B0016191E41E1* L_24 = ___1_handlerParams;
+		NullCheck(L_24);
+		String_t* L_25 = L_24->___idSection_1;
+		String_t* L_26;
+		L_26 = String_Concat_m8855A6DE10F84DA7F4EC113CADDB59873A25573B(_stringLiteral128D8D195431E686819545201C5E82EE34ED17C2, L_25, _stringLiteralEF1D1290948313FCB75D5518A1A92ABF14196448, NULL);
+		V_0 = L_26;
 	}
 
-IL_00a1:
+IL_00ac:
 	{
 		// handlerParams.tpl.Q<TemplateContainer>("noteTextuelle").Q<Button>("btnNotes").style.display = DisplayStyle.None;
-		handlerNotesParams_tCA2C1C1152114492B2F94923DD8B0016191E41E1* L_25 = ___1_handlerParams;
-		NullCheck(L_25);
-		VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_26 = L_25->___tpl_3;
+		handlerNotesParams_tCA2C1C1152114492B2F94923DD8B0016191E41E1* L_27 = ___1_handlerParams;
+		NullCheck(L_27);
+		VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_28 = L_27->___tpl_3;
 		il2cpp_codegen_runtime_class_init_inline(UQueryExtensions_t1271382882DF1B8FEEDE5EFA510405ABA7BD3426_il2cpp_TypeInfo_var);
-		TemplateContainer_tDF6DDDD82C75A6332F0194C2B39AF157F6342DA2* L_27;
-		L_27 = UQueryExtensions_Q_TisTemplateContainer_tDF6DDDD82C75A6332F0194C2B39AF157F6342DA2_m615DA2A30F91D1312EA543B2BD5A1EAE01E9CA09(L_26, _stringLiteral731C6D84274E6F396E14FFC4F52FBA312D645F95, (String_t*)NULL, UQueryExtensions_Q_TisTemplateContainer_tDF6DDDD82C75A6332F0194C2B39AF157F6342DA2_m615DA2A30F91D1312EA543B2BD5A1EAE01E9CA09_RuntimeMethod_var);
-		Button_t8EC3B431665F84C0B637C11B0EA29236828646C2* L_28;
-		L_28 = UQueryExtensions_Q_TisButton_t8EC3B431665F84C0B637C11B0EA29236828646C2_m36B6EBB624A0831C6B20C70F93EF0517B65A8D75(L_27, _stringLiteralC8D321E9E137A8E39FF59A4D42D4BF9B370523E5, (String_t*)NULL, UQueryExtensions_Q_TisButton_t8EC3B431665F84C0B637C11B0EA29236828646C2_m36B6EBB624A0831C6B20C70F93EF0517B65A8D75_RuntimeMethod_var);
-		NullCheck(L_28);
-		RuntimeObject* L_29;
-		L_29 = VisualElement_get_style_mDCFF8D835BE0AFE412905E108F48B32A83734224(L_28, NULL);
-		StyleEnum_1_t3B02FFF55849C9C8E6A7C0AA9C7E5F65F10C9C69 L_30;
-		L_30 = StyleEnum_1_op_Implicit_mE2664CDFC678F602380EED12BA228071E6F49030(1, StyleEnum_1_op_Implicit_mE2664CDFC678F602380EED12BA228071E6F49030_RuntimeMethod_var);
-		NullCheck(L_29);
-		InterfaceActionInvoker1< StyleEnum_1_t3B02FFF55849C9C8E6A7C0AA9C7E5F65F10C9C69 >::Invoke(19 /* System.Void UnityEngine.UIElements.IStyle::set_display(UnityEngine.UIElements.StyleEnum`1<UnityEngine.UIElements.DisplayStyle>) */, IStyle_t4FD66C97CA5F46BFE328FED0C65277A37E0A89F7_il2cpp_TypeInfo_var, L_29, L_30);
-		// handlerParams.tpl.Q<TemplateContainer>("noteTextuelle").Q<Button>("btnSauvegarder").style.display = DisplayStyle.Flex;
-		handlerNotesParams_tCA2C1C1152114492B2F94923DD8B0016191E41E1* L_31 = ___1_handlerParams;
+		TemplateContainer_tDF6DDDD82C75A6332F0194C2B39AF157F6342DA2* L_29;
+		L_29 = UQueryExtensions_Q_TisTemplateContainer_tDF6DDDD82C75A6332F0194C2B39AF157F6342DA2_m615DA2A30F91D1312EA543B2BD5A1EAE01E9CA09(L_28, _stringLiteral731C6D84274E6F396E14FFC4F52FBA312D645F95, (String_t*)NULL, UQueryExtensions_Q_TisTemplateContainer_tDF6DDDD82C75A6332F0194C2B39AF157F6342DA2_m615DA2A30F91D1312EA543B2BD5A1EAE01E9CA09_RuntimeMethod_var);
+		Button_t8EC3B431665F84C0B637C11B0EA29236828646C2* L_30;
+		L_30 = UQueryExtensions_Q_TisButton_t8EC3B431665F84C0B637C11B0EA29236828646C2_m36B6EBB624A0831C6B20C70F93EF0517B65A8D75(L_29, _stringLiteralC8D321E9E137A8E39FF59A4D42D4BF9B370523E5, (String_t*)NULL, UQueryExtensions_Q_TisButton_t8EC3B431665F84C0B637C11B0EA29236828646C2_m36B6EBB624A0831C6B20C70F93EF0517B65A8D75_RuntimeMethod_var);
+		NullCheck(L_30);
+		RuntimeObject* L_31;
+		L_31 = VisualElement_get_style_mDCFF8D835BE0AFE412905E108F48B32A83734224(L_30, NULL);
+		StyleEnum_1_t3B02FFF55849C9C8E6A7C0AA9C7E5F65F10C9C69 L_32;
+		L_32 = StyleEnum_1_op_Implicit_mE2664CDFC678F602380EED12BA228071E6F49030(1, StyleEnum_1_op_Implicit_mE2664CDFC678F602380EED12BA228071E6F49030_RuntimeMethod_var);
 		NullCheck(L_31);
-		VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_32 = L_31->___tpl_3;
-		TemplateContainer_tDF6DDDD82C75A6332F0194C2B39AF157F6342DA2* L_33;
-		L_33 = UQueryExtensions_Q_TisTemplateContainer_tDF6DDDD82C75A6332F0194C2B39AF157F6342DA2_m615DA2A30F91D1312EA543B2BD5A1EAE01E9CA09(L_32, _stringLiteral731C6D84274E6F396E14FFC4F52FBA312D645F95, (String_t*)NULL, UQueryExtensions_Q_TisTemplateContainer_tDF6DDDD82C75A6332F0194C2B39AF157F6342DA2_m615DA2A30F91D1312EA543B2BD5A1EAE01E9CA09_RuntimeMethod_var);
-		Button_t8EC3B431665F84C0B637C11B0EA29236828646C2* L_34;
-		L_34 = UQueryExtensions_Q_TisButton_t8EC3B431665F84C0B637C11B0EA29236828646C2_m36B6EBB624A0831C6B20C70F93EF0517B65A8D75(L_33, _stringLiteral1DE150AB581F07E4C8DA8439823529A9A8C62807, (String_t*)NULL, UQueryExtensions_Q_TisButton_t8EC3B431665F84C0B637C11B0EA29236828646C2_m36B6EBB624A0831C6B20C70F93EF0517B65A8D75_RuntimeMethod_var);
-		NullCheck(L_34);
-		RuntimeObject* L_35;
-		L_35 = VisualElement_get_style_mDCFF8D835BE0AFE412905E108F48B32A83734224(L_34, NULL);
-		StyleEnum_1_t3B02FFF55849C9C8E6A7C0AA9C7E5F65F10C9C69 L_36;
-		L_36 = StyleEnum_1_op_Implicit_mE2664CDFC678F602380EED12BA228071E6F49030(0, StyleEnum_1_op_Implicit_mE2664CDFC678F602380EED12BA228071E6F49030_RuntimeMethod_var);
-		NullCheck(L_35);
-		InterfaceActionInvoker1< StyleEnum_1_t3B02FFF55849C9C8E6A7C0AA9C7E5F65F10C9C69 >::Invoke(19 /* System.Void UnityEngine.UIElements.IStyle::set_display(UnityEngine.UIElements.StyleEnum`1<UnityEngine.UIElements.DisplayStyle>) */, IStyle_t4FD66C97CA5F46BFE328FED0C65277A37E0A89F7_il2cpp_TypeInfo_var, L_35, L_36);
-		// handlerParams.tpl.Q<TemplateContainer>("noteTextuelle").Q<TextField>().name = nom_txt_input;
-		handlerNotesParams_tCA2C1C1152114492B2F94923DD8B0016191E41E1* L_37 = ___1_handlerParams;
+		InterfaceActionInvoker1< StyleEnum_1_t3B02FFF55849C9C8E6A7C0AA9C7E5F65F10C9C69 >::Invoke(19 /* System.Void UnityEngine.UIElements.IStyle::set_display(UnityEngine.UIElements.StyleEnum`1<UnityEngine.UIElements.DisplayStyle>) */, IStyle_t4FD66C97CA5F46BFE328FED0C65277A37E0A89F7_il2cpp_TypeInfo_var, L_31, L_32);
+		// handlerParams.tpl.Q<TemplateContainer>("noteTextuelle").Q<Button>("btnSauvegarder").style.display = DisplayStyle.Flex;
+		handlerNotesParams_tCA2C1C1152114492B2F94923DD8B0016191E41E1* L_33 = ___1_handlerParams;
+		NullCheck(L_33);
+		VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_34 = L_33->___tpl_3;
+		TemplateContainer_tDF6DDDD82C75A6332F0194C2B39AF157F6342DA2* L_35;
+		L_35 = UQueryExtensions_Q_TisTemplateContainer_tDF6DDDD82C75A6332F0194C2B39AF157F6342DA2_m615DA2A30F91D1312EA543B2BD5A1EAE01E9CA09(L_34, _stringLiteral731C6D84274E6F396E14FFC4F52FBA312D645F95, (String_t*)NULL, UQueryExtensions_Q_TisTemplateContainer_tDF6DDDD82C75A6332F0194C2B39AF157F6342DA2_m615DA2A30F91D1312EA543B2BD5A1EAE01E9CA09_RuntimeMethod_var);
+		Button_t8EC3B431665F84C0B637C11B0EA29236828646C2* L_36;
+		L_36 = UQueryExtensions_Q_TisButton_t8EC3B431665F84C0B637C11B0EA29236828646C2_m36B6EBB624A0831C6B20C70F93EF0517B65A8D75(L_35, _stringLiteral1DE150AB581F07E4C8DA8439823529A9A8C62807, (String_t*)NULL, UQueryExtensions_Q_TisButton_t8EC3B431665F84C0B637C11B0EA29236828646C2_m36B6EBB624A0831C6B20C70F93EF0517B65A8D75_RuntimeMethod_var);
+		NullCheck(L_36);
+		RuntimeObject* L_37;
+		L_37 = VisualElement_get_style_mDCFF8D835BE0AFE412905E108F48B32A83734224(L_36, NULL);
+		StyleEnum_1_t3B02FFF55849C9C8E6A7C0AA9C7E5F65F10C9C69 L_38;
+		L_38 = StyleEnum_1_op_Implicit_mE2664CDFC678F602380EED12BA228071E6F49030(0, StyleEnum_1_op_Implicit_mE2664CDFC678F602380EED12BA228071E6F49030_RuntimeMethod_var);
 		NullCheck(L_37);
-		VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_38 = L_37->___tpl_3;
-		TemplateContainer_tDF6DDDD82C75A6332F0194C2B39AF157F6342DA2* L_39;
-		L_39 = UQueryExtensions_Q_TisTemplateContainer_tDF6DDDD82C75A6332F0194C2B39AF157F6342DA2_m615DA2A30F91D1312EA543B2BD5A1EAE01E9CA09(L_38, _stringLiteral731C6D84274E6F396E14FFC4F52FBA312D645F95, (String_t*)NULL, UQueryExtensions_Q_TisTemplateContainer_tDF6DDDD82C75A6332F0194C2B39AF157F6342DA2_m615DA2A30F91D1312EA543B2BD5A1EAE01E9CA09_RuntimeMethod_var);
-		TextField_tDB34369F9468D7F02670087D9444EC23115827D9* L_40;
-		L_40 = UQueryExtensions_Q_TisTextField_tDB34369F9468D7F02670087D9444EC23115827D9_m2CFED749235AD79D994C869E4ACBFE918E628A08(L_39, (String_t*)NULL, (String_t*)NULL, UQueryExtensions_Q_TisTextField_tDB34369F9468D7F02670087D9444EC23115827D9_m2CFED749235AD79D994C869E4ACBFE918E628A08_RuntimeMethod_var);
-		String_t* L_41 = V_0;
-		NullCheck(L_40);
-		VisualElement_set_name_m5ABC7B8D2586B1839DD436E1AAF25D81395759BC(L_40, L_41, NULL);
-		// handlerParams.tpl.Q<TemplateContainer>("noteTextuelle").Q<TextField>().label = "ZONE DE TEXTE";
-		handlerNotesParams_tCA2C1C1152114492B2F94923DD8B0016191E41E1* L_42 = ___1_handlerParams;
+		InterfaceActionInvoker1< StyleEnum_1_t3B02FFF55849C9C8E6A7C0AA9C7E5F65F10C9C69 >::Invoke(19 /* System.Void UnityEngine.UIElements.IStyle::set_display(UnityEngine.UIElements.StyleEnum`1<UnityEngine.UIElements.DisplayStyle>) */, IStyle_t4FD66C97CA5F46BFE328FED0C65277A37E0A89F7_il2cpp_TypeInfo_var, L_37, L_38);
+		// handlerParams.tpl.Q<TemplateContainer>("noteTextuelle").Q<TextField>().name = nom_txt_input;
+		handlerNotesParams_tCA2C1C1152114492B2F94923DD8B0016191E41E1* L_39 = ___1_handlerParams;
+		NullCheck(L_39);
+		VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_40 = L_39->___tpl_3;
+		TemplateContainer_tDF6DDDD82C75A6332F0194C2B39AF157F6342DA2* L_41;
+		L_41 = UQueryExtensions_Q_TisTemplateContainer_tDF6DDDD82C75A6332F0194C2B39AF157F6342DA2_m615DA2A30F91D1312EA543B2BD5A1EAE01E9CA09(L_40, _stringLiteral731C6D84274E6F396E14FFC4F52FBA312D645F95, (String_t*)NULL, UQueryExtensions_Q_TisTemplateContainer_tDF6DDDD82C75A6332F0194C2B39AF157F6342DA2_m615DA2A30F91D1312EA543B2BD5A1EAE01E9CA09_RuntimeMethod_var);
+		TextField_tDB34369F9468D7F02670087D9444EC23115827D9* L_42;
+		L_42 = UQueryExtensions_Q_TisTextField_tDB34369F9468D7F02670087D9444EC23115827D9_m2CFED749235AD79D994C869E4ACBFE918E628A08(L_41, (String_t*)NULL, (String_t*)NULL, UQueryExtensions_Q_TisTextField_tDB34369F9468D7F02670087D9444EC23115827D9_m2CFED749235AD79D994C869E4ACBFE918E628A08_RuntimeMethod_var);
+		String_t* L_43 = V_0;
 		NullCheck(L_42);
-		VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_43 = L_42->___tpl_3;
-		TemplateContainer_tDF6DDDD82C75A6332F0194C2B39AF157F6342DA2* L_44;
-		L_44 = UQueryExtensions_Q_TisTemplateContainer_tDF6DDDD82C75A6332F0194C2B39AF157F6342DA2_m615DA2A30F91D1312EA543B2BD5A1EAE01E9CA09(L_43, _stringLiteral731C6D84274E6F396E14FFC4F52FBA312D645F95, (String_t*)NULL, UQueryExtensions_Q_TisTemplateContainer_tDF6DDDD82C75A6332F0194C2B39AF157F6342DA2_m615DA2A30F91D1312EA543B2BD5A1EAE01E9CA09_RuntimeMethod_var);
-		TextField_tDB34369F9468D7F02670087D9444EC23115827D9* L_45;
-		L_45 = UQueryExtensions_Q_TisTextField_tDB34369F9468D7F02670087D9444EC23115827D9_m2CFED749235AD79D994C869E4ACBFE918E628A08(L_44, (String_t*)NULL, (String_t*)NULL, UQueryExtensions_Q_TisTextField_tDB34369F9468D7F02670087D9444EC23115827D9_m2CFED749235AD79D994C869E4ACBFE918E628A08_RuntimeMethod_var);
-		NullCheck(L_45);
-		BaseField_1_set_label_mD77B4939ED02D3B3624E18D5D1250B57727A7D24(L_45, _stringLiteral4C5FBB6BD31E4BECAEB68B7F50C28FDA7BEA0EB7, BaseField_1_set_label_mD77B4939ED02D3B3624E18D5D1250B57727A7D24_RuntimeMethod_var);
+		VisualElement_set_name_m5ABC7B8D2586B1839DD436E1AAF25D81395759BC(L_42, L_43, NULL);
+		// handlerParams.tpl.Q<TemplateContainer>("noteTextuelle").Q<TextField>().label = "ZONE DE TEXTE";
+		handlerNotesParams_tCA2C1C1152114492B2F94923DD8B0016191E41E1* L_44 = ___1_handlerParams;
+		NullCheck(L_44);
+		VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_45 = L_44->___tpl_3;
+		TemplateContainer_tDF6DDDD82C75A6332F0194C2B39AF157F6342DA2* L_46;
+		L_46 = UQueryExtensions_Q_TisTemplateContainer_tDF6DDDD82C75A6332F0194C2B39AF157F6342DA2_m615DA2A30F91D1312EA543B2BD5A1EAE01E9CA09(L_45, _stringLiteral731C6D84274E6F396E14FFC4F52FBA312D645F95, (String_t*)NULL, UQueryExtensions_Q_TisTemplateContainer_tDF6DDDD82C75A6332F0194C2B39AF157F6342DA2_m615DA2A30F91D1312EA543B2BD5A1EAE01E9CA09_RuntimeMethod_var);
+		TextField_tDB34369F9468D7F02670087D9444EC23115827D9* L_47;
+		L_47 = UQueryExtensions_Q_TisTextField_tDB34369F9468D7F02670087D9444EC23115827D9_m2CFED749235AD79D994C869E4ACBFE918E628A08(L_46, (String_t*)NULL, (String_t*)NULL, UQueryExtensions_Q_TisTextField_tDB34369F9468D7F02670087D9444EC23115827D9_m2CFED749235AD79D994C869E4ACBFE918E628A08_RuntimeMethod_var);
+		NullCheck(L_47);
+		BaseField_1_set_label_mD77B4939ED02D3B3624E18D5D1250B57727A7D24(L_47, _stringLiteral4C5FBB6BD31E4BECAEB68B7F50C28FDA7BEA0EB7, BaseField_1_set_label_mD77B4939ED02D3B3624E18D5D1250B57727A7D24_RuntimeMethod_var);
 		// }
 		return;
 	}
@@ -29144,6 +29135,58 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ContenuRapportManager_U3CRegisterTypedFi
 IL_0024:
 	{
 		// });
+		return;
+	}
+}
+// System.Void ContenuRapportManager::<fct_btnPhoto>b__129_0()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ContenuRapportManager_U3Cfct_btnPhotoU3Eb__129_0_mF890176AFFE7AF2451DD1B080EA2A6FF6CA586C1 (ContenuRapportManager_t1246C45A36047FA097C07FFB64574E5974E068E4* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&GameObject_GetComponent_TisRapportManager_t2629F591BD0F53BB238268E996B5C2770A07DA0F_m93C15BEE53D1E5BCB2035502CDA3A17FB835C64F_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralA0C14CE26448E50189281A9427CC96D04658B7AE);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// () => GameObject.Find("Script").GetComponent<RapportManager>().SauvegarderTemporaire(mainScript.clientSelectionne, this.container_name));
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_0;
+		L_0 = GameObject_Find_m7A669B4EEC2617AB82F6E3FF007CDCD9F21DB300(_stringLiteralA0C14CE26448E50189281A9427CC96D04658B7AE, NULL);
+		NullCheck(L_0);
+		RapportManager_t2629F591BD0F53BB238268E996B5C2770A07DA0F* L_1;
+		L_1 = GameObject_GetComponent_TisRapportManager_t2629F591BD0F53BB238268E996B5C2770A07DA0F_m93C15BEE53D1E5BCB2035502CDA3A17FB835C64F(L_0, GameObject_GetComponent_TisRapportManager_t2629F591BD0F53BB238268E996B5C2770A07DA0F_m93C15BEE53D1E5BCB2035502CDA3A17FB835C64F_RuntimeMethod_var);
+		MainScript_tE5DA41EF9F6C72F24338683BF923785400FDC5FF* L_2 = ((AppManager_tD5155B839026DE8E1F63F8868048F9CF8B26ED0C*)__this)->___mainScript_10;
+		NullCheck(L_2);
+		int32_t L_3 = L_2->___clientSelectionne_16;
+		String_t* L_4 = __this->___container_name_60;
+		NullCheck(L_1);
+		RapportManager_SauvegarderTemporaire_m023ACF5BABDF642B3EC7BD64FB8A4FA41E6911B5(L_1, L_3, L_4, (bool)0, NULL);
+		return;
+	}
+}
+// System.Void ContenuRapportManager::<fct_btnVideo>b__131_0()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ContenuRapportManager_U3Cfct_btnVideoU3Eb__131_0_mA3BC13B476ED6707440A5D5A2AD0873EA9C6F669 (ContenuRapportManager_t1246C45A36047FA097C07FFB64574E5974E068E4* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&GameObject_GetComponent_TisRapportManager_t2629F591BD0F53BB238268E996B5C2770A07DA0F_m93C15BEE53D1E5BCB2035502CDA3A17FB835C64F_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralA0C14CE26448E50189281A9427CC96D04658B7AE);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// () => GameObject.Find("Script").GetComponent<RapportManager>().SauvegarderTemporaire(mainScript.clientSelectionne, this.container_name));
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_0;
+		L_0 = GameObject_Find_m7A669B4EEC2617AB82F6E3FF007CDCD9F21DB300(_stringLiteralA0C14CE26448E50189281A9427CC96D04658B7AE, NULL);
+		NullCheck(L_0);
+		RapportManager_t2629F591BD0F53BB238268E996B5C2770A07DA0F* L_1;
+		L_1 = GameObject_GetComponent_TisRapportManager_t2629F591BD0F53BB238268E996B5C2770A07DA0F_m93C15BEE53D1E5BCB2035502CDA3A17FB835C64F(L_0, GameObject_GetComponent_TisRapportManager_t2629F591BD0F53BB238268E996B5C2770A07DA0F_m93C15BEE53D1E5BCB2035502CDA3A17FB835C64F_RuntimeMethod_var);
+		MainScript_tE5DA41EF9F6C72F24338683BF923785400FDC5FF* L_2 = ((AppManager_tD5155B839026DE8E1F63F8868048F9CF8B26ED0C*)__this)->___mainScript_10;
+		NullCheck(L_2);
+		int32_t L_3 = L_2->___clientSelectionne_16;
+		String_t* L_4 = __this->___container_name_60;
+		NullCheck(L_1);
+		RapportManager_SauvegarderTemporaire_m023ACF5BABDF642B3EC7BD64FB8A4FA41E6911B5(L_1, L_3, L_4, (bool)0, NULL);
 		return;
 	}
 }
