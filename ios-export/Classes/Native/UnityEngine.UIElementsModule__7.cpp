@@ -802,6 +802,7 @@ IL2CPP_EXTERN_C const RuntimeMethod* InlineStyleAccess_SetStyleValue_TisAlign_t2
 IL2CPP_EXTERN_C const RuntimeMethod* InlineStyleAccess_SetStyleValue_TisDisplayStyle_t87BEDA2F78F764785ED41FC5E622ECB0091B2459_m81683517B098B03D83815E08D546A78DEDA6E9CA_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* InlineStyleAccess_SetStyleValue_TisFlexDirection_t0B086E97C9B1B8F1D94B51CBEAE6564B2A7C15DC_m210A3FAC249DBC48CD26DE484AB6407E0532839D_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* InlineStyleAccess_SetStyleValue_TisFontStyle_tDD46734FA9BCB99FB315CD7CAD1137EE536136D1_m1D04A56DF36477C874150806480BAA9EA75AE1FE_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* InlineStyleAccess_SetStyleValue_TisOverflowInternal_t6A74561363466CCB7905A65D3E5E24887AE0F11F_m63A24938CC393D78AFD9B3CEA13E63D073B63DCA_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* InlineStyleAccess_SetStyleValue_TisPosition_t066B59B8657DAFCFBEDDAE8CBCE96E88796E1319_mB698877AE649EE38D027D206970FD4C5A4B91441_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* InlineStyleAccess_SetStyleValue_TisTextAnchor_tA46E794186AC1CD0F22888652F589EBF7DFDF830_m6B952E5F8BD3F99DB08C64C526DBE96C9D838CA3_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* InlineStyleAccess_SetStyleValue_TisVisibility_t1AEE2D871B126DD95D6F1D3B36EC92FE0D489F47_mFF5EAF8551BA6425453FD8E9397A92BFA3228412_RuntimeMethod_var;
@@ -869,8 +870,11 @@ IL2CPP_EXTERN_C const RuntimeMethod* Stack_1__ctor_m335E848ED0B875E3163CBDF6F077
 IL2CPP_EXTERN_C const RuntimeMethod* Stack_1__ctor_m991D1F32313E86427FCF566730B675C621B16EBE_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Stack_1__ctor_mC5657DF3C282DA5CDD0BBD6368F49EC16FDC47CB_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Stack_1_get_Count_m6A7423122DB56788E859B23516004EB0E3D81F24_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* StyleEnum_1__ctor_m8756B1F1CF7085A77EA07792158E1D1B3C600575_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* StyleEnum_1__ctor_mADD0E943E00F1DCF047659725EF87DD8B9E6EA77_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* StyleEnum_1__ctor_mDB5E5B87F99B40995B8A7846224ABF91AB70D5A8_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* StyleEnum_1_get_keyword_mC66E5504C1C648749C2B47A4A452C8224FCBE346_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* StyleEnum_1_get_value_m6D6FA7C44DAF307D20B8248F1629228C5059C333_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* StyleSheet_CheckAccess_TisColor_tD001788D726C3A7F1379BEED0260B9591F440C1F_mE7B6BBAB85E97D0515E5CB66187B7739F212B8EA_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* StyleSheet_CheckAccess_TisDimension_t5B1EAB500AE32C3789A2BCC4D43F7A29996DF3F8_m543F31A2BC2C53B111CF63828C83C147FD738422_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* StyleSheet_CheckAccess_TisObject_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_m8B81FC876E83BF5262CC7EC3B100A34B5F2E9C95_RuntimeMethod_var;
@@ -2905,6 +2909,13 @@ struct OrdinalCaseSensitiveComparer_t581CA7CB51DCF00B6012A697A4B4B3067144521A  :
 {
 };
 
+// UnityEngine.UIElements.Overflow
+struct Overflow_t8BBC4C69CC6DB71F146838364AFDB5C80FA6BE08 
+{
+	// System.Int32 UnityEngine.UIElements.Overflow::value__
+	int32_t ___value___2;
+};
+
 // UnityEngine.UIElements.OverflowInternal
 struct OverflowInternal_t6A74561363466CCB7905A65D3E5E24887AE0F11F 
 {
@@ -3325,6 +3336,13 @@ struct YogaNode_t4B5B593220CCB315B5A60CB48BA4795636F04DDA  : public RuntimeObjec
 	RuntimeObject* ____data_6;
 };
 
+// UnityEngine.Yoga.YogaOverflow
+struct YogaOverflow_t8BE8B64DE0F7856171E49021E1351605ABF84AEA 
+{
+	// System.Int32 UnityEngine.Yoga.YogaOverflow::value__
+	int32_t ___value___2;
+};
+
 // UnityEngine.Yoga.YogaPositionType
 struct YogaPositionType_t93D43DB5602F23E713663CD7631CAE4FC2365B86 
 {
@@ -3437,6 +3455,24 @@ struct StyleEnum_1_t630D2707E7AE53091B41095FD2A6F4C5163DF9B8
 
 // UnityEngine.UIElements.StyleEnum`1<System.Int32Enum>
 struct StyleEnum_1_t3DD2EBD4E359AFE77C2974ECAA1DEE50E0FACEDC 
+{
+	// T UnityEngine.UIElements.StyleEnum`1::m_Value
+	int32_t ___m_Value_0;
+	// UnityEngine.UIElements.StyleKeyword UnityEngine.UIElements.StyleEnum`1::m_Keyword
+	int32_t ___m_Keyword_1;
+};
+
+// UnityEngine.UIElements.StyleEnum`1<UnityEngine.UIElements.Overflow>
+struct StyleEnum_1_tFD98CA17238874382648721187F3EECC7595961E 
+{
+	// T UnityEngine.UIElements.StyleEnum`1::m_Value
+	int32_t ___m_Value_0;
+	// UnityEngine.UIElements.StyleKeyword UnityEngine.UIElements.StyleEnum`1::m_Keyword
+	int32_t ___m_Keyword_1;
+};
+
+// UnityEngine.UIElements.StyleEnum`1<UnityEngine.UIElements.OverflowInternal>
+struct StyleEnum_1_t649B4F502B707B42E38186C434A9D147312BDEE2 
 {
 	// T UnityEngine.UIElements.StyleEnum`1::m_Value
 	int32_t ___m_Value_0;
@@ -6186,6 +6222,10 @@ struct Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_StaticFields
 
 // System.OrdinalCaseSensitiveComparer
 
+// UnityEngine.UIElements.Overflow
+
+// UnityEngine.UIElements.Overflow
+
 // UnityEngine.UIElements.OverflowInternal
 
 // UnityEngine.UIElements.OverflowInternal
@@ -6310,6 +6350,10 @@ struct TextCoreHandle_t06766751C4FA547A46F83A8E3DD33A6FF2EBE4B5_StaticFields
 
 // UnityEngine.Yoga.YogaNode
 
+// UnityEngine.Yoga.YogaOverflow
+
+// UnityEngine.Yoga.YogaOverflow
+
 // UnityEngine.Yoga.YogaPositionType
 
 // UnityEngine.Yoga.YogaPositionType
@@ -6361,6 +6405,14 @@ struct TextCoreHandle_t06766751C4FA547A46F83A8E3DD33A6FF2EBE4B5_StaticFields
 // UnityEngine.UIElements.StyleEnum`1<System.Int32Enum>
 
 // UnityEngine.UIElements.StyleEnum`1<System.Int32Enum>
+
+// UnityEngine.UIElements.StyleEnum`1<UnityEngine.UIElements.Overflow>
+
+// UnityEngine.UIElements.StyleEnum`1<UnityEngine.UIElements.Overflow>
+
+// UnityEngine.UIElements.StyleEnum`1<UnityEngine.UIElements.OverflowInternal>
+
+// UnityEngine.UIElements.StyleEnum`1<UnityEngine.UIElements.OverflowInternal>
 
 // UnityEngine.UIElements.StyleEnum`1<UnityEngine.UIElements.Position>
 
@@ -7740,6 +7792,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_mB5EDB1A39B767BF7677
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool InlineStyleAccess_SetStyleValue_TisInt32Enum_tCBAC8BA2BFF3A845FA599F303093BBBA374B6F0C_m0ECD0984424862322B2FE0E2F25DCDBD6C0054CE_gshared (InlineStyleAccess_t5CA7877999C9442491A220AE50D605C84D09A165* __this, int32_t ___0_id, StyleEnum_1_t3DD2EBD4E359AFE77C2974ECAA1DEE50E0FACEDC ___1_inlineValue, const RuntimeMethod* method) ;
 // System.Void UnityEngine.UIElements.StyleEnum`1<System.Int32Enum>::.ctor(T,UnityEngine.UIElements.StyleKeyword)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void StyleEnum_1__ctor_mB9C59363417961E50709E3547B84F72CDC187380_gshared (StyleEnum_1_t3DD2EBD4E359AFE77C2974ECAA1DEE50E0FACEDC* __this, int32_t ___0_v, int32_t ___1_keyword, const RuntimeMethod* method) ;
+// T UnityEngine.UIElements.StyleEnum`1<System.Int32Enum>::get_value()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t StyleEnum_1_get_value_mF770EC327031E7712ED9B21A15B7C4EC7448E579_gshared (StyleEnum_1_t3DD2EBD4E359AFE77C2974ECAA1DEE50E0FACEDC* __this, const RuntimeMethod* method) ;
+// UnityEngine.UIElements.StyleKeyword UnityEngine.UIElements.StyleEnum`1<System.Int32Enum>::get_keyword()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t StyleEnum_1_get_keyword_mC35D1838FE4B6687505F770803972412648E4123_gshared (StyleEnum_1_t3DD2EBD4E359AFE77C2974ECAA1DEE50E0FACEDC* __this, const RuntimeMethod* method) ;
 // System.String UnityEngine.UIElements.StyleValueExtensions::DebugString<UnityEngine.UIElements.Background>(UnityEngine.UIElements.IStyleValue`1<T>)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* StyleValueExtensions_DebugString_TisBackground_t3C720DED4FAF016332D29FB86C9BE8D5D0D8F0C8_m5C298705517BE63DE8F15378CB631A54EC3E43E1_gshared (RuntimeObject* ___0_styleValue, const RuntimeMethod* method) ;
 // System.String UnityEngine.UIElements.StyleValueExtensions::DebugString<UnityEngine.Color>(UnityEngine.UIElements.IStyleValue`1<T>)
@@ -8689,6 +8745,30 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void YogaNode_set_MinHeight_mB3301DB6766234FE
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Length_t90BB06D47DD6DB461ED21BD3E3241FAB6C824256 ComputedStyle_get_minWidth_m2207DDA6E209036E462760F2262301AB9B0C9C66 (ComputedStyle_t8B08CCCEE20525528B3FFDAC6D3F58F101AAF54C* __this, const RuntimeMethod* method) ;
 // System.Void UnityEngine.Yoga.YogaNode::set_MinWidth(UnityEngine.Yoga.YogaValue)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void YogaNode_set_MinWidth_mC876A8736AA69BC6100AA5E361A0E9190D02DB21 (YogaNode_t4B5B593220CCB315B5A60CB48BA4795636F04DDA* __this, YogaValue_t9066126971BFC18D9B4A8AB11435557F19598F8C ___0_value, const RuntimeMethod* method) ;
+// T UnityEngine.UIElements.StyleEnum`1<UnityEngine.UIElements.Overflow>::get_value()
+inline int32_t StyleEnum_1_get_value_m6D6FA7C44DAF307D20B8248F1629228C5059C333 (StyleEnum_1_tFD98CA17238874382648721187F3EECC7595961E* __this, const RuntimeMethod* method)
+{
+	return ((  int32_t (*) (StyleEnum_1_tFD98CA17238874382648721187F3EECC7595961E*, const RuntimeMethod*))StyleEnum_1_get_value_mF770EC327031E7712ED9B21A15B7C4EC7448E579_gshared)(__this, method);
+}
+// UnityEngine.UIElements.StyleKeyword UnityEngine.UIElements.StyleEnum`1<UnityEngine.UIElements.Overflow>::get_keyword()
+inline int32_t StyleEnum_1_get_keyword_mC66E5504C1C648749C2B47A4A452C8224FCBE346 (StyleEnum_1_tFD98CA17238874382648721187F3EECC7595961E* __this, const RuntimeMethod* method)
+{
+	return ((  int32_t (*) (StyleEnum_1_tFD98CA17238874382648721187F3EECC7595961E*, const RuntimeMethod*))StyleEnum_1_get_keyword_mC35D1838FE4B6687505F770803972412648E4123_gshared)(__this, method);
+}
+// System.Void UnityEngine.UIElements.StyleEnum`1<UnityEngine.UIElements.OverflowInternal>::.ctor(T,UnityEngine.UIElements.StyleKeyword)
+inline void StyleEnum_1__ctor_m8756B1F1CF7085A77EA07792158E1D1B3C600575 (StyleEnum_1_t649B4F502B707B42E38186C434A9D147312BDEE2* __this, int32_t ___0_v, int32_t ___1_keyword, const RuntimeMethod* method)
+{
+	((  void (*) (StyleEnum_1_t649B4F502B707B42E38186C434A9D147312BDEE2*, int32_t, int32_t, const RuntimeMethod*))StyleEnum_1__ctor_mB9C59363417961E50709E3547B84F72CDC187380_gshared)(__this, ___0_v, ___1_keyword, method);
+}
+// System.Boolean UnityEngine.UIElements.InlineStyleAccess::SetStyleValue<UnityEngine.UIElements.OverflowInternal>(UnityEngine.UIElements.StyleSheets.StylePropertyId,UnityEngine.UIElements.StyleEnum`1<T>)
+inline bool InlineStyleAccess_SetStyleValue_TisOverflowInternal_t6A74561363466CCB7905A65D3E5E24887AE0F11F_m63A24938CC393D78AFD9B3CEA13E63D073B63DCA (InlineStyleAccess_t5CA7877999C9442491A220AE50D605C84D09A165* __this, int32_t ___0_id, StyleEnum_1_t649B4F502B707B42E38186C434A9D147312BDEE2 ___1_inlineValue, const RuntimeMethod* method)
+{
+	return ((  bool (*) (InlineStyleAccess_t5CA7877999C9442491A220AE50D605C84D09A165*, int32_t, StyleEnum_1_t649B4F502B707B42E38186C434A9D147312BDEE2, const RuntimeMethod*))InlineStyleAccess_SetStyleValue_TisInt32Enum_tCBAC8BA2BFF3A845FA599F303093BBBA374B6F0C_m0ECD0984424862322B2FE0E2F25DCDBD6C0054CE_gshared)(__this, ___0_id, ___1_inlineValue, method);
+}
+// UnityEngine.UIElements.OverflowInternal UnityEngine.UIElements.ComputedStyle::get_overflow()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ComputedStyle_get_overflow_m904B36CF971CBAD3B1B5D6239E1FB982FCF5548F (ComputedStyle_t8B08CCCEE20525528B3FFDAC6D3F58F101AAF54C* __this, const RuntimeMethod* method) ;
+// System.Void UnityEngine.Yoga.YogaNode::set_Overflow(UnityEngine.Yoga.YogaOverflow)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void YogaNode_set_Overflow_m5DD8FEB426E1376D210ED0057C4A12DD8E18417F (YogaNode_t4B5B593220CCB315B5A60CB48BA4795636F04DDA* __this, int32_t ___0_value, const RuntimeMethod* method) ;
 // UnityEngine.UIElements.Length UnityEngine.UIElements.ComputedStyle::get_paddingBottom()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Length_t90BB06D47DD6DB461ED21BD3E3241FAB6C824256 ComputedStyle_get_paddingBottom_mD2618C052A051DA45C9947CB4EC73564D2D20C1D (ComputedStyle_t8B08CCCEE20525528B3FFDAC6D3F58F101AAF54C* __this, const RuntimeMethod* method) ;
 // System.Void UnityEngine.Yoga.YogaNode::set_PaddingBottom(UnityEngine.Yoga.YogaValue)
@@ -17166,7 +17246,7 @@ IL_015f:
 		L_51 = VisualElement_get_style_mDCFF8D835BE0AFE412905E108F48B32A83734224(L_50, NULL);
 		NullCheck(L_51);
 		StyleTextShadow_tCDDF1FE733ADBAA5ACA3B74620D4728E83F54252 L_52;
-		L_52 = InterfaceFuncInvoker0< StyleTextShadow_tCDDF1FE733ADBAA5ACA3B74620D4728E83F54252 >::Invoke(49 /* UnityEngine.UIElements.StyleTextShadow UnityEngine.UIElements.IStyle::get_textShadow() */, IStyle_t4FD66C97CA5F46BFE328FED0C65277A37E0A89F7_il2cpp_TypeInfo_var, L_51);
+		L_52 = InterfaceFuncInvoker0< StyleTextShadow_tCDDF1FE733ADBAA5ACA3B74620D4728E83F54252 >::Invoke(50 /* UnityEngine.UIElements.StyleTextShadow UnityEngine.UIElements.IStyle::get_textShadow() */, IStyle_t4FD66C97CA5F46BFE328FED0C65277A37E0A89F7_il2cpp_TypeInfo_var, L_51);
 		V_12 = L_52;
 		int32_t L_53;
 		L_53 = StyleTextShadow_get_keyword_m0936C51AC4D42481FA64A1CEB7A62EC2CF19470E((&V_12), NULL);
@@ -17186,7 +17266,7 @@ IL_015f:
 		L_57 = VisualElement_get_style_mDCFF8D835BE0AFE412905E108F48B32A83734224(L_56, NULL);
 		NullCheck(L_57);
 		StyleTextShadow_tCDDF1FE733ADBAA5ACA3B74620D4728E83F54252 L_58;
-		L_58 = InterfaceFuncInvoker0< StyleTextShadow_tCDDF1FE733ADBAA5ACA3B74620D4728E83F54252 >::Invoke(49 /* UnityEngine.UIElements.StyleTextShadow UnityEngine.UIElements.IStyle::get_textShadow() */, IStyle_t4FD66C97CA5F46BFE328FED0C65277A37E0A89F7_il2cpp_TypeInfo_var, L_57);
+		L_58 = InterfaceFuncInvoker0< StyleTextShadow_tCDDF1FE733ADBAA5ACA3B74620D4728E83F54252 >::Invoke(50 /* UnityEngine.UIElements.StyleTextShadow UnityEngine.UIElements.IStyle::get_textShadow() */, IStyle_t4FD66C97CA5F46BFE328FED0C65277A37E0A89F7_il2cpp_TypeInfo_var, L_57);
 		V_12 = L_58;
 		TextShadow_t6BADF37AB90ABCB63859A225B58AC5A580950A05 L_59;
 		L_59 = StyleTextShadow_get_value_m42277240BF34F859A5E0C6933106F98CDDD3439C((&V_12), NULL);
@@ -17212,7 +17292,7 @@ IL_01a6:
 		L_64 = VisualElement_get_style_mDCFF8D835BE0AFE412905E108F48B32A83734224(L_63, NULL);
 		NullCheck(L_64);
 		StyleTransformOrigin_t708B2E73541ECAE23D286FE68D6BC2CCFAAB84A6 L_65;
-		L_65 = InterfaceFuncInvoker0< StyleTransformOrigin_t708B2E73541ECAE23D286FE68D6BC2CCFAAB84A6 >::Invoke(51 /* UnityEngine.UIElements.StyleTransformOrigin UnityEngine.UIElements.IStyle::get_transformOrigin() */, IStyle_t4FD66C97CA5F46BFE328FED0C65277A37E0A89F7_il2cpp_TypeInfo_var, L_64);
+		L_65 = InterfaceFuncInvoker0< StyleTransformOrigin_t708B2E73541ECAE23D286FE68D6BC2CCFAAB84A6 >::Invoke(52 /* UnityEngine.UIElements.StyleTransformOrigin UnityEngine.UIElements.IStyle::get_transformOrigin() */, IStyle_t4FD66C97CA5F46BFE328FED0C65277A37E0A89F7_il2cpp_TypeInfo_var, L_64);
 		V_14 = L_65;
 		TransformOrigin_tD11A368A96C0771398EBB4E6D435318AC0EF8502 L_66;
 		L_66 = StyleTransformOrigin_get_value_m3DD31B222FEAF76A0D053A39820373A00BD1928E((&V_14), NULL);
@@ -17238,7 +17318,7 @@ IL_01d4:
 		L_71 = VisualElement_get_style_mDCFF8D835BE0AFE412905E108F48B32A83734224(L_70, NULL);
 		NullCheck(L_71);
 		StyleTranslate_tF9528CA4B45EE4EB2C4D294336A83D88DB6AF089 L_72;
-		L_72 = InterfaceFuncInvoker0< StyleTranslate_tF9528CA4B45EE4EB2C4D294336A83D88DB6AF089 >::Invoke(52 /* UnityEngine.UIElements.StyleTranslate UnityEngine.UIElements.IStyle::get_translate() */, IStyle_t4FD66C97CA5F46BFE328FED0C65277A37E0A89F7_il2cpp_TypeInfo_var, L_71);
+		L_72 = InterfaceFuncInvoker0< StyleTranslate_tF9528CA4B45EE4EB2C4D294336A83D88DB6AF089 >::Invoke(53 /* UnityEngine.UIElements.StyleTranslate UnityEngine.UIElements.IStyle::get_translate() */, IStyle_t4FD66C97CA5F46BFE328FED0C65277A37E0A89F7_il2cpp_TypeInfo_var, L_71);
 		V_16 = L_72;
 		Translate_t494F6E802F8A640D67819C9D26BE62DED1218A8E L_73;
 		L_73 = StyleTranslate_get_value_m3D6727DEDAB4FF2313B2842FE295C41D4D9D0355((&V_16), NULL);
@@ -17264,7 +17344,7 @@ IL_0202:
 		L_78 = VisualElement_get_style_mDCFF8D835BE0AFE412905E108F48B32A83734224(L_77, NULL);
 		NullCheck(L_78);
 		StyleScale_t45D687B313B39CD6FB3686ED44DECDDA402923BC L_79;
-		L_79 = InterfaceFuncInvoker0< StyleScale_t45D687B313B39CD6FB3686ED44DECDDA402923BC >::Invoke(48 /* UnityEngine.UIElements.StyleScale UnityEngine.UIElements.IStyle::get_scale() */, IStyle_t4FD66C97CA5F46BFE328FED0C65277A37E0A89F7_il2cpp_TypeInfo_var, L_78);
+		L_79 = InterfaceFuncInvoker0< StyleScale_t45D687B313B39CD6FB3686ED44DECDDA402923BC >::Invoke(49 /* UnityEngine.UIElements.StyleScale UnityEngine.UIElements.IStyle::get_scale() */, IStyle_t4FD66C97CA5F46BFE328FED0C65277A37E0A89F7_il2cpp_TypeInfo_var, L_78);
 		V_18 = L_79;
 		Scale_t5594C69C1AC9398B57ABF6C4FA0D4E791B7A4DC7 L_80;
 		L_80 = StyleScale_get_value_mF8E29AE4DA4671C9462D02642348BF78A796854B((&V_18), NULL);
@@ -17290,7 +17370,7 @@ IL_0230:
 		L_85 = VisualElement_get_style_mDCFF8D835BE0AFE412905E108F48B32A83734224(L_84, NULL);
 		NullCheck(L_85);
 		StyleRotate_t59305F0FBB44EA70AE332ECF9279C270B3F2283B L_86;
-		L_86 = InterfaceFuncInvoker0< StyleRotate_t59305F0FBB44EA70AE332ECF9279C270B3F2283B >::Invoke(46 /* UnityEngine.UIElements.StyleRotate UnityEngine.UIElements.IStyle::get_rotate() */, IStyle_t4FD66C97CA5F46BFE328FED0C65277A37E0A89F7_il2cpp_TypeInfo_var, L_85);
+		L_86 = InterfaceFuncInvoker0< StyleRotate_t59305F0FBB44EA70AE332ECF9279C270B3F2283B >::Invoke(47 /* UnityEngine.UIElements.StyleRotate UnityEngine.UIElements.IStyle::get_rotate() */, IStyle_t4FD66C97CA5F46BFE328FED0C65277A37E0A89F7_il2cpp_TypeInfo_var, L_85);
 		V_20 = L_86;
 		Rotate_tE965CA0281A547AB38B881A3416FF97756D3F4D7 L_87;
 		L_87 = StyleRotate_get_value_m20936D0783AD0F977486948A51C430265A61CAF4((&V_20), NULL);
@@ -20964,6 +21044,63 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InlineStyleAccess_UnityEngine_UIElements
 	}
 
 IL_0024:
+	{
+		return;
+	}
+}
+// System.Void UnityEngine.UIElements.InlineStyleAccess::UnityEngine.UIElements.IStyle.set_overflow(UnityEngine.UIElements.StyleEnum`1<UnityEngine.UIElements.Overflow>)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InlineStyleAccess_UnityEngine_UIElements_IStyle_set_overflow_mDD23867AE47FA835DFC55016D9AC51AC792220B4 (InlineStyleAccess_t5CA7877999C9442491A220AE50D605C84D09A165* __this, StyleEnum_1_tFD98CA17238874382648721187F3EECC7595961E ___0_value, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&InlineStyleAccess_SetStyleValue_TisOverflowInternal_t6A74561363466CCB7905A65D3E5E24887AE0F11F_m63A24938CC393D78AFD9B3CEA13E63D073B63DCA_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&StyleEnum_1__ctor_m8756B1F1CF7085A77EA07792158E1D1B3C600575_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&StyleEnum_1_get_keyword_mC66E5504C1C648749C2B47A4A452C8224FCBE346_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&StyleEnum_1_get_value_m6D6FA7C44DAF307D20B8248F1629228C5059C333_RuntimeMethod_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	StyleEnum_1_t649B4F502B707B42E38186C434A9D147312BDEE2 V_0;
+	memset((&V_0), 0, sizeof(V_0));
+	bool V_1 = false;
+	{
+		int32_t L_0;
+		L_0 = StyleEnum_1_get_value_m6D6FA7C44DAF307D20B8248F1629228C5059C333((&___0_value), StyleEnum_1_get_value_m6D6FA7C44DAF307D20B8248F1629228C5059C333_RuntimeMethod_var);
+		int32_t L_1;
+		L_1 = StyleEnum_1_get_keyword_mC66E5504C1C648749C2B47A4A452C8224FCBE346((&___0_value), StyleEnum_1_get_keyword_mC66E5504C1C648749C2B47A4A452C8224FCBE346_RuntimeMethod_var);
+		StyleEnum_1__ctor_m8756B1F1CF7085A77EA07792158E1D1B3C600575((&V_0), L_0, L_1, StyleEnum_1__ctor_m8756B1F1CF7085A77EA07792158E1D1B3C600575_RuntimeMethod_var);
+		StyleEnum_1_t649B4F502B707B42E38186C434A9D147312BDEE2 L_2 = V_0;
+		bool L_3;
+		L_3 = InlineStyleAccess_SetStyleValue_TisOverflowInternal_t6A74561363466CCB7905A65D3E5E24887AE0F11F_m63A24938CC393D78AFD9B3CEA13E63D073B63DCA(__this, ((int32_t)458763), L_2, InlineStyleAccess_SetStyleValue_TisOverflowInternal_t6A74561363466CCB7905A65D3E5E24887AE0F11F_m63A24938CC393D78AFD9B3CEA13E63D073B63DCA_RuntimeMethod_var);
+		V_1 = L_3;
+		bool L_4 = V_1;
+		if (!L_4)
+		{
+			goto IL_0057;
+		}
+	}
+	{
+		VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_5;
+		L_5 = InlineStyleAccess_get_ve_m829453361EF7B6C9855EEADDA1F744EB27D2AE21_inline(__this, NULL);
+		NullCheck(L_5);
+		VisualElement_IncrementVersion_m03581665EE480D3C329058FFE08734450493E33E(L_5, ((int32_t)104), NULL);
+		VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_6;
+		L_6 = InlineStyleAccess_get_ve_m829453361EF7B6C9855EEADDA1F744EB27D2AE21_inline(__this, NULL);
+		NullCheck(L_6);
+		YogaNode_t4B5B593220CCB315B5A60CB48BA4795636F04DDA* L_7;
+		L_7 = VisualElement_get_yogaNode_m1D80145AA8652A871E1538B1C5A2E540CE2DEC45_inline(L_6, NULL);
+		VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_8;
+		L_8 = InlineStyleAccess_get_ve_m829453361EF7B6C9855EEADDA1F744EB27D2AE21_inline(__this, NULL);
+		NullCheck(L_8);
+		ComputedStyle_t8B08CCCEE20525528B3FFDAC6D3F58F101AAF54C* L_9;
+		L_9 = VisualElement_get_computedStyle_m8124059EC4D72CCEDE7107FFF72A614131604C3A(L_8, NULL);
+		int32_t L_10;
+		L_10 = ComputedStyle_get_overflow_m904B36CF971CBAD3B1B5D6239E1FB982FCF5548F(L_9, NULL);
+		NullCheck(L_7);
+		YogaNode_set_Overflow_m5DD8FEB426E1376D210ED0057C4A12DD8E18417F(L_7, L_10, NULL);
+	}
+
+IL_0057:
 	{
 		return;
 	}

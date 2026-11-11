@@ -217,6 +217,8 @@ struct List_1_tB4085072474C8F65C8A07B19DF716B18531F6B83;
 struct List_1_tBB4BFB497BCF47BCBBEC63B4E8645B49487294C2;
 // System.Collections.Generic.List`1<UnityEngine.Material>
 struct List_1_t386E09F4F22DDE4D2AC41A8567FFF283C254537B;
+// System.Collections.Generic.List`1<MissingAttachmentInfo>
+struct List_1_t7DA06C2768AB12D9EC71AE8C47CBD9455900FE33;
 // System.Collections.Generic.List`1<Note>
 struct List_1_t2F44E2D89EEAFD4871BA0F1D996D4D0333F53221;
 // System.Collections.Generic.List`1<System.Object>
@@ -1701,46 +1703,48 @@ struct Rapport_t0DED00B7690FCCDE651FB02E35DD4AFF93E927D2  : public RuntimeObject
 	String_t* ___sync_local_hash_17;
 	// System.Boolean Rapport::sync_remote_confirmed
 	bool ___sync_remote_confirmed_18;
+	// System.Collections.Generic.List`1<MissingAttachmentInfo> Rapport::sync_missing_attachments
+	List_1_t7DA06C2768AB12D9EC71AE8C47CBD9455900FE33* ___sync_missing_attachments_19;
 	// System.Int32 Rapport::sync_pending_status
-	int32_t ___sync_pending_status_19;
+	int32_t ___sync_pending_status_20;
 	// System.Int32 Rapport::id
-	int32_t ___id_20;
+	int32_t ___id_21;
 	// System.String Rapport::titre_fr
-	String_t* ___titre_fr_21;
+	String_t* ___titre_fr_22;
 	// System.String Rapport::type_titre_fr
-	String_t* ___type_titre_fr_22;
+	String_t* ___type_titre_fr_23;
 	// System.Boolean Rapport::est_bontravail
-	bool ___est_bontravail_23;
+	bool ___est_bontravail_24;
 	// System.Boolean Rapport::est_recommandation
-	bool ___est_recommandation_24;
+	bool ___est_recommandation_25;
 	// System.String Rapport::derniere_modification
-	String_t* ___derniere_modification_25;
+	String_t* ___derniere_modification_26;
 	// System.String Rapport::modifie_par
-	String_t* ___modifie_par_26;
+	String_t* ___modifie_par_27;
 	// System.Int32 Rapport::id_service_statut
-	int32_t ___id_service_statut_27;
+	int32_t ___id_service_statut_28;
 	// System.Int32 Rapport::id_service_statut_previous
-	int32_t ___id_service_statut_previous_28;
+	int32_t ___id_service_statut_previous_29;
 	// System.Int32 Rapport::modifie_par_id
-	int32_t ___modifie_par_id_29;
+	int32_t ___modifie_par_id_30;
 	// System.Int32 Rapport::step
-	int32_t ___step_30;
+	int32_t ___step_31;
 	// System.Int64 Rapport::last_mod
-	int64_t ___last_mod_31;
+	int64_t ___last_mod_32;
 	// System.String Rapport::statut
-	String_t* ___statut_32;
+	String_t* ___statut_33;
 	// System.String Rapport::abrevstatut
-	String_t* ___abrevstatut_33;
+	String_t* ___abrevstatut_34;
 	// System.Int32 Rapport::en_utilisation
-	int32_t ___en_utilisation_34;
+	int32_t ___en_utilisation_35;
 	// System.Collections.Generic.List`1<Note> Rapport::notes
-	List_1_t2F44E2D89EEAFD4871BA0F1D996D4D0333F53221* ___notes_35;
+	List_1_t2F44E2D89EEAFD4871BA0F1D996D4D0333F53221* ___notes_36;
 	// System.Int32 Rapport::id_service_rapport
-	int32_t ___id_service_rapport_36;
+	int32_t ___id_service_rapport_37;
 	// Section[] Rapport::sections
-	SectionU5BU5D_tB015CDAE7B4B809E138D37CF59FE8AAA35FE49A6* ___sections_37;
+	SectionU5BU5D_tB015CDAE7B4B809E138D37CF59FE8AAA35FE49A6* ___sections_38;
 	// System.Collections.Generic.List`1<PjTableau> Rapport::pj_tableau
-	List_1_t2A2B96598027F86C18DFF15D1EDC6FA185C1FDDF* ___pj_tableau_38;
+	List_1_t2A2B96598027F86C18DFF15D1EDC6FA185C1FDDF* ___pj_tableau_39;
 };
 
 // Reponse
@@ -8934,7 +8938,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ContenuRapportManager_SetOnUsage_m31AA00
 		NullCheck(L_13);
 		Rapport_t0DED00B7690FCCDE651FB02E35DD4AFF93E927D2* L_14 = L_13->___rapportSelectionne_0;
 		NullCheck(L_14);
-		int32_t L_15 = L_14->___modifie_par_id_29;
+		int32_t L_15 = L_14->___modifie_par_id_30;
 		MainScript_tE5DA41EF9F6C72F24338683BF923785400FDC5FF* L_16 = ((AppManager_tD5155B839026DE8E1F63F8868048F9CF8B26ED0C*)__this)->___mainScript_10;
 		NullCheck(L_16);
 		Utilisateur_t399C56C6363780D4DA5137388DCAEB935ACB902E* L_17 = L_16->___utilisateurConnecte_21;
@@ -8950,7 +8954,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ContenuRapportManager_SetOnUsage_m31AA00
 		NullCheck(L_19);
 		Rapport_t0DED00B7690FCCDE651FB02E35DD4AFF93E927D2* L_20 = L_19->___rapportSelectionne_0;
 		NullCheck(L_20);
-		int32_t L_21 = L_20->___en_utilisation_34;
+		int32_t L_21 = L_20->___en_utilisation_35;
 		if ((((int32_t)L_21) == ((int32_t)1)))
 		{
 			goto IL_0111;
@@ -8969,7 +8973,7 @@ IL_006d:
 		NullCheck(L_25);
 		int32_t L_26 = L_25->___id_0;
 		NullCheck(L_23);
-		L_23->___modifie_par_id_29 = L_26;
+		L_23->___modifie_par_id_30 = L_26;
 		// rapportSelectionne.id_service_statut_previous = rapportSelectionne.id_service_statut;
 		U3CU3Ec__DisplayClass64_0_t2003EC9D93A75CE9F548E01AEA0BD087CD7ED7C5* L_27 = V_0;
 		NullCheck(L_27);
@@ -8978,9 +8982,9 @@ IL_006d:
 		NullCheck(L_29);
 		Rapport_t0DED00B7690FCCDE651FB02E35DD4AFF93E927D2* L_30 = L_29->___rapportSelectionne_0;
 		NullCheck(L_30);
-		int32_t L_31 = L_30->___id_service_statut_27;
+		int32_t L_31 = L_30->___id_service_statut_28;
 		NullCheck(L_28);
-		L_28->___id_service_statut_previous_28 = L_31;
+		L_28->___id_service_statut_previous_29 = L_31;
 		// Statut currentStatut = Utils.getStatutFromId(GetService().statut_list, rapportSelectionne.id_service_statut);
 		ServiceClient_t07C84893BDB4121BAF09BDF559688F4714F9541D* L_32;
 		L_32 = ContenuRapportManager_GetService_m7EE367EE979B21509E36F11560A63912F081336E(__this, NULL);
@@ -8990,7 +8994,7 @@ IL_006d:
 		NullCheck(L_34);
 		Rapport_t0DED00B7690FCCDE651FB02E35DD4AFF93E927D2* L_35 = L_34->___rapportSelectionne_0;
 		NullCheck(L_35);
-		int32_t L_36 = L_35->___id_service_statut_27;
+		int32_t L_36 = L_35->___id_service_statut_28;
 		Statut_t94B09B516A050666C15171FD74BE65CDBC5EFEB7* L_37;
 		L_37 = Utils_getStatutFromId_mF8BF9F04A7D68032BAD506A546999E5EEA657F5F(L_33, L_36, NULL);
 		V_1 = L_37;
@@ -10388,7 +10392,7 @@ IL_00f4_1:
 				StyleLength_tF02B24735FC88BE29BEB36F7A87709CA28AF72D8 L_52;
 				L_52 = StyleLength_op_Implicit_m587FA2633E50FC6BD8F695B35675BBFE179A6E90(L_51, NULL);
 				NullCheck(L_49);
-				InterfaceActionInvoker1< StyleLength_tF02B24735FC88BE29BEB36F7A87709CA28AF72D8 >::Invoke(61 /* System.Void UnityEngine.UIElements.IStyle::set_width(UnityEngine.UIElements.StyleLength) */, IStyle_t4FD66C97CA5F46BFE328FED0C65277A37E0A89F7_il2cpp_TypeInfo_var, L_49, L_52);
+				InterfaceActionInvoker1< StyleLength_tF02B24735FC88BE29BEB36F7A87709CA28AF72D8 >::Invoke(62 /* System.Void UnityEngine.UIElements.IStyle::set_width(UnityEngine.UIElements.StyleLength) */, IStyle_t4FD66C97CA5F46BFE328FED0C65277A37E0A89F7_il2cpp_TypeInfo_var, L_49, L_52);
 				// if (!String.IsNullOrEmpty(optL.titre_fr.Trim())) {
 				Option_t12C5B91C2C20CE174E1260BE6A02B61251A115B6* L_53 = V_10;
 				NullCheck(L_53);
@@ -10685,7 +10689,7 @@ IL_01ff_1:
 				StyleLength_tF02B24735FC88BE29BEB36F7A87709CA28AF72D8 L_119;
 				L_119 = StyleLength_op_Implicit_mA1ED6E9AD696C34231A35B83084B1298A700B019((0.0f), NULL);
 				NullCheck(L_118);
-				InterfaceActionInvoker1< StyleLength_tF02B24735FC88BE29BEB36F7A87709CA28AF72D8 >::Invoke(41 /* System.Void UnityEngine.UIElements.IStyle::set_paddingRight(UnityEngine.UIElements.StyleLength) */, IStyle_t4FD66C97CA5F46BFE328FED0C65277A37E0A89F7_il2cpp_TypeInfo_var, L_118, L_119);
+				InterfaceActionInvoker1< StyleLength_tF02B24735FC88BE29BEB36F7A87709CA28AF72D8 >::Invoke(42 /* System.Void UnityEngine.UIElements.IStyle::set_paddingRight(UnityEngine.UIElements.StyleLength) */, IStyle_t4FD66C97CA5F46BFE328FED0C65277A37E0A89F7_il2cpp_TypeInfo_var, L_118, L_119);
 				// instanceTplLigneMat.Q<VisualElement>("ligne").style.paddingLeft = 0;
 				TemplateContainer_tDF6DDDD82C75A6332F0194C2B39AF157F6342DA2* L_120 = V_20;
 				VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_121;
@@ -10696,7 +10700,7 @@ IL_01ff_1:
 				StyleLength_tF02B24735FC88BE29BEB36F7A87709CA28AF72D8 L_123;
 				L_123 = StyleLength_op_Implicit_mA1ED6E9AD696C34231A35B83084B1298A700B019((0.0f), NULL);
 				NullCheck(L_122);
-				InterfaceActionInvoker1< StyleLength_tF02B24735FC88BE29BEB36F7A87709CA28AF72D8 >::Invoke(40 /* System.Void UnityEngine.UIElements.IStyle::set_paddingLeft(UnityEngine.UIElements.StyleLength) */, IStyle_t4FD66C97CA5F46BFE328FED0C65277A37E0A89F7_il2cpp_TypeInfo_var, L_122, L_123);
+				InterfaceActionInvoker1< StyleLength_tF02B24735FC88BE29BEB36F7A87709CA28AF72D8 >::Invoke(41 /* System.Void UnityEngine.UIElements.IStyle::set_paddingLeft(UnityEngine.UIElements.StyleLength) */, IStyle_t4FD66C97CA5F46BFE328FED0C65277A37E0A89F7_il2cpp_TypeInfo_var, L_122, L_123);
 				// TemplateContainer instanceTemplateLabelLigneMat = templateLabel.Instantiate();
 				VisualTreeAsset_tFB5BF81F0780A412AE5A7C2C552B3EEA64EA2EEB* L_124 = __this->___templateLabel_14;
 				NullCheck(L_124);
@@ -10713,7 +10717,7 @@ IL_01ff_1:
 				StyleLength_tF02B24735FC88BE29BEB36F7A87709CA28AF72D8 L_129;
 				L_129 = StyleLength_op_Implicit_m587FA2633E50FC6BD8F695B35675BBFE179A6E90(L_128, NULL);
 				NullCheck(L_127);
-				InterfaceActionInvoker1< StyleLength_tF02B24735FC88BE29BEB36F7A87709CA28AF72D8 >::Invoke(61 /* System.Void UnityEngine.UIElements.IStyle::set_width(UnityEngine.UIElements.StyleLength) */, IStyle_t4FD66C97CA5F46BFE328FED0C65277A37E0A89F7_il2cpp_TypeInfo_var, L_127, L_129);
+				InterfaceActionInvoker1< StyleLength_tF02B24735FC88BE29BEB36F7A87709CA28AF72D8 >::Invoke(62 /* System.Void UnityEngine.UIElements.IStyle::set_width(UnityEngine.UIElements.StyleLength) */, IStyle_t4FD66C97CA5F46BFE328FED0C65277A37E0A89F7_il2cpp_TypeInfo_var, L_127, L_129);
 				// instanceTemplateLabelLigneMat.Q<Label>().text = optR.titre_fr;
 				TemplateContainer_tDF6DDDD82C75A6332F0194C2B39AF157F6342DA2* L_130 = V_21;
 				Label_tC160668F9119CE0F5567021FB208E64A5B1C5B70* L_131;
@@ -10815,7 +10819,7 @@ IL_0370_2:
 						StyleLength_tF02B24735FC88BE29BEB36F7A87709CA28AF72D8 L_163;
 						L_163 = StyleLength_op_Implicit_m587FA2633E50FC6BD8F695B35675BBFE179A6E90(L_162, NULL);
 						NullCheck(L_160);
-						InterfaceActionInvoker1< StyleLength_tF02B24735FC88BE29BEB36F7A87709CA28AF72D8 >::Invoke(61 /* System.Void UnityEngine.UIElements.IStyle::set_width(UnityEngine.UIElements.StyleLength) */, IStyle_t4FD66C97CA5F46BFE328FED0C65277A37E0A89F7_il2cpp_TypeInfo_var, L_160, L_163);
+						InterfaceActionInvoker1< StyleLength_tF02B24735FC88BE29BEB36F7A87709CA28AF72D8 >::Invoke(62 /* System.Void UnityEngine.UIElements.IStyle::set_width(UnityEngine.UIElements.StyleLength) */, IStyle_t4FD66C97CA5F46BFE328FED0C65277A37E0A89F7_il2cpp_TypeInfo_var, L_160, L_163);
 						// instanceTemplateTxtSimple.style.paddingLeft = 10;
 						TemplateContainer_tDF6DDDD82C75A6332F0194C2B39AF157F6342DA2* L_164 = V_25;
 						NullCheck(L_164);
@@ -10824,7 +10828,7 @@ IL_0370_2:
 						StyleLength_tF02B24735FC88BE29BEB36F7A87709CA28AF72D8 L_166;
 						L_166 = StyleLength_op_Implicit_mA1ED6E9AD696C34231A35B83084B1298A700B019((10.0f), NULL);
 						NullCheck(L_165);
-						InterfaceActionInvoker1< StyleLength_tF02B24735FC88BE29BEB36F7A87709CA28AF72D8 >::Invoke(40 /* System.Void UnityEngine.UIElements.IStyle::set_paddingLeft(UnityEngine.UIElements.StyleLength) */, IStyle_t4FD66C97CA5F46BFE328FED0C65277A37E0A89F7_il2cpp_TypeInfo_var, L_165, L_166);
+						InterfaceActionInvoker1< StyleLength_tF02B24735FC88BE29BEB36F7A87709CA28AF72D8 >::Invoke(41 /* System.Void UnityEngine.UIElements.IStyle::set_paddingLeft(UnityEngine.UIElements.StyleLength) */, IStyle_t4FD66C97CA5F46BFE328FED0C65277A37E0A89F7_il2cpp_TypeInfo_var, L_165, L_166);
 						// instanceTemplateTxtSimple.style.paddingRight = 10;
 						TemplateContainer_tDF6DDDD82C75A6332F0194C2B39AF157F6342DA2* L_167 = V_25;
 						NullCheck(L_167);
@@ -10833,7 +10837,7 @@ IL_0370_2:
 						StyleLength_tF02B24735FC88BE29BEB36F7A87709CA28AF72D8 L_169;
 						L_169 = StyleLength_op_Implicit_mA1ED6E9AD696C34231A35B83084B1298A700B019((10.0f), NULL);
 						NullCheck(L_168);
-						InterfaceActionInvoker1< StyleLength_tF02B24735FC88BE29BEB36F7A87709CA28AF72D8 >::Invoke(41 /* System.Void UnityEngine.UIElements.IStyle::set_paddingRight(UnityEngine.UIElements.StyleLength) */, IStyle_t4FD66C97CA5F46BFE328FED0C65277A37E0A89F7_il2cpp_TypeInfo_var, L_168, L_169);
+						InterfaceActionInvoker1< StyleLength_tF02B24735FC88BE29BEB36F7A87709CA28AF72D8 >::Invoke(42 /* System.Void UnityEngine.UIElements.IStyle::set_paddingRight(UnityEngine.UIElements.StyleLength) */, IStyle_t4FD66C97CA5F46BFE328FED0C65277A37E0A89F7_il2cpp_TypeInfo_var, L_168, L_169);
 						// if(champ.reponses.FindIndex(item => (item.id_ligne == listeOptionsHorizontale.ElementAt(b).id && Utils.getIntVal(item.reponse) == optR.id)) >= 0){
 						Champ_tD2B96901967ACAD5FC515CC6FD7C38CEF1540CE8* L_170 = ___2_champ;
 						NullCheck(L_170);
@@ -11312,7 +11316,7 @@ IL_067c_2:
 						StyleLength_tF02B24735FC88BE29BEB36F7A87709CA28AF72D8 L_295;
 						L_295 = StyleLength_op_Implicit_m587FA2633E50FC6BD8F695B35675BBFE179A6E90(L_294, NULL);
 						NullCheck(L_292);
-						InterfaceActionInvoker1< StyleLength_tF02B24735FC88BE29BEB36F7A87709CA28AF72D8 >::Invoke(61 /* System.Void UnityEngine.UIElements.IStyle::set_width(UnityEngine.UIElements.StyleLength) */, IStyle_t4FD66C97CA5F46BFE328FED0C65277A37E0A89F7_il2cpp_TypeInfo_var, L_292, L_295);
+						InterfaceActionInvoker1< StyleLength_tF02B24735FC88BE29BEB36F7A87709CA28AF72D8 >::Invoke(62 /* System.Void UnityEngine.UIElements.IStyle::set_width(UnityEngine.UIElements.StyleLength) */, IStyle_t4FD66C97CA5F46BFE328FED0C65277A37E0A89F7_il2cpp_TypeInfo_var, L_292, L_295);
 						goto IL_0744_2;
 					}
 
@@ -11411,7 +11415,7 @@ IL_06e9_3:
 								StyleLength_tF02B24735FC88BE29BEB36F7A87709CA28AF72D8 L_316;
 								L_316 = StyleLength_op_Implicit_m587FA2633E50FC6BD8F695B35675BBFE179A6E90(L_315, NULL);
 								NullCheck(L_313);
-								InterfaceActionInvoker1< StyleLength_tF02B24735FC88BE29BEB36F7A87709CA28AF72D8 >::Invoke(61 /* System.Void UnityEngine.UIElements.IStyle::set_width(UnityEngine.UIElements.StyleLength) */, IStyle_t4FD66C97CA5F46BFE328FED0C65277A37E0A89F7_il2cpp_TypeInfo_var, L_313, L_316);
+								InterfaceActionInvoker1< StyleLength_tF02B24735FC88BE29BEB36F7A87709CA28AF72D8 >::Invoke(62 /* System.Void UnityEngine.UIElements.IStyle::set_width(UnityEngine.UIElements.StyleLength) */, IStyle_t4FD66C97CA5F46BFE328FED0C65277A37E0A89F7_il2cpp_TypeInfo_var, L_313, L_316);
 							}
 
 IL_072d_3:
@@ -11760,7 +11764,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR List_1_t6AC2A2EEF7243A7458635C3EE29AE3FCB637C
 		StyleLength_tF02B24735FC88BE29BEB36F7A87709CA28AF72D8 L_26;
 		L_26 = StyleLength_op_Implicit_mA1ED6E9AD696C34231A35B83084B1298A700B019((4.0f), NULL);
 		NullCheck(L_25);
-		InterfaceActionInvoker1< StyleLength_tF02B24735FC88BE29BEB36F7A87709CA28AF72D8 >::Invoke(41 /* System.Void UnityEngine.UIElements.IStyle::set_paddingRight(UnityEngine.UIElements.StyleLength) */, IStyle_t4FD66C97CA5F46BFE328FED0C65277A37E0A89F7_il2cpp_TypeInfo_var, L_25, L_26);
+		InterfaceActionInvoker1< StyleLength_tF02B24735FC88BE29BEB36F7A87709CA28AF72D8 >::Invoke(42 /* System.Void UnityEngine.UIElements.IStyle::set_paddingRight(UnityEngine.UIElements.StyleLength) */, IStyle_t4FD66C97CA5F46BFE328FED0C65277A37E0A89F7_il2cpp_TypeInfo_var, L_25, L_26);
 		// instanceTemplateTableauAlt.Q<VisualElement>("enTeteTableau").Q<VisualElement>("choixNombre").Q<Label>().text = title;
 		TemplateContainer_tDF6DDDD82C75A6332F0194C2B39AF157F6342DA2* L_27 = V_0;
 		VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_28;
@@ -11927,7 +11931,7 @@ IL_01a7:
 		StyleLength_tF02B24735FC88BE29BEB36F7A87709CA28AF72D8 L_71;
 		L_71 = StyleLength_op_Implicit_m587FA2633E50FC6BD8F695B35675BBFE179A6E90(L_70, NULL);
 		NullCheck(L_68);
-		InterfaceActionInvoker1< StyleLength_tF02B24735FC88BE29BEB36F7A87709CA28AF72D8 >::Invoke(61 /* System.Void UnityEngine.UIElements.IStyle::set_width(UnityEngine.UIElements.StyleLength) */, IStyle_t4FD66C97CA5F46BFE328FED0C65277A37E0A89F7_il2cpp_TypeInfo_var, L_68, L_71);
+		InterfaceActionInvoker1< StyleLength_tF02B24735FC88BE29BEB36F7A87709CA28AF72D8 >::Invoke(62 /* System.Void UnityEngine.UIElements.IStyle::set_width(UnityEngine.UIElements.StyleLength) */, IStyle_t4FD66C97CA5F46BFE328FED0C65277A37E0A89F7_il2cpp_TypeInfo_var, L_68, L_71);
 		// wTotalAlt += wLoc;
 		float L_72 = V_4;
 		float L_73 = V_10;
@@ -12042,7 +12046,7 @@ IL_0290:
 		StyleLength_tF02B24735FC88BE29BEB36F7A87709CA28AF72D8 L_113;
 		L_113 = StyleLength_op_Implicit_m587FA2633E50FC6BD8F695B35675BBFE179A6E90(L_112, NULL);
 		NullCheck(L_110);
-		InterfaceActionInvoker1< StyleLength_tF02B24735FC88BE29BEB36F7A87709CA28AF72D8 >::Invoke(61 /* System.Void UnityEngine.UIElements.IStyle::set_width(UnityEngine.UIElements.StyleLength) */, IStyle_t4FD66C97CA5F46BFE328FED0C65277A37E0A89F7_il2cpp_TypeInfo_var, L_110, L_113);
+		InterfaceActionInvoker1< StyleLength_tF02B24735FC88BE29BEB36F7A87709CA28AF72D8 >::Invoke(62 /* System.Void UnityEngine.UIElements.IStyle::set_width(UnityEngine.UIElements.StyleLength) */, IStyle_t4FD66C97CA5F46BFE328FED0C65277A37E0A89F7_il2cpp_TypeInfo_var, L_110, L_113);
 		// if(nbrLignesAlt > 0){
 		int32_t L_114 = V_5;
 		if ((((int32_t)L_114) <= ((int32_t)0)))
@@ -12241,7 +12245,7 @@ IL_0424:
 		StyleLength_tF02B24735FC88BE29BEB36F7A87709CA28AF72D8 L_177;
 		L_177 = StyleLength_op_Implicit_m587FA2633E50FC6BD8F695B35675BBFE179A6E90(L_176, NULL);
 		NullCheck(L_174);
-		InterfaceActionInvoker1< StyleLength_tF02B24735FC88BE29BEB36F7A87709CA28AF72D8 >::Invoke(61 /* System.Void UnityEngine.UIElements.IStyle::set_width(UnityEngine.UIElements.StyleLength) */, IStyle_t4FD66C97CA5F46BFE328FED0C65277A37E0A89F7_il2cpp_TypeInfo_var, L_174, L_177);
+		InterfaceActionInvoker1< StyleLength_tF02B24735FC88BE29BEB36F7A87709CA28AF72D8 >::Invoke(62 /* System.Void UnityEngine.UIElements.IStyle::set_width(UnityEngine.UIElements.StyleLength) */, IStyle_t4FD66C97CA5F46BFE328FED0C65277A37E0A89F7_il2cpp_TypeInfo_var, L_174, L_177);
 		// Reponse repAct = lstRepLoc.Where(item => item.id_ligne == optIn.id).FirstOrDefault();
 		List_1_tC5A78BAC1FD45859F324B654E5C365C339BBA9F8* L_178 = V_17;
 		U3CU3Ec__DisplayClass75_1_tB087FFA6CE0C571CC48ECC3B0FDFB7EF492ED05A* L_179 = V_18;
@@ -12309,7 +12313,7 @@ IL_0424:
 		StyleLength_tF02B24735FC88BE29BEB36F7A87709CA28AF72D8 L_202;
 		L_202 = StyleLength_op_Implicit_m587FA2633E50FC6BD8F695B35675BBFE179A6E90(L_201, NULL);
 		NullCheck(L_200);
-		InterfaceActionInvoker1< StyleLength_tF02B24735FC88BE29BEB36F7A87709CA28AF72D8 >::Invoke(41 /* System.Void UnityEngine.UIElements.IStyle::set_paddingRight(UnityEngine.UIElements.StyleLength) */, IStyle_t4FD66C97CA5F46BFE328FED0C65277A37E0A89F7_il2cpp_TypeInfo_var, L_200, L_202);
+		InterfaceActionInvoker1< StyleLength_tF02B24735FC88BE29BEB36F7A87709CA28AF72D8 >::Invoke(42 /* System.Void UnityEngine.UIElements.IStyle::set_paddingRight(UnityEngine.UIElements.StyleLength) */, IStyle_t4FD66C97CA5F46BFE328FED0C65277A37E0A89F7_il2cpp_TypeInfo_var, L_200, L_202);
 		// tplTextFieldCellule.Q<TextField>().name = field_name+"_"+optIn.id+"_l"+i.ToString();
 		TemplateContainer_tDF6DDDD82C75A6332F0194C2B39AF157F6342DA2* L_203 = V_22;
 		TextField_tDB34369F9468D7F02670087D9444EC23115827D9* L_204;
@@ -12365,7 +12369,7 @@ IL_0424:
 		StyleLength_tF02B24735FC88BE29BEB36F7A87709CA28AF72D8 L_224;
 		L_224 = StyleLength_op_Implicit_m587FA2633E50FC6BD8F695B35675BBFE179A6E90(L_223, NULL);
 		NullCheck(L_222);
-		InterfaceActionInvoker1< StyleLength_tF02B24735FC88BE29BEB36F7A87709CA28AF72D8 >::Invoke(61 /* System.Void UnityEngine.UIElements.IStyle::set_width(UnityEngine.UIElements.StyleLength) */, IStyle_t4FD66C97CA5F46BFE328FED0C65277A37E0A89F7_il2cpp_TypeInfo_var, L_222, L_224);
+		InterfaceActionInvoker1< StyleLength_tF02B24735FC88BE29BEB36F7A87709CA28AF72D8 >::Invoke(62 /* System.Void UnityEngine.UIElements.IStyle::set_width(UnityEngine.UIElements.StyleLength) */, IStyle_t4FD66C97CA5F46BFE328FED0C65277A37E0A89F7_il2cpp_TypeInfo_var, L_222, L_224);
 		// tplTextFieldCellule.Q<Button>("btnMicro").style.height = new Length(20f, 0);
 		TemplateContainer_tDF6DDDD82C75A6332F0194C2B39AF157F6342DA2* L_225 = V_22;
 		Button_t8EC3B431665F84C0B637C11B0EA29236828646C2* L_226;
@@ -12393,7 +12397,7 @@ IL_0424:
 		StyleLength_tF02B24735FC88BE29BEB36F7A87709CA28AF72D8 L_234;
 		L_234 = StyleLength_op_Implicit_m587FA2633E50FC6BD8F695B35675BBFE179A6E90(L_233, NULL);
 		NullCheck(L_232);
-		InterfaceActionInvoker1< StyleLength_tF02B24735FC88BE29BEB36F7A87709CA28AF72D8 >::Invoke(41 /* System.Void UnityEngine.UIElements.IStyle::set_paddingRight(UnityEngine.UIElements.StyleLength) */, IStyle_t4FD66C97CA5F46BFE328FED0C65277A37E0A89F7_il2cpp_TypeInfo_var, L_232, L_234);
+		InterfaceActionInvoker1< StyleLength_tF02B24735FC88BE29BEB36F7A87709CA28AF72D8 >::Invoke(42 /* System.Void UnityEngine.UIElements.IStyle::set_paddingRight(UnityEngine.UIElements.StyleLength) */, IStyle_t4FD66C97CA5F46BFE328FED0C65277A37E0A89F7_il2cpp_TypeInfo_var, L_232, L_234);
 		// tplTextFieldCellule.Q<Button>("btnMicro").style.paddingLeft = new Length(3f, 0);
 		TemplateContainer_tDF6DDDD82C75A6332F0194C2B39AF157F6342DA2* L_235 = V_22;
 		Button_t8EC3B431665F84C0B637C11B0EA29236828646C2* L_236;
@@ -12407,7 +12411,7 @@ IL_0424:
 		StyleLength_tF02B24735FC88BE29BEB36F7A87709CA28AF72D8 L_239;
 		L_239 = StyleLength_op_Implicit_m587FA2633E50FC6BD8F695B35675BBFE179A6E90(L_238, NULL);
 		NullCheck(L_237);
-		InterfaceActionInvoker1< StyleLength_tF02B24735FC88BE29BEB36F7A87709CA28AF72D8 >::Invoke(40 /* System.Void UnityEngine.UIElements.IStyle::set_paddingLeft(UnityEngine.UIElements.StyleLength) */, IStyle_t4FD66C97CA5F46BFE328FED0C65277A37E0A89F7_il2cpp_TypeInfo_var, L_237, L_239);
+		InterfaceActionInvoker1< StyleLength_tF02B24735FC88BE29BEB36F7A87709CA28AF72D8 >::Invoke(41 /* System.Void UnityEngine.UIElements.IStyle::set_paddingLeft(UnityEngine.UIElements.StyleLength) */, IStyle_t4FD66C97CA5F46BFE328FED0C65277A37E0A89F7_il2cpp_TypeInfo_var, L_237, L_239);
 		// tplTextFieldCellule.Q<Button>("btnMicro").style.paddingTop = new Length(1f, 0);
 		TemplateContainer_tDF6DDDD82C75A6332F0194C2B39AF157F6342DA2* L_240 = V_22;
 		Button_t8EC3B431665F84C0B637C11B0EA29236828646C2* L_241;
@@ -12421,7 +12425,7 @@ IL_0424:
 		StyleLength_tF02B24735FC88BE29BEB36F7A87709CA28AF72D8 L_244;
 		L_244 = StyleLength_op_Implicit_m587FA2633E50FC6BD8F695B35675BBFE179A6E90(L_243, NULL);
 		NullCheck(L_242);
-		InterfaceActionInvoker1< StyleLength_tF02B24735FC88BE29BEB36F7A87709CA28AF72D8 >::Invoke(43 /* System.Void UnityEngine.UIElements.IStyle::set_paddingTop(UnityEngine.UIElements.StyleLength) */, IStyle_t4FD66C97CA5F46BFE328FED0C65277A37E0A89F7_il2cpp_TypeInfo_var, L_242, L_244);
+		InterfaceActionInvoker1< StyleLength_tF02B24735FC88BE29BEB36F7A87709CA28AF72D8 >::Invoke(44 /* System.Void UnityEngine.UIElements.IStyle::set_paddingTop(UnityEngine.UIElements.StyleLength) */, IStyle_t4FD66C97CA5F46BFE328FED0C65277A37E0A89F7_il2cpp_TypeInfo_var, L_242, L_244);
 		// tplTextFieldCellule.Q<Button>("btnMicro").style.paddingBottom = new Length(1f, 0);
 		TemplateContainer_tDF6DDDD82C75A6332F0194C2B39AF157F6342DA2* L_245 = V_22;
 		Button_t8EC3B431665F84C0B637C11B0EA29236828646C2* L_246;
@@ -12435,7 +12439,7 @@ IL_0424:
 		StyleLength_tF02B24735FC88BE29BEB36F7A87709CA28AF72D8 L_249;
 		L_249 = StyleLength_op_Implicit_m587FA2633E50FC6BD8F695B35675BBFE179A6E90(L_248, NULL);
 		NullCheck(L_247);
-		InterfaceActionInvoker1< StyleLength_tF02B24735FC88BE29BEB36F7A87709CA28AF72D8 >::Invoke(39 /* System.Void UnityEngine.UIElements.IStyle::set_paddingBottom(UnityEngine.UIElements.StyleLength) */, IStyle_t4FD66C97CA5F46BFE328FED0C65277A37E0A89F7_il2cpp_TypeInfo_var, L_247, L_249);
+		InterfaceActionInvoker1< StyleLength_tF02B24735FC88BE29BEB36F7A87709CA28AF72D8 >::Invoke(40 /* System.Void UnityEngine.UIElements.IStyle::set_paddingBottom(UnityEngine.UIElements.StyleLength) */, IStyle_t4FD66C97CA5F46BFE328FED0C65277A37E0A89F7_il2cpp_TypeInfo_var, L_247, L_249);
 		// handlerNotesParams handlerParamsSub = new handlerNotesParams();
 		handlerNotesParams_tCA2C1C1152114492B2F94923DD8B0016191E41E1* L_250 = (handlerNotesParams_tCA2C1C1152114492B2F94923DD8B0016191E41E1*)il2cpp_codegen_object_new(handlerNotesParams_tCA2C1C1152114492B2F94923DD8B0016191E41E1_il2cpp_TypeInfo_var);
 		NullCheck(L_250);
@@ -13060,7 +13064,7 @@ IL_0074:
 		StyleLength_tF02B24735FC88BE29BEB36F7A87709CA28AF72D8 L_33;
 		L_33 = StyleLength_op_Implicit_m587FA2633E50FC6BD8F695B35675BBFE179A6E90(L_32, NULL);
 		NullCheck(L_31);
-		InterfaceActionInvoker1< StyleLength_tF02B24735FC88BE29BEB36F7A87709CA28AF72D8 >::Invoke(61 /* System.Void UnityEngine.UIElements.IStyle::set_width(UnityEngine.UIElements.StyleLength) */, IStyle_t4FD66C97CA5F46BFE328FED0C65277A37E0A89F7_il2cpp_TypeInfo_var, L_31, L_33);
+		InterfaceActionInvoker1< StyleLength_tF02B24735FC88BE29BEB36F7A87709CA28AF72D8 >::Invoke(62 /* System.Void UnityEngine.UIElements.IStyle::set_width(UnityEngine.UIElements.StyleLength) */, IStyle_t4FD66C97CA5F46BFE328FED0C65277A37E0A89F7_il2cpp_TypeInfo_var, L_31, L_33);
 		// instTplTxt.Q<Label>().style.display = DisplayStyle.None;
 		TemplateContainer_tDF6DDDD82C75A6332F0194C2B39AF157F6342DA2* L_34 = V_5;
 		il2cpp_codegen_runtime_class_init_inline(UQueryExtensions_t1271382882DF1B8FEEDE5EFA510405ABA7BD3426_il2cpp_TypeInfo_var);
@@ -13368,7 +13372,7 @@ IL_004f:
 		StyleEnum_1_t2F8C00EB33835C80CE2797790C7B05012C4B545D L_30;
 		L_30 = StyleEnum_1_op_Implicit_mBBEBCEE1374548AD98B973E76AAE18FFE72B0C6B(4, StyleEnum_1_op_Implicit_mBBEBCEE1374548AD98B973E76AAE18FFE72B0C6B_RuntimeMethod_var);
 		NullCheck(L_29);
-		InterfaceActionInvoker1< StyleEnum_1_t2F8C00EB33835C80CE2797790C7B05012C4B545D >::Invoke(56 /* System.Void UnityEngine.UIElements.IStyle::set_unityTextAlign(UnityEngine.UIElements.StyleEnum`1<UnityEngine.TextAnchor>) */, IStyle_t4FD66C97CA5F46BFE328FED0C65277A37E0A89F7_il2cpp_TypeInfo_var, L_29, L_30);
+		InterfaceActionInvoker1< StyleEnum_1_t2F8C00EB33835C80CE2797790C7B05012C4B545D >::Invoke(57 /* System.Void UnityEngine.UIElements.IStyle::set_unityTextAlign(UnityEngine.UIElements.StyleEnum`1<UnityEngine.TextAnchor>) */, IStyle_t4FD66C97CA5F46BFE328FED0C65277A37E0A89F7_il2cpp_TypeInfo_var, L_29, L_30);
 		goto IL_00c6;
 	}
 
@@ -13395,7 +13399,7 @@ IL_00a1:
 		StyleEnum_1_t2F8C00EB33835C80CE2797790C7B05012C4B545D L_36;
 		L_36 = StyleEnum_1_op_Implicit_mBBEBCEE1374548AD98B973E76AAE18FFE72B0C6B(5, StyleEnum_1_op_Implicit_mBBEBCEE1374548AD98B973E76AAE18FFE72B0C6B_RuntimeMethod_var);
 		NullCheck(L_35);
-		InterfaceActionInvoker1< StyleEnum_1_t2F8C00EB33835C80CE2797790C7B05012C4B545D >::Invoke(56 /* System.Void UnityEngine.UIElements.IStyle::set_unityTextAlign(UnityEngine.UIElements.StyleEnum`1<UnityEngine.TextAnchor>) */, IStyle_t4FD66C97CA5F46BFE328FED0C65277A37E0A89F7_il2cpp_TypeInfo_var, L_35, L_36);
+		InterfaceActionInvoker1< StyleEnum_1_t2F8C00EB33835C80CE2797790C7B05012C4B545D >::Invoke(57 /* System.Void UnityEngine.UIElements.IStyle::set_unityTextAlign(UnityEngine.UIElements.StyleEnum`1<UnityEngine.TextAnchor>) */, IStyle_t4FD66C97CA5F46BFE328FED0C65277A37E0A89F7_il2cpp_TypeInfo_var, L_35, L_36);
 	}
 
 IL_00c6:
@@ -14105,7 +14109,7 @@ IL_00ce:
 		StyleLength_tF02B24735FC88BE29BEB36F7A87709CA28AF72D8 L_40;
 		L_40 = StyleLength_op_Implicit_mA1ED6E9AD696C34231A35B83084B1298A700B019((0.0f), NULL);
 		NullCheck(L_39);
-		InterfaceActionInvoker1< StyleLength_tF02B24735FC88BE29BEB36F7A87709CA28AF72D8 >::Invoke(41 /* System.Void UnityEngine.UIElements.IStyle::set_paddingRight(UnityEngine.UIElements.StyleLength) */, IStyle_t4FD66C97CA5F46BFE328FED0C65277A37E0A89F7_il2cpp_TypeInfo_var, L_39, L_40);
+		InterfaceActionInvoker1< StyleLength_tF02B24735FC88BE29BEB36F7A87709CA28AF72D8 >::Invoke(42 /* System.Void UnityEngine.UIElements.IStyle::set_paddingRight(UnityEngine.UIElements.StyleLength) */, IStyle_t4FD66C97CA5F46BFE328FED0C65277A37E0A89F7_il2cpp_TypeInfo_var, L_39, L_40);
 	}
 
 IL_00f4:
@@ -14366,7 +14370,7 @@ IL_0053:
 		StyleLength_tF02B24735FC88BE29BEB36F7A87709CA28AF72D8 L_25;
 		L_25 = StyleLength_op_Implicit_mA1ED6E9AD696C34231A35B83084B1298A700B019((0.0f), NULL);
 		NullCheck(L_24);
-		InterfaceActionInvoker1< StyleLength_tF02B24735FC88BE29BEB36F7A87709CA28AF72D8 >::Invoke(41 /* System.Void UnityEngine.UIElements.IStyle::set_paddingRight(UnityEngine.UIElements.StyleLength) */, IStyle_t4FD66C97CA5F46BFE328FED0C65277A37E0A89F7_il2cpp_TypeInfo_var, L_24, L_25);
+		InterfaceActionInvoker1< StyleLength_tF02B24735FC88BE29BEB36F7A87709CA28AF72D8 >::Invoke(42 /* System.Void UnityEngine.UIElements.IStyle::set_paddingRight(UnityEngine.UIElements.StyleLength) */, IStyle_t4FD66C97CA5F46BFE328FED0C65277A37E0A89F7_il2cpp_TypeInfo_var, L_24, L_25);
 		// instanceTemplateClassique.Q<TextField>().name = field_name;
 		TemplateContainer_tDF6DDDD82C75A6332F0194C2B39AF157F6342DA2* L_26 = V_1;
 		TextField_tDB34369F9468D7F02670087D9444EC23115827D9* L_27;
@@ -15282,7 +15286,7 @@ IL_0156_1:
 			StyleLength_tF02B24735FC88BE29BEB36F7A87709CA28AF72D8 L_87;
 			L_87 = StyleLength_op_Implicit_m587FA2633E50FC6BD8F695B35675BBFE179A6E90(L_86, NULL);
 			NullCheck(L_85);
-			InterfaceActionInvoker1< StyleLength_tF02B24735FC88BE29BEB36F7A87709CA28AF72D8 >::Invoke(61 /* System.Void UnityEngine.UIElements.IStyle::set_width(UnityEngine.UIElements.StyleLength) */, IStyle_t4FD66C97CA5F46BFE328FED0C65277A37E0A89F7_il2cpp_TypeInfo_var, L_85, L_87);
+			InterfaceActionInvoker1< StyleLength_tF02B24735FC88BE29BEB36F7A87709CA28AF72D8 >::Invoke(62 /* System.Void UnityEngine.UIElements.IStyle::set_width(UnityEngine.UIElements.StyleLength) */, IStyle_t4FD66C97CA5F46BFE328FED0C65277A37E0A89F7_il2cpp_TypeInfo_var, L_85, L_87);
 			// tplsLigne.Q<VisualElement>("ligne").Add(tplSysGraph);
 			TemplateContainer_tDF6DDDD82C75A6332F0194C2B39AF157F6342DA2* L_88 = V_7;
 			VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_89;
@@ -16029,7 +16033,7 @@ IL_0067:
 		StyleLength_tF02B24735FC88BE29BEB36F7A87709CA28AF72D8 L_22;
 		L_22 = StyleLength_op_Implicit_m587FA2633E50FC6BD8F695B35675BBFE179A6E90(L_21, NULL);
 		NullCheck(L_19);
-		InterfaceActionInvoker1< StyleLength_tF02B24735FC88BE29BEB36F7A87709CA28AF72D8 >::Invoke(61 /* System.Void UnityEngine.UIElements.IStyle::set_width(UnityEngine.UIElements.StyleLength) */, IStyle_t4FD66C97CA5F46BFE328FED0C65277A37E0A89F7_il2cpp_TypeInfo_var, L_19, L_22);
+		InterfaceActionInvoker1< StyleLength_tF02B24735FC88BE29BEB36F7A87709CA28AF72D8 >::Invoke(62 /* System.Void UnityEngine.UIElements.IStyle::set_width(UnityEngine.UIElements.StyleLength) */, IStyle_t4FD66C97CA5F46BFE328FED0C65277A37E0A89F7_il2cpp_TypeInfo_var, L_19, L_22);
 		// TypeDonnee[] typesDonnee = mainScript.listeServices[mainScript.clientSelectionne].typesDonnee;
 		MainScript_tE5DA41EF9F6C72F24338683BF923785400FDC5FF* L_23 = ((AppManager_tD5155B839026DE8E1F63F8868048F9CF8B26ED0C*)__this)->___mainScript_10;
 		NullCheck(L_23);
@@ -16870,7 +16874,7 @@ IL_058c:
 		StyleLength_tF02B24735FC88BE29BEB36F7A87709CA28AF72D8 L_271;
 		L_271 = StyleLength_op_Implicit_mA1ED6E9AD696C34231A35B83084B1298A700B019((0.0f), NULL);
 		NullCheck(L_270);
-		InterfaceActionInvoker1< StyleLength_tF02B24735FC88BE29BEB36F7A87709CA28AF72D8 >::Invoke(41 /* System.Void UnityEngine.UIElements.IStyle::set_paddingRight(UnityEngine.UIElements.StyleLength) */, IStyle_t4FD66C97CA5F46BFE328FED0C65277A37E0A89F7_il2cpp_TypeInfo_var, L_270, L_271);
+		InterfaceActionInvoker1< StyleLength_tF02B24735FC88BE29BEB36F7A87709CA28AF72D8 >::Invoke(42 /* System.Void UnityEngine.UIElements.IStyle::set_paddingRight(UnityEngine.UIElements.StyleLength) */, IStyle_t4FD66C97CA5F46BFE328FED0C65277A37E0A89F7_il2cpp_TypeInfo_var, L_270, L_271);
 		goto IL_05f3;
 	}
 
@@ -17759,7 +17763,7 @@ IL_0096:
 		StyleLength_tF02B24735FC88BE29BEB36F7A87709CA28AF72D8 L_46;
 		L_46 = StyleLength_op_Implicit_mA1ED6E9AD696C34231A35B83084B1298A700B019((4.0f), NULL);
 		NullCheck(L_45);
-		InterfaceActionInvoker1< StyleLength_tF02B24735FC88BE29BEB36F7A87709CA28AF72D8 >::Invoke(41 /* System.Void UnityEngine.UIElements.IStyle::set_paddingRight(UnityEngine.UIElements.StyleLength) */, IStyle_t4FD66C97CA5F46BFE328FED0C65277A37E0A89F7_il2cpp_TypeInfo_var, L_45, L_46);
+		InterfaceActionInvoker1< StyleLength_tF02B24735FC88BE29BEB36F7A87709CA28AF72D8 >::Invoke(42 /* System.Void UnityEngine.UIElements.IStyle::set_paddingRight(UnityEngine.UIElements.StyleLength) */, IStyle_t4FD66C97CA5F46BFE328FED0C65277A37E0A89F7_il2cpp_TypeInfo_var, L_45, L_46);
 		// tplLigneReptitrss.Q<VisualElement>("ligne").style.minHeight = new StyleLength(28f);
 		TemplateContainer_tDF6DDDD82C75A6332F0194C2B39AF157F6342DA2* L_47 = V_6;
 		VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_48;
@@ -17979,7 +17983,7 @@ IL_0263:
 		StyleLength_tF02B24735FC88BE29BEB36F7A87709CA28AF72D8 L_104;
 		L_104 = StyleLength_op_Implicit_m587FA2633E50FC6BD8F695B35675BBFE179A6E90(L_103, NULL);
 		NullCheck(L_101);
-		InterfaceActionInvoker1< StyleLength_tF02B24735FC88BE29BEB36F7A87709CA28AF72D8 >::Invoke(61 /* System.Void UnityEngine.UIElements.IStyle::set_width(UnityEngine.UIElements.StyleLength) */, IStyle_t4FD66C97CA5F46BFE328FED0C65277A37E0A89F7_il2cpp_TypeInfo_var, L_101, L_104);
+		InterfaceActionInvoker1< StyleLength_tF02B24735FC88BE29BEB36F7A87709CA28AF72D8 >::Invoke(62 /* System.Void UnityEngine.UIElements.IStyle::set_width(UnityEngine.UIElements.StyleLength) */, IStyle_t4FD66C97CA5F46BFE328FED0C65277A37E0A89F7_il2cpp_TypeInfo_var, L_101, L_104);
 		// wTotal += wLoc;
 		float L_105 = V_8;
 		float L_106 = V_16;
@@ -18045,7 +18049,7 @@ IL_0263:
 		StyleLength_tF02B24735FC88BE29BEB36F7A87709CA28AF72D8 L_130;
 		L_130 = StyleLength_op_Implicit_mA1ED6E9AD696C34231A35B83084B1298A700B019(L_129, NULL);
 		NullCheck(L_128);
-		InterfaceActionInvoker1< StyleLength_tF02B24735FC88BE29BEB36F7A87709CA28AF72D8 >::Invoke(41 /* System.Void UnityEngine.UIElements.IStyle::set_paddingRight(UnityEngine.UIElements.StyleLength) */, IStyle_t4FD66C97CA5F46BFE328FED0C65277A37E0A89F7_il2cpp_TypeInfo_var, L_128, L_130);
+		InterfaceActionInvoker1< StyleLength_tF02B24735FC88BE29BEB36F7A87709CA28AF72D8 >::Invoke(42 /* System.Void UnityEngine.UIElements.IStyle::set_paddingRight(UnityEngine.UIElements.StyleLength) */, IStyle_t4FD66C97CA5F46BFE328FED0C65277A37E0A89F7_il2cpp_TypeInfo_var, L_128, L_130);
 		// instanceTemplateTableau.Q<VisualElement>("enTeteTableau").Q<TemplateContainer>("tableLigne").Q<Button>("btnSupprimerLigne").style.display = DisplayStyle.None;
 		TemplateContainer_tDF6DDDD82C75A6332F0194C2B39AF157F6342DA2* L_131 = V_4;
 		VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_132;
@@ -18162,7 +18166,7 @@ IL_03d1:
 		StyleLength_tF02B24735FC88BE29BEB36F7A87709CA28AF72D8 L_167;
 		L_167 = StyleLength_op_Implicit_m587FA2633E50FC6BD8F695B35675BBFE179A6E90(L_166, NULL);
 		NullCheck(L_164);
-		InterfaceActionInvoker1< StyleLength_tF02B24735FC88BE29BEB36F7A87709CA28AF72D8 >::Invoke(61 /* System.Void UnityEngine.UIElements.IStyle::set_width(UnityEngine.UIElements.StyleLength) */, IStyle_t4FD66C97CA5F46BFE328FED0C65277A37E0A89F7_il2cpp_TypeInfo_var, L_164, L_167);
+		InterfaceActionInvoker1< StyleLength_tF02B24735FC88BE29BEB36F7A87709CA28AF72D8 >::Invoke(62 /* System.Void UnityEngine.UIElements.IStyle::set_width(UnityEngine.UIElements.StyleLength) */, IStyle_t4FD66C97CA5F46BFE328FED0C65277A37E0A89F7_il2cpp_TypeInfo_var, L_164, L_167);
 		// if (nbrLignes > 0){
 		int32_t L_168 = V_10;
 		if ((((int32_t)L_168) <= ((int32_t)0)))
@@ -18664,7 +18668,7 @@ IL_0107:
 		StyleLength_tF02B24735FC88BE29BEB36F7A87709CA28AF72D8 L_56;
 		L_56 = StyleLength_op_Implicit_mA1ED6E9AD696C34231A35B83084B1298A700B019((4.0f), NULL);
 		NullCheck(L_55);
-		InterfaceActionInvoker1< StyleLength_tF02B24735FC88BE29BEB36F7A87709CA28AF72D8 >::Invoke(45 /* System.Void UnityEngine.UIElements.IStyle::set_right(UnityEngine.UIElements.StyleLength) */, IStyle_t4FD66C97CA5F46BFE328FED0C65277A37E0A89F7_il2cpp_TypeInfo_var, L_55, L_56);
+		InterfaceActionInvoker1< StyleLength_tF02B24735FC88BE29BEB36F7A87709CA28AF72D8 >::Invoke(46 /* System.Void UnityEngine.UIElements.IStyle::set_right(UnityEngine.UIElements.StyleLength) */, IStyle_t4FD66C97CA5F46BFE328FED0C65277A37E0A89F7_il2cpp_TypeInfo_var, L_55, L_56);
 	}
 
 IL_0133:
@@ -18712,7 +18716,7 @@ IL_014a:
 		StyleLength_tF02B24735FC88BE29BEB36F7A87709CA28AF72D8 L_76;
 		L_76 = StyleLength_op_Implicit_mA1ED6E9AD696C34231A35B83084B1298A700B019(L_75, NULL);
 		NullCheck(L_74);
-		InterfaceActionInvoker1< StyleLength_tF02B24735FC88BE29BEB36F7A87709CA28AF72D8 >::Invoke(41 /* System.Void UnityEngine.UIElements.IStyle::set_paddingRight(UnityEngine.UIElements.StyleLength) */, IStyle_t4FD66C97CA5F46BFE328FED0C65277A37E0A89F7_il2cpp_TypeInfo_var, L_74, L_76);
+		InterfaceActionInvoker1< StyleLength_tF02B24735FC88BE29BEB36F7A87709CA28AF72D8 >::Invoke(42 /* System.Void UnityEngine.UIElements.IStyle::set_paddingRight(UnityEngine.UIElements.StyleLength) */, IStyle_t4FD66C97CA5F46BFE328FED0C65277A37E0A89F7_il2cpp_TypeInfo_var, L_74, L_76);
 		// if (ligne % 2 == 1)
 		int32_t L_77 = ___3_ligne;
 		if ((!(((uint32_t)((int32_t)(L_77%2))) == ((uint32_t)1))))
@@ -19583,7 +19587,7 @@ IL_069c:
 		L_306 = ContenuRapportManager_GetReport_m3D8FCF5FF3E37E3E04D73E070DD689DF6A8197D5(__this, NULL);
 		// foreach (Section sect in current_report.sections)
 		NullCheck(L_306);
-		SectionU5BU5D_tB015CDAE7B4B809E138D37CF59FE8AAA35FE49A6* L_307 = L_306->___sections_37;
+		SectionU5BU5D_tB015CDAE7B4B809E138D37CF59FE8AAA35FE49A6* L_307 = L_306->___sections_38;
 		V_23 = L_307;
 		V_24 = 0;
 		goto IL_0704;
@@ -19885,7 +19889,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR List_1_t6AC2A2EEF7243A7458635C3EE29AE3FCB637C
 		StyleLength_tF02B24735FC88BE29BEB36F7A87709CA28AF72D8 L_25;
 		L_25 = StyleLength_op_Implicit_mA1ED6E9AD696C34231A35B83084B1298A700B019((4.0f), NULL);
 		NullCheck(L_24);
-		InterfaceActionInvoker1< StyleLength_tF02B24735FC88BE29BEB36F7A87709CA28AF72D8 >::Invoke(41 /* System.Void UnityEngine.UIElements.IStyle::set_paddingRight(UnityEngine.UIElements.StyleLength) */, IStyle_t4FD66C97CA5F46BFE328FED0C65277A37E0A89F7_il2cpp_TypeInfo_var, L_24, L_25);
+		InterfaceActionInvoker1< StyleLength_tF02B24735FC88BE29BEB36F7A87709CA28AF72D8 >::Invoke(42 /* System.Void UnityEngine.UIElements.IStyle::set_paddingRight(UnityEngine.UIElements.StyleLength) */, IStyle_t4FD66C97CA5F46BFE328FED0C65277A37E0A89F7_il2cpp_TypeInfo_var, L_24, L_25);
 		// tplLigneReptitrss.Q<VisualElement>("ligne").style.minHeight = new StyleLength(28f);
 		TemplateContainer_tDF6DDDD82C75A6332F0194C2B39AF157F6342DA2* L_26 = V_4;
 		VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_27;
@@ -20125,7 +20129,7 @@ IL_01ed:
 		StyleLength_tF02B24735FC88BE29BEB36F7A87709CA28AF72D8 L_80;
 		L_80 = StyleLength_op_Implicit_mA1ED6E9AD696C34231A35B83084B1298A700B019(L_79, NULL);
 		NullCheck(L_78);
-		InterfaceActionInvoker1< StyleLength_tF02B24735FC88BE29BEB36F7A87709CA28AF72D8 >::Invoke(41 /* System.Void UnityEngine.UIElements.IStyle::set_paddingRight(UnityEngine.UIElements.StyleLength) */, IStyle_t4FD66C97CA5F46BFE328FED0C65277A37E0A89F7_il2cpp_TypeInfo_var, L_78, L_80);
+		InterfaceActionInvoker1< StyleLength_tF02B24735FC88BE29BEB36F7A87709CA28AF72D8 >::Invoke(42 /* System.Void UnityEngine.UIElements.IStyle::set_paddingRight(UnityEngine.UIElements.StyleLength) */, IStyle_t4FD66C97CA5F46BFE328FED0C65277A37E0A89F7_il2cpp_TypeInfo_var, L_78, L_80);
 		// foreach (Option opt in optsLoc)
 		List_1_tE0461C7103B14D5F8F32BF9F788A699CD9B1CFD0* L_81 = V_5;
 		NullCheck(L_81);
@@ -20238,7 +20242,7 @@ IL_02ae_1:
 				StyleLength_tF02B24735FC88BE29BEB36F7A87709CA28AF72D8 L_110;
 				L_110 = StyleLength_op_Implicit_m587FA2633E50FC6BD8F695B35675BBFE179A6E90(L_109, NULL);
 				NullCheck(L_107);
-				InterfaceActionInvoker1< StyleLength_tF02B24735FC88BE29BEB36F7A87709CA28AF72D8 >::Invoke(61 /* System.Void UnityEngine.UIElements.IStyle::set_width(UnityEngine.UIElements.StyleLength) */, IStyle_t4FD66C97CA5F46BFE328FED0C65277A37E0A89F7_il2cpp_TypeInfo_var, L_107, L_110);
+				InterfaceActionInvoker1< StyleLength_tF02B24735FC88BE29BEB36F7A87709CA28AF72D8 >::Invoke(62 /* System.Void UnityEngine.UIElements.IStyle::set_width(UnityEngine.UIElements.StyleLength) */, IStyle_t4FD66C97CA5F46BFE328FED0C65277A37E0A89F7_il2cpp_TypeInfo_var, L_107, L_110);
 				// wTotal += wLoc;
 				float L_111 = V_8;
 				float L_112 = V_17;
@@ -20373,7 +20377,7 @@ IL_03cb:
 		StyleLength_tF02B24735FC88BE29BEB36F7A87709CA28AF72D8 L_155;
 		L_155 = StyleLength_op_Implicit_m587FA2633E50FC6BD8F695B35675BBFE179A6E90(L_154, NULL);
 		NullCheck(L_152);
-		InterfaceActionInvoker1< StyleLength_tF02B24735FC88BE29BEB36F7A87709CA28AF72D8 >::Invoke(61 /* System.Void UnityEngine.UIElements.IStyle::set_width(UnityEngine.UIElements.StyleLength) */, IStyle_t4FD66C97CA5F46BFE328FED0C65277A37E0A89F7_il2cpp_TypeInfo_var, L_152, L_155);
+		InterfaceActionInvoker1< StyleLength_tF02B24735FC88BE29BEB36F7A87709CA28AF72D8 >::Invoke(62 /* System.Void UnityEngine.UIElements.IStyle::set_width(UnityEngine.UIElements.StyleLength) */, IStyle_t4FD66C97CA5F46BFE328FED0C65277A37E0A89F7_il2cpp_TypeInfo_var, L_152, L_155);
 		// if (nbrLignes > 0)
 		int32_t L_156 = V_10;
 		if ((((int32_t)L_156) <= ((int32_t)0)))
@@ -21578,7 +21582,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR List_1_t6AC2A2EEF7243A7458635C3EE29AE3FCB637C
 		Rapport_t0DED00B7690FCCDE651FB02E35DD4AFF93E927D2* L_4;
 		L_4 = ContenuRapportManager_GetReport_m3D8FCF5FF3E37E3E04D73E070DD689DF6A8197D5(__this, NULL);
 		NullCheck(L_4);
-		bool L_5 = L_4->___est_recommandation_24;
+		bool L_5 = L_4->___est_recommandation_25;
 		if (!L_5)
 		{
 			goto IL_01c8;
@@ -21625,7 +21629,7 @@ IL_0056:
 		// if (!r.est_recommandation) {
 		Rapport_t0DED00B7690FCCDE651FB02E35DD4AFF93E927D2* L_17 = V_7;
 		NullCheck(L_17);
-		bool L_18 = L_17->___est_recommandation_24;
+		bool L_18 = L_17->___est_recommandation_25;
 		if (L_18)
 		{
 			goto IL_0173;
@@ -21635,7 +21639,7 @@ IL_0056:
 		// string titreRapport = r.titre_fr;
 		Rapport_t0DED00B7690FCCDE651FB02E35DD4AFF93E927D2* L_19 = V_7;
 		NullCheck(L_19);
-		String_t* L_20 = L_19->___titre_fr_21;
+		String_t* L_20 = L_19->___titre_fr_22;
 		V_8 = L_20;
 		// List<string> recommendationsRapport = new List<string>();
 		List_1_tF470A3BE5C1B5B68E1325EF3F109D172E60BD7CD* L_21 = (List_1_tF470A3BE5C1B5B68E1325EF3F109D172E60BD7CD*)il2cpp_codegen_object_new(List_1_tF470A3BE5C1B5B68E1325EF3F109D172E60BD7CD_il2cpp_TypeInfo_var);
@@ -21645,7 +21649,7 @@ IL_0056:
 		// foreach (Section s in r.sections)
 		Rapport_t0DED00B7690FCCDE651FB02E35DD4AFF93E927D2* L_22 = V_7;
 		NullCheck(L_22);
-		SectionU5BU5D_tB015CDAE7B4B809E138D37CF59FE8AAA35FE49A6* L_23 = L_22->___sections_37;
+		SectionU5BU5D_tB015CDAE7B4B809E138D37CF59FE8AAA35FE49A6* L_23 = L_22->___sections_38;
 		V_10 = L_23;
 		V_11 = 0;
 		goto IL_013a;
@@ -22003,7 +22007,7 @@ IL_029b:
 		StyleLength_tF02B24735FC88BE29BEB36F7A87709CA28AF72D8 L_120;
 		L_120 = StyleLength_op_Implicit_mA1ED6E9AD696C34231A35B83084B1298A700B019((0.0f), NULL);
 		NullCheck(L_119);
-		InterfaceActionInvoker1< StyleLength_tF02B24735FC88BE29BEB36F7A87709CA28AF72D8 >::Invoke(41 /* System.Void UnityEngine.UIElements.IStyle::set_paddingRight(UnityEngine.UIElements.StyleLength) */, IStyle_t4FD66C97CA5F46BFE328FED0C65277A37E0A89F7_il2cpp_TypeInfo_var, L_119, L_120);
+		InterfaceActionInvoker1< StyleLength_tF02B24735FC88BE29BEB36F7A87709CA28AF72D8 >::Invoke(42 /* System.Void UnityEngine.UIElements.IStyle::set_paddingRight(UnityEngine.UIElements.StyleLength) */, IStyle_t4FD66C97CA5F46BFE328FED0C65277A37E0A89F7_il2cpp_TypeInfo_var, L_119, L_120);
 	}
 
 IL_02c1:
@@ -22480,7 +22484,7 @@ IL_0131:
 		StyleLength_tF02B24735FC88BE29BEB36F7A87709CA28AF72D8 L_72;
 		L_72 = StyleLength_op_Implicit_mA1ED6E9AD696C34231A35B83084B1298A700B019((10.0f), NULL);
 		NullCheck(L_71);
-		InterfaceActionInvoker1< StyleLength_tF02B24735FC88BE29BEB36F7A87709CA28AF72D8 >::Invoke(43 /* System.Void UnityEngine.UIElements.IStyle::set_paddingTop(UnityEngine.UIElements.StyleLength) */, IStyle_t4FD66C97CA5F46BFE328FED0C65277A37E0A89F7_il2cpp_TypeInfo_var, L_71, L_72);
+		InterfaceActionInvoker1< StyleLength_tF02B24735FC88BE29BEB36F7A87709CA28AF72D8 >::Invoke(44 /* System.Void UnityEngine.UIElements.IStyle::set_paddingTop(UnityEngine.UIElements.StyleLength) */, IStyle_t4FD66C97CA5F46BFE328FED0C65277A37E0A89F7_il2cpp_TypeInfo_var, L_71, L_72);
 		// dropdown.choices = dropOpts;
 		U3CU3Ec__DisplayClass101_0_tCCA67858FE373A0A7272748D3C276C92E73F36FC* L_73 = V_0;
 		NullCheck(L_73);
@@ -23855,7 +23859,7 @@ IL_009e:
 		StyleLength_tF02B24735FC88BE29BEB36F7A87709CA28AF72D8 L_20;
 		L_20 = StyleLength_op_Implicit_m587FA2633E50FC6BD8F695B35675BBFE179A6E90(L_19, NULL);
 		NullCheck(L_18);
-		InterfaceActionInvoker1< StyleLength_tF02B24735FC88BE29BEB36F7A87709CA28AF72D8 >::Invoke(61 /* System.Void UnityEngine.UIElements.IStyle::set_width(UnityEngine.UIElements.StyleLength) */, IStyle_t4FD66C97CA5F46BFE328FED0C65277A37E0A89F7_il2cpp_TypeInfo_var, L_18, L_20);
+		InterfaceActionInvoker1< StyleLength_tF02B24735FC88BE29BEB36F7A87709CA28AF72D8 >::Invoke(62 /* System.Void UnityEngine.UIElements.IStyle::set_width(UnityEngine.UIElements.StyleLength) */, IStyle_t4FD66C97CA5F46BFE328FED0C65277A37E0A89F7_il2cpp_TypeInfo_var, L_18, L_20);
 		// if (panelNotesBool)
 		bool L_21 = __this->___panelNotesBool_67;
 		if (!L_21)
@@ -24408,7 +24412,7 @@ IL_005b:
 		int32_t L_33 = L_32;
 		Rapport_t0DED00B7690FCCDE651FB02E35DD4AFF93E927D2* L_34 = (L_30)->GetAt(static_cast<il2cpp_array_size_t>(L_33));
 		NullCheck(L_34);
-		SectionU5BU5D_tB015CDAE7B4B809E138D37CF59FE8AAA35FE49A6* L_35 = L_34->___sections_37;
+		SectionU5BU5D_tB015CDAE7B4B809E138D37CF59FE8AAA35FE49A6* L_35 = L_34->___sections_38;
 		U3CU3Ec__DisplayClass127_0_t8A99939938CB055F68FB35BE9F825613447B263A* L_36 = V_0;
 		Func_2_t5EFAA70D8AA0AA35D0D97EDBB3C876AB7CA02303* L_37 = (Func_2_t5EFAA70D8AA0AA35D0D97EDBB3C876AB7CA02303*)il2cpp_codegen_object_new(Func_2_t5EFAA70D8AA0AA35D0D97EDBB3C876AB7CA02303_il2cpp_TypeInfo_var);
 		NullCheck(L_37);
@@ -25752,7 +25756,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ContenuRapportManager_setPanelNotesPosit
 		StyleLength_tF02B24735FC88BE29BEB36F7A87709CA28AF72D8 L_55;
 		L_55 = StyleLength_op_Implicit_mA1ED6E9AD696C34231A35B83084B1298A700B019(L_54, NULL);
 		NullCheck(L_53);
-		InterfaceActionInvoker1< StyleLength_tF02B24735FC88BE29BEB36F7A87709CA28AF72D8 >::Invoke(50 /* System.Void UnityEngine.UIElements.IStyle::set_top(UnityEngine.UIElements.StyleLength) */, IStyle_t4FD66C97CA5F46BFE328FED0C65277A37E0A89F7_il2cpp_TypeInfo_var, L_53, L_55);
+		InterfaceActionInvoker1< StyleLength_tF02B24735FC88BE29BEB36F7A87709CA28AF72D8 >::Invoke(51 /* System.Void UnityEngine.UIElements.IStyle::set_top(UnityEngine.UIElements.StyleLength) */, IStyle_t4FD66C97CA5F46BFE328FED0C65277A37E0A89F7_il2cpp_TypeInfo_var, L_53, L_55);
 	}
 
 IL_0134:
@@ -28632,7 +28636,7 @@ IL_0012:
 		L_6 = ContenuRapportManager_GetReport_m3D8FCF5FF3E37E3E04D73E070DD689DF6A8197D5(__this, NULL);
 		// foreach (Section section in currentReport.sections ?? new Section[0])
 		NullCheck(L_6);
-		SectionU5BU5D_tB015CDAE7B4B809E138D37CF59FE8AAA35FE49A6* L_7 = L_6->___sections_37;
+		SectionU5BU5D_tB015CDAE7B4B809E138D37CF59FE8AAA35FE49A6* L_7 = L_6->___sections_38;
 		SectionU5BU5D_tB015CDAE7B4B809E138D37CF59FE8AAA35FE49A6* L_8 = L_7;
 		G_B4_0 = L_8;
 		if (L_8)
@@ -28939,7 +28943,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Champ_tD2B96901967ACAD5FC515CC6FD7C38CEF1540C
 		L_1 = ContenuRapportManager_GetReport_m3D8FCF5FF3E37E3E04D73E070DD689DF6A8197D5(__this, NULL);
 		// foreach (Section section in currentReport.sections)
 		NullCheck(L_1);
-		SectionU5BU5D_tB015CDAE7B4B809E138D37CF59FE8AAA35FE49A6* L_2 = L_1->___sections_37;
+		SectionU5BU5D_tB015CDAE7B4B809E138D37CF59FE8AAA35FE49A6* L_2 = L_1->___sections_38;
 		V_1 = L_2;
 		V_2 = 0;
 		goto IL_0049;
