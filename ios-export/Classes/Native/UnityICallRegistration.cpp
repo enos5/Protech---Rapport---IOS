@@ -2564,6 +2564,14 @@ void RegisterAllStrippedInternalCalls()
 
 	//End Registrations for type : UnityEngine.Networking.UploadHandler
 
+	//Start Registrations for type : UnityEngine.Networking.UploadHandlerFile
+
+		//System.IntPtr UnityEngine.Networking.UploadHandlerFile::Create(UnityEngine.Networking.UploadHandlerFile,System.String)
+		void Register_UnityEngine_Networking_UploadHandlerFile_Create();
+		Register_UnityEngine_Networking_UploadHandlerFile_Create();
+
+	//End Registrations for type : UnityEngine.Networking.UploadHandlerFile
+
 	//Start Registrations for type : UnityEngine.Networking.UploadHandlerRaw
 
 		//System.IntPtr UnityEngine.Networking.UploadHandlerRaw::Create(UnityEngine.Networking.UploadHandlerRaw,System.Byte*,System.Int32)
@@ -4261,6 +4269,10 @@ void RegisterAllStrippedInternalCalls()
 		//System.Void UnityEngine.Video.VideoPlayer::Prepare()
 		void Register_UnityEngine_Video_VideoPlayer_Prepare();
 		Register_UnityEngine_Video_VideoPlayer_Prepare();
+
+		//System.Void UnityEngine.Video.VideoPlayer::Stop()
+		void Register_UnityEngine_Video_VideoPlayer_Stop();
+		Register_UnityEngine_Video_VideoPlayer_Stop();
 
 		//System.Void UnityEngine.Video.VideoPlayer::set_aspectRatio(UnityEngine.Video.VideoAspectRatio)
 		void Register_UnityEngine_Video_VideoPlayer_set_aspectRatio();
