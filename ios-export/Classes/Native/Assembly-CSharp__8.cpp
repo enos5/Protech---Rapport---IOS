@@ -7510,34 +7510,36 @@ struct NotesManager_tD186238281AC6C6DD083D5617258C11C9270050A  : public MonoBeha
 	MainScript_tE5DA41EF9F6C72F24338683BF923785400FDC5FF* ___mainScript_13;
 	// UnityEngine.UIElements.ScrollView NotesManager::scroller
 	ScrollView_t7CE209084E084FAA0E8DF3CD8E3B8BB9EB27E8D9* ___scroller_14;
+	// UnityEngine.Coroutine NotesManager::popupBuild
+	Coroutine_t85EA685566A254C23F3FD77AB5BDFFFF8799596B* ___popupBuild_15;
 	// System.Single NotesManager::oldScroll
-	float ___oldScroll_15;
+	float ___oldScroll_16;
 	// UnityEngine.UIElements.TextField NotesManager::txtFChanger
-	TextField_tDB34369F9468D7F02670087D9444EC23115827D9* ___txtFChanger_16;
+	TextField_tDB34369F9468D7F02670087D9444EC23115827D9* ___txtFChanger_17;
 	// System.String NotesManager::oldTxtFChanger
-	String_t* ___oldTxtFChanger_17;
+	String_t* ___oldTxtFChanger_18;
 	// UnityEngine.GameObject NotesManager::UIVideo
-	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___UIVideo_18;
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___UIVideo_19;
 	// UnityEngine.GameObject NotesManager::UICamera
-	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___UICamera_19;
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___UICamera_20;
 	// UnityEngine.GameObject NotesManager::UIRapport
-	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___UIRapport_20;
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___UIRapport_21;
 	// UnityEngine.GameObject NotesManager::UIChargement
-	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___UIChargement_21;
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___UIChargement_22;
 	// UnityEngine.UIElements.Button NotesManager::btnFermer
-	Button_t8EC3B431665F84C0B637C11B0EA29236828646C2* ___btnFermer_22;
+	Button_t8EC3B431665F84C0B637C11B0EA29236828646C2* ___btnFermer_23;
 	// UnityEngine.UIElements.VisualElement NotesManager::root
-	VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* ___root_23;
+	VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* ___root_24;
 	// UnityEngine.UIElements.VisualElement NotesManager::popup_content
-	VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* ___popup_content_24;
+	VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* ___popup_content_25;
 	// UnityEngine.UIElements.VisualElement NotesManager::popup_container
-	VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* ___popup_container_25;
+	VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* ___popup_container_26;
 	// UnityEngine.UIElements.VisualElement NotesManager::popup_type_notes
-	VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* ___popup_type_notes_26;
+	VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* ___popup_type_notes_27;
 	// UnityEngine.UIElements.VisualTreeAsset NotesManager::templateItemNote
-	VisualTreeAsset_tFB5BF81F0780A412AE5A7C2C552B3EEA64EA2EEB* ___templateItemNote_27;
+	VisualTreeAsset_tFB5BF81F0780A412AE5A7C2C552B3EEA64EA2EEB* ___templateItemNote_28;
 	// UnityEngine.UIElements.VisualTreeAsset NotesManager::templateSectionNotes
-	VisualTreeAsset_tFB5BF81F0780A412AE5A7C2C552B3EEA64EA2EEB* ___templateSectionNotes_28;
+	VisualTreeAsset_tFB5BF81F0780A412AE5A7C2C552B3EEA64EA2EEB* ___templateSectionNotes_29;
 };
 
 // TMPro.Examples.ObjectSpin

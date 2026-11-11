@@ -17176,29 +17176,29 @@ struct Keywords_t85085F817CDB8F4F8B89A9B71FF4D5ECABEF36F7  : public RuntimeObjec
 {
 };
 
-// NotesManager/<>c__DisplayClass35_0
-struct U3CU3Ec__DisplayClass35_0_t85112C59E696A43BAFBFF4B283CC87D656EA0182  : public RuntimeObject
+// NotesManager/<>c__DisplayClass36_0
+struct U3CU3Ec__DisplayClass36_0_t919F5516EB2624D02C31B8208BB33841477B0F1A  : public RuntimeObject
 {
-	// System.Boolean NotesManager/<>c__DisplayClass35_0::row
+	// System.Boolean NotesManager/<>c__DisplayClass36_0::row
 	bool ___row_0;
-	// System.Int32 NotesManager/<>c__DisplayClass35_0::field
+	// System.Int32 NotesManager/<>c__DisplayClass36_0::field
 	int32_t ___field_1;
-	// System.Int32 NotesManager/<>c__DisplayClass35_0::line
+	// System.Int32 NotesManager/<>c__DisplayClass36_0::line
 	int32_t ___line_2;
-	// System.Int32 NotesManager/<>c__DisplayClass35_0::parentLine
+	// System.Int32 NotesManager/<>c__DisplayClass36_0::parentLine
 	int32_t ___parentLine_3;
-	// System.Int32 NotesManager/<>c__DisplayClass35_0::parentField
+	// System.Int32 NotesManager/<>c__DisplayClass36_0::parentField
 	int32_t ___parentField_4;
 };
 
-// NotesManager/<SetPopupContent>d__37
-struct U3CSetPopupContentU3Ed__37_t6E3915DDC69763B7893DC6620D4558209E9FBCDA  : public RuntimeObject
+// NotesManager/<SetPopupContent>d__38
+struct U3CSetPopupContentU3Ed__38_t3E2F69319C59A1CCDD80F885D25FC5D3E916F2F8  : public RuntimeObject
 {
-	// System.Int32 NotesManager/<SetPopupContent>d__37::<>1__state
+	// System.Int32 NotesManager/<SetPopupContent>d__38::<>1__state
 	int32_t ___U3CU3E1__state_0;
-	// System.Object NotesManager/<SetPopupContent>d__37::<>2__current
+	// System.Object NotesManager/<SetPopupContent>d__38::<>2__current
 	RuntimeObject* ___U3CU3E2__current_1;
-	// NotesManager NotesManager/<SetPopupContent>d__37::<>4__this
+	// NotesManager NotesManager/<SetPopupContent>d__38::<>4__this
 	NotesManager_tD186238281AC6C6DD083D5617258C11C9270050A* ___U3CU3E4__this_2;
 };
 
@@ -66524,18 +66524,18 @@ struct U3CFinishReadingU3Ed__8_t0DB656FBCDD46A3AA9AC30651EF544A45D3C64AF
 	ConfiguredTaskAwaiter_t8FC486401D1951F2426478F2050EE290197B6E80 ___U3CU3Eu__2_6;
 };
 
-// NotesManager/<>c__DisplayClass40_0
-struct U3CU3Ec__DisplayClass40_0_t3C87EE672B934D3289FB7F90362927D1AEDDEF06  : public RuntimeObject
+// NotesManager/<>c__DisplayClass41_0
+struct U3CU3Ec__DisplayClass41_0_t3B057BFBD2AA917B6421CB5C77F19FD9551E93D2  : public RuntimeObject
 {
-	// System.Boolean NotesManager/<>c__DisplayClass40_0::restored
+	// System.Boolean NotesManager/<>c__DisplayClass41_0::restored
 	bool ___restored_0;
-	// UnityEngine.UIElements.VisualElement NotesManager/<>c__DisplayClass40_0::reportRoot
+	// UnityEngine.UIElements.VisualElement NotesManager/<>c__DisplayClass41_0::reportRoot
 	VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* ___reportRoot_1;
-	// UnityEngine.UIElements.StyleEnum`1<UnityEngine.UIElements.Visibility> NotesManager/<>c__DisplayClass40_0::reportVisibility
+	// UnityEngine.UIElements.StyleEnum`1<UnityEngine.UIElements.Visibility> NotesManager/<>c__DisplayClass41_0::reportVisibility
 	StyleEnum_1_t4ADD569E34B475D3DC8CA33E13A80CA59AA1C07D ___reportVisibility_2;
-	// UnityEngine.UIElements.VisualElement NotesManager/<>c__DisplayClass40_0::notesRoot
+	// UnityEngine.UIElements.VisualElement NotesManager/<>c__DisplayClass41_0::notesRoot
 	VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* ___notesRoot_3;
-	// UnityEngine.UIElements.StyleEnum`1<UnityEngine.UIElements.Visibility> NotesManager/<>c__DisplayClass40_0::notesVisibility
+	// UnityEngine.UIElements.StyleEnum`1<UnityEngine.UIElements.Visibility> NotesManager/<>c__DisplayClass41_0::notesVisibility
 	StyleEnum_1_t4ADD569E34B475D3DC8CA33E13A80CA59AA1C07D ___notesVisibility_4;
 };
 
@@ -72391,34 +72391,36 @@ struct NotesManager_tD186238281AC6C6DD083D5617258C11C9270050A  : public MonoBeha
 	MainScript_tE5DA41EF9F6C72F24338683BF923785400FDC5FF* ___mainScript_13;
 	// UnityEngine.UIElements.ScrollView NotesManager::scroller
 	ScrollView_t7CE209084E084FAA0E8DF3CD8E3B8BB9EB27E8D9* ___scroller_14;
+	// UnityEngine.Coroutine NotesManager::popupBuild
+	Coroutine_t85EA685566A254C23F3FD77AB5BDFFFF8799596B* ___popupBuild_15;
 	// System.Single NotesManager::oldScroll
-	float ___oldScroll_15;
+	float ___oldScroll_16;
 	// UnityEngine.UIElements.TextField NotesManager::txtFChanger
-	TextField_tDB34369F9468D7F02670087D9444EC23115827D9* ___txtFChanger_16;
+	TextField_tDB34369F9468D7F02670087D9444EC23115827D9* ___txtFChanger_17;
 	// System.String NotesManager::oldTxtFChanger
-	String_t* ___oldTxtFChanger_17;
+	String_t* ___oldTxtFChanger_18;
 	// UnityEngine.GameObject NotesManager::UIVideo
-	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___UIVideo_18;
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___UIVideo_19;
 	// UnityEngine.GameObject NotesManager::UICamera
-	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___UICamera_19;
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___UICamera_20;
 	// UnityEngine.GameObject NotesManager::UIRapport
-	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___UIRapport_20;
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___UIRapport_21;
 	// UnityEngine.GameObject NotesManager::UIChargement
-	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___UIChargement_21;
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___UIChargement_22;
 	// UnityEngine.UIElements.Button NotesManager::btnFermer
-	Button_t8EC3B431665F84C0B637C11B0EA29236828646C2* ___btnFermer_22;
+	Button_t8EC3B431665F84C0B637C11B0EA29236828646C2* ___btnFermer_23;
 	// UnityEngine.UIElements.VisualElement NotesManager::root
-	VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* ___root_23;
+	VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* ___root_24;
 	// UnityEngine.UIElements.VisualElement NotesManager::popup_content
-	VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* ___popup_content_24;
+	VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* ___popup_content_25;
 	// UnityEngine.UIElements.VisualElement NotesManager::popup_container
-	VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* ___popup_container_25;
+	VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* ___popup_container_26;
 	// UnityEngine.UIElements.VisualElement NotesManager::popup_type_notes
-	VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* ___popup_type_notes_26;
+	VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* ___popup_type_notes_27;
 	// UnityEngine.UIElements.VisualTreeAsset NotesManager::templateItemNote
-	VisualTreeAsset_tFB5BF81F0780A412AE5A7C2C552B3EEA64EA2EEB* ___templateItemNote_27;
+	VisualTreeAsset_tFB5BF81F0780A412AE5A7C2C552B3EEA64EA2EEB* ___templateItemNote_28;
 	// UnityEngine.UIElements.VisualTreeAsset NotesManager::templateSectionNotes
-	VisualTreeAsset_tFB5BF81F0780A412AE5A7C2C552B3EEA64EA2EEB* ___templateSectionNotes_28;
+	VisualTreeAsset_tFB5BF81F0780A412AE5A7C2C552B3EEA64EA2EEB* ___templateSectionNotes_29;
 };
 
 // UnityEngine.UIElements.NumberPadElement
@@ -83629,13 +83631,13 @@ struct U3CU3Ec_t8AD7C84FF9F1064C77B838F0D20F40B9543CBCC3_StaticFields
 
 // System.Net.NetEventSource/Keywords
 
-// NotesManager/<>c__DisplayClass35_0
+// NotesManager/<>c__DisplayClass36_0
 
-// NotesManager/<>c__DisplayClass35_0
+// NotesManager/<>c__DisplayClass36_0
 
-// NotesManager/<SetPopupContent>d__37
+// NotesManager/<SetPopupContent>d__38
 
-// NotesManager/<SetPopupContent>d__37
+// NotesManager/<SetPopupContent>d__38
 
 // Mono.Http.NtlmClient/<>c
 struct U3CU3Ec_t23EC3A439D27907A8B20604CC3FBC3DEA329D4BB_StaticFields
@@ -99793,9 +99795,9 @@ struct __DTString_t732683AF9A8EEC82B66C136920240C4033EF0637_StaticFields
 
 // System.Net.MonoChunkStream/<FinishReading>d__8
 
-// NotesManager/<>c__DisplayClass40_0
+// NotesManager/<>c__DisplayClass41_0
 
-// NotesManager/<>c__DisplayClass40_0
+// NotesManager/<>c__DisplayClass41_0
 
 // System.Threading.OSSpecificSynchronizationContext/InvocationEntryDelegate
 
@@ -112415,11 +112417,11 @@ const Il2CppTypeDefinitionSizes g_typeDefinitionSize4718 = { sizeof(U3CRecreateU
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4719;
 const Il2CppTypeDefinitionSizes g_typeDefinitionSize4719 = { sizeof(MissingReportRecovery_t8695C81812C35AD4086978AD5EEE1E1D3658B1BC), -1, 0, 0 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4720;
-const Il2CppTypeDefinitionSizes g_typeDefinitionSize4720 = { sizeof(U3CU3Ec__DisplayClass35_0_t85112C59E696A43BAFBFF4B283CC87D656EA0182), -1, 0, 0 };
+const Il2CppTypeDefinitionSizes g_typeDefinitionSize4720 = { sizeof(U3CU3Ec__DisplayClass36_0_t919F5516EB2624D02C31B8208BB33841477B0F1A), -1, 0, 0 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4721;
-const Il2CppTypeDefinitionSizes g_typeDefinitionSize4721 = { sizeof(U3CSetPopupContentU3Ed__37_t6E3915DDC69763B7893DC6620D4558209E9FBCDA), -1, 0, 0 };
+const Il2CppTypeDefinitionSizes g_typeDefinitionSize4721 = { sizeof(U3CSetPopupContentU3Ed__38_t3E2F69319C59A1CCDD80F885D25FC5D3E916F2F8), -1, 0, 0 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4722;
-const Il2CppTypeDefinitionSizes g_typeDefinitionSize4722 = { sizeof(U3CU3Ec__DisplayClass40_0_t3C87EE672B934D3289FB7F90362927D1AEDDEF06), -1, 0, 0 };
+const Il2CppTypeDefinitionSizes g_typeDefinitionSize4722 = { sizeof(U3CU3Ec__DisplayClass41_0_t3B057BFBD2AA917B6421CB5C77F19FD9551E93D2), -1, 0, 0 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4723;
 const Il2CppTypeDefinitionSizes g_typeDefinitionSize4723 = { sizeof(NotesManager_tD186238281AC6C6DD083D5617258C11C9270050A), -1, 0, 0 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize4724;
