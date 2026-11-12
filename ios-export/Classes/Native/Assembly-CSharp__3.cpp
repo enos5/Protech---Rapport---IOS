@@ -1097,7 +1097,6 @@ IL2CPP_EXTERN_C String_t* _stringLiteral2EB1AAD2817CB32692DCA8861094214CD46E1F0E
 IL2CPP_EXTERN_C String_t* _stringLiteral32D7FE2602CB3A9964E4F48453DC14F5DE3F0B79;
 IL2CPP_EXTERN_C String_t* _stringLiteral3371C9C28E563AFD0A683CA126F078F3F07B7306;
 IL2CPP_EXTERN_C String_t* _stringLiteral33B1C8862B1FD253D151C0B2FDD46C526D94953A;
-IL2CPP_EXTERN_C String_t* _stringLiteral3555E49011BC1DC579C92C9F27749F9F8B18EE38;
 IL2CPP_EXTERN_C String_t* _stringLiteral35C47F4E23ED5DFBD25DE0F39D91F9C8AF324165;
 IL2CPP_EXTERN_C String_t* _stringLiteral36016D99E3CFB575FDD19CE4CCE3F83574195CC6;
 IL2CPP_EXTERN_C String_t* _stringLiteral36C79D4E6C3B01A5F167F6578C0F2261B097B0EE;
@@ -1117,7 +1116,6 @@ IL2CPP_EXTERN_C String_t* _stringLiteral464F27DA45F806EA61C6EDD25B60F7B34FF4D01A
 IL2CPP_EXTERN_C String_t* _stringLiteral470F54774A1EBD486E3A189BF2DEA62E339C01BC;
 IL2CPP_EXTERN_C String_t* _stringLiteral4916CBCD6D530D4AFC8464E76FCA5E09244CDF2E;
 IL2CPP_EXTERN_C String_t* _stringLiteral4F81FD3DB76F14AA68DE6FC1D38017064FC4D09A;
-IL2CPP_EXTERN_C String_t* _stringLiteral4FA285D998D5DD829F9E53ACEF597A3E317F5EFA;
 IL2CPP_EXTERN_C String_t* _stringLiteral4FDEC748493CCAAC4FF05DAD57960F49B7C62064;
 IL2CPP_EXTERN_C String_t* _stringLiteral509AEEDED03E3C03BBB309C63F825BD4556885C4;
 IL2CPP_EXTERN_C String_t* _stringLiteral52AB91EA6A0939310362B36DF334C7F911A0B2F1;
@@ -1143,6 +1141,7 @@ IL2CPP_EXTERN_C String_t* _stringLiteral688771A0E2C50E4F771C01633046288A9FDF2A54
 IL2CPP_EXTERN_C String_t* _stringLiteral68A56F9D453F38C8B88C3A602107C62B35D23E5D;
 IL2CPP_EXTERN_C String_t* _stringLiteral690470A313F54907357CD9FFD0A5DB6B61F8C375;
 IL2CPP_EXTERN_C String_t* _stringLiteral69A9934EB8DF5FE1317925B6B079EAF140354BE6;
+IL2CPP_EXTERN_C String_t* _stringLiteral69B9E3BC7C3EF8BBEB13E112F71C8A0333B57A3E;
 IL2CPP_EXTERN_C String_t* _stringLiteral69DDDA3DC134603AB27DC767758581B139235AE8;
 IL2CPP_EXTERN_C String_t* _stringLiteral6A487CF8B04D14F3698E950F29FB4074EB99D6FE;
 IL2CPP_EXTERN_C String_t* _stringLiteral6BB44964133F67856EFD782E114666AC29A51722;
@@ -1234,7 +1233,6 @@ IL2CPP_EXTERN_C String_t* _stringLiteralC2DA60AE96E2C9EF3EAF20897A5AA957AFDF64EC
 IL2CPP_EXTERN_C String_t* _stringLiteralC3C4945220515D0E4E544BD534C85203F87D2D39;
 IL2CPP_EXTERN_C String_t* _stringLiteralC3C532E8EBD25B501DDAAE11E265B71796A5295E;
 IL2CPP_EXTERN_C String_t* _stringLiteralC49A8F9AB22B9E1A9F412960A5EDD295780ACECB;
-IL2CPP_EXTERN_C String_t* _stringLiteralC5068665C75F08CDD4CF8AA3ED73CC8E3B9794D7;
 IL2CPP_EXTERN_C String_t* _stringLiteralC5157BA8BBAC7137BF5726ACBE9B949329B80AE9;
 IL2CPP_EXTERN_C String_t* _stringLiteralC65515937CF3E8EBE3C3FC981DC02EF6D36A9E53;
 IL2CPP_EXTERN_C String_t* _stringLiteralC7E6E71CC9B147BA9C236434F72A87AC54B169DF;
@@ -1254,6 +1252,7 @@ IL2CPP_EXTERN_C String_t* _stringLiteralDA39A3EE5E6B4B0D3255BFEF95601890AFD80709
 IL2CPP_EXTERN_C String_t* _stringLiteralDD77282A96F18C5DBAF470331CF19A4749189A20;
 IL2CPP_EXTERN_C String_t* _stringLiteralDDCB9210FF614698FA44BB1D957A83971609C15B;
 IL2CPP_EXTERN_C String_t* _stringLiteralDE829113C20642CB64430645EE951CEB276B5F89;
+IL2CPP_EXTERN_C String_t* _stringLiteralDFF7062481C03343A15B4624E57F5EA20C3F7E59;
 IL2CPP_EXTERN_C String_t* _stringLiteralE069E7F5CCCC601CD42514C287499022175D451D;
 IL2CPP_EXTERN_C String_t* _stringLiteralE0EA945A01C140CAAEB3B8F5781FF34EFEE67EC3;
 IL2CPP_EXTERN_C String_t* _stringLiteralE1038FB641ADA56FBA3E4BCE48749188F9748333;
@@ -1273,6 +1272,7 @@ IL2CPP_EXTERN_C String_t* _stringLiteralF43D4B5456A77CC9C0C6C6056D2F7DE001469086
 IL2CPP_EXTERN_C String_t* _stringLiteralF46DC68DCCC5C6C24CB0451485A0AD90D43376EA;
 IL2CPP_EXTERN_C String_t* _stringLiteralF6449D2E3719EB53A727BAC2301C209B3C8BF517;
 IL2CPP_EXTERN_C String_t* _stringLiteralF792E844E1FCC65A56F3253400C050A830869249;
+IL2CPP_EXTERN_C String_t* _stringLiteralF822707F254AA05E44F26C43CA6FD70FCC457378;
 IL2CPP_EXTERN_C String_t* _stringLiteralF9B5439AA18C77D6F5EEBAFB49F48E67DD9FE1BF;
 IL2CPP_EXTERN_C String_t* _stringLiteralFC4DC3E9ECE11D92680EBFC1EB035604F8770B75;
 IL2CPP_EXTERN_C const RuntimeMethod* Array_FindIndex_TisRapport_t0DED00B7690FCCDE651FB02E35DD4AFF93E927D2_m45E31BED192108442147957DCA6AE6D5E01D8135_RuntimeMethod_var;
@@ -15757,12 +15757,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ListeRapportsManager_AjouterRapport_mF5C
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral1E3CE36BCBF97173256BFC552C17BA70CC782702);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral276C3AD338E8BB96CD7704EFA9E795A0C9D1E172);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral3371C9C28E563AFD0A683CA126F078F3F07B7306);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral3555E49011BC1DC579C92C9F27749F9F8B18EE38);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral45930B7C65FCF0D8163F9407F8F6ACB769C078DA);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral4FA285D998D5DD829F9E53ACEF597A3E317F5EFA);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral5896DE1B6236777B5F02F7B37343F23A434F9C98);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral607FEE95FBDD8EAB79EEA92C5E6B12D4258746A3);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral68A56F9D453F38C8B88C3A602107C62B35D23E5D);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral69B9E3BC7C3EF8BBEB13E112F71C8A0333B57A3E);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral70943F76994B027C8763ED08E8E0FFC6F5101C31);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral7818ED196F993B4205311D580200DB4C829DD362);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral7ED917362A33B4A946A6CF2BCD71F1C606CD3895);
@@ -15770,11 +15769,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ListeRapportsManager_AjouterRapport_mF5C
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralA1EE2BB42122A4080595B7F5DF3BC158A2B48BF5);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralA761215CA9553C95F4DA178612AD8A05A01C05F6);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralB3838D271310652CDD5353D16BE3DB2B64F97E95);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralC5068665C75F08CDD4CF8AA3ED73CC8E3B9794D7);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralDA39A3EE5E6B4B0D3255BFEF95601890AFD80709);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralDFF7062481C03343A15B4624E57F5EA20C3F7E59);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralE0EA945A01C140CAAEB3B8F5781FF34EFEE67EC3);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralEEEF5987D8DFDAC6F6130365DC676D9E788FD9D0);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralF03A07EAC4407B318F80E7A52A51A90A01993FB0);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralF822707F254AA05E44F26C43CA6FD70FCC457378);
 		s_Il2CppMethodInitialized = true;
 	}
 	U3CU3Ec__DisplayClass18_0_t619175E4164577BC0D16D95E8AEDDB5F6C93A5C0* V_0 = NULL;
@@ -15904,7 +15904,7 @@ IL_00a1:
 		}
 	}
 	{
-		// string detail = rapport.sync_server_missing ? "Rapport absent du serveur ? utilisez la r?cup?ration" : rapport.sync_state == "conflict" ? "Conflit ? ouvrez Conflits et copies locales" : string.IsNullOrEmpty(rapport.sync_error) ? "En attente de synchronisation" : "Synchronisation incompl?te ? r?essayez ou contactez le bureau";
+		// string detail = rapport.sync_server_missing ? "Rapport absent du serveur - utilisez la r?cup?ration" : rapport.sync_state == "conflict" ? "Conflit - ouvrez Conflits et copies locales" : string.IsNullOrEmpty(rapport.sync_error) ? "En attente de synchronisation" : "Synchronisation incompl?te - r?essayez ou contactez le bureau";
 		Rapport_t0DED00B7690FCCDE651FB02E35DD4AFF93E927D2* L_39 = ___0_rapport;
 		NullCheck(L_39);
 		bool L_40 = L_39->___sync_server_missing_0;
@@ -15936,7 +15936,7 @@ IL_00a1:
 		}
 	}
 	{
-		G_B11_0 = _stringLiteral4FA285D998D5DD829F9E53ACEF597A3E317F5EFA;
+		G_B11_0 = _stringLiteralF822707F254AA05E44F26C43CA6FD70FCC457378;
 		goto IL_012c;
 	}
 
@@ -15948,13 +15948,13 @@ IL_0119:
 
 IL_0120:
 	{
-		G_B11_0 = _stringLiteralC5068665C75F08CDD4CF8AA3ED73CC8E3B9794D7;
+		G_B11_0 = _stringLiteralDFF7062481C03343A15B4624E57F5EA20C3F7E59;
 		goto IL_012c;
 	}
 
 IL_0127:
 	{
-		G_B11_0 = _stringLiteral3555E49011BC1DC579C92C9F27749F9F8B18EE38;
+		G_B11_0 = _stringLiteral69B9E3BC7C3EF8BBEB13E112F71C8A0333B57A3E;
 	}
 
 IL_012c:

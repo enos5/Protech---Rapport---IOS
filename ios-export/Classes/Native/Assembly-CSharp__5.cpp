@@ -1332,12 +1332,12 @@ IL2CPP_EXTERN_C String_t* _stringLiteral7DEB4315D5B2C489242CC4AC9FBB7027179477E2
 IL2CPP_EXTERN_C String_t* _stringLiteral7F2272229FB4ED710BD02E9F62812436D89C283C;
 IL2CPP_EXTERN_C String_t* _stringLiteral8080E17675C1B9BA53954D9B284CFDAD5BBAD0FD;
 IL2CPP_EXTERN_C String_t* _stringLiteral80D9953CE9F8E26CAE9D8EDB42ED0637E451FCE1;
-IL2CPP_EXTERN_C String_t* _stringLiteral81D896DDADBFFC05528281FF9CFEE017D23563EE;
 IL2CPP_EXTERN_C String_t* _stringLiteral822FAF131914E28B594592D8365459B60E1CE15F;
 IL2CPP_EXTERN_C String_t* _stringLiteral876C4B39B6E4D0187090400768899C71D99DE90D;
 IL2CPP_EXTERN_C String_t* _stringLiteral89487254CCF55296ACC80B8660A14ADE141E6868;
 IL2CPP_EXTERN_C String_t* _stringLiteral90A4E7C955A1315612ED6E3C79BDDAC700772AF3;
 IL2CPP_EXTERN_C String_t* _stringLiteral951CCB49640C8F9E81FB4E0D82730321F4E15BB3;
+IL2CPP_EXTERN_C String_t* _stringLiteral960E5E7F211EFF3243DF14EDD1901DC9EF314D62;
 IL2CPP_EXTERN_C String_t* _stringLiteral97BA52F16D6634F698F0059CBBC07D3302FFD843;
 IL2CPP_EXTERN_C String_t* _stringLiteral996E5360F80E16B2189CC1E536C91CE68083F694;
 IL2CPP_EXTERN_C String_t* _stringLiteral998B0D34C2146839DE91B8ECF9ABD26D0AB223B9;
@@ -26059,7 +26059,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ComparisonSummary_t91F59D9849D84788688B1A5804
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&U3CU3Ec__DisplayClass13_0_tBD7AA14738C0CFE42CA5A3695AE4AC94F385324A_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&U3CU3Ec_tC2F2027299BE1FFF6752C7605D673D6009AED7E9_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral233A2215CFA02F30EAF985F8C4E3067FA3A12FDA);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral81D896DDADBFFC05528281FF9CFEE017D23563EE);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral960E5E7F211EFF3243DF14EDD1901DC9EF314D62);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral998B0D34C2146839DE91B8ECF9ABD26D0AB223B9);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralC04E60A077B2B8D0B1743F56BF9589414DB7F39B);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralDD20A4ABE85826C9E1FB7E7CF231364434408BFA);
@@ -26333,8 +26333,8 @@ IL_00bf:
 		//     ServerAttachments = ((JArray)review["files"]).Count,
 		//     DifferentFields = differences.Select(key => key.Split(':')[0]).Distinct().Count(),
 		//     FormChanged = !localFields.Select(field => field.id + ":" + field.type).OrderBy(key => key).SequenceEqual(remoteFields.Select(field => field.id + ":" + field.type).OrderBy(key => key)),
-		//     LocalModified = FormatModified(local) + " ? " + (local.modifie_par ?? "utilisateur inconnu"),
-		//     ServerModified = FormatModified(remote) + " ? " + (remote.modifie_par ?? "utilisateur inconnu"),
+		//     LocalModified = FormatModified(local) + " - " + (local.modifie_par ?? "utilisateur inconnu"),
+		//     ServerModified = FormatModified(remote) + " - " + (remote.modifie_par ?? "utilisateur inconnu"),
 		//     LocalStatus = local.statut ?? "inconnu",
 		//     ServerStatus = remote.statut ?? "inconnu",
 		//     BuildingDiffers = service.infos_batiment != (string)review["service"]?["infos_batiment"]
@@ -26622,14 +26622,14 @@ IL_020a:
 		String_t* L_111 = L_110->___modifie_par_27;
 		String_t* L_112 = L_111;
 		G_B19_0 = L_112;
-		G_B19_1 = _stringLiteral81D896DDADBFFC05528281FF9CFEE017D23563EE;
+		G_B19_1 = _stringLiteral960E5E7F211EFF3243DF14EDD1901DC9EF314D62;
 		G_B19_2 = L_109;
 		G_B19_3 = L_107;
 		G_B19_4 = L_107;
 		if (L_112)
 		{
 			G_B20_0 = L_112;
-			G_B20_1 = _stringLiteral81D896DDADBFFC05528281FF9CFEE017D23563EE;
+			G_B20_1 = _stringLiteral960E5E7F211EFF3243DF14EDD1901DC9EF314D62;
 			G_B20_2 = L_109;
 			G_B20_3 = L_107;
 			G_B20_4 = L_107;
@@ -26661,14 +26661,14 @@ IL_0237:
 		String_t* L_118 = L_117->___modifie_par_27;
 		String_t* L_119 = L_118;
 		G_B21_0 = L_119;
-		G_B21_1 = _stringLiteral81D896DDADBFFC05528281FF9CFEE017D23563EE;
+		G_B21_1 = _stringLiteral960E5E7F211EFF3243DF14EDD1901DC9EF314D62;
 		G_B21_2 = L_116;
 		G_B21_3 = L_114;
 		G_B21_4 = L_114;
 		if (L_119)
 		{
 			G_B22_0 = L_119;
-			G_B22_1 = _stringLiteral81D896DDADBFFC05528281FF9CFEE017D23563EE;
+			G_B22_1 = _stringLiteral960E5E7F211EFF3243DF14EDD1901DC9EF314D62;
 			G_B22_2 = L_116;
 			G_B22_3 = L_114;
 			G_B22_4 = L_114;
