@@ -355,8 +355,8 @@ extern void AttachmentJournal_Release_m922DC0EDB31384E8B6835DC2D1CA76F0CF0282EF 
 extern void AttachmentJournal_WriteFile_mE25899A13B310DB7B8E42AE3E477F714EF4CAEC7 (void);
 // 0x000000B6 System.Collections.Generic.IEnumerable`1<System.String> AttachmentJournal::FilesUnder(System.String)
 extern void AttachmentJournal_FilesUnder_m6214A827D7971DAFE416AD3BA0DB6E90A87D7B7E (void);
-// 0x000000B7 System.Void AttachmentJournal::References(Newtonsoft.Json.Linq.JToken,System.Collections.Generic.HashSet`1<System.String>,System.String)
-extern void AttachmentJournal_References_m5C02AB9B480FF0CEA52EC3B49EBAAF69082CC038 (void);
+// 0x000000B7 System.Void AttachmentJournal::References(Newtonsoft.Json.Linq.JToken,System.Collections.Generic.HashSet`1<System.String>,System.String,System.Action`1<System.String>,System.String)
+extern void AttachmentJournal_References_m9F30DDAA75878C2A7C7DBCEA942D7927AC56B373 (void);
 // 0x000000B8 System.Int32 AttachmentJournal::Cleanup(MainScript,System.Collections.Generic.IEnumerable`1<ServiceClient>,System.Nullable`1<System.DateTime>)
 extern void AttachmentJournal_Cleanup_mBCA4181A9303D989844112BBCE855A57C49F53DE (void);
 // 0x000000B9 System.Collections.IEnumerator AttachmentJournal::CleanupAsync(MainScript,System.Collections.Generic.IEnumerable`1<ServiceClient>)
@@ -6341,7 +6341,7 @@ static Il2CppMethodPointer s_methodPointers[3096] =
 	AttachmentJournal_Release_m922DC0EDB31384E8B6835DC2D1CA76F0CF0282EF,
 	AttachmentJournal_WriteFile_mE25899A13B310DB7B8E42AE3E477F714EF4CAEC7,
 	AttachmentJournal_FilesUnder_m6214A827D7971DAFE416AD3BA0DB6E90A87D7B7E,
-	AttachmentJournal_References_m5C02AB9B480FF0CEA52EC3B49EBAAF69082CC038,
+	AttachmentJournal_References_m9F30DDAA75878C2A7C7DBCEA942D7927AC56B373,
 	AttachmentJournal_Cleanup_mBCA4181A9303D989844112BBCE855A57C49F53DE,
 	AttachmentJournal_CleanupAsync_m1C93372A97DF5A1A9BD12CAC6C7D3A2596888520,
 	AttachmentJournal_CleanupCore_m5BA8DD98D0DFB499841E0B18A706F08570DC177C,
@@ -9445,7 +9445,7 @@ static const int32_t s_InvokerIndices[3096] =
 	9522,
 	8158,
 	9257,
-	8161,
+	7172,
 	7858,
 	8577,
 	6741,

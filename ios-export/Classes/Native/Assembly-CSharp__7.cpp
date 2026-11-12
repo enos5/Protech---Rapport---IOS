@@ -29368,7 +29368,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* SyncBatchResult_UserMessage_mDA17B2
 	}
 	{
 		// if (Success) return Reports.Count + " rapport(s) synchronis?(s)\n" +
-		//     string.Join("\n", Reports.Select(report => "? " + Escape(report.Title))) +
+		//     string.Join("\n", Reports.Select(report => "OK ? " + Escape(report.Title))) +
 		//     (HasMissingWarnings?"\n\nContenu disponible et statut confirm?s.\n\n"+MissingAttachmentInfo.WarningText(Reports.SelectMany(report=>report.MissingAttachments)):
 		//         "\n\nContenu, pi?ces jointes et statut confirm?s.");
 		List_1_tFFE92CF6EB735EA1B0C73BC572029339155A38D7* L_1 = __this->___Reports_0;
@@ -29504,7 +29504,7 @@ IL_009f:
 IL_00a5:
 	{
 		// return string.Join("\n\n", Reports.Select(report =>
-		//     (report.Success ? "? " : "? ") + Escape(report.Title) + " : " + Escape(report.Message))) +
+		//     (report.Success ? "OK ? " : "? ") + Escape(report.Title) + " : " + Escape(report.Message))) +
 		//     (Reports.Any(item=>item.MissingAttachments.Count>0)
 		//         ? "\n\nLes r?ponses et les fichiers disponibles sont conserv?s.\n\n"+MissingAttachmentInfo.WarningText(Reports.SelectMany(report=>report.MissingAttachments))
 		//         : "\n\nLes ?l?ments non confirm?s restent sur cette tablette. Fermez ce message pour continuer; r?essayez Synchroniser lorsque la connexion est disponible. En cas de refus ou de conflit, contactez le bureau.");
