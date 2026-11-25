@@ -5022,6 +5022,9 @@ IL2CPP_EXTERN_C int32_t DEFAULT_CALL SystemNative_MkDir(char*, int32_t);
 IL2CPP_EXTERN_C int32_t DEFAULT_CALL SystemNative_Rename(char*, char*);
 #endif
 #if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_System_INTERNAL
+IL2CPP_EXTERN_C int32_t DEFAULT_CALL SystemNative_RmDir(char*);
+#endif
+#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_System_INTERNAL
 IL2CPP_EXTERN_C int32_t DEFAULT_CALL SystemNative_Unlink(char*);
 #endif
 #ifdef __clang__
@@ -6179,6 +6182,25 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Sys_Rename_mF38C4FBCF2C68EB495DF9E885
 	// Marshaling cleanup of parameter '___1_newPath' native representation
 	il2cpp_codegen_marshal_free(____1_newPath_marshaled);
 	____1_newPath_marshaled = NULL;
+
+	return returnValue;
+}
+// System.Int32 Interop/Sys::RmDir(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Sys_RmDir_m5F7F7E79C110B8B12D7C8AFF4B2507F766340BF8 (String_t* ___0_path, const RuntimeMethod* method) 
+{
+	typedef int32_t (DEFAULT_CALL *PInvokeFunc) (char*);
+
+	// Marshaling of parameter '___0_path' to native representation
+	char* ____0_path_marshaled = NULL;
+	____0_path_marshaled = il2cpp_codegen_marshal_string(___0_path);
+
+	// Native function invocation
+	int32_t returnValue = reinterpret_cast<PInvokeFunc>(SystemNative_RmDir)(____0_path_marshaled);
+	il2cpp_codegen_marshal_store_last_error();
+
+	// Marshaling cleanup of parameter '___0_path' native representation
+	il2cpp_codegen_marshal_free(____0_path_marshaled);
+	____0_path_marshaled = NULL;
 
 	return returnValue;
 }

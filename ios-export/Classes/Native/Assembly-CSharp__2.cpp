@@ -5721,54 +5721,60 @@ struct MainScript_tE5DA41EF9F6C72F24338683BF923785400FDC5FF  : public MonoBehavi
 {
 	// System.String MainScript::loadedCacheIdentity
 	String_t* ___loadedCacheIdentity_4;
+	// System.Boolean MainScript::dashboardServiceCommit
+	bool ___dashboardServiceCommit_5;
+	// System.Int32 MainScript::activeServicePersistenceBatches
+	int32_t ___activeServicePersistenceBatches_6;
+	// System.Int32 MainScript::activeAttachmentDownloaders
+	int32_t ___activeAttachmentDownloaders_7;
 	// UnityEngine.GameObject MainScript::goAlerte
-	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___goAlerte_5;
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___goAlerte_8;
 	// UnityEngine.GameObject MainScript::goChargement
-	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___goChargement_6;
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___goChargement_9;
 	// System.Collections.Generic.List`1<ServiceClient> MainScript::listeServices
-	List_1_t44AE1E098C20DCB6502FBFF0DC2FCB3A908D8F53* ___listeServices_7;
+	List_1_t44AE1E098C20DCB6502FBFF0DC2FCB3A908D8F53* ___listeServices_10;
 	// System.Collections.Generic.SortedList`2<System.Int32,System.String> MainScript::lstTypesSystemes
-	SortedList_2_t04C82F5C32B9BF01784646A86D3645CE27ADBF7B* ___lstTypesSystemes_8;
+	SortedList_2_t04C82F5C32B9BF01784646A86D3645CE27ADBF7B* ___lstTypesSystemes_11;
 	// System.Collections.Generic.SortedList`2<System.Int32,System.String> MainScript::lstRapportsPossibles
-	SortedList_2_t04C82F5C32B9BF01784646A86D3645CE27ADBF7B* ___lstRapportsPossibles_9;
+	SortedList_2_t04C82F5C32B9BF01784646A86D3645CE27ADBF7B* ___lstRapportsPossibles_12;
 	// System.String MainScript::token
-	String_t* ___token_10;
+	String_t* ___token_13;
 	// System.String MainScript::pwdapi
-	String_t* ___pwdapi_11;
+	String_t* ___pwdapi_14;
 	// System.String MainScript::apiurl
-	String_t* ___apiurl_12;
+	String_t* ___apiurl_15;
 	// System.String MainScript::userapi
-	String_t* ___userapi_13;
+	String_t* ___userapi_16;
 	// UnityEngine.Color MainScript::themeColor
-	Color_tD001788D726C3A7F1379BEED0260B9591F440C1F ___themeColor_14;
+	Color_tD001788D726C3A7F1379BEED0260B9591F440C1F ___themeColor_17;
 	// System.String MainScript::pageActuelle
-	String_t* ___pageActuelle_15;
+	String_t* ___pageActuelle_18;
 	// System.Boolean MainScript::chargerIcones
-	bool ___chargerIcones_16;
+	bool ___chargerIcones_19;
 	// System.Int32 MainScript::clientSelectionne
-	int32_t ___clientSelectionne_17;
+	int32_t ___clientSelectionne_20;
 	// System.Boolean MainScript::<SyncInProgress>k__BackingField
-	bool ___U3CSyncInProgressU3Ek__BackingField_18;
+	bool ___U3CSyncInProgressU3Ek__BackingField_21;
 	// System.Boolean MainScript::<SyncCancelRequested>k__BackingField
-	bool ___U3CSyncCancelRequestedU3Ek__BackingField_19;
+	bool ___U3CSyncCancelRequestedU3Ek__BackingField_22;
 	// System.Int32 MainScript::rapportSelectionne
-	int32_t ___rapportSelectionne_20;
+	int32_t ___rapportSelectionne_23;
 	// Utilisateur MainScript::utilisateurConnecte
-	Utilisateur_t399C56C6363780D4DA5137388DCAEB935ACB902E* ___utilisateurConnecte_21;
+	Utilisateur_t399C56C6363780D4DA5137388DCAEB935ACB902E* ___utilisateurConnecte_24;
 	// System.Int32 MainScript::bonTravailSelectionne
-	int32_t ___bonTravailSelectionne_22;
+	int32_t ___bonTravailSelectionne_25;
 	// System.Boolean MainScript::chargerListeRapports
-	bool ___chargerListeRapports_23;
+	bool ___chargerListeRapports_26;
 	// System.Int32 MainScript::loadingItems
-	int32_t ___loadingItems_24;
+	int32_t ___loadingItems_27;
 	// System.Collections.Generic.List`1<IconeDessin> MainScript::iconesDessin
-	List_1_tB4085072474C8F65C8A07B19DF716B18531F6B83* ___iconesDessin_25;
+	List_1_tB4085072474C8F65C8A07B19DF716B18531F6B83* ___iconesDessin_28;
 	// System.Boolean MainScript::debug
-	bool ___debug_26;
+	bool ___debug_29;
 	// System.Boolean MainScript::debug_internet
-	bool ___debug_internet_27;
+	bool ___debug_internet_30;
 	// System.Collections.Generic.List`1<EnvironmentSettings> MainScript::config
-	List_1_tCE83489DED8CE3A1BC7813AA1DD2916C78D7C6AC* ___config_28;
+	List_1_tCE83489DED8CE3A1BC7813AA1DD2916C78D7C6AC* ___config_31;
 };
 
 // NotesManager
@@ -15838,8 +15844,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ConnexionManager_Start_mB5DC1F0595ACECDB
 		MainScript_tE5DA41EF9F6C72F24338683BF923785400FDC5FF* L_9 = ((AppManager_tD5155B839026DE8E1F63F8868048F9CF8B26ED0C*)__this)->___mainScript_10;
 		Utilisateur_t399C56C6363780D4DA5137388DCAEB935ACB902E* L_10 = __this->___utilisateurapi_14;
 		NullCheck(L_9);
-		L_9->___utilisateurConnecte_21 = L_10;
-		Il2CppCodeGenWriteBarrier((void**)(&L_9->___utilisateurConnecte_21), (void*)L_10);
+		L_9->___utilisateurConnecte_24 = L_10;
+		Il2CppCodeGenWriteBarrier((void**)(&L_9->___utilisateurConnecte_24), (void*)L_10);
 		// if (PlayerPrefs.HasKey("nom") && PlayerPrefs.HasKey("mdp") && PlayerPrefs.HasKey("id_employe")){
 		bool L_11;
 		L_11 = PlayerPrefs_HasKey_mCA5C64BBA6BF8B230BC3BC92B4761DD3B11D4668(_stringLiteralBEF5050E9E10E891009BCA8220852032F0CA3365, NULL);
@@ -16384,7 +16390,7 @@ IL_001f_1:
 				NullCheck(L_6);
 				MainScript_tE5DA41EF9F6C72F24338683BF923785400FDC5FF* L_7 = ((AppManager_tD5155B839026DE8E1F63F8868048F9CF8B26ED0C*)L_6)->___mainScript_10;
 				NullCheck(L_7);
-				String_t* L_8 = L_7->___apiurl_12;
+				String_t* L_8 = L_7->___apiurl_15;
 				__this->___U3CapiurlU3E5__2_3 = L_8;
 				Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CapiurlU3E5__2_3), (void*)L_8);
 				// string param = "?filtre%5Butilisateur%7C%3D%5D=" + utilisateurapi.nom + "&filtre%5Bpwd%7C%3D%5D=" + utilisateurapi.mdp;
@@ -16443,7 +16449,7 @@ IL_001f_1:
 				NullCheck(L_28);
 				MainScript_tE5DA41EF9F6C72F24338683BF923785400FDC5FF* L_29 = ((AppManager_tD5155B839026DE8E1F63F8868048F9CF8B26ED0C*)L_28)->___mainScript_10;
 				NullCheck(L_29);
-				bool L_30 = L_29->___debug_26;
+				bool L_30 = L_29->___debug_29;
 				if (!L_30)
 				{
 					goto IL_0114_1;
@@ -16797,8 +16803,8 @@ IL_030f_1:
 				NullCheck(L_135);
 				Utilisateur_t399C56C6363780D4DA5137388DCAEB935ACB902E* L_136 = L_135->___utilisateurapi_14;
 				NullCheck(L_134);
-				L_134->___utilisateurConnecte_21 = L_136;
-				Il2CppCodeGenWriteBarrier((void**)(&L_134->___utilisateurConnecte_21), (void*)L_136);
+				L_134->___utilisateurConnecte_24 = L_136;
+				Il2CppCodeGenWriteBarrier((void**)(&L_134->___utilisateurConnecte_24), (void*)L_136);
 				// compteValider = true;
 				ConnexionManager_tDB0BFE9B0519A3E1CEAFD9E405D24A2675D1EF4E* L_137 = V_2;
 				NullCheck(L_137);
@@ -17116,7 +17122,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__DisplayClass64_0_U3CSetOnUsageU
 		NullCheck(L_11);
 		MainScript_tE5DA41EF9F6C72F24338683BF923785400FDC5FF* L_12 = ((AppManager_tD5155B839026DE8E1F63F8868048F9CF8B26ED0C*)L_11)->___mainScript_10;
 		NullCheck(L_12);
-		Utilisateur_t399C56C6363780D4DA5137388DCAEB935ACB902E* L_13 = L_12->___utilisateurConnecte_21;
+		Utilisateur_t399C56C6363780D4DA5137388DCAEB935ACB902E* L_13 = L_12->___utilisateurConnecte_24;
 		NullCheck(L_13);
 		int32_t L_14 = L_13->___id_0;
 		NullCheck(L_7);
@@ -17895,7 +17901,7 @@ IL_00c8:
 		NullCheck(L_39);
 		MainScript_tE5DA41EF9F6C72F24338683BF923785400FDC5FF* L_40 = ((AppManager_tD5155B839026DE8E1F63F8868048F9CF8B26ED0C*)L_39)->___mainScript_10;
 		NullCheck(L_40);
-		int32_t L_41 = L_40->___clientSelectionne_17;
+		int32_t L_41 = L_40->___clientSelectionne_20;
 		if ((((int32_t)L_41) == ((int32_t)(-1))))
 		{
 			goto IL_0299;
@@ -17906,7 +17912,7 @@ IL_00c8:
 		NullCheck(L_42);
 		MainScript_tE5DA41EF9F6C72F24338683BF923785400FDC5FF* L_43 = ((AppManager_tD5155B839026DE8E1F63F8868048F9CF8B26ED0C*)L_42)->___mainScript_10;
 		NullCheck(L_43);
-		int32_t L_44 = L_43->___rapportSelectionne_20;
+		int32_t L_44 = L_43->___rapportSelectionne_23;
 		if ((((int32_t)L_44) == ((int32_t)(-1))))
 		{
 			goto IL_0299;
@@ -17923,12 +17929,12 @@ IL_00c8:
 		NullCheck(L_46);
 		MainScript_tE5DA41EF9F6C72F24338683BF923785400FDC5FF* L_47 = ((AppManager_tD5155B839026DE8E1F63F8868048F9CF8B26ED0C*)L_46)->___mainScript_10;
 		NullCheck(L_47);
-		List_1_t44AE1E098C20DCB6502FBFF0DC2FCB3A908D8F53* L_48 = L_47->___listeServices_7;
+		List_1_t44AE1E098C20DCB6502FBFF0DC2FCB3A908D8F53* L_48 = L_47->___listeServices_10;
 		ContenuRapportManager_t1246C45A36047FA097C07FFB64574E5974E068E4* L_49 = V_1;
 		NullCheck(L_49);
 		MainScript_tE5DA41EF9F6C72F24338683BF923785400FDC5FF* L_50 = ((AppManager_tD5155B839026DE8E1F63F8868048F9CF8B26ED0C*)L_49)->___mainScript_10;
 		NullCheck(L_50);
-		int32_t L_51 = L_50->___clientSelectionne_17;
+		int32_t L_51 = L_50->___clientSelectionne_20;
 		NullCheck(L_48);
 		ServiceClient_t07C84893BDB4121BAF09BDF559688F4714F9541D* L_52;
 		L_52 = List_1_get_Item_m39EDDFB4EF7DA1D70754CA9E59200E1F55D17014(L_48, L_51, List_1_get_Item_m39EDDFB4EF7DA1D70754CA9E59200E1F55D17014_RuntimeMethod_var);
@@ -17938,7 +17944,7 @@ IL_00c8:
 		NullCheck(L_54);
 		MainScript_tE5DA41EF9F6C72F24338683BF923785400FDC5FF* L_55 = ((AppManager_tD5155B839026DE8E1F63F8868048F9CF8B26ED0C*)L_54)->___mainScript_10;
 		NullCheck(L_55);
-		int32_t L_56 = L_55->___rapportSelectionne_20;
+		int32_t L_56 = L_55->___rapportSelectionne_23;
 		NullCheck(L_53);
 		int32_t L_57 = L_56;
 		Rapport_t0DED00B7690FCCDE651FB02E35DD4AFF93E927D2* L_58 = (L_53)->GetAt(static_cast<il2cpp_array_size_t>(L_57));
@@ -21705,7 +21711,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__DisplayClass88_0_U3CSystemeU3Eb
 		NullCheck(L_2);
 		MainScript_tE5DA41EF9F6C72F24338683BF923785400FDC5FF* L_3 = ((AppManager_tD5155B839026DE8E1F63F8868048F9CF8B26ED0C*)L_2)->___mainScript_10;
 		NullCheck(L_3);
-		int32_t L_4 = L_3->___rapportSelectionne_20;
+		int32_t L_4 = L_3->___rapportSelectionne_23;
 		NullCheck(L_1);
 		L_1->___prev_index_report_20 = L_4;
 		// GetComponent<ListeRapportsManager>().prev_index_client = mainScript.clientSelectionne;
@@ -21717,7 +21723,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__DisplayClass88_0_U3CSystemeU3Eb
 		NullCheck(L_7);
 		MainScript_tE5DA41EF9F6C72F24338683BF923785400FDC5FF* L_8 = ((AppManager_tD5155B839026DE8E1F63F8868048F9CF8B26ED0C*)L_7)->___mainScript_10;
 		NullCheck(L_8);
-		int32_t L_9 = L_8->___clientSelectionne_17;
+		int32_t L_9 = L_8->___clientSelectionne_20;
 		NullCheck(L_6);
 		L_6->___prev_index_client_21 = L_9;
 		// setOldScroll();
@@ -21734,7 +21740,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__DisplayClass88_0_U3CSystemeU3Eb
 		NullCheck(L_13);
 		MainScript_tE5DA41EF9F6C72F24338683BF923785400FDC5FF* L_14 = ((AppManager_tD5155B839026DE8E1F63F8868048F9CF8B26ED0C*)L_13)->___mainScript_10;
 		NullCheck(L_14);
-		int32_t L_15 = L_14->___clientSelectionne_17;
+		int32_t L_15 = L_14->___clientSelectionne_20;
 		ContenuRapportManager_t1246C45A36047FA097C07FFB64574E5974E068E4* L_16 = __this->___U3CU3E4__this_0;
 		NullCheck(L_16);
 		String_t* L_17 = L_16->___container_name_60;
@@ -21809,12 +21815,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__DisplayClass88_0_U3CSystemeU3Eb
 		NullCheck(L_39);
 		MainScript_tE5DA41EF9F6C72F24338683BF923785400FDC5FF* L_40 = ((AppManager_tD5155B839026DE8E1F63F8868048F9CF8B26ED0C*)L_39)->___mainScript_10;
 		NullCheck(L_40);
-		List_1_t44AE1E098C20DCB6502FBFF0DC2FCB3A908D8F53* L_41 = L_40->___listeServices_7;
+		List_1_t44AE1E098C20DCB6502FBFF0DC2FCB3A908D8F53* L_41 = L_40->___listeServices_10;
 		ContenuRapportManager_t1246C45A36047FA097C07FFB64574E5974E068E4* L_42 = __this->___U3CU3E4__this_0;
 		NullCheck(L_42);
 		MainScript_tE5DA41EF9F6C72F24338683BF923785400FDC5FF* L_43 = ((AppManager_tD5155B839026DE8E1F63F8868048F9CF8B26ED0C*)L_42)->___mainScript_10;
 		NullCheck(L_43);
-		int32_t L_44 = L_43->___clientSelectionne_17;
+		int32_t L_44 = L_43->___clientSelectionne_20;
 		NullCheck(L_41);
 		ServiceClient_t07C84893BDB4121BAF09BDF559688F4714F9541D* L_45;
 		L_45 = List_1_get_Item_m39EDDFB4EF7DA1D70754CA9E59200E1F55D17014(L_41, L_44, List_1_get_Item_m39EDDFB4EF7DA1D70754CA9E59200E1F55D17014_RuntimeMethod_var);
@@ -21971,12 +21977,12 @@ IL_01d5:
 		NullCheck(L_80);
 		MainScript_tE5DA41EF9F6C72F24338683BF923785400FDC5FF* L_81 = ((AppManager_tD5155B839026DE8E1F63F8868048F9CF8B26ED0C*)L_80)->___mainScript_10;
 		NullCheck(L_81);
-		List_1_t44AE1E098C20DCB6502FBFF0DC2FCB3A908D8F53* L_82 = L_81->___listeServices_7;
+		List_1_t44AE1E098C20DCB6502FBFF0DC2FCB3A908D8F53* L_82 = L_81->___listeServices_10;
 		ContenuRapportManager_t1246C45A36047FA097C07FFB64574E5974E068E4* L_83 = __this->___U3CU3E4__this_0;
 		NullCheck(L_83);
 		MainScript_tE5DA41EF9F6C72F24338683BF923785400FDC5FF* L_84 = ((AppManager_tD5155B839026DE8E1F63F8868048F9CF8B26ED0C*)L_83)->___mainScript_10;
 		NullCheck(L_84);
-		int32_t L_85 = L_84->___clientSelectionne_17;
+		int32_t L_85 = L_84->___clientSelectionne_20;
 		NullCheck(L_82);
 		ServiceClient_t07C84893BDB4121BAF09BDF559688F4714F9541D* L_86;
 		L_86 = List_1_get_Item_m39EDDFB4EF7DA1D70754CA9E59200E1F55D17014(L_82, L_85, List_1_get_Item_m39EDDFB4EF7DA1D70754CA9E59200E1F55D17014_RuntimeMethod_var);
@@ -22308,14 +22314,14 @@ IL_00a3:
 		NullCheck(L_33);
 		MainScript_tE5DA41EF9F6C72F24338683BF923785400FDC5FF* L_34 = ((AppManager_tD5155B839026DE8E1F63F8868048F9CF8B26ED0C*)L_33)->___mainScript_10;
 		NullCheck(L_34);
-		List_1_t44AE1E098C20DCB6502FBFF0DC2FCB3A908D8F53* L_35 = L_34->___listeServices_7;
+		List_1_t44AE1E098C20DCB6502FBFF0DC2FCB3A908D8F53* L_35 = L_34->___listeServices_10;
 		U3CU3Ec__DisplayClass88_0_tB6ECBC7EBC9D861BADA594729C513CAC1992F92E* L_36 = __this->___CSU24U3CU3E8__locals1_1;
 		NullCheck(L_36);
 		ContenuRapportManager_t1246C45A36047FA097C07FFB64574E5974E068E4* L_37 = L_36->___U3CU3E4__this_0;
 		NullCheck(L_37);
 		MainScript_tE5DA41EF9F6C72F24338683BF923785400FDC5FF* L_38 = ((AppManager_tD5155B839026DE8E1F63F8868048F9CF8B26ED0C*)L_37)->___mainScript_10;
 		NullCheck(L_38);
-		int32_t L_39 = L_38->___clientSelectionne_17;
+		int32_t L_39 = L_38->___clientSelectionne_20;
 		NullCheck(L_35);
 		ServiceClient_t07C84893BDB4121BAF09BDF559688F4714F9541D* L_40;
 		L_40 = List_1_get_Item_m39EDDFB4EF7DA1D70754CA9E59200E1F55D17014(L_35, L_39, List_1_get_Item_m39EDDFB4EF7DA1D70754CA9E59200E1F55D17014_RuntimeMethod_var);
@@ -26401,12 +26407,12 @@ IL_0091:
 		NullCheck(L_24);
 		MainScript_tE5DA41EF9F6C72F24338683BF923785400FDC5FF* L_25 = ((AppManager_tD5155B839026DE8E1F63F8868048F9CF8B26ED0C*)L_24)->___mainScript_10;
 		NullCheck(L_25);
-		List_1_t44AE1E098C20DCB6502FBFF0DC2FCB3A908D8F53* L_26 = L_25->___listeServices_7;
+		List_1_t44AE1E098C20DCB6502FBFF0DC2FCB3A908D8F53* L_26 = L_25->___listeServices_10;
 		ContenuRapportManager_t1246C45A36047FA097C07FFB64574E5974E068E4* L_27 = __this->___U3CU3E4__this_0;
 		NullCheck(L_27);
 		MainScript_tE5DA41EF9F6C72F24338683BF923785400FDC5FF* L_28 = ((AppManager_tD5155B839026DE8E1F63F8868048F9CF8B26ED0C*)L_27)->___mainScript_10;
 		NullCheck(L_28);
-		int32_t L_29 = L_28->___clientSelectionne_17;
+		int32_t L_29 = L_28->___clientSelectionne_20;
 		NullCheck(L_26);
 		ServiceClient_t07C84893BDB4121BAF09BDF559688F4714F9541D* L_30;
 		L_30 = List_1_get_Item_m39EDDFB4EF7DA1D70754CA9E59200E1F55D17014(L_26, L_29, List_1_get_Item_m39EDDFB4EF7DA1D70754CA9E59200E1F55D17014_RuntimeMethod_var);
@@ -26416,7 +26422,7 @@ IL_0091:
 		NullCheck(L_32);
 		MainScript_tE5DA41EF9F6C72F24338683BF923785400FDC5FF* L_33 = ((AppManager_tD5155B839026DE8E1F63F8868048F9CF8B26ED0C*)L_32)->___mainScript_10;
 		NullCheck(L_33);
-		int32_t L_34 = L_33->___rapportSelectionne_20;
+		int32_t L_34 = L_33->___rapportSelectionne_23;
 		NullCheck(L_31);
 		int32_t L_35 = L_34;
 		Rapport_t0DED00B7690FCCDE651FB02E35DD4AFF93E927D2* L_36 = (L_31)->GetAt(static_cast<il2cpp_array_size_t>(L_35));
@@ -26920,7 +26926,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__DisplayClass153_2_U3CActionAjou
 		NullCheck(L_7);
 		MainScript_tE5DA41EF9F6C72F24338683BF923785400FDC5FF* L_8 = ((AppManager_tD5155B839026DE8E1F63F8868048F9CF8B26ED0C*)L_7)->___mainScript_10;
 		NullCheck(L_8);
-		int32_t L_9 = L_8->___clientSelectionne_17;
+		int32_t L_9 = L_8->___clientSelectionne_20;
 		U3CU3Ec__DisplayClass153_1_t13E3A520A3D23420E8BA842E850515E3627D1AC2* L_10 = __this->___CSU24U3CU3E8__locals2_3;
 		NullCheck(L_10);
 		U3CU3Ec__DisplayClass153_0_t6D433FABB67709A2C6BBBFCF53E8DF5B3281983E* L_11 = L_10->___CSU24U3CU3E8__locals1_3;
@@ -27486,12 +27492,12 @@ IL_0097:
 		NullCheck(L_29);
 		MainScript_tE5DA41EF9F6C72F24338683BF923785400FDC5FF* L_30 = ((AppManager_tD5155B839026DE8E1F63F8868048F9CF8B26ED0C*)L_29)->___mainScript_10;
 		NullCheck(L_30);
-		List_1_t44AE1E098C20DCB6502FBFF0DC2FCB3A908D8F53* L_31 = L_30->___listeServices_7;
+		List_1_t44AE1E098C20DCB6502FBFF0DC2FCB3A908D8F53* L_31 = L_30->___listeServices_10;
 		ContenuRapportManager_t1246C45A36047FA097C07FFB64574E5974E068E4* L_32 = __this->___U3CU3E4__this_0;
 		NullCheck(L_32);
 		MainScript_tE5DA41EF9F6C72F24338683BF923785400FDC5FF* L_33 = ((AppManager_tD5155B839026DE8E1F63F8868048F9CF8B26ED0C*)L_32)->___mainScript_10;
 		NullCheck(L_33);
-		int32_t L_34 = L_33->___clientSelectionne_17;
+		int32_t L_34 = L_33->___clientSelectionne_20;
 		NullCheck(L_31);
 		ServiceClient_t07C84893BDB4121BAF09BDF559688F4714F9541D* L_35;
 		L_35 = List_1_get_Item_m39EDDFB4EF7DA1D70754CA9E59200E1F55D17014(L_31, L_34, List_1_get_Item_m39EDDFB4EF7DA1D70754CA9E59200E1F55D17014_RuntimeMethod_var);
@@ -27501,7 +27507,7 @@ IL_0097:
 		NullCheck(L_37);
 		MainScript_tE5DA41EF9F6C72F24338683BF923785400FDC5FF* L_38 = ((AppManager_tD5155B839026DE8E1F63F8868048F9CF8B26ED0C*)L_37)->___mainScript_10;
 		NullCheck(L_38);
-		int32_t L_39 = L_38->___rapportSelectionne_20;
+		int32_t L_39 = L_38->___rapportSelectionne_23;
 		NullCheck(L_36);
 		int32_t L_40 = L_39;
 		Rapport_t0DED00B7690FCCDE651FB02E35DD4AFF93E927D2* L_41 = (L_36)->GetAt(static_cast<il2cpp_array_size_t>(L_40));
@@ -28026,7 +28032,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__DisplayClass154_2_U3CActionAjou
 		NullCheck(L_7);
 		MainScript_tE5DA41EF9F6C72F24338683BF923785400FDC5FF* L_8 = ((AppManager_tD5155B839026DE8E1F63F8868048F9CF8B26ED0C*)L_7)->___mainScript_10;
 		NullCheck(L_8);
-		int32_t L_9 = L_8->___clientSelectionne_17;
+		int32_t L_9 = L_8->___clientSelectionne_20;
 		U3CU3Ec__DisplayClass154_1_t6E91649AB0B190915FAF508C50E048747E4AD172* L_10 = __this->___CSU24U3CU3E8__locals2_3;
 		NullCheck(L_10);
 		U3CU3Ec__DisplayClass154_0_t5DFD7CF8733E3CEE0B350A98838F5FB1B9E27AE2* L_11 = L_10->___CSU24U3CU3E8__locals1_3;

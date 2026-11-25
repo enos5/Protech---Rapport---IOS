@@ -143,6 +143,17 @@ struct InterfaceActionInvoker0
 		((Action)invokeData.methodPtr)(obj, invokeData.method);
 	}
 };
+template <typename R>
+struct InterfaceFuncInvoker0
+{
+	typedef R (*Func)(void*, const RuntimeMethod*);
+
+	static inline R Invoke (Il2CppMethodSlot slot, RuntimeClass* declaringInterface, RuntimeObject* obj)
+	{
+		const VirtualInvokeData& invokeData = il2cpp_codegen_get_interface_invoke_data(slot, obj, declaringInterface);
+		return ((Func)invokeData.methodPtr)(obj, invokeData.method);
+	}
+};
 template <typename R, typename T1, typename T2>
 struct InterfaceFuncInvoker2
 {
@@ -426,6 +437,8 @@ struct DecoderFallbackBuffer_t02E41C0BEC894A17CFE1A1FE88A2388DFDA05A73;
 struct Delegate_t;
 // System.DelegateData
 struct DelegateData_t9B286B493293CD2D23A5B2B5EF0E5B1324C2B77E;
+// System.IO.DirectoryInfo
+struct DirectoryInfo_tEAEEC018EB49B4A71907FFEAFE935FAA8F9C1FE2;
 // System.IO.DirectoryNotFoundException
 struct DirectoryNotFoundException_tBE92A20AAC24C3B22DE38973ABE6886FA97419BF;
 // System.IO.DriveNotFoundException
@@ -685,6 +698,9 @@ IL2CPP_EXTERN_C RuntimeClass* Func_5_t4BAF9947ED0D9539655B747B83ADB5E73EF86754_i
 IL2CPP_EXTERN_C RuntimeClass* GC_t920F9CF6EBB7C787E5010A4352E1B587F356DC58_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* GlobalizationMode_t8C0DD244B8C6347DE7AB7AE83B10911D2EB7582A_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* IDisposable_t030E0496B4E0E4E4F086825007979AF51F7248C5_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* IEnumerable_1_t349E66EC5F09B881A8E52EE40A1AB9EC60E08E44_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* IEnumerator_1_t73FD060C436E3C4264A734C8F8DCC01DFF6046B8_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* IEnumerator_t7B609C2FFA6EB5167D9C62A0C32A21DE2F666DAA_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* IOException_t5D599190B003D41D45D4839A9B6B9AB53A755910_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* ISimpleCollator_t084383013F96378AFFD4540649E086C9C13BFF5B_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C_il2cpp_TypeInfo_var;
@@ -1002,6 +1018,8 @@ IL2CPP_EXTERN_C const RuntimeMethod* FileSystem_CopyDanglingSymlink_m789ECF95CC7
 IL2CPP_EXTERN_C const RuntimeMethod* FileSystem_CreateDirectory_mF7A6EA62B2969B47F6A683EDAB6B2616B5BEFDAD_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* FileSystem_DeleteFile_m0C6A13ACD51AAB21BED3EA82CB0EE63703D0C0FC_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* FileSystem_LinkOrCopyFile_m2458A814822FB469AA0275557C409992CFE79DA6_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* FileSystem_RemoveDirectoryInternal_mE099168883D80A603B193BC281320C8FDBC83671_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* FileSystem_RemoveDirectory_m277039C6351EAACE6EAF47FDC434D8F6A2378809_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* FileSystem_ReplaceFile_mDAC7D0FCEACE0BC7F2133FCA18C63F023A0352F1_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* LazyInitializer_EnsureInitialized_TisManualResetEvent_t63959486AA41A113A4353D0BF4A68E77EBA0A158_mD7BA651D7BA2C010A19769A246E6806AC45BD72A_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* LazyInitializer_EnsureInitialized_TisSemaphoreSlim_t0D5CB5685D9BFA5BF95CEC6E7395490F933E8DB2_m1009CBB2801EF9A35909593CDE67226DD8D121FF_RuntimeMethod_var;
@@ -6901,16 +6919,28 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Sys_MkDir_m54A331C73E144CC723F5583CF6
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool FileSystem_FileExists_mD0B309E15EF6F11673151E81540F5A1886DDDB36 (ReadOnlySpan_1_t59614EA6E51A945A32B02AB17FBCBDF9A5C419C1 ___0_fullPath, const RuntimeMethod* method) ;
 // System.Boolean System.IO.FileSystem::DirectoryExists(System.ReadOnlySpan`1<System.Char>,Interop/ErrorInfo&)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool FileSystem_DirectoryExists_m295E3E280077494D1868CEA582F507E618E3E448 (ReadOnlySpan_1_t59614EA6E51A945A32B02AB17FBCBDF9A5C419C1 ___0_fullPath, ErrorInfo_t776D0DEFF42C5321EB2548D87ED238CBE55467F8* ___1_errorInfo, const RuntimeMethod* method) ;
+// System.Void System.IO.DirectoryInfo::.ctor(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DirectoryInfo__ctor_m36BC476C58B55083046C0A738157D84E2323E0E9 (DirectoryInfo_tEAEEC018EB49B4A71907FFEAFE935FAA8F9C1FE2* __this, String_t* ___0_path, const RuntimeMethod* method) ;
+// System.Void System.IO.FileSystem::RemoveDirectoryInternal(System.IO.DirectoryInfo,System.Boolean,System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FileSystem_RemoveDirectoryInternal_mE099168883D80A603B193BC281320C8FDBC83671 (DirectoryInfo_tEAEEC018EB49B4A71907FFEAFE935FAA8F9C1FE2* ___0_directory, bool ___1_recursive, bool ___2_throwOnTopLevelDirectoryNotFound, const RuntimeMethod* method) ;
+// System.IO.FileAttributes System.IO.FileSystemInfo::get_Attributes()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t FileSystemInfo_get_Attributes_m38971A5B147214C5EE193CE9F60628EA834EF6DA (FileSystemInfo_tE3063B9229F46B05A5F6D018C8C4CA510104E8E9* __this, const RuntimeMethod* method) ;
+// System.Collections.Generic.IEnumerable`1<System.String> System.IO.Directory::EnumerateFileSystemEntries(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Directory_EnumerateFileSystemEntries_mFC14748938E7979CA5472FB025BABE5448E9E216 (String_t* ___0_path, const RuntimeMethod* method) ;
+// System.Boolean System.IO.FileSystem::ShouldIgnoreDirectory(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool FileSystem_ShouldIgnoreDirectory_m11D3B10058D051B190931C89D661C39B077E09C4 (String_t* ___0_name, const RuntimeMethod* method) ;
+// System.Int32 Interop/Sys::RmDir(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Sys_RmDir_m5F7F7E79C110B8B12D7C8AFF4B2507F766340BF8 (String_t* ___0_path, const RuntimeMethod* method) ;
 // System.ReadOnlySpan`1<System.Char> System.IO.PathInternal::TrimEndingDirectorySeparator(System.ReadOnlySpan`1<System.Char>)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ReadOnlySpan_1_t59614EA6E51A945A32B02AB17FBCBDF9A5C419C1 PathInternal_TrimEndingDirectorySeparator_m35228A45E8CA0E2013265FDA0CFB9CA718D023B8 (ReadOnlySpan_1_t59614EA6E51A945A32B02AB17FBCBDF9A5C419C1 ___0_path, const RuntimeMethod* method) ;
 // System.Int32 Interop/Sys::Stat(System.ReadOnlySpan`1<System.Char>,Interop/Sys/FileStatus&)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Sys_Stat_mDA9A1C47B521435B16BEC38BEE9486FA0DE6C1F6 (ReadOnlySpan_1_t59614EA6E51A945A32B02AB17FBCBDF9A5C419C1 ___0_path, FileStatus_tCB96EDE0D0F945F685B9BBED6DBF0731207458C2* ___1_output, const RuntimeMethod* method) ;
 // System.Int32 Interop/Sys::LStat(System.ReadOnlySpan`1<System.Char>,Interop/Sys/FileStatus&)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Sys_LStat_m7FE1A19E79A41E257E11C58C5EB17EEF29D2C6D9 (ReadOnlySpan_1_t59614EA6E51A945A32B02AB17FBCBDF9A5C419C1 ___0_path, FileStatus_tCB96EDE0D0F945F685B9BBED6DBF0731207458C2* ___1_output, const RuntimeMethod* method) ;
+// System.Boolean System.String::op_Equality(System.String,System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool String_op_Equality_m030E1B219352228970A076136E455C4E568C02C1 (String_t* ___0_a, String_t* ___1_b, const RuntimeMethod* method) ;
 // System.Void System.IO.FileInfo::.ctor(System.String,System.String,System.String,System.Boolean)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FileInfo__ctor_m5A03D93B1400D7D35F89C036316AC78CB24328C2 (FileInfo_t62782BBAFA832A78724E4CF2EE96548B8466AB1C* __this, String_t* ___0_originalPath, String_t* ___1_fullPath, String_t* ___2_fileName, bool ___3_isNormalized, const RuntimeMethod* method) ;
-// System.IO.FileAttributes System.IO.FileSystemInfo::get_Attributes()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t FileSystemInfo_get_Attributes_m38971A5B147214C5EE193CE9F60628EA834EF6DA (FileSystemInfo_tE3063B9229F46B05A5F6D018C8C4CA510104E8E9* __this, const RuntimeMethod* method) ;
 // System.Void System.IO.FileSystemInfo::ThrowNotFound(System.String)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FileSystemInfo_ThrowNotFound_m53A18E3BE02CD7220C879616B9DC0C6C4043477C (String_t* ___0_path, const RuntimeMethod* method) ;
 // System.DateTime System.IO.FileSystemInfo::get_LastWriteTime()
@@ -6923,6 +6953,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MarshalByRefObject__ctor_mCBAD191F9BB355
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FileStatus_Initialize_mD4DD9E27D5018B33296F05CC0879C84037D9F3B5 (FileStatus_tABB5F252F1E597EC95E9041035DC424EF66712A5* ___0_status, bool ___1_isDirectory, const RuntimeMethod* method) ;
 // System.IO.FileAttributes System.IO.FileStatus::GetAttributes(System.ReadOnlySpan`1<System.Char>,System.ReadOnlySpan`1<System.Char>)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t FileStatus_GetAttributes_mC4CC0F4382185462242A06424C79FB7EED218A79 (FileStatus_tABB5F252F1E597EC95E9041035DC424EF66712A5* __this, ReadOnlySpan_1_t59614EA6E51A945A32B02AB17FBCBDF9A5C419C1 ___0_path, ReadOnlySpan_1_t59614EA6E51A945A32B02AB17FBCBDF9A5C419C1 ___1_fileName, const RuntimeMethod* method) ;
+// System.Boolean System.IO.FileStatus::GetExists(System.ReadOnlySpan`1<System.Char>)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool FileStatus_GetExists_mAE616C6D2A1BEC457312D09041C38181F3E04BD2 (FileStatus_tABB5F252F1E597EC95E9041035DC424EF66712A5* __this, ReadOnlySpan_1_t59614EA6E51A945A32B02AB17FBCBDF9A5C419C1 ___0_path, const RuntimeMethod* method) ;
 // System.DateTimeOffset System.IO.FileStatus::GetLastWriteTime(System.ReadOnlySpan`1<System.Char>,System.Boolean)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR DateTimeOffset_t4EE701FE2F386D6F932FAC9B11E4B74A5B30F0A4 FileStatus_GetLastWriteTime_m3F2A70A2236B8AD206E972B3C23C1CAE9674BB7E (FileStatus_tABB5F252F1E597EC95E9041035DC424EF66712A5* __this, ReadOnlySpan_1_t59614EA6E51A945A32B02AB17FBCBDF9A5C419C1 ___0_path, bool ___1_continueOnError, const RuntimeMethod* method) ;
 // System.Int64 System.IO.FileStatus::GetLength(System.ReadOnlySpan`1<System.Char>,System.Boolean)
@@ -6939,6 +6971,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* Path_GetFullPathInternal_mE703E7B63
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Type_t* Type_GetTypeFromHandle_m6062B81682F79A4D6DF2640692EE6D9987858C57 (RuntimeTypeHandle_t332A452B8B6179E4469B69525D0FE82A88030F7B ___0_handle, const RuntimeMethod* method) ;
 // System.Void System.Runtime.Serialization.SerializationInfo::AddValue(System.String,System.Object,System.Type)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SerializationInfo_AddValue_m1AD59BBF8C3129142943D3F298ADF09FF123C199 (SerializationInfo_t3C47F63E24BEB9FCE2DC6309E027F238DC5C5E37* __this, String_t* ___0_name, RuntimeObject* ___1_value, Type_t* ___2_type, const RuntimeMethod* method) ;
+// System.Boolean System.IO.FileSystemInfo::get_ExistsCore()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool FileSystemInfo_get_ExistsCore_mBB14E67D509870D7E1572F461C3C78E8077FF4E9 (FileSystemInfo_tE3063B9229F46B05A5F6D018C8C4CA510104E8E9* __this, const RuntimeMethod* method) ;
 // System.DateTime System.IO.FileSystemInfo::get_LastWriteTimeUtc()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR DateTime_t66193957C73913903DDAD89FEDC46139BCA5802D FileSystemInfo_get_LastWriteTimeUtc_mD88B2540B4766584A90C45018C6EDBFEC9C80BA8 (FileSystemInfo_tE3063B9229F46B05A5F6D018C8C4CA510104E8E9* __this, const RuntimeMethod* method) ;
 // System.DateTime System.DateTime::ToLocalTime()
@@ -7619,8 +7653,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Path_IsPathRooted_m0AAA41017FBDDFD52AFC5
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* String_Concat_m8855A6DE10F84DA7F4EC113CADDB59873A25573B (String_t* ___0_str0, String_t* ___1_str1, String_t* ___2_str2, const RuntimeMethod* method) ;
 // System.String System.String::CreateString(System.Char[])
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* String_CreateString_mFBC28D2E3EB87D497F7E702E4FFAD65F635E44DF (String_t* __this, CharU5BU5D_t799905CF001DD5F13F7DBB310181FC4D8B7D0AAB* ___0_val, const RuntimeMethod* method) ;
-// System.Boolean System.String::op_Equality(System.String,System.String)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool String_op_Equality_m030E1B219352228970A076136E455C4E568C02C1 (String_t* ___0_a, String_t* ___1_b, const RuntimeMethod* method) ;
 // System.String System.IO.Path::GetPathRoot(System.String)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* Path_GetPathRoot_m31AA9272864F572DEC78EC2595D2A5ABFEF5651C (String_t* ___0_path, const RuntimeMethod* method) ;
 // System.String System.String::Trim()
@@ -9360,6 +9392,417 @@ IL_0192:
 		return;
 	}
 }
+// System.Void System.IO.FileSystem::RemoveDirectory(System.String,System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FileSystem_RemoveDirectory_m277039C6351EAACE6EAF47FDC434D8F6A2378809 (String_t* ___0_fullPath, bool ___1_recursive, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&DirectoryInfo_tEAEEC018EB49B4A71907FFEAFE935FAA8F9C1FE2_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	DirectoryInfo_tEAEEC018EB49B4A71907FFEAFE935FAA8F9C1FE2* G_B2_0 = NULL;
+	DirectoryInfo_tEAEEC018EB49B4A71907FFEAFE935FAA8F9C1FE2* G_B1_0 = NULL;
+	{
+		String_t* L_0 = ___0_fullPath;
+		DirectoryInfo_tEAEEC018EB49B4A71907FFEAFE935FAA8F9C1FE2* L_1 = (DirectoryInfo_tEAEEC018EB49B4A71907FFEAFE935FAA8F9C1FE2*)il2cpp_codegen_object_new(DirectoryInfo_tEAEEC018EB49B4A71907FFEAFE935FAA8F9C1FE2_il2cpp_TypeInfo_var);
+		NullCheck(L_1);
+		DirectoryInfo__ctor_m36BC476C58B55083046C0A738157D84E2323E0E9(L_1, L_0, NULL);
+		DirectoryInfo_tEAEEC018EB49B4A71907FFEAFE935FAA8F9C1FE2* L_2 = L_1;
+		NullCheck(L_2);
+		bool L_3;
+		L_3 = VirtualFuncInvoker0< bool >::Invoke(10 /* System.Boolean System.IO.FileSystemInfo::get_Exists() */, L_2);
+		G_B1_0 = L_2;
+		if (L_3)
+		{
+			G_B2_0 = L_2;
+			goto IL_0020;
+		}
+	}
+	{
+		ErrorInfo_t776D0DEFF42C5321EB2548D87ED238CBE55467F8 L_4;
+		L_4 = InteropErrorExtensions_Info_m99607D5428AE4102A1A18B302CEC21F6F18B31D8(((int32_t)65581), NULL);
+		String_t* L_5 = ___0_fullPath;
+		Exception_t* L_6;
+		L_6 = Interop_GetExceptionForIoErrno_m701F71EF26E8E84C4DB2278B54D7F89BD522C7E7(L_4, L_5, (bool)1, NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_6, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&FileSystem_RemoveDirectory_m277039C6351EAACE6EAF47FDC434D8F6A2378809_RuntimeMethod_var)));
+	}
+
+IL_0020:
+	{
+		bool L_7 = ___1_recursive;
+		FileSystem_RemoveDirectoryInternal_mE099168883D80A603B193BC281320C8FDBC83671(G_B2_0, L_7, (bool)1, NULL);
+		return;
+	}
+}
+// System.Void System.IO.FileSystem::RemoveDirectoryInternal(System.IO.DirectoryInfo,System.Boolean,System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FileSystem_RemoveDirectoryInternal_mE099168883D80A603B193BC281320C8FDBC83671 (DirectoryInfo_tEAEEC018EB49B4A71907FFEAFE935FAA8F9C1FE2* ___0_directory, bool ___1_recursive, bool ___2_throwOnTopLevelDirectoryNotFound, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&DirectoryInfo_tEAEEC018EB49B4A71907FFEAFE935FAA8F9C1FE2_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&IDisposable_t030E0496B4E0E4E4F086825007979AF51F7248C5_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&IEnumerable_1_t349E66EC5F09B881A8E52EE40A1AB9EC60E08E44_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&IEnumerator_1_t73FD060C436E3C4264A734C8F8DCC01DFF6046B8_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&IEnumerator_t7B609C2FFA6EB5167D9C62A0C32A21DE2F666DAA_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Path_t8A38A801D0219E8209C1B1D90D82D4D755D998BC_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Sys_tE4FBEFBB8F788192C8E494DA0EC7EFE86D952AD8_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Exception_t* V_0 = NULL;
+	RuntimeObject* V_1 = NULL;
+	String_t* V_2 = NULL;
+	DirectoryInfo_tEAEEC018EB49B4A71907FFEAFE935FAA8F9C1FE2* V_3 = NULL;
+	Exception_t* V_4 = NULL;
+	Exception_t* V_5 = NULL;
+	ErrorInfo_t776D0DEFF42C5321EB2548D87ED238CBE55467F8 V_6;
+	memset((&V_6), 0, sizeof(V_6));
+	int32_t V_7 = 0;
+	il2cpp::utils::ExceptionSupportStack<RuntimeObject*, 2> __active_exceptions;
+	{
+		V_0 = (Exception_t*)NULL;
+		DirectoryInfo_tEAEEC018EB49B4A71907FFEAFE935FAA8F9C1FE2* L_0 = ___0_directory;
+		NullCheck(L_0);
+		int32_t L_1;
+		L_1 = FileSystemInfo_get_Attributes_m38971A5B147214C5EE193CE9F60628EA834EF6DA(L_0, NULL);
+		if (!((int32_t)((int32_t)L_1&((int32_t)1024))))
+		{
+			goto IL_001c;
+		}
+	}
+	{
+		DirectoryInfo_tEAEEC018EB49B4A71907FFEAFE935FAA8F9C1FE2* L_2 = ___0_directory;
+		NullCheck(L_2);
+		String_t* L_3;
+		L_3 = VirtualFuncInvoker0< String_t* >::Invoke(8 /* System.String System.IO.FileSystemInfo::get_FullName() */, L_2);
+		FileSystem_DeleteFile_m0C6A13ACD51AAB21BED3EA82CB0EE63703D0C0FC(L_3, NULL);
+		return;
+	}
+
+IL_001c:
+	{
+		bool L_4 = ___1_recursive;
+		if (!L_4)
+		{
+			goto IL_0096;
+		}
+	}
+	try
+	{// begin try (depth: 1)
+		{
+			DirectoryInfo_tEAEEC018EB49B4A71907FFEAFE935FAA8F9C1FE2* L_5 = ___0_directory;
+			NullCheck(L_5);
+			String_t* L_6;
+			L_6 = VirtualFuncInvoker0< String_t* >::Invoke(8 /* System.String System.IO.FileSystemInfo::get_FullName() */, L_5);
+			RuntimeObject* L_7;
+			L_7 = Directory_EnumerateFileSystemEntries_mFC14748938E7979CA5472FB025BABE5448E9E216(L_6, NULL);
+			NullCheck(L_7);
+			RuntimeObject* L_8;
+			L_8 = InterfaceFuncInvoker0< RuntimeObject* >::Invoke(0 /* System.Collections.Generic.IEnumerator`1<T> System.Collections.Generic.IEnumerable`1<System.String>::GetEnumerator() */, IEnumerable_1_t349E66EC5F09B881A8E52EE40A1AB9EC60E08E44_il2cpp_TypeInfo_var, L_7);
+			V_1 = L_8;
+		}
+		{
+			auto __finallyBlock = il2cpp::utils::Finally([&]
+			{
+
+FINALLY_007b_1:
+				{// begin finally (depth: 2)
+					{
+						RuntimeObject* L_9 = V_1;
+						if (!L_9)
+						{
+							goto IL_0084_1;
+						}
+					}
+					{
+						RuntimeObject* L_10 = V_1;
+						NullCheck(L_10);
+						InterfaceActionInvoker0::Invoke(0 /* System.Void System.IDisposable::Dispose() */, IDisposable_t030E0496B4E0E4E4F086825007979AF51F7248C5_il2cpp_TypeInfo_var, L_10);
+					}
+
+IL_0084_1:
+					{
+						return;
+					}
+				}// end finally (depth: 2)
+			});
+			try
+			{// begin try (depth: 2)
+				{
+					goto IL_0071_2;
+				}
+
+IL_0032_2:
+				{
+					RuntimeObject* L_11 = V_1;
+					NullCheck(L_11);
+					String_t* L_12;
+					L_12 = InterfaceFuncInvoker0< String_t* >::Invoke(0 /* T System.Collections.Generic.IEnumerator`1<System.String>::get_Current() */, IEnumerator_1_t73FD060C436E3C4264A734C8F8DCC01DFF6046B8_il2cpp_TypeInfo_var, L_11);
+					V_2 = L_12;
+					String_t* L_13 = V_2;
+					il2cpp_codegen_runtime_class_init_inline(Path_t8A38A801D0219E8209C1B1D90D82D4D755D998BC_il2cpp_TypeInfo_var);
+					String_t* L_14;
+					L_14 = Path_GetFileName_mB1A8CE314EE250B06E3D33142315E2BD3A75D1D6(L_13, NULL);
+					bool L_15;
+					L_15 = FileSystem_ShouldIgnoreDirectory_m11D3B10058D051B190931C89D661C39B077E09C4(L_14, NULL);
+					if (L_15)
+					{
+						goto IL_0071_2;
+					}
+				}
+				try
+				{// begin try (depth: 3)
+					{
+						String_t* L_16 = V_2;
+						DirectoryInfo_tEAEEC018EB49B4A71907FFEAFE935FAA8F9C1FE2* L_17 = (DirectoryInfo_tEAEEC018EB49B4A71907FFEAFE935FAA8F9C1FE2*)il2cpp_codegen_object_new(DirectoryInfo_tEAEEC018EB49B4A71907FFEAFE935FAA8F9C1FE2_il2cpp_TypeInfo_var);
+						NullCheck(L_17);
+						DirectoryInfo__ctor_m36BC476C58B55083046C0A738157D84E2323E0E9(L_17, L_16, NULL);
+						V_3 = L_17;
+						DirectoryInfo_tEAEEC018EB49B4A71907FFEAFE935FAA8F9C1FE2* L_18 = V_3;
+						NullCheck(L_18);
+						bool L_19;
+						L_19 = VirtualFuncInvoker0< bool >::Invoke(10 /* System.Boolean System.IO.FileSystemInfo::get_Exists() */, L_18);
+						if (!L_19)
+						{
+							goto IL_005f_3;
+						}
+					}
+					{
+						DirectoryInfo_tEAEEC018EB49B4A71907FFEAFE935FAA8F9C1FE2* L_20 = V_3;
+						bool L_21 = ___1_recursive;
+						FileSystem_RemoveDirectoryInternal_mE099168883D80A603B193BC281320C8FDBC83671(L_20, L_21, (bool)0, NULL);
+						goto IL_0065_3;
+					}
+
+IL_005f_3:
+					{
+						String_t* L_22 = V_2;
+						FileSystem_DeleteFile_m0C6A13ACD51AAB21BED3EA82CB0EE63703D0C0FC(L_22, NULL);
+					}
+
+IL_0065_3:
+					{
+						goto IL_0071_2;
+					}
+				}// end try (depth: 3)
+				catch(Il2CppExceptionWrapper& e)
+				{
+					if(il2cpp_codegen_class_is_assignable_from (((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&Exception_t_il2cpp_TypeInfo_var)), il2cpp_codegen_object_class(e.ex)))
+					{
+						IL2CPP_PUSH_ACTIVE_EXCEPTION(e.ex);
+						goto CATCH_0067_2;
+					}
+					throw e;
+				}
+
+CATCH_0067_2:
+				{// begin catch(System.Exception)
+					{
+						Exception_t* L_23 = ((Exception_t*)IL2CPP_GET_ACTIVE_EXCEPTION(Exception_t*));;
+						V_4 = L_23;
+						Exception_t* L_24 = V_0;
+						if (!L_24)
+						{
+							goto IL_006f_2;
+						}
+					}
+					{
+						Exception_t* L_25 = V_4;
+						V_0 = L_25;
+					}
+
+IL_006f_2:
+					{
+						IL2CPP_POP_ACTIVE_EXCEPTION(Exception_t*);
+						goto IL_0071_2;
+					}
+				}// end catch (depth: 3)
+
+IL_0071_2:
+				{
+					RuntimeObject* L_26 = V_1;
+					NullCheck(L_26);
+					bool L_27;
+					L_27 = InterfaceFuncInvoker0< bool >::Invoke(0 /* System.Boolean System.Collections.IEnumerator::MoveNext() */, IEnumerator_t7B609C2FFA6EB5167D9C62A0C32A21DE2F666DAA_il2cpp_TypeInfo_var, L_26);
+					if (L_27)
+					{
+						goto IL_0032_2;
+					}
+				}
+				{
+					goto IL_0085_1;
+				}
+			}// end try (depth: 2)
+			catch(Il2CppExceptionWrapper& e)
+			{
+				__finallyBlock.StoreException(e.ex);
+			}
+		}
+
+IL_0085_1:
+		{
+			goto IL_0091;
+		}
+	}// end try (depth: 1)
+	catch(Il2CppExceptionWrapper& e)
+	{
+		if(il2cpp_codegen_class_is_assignable_from (((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&Exception_t_il2cpp_TypeInfo_var)), il2cpp_codegen_object_class(e.ex)))
+		{
+			IL2CPP_PUSH_ACTIVE_EXCEPTION(e.ex);
+			goto CATCH_0087;
+		}
+		throw e;
+	}
+
+CATCH_0087:
+	{// begin catch(System.Exception)
+		{
+			Exception_t* L_28 = ((Exception_t*)IL2CPP_GET_ACTIVE_EXCEPTION(Exception_t*));;
+			V_5 = L_28;
+			Exception_t* L_29 = V_0;
+			if (!L_29)
+			{
+				goto IL_008f;
+			}
+		}
+		{
+			Exception_t* L_30 = V_5;
+			V_0 = L_30;
+		}
+
+IL_008f:
+		{
+			IL2CPP_POP_ACTIVE_EXCEPTION(Exception_t*);
+			goto IL_0091;
+		}
+	}// end catch (depth: 1)
+
+IL_0091:
+	{
+		Exception_t* L_31 = V_0;
+		if (!L_31)
+		{
+			goto IL_0096;
+		}
+	}
+	{
+		Exception_t* L_32 = V_0;
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_32, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&FileSystem_RemoveDirectoryInternal_mE099168883D80A603B193BC281320C8FDBC83671_RuntimeMethod_var)));
+	}
+
+IL_0096:
+	{
+		DirectoryInfo_tEAEEC018EB49B4A71907FFEAFE935FAA8F9C1FE2* L_33 = ___0_directory;
+		NullCheck(L_33);
+		String_t* L_34;
+		L_34 = VirtualFuncInvoker0< String_t* >::Invoke(8 /* System.String System.IO.FileSystemInfo::get_FullName() */, L_33);
+		il2cpp_codegen_runtime_class_init_inline(Sys_tE4FBEFBB8F788192C8E494DA0EC7EFE86D952AD8_il2cpp_TypeInfo_var);
+		int32_t L_35;
+		L_35 = Sys_RmDir_m5F7F7E79C110B8B12D7C8AFF4B2507F766340BF8(L_34, NULL);
+		if ((((int32_t)L_35) >= ((int32_t)0)))
+		{
+			goto IL_0115;
+		}
+	}
+	{
+		il2cpp_codegen_runtime_class_init_inline(Sys_tE4FBEFBB8F788192C8E494DA0EC7EFE86D952AD8_il2cpp_TypeInfo_var);
+		ErrorInfo_t776D0DEFF42C5321EB2548D87ED238CBE55467F8 L_36;
+		L_36 = Sys_GetLastErrorInfo_m1C1BB8341DD84927BD33E6240585E753D4B3572B(NULL);
+		V_6 = L_36;
+		int32_t L_37;
+		L_37 = ErrorInfo_get_Error_mF34947899E06A00CA22985B73034CE96610FBD2B_inline((&V_6), NULL);
+		V_7 = L_37;
+		int32_t L_38 = V_7;
+		if ((((int32_t)L_38) > ((int32_t)((int32_t)65567))))
+		{
+			goto IL_00d1;
+		}
+	}
+	{
+		int32_t L_39 = V_7;
+		if ((((int32_t)L_39) == ((int32_t)((int32_t)65538))))
+		{
+			goto IL_00ec;
+		}
+	}
+	{
+		int32_t L_40 = V_7;
+		if ((((int32_t)L_40) == ((int32_t)((int32_t)65567))))
+		{
+			goto IL_00ec;
+		}
+	}
+	{
+		goto IL_0106;
+	}
+
+IL_00d1:
+	{
+		int32_t L_41 = V_7;
+		if ((((int32_t)L_41) == ((int32_t)((int32_t)65581))))
+		{
+			goto IL_0102;
+		}
+	}
+	{
+		int32_t L_42 = V_7;
+		if ((((int32_t)L_42) == ((int32_t)((int32_t)65602))))
+		{
+			goto IL_00ec;
+		}
+	}
+	{
+		int32_t L_43 = V_7;
+		if ((!(((uint32_t)L_43) == ((uint32_t)((int32_t)65608)))))
+		{
+			goto IL_0106;
+		}
+	}
+
+IL_00ec:
+	{
+		DirectoryInfo_tEAEEC018EB49B4A71907FFEAFE935FAA8F9C1FE2* L_44 = ___0_directory;
+		NullCheck(L_44);
+		String_t* L_45;
+		L_45 = VirtualFuncInvoker0< String_t* >::Invoke(8 /* System.String System.IO.FileSystemInfo::get_FullName() */, L_44);
+		String_t* L_46;
+		L_46 = SR_Format_m9E8DC9AEFDC34AC67473EFAEAB78C5066C1A0D09(((String_t*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&_stringLiteralE058B51F6E4C46804212A5C9AC795A219B9EFAD7)), L_45, NULL);
+		IOException_t5D599190B003D41D45D4839A9B6B9AB53A755910* L_47 = (IOException_t5D599190B003D41D45D4839A9B6B9AB53A755910*)il2cpp_codegen_object_new(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&IOException_t5D599190B003D41D45D4839A9B6B9AB53A755910_il2cpp_TypeInfo_var)));
+		NullCheck(L_47);
+		IOException__ctor_mE0612A16064F93C7EBB468D6874777BD70CB50CA(L_47, L_46, NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_47, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&FileSystem_RemoveDirectoryInternal_mE099168883D80A603B193BC281320C8FDBC83671_RuntimeMethod_var)));
+	}
+
+IL_0102:
+	{
+		bool L_48 = ___2_throwOnTopLevelDirectoryNotFound;
+		if (L_48)
+		{
+			goto IL_0106;
+		}
+	}
+	{
+		return;
+	}
+
+IL_0106:
+	{
+		ErrorInfo_t776D0DEFF42C5321EB2548D87ED238CBE55467F8 L_49 = V_6;
+		DirectoryInfo_tEAEEC018EB49B4A71907FFEAFE935FAA8F9C1FE2* L_50 = ___0_directory;
+		NullCheck(L_50);
+		String_t* L_51;
+		L_51 = VirtualFuncInvoker0< String_t* >::Invoke(8 /* System.String System.IO.FileSystemInfo::get_FullName() */, L_50);
+		Exception_t* L_52;
+		L_52 = Interop_GetExceptionForIoErrno_m701F71EF26E8E84C4DB2278B54D7F89BD522C7E7(L_49, L_51, (bool)1, NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_52, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&FileSystem_RemoveDirectoryInternal_mE099168883D80A603B193BC281320C8FDBC83671_RuntimeMethod_var)));
+	}
+
+IL_0115:
+	{
+		return;
+	}
+}
 // System.Boolean System.IO.FileSystem::DirectoryExists(System.ReadOnlySpan`1<System.Char>)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool FileSystem_DirectoryExists_mF0F57CFF987F9B74F15ABF57C70004F2A465D4D9 (ReadOnlySpan_1_t59614EA6E51A945A32B02AB17FBCBDF9A5C419C1 ___0_fullPath, const RuntimeMethod* method) 
 {
@@ -9452,6 +9895,37 @@ IL_002a:
 		FileStatus_tCB96EDE0D0F945F685B9BBED6DBF0731207458C2 L_8 = V_0;
 		int32_t L_9 = L_8.___Mode_1;
 		return (bool)((((int32_t)((((int32_t)L_7) == ((int32_t)((int32_t)16384)))? 1 : 0)) == ((int32_t)((((int32_t)((int32_t)(L_9&((int32_t)61440)))) == ((int32_t)((int32_t)16384)))? 1 : 0)))? 1 : 0);
+	}
+}
+// System.Boolean System.IO.FileSystem::ShouldIgnoreDirectory(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool FileSystem_ShouldIgnoreDirectory_m11D3B10058D051B190931C89D661C39B077E09C4 (String_t* ___0_name, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral26DC9E6A16A2B862023CCDC29E42E5404E9ACD4F);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralF3E84B722399601AD7E281754E917478AA9AD48D);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		String_t* L_0 = ___0_name;
+		bool L_1;
+		L_1 = String_op_Equality_m030E1B219352228970A076136E455C4E568C02C1(L_0, _stringLiteralF3E84B722399601AD7E281754E917478AA9AD48D, NULL);
+		if (L_1)
+		{
+			goto IL_0019;
+		}
+	}
+	{
+		String_t* L_2 = ___0_name;
+		bool L_3;
+		L_3 = String_op_Equality_m030E1B219352228970A076136E455C4E568C02C1(L_2, _stringLiteral26DC9E6A16A2B862023CCDC29E42E5404E9ACD4F, NULL);
+		return L_3;
+	}
+
+IL_0019:
+	{
+		return (bool)1;
 	}
 }
 // System.IO.FileAttributes System.IO.FileSystem::GetAttributes(System.String)
@@ -9549,12 +10023,25 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t FileSystemInfo_get_Attributes_m38971A
 		ReadOnlySpan_1_t59614EA6E51A945A32B02AB17FBCBDF9A5C419C1 L_2;
 		L_2 = String_op_Implicit_m7D7FE0449303AF92D8B2A85A06ADC6933B2ECC3A_inline(L_1, NULL);
 		String_t* L_3;
-		L_3 = VirtualFuncInvoker0< String_t* >::Invoke(8 /* System.String System.IO.FileSystemInfo::get_Name() */, __this);
+		L_3 = VirtualFuncInvoker0< String_t* >::Invoke(9 /* System.String System.IO.FileSystemInfo::get_Name() */, __this);
 		ReadOnlySpan_1_t59614EA6E51A945A32B02AB17FBCBDF9A5C419C1 L_4;
 		L_4 = String_op_Implicit_m7D7FE0449303AF92D8B2A85A06ADC6933B2ECC3A_inline(L_3, NULL);
 		int32_t L_5;
 		L_5 = FileStatus_GetAttributes_mC4CC0F4382185462242A06424C79FB7EED218A79(L_0, L_2, L_4, NULL);
 		return L_5;
+	}
+}
+// System.Boolean System.IO.FileSystemInfo::get_ExistsCore()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool FileSystemInfo_get_ExistsCore_mBB14E67D509870D7E1572F461C3C78E8077FF4E9 (FileSystemInfo_tE3063B9229F46B05A5F6D018C8C4CA510104E8E9* __this, const RuntimeMethod* method) 
+{
+	{
+		FileStatus_tABB5F252F1E597EC95E9041035DC424EF66712A5* L_0 = (FileStatus_tABB5F252F1E597EC95E9041035DC424EF66712A5*)(&__this->____fileStatus_1);
+		String_t* L_1 = __this->___FullPath_2;
+		ReadOnlySpan_1_t59614EA6E51A945A32B02AB17FBCBDF9A5C419C1 L_2;
+		L_2 = String_op_Implicit_m7D7FE0449303AF92D8B2A85A06ADC6933B2ECC3A_inline(L_1, NULL);
+		bool L_3;
+		L_3 = FileStatus_GetExists_mAE616C6D2A1BEC457312D09041C38181F3E04BD2(L_0, L_2, NULL);
+		return L_3;
 	}
 }
 // System.DateTimeOffset System.IO.FileSystemInfo::get_LastWriteTimeCore()
@@ -9692,7 +10179,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FileSystemInfo_GetObjectData_m391E008132
 		SerializationInfo_AddValue_m1AD59BBF8C3129142943D3F298ADF09FF123C199(L_4, _stringLiteral8056364C50211218B089D87F1E3BA490603AD6E7, L_5, L_7, NULL);
 		SerializationInfo_t3C47F63E24BEB9FCE2DC6309E027F238DC5C5E37* L_8 = ___0_info;
 		String_t* L_9;
-		L_9 = VirtualFuncInvoker0< String_t* >::Invoke(8 /* System.String System.IO.FileSystemInfo::get_Name() */, __this);
+		L_9 = VirtualFuncInvoker0< String_t* >::Invoke(9 /* System.String System.IO.FileSystemInfo::get_Name() */, __this);
 		RuntimeTypeHandle_t332A452B8B6179E4469B69525D0FE82A88030F7B L_10 = { reinterpret_cast<intptr_t> (String_t_0_0_0_var) };
 		Type_t* L_11;
 		L_11 = Type_GetTypeFromHandle_m6062B81682F79A4D6DF2640692EE6D9987858C57(L_10, NULL);
@@ -9701,12 +10188,56 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FileSystemInfo_GetObjectData_m391E008132
 		return;
 	}
 }
+// System.String System.IO.FileSystemInfo::get_FullName()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* FileSystemInfo_get_FullName_m98CFA64E37846CA49590B772453B72A1DD82CD2E (FileSystemInfo_tE3063B9229F46B05A5F6D018C8C4CA510104E8E9* __this, const RuntimeMethod* method) 
+{
+	{
+		String_t* L_0 = __this->___FullPath_2;
+		return L_0;
+	}
+}
 // System.String System.IO.FileSystemInfo::get_Name()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* FileSystemInfo_get_Name_mFAFD6E06D2F1BA35ACD72BE9802679142227040F (FileSystemInfo_tE3063B9229F46B05A5F6D018C8C4CA510104E8E9* __this, const RuntimeMethod* method) 
 {
 	{
 		String_t* L_0 = __this->____name_4;
 		return L_0;
+	}
+}
+// System.Boolean System.IO.FileSystemInfo::get_Exists()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool FileSystemInfo_get_Exists_m33AA04CA7AC360031EFF6D94AFBD70F1D747DCD5 (FileSystemInfo_tE3063B9229F46B05A5F6D018C8C4CA510104E8E9* __this, const RuntimeMethod* method) 
+{
+	bool V_0 = false;
+	il2cpp::utils::ExceptionSupportStack<RuntimeObject*, 1> __active_exceptions;
+	try
+	{// begin try (depth: 1)
+		bool L_0;
+		L_0 = FileSystemInfo_get_ExistsCore_mBB14E67D509870D7E1572F461C3C78E8077FF4E9(__this, NULL);
+		V_0 = L_0;
+		goto IL_000e;
+	}// end try (depth: 1)
+	catch(Il2CppExceptionWrapper& e)
+	{
+		if(il2cpp_codegen_class_is_assignable_from (((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&RuntimeObject_il2cpp_TypeInfo_var)), il2cpp_codegen_object_class(e.ex)))
+		{
+			IL2CPP_PUSH_ACTIVE_EXCEPTION(e.ex);
+			goto CATCH_0009;
+		}
+		throw e;
+	}
+
+CATCH_0009:
+	{// begin catch(System.Object)
+		RuntimeObject* L_1 = ((RuntimeObject*)IL2CPP_GET_ACTIVE_EXCEPTION(RuntimeObject*));;
+		V_0 = (bool)0;
+		IL2CPP_POP_ACTIVE_EXCEPTION(Exception_t*);
+		goto IL_000e;
+	}// end catch (depth: 1)
+
+IL_000e:
+	{
+		bool L_2 = V_0;
+		return L_2;
 	}
 }
 // System.DateTime System.IO.FileSystemInfo::get_LastWriteTime()
