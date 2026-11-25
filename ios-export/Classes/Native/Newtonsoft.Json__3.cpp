@@ -9639,7 +9639,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TraceJsonReader_WriteCurrentToken_m45E27
 		JsonTextWriter_t8A730143EFDFE2A07F31B3C4DB82061A883A60F4* L_0 = __this->____textWriter_16;
 		JsonReader_tB90522FA9D4C1C218A3F2C529A27D95123847765* L_1 = __this->____innerReader_15;
 		NullCheck(L_0);
-		VirtualActionInvoker4< JsonReader_tB90522FA9D4C1C218A3F2C529A27D95123847765*, bool, bool, bool >::Invoke(16 /* System.Void Newtonsoft.Json.JsonWriter::WriteToken(Newtonsoft.Json.JsonReader,System.Boolean,System.Boolean,System.Boolean) */, L_0, L_1, (bool)0, (bool)0, (bool)1);
+		VirtualActionInvoker4< JsonReader_tB90522FA9D4C1C218A3F2C529A27D95123847765*, bool, bool, bool >::Invoke(17 /* System.Void Newtonsoft.Json.JsonWriter::WriteToken(Newtonsoft.Json.JsonReader,System.Boolean,System.Boolean,System.Boolean) */, L_0, L_1, (bool)0, (bool)0, (bool)1);
 		return;
 	}
 }
@@ -9911,11 +9911,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TraceJsonWriter_WriteValue_m387E27345B5D
 		JsonTextWriter_t8A730143EFDFE2A07F31B3C4DB82061A883A60F4* L_0 = __this->____textWriter_15;
 		Decimal_tDA6C877282B2D789CF97C0949661CC11D643969F L_1 = ___0_value;
 		NullCheck(L_0);
-		VirtualActionInvoker1< Decimal_tDA6C877282B2D789CF97C0949661CC11D643969F >::Invoke(38 /* System.Void Newtonsoft.Json.JsonWriter::WriteValue(System.Decimal) */, L_0, L_1);
+		VirtualActionInvoker1< Decimal_tDA6C877282B2D789CF97C0949661CC11D643969F >::Invoke(39 /* System.Void Newtonsoft.Json.JsonWriter::WriteValue(System.Decimal) */, L_0, L_1);
 		JsonWriter_t1750495CE81BD2D7BF7335A8468E2F960CA3ABC3* L_2 = __this->____innerWriter_14;
 		Decimal_tDA6C877282B2D789CF97C0949661CC11D643969F L_3 = ___0_value;
 		NullCheck(L_2);
-		VirtualActionInvoker1< Decimal_tDA6C877282B2D789CF97C0949661CC11D643969F >::Invoke(38 /* System.Void Newtonsoft.Json.JsonWriter::WriteValue(System.Decimal) */, L_2, L_3);
+		VirtualActionInvoker1< Decimal_tDA6C877282B2D789CF97C0949661CC11D643969F >::Invoke(39 /* System.Void Newtonsoft.Json.JsonWriter::WriteValue(System.Decimal) */, L_2, L_3);
 		Decimal_tDA6C877282B2D789CF97C0949661CC11D643969F L_4 = ___0_value;
 		JsonWriter_WriteValue_mBCA33B3507B7A3BBDA956DC573ACEEB6A9D359D8(__this, L_4, NULL);
 		return;
@@ -9935,11 +9935,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TraceJsonWriter_WriteValue_m5F05E91713C1
 		JsonTextWriter_t8A730143EFDFE2A07F31B3C4DB82061A883A60F4* L_0 = __this->____textWriter_15;
 		Nullable_1_t072551AA1AA8366A46F232F8180C34AA0CFFACBB L_1 = ___0_value;
 		NullCheck(L_0);
-		VirtualActionInvoker1< Nullable_1_t072551AA1AA8366A46F232F8180C34AA0CFFACBB >::Invoke(55 /* System.Void Newtonsoft.Json.JsonWriter::WriteValue(System.Nullable`1<System.Decimal>) */, L_0, L_1);
+		VirtualActionInvoker1< Nullable_1_t072551AA1AA8366A46F232F8180C34AA0CFFACBB >::Invoke(56 /* System.Void Newtonsoft.Json.JsonWriter::WriteValue(System.Nullable`1<System.Decimal>) */, L_0, L_1);
 		JsonWriter_t1750495CE81BD2D7BF7335A8468E2F960CA3ABC3* L_2 = __this->____innerWriter_14;
 		Nullable_1_t072551AA1AA8366A46F232F8180C34AA0CFFACBB L_3 = ___0_value;
 		NullCheck(L_2);
-		VirtualActionInvoker1< Nullable_1_t072551AA1AA8366A46F232F8180C34AA0CFFACBB >::Invoke(55 /* System.Void Newtonsoft.Json.JsonWriter::WriteValue(System.Nullable`1<System.Decimal>) */, L_2, L_3);
+		VirtualActionInvoker1< Nullable_1_t072551AA1AA8366A46F232F8180C34AA0CFFACBB >::Invoke(56 /* System.Void Newtonsoft.Json.JsonWriter::WriteValue(System.Nullable`1<System.Decimal>) */, L_2, L_3);
 		bool L_4;
 		L_4 = Nullable_1_get_HasValue_mCE98B1978B9A4A7BB496C8E4F2A081EE0ADB0D62_inline((&___0_value), Nullable_1_get_HasValue_mCE98B1978B9A4A7BB496C8E4F2A081EE0ADB0D62_RuntimeMethod_var);
 		if (!L_4)
@@ -9967,11 +9967,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TraceJsonWriter_WriteValue_m51D914FD491C
 		JsonTextWriter_t8A730143EFDFE2A07F31B3C4DB82061A883A60F4* L_0 = __this->____textWriter_15;
 		bool L_1 = ___0_value;
 		NullCheck(L_0);
-		VirtualActionInvoker1< bool >::Invoke(32 /* System.Void Newtonsoft.Json.JsonWriter::WriteValue(System.Boolean) */, L_0, L_1);
+		VirtualActionInvoker1< bool >::Invoke(33 /* System.Void Newtonsoft.Json.JsonWriter::WriteValue(System.Boolean) */, L_0, L_1);
 		JsonWriter_t1750495CE81BD2D7BF7335A8468E2F960CA3ABC3* L_2 = __this->____innerWriter_14;
 		bool L_3 = ___0_value;
 		NullCheck(L_2);
-		VirtualActionInvoker1< bool >::Invoke(32 /* System.Void Newtonsoft.Json.JsonWriter::WriteValue(System.Boolean) */, L_2, L_3);
+		VirtualActionInvoker1< bool >::Invoke(33 /* System.Void Newtonsoft.Json.JsonWriter::WriteValue(System.Boolean) */, L_2, L_3);
 		bool L_4 = ___0_value;
 		JsonWriter_WriteValue_m9EF9755CB7576F61E081148C00169A7128903B8B(__this, L_4, NULL);
 		return;
@@ -9991,11 +9991,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TraceJsonWriter_WriteValue_m6C2387795B5D
 		JsonTextWriter_t8A730143EFDFE2A07F31B3C4DB82061A883A60F4* L_0 = __this->____textWriter_15;
 		Nullable_1_t78F453FADB4A9F50F267A4E349019C34410D1A01 L_1 = ___0_value;
 		NullCheck(L_0);
-		VirtualActionInvoker1< Nullable_1_t78F453FADB4A9F50F267A4E349019C34410D1A01 >::Invoke(49 /* System.Void Newtonsoft.Json.JsonWriter::WriteValue(System.Nullable`1<System.Boolean>) */, L_0, L_1);
+		VirtualActionInvoker1< Nullable_1_t78F453FADB4A9F50F267A4E349019C34410D1A01 >::Invoke(50 /* System.Void Newtonsoft.Json.JsonWriter::WriteValue(System.Nullable`1<System.Boolean>) */, L_0, L_1);
 		JsonWriter_t1750495CE81BD2D7BF7335A8468E2F960CA3ABC3* L_2 = __this->____innerWriter_14;
 		Nullable_1_t78F453FADB4A9F50F267A4E349019C34410D1A01 L_3 = ___0_value;
 		NullCheck(L_2);
-		VirtualActionInvoker1< Nullable_1_t78F453FADB4A9F50F267A4E349019C34410D1A01 >::Invoke(49 /* System.Void Newtonsoft.Json.JsonWriter::WriteValue(System.Nullable`1<System.Boolean>) */, L_2, L_3);
+		VirtualActionInvoker1< Nullable_1_t78F453FADB4A9F50F267A4E349019C34410D1A01 >::Invoke(50 /* System.Void Newtonsoft.Json.JsonWriter::WriteValue(System.Nullable`1<System.Boolean>) */, L_2, L_3);
 		bool L_4;
 		L_4 = Nullable_1_get_HasValue_m6B76D139692C43B2AF7C695FAB044B16ACFAF355_inline((&___0_value), Nullable_1_get_HasValue_m6B76D139692C43B2AF7C695FAB044B16ACFAF355_RuntimeMethod_var);
 		if (!L_4)
@@ -10023,11 +10023,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TraceJsonWriter_WriteValue_m2B5E1E3303C5
 		JsonTextWriter_t8A730143EFDFE2A07F31B3C4DB82061A883A60F4* L_0 = __this->____textWriter_15;
 		uint8_t L_1 = ___0_value;
 		NullCheck(L_0);
-		VirtualActionInvoker1< uint8_t >::Invoke(36 /* System.Void Newtonsoft.Json.JsonWriter::WriteValue(System.Byte) */, L_0, L_1);
+		VirtualActionInvoker1< uint8_t >::Invoke(37 /* System.Void Newtonsoft.Json.JsonWriter::WriteValue(System.Byte) */, L_0, L_1);
 		JsonWriter_t1750495CE81BD2D7BF7335A8468E2F960CA3ABC3* L_2 = __this->____innerWriter_14;
 		uint8_t L_3 = ___0_value;
 		NullCheck(L_2);
-		VirtualActionInvoker1< uint8_t >::Invoke(36 /* System.Void Newtonsoft.Json.JsonWriter::WriteValue(System.Byte) */, L_2, L_3);
+		VirtualActionInvoker1< uint8_t >::Invoke(37 /* System.Void Newtonsoft.Json.JsonWriter::WriteValue(System.Byte) */, L_2, L_3);
 		uint8_t L_4 = ___0_value;
 		JsonWriter_WriteValue_m1AEB560BFD2393EBBE9E766263CA01E3BA2D0E6F(__this, L_4, NULL);
 		return;
@@ -10047,11 +10047,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TraceJsonWriter_WriteValue_m854BC68E1EA9
 		JsonTextWriter_t8A730143EFDFE2A07F31B3C4DB82061A883A60F4* L_0 = __this->____textWriter_15;
 		Nullable_1_tEB6689CC9747A3600689077DCBF77B8E8B510505 L_1 = ___0_value;
 		NullCheck(L_0);
-		VirtualActionInvoker1< Nullable_1_tEB6689CC9747A3600689077DCBF77B8E8B510505 >::Invoke(53 /* System.Void Newtonsoft.Json.JsonWriter::WriteValue(System.Nullable`1<System.Byte>) */, L_0, L_1);
+		VirtualActionInvoker1< Nullable_1_tEB6689CC9747A3600689077DCBF77B8E8B510505 >::Invoke(54 /* System.Void Newtonsoft.Json.JsonWriter::WriteValue(System.Nullable`1<System.Byte>) */, L_0, L_1);
 		JsonWriter_t1750495CE81BD2D7BF7335A8468E2F960CA3ABC3* L_2 = __this->____innerWriter_14;
 		Nullable_1_tEB6689CC9747A3600689077DCBF77B8E8B510505 L_3 = ___0_value;
 		NullCheck(L_2);
-		VirtualActionInvoker1< Nullable_1_tEB6689CC9747A3600689077DCBF77B8E8B510505 >::Invoke(53 /* System.Void Newtonsoft.Json.JsonWriter::WriteValue(System.Nullable`1<System.Byte>) */, L_2, L_3);
+		VirtualActionInvoker1< Nullable_1_tEB6689CC9747A3600689077DCBF77B8E8B510505 >::Invoke(54 /* System.Void Newtonsoft.Json.JsonWriter::WriteValue(System.Nullable`1<System.Byte>) */, L_2, L_3);
 		bool L_4;
 		L_4 = Nullable_1_get_HasValue_m9AD51B8683638748F2A5CA7F36143B5DA54C7D61_inline((&___0_value), Nullable_1_get_HasValue_m9AD51B8683638748F2A5CA7F36143B5DA54C7D61_RuntimeMethod_var);
 		if (!L_4)
@@ -10079,11 +10079,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TraceJsonWriter_WriteValue_m6741903ED136
 		JsonTextWriter_t8A730143EFDFE2A07F31B3C4DB82061A883A60F4* L_0 = __this->____textWriter_15;
 		Il2CppChar L_1 = ___0_value;
 		NullCheck(L_0);
-		VirtualActionInvoker1< Il2CppChar >::Invoke(35 /* System.Void Newtonsoft.Json.JsonWriter::WriteValue(System.Char) */, L_0, L_1);
+		VirtualActionInvoker1< Il2CppChar >::Invoke(36 /* System.Void Newtonsoft.Json.JsonWriter::WriteValue(System.Char) */, L_0, L_1);
 		JsonWriter_t1750495CE81BD2D7BF7335A8468E2F960CA3ABC3* L_2 = __this->____innerWriter_14;
 		Il2CppChar L_3 = ___0_value;
 		NullCheck(L_2);
-		VirtualActionInvoker1< Il2CppChar >::Invoke(35 /* System.Void Newtonsoft.Json.JsonWriter::WriteValue(System.Char) */, L_2, L_3);
+		VirtualActionInvoker1< Il2CppChar >::Invoke(36 /* System.Void Newtonsoft.Json.JsonWriter::WriteValue(System.Char) */, L_2, L_3);
 		Il2CppChar L_4 = ___0_value;
 		JsonWriter_WriteValue_mD5E4500BFFBC814E26C57409026A403C71EEECCF(__this, L_4, NULL);
 		return;
@@ -10103,11 +10103,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TraceJsonWriter_WriteValue_m8B3A7DBBA9F5
 		JsonTextWriter_t8A730143EFDFE2A07F31B3C4DB82061A883A60F4* L_0 = __this->____textWriter_15;
 		Nullable_1_tD52F1D0FC7EBB336F119BE953E59F426766032C1 L_1 = ___0_value;
 		NullCheck(L_0);
-		VirtualActionInvoker1< Nullable_1_tD52F1D0FC7EBB336F119BE953E59F426766032C1 >::Invoke(52 /* System.Void Newtonsoft.Json.JsonWriter::WriteValue(System.Nullable`1<System.Char>) */, L_0, L_1);
+		VirtualActionInvoker1< Nullable_1_tD52F1D0FC7EBB336F119BE953E59F426766032C1 >::Invoke(53 /* System.Void Newtonsoft.Json.JsonWriter::WriteValue(System.Nullable`1<System.Char>) */, L_0, L_1);
 		JsonWriter_t1750495CE81BD2D7BF7335A8468E2F960CA3ABC3* L_2 = __this->____innerWriter_14;
 		Nullable_1_tD52F1D0FC7EBB336F119BE953E59F426766032C1 L_3 = ___0_value;
 		NullCheck(L_2);
-		VirtualActionInvoker1< Nullable_1_tD52F1D0FC7EBB336F119BE953E59F426766032C1 >::Invoke(52 /* System.Void Newtonsoft.Json.JsonWriter::WriteValue(System.Nullable`1<System.Char>) */, L_2, L_3);
+		VirtualActionInvoker1< Nullable_1_tD52F1D0FC7EBB336F119BE953E59F426766032C1 >::Invoke(53 /* System.Void Newtonsoft.Json.JsonWriter::WriteValue(System.Nullable`1<System.Char>) */, L_2, L_3);
 		bool L_4;
 		L_4 = Nullable_1_get_HasValue_m9897CE72A58099ADB081E439D3A3EF0AA9CF5ED9_inline((&___0_value), Nullable_1_get_HasValue_m9897CE72A58099ADB081E439D3A3EF0AA9CF5ED9_RuntimeMethod_var);
 		if (!L_4)
@@ -10135,11 +10135,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TraceJsonWriter_WriteValue_mF3DDD270E7C3
 		JsonTextWriter_t8A730143EFDFE2A07F31B3C4DB82061A883A60F4* L_0 = __this->____textWriter_15;
 		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_1 = ___0_value;
 		NullCheck(L_0);
-		VirtualActionInvoker1< ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* >::Invoke(60 /* System.Void Newtonsoft.Json.JsonWriter::WriteValue(System.Byte[]) */, L_0, L_1);
+		VirtualActionInvoker1< ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* >::Invoke(61 /* System.Void Newtonsoft.Json.JsonWriter::WriteValue(System.Byte[]) */, L_0, L_1);
 		JsonWriter_t1750495CE81BD2D7BF7335A8468E2F960CA3ABC3* L_2 = __this->____innerWriter_14;
 		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_3 = ___0_value;
 		NullCheck(L_2);
-		VirtualActionInvoker1< ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* >::Invoke(60 /* System.Void Newtonsoft.Json.JsonWriter::WriteValue(System.Byte[]) */, L_2, L_3);
+		VirtualActionInvoker1< ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* >::Invoke(61 /* System.Void Newtonsoft.Json.JsonWriter::WriteValue(System.Byte[]) */, L_2, L_3);
 		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_4 = ___0_value;
 		if (L_4)
 		{
@@ -10165,11 +10165,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TraceJsonWriter_WriteValue_mE72742C0C9C6
 		JsonTextWriter_t8A730143EFDFE2A07F31B3C4DB82061A883A60F4* L_0 = __this->____textWriter_15;
 		DateTime_t66193957C73913903DDAD89FEDC46139BCA5802D L_1 = ___0_value;
 		NullCheck(L_0);
-		VirtualActionInvoker1< DateTime_t66193957C73913903DDAD89FEDC46139BCA5802D >::Invoke(39 /* System.Void Newtonsoft.Json.JsonWriter::WriteValue(System.DateTime) */, L_0, L_1);
+		VirtualActionInvoker1< DateTime_t66193957C73913903DDAD89FEDC46139BCA5802D >::Invoke(40 /* System.Void Newtonsoft.Json.JsonWriter::WriteValue(System.DateTime) */, L_0, L_1);
 		JsonWriter_t1750495CE81BD2D7BF7335A8468E2F960CA3ABC3* L_2 = __this->____innerWriter_14;
 		DateTime_t66193957C73913903DDAD89FEDC46139BCA5802D L_3 = ___0_value;
 		NullCheck(L_2);
-		VirtualActionInvoker1< DateTime_t66193957C73913903DDAD89FEDC46139BCA5802D >::Invoke(39 /* System.Void Newtonsoft.Json.JsonWriter::WriteValue(System.DateTime) */, L_2, L_3);
+		VirtualActionInvoker1< DateTime_t66193957C73913903DDAD89FEDC46139BCA5802D >::Invoke(40 /* System.Void Newtonsoft.Json.JsonWriter::WriteValue(System.DateTime) */, L_2, L_3);
 		DateTime_t66193957C73913903DDAD89FEDC46139BCA5802D L_4 = ___0_value;
 		JsonWriter_WriteValue_m0FF59870C2C94523F795BF6F7F2FFC30CE179F8A(__this, L_4, NULL);
 		return;
@@ -10189,11 +10189,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TraceJsonWriter_WriteValue_m3071B71E13D6
 		JsonTextWriter_t8A730143EFDFE2A07F31B3C4DB82061A883A60F4* L_0 = __this->____textWriter_15;
 		Nullable_1_tEADC262F7F8B8BC4CC0A003DBDD3CA7C1B63F9AC L_1 = ___0_value;
 		NullCheck(L_0);
-		VirtualActionInvoker1< Nullable_1_tEADC262F7F8B8BC4CC0A003DBDD3CA7C1B63F9AC >::Invoke(56 /* System.Void Newtonsoft.Json.JsonWriter::WriteValue(System.Nullable`1<System.DateTime>) */, L_0, L_1);
+		VirtualActionInvoker1< Nullable_1_tEADC262F7F8B8BC4CC0A003DBDD3CA7C1B63F9AC >::Invoke(57 /* System.Void Newtonsoft.Json.JsonWriter::WriteValue(System.Nullable`1<System.DateTime>) */, L_0, L_1);
 		JsonWriter_t1750495CE81BD2D7BF7335A8468E2F960CA3ABC3* L_2 = __this->____innerWriter_14;
 		Nullable_1_tEADC262F7F8B8BC4CC0A003DBDD3CA7C1B63F9AC L_3 = ___0_value;
 		NullCheck(L_2);
-		VirtualActionInvoker1< Nullable_1_tEADC262F7F8B8BC4CC0A003DBDD3CA7C1B63F9AC >::Invoke(56 /* System.Void Newtonsoft.Json.JsonWriter::WriteValue(System.Nullable`1<System.DateTime>) */, L_2, L_3);
+		VirtualActionInvoker1< Nullable_1_tEADC262F7F8B8BC4CC0A003DBDD3CA7C1B63F9AC >::Invoke(57 /* System.Void Newtonsoft.Json.JsonWriter::WriteValue(System.Nullable`1<System.DateTime>) */, L_2, L_3);
 		bool L_4;
 		L_4 = Nullable_1_get_HasValue_m092C73DCE052BFB5C60A39EF9F4E3401AA95221C_inline((&___0_value), Nullable_1_get_HasValue_m092C73DCE052BFB5C60A39EF9F4E3401AA95221C_RuntimeMethod_var);
 		if (!L_4)
@@ -10221,11 +10221,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TraceJsonWriter_WriteValue_m4B5887B0CB0C
 		JsonTextWriter_t8A730143EFDFE2A07F31B3C4DB82061A883A60F4* L_0 = __this->____textWriter_15;
 		DateTimeOffset_t4EE701FE2F386D6F932FAC9B11E4B74A5B30F0A4 L_1 = ___0_value;
 		NullCheck(L_0);
-		VirtualActionInvoker1< DateTimeOffset_t4EE701FE2F386D6F932FAC9B11E4B74A5B30F0A4 >::Invoke(40 /* System.Void Newtonsoft.Json.JsonWriter::WriteValue(System.DateTimeOffset) */, L_0, L_1);
+		VirtualActionInvoker1< DateTimeOffset_t4EE701FE2F386D6F932FAC9B11E4B74A5B30F0A4 >::Invoke(41 /* System.Void Newtonsoft.Json.JsonWriter::WriteValue(System.DateTimeOffset) */, L_0, L_1);
 		JsonWriter_t1750495CE81BD2D7BF7335A8468E2F960CA3ABC3* L_2 = __this->____innerWriter_14;
 		DateTimeOffset_t4EE701FE2F386D6F932FAC9B11E4B74A5B30F0A4 L_3 = ___0_value;
 		NullCheck(L_2);
-		VirtualActionInvoker1< DateTimeOffset_t4EE701FE2F386D6F932FAC9B11E4B74A5B30F0A4 >::Invoke(40 /* System.Void Newtonsoft.Json.JsonWriter::WriteValue(System.DateTimeOffset) */, L_2, L_3);
+		VirtualActionInvoker1< DateTimeOffset_t4EE701FE2F386D6F932FAC9B11E4B74A5B30F0A4 >::Invoke(41 /* System.Void Newtonsoft.Json.JsonWriter::WriteValue(System.DateTimeOffset) */, L_2, L_3);
 		DateTimeOffset_t4EE701FE2F386D6F932FAC9B11E4B74A5B30F0A4 L_4 = ___0_value;
 		JsonWriter_WriteValue_mF792BC34323AF19A7161B55838A630A9E169A132(__this, L_4, NULL);
 		return;
@@ -10245,11 +10245,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TraceJsonWriter_WriteValue_m61F87DBC56EE
 		JsonTextWriter_t8A730143EFDFE2A07F31B3C4DB82061A883A60F4* L_0 = __this->____textWriter_15;
 		Nullable_1_t5127ABE6809BA32727C69CB2E076B28D676EB15B L_1 = ___0_value;
 		NullCheck(L_0);
-		VirtualActionInvoker1< Nullable_1_t5127ABE6809BA32727C69CB2E076B28D676EB15B >::Invoke(57 /* System.Void Newtonsoft.Json.JsonWriter::WriteValue(System.Nullable`1<System.DateTimeOffset>) */, L_0, L_1);
+		VirtualActionInvoker1< Nullable_1_t5127ABE6809BA32727C69CB2E076B28D676EB15B >::Invoke(58 /* System.Void Newtonsoft.Json.JsonWriter::WriteValue(System.Nullable`1<System.DateTimeOffset>) */, L_0, L_1);
 		JsonWriter_t1750495CE81BD2D7BF7335A8468E2F960CA3ABC3* L_2 = __this->____innerWriter_14;
 		Nullable_1_t5127ABE6809BA32727C69CB2E076B28D676EB15B L_3 = ___0_value;
 		NullCheck(L_2);
-		VirtualActionInvoker1< Nullable_1_t5127ABE6809BA32727C69CB2E076B28D676EB15B >::Invoke(57 /* System.Void Newtonsoft.Json.JsonWriter::WriteValue(System.Nullable`1<System.DateTimeOffset>) */, L_2, L_3);
+		VirtualActionInvoker1< Nullable_1_t5127ABE6809BA32727C69CB2E076B28D676EB15B >::Invoke(58 /* System.Void Newtonsoft.Json.JsonWriter::WriteValue(System.Nullable`1<System.DateTimeOffset>) */, L_2, L_3);
 		bool L_4;
 		L_4 = Nullable_1_get_HasValue_m79C15523E7CAA22E353C665B870D2E9470CB4D19_inline((&___0_value), Nullable_1_get_HasValue_m79C15523E7CAA22E353C665B870D2E9470CB4D19_RuntimeMethod_var);
 		if (!L_4)
@@ -10277,11 +10277,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TraceJsonWriter_WriteValue_m4D25C068AF71
 		JsonTextWriter_t8A730143EFDFE2A07F31B3C4DB82061A883A60F4* L_0 = __this->____textWriter_15;
 		double L_1 = ___0_value;
 		NullCheck(L_0);
-		VirtualActionInvoker1< double >::Invoke(31 /* System.Void Newtonsoft.Json.JsonWriter::WriteValue(System.Double) */, L_0, L_1);
+		VirtualActionInvoker1< double >::Invoke(32 /* System.Void Newtonsoft.Json.JsonWriter::WriteValue(System.Double) */, L_0, L_1);
 		JsonWriter_t1750495CE81BD2D7BF7335A8468E2F960CA3ABC3* L_2 = __this->____innerWriter_14;
 		double L_3 = ___0_value;
 		NullCheck(L_2);
-		VirtualActionInvoker1< double >::Invoke(31 /* System.Void Newtonsoft.Json.JsonWriter::WriteValue(System.Double) */, L_2, L_3);
+		VirtualActionInvoker1< double >::Invoke(32 /* System.Void Newtonsoft.Json.JsonWriter::WriteValue(System.Double) */, L_2, L_3);
 		double L_4 = ___0_value;
 		JsonWriter_WriteValue_m2C9947B42490CA9AB5E8EEFB36B3E00359C472D9(__this, L_4, NULL);
 		return;
@@ -10301,11 +10301,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TraceJsonWriter_WriteValue_m79B63A7A2118
 		JsonTextWriter_t8A730143EFDFE2A07F31B3C4DB82061A883A60F4* L_0 = __this->____textWriter_15;
 		Nullable_1_t6E154519A812D040E3016229CD7638843A2CC165 L_1 = ___0_value;
 		NullCheck(L_0);
-		VirtualActionInvoker1< Nullable_1_t6E154519A812D040E3016229CD7638843A2CC165 >::Invoke(48 /* System.Void Newtonsoft.Json.JsonWriter::WriteValue(System.Nullable`1<System.Double>) */, L_0, L_1);
+		VirtualActionInvoker1< Nullable_1_t6E154519A812D040E3016229CD7638843A2CC165 >::Invoke(49 /* System.Void Newtonsoft.Json.JsonWriter::WriteValue(System.Nullable`1<System.Double>) */, L_0, L_1);
 		JsonWriter_t1750495CE81BD2D7BF7335A8468E2F960CA3ABC3* L_2 = __this->____innerWriter_14;
 		Nullable_1_t6E154519A812D040E3016229CD7638843A2CC165 L_3 = ___0_value;
 		NullCheck(L_2);
-		VirtualActionInvoker1< Nullable_1_t6E154519A812D040E3016229CD7638843A2CC165 >::Invoke(48 /* System.Void Newtonsoft.Json.JsonWriter::WriteValue(System.Nullable`1<System.Double>) */, L_2, L_3);
+		VirtualActionInvoker1< Nullable_1_t6E154519A812D040E3016229CD7638843A2CC165 >::Invoke(49 /* System.Void Newtonsoft.Json.JsonWriter::WriteValue(System.Nullable`1<System.Double>) */, L_2, L_3);
 		bool L_4;
 		L_4 = Nullable_1_get_HasValue_mC082C667C8EB3A6CA80E06BCAEA0BED00C6BC15A_inline((&___0_value), Nullable_1_get_HasValue_mC082C667C8EB3A6CA80E06BCAEA0BED00C6BC15A_RuntimeMethod_var);
 		if (!L_4)
@@ -10332,10 +10332,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TraceJsonWriter_WriteUndefined_m6C923D2F
 	{
 		JsonTextWriter_t8A730143EFDFE2A07F31B3C4DB82061A883A60F4* L_0 = __this->____textWriter_15;
 		NullCheck(L_0);
-		VirtualActionInvoker0::Invoke(22 /* System.Void Newtonsoft.Json.JsonWriter::WriteUndefined() */, L_0);
+		VirtualActionInvoker0::Invoke(23 /* System.Void Newtonsoft.Json.JsonWriter::WriteUndefined() */, L_0);
 		JsonWriter_t1750495CE81BD2D7BF7335A8468E2F960CA3ABC3* L_1 = __this->____innerWriter_14;
 		NullCheck(L_1);
-		VirtualActionInvoker0::Invoke(22 /* System.Void Newtonsoft.Json.JsonWriter::WriteUndefined() */, L_1);
+		VirtualActionInvoker0::Invoke(23 /* System.Void Newtonsoft.Json.JsonWriter::WriteUndefined() */, L_1);
 		JsonWriter_WriteUndefined_m507BF49F988B94F07230A9B502D7E430E1ACCF00(__this, NULL);
 		return;
 	}
@@ -10346,10 +10346,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TraceJsonWriter_WriteNull_m872BE8A912060
 	{
 		JsonTextWriter_t8A730143EFDFE2A07F31B3C4DB82061A883A60F4* L_0 = __this->____textWriter_15;
 		NullCheck(L_0);
-		VirtualActionInvoker0::Invoke(21 /* System.Void Newtonsoft.Json.JsonWriter::WriteNull() */, L_0);
+		VirtualActionInvoker0::Invoke(22 /* System.Void Newtonsoft.Json.JsonWriter::WriteNull() */, L_0);
 		JsonWriter_t1750495CE81BD2D7BF7335A8468E2F960CA3ABC3* L_1 = __this->____innerWriter_14;
 		NullCheck(L_1);
-		VirtualActionInvoker0::Invoke(21 /* System.Void Newtonsoft.Json.JsonWriter::WriteNull() */, L_1);
+		VirtualActionInvoker0::Invoke(22 /* System.Void Newtonsoft.Json.JsonWriter::WriteNull() */, L_1);
 		JsonWriter_WriteUndefined_m507BF49F988B94F07230A9B502D7E430E1ACCF00(__this, NULL);
 		return;
 	}
@@ -10361,11 +10361,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TraceJsonWriter_WriteValue_mB1329768856F
 		JsonTextWriter_t8A730143EFDFE2A07F31B3C4DB82061A883A60F4* L_0 = __this->____textWriter_15;
 		float L_1 = ___0_value;
 		NullCheck(L_0);
-		VirtualActionInvoker1< float >::Invoke(30 /* System.Void Newtonsoft.Json.JsonWriter::WriteValue(System.Single) */, L_0, L_1);
+		VirtualActionInvoker1< float >::Invoke(31 /* System.Void Newtonsoft.Json.JsonWriter::WriteValue(System.Single) */, L_0, L_1);
 		JsonWriter_t1750495CE81BD2D7BF7335A8468E2F960CA3ABC3* L_2 = __this->____innerWriter_14;
 		float L_3 = ___0_value;
 		NullCheck(L_2);
-		VirtualActionInvoker1< float >::Invoke(30 /* System.Void Newtonsoft.Json.JsonWriter::WriteValue(System.Single) */, L_2, L_3);
+		VirtualActionInvoker1< float >::Invoke(31 /* System.Void Newtonsoft.Json.JsonWriter::WriteValue(System.Single) */, L_2, L_3);
 		float L_4 = ___0_value;
 		JsonWriter_WriteValue_mB83A734CC93E3FA5CF86ACD51DC69F42DF7FEA54(__this, L_4, NULL);
 		return;
@@ -10385,11 +10385,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TraceJsonWriter_WriteValue_mF12F3F5D9181
 		JsonTextWriter_t8A730143EFDFE2A07F31B3C4DB82061A883A60F4* L_0 = __this->____textWriter_15;
 		Nullable_1_t3D746CBB6123D4569FF4DEA60BC4240F32C6FE75 L_1 = ___0_value;
 		NullCheck(L_0);
-		VirtualActionInvoker1< Nullable_1_t3D746CBB6123D4569FF4DEA60BC4240F32C6FE75 >::Invoke(47 /* System.Void Newtonsoft.Json.JsonWriter::WriteValue(System.Nullable`1<System.Single>) */, L_0, L_1);
+		VirtualActionInvoker1< Nullable_1_t3D746CBB6123D4569FF4DEA60BC4240F32C6FE75 >::Invoke(48 /* System.Void Newtonsoft.Json.JsonWriter::WriteValue(System.Nullable`1<System.Single>) */, L_0, L_1);
 		JsonWriter_t1750495CE81BD2D7BF7335A8468E2F960CA3ABC3* L_2 = __this->____innerWriter_14;
 		Nullable_1_t3D746CBB6123D4569FF4DEA60BC4240F32C6FE75 L_3 = ___0_value;
 		NullCheck(L_2);
-		VirtualActionInvoker1< Nullable_1_t3D746CBB6123D4569FF4DEA60BC4240F32C6FE75 >::Invoke(47 /* System.Void Newtonsoft.Json.JsonWriter::WriteValue(System.Nullable`1<System.Single>) */, L_2, L_3);
+		VirtualActionInvoker1< Nullable_1_t3D746CBB6123D4569FF4DEA60BC4240F32C6FE75 >::Invoke(48 /* System.Void Newtonsoft.Json.JsonWriter::WriteValue(System.Nullable`1<System.Single>) */, L_2, L_3);
 		bool L_4;
 		L_4 = Nullable_1_get_HasValue_mC149B1C717AF506BBE8932F2C1DC86C378D17EA8_inline((&___0_value), Nullable_1_get_HasValue_mC149B1C717AF506BBE8932F2C1DC86C378D17EA8_RuntimeMethod_var);
 		if (!L_4)
@@ -10417,11 +10417,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TraceJsonWriter_WriteValue_m9FC06FD22915
 		JsonTextWriter_t8A730143EFDFE2A07F31B3C4DB82061A883A60F4* L_0 = __this->____textWriter_15;
 		Guid_t L_1 = ___0_value;
 		NullCheck(L_0);
-		VirtualActionInvoker1< Guid_t >::Invoke(41 /* System.Void Newtonsoft.Json.JsonWriter::WriteValue(System.Guid) */, L_0, L_1);
+		VirtualActionInvoker1< Guid_t >::Invoke(42 /* System.Void Newtonsoft.Json.JsonWriter::WriteValue(System.Guid) */, L_0, L_1);
 		JsonWriter_t1750495CE81BD2D7BF7335A8468E2F960CA3ABC3* L_2 = __this->____innerWriter_14;
 		Guid_t L_3 = ___0_value;
 		NullCheck(L_2);
-		VirtualActionInvoker1< Guid_t >::Invoke(41 /* System.Void Newtonsoft.Json.JsonWriter::WriteValue(System.Guid) */, L_2, L_3);
+		VirtualActionInvoker1< Guid_t >::Invoke(42 /* System.Void Newtonsoft.Json.JsonWriter::WriteValue(System.Guid) */, L_2, L_3);
 		Guid_t L_4 = ___0_value;
 		JsonWriter_WriteValue_mE9DA95DC1D6DAC672C97C861B92D3CB63933EC7B(__this, L_4, NULL);
 		return;
@@ -10441,11 +10441,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TraceJsonWriter_WriteValue_mBB1A784A4ABF
 		JsonTextWriter_t8A730143EFDFE2A07F31B3C4DB82061A883A60F4* L_0 = __this->____textWriter_15;
 		Nullable_1_t0ECB838EB0C9A81655750B26970F21CF9A83A5F7 L_1 = ___0_value;
 		NullCheck(L_0);
-		VirtualActionInvoker1< Nullable_1_t0ECB838EB0C9A81655750B26970F21CF9A83A5F7 >::Invoke(58 /* System.Void Newtonsoft.Json.JsonWriter::WriteValue(System.Nullable`1<System.Guid>) */, L_0, L_1);
+		VirtualActionInvoker1< Nullable_1_t0ECB838EB0C9A81655750B26970F21CF9A83A5F7 >::Invoke(59 /* System.Void Newtonsoft.Json.JsonWriter::WriteValue(System.Nullable`1<System.Guid>) */, L_0, L_1);
 		JsonWriter_t1750495CE81BD2D7BF7335A8468E2F960CA3ABC3* L_2 = __this->____innerWriter_14;
 		Nullable_1_t0ECB838EB0C9A81655750B26970F21CF9A83A5F7 L_3 = ___0_value;
 		NullCheck(L_2);
-		VirtualActionInvoker1< Nullable_1_t0ECB838EB0C9A81655750B26970F21CF9A83A5F7 >::Invoke(58 /* System.Void Newtonsoft.Json.JsonWriter::WriteValue(System.Nullable`1<System.Guid>) */, L_2, L_3);
+		VirtualActionInvoker1< Nullable_1_t0ECB838EB0C9A81655750B26970F21CF9A83A5F7 >::Invoke(59 /* System.Void Newtonsoft.Json.JsonWriter::WriteValue(System.Nullable`1<System.Guid>) */, L_2, L_3);
 		bool L_4;
 		L_4 = Nullable_1_get_HasValue_mA4048346752BF05849998E450987EB444BE2AD63_inline((&___0_value), Nullable_1_get_HasValue_mA4048346752BF05849998E450987EB444BE2AD63_RuntimeMethod_var);
 		if (!L_4)
@@ -10473,11 +10473,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TraceJsonWriter_WriteValue_m3824B37C912D
 		JsonTextWriter_t8A730143EFDFE2A07F31B3C4DB82061A883A60F4* L_0 = __this->____textWriter_15;
 		int32_t L_1 = ___0_value;
 		NullCheck(L_0);
-		VirtualActionInvoker1< int32_t >::Invoke(26 /* System.Void Newtonsoft.Json.JsonWriter::WriteValue(System.Int32) */, L_0, L_1);
+		VirtualActionInvoker1< int32_t >::Invoke(27 /* System.Void Newtonsoft.Json.JsonWriter::WriteValue(System.Int32) */, L_0, L_1);
 		JsonWriter_t1750495CE81BD2D7BF7335A8468E2F960CA3ABC3* L_2 = __this->____innerWriter_14;
 		int32_t L_3 = ___0_value;
 		NullCheck(L_2);
-		VirtualActionInvoker1< int32_t >::Invoke(26 /* System.Void Newtonsoft.Json.JsonWriter::WriteValue(System.Int32) */, L_2, L_3);
+		VirtualActionInvoker1< int32_t >::Invoke(27 /* System.Void Newtonsoft.Json.JsonWriter::WriteValue(System.Int32) */, L_2, L_3);
 		int32_t L_4 = ___0_value;
 		JsonWriter_WriteValue_m8E9BDBD7C29F82DCCB87B4F5D17304F5A341A5B8(__this, L_4, NULL);
 		return;
@@ -10497,11 +10497,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TraceJsonWriter_WriteValue_m23111B2752A5
 		JsonTextWriter_t8A730143EFDFE2A07F31B3C4DB82061A883A60F4* L_0 = __this->____textWriter_15;
 		Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28 L_1 = ___0_value;
 		NullCheck(L_0);
-		VirtualActionInvoker1< Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28 >::Invoke(43 /* System.Void Newtonsoft.Json.JsonWriter::WriteValue(System.Nullable`1<System.Int32>) */, L_0, L_1);
+		VirtualActionInvoker1< Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28 >::Invoke(44 /* System.Void Newtonsoft.Json.JsonWriter::WriteValue(System.Nullable`1<System.Int32>) */, L_0, L_1);
 		JsonWriter_t1750495CE81BD2D7BF7335A8468E2F960CA3ABC3* L_2 = __this->____innerWriter_14;
 		Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28 L_3 = ___0_value;
 		NullCheck(L_2);
-		VirtualActionInvoker1< Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28 >::Invoke(43 /* System.Void Newtonsoft.Json.JsonWriter::WriteValue(System.Nullable`1<System.Int32>) */, L_2, L_3);
+		VirtualActionInvoker1< Nullable_1_tCF32C56A2641879C053C86F273C0C6EC1B40BC28 >::Invoke(44 /* System.Void Newtonsoft.Json.JsonWriter::WriteValue(System.Nullable`1<System.Int32>) */, L_2, L_3);
 		bool L_4;
 		L_4 = Nullable_1_get_HasValue_mCF2FD8B3055FA87FC9C504F2122B3B0FAEDE3EC9_inline((&___0_value), Nullable_1_get_HasValue_mCF2FD8B3055FA87FC9C504F2122B3B0FAEDE3EC9_RuntimeMethod_var);
 		if (!L_4)
@@ -10529,11 +10529,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TraceJsonWriter_WriteValue_mE2D4ECEDFB07
 		JsonTextWriter_t8A730143EFDFE2A07F31B3C4DB82061A883A60F4* L_0 = __this->____textWriter_15;
 		int64_t L_1 = ___0_value;
 		NullCheck(L_0);
-		VirtualActionInvoker1< int64_t >::Invoke(28 /* System.Void Newtonsoft.Json.JsonWriter::WriteValue(System.Int64) */, L_0, L_1);
+		VirtualActionInvoker1< int64_t >::Invoke(29 /* System.Void Newtonsoft.Json.JsonWriter::WriteValue(System.Int64) */, L_0, L_1);
 		JsonWriter_t1750495CE81BD2D7BF7335A8468E2F960CA3ABC3* L_2 = __this->____innerWriter_14;
 		int64_t L_3 = ___0_value;
 		NullCheck(L_2);
-		VirtualActionInvoker1< int64_t >::Invoke(28 /* System.Void Newtonsoft.Json.JsonWriter::WriteValue(System.Int64) */, L_2, L_3);
+		VirtualActionInvoker1< int64_t >::Invoke(29 /* System.Void Newtonsoft.Json.JsonWriter::WriteValue(System.Int64) */, L_2, L_3);
 		int64_t L_4 = ___0_value;
 		JsonWriter_WriteValue_mEAB0A21EA57BEDF7BAD742C3F2A75EEB2E1091FE(__this, L_4, NULL);
 		return;
@@ -10553,11 +10553,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TraceJsonWriter_WriteValue_m4E1125B869D2
 		JsonTextWriter_t8A730143EFDFE2A07F31B3C4DB82061A883A60F4* L_0 = __this->____textWriter_15;
 		Nullable_1_t365991B3904FDA7642A788423B28692FDC7CDB17 L_1 = ___0_value;
 		NullCheck(L_0);
-		VirtualActionInvoker1< Nullable_1_t365991B3904FDA7642A788423B28692FDC7CDB17 >::Invoke(45 /* System.Void Newtonsoft.Json.JsonWriter::WriteValue(System.Nullable`1<System.Int64>) */, L_0, L_1);
+		VirtualActionInvoker1< Nullable_1_t365991B3904FDA7642A788423B28692FDC7CDB17 >::Invoke(46 /* System.Void Newtonsoft.Json.JsonWriter::WriteValue(System.Nullable`1<System.Int64>) */, L_0, L_1);
 		JsonWriter_t1750495CE81BD2D7BF7335A8468E2F960CA3ABC3* L_2 = __this->____innerWriter_14;
 		Nullable_1_t365991B3904FDA7642A788423B28692FDC7CDB17 L_3 = ___0_value;
 		NullCheck(L_2);
-		VirtualActionInvoker1< Nullable_1_t365991B3904FDA7642A788423B28692FDC7CDB17 >::Invoke(45 /* System.Void Newtonsoft.Json.JsonWriter::WriteValue(System.Nullable`1<System.Int64>) */, L_2, L_3);
+		VirtualActionInvoker1< Nullable_1_t365991B3904FDA7642A788423B28692FDC7CDB17 >::Invoke(46 /* System.Void Newtonsoft.Json.JsonWriter::WriteValue(System.Nullable`1<System.Int64>) */, L_2, L_3);
 		bool L_4;
 		L_4 = Nullable_1_get_HasValue_mB4991C0F4C2664AB3CB2584DEECF5BCE6AB7757D_inline((&___0_value), Nullable_1_get_HasValue_mB4991C0F4C2664AB3CB2584DEECF5BCE6AB7757D_RuntimeMethod_var);
 		if (!L_4)
@@ -10598,11 +10598,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TraceJsonWriter_WriteValue_mE71B3EDDB51F
 		JsonTextWriter_t8A730143EFDFE2A07F31B3C4DB82061A883A60F4* L_1 = __this->____textWriter_15;
 		RuntimeObject* L_2 = ___0_value;
 		NullCheck(L_1);
-		VirtualActionInvoker1< RuntimeObject* >::Invoke(62 /* System.Void Newtonsoft.Json.JsonWriter::WriteValue(System.Object) */, L_1, L_2);
+		VirtualActionInvoker1< RuntimeObject* >::Invoke(63 /* System.Void Newtonsoft.Json.JsonWriter::WriteValue(System.Object) */, L_1, L_2);
 		JsonWriter_t1750495CE81BD2D7BF7335A8468E2F960CA3ABC3* L_3 = __this->____innerWriter_14;
 		RuntimeObject* L_4 = ___0_value;
 		NullCheck(L_3);
-		VirtualActionInvoker1< RuntimeObject* >::Invoke(62 /* System.Void Newtonsoft.Json.JsonWriter::WriteValue(System.Object) */, L_3, L_4);
+		VirtualActionInvoker1< RuntimeObject* >::Invoke(63 /* System.Void Newtonsoft.Json.JsonWriter::WriteValue(System.Object) */, L_3, L_4);
 		JsonWriter_InternalWriteValue_m7E8EC6F2C19FDF8EEE42F5B33931C55AC01088F6(__this, 7, NULL);
 		return;
 	}
@@ -10612,11 +10612,11 @@ IL_0028:
 		JsonTextWriter_t8A730143EFDFE2A07F31B3C4DB82061A883A60F4* L_5 = __this->____textWriter_15;
 		RuntimeObject* L_6 = ___0_value;
 		NullCheck(L_5);
-		VirtualActionInvoker1< RuntimeObject* >::Invoke(62 /* System.Void Newtonsoft.Json.JsonWriter::WriteValue(System.Object) */, L_5, L_6);
+		VirtualActionInvoker1< RuntimeObject* >::Invoke(63 /* System.Void Newtonsoft.Json.JsonWriter::WriteValue(System.Object) */, L_5, L_6);
 		JsonWriter_t1750495CE81BD2D7BF7335A8468E2F960CA3ABC3* L_7 = __this->____innerWriter_14;
 		RuntimeObject* L_8 = ___0_value;
 		NullCheck(L_7);
-		VirtualActionInvoker1< RuntimeObject* >::Invoke(62 /* System.Void Newtonsoft.Json.JsonWriter::WriteValue(System.Object) */, L_7, L_8);
+		VirtualActionInvoker1< RuntimeObject* >::Invoke(63 /* System.Void Newtonsoft.Json.JsonWriter::WriteValue(System.Object) */, L_7, L_8);
 		RuntimeObject* L_9 = ___0_value;
 		if (L_9)
 		{
@@ -10641,11 +10641,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TraceJsonWriter_WriteValue_m261489DBC232
 		JsonTextWriter_t8A730143EFDFE2A07F31B3C4DB82061A883A60F4* L_0 = __this->____textWriter_15;
 		int8_t L_1 = ___0_value;
 		NullCheck(L_0);
-		VirtualActionInvoker1< int8_t >::Invoke(37 /* System.Void Newtonsoft.Json.JsonWriter::WriteValue(System.SByte) */, L_0, L_1);
+		VirtualActionInvoker1< int8_t >::Invoke(38 /* System.Void Newtonsoft.Json.JsonWriter::WriteValue(System.SByte) */, L_0, L_1);
 		JsonWriter_t1750495CE81BD2D7BF7335A8468E2F960CA3ABC3* L_2 = __this->____innerWriter_14;
 		int8_t L_3 = ___0_value;
 		NullCheck(L_2);
-		VirtualActionInvoker1< int8_t >::Invoke(37 /* System.Void Newtonsoft.Json.JsonWriter::WriteValue(System.SByte) */, L_2, L_3);
+		VirtualActionInvoker1< int8_t >::Invoke(38 /* System.Void Newtonsoft.Json.JsonWriter::WriteValue(System.SByte) */, L_2, L_3);
 		int8_t L_4 = ___0_value;
 		JsonWriter_WriteValue_m0E635E0E6B005CD8D434FE57FAC79655FD774C4C(__this, L_4, NULL);
 		return;
@@ -10665,11 +10665,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TraceJsonWriter_WriteValue_m3285148FD20A
 		JsonTextWriter_t8A730143EFDFE2A07F31B3C4DB82061A883A60F4* L_0 = __this->____textWriter_15;
 		Nullable_1_tCF16C2638810B89EAA3EEFE6B35FC71B6AE96B2C L_1 = ___0_value;
 		NullCheck(L_0);
-		VirtualActionInvoker1< Nullable_1_tCF16C2638810B89EAA3EEFE6B35FC71B6AE96B2C >::Invoke(54 /* System.Void Newtonsoft.Json.JsonWriter::WriteValue(System.Nullable`1<System.SByte>) */, L_0, L_1);
+		VirtualActionInvoker1< Nullable_1_tCF16C2638810B89EAA3EEFE6B35FC71B6AE96B2C >::Invoke(55 /* System.Void Newtonsoft.Json.JsonWriter::WriteValue(System.Nullable`1<System.SByte>) */, L_0, L_1);
 		JsonWriter_t1750495CE81BD2D7BF7335A8468E2F960CA3ABC3* L_2 = __this->____innerWriter_14;
 		Nullable_1_tCF16C2638810B89EAA3EEFE6B35FC71B6AE96B2C L_3 = ___0_value;
 		NullCheck(L_2);
-		VirtualActionInvoker1< Nullable_1_tCF16C2638810B89EAA3EEFE6B35FC71B6AE96B2C >::Invoke(54 /* System.Void Newtonsoft.Json.JsonWriter::WriteValue(System.Nullable`1<System.SByte>) */, L_2, L_3);
+		VirtualActionInvoker1< Nullable_1_tCF16C2638810B89EAA3EEFE6B35FC71B6AE96B2C >::Invoke(55 /* System.Void Newtonsoft.Json.JsonWriter::WriteValue(System.Nullable`1<System.SByte>) */, L_2, L_3);
 		bool L_4;
 		L_4 = Nullable_1_get_HasValue_mAB8DCEDD36BC0DDB923D06BD98FF5EAE19CBC0DD_inline((&___0_value), Nullable_1_get_HasValue_mAB8DCEDD36BC0DDB923D06BD98FF5EAE19CBC0DD_RuntimeMethod_var);
 		if (!L_4)
@@ -10697,11 +10697,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TraceJsonWriter_WriteValue_mFD2DEC4F0E5F
 		JsonTextWriter_t8A730143EFDFE2A07F31B3C4DB82061A883A60F4* L_0 = __this->____textWriter_15;
 		int16_t L_1 = ___0_value;
 		NullCheck(L_0);
-		VirtualActionInvoker1< int16_t >::Invoke(33 /* System.Void Newtonsoft.Json.JsonWriter::WriteValue(System.Int16) */, L_0, L_1);
+		VirtualActionInvoker1< int16_t >::Invoke(34 /* System.Void Newtonsoft.Json.JsonWriter::WriteValue(System.Int16) */, L_0, L_1);
 		JsonWriter_t1750495CE81BD2D7BF7335A8468E2F960CA3ABC3* L_2 = __this->____innerWriter_14;
 		int16_t L_3 = ___0_value;
 		NullCheck(L_2);
-		VirtualActionInvoker1< int16_t >::Invoke(33 /* System.Void Newtonsoft.Json.JsonWriter::WriteValue(System.Int16) */, L_2, L_3);
+		VirtualActionInvoker1< int16_t >::Invoke(34 /* System.Void Newtonsoft.Json.JsonWriter::WriteValue(System.Int16) */, L_2, L_3);
 		int16_t L_4 = ___0_value;
 		JsonWriter_WriteValue_mE7084E3565A5BAE07F9E553F7C9362C2022E5B44(__this, L_4, NULL);
 		return;
@@ -10721,11 +10721,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TraceJsonWriter_WriteValue_m330198BFEC97
 		JsonTextWriter_t8A730143EFDFE2A07F31B3C4DB82061A883A60F4* L_0 = __this->____textWriter_15;
 		Nullable_1_t57D99A484501B89DA27E67D6D9A89722D5A7DE2C L_1 = ___0_value;
 		NullCheck(L_0);
-		VirtualActionInvoker1< Nullable_1_t57D99A484501B89DA27E67D6D9A89722D5A7DE2C >::Invoke(50 /* System.Void Newtonsoft.Json.JsonWriter::WriteValue(System.Nullable`1<System.Int16>) */, L_0, L_1);
+		VirtualActionInvoker1< Nullable_1_t57D99A484501B89DA27E67D6D9A89722D5A7DE2C >::Invoke(51 /* System.Void Newtonsoft.Json.JsonWriter::WriteValue(System.Nullable`1<System.Int16>) */, L_0, L_1);
 		JsonWriter_t1750495CE81BD2D7BF7335A8468E2F960CA3ABC3* L_2 = __this->____innerWriter_14;
 		Nullable_1_t57D99A484501B89DA27E67D6D9A89722D5A7DE2C L_3 = ___0_value;
 		NullCheck(L_2);
-		VirtualActionInvoker1< Nullable_1_t57D99A484501B89DA27E67D6D9A89722D5A7DE2C >::Invoke(50 /* System.Void Newtonsoft.Json.JsonWriter::WriteValue(System.Nullable`1<System.Int16>) */, L_2, L_3);
+		VirtualActionInvoker1< Nullable_1_t57D99A484501B89DA27E67D6D9A89722D5A7DE2C >::Invoke(51 /* System.Void Newtonsoft.Json.JsonWriter::WriteValue(System.Nullable`1<System.Int16>) */, L_2, L_3);
 		bool L_4;
 		L_4 = Nullable_1_get_HasValue_m013693738008CA2F962673FFA32A256254E9CA72_inline((&___0_value), Nullable_1_get_HasValue_m013693738008CA2F962673FFA32A256254E9CA72_RuntimeMethod_var);
 		if (!L_4)
@@ -10753,11 +10753,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TraceJsonWriter_WriteValue_m775C0788B1A3
 		JsonTextWriter_t8A730143EFDFE2A07F31B3C4DB82061A883A60F4* L_0 = __this->____textWriter_15;
 		String_t* L_1 = ___0_value;
 		NullCheck(L_0);
-		VirtualActionInvoker1< String_t* >::Invoke(25 /* System.Void Newtonsoft.Json.JsonWriter::WriteValue(System.String) */, L_0, L_1);
+		VirtualActionInvoker1< String_t* >::Invoke(26 /* System.Void Newtonsoft.Json.JsonWriter::WriteValue(System.String) */, L_0, L_1);
 		JsonWriter_t1750495CE81BD2D7BF7335A8468E2F960CA3ABC3* L_2 = __this->____innerWriter_14;
 		String_t* L_3 = ___0_value;
 		NullCheck(L_2);
-		VirtualActionInvoker1< String_t* >::Invoke(25 /* System.Void Newtonsoft.Json.JsonWriter::WriteValue(System.String) */, L_2, L_3);
+		VirtualActionInvoker1< String_t* >::Invoke(26 /* System.Void Newtonsoft.Json.JsonWriter::WriteValue(System.String) */, L_2, L_3);
 		String_t* L_4 = ___0_value;
 		JsonWriter_WriteValue_m3ECF13257A8D1AB90301A4174D42337149BC9D0C(__this, L_4, NULL);
 		return;
@@ -10770,11 +10770,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TraceJsonWriter_WriteValue_m7B25D6F714F2
 		JsonTextWriter_t8A730143EFDFE2A07F31B3C4DB82061A883A60F4* L_0 = __this->____textWriter_15;
 		TimeSpan_t8195C5B013A2C532FEBDF0B64B6911982E750F5A L_1 = ___0_value;
 		NullCheck(L_0);
-		VirtualActionInvoker1< TimeSpan_t8195C5B013A2C532FEBDF0B64B6911982E750F5A >::Invoke(42 /* System.Void Newtonsoft.Json.JsonWriter::WriteValue(System.TimeSpan) */, L_0, L_1);
+		VirtualActionInvoker1< TimeSpan_t8195C5B013A2C532FEBDF0B64B6911982E750F5A >::Invoke(43 /* System.Void Newtonsoft.Json.JsonWriter::WriteValue(System.TimeSpan) */, L_0, L_1);
 		JsonWriter_t1750495CE81BD2D7BF7335A8468E2F960CA3ABC3* L_2 = __this->____innerWriter_14;
 		TimeSpan_t8195C5B013A2C532FEBDF0B64B6911982E750F5A L_3 = ___0_value;
 		NullCheck(L_2);
-		VirtualActionInvoker1< TimeSpan_t8195C5B013A2C532FEBDF0B64B6911982E750F5A >::Invoke(42 /* System.Void Newtonsoft.Json.JsonWriter::WriteValue(System.TimeSpan) */, L_2, L_3);
+		VirtualActionInvoker1< TimeSpan_t8195C5B013A2C532FEBDF0B64B6911982E750F5A >::Invoke(43 /* System.Void Newtonsoft.Json.JsonWriter::WriteValue(System.TimeSpan) */, L_2, L_3);
 		TimeSpan_t8195C5B013A2C532FEBDF0B64B6911982E750F5A L_4 = ___0_value;
 		JsonWriter_WriteValue_mBE7C0F46DDAD5B5F4D814A322D271B8141BF0F07(__this, L_4, NULL);
 		return;
@@ -10794,11 +10794,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TraceJsonWriter_WriteValue_m8FBCD1FECAA2
 		JsonTextWriter_t8A730143EFDFE2A07F31B3C4DB82061A883A60F4* L_0 = __this->____textWriter_15;
 		Nullable_1_tE151CE1F6892804B41C4004C95CB57020ABB3272 L_1 = ___0_value;
 		NullCheck(L_0);
-		VirtualActionInvoker1< Nullable_1_tE151CE1F6892804B41C4004C95CB57020ABB3272 >::Invoke(59 /* System.Void Newtonsoft.Json.JsonWriter::WriteValue(System.Nullable`1<System.TimeSpan>) */, L_0, L_1);
+		VirtualActionInvoker1< Nullable_1_tE151CE1F6892804B41C4004C95CB57020ABB3272 >::Invoke(60 /* System.Void Newtonsoft.Json.JsonWriter::WriteValue(System.Nullable`1<System.TimeSpan>) */, L_0, L_1);
 		JsonWriter_t1750495CE81BD2D7BF7335A8468E2F960CA3ABC3* L_2 = __this->____innerWriter_14;
 		Nullable_1_tE151CE1F6892804B41C4004C95CB57020ABB3272 L_3 = ___0_value;
 		NullCheck(L_2);
-		VirtualActionInvoker1< Nullable_1_tE151CE1F6892804B41C4004C95CB57020ABB3272 >::Invoke(59 /* System.Void Newtonsoft.Json.JsonWriter::WriteValue(System.Nullable`1<System.TimeSpan>) */, L_2, L_3);
+		VirtualActionInvoker1< Nullable_1_tE151CE1F6892804B41C4004C95CB57020ABB3272 >::Invoke(60 /* System.Void Newtonsoft.Json.JsonWriter::WriteValue(System.Nullable`1<System.TimeSpan>) */, L_2, L_3);
 		bool L_4;
 		L_4 = Nullable_1_get_HasValue_mD63976C410D14373D6D1D3E713C09B1E152F2166_inline((&___0_value), Nullable_1_get_HasValue_mD63976C410D14373D6D1D3E713C09B1E152F2166_RuntimeMethod_var);
 		if (!L_4)
@@ -10826,11 +10826,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TraceJsonWriter_WriteValue_mD67ACF9BB3B5
 		JsonTextWriter_t8A730143EFDFE2A07F31B3C4DB82061A883A60F4* L_0 = __this->____textWriter_15;
 		uint32_t L_1 = ___0_value;
 		NullCheck(L_0);
-		VirtualActionInvoker1< uint32_t >::Invoke(27 /* System.Void Newtonsoft.Json.JsonWriter::WriteValue(System.UInt32) */, L_0, L_1);
+		VirtualActionInvoker1< uint32_t >::Invoke(28 /* System.Void Newtonsoft.Json.JsonWriter::WriteValue(System.UInt32) */, L_0, L_1);
 		JsonWriter_t1750495CE81BD2D7BF7335A8468E2F960CA3ABC3* L_2 = __this->____innerWriter_14;
 		uint32_t L_3 = ___0_value;
 		NullCheck(L_2);
-		VirtualActionInvoker1< uint32_t >::Invoke(27 /* System.Void Newtonsoft.Json.JsonWriter::WriteValue(System.UInt32) */, L_2, L_3);
+		VirtualActionInvoker1< uint32_t >::Invoke(28 /* System.Void Newtonsoft.Json.JsonWriter::WriteValue(System.UInt32) */, L_2, L_3);
 		uint32_t L_4 = ___0_value;
 		JsonWriter_WriteValue_m94B80E8F2C3BF83E01624C8DE99D37CAEF2FE39B(__this, L_4, NULL);
 		return;
@@ -10850,11 +10850,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TraceJsonWriter_WriteValue_mFE5DFCA1CE06
 		JsonTextWriter_t8A730143EFDFE2A07F31B3C4DB82061A883A60F4* L_0 = __this->____textWriter_15;
 		Nullable_1_tD043F01310E483091D0E9A5526C3425F13EF2099 L_1 = ___0_value;
 		NullCheck(L_0);
-		VirtualActionInvoker1< Nullable_1_tD043F01310E483091D0E9A5526C3425F13EF2099 >::Invoke(44 /* System.Void Newtonsoft.Json.JsonWriter::WriteValue(System.Nullable`1<System.UInt32>) */, L_0, L_1);
+		VirtualActionInvoker1< Nullable_1_tD043F01310E483091D0E9A5526C3425F13EF2099 >::Invoke(45 /* System.Void Newtonsoft.Json.JsonWriter::WriteValue(System.Nullable`1<System.UInt32>) */, L_0, L_1);
 		JsonWriter_t1750495CE81BD2D7BF7335A8468E2F960CA3ABC3* L_2 = __this->____innerWriter_14;
 		Nullable_1_tD043F01310E483091D0E9A5526C3425F13EF2099 L_3 = ___0_value;
 		NullCheck(L_2);
-		VirtualActionInvoker1< Nullable_1_tD043F01310E483091D0E9A5526C3425F13EF2099 >::Invoke(44 /* System.Void Newtonsoft.Json.JsonWriter::WriteValue(System.Nullable`1<System.UInt32>) */, L_2, L_3);
+		VirtualActionInvoker1< Nullable_1_tD043F01310E483091D0E9A5526C3425F13EF2099 >::Invoke(45 /* System.Void Newtonsoft.Json.JsonWriter::WriteValue(System.Nullable`1<System.UInt32>) */, L_2, L_3);
 		bool L_4;
 		L_4 = Nullable_1_get_HasValue_mDEB82F7445A31CA12FE47E887EAE322E7ABB1B54_inline((&___0_value), Nullable_1_get_HasValue_mDEB82F7445A31CA12FE47E887EAE322E7ABB1B54_RuntimeMethod_var);
 		if (!L_4)
@@ -10882,11 +10882,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TraceJsonWriter_WriteValue_mF2F45A10E461
 		JsonTextWriter_t8A730143EFDFE2A07F31B3C4DB82061A883A60F4* L_0 = __this->____textWriter_15;
 		uint64_t L_1 = ___0_value;
 		NullCheck(L_0);
-		VirtualActionInvoker1< uint64_t >::Invoke(29 /* System.Void Newtonsoft.Json.JsonWriter::WriteValue(System.UInt64) */, L_0, L_1);
+		VirtualActionInvoker1< uint64_t >::Invoke(30 /* System.Void Newtonsoft.Json.JsonWriter::WriteValue(System.UInt64) */, L_0, L_1);
 		JsonWriter_t1750495CE81BD2D7BF7335A8468E2F960CA3ABC3* L_2 = __this->____innerWriter_14;
 		uint64_t L_3 = ___0_value;
 		NullCheck(L_2);
-		VirtualActionInvoker1< uint64_t >::Invoke(29 /* System.Void Newtonsoft.Json.JsonWriter::WriteValue(System.UInt64) */, L_2, L_3);
+		VirtualActionInvoker1< uint64_t >::Invoke(30 /* System.Void Newtonsoft.Json.JsonWriter::WriteValue(System.UInt64) */, L_2, L_3);
 		uint64_t L_4 = ___0_value;
 		JsonWriter_WriteValue_m9A6D49A850A3EA706B7143FF45BCF9DECF2A6ED5(__this, L_4, NULL);
 		return;
@@ -10906,11 +10906,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TraceJsonWriter_WriteValue_mEEFDE8C23C37
 		JsonTextWriter_t8A730143EFDFE2A07F31B3C4DB82061A883A60F4* L_0 = __this->____textWriter_15;
 		Nullable_1_tF8BFF19FF240C9F0A45168187CD7106BAA146A99 L_1 = ___0_value;
 		NullCheck(L_0);
-		VirtualActionInvoker1< Nullable_1_tF8BFF19FF240C9F0A45168187CD7106BAA146A99 >::Invoke(46 /* System.Void Newtonsoft.Json.JsonWriter::WriteValue(System.Nullable`1<System.UInt64>) */, L_0, L_1);
+		VirtualActionInvoker1< Nullable_1_tF8BFF19FF240C9F0A45168187CD7106BAA146A99 >::Invoke(47 /* System.Void Newtonsoft.Json.JsonWriter::WriteValue(System.Nullable`1<System.UInt64>) */, L_0, L_1);
 		JsonWriter_t1750495CE81BD2D7BF7335A8468E2F960CA3ABC3* L_2 = __this->____innerWriter_14;
 		Nullable_1_tF8BFF19FF240C9F0A45168187CD7106BAA146A99 L_3 = ___0_value;
 		NullCheck(L_2);
-		VirtualActionInvoker1< Nullable_1_tF8BFF19FF240C9F0A45168187CD7106BAA146A99 >::Invoke(46 /* System.Void Newtonsoft.Json.JsonWriter::WriteValue(System.Nullable`1<System.UInt64>) */, L_2, L_3);
+		VirtualActionInvoker1< Nullable_1_tF8BFF19FF240C9F0A45168187CD7106BAA146A99 >::Invoke(47 /* System.Void Newtonsoft.Json.JsonWriter::WriteValue(System.Nullable`1<System.UInt64>) */, L_2, L_3);
 		bool L_4;
 		L_4 = Nullable_1_get_HasValue_mDC0D880BCCF15346C0D7E4FFE228C49C33FEE47C_inline((&___0_value), Nullable_1_get_HasValue_mDC0D880BCCF15346C0D7E4FFE228C49C33FEE47C_RuntimeMethod_var);
 		if (!L_4)
@@ -10944,11 +10944,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TraceJsonWriter_WriteValue_mA1C2AD0B488C
 		JsonTextWriter_t8A730143EFDFE2A07F31B3C4DB82061A883A60F4* L_0 = __this->____textWriter_15;
 		Uri_t1500A52B5F71A04F5D05C0852D0F2A0941842A0E* L_1 = ___0_value;
 		NullCheck(L_0);
-		VirtualActionInvoker1< Uri_t1500A52B5F71A04F5D05C0852D0F2A0941842A0E* >::Invoke(61 /* System.Void Newtonsoft.Json.JsonWriter::WriteValue(System.Uri) */, L_0, L_1);
+		VirtualActionInvoker1< Uri_t1500A52B5F71A04F5D05C0852D0F2A0941842A0E* >::Invoke(62 /* System.Void Newtonsoft.Json.JsonWriter::WriteValue(System.Uri) */, L_0, L_1);
 		JsonWriter_t1750495CE81BD2D7BF7335A8468E2F960CA3ABC3* L_2 = __this->____innerWriter_14;
 		Uri_t1500A52B5F71A04F5D05C0852D0F2A0941842A0E* L_3 = ___0_value;
 		NullCheck(L_2);
-		VirtualActionInvoker1< Uri_t1500A52B5F71A04F5D05C0852D0F2A0941842A0E* >::Invoke(61 /* System.Void Newtonsoft.Json.JsonWriter::WriteValue(System.Uri) */, L_2, L_3);
+		VirtualActionInvoker1< Uri_t1500A52B5F71A04F5D05C0852D0F2A0941842A0E* >::Invoke(62 /* System.Void Newtonsoft.Json.JsonWriter::WriteValue(System.Uri) */, L_2, L_3);
 		Uri_t1500A52B5F71A04F5D05C0852D0F2A0941842A0E* L_4 = ___0_value;
 		il2cpp_codegen_runtime_class_init_inline(Uri_t1500A52B5F71A04F5D05C0852D0F2A0941842A0E_il2cpp_TypeInfo_var);
 		bool L_5;
@@ -10977,11 +10977,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TraceJsonWriter_WriteValue_m7D8B44D6EDEC
 		JsonTextWriter_t8A730143EFDFE2A07F31B3C4DB82061A883A60F4* L_0 = __this->____textWriter_15;
 		uint16_t L_1 = ___0_value;
 		NullCheck(L_0);
-		VirtualActionInvoker1< uint16_t >::Invoke(34 /* System.Void Newtonsoft.Json.JsonWriter::WriteValue(System.UInt16) */, L_0, L_1);
+		VirtualActionInvoker1< uint16_t >::Invoke(35 /* System.Void Newtonsoft.Json.JsonWriter::WriteValue(System.UInt16) */, L_0, L_1);
 		JsonWriter_t1750495CE81BD2D7BF7335A8468E2F960CA3ABC3* L_2 = __this->____innerWriter_14;
 		uint16_t L_3 = ___0_value;
 		NullCheck(L_2);
-		VirtualActionInvoker1< uint16_t >::Invoke(34 /* System.Void Newtonsoft.Json.JsonWriter::WriteValue(System.UInt16) */, L_2, L_3);
+		VirtualActionInvoker1< uint16_t >::Invoke(35 /* System.Void Newtonsoft.Json.JsonWriter::WriteValue(System.UInt16) */, L_2, L_3);
 		uint16_t L_4 = ___0_value;
 		JsonWriter_WriteValue_m152C46080EAA9C377E3E2E2942B16273F93A2148(__this, L_4, NULL);
 		return;
@@ -11001,11 +11001,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TraceJsonWriter_WriteValue_m6E7DE99C525A
 		JsonTextWriter_t8A730143EFDFE2A07F31B3C4DB82061A883A60F4* L_0 = __this->____textWriter_15;
 		Nullable_1_t70F850DEE49B62D1B877D3C32F9E0EC724ADC4D9 L_1 = ___0_value;
 		NullCheck(L_0);
-		VirtualActionInvoker1< Nullable_1_t70F850DEE49B62D1B877D3C32F9E0EC724ADC4D9 >::Invoke(51 /* System.Void Newtonsoft.Json.JsonWriter::WriteValue(System.Nullable`1<System.UInt16>) */, L_0, L_1);
+		VirtualActionInvoker1< Nullable_1_t70F850DEE49B62D1B877D3C32F9E0EC724ADC4D9 >::Invoke(52 /* System.Void Newtonsoft.Json.JsonWriter::WriteValue(System.Nullable`1<System.UInt16>) */, L_0, L_1);
 		JsonWriter_t1750495CE81BD2D7BF7335A8468E2F960CA3ABC3* L_2 = __this->____innerWriter_14;
 		Nullable_1_t70F850DEE49B62D1B877D3C32F9E0EC724ADC4D9 L_3 = ___0_value;
 		NullCheck(L_2);
-		VirtualActionInvoker1< Nullable_1_t70F850DEE49B62D1B877D3C32F9E0EC724ADC4D9 >::Invoke(51 /* System.Void Newtonsoft.Json.JsonWriter::WriteValue(System.Nullable`1<System.UInt16>) */, L_2, L_3);
+		VirtualActionInvoker1< Nullable_1_t70F850DEE49B62D1B877D3C32F9E0EC724ADC4D9 >::Invoke(52 /* System.Void Newtonsoft.Json.JsonWriter::WriteValue(System.Nullable`1<System.UInt16>) */, L_2, L_3);
 		bool L_4;
 		L_4 = Nullable_1_get_HasValue_m23F2C5D1E18BCB697AAD7E04F5B213F5DAB67F76_inline((&___0_value), Nullable_1_get_HasValue_m23F2C5D1E18BCB697AAD7E04F5B213F5DAB67F76_RuntimeMethod_var);
 		if (!L_4)
@@ -11033,11 +11033,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TraceJsonWriter_WriteComment_m7B37305B3B
 		JsonTextWriter_t8A730143EFDFE2A07F31B3C4DB82061A883A60F4* L_0 = __this->____textWriter_15;
 		String_t* L_1 = ___0_text;
 		NullCheck(L_0);
-		VirtualActionInvoker1< String_t* >::Invoke(63 /* System.Void Newtonsoft.Json.JsonWriter::WriteComment(System.String) */, L_0, L_1);
+		VirtualActionInvoker1< String_t* >::Invoke(64 /* System.Void Newtonsoft.Json.JsonWriter::WriteComment(System.String) */, L_0, L_1);
 		JsonWriter_t1750495CE81BD2D7BF7335A8468E2F960CA3ABC3* L_2 = __this->____innerWriter_14;
 		String_t* L_3 = ___0_text;
 		NullCheck(L_2);
-		VirtualActionInvoker1< String_t* >::Invoke(63 /* System.Void Newtonsoft.Json.JsonWriter::WriteComment(System.String) */, L_2, L_3);
+		VirtualActionInvoker1< String_t* >::Invoke(64 /* System.Void Newtonsoft.Json.JsonWriter::WriteComment(System.String) */, L_2, L_3);
 		String_t* L_4 = ___0_text;
 		JsonWriter_WriteComment_mFA4E1316687AD7922CFFEC126169E6083FC720A6(__this, L_4, NULL);
 		return;
@@ -11049,10 +11049,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TraceJsonWriter_WriteStartArray_mA06D78D
 	{
 		JsonTextWriter_t8A730143EFDFE2A07F31B3C4DB82061A883A60F4* L_0 = __this->____textWriter_15;
 		NullCheck(L_0);
-		VirtualActionInvoker0::Invoke(9 /* System.Void Newtonsoft.Json.JsonWriter::WriteStartArray() */, L_0);
+		VirtualActionInvoker0::Invoke(10 /* System.Void Newtonsoft.Json.JsonWriter::WriteStartArray() */, L_0);
 		JsonWriter_t1750495CE81BD2D7BF7335A8468E2F960CA3ABC3* L_1 = __this->____innerWriter_14;
 		NullCheck(L_1);
-		VirtualActionInvoker0::Invoke(9 /* System.Void Newtonsoft.Json.JsonWriter::WriteStartArray() */, L_1);
+		VirtualActionInvoker0::Invoke(10 /* System.Void Newtonsoft.Json.JsonWriter::WriteStartArray() */, L_1);
 		JsonWriter_WriteStartArray_mE2EDFEE60214B989C151DCD66C2B3219D927C75A(__this, NULL);
 		return;
 	}
@@ -11063,10 +11063,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TraceJsonWriter_WriteEndArray_m37C01D2EE
 	{
 		JsonTextWriter_t8A730143EFDFE2A07F31B3C4DB82061A883A60F4* L_0 = __this->____textWriter_15;
 		NullCheck(L_0);
-		VirtualActionInvoker0::Invoke(10 /* System.Void Newtonsoft.Json.JsonWriter::WriteEndArray() */, L_0);
+		VirtualActionInvoker0::Invoke(11 /* System.Void Newtonsoft.Json.JsonWriter::WriteEndArray() */, L_0);
 		JsonWriter_t1750495CE81BD2D7BF7335A8468E2F960CA3ABC3* L_1 = __this->____innerWriter_14;
 		NullCheck(L_1);
-		VirtualActionInvoker0::Invoke(10 /* System.Void Newtonsoft.Json.JsonWriter::WriteEndArray() */, L_1);
+		VirtualActionInvoker0::Invoke(11 /* System.Void Newtonsoft.Json.JsonWriter::WriteEndArray() */, L_1);
 		JsonWriter_WriteEndArray_m25923F05A530E148CF36E758C2AA1B85790277A5(__this, NULL);
 		return;
 	}
@@ -11078,11 +11078,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TraceJsonWriter_WriteStartConstructor_m4
 		JsonTextWriter_t8A730143EFDFE2A07F31B3C4DB82061A883A60F4* L_0 = __this->____textWriter_15;
 		String_t* L_1 = ___0_name;
 		NullCheck(L_0);
-		VirtualActionInvoker1< String_t* >::Invoke(11 /* System.Void Newtonsoft.Json.JsonWriter::WriteStartConstructor(System.String) */, L_0, L_1);
+		VirtualActionInvoker1< String_t* >::Invoke(12 /* System.Void Newtonsoft.Json.JsonWriter::WriteStartConstructor(System.String) */, L_0, L_1);
 		JsonWriter_t1750495CE81BD2D7BF7335A8468E2F960CA3ABC3* L_2 = __this->____innerWriter_14;
 		String_t* L_3 = ___0_name;
 		NullCheck(L_2);
-		VirtualActionInvoker1< String_t* >::Invoke(11 /* System.Void Newtonsoft.Json.JsonWriter::WriteStartConstructor(System.String) */, L_2, L_3);
+		VirtualActionInvoker1< String_t* >::Invoke(12 /* System.Void Newtonsoft.Json.JsonWriter::WriteStartConstructor(System.String) */, L_2, L_3);
 		String_t* L_4 = ___0_name;
 		JsonWriter_WriteStartConstructor_m07D1C7D6352A67ACD8BDC166DC4CB1733650FEC6(__this, L_4, NULL);
 		return;
@@ -11094,10 +11094,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TraceJsonWriter_WriteEndConstructor_m456
 	{
 		JsonTextWriter_t8A730143EFDFE2A07F31B3C4DB82061A883A60F4* L_0 = __this->____textWriter_15;
 		NullCheck(L_0);
-		VirtualActionInvoker0::Invoke(12 /* System.Void Newtonsoft.Json.JsonWriter::WriteEndConstructor() */, L_0);
+		VirtualActionInvoker0::Invoke(13 /* System.Void Newtonsoft.Json.JsonWriter::WriteEndConstructor() */, L_0);
 		JsonWriter_t1750495CE81BD2D7BF7335A8468E2F960CA3ABC3* L_1 = __this->____innerWriter_14;
 		NullCheck(L_1);
-		VirtualActionInvoker0::Invoke(12 /* System.Void Newtonsoft.Json.JsonWriter::WriteEndConstructor() */, L_1);
+		VirtualActionInvoker0::Invoke(13 /* System.Void Newtonsoft.Json.JsonWriter::WriteEndConstructor() */, L_1);
 		JsonWriter_WriteEndConstructor_mBC686C3FC4C2E47F75ED957F796E829D67DA51B6(__this, NULL);
 		return;
 	}
@@ -11109,11 +11109,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TraceJsonWriter_WritePropertyName_m56A03
 		JsonTextWriter_t8A730143EFDFE2A07F31B3C4DB82061A883A60F4* L_0 = __this->____textWriter_15;
 		String_t* L_1 = ___0_name;
 		NullCheck(L_0);
-		VirtualActionInvoker1< String_t* >::Invoke(13 /* System.Void Newtonsoft.Json.JsonWriter::WritePropertyName(System.String) */, L_0, L_1);
+		VirtualActionInvoker1< String_t* >::Invoke(14 /* System.Void Newtonsoft.Json.JsonWriter::WritePropertyName(System.String) */, L_0, L_1);
 		JsonWriter_t1750495CE81BD2D7BF7335A8468E2F960CA3ABC3* L_2 = __this->____innerWriter_14;
 		String_t* L_3 = ___0_name;
 		NullCheck(L_2);
-		VirtualActionInvoker1< String_t* >::Invoke(13 /* System.Void Newtonsoft.Json.JsonWriter::WritePropertyName(System.String) */, L_2, L_3);
+		VirtualActionInvoker1< String_t* >::Invoke(14 /* System.Void Newtonsoft.Json.JsonWriter::WritePropertyName(System.String) */, L_2, L_3);
 		String_t* L_4 = ___0_name;
 		JsonWriter_WritePropertyName_mD805FBFFF2D43C2EC1E23A59C0102E5244CD537F(__this, L_4, NULL);
 		return;
@@ -11127,12 +11127,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TraceJsonWriter_WritePropertyName_m80839
 		String_t* L_1 = ___0_name;
 		bool L_2 = ___1_escape;
 		NullCheck(L_0);
-		VirtualActionInvoker2< String_t*, bool >::Invoke(14 /* System.Void Newtonsoft.Json.JsonWriter::WritePropertyName(System.String,System.Boolean) */, L_0, L_1, L_2);
+		VirtualActionInvoker2< String_t*, bool >::Invoke(15 /* System.Void Newtonsoft.Json.JsonWriter::WritePropertyName(System.String,System.Boolean) */, L_0, L_1, L_2);
 		JsonWriter_t1750495CE81BD2D7BF7335A8468E2F960CA3ABC3* L_3 = __this->____innerWriter_14;
 		String_t* L_4 = ___0_name;
 		bool L_5 = ___1_escape;
 		NullCheck(L_3);
-		VirtualActionInvoker2< String_t*, bool >::Invoke(14 /* System.Void Newtonsoft.Json.JsonWriter::WritePropertyName(System.String,System.Boolean) */, L_3, L_4, L_5);
+		VirtualActionInvoker2< String_t*, bool >::Invoke(15 /* System.Void Newtonsoft.Json.JsonWriter::WritePropertyName(System.String,System.Boolean) */, L_3, L_4, L_5);
 		String_t* L_6 = ___0_name;
 		JsonWriter_WritePropertyName_mD805FBFFF2D43C2EC1E23A59C0102E5244CD537F(__this, L_6, NULL);
 		return;
@@ -11144,10 +11144,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TraceJsonWriter_WriteStartObject_m17F2D9
 	{
 		JsonTextWriter_t8A730143EFDFE2A07F31B3C4DB82061A883A60F4* L_0 = __this->____textWriter_15;
 		NullCheck(L_0);
-		VirtualActionInvoker0::Invoke(7 /* System.Void Newtonsoft.Json.JsonWriter::WriteStartObject() */, L_0);
+		VirtualActionInvoker0::Invoke(8 /* System.Void Newtonsoft.Json.JsonWriter::WriteStartObject() */, L_0);
 		JsonWriter_t1750495CE81BD2D7BF7335A8468E2F960CA3ABC3* L_1 = __this->____innerWriter_14;
 		NullCheck(L_1);
-		VirtualActionInvoker0::Invoke(7 /* System.Void Newtonsoft.Json.JsonWriter::WriteStartObject() */, L_1);
+		VirtualActionInvoker0::Invoke(8 /* System.Void Newtonsoft.Json.JsonWriter::WriteStartObject() */, L_1);
 		JsonWriter_WriteStartObject_m327A0474DB3032162614C57B6154773EA900C153(__this, NULL);
 		return;
 	}
@@ -11158,10 +11158,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TraceJsonWriter_WriteEndObject_m42BEBC4A
 	{
 		JsonTextWriter_t8A730143EFDFE2A07F31B3C4DB82061A883A60F4* L_0 = __this->____textWriter_15;
 		NullCheck(L_0);
-		VirtualActionInvoker0::Invoke(8 /* System.Void Newtonsoft.Json.JsonWriter::WriteEndObject() */, L_0);
+		VirtualActionInvoker0::Invoke(9 /* System.Void Newtonsoft.Json.JsonWriter::WriteEndObject() */, L_0);
 		JsonWriter_t1750495CE81BD2D7BF7335A8468E2F960CA3ABC3* L_1 = __this->____innerWriter_14;
 		NullCheck(L_1);
-		VirtualActionInvoker0::Invoke(8 /* System.Void Newtonsoft.Json.JsonWriter::WriteEndObject() */, L_1);
+		VirtualActionInvoker0::Invoke(9 /* System.Void Newtonsoft.Json.JsonWriter::WriteEndObject() */, L_1);
 		JsonWriter_WriteEndObject_mDAD19DEDAE92A5585F9D5B5E87220404DE54F5A9(__this, NULL);
 		return;
 	}
@@ -11173,11 +11173,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TraceJsonWriter_WriteRawValue_m6B20B376E
 		JsonTextWriter_t8A730143EFDFE2A07F31B3C4DB82061A883A60F4* L_0 = __this->____textWriter_15;
 		String_t* L_1 = ___0_json;
 		NullCheck(L_0);
-		VirtualActionInvoker1< String_t* >::Invoke(24 /* System.Void Newtonsoft.Json.JsonWriter::WriteRawValue(System.String) */, L_0, L_1);
+		VirtualActionInvoker1< String_t* >::Invoke(25 /* System.Void Newtonsoft.Json.JsonWriter::WriteRawValue(System.String) */, L_0, L_1);
 		JsonWriter_t1750495CE81BD2D7BF7335A8468E2F960CA3ABC3* L_2 = __this->____innerWriter_14;
 		String_t* L_3 = ___0_json;
 		NullCheck(L_2);
-		VirtualActionInvoker1< String_t* >::Invoke(24 /* System.Void Newtonsoft.Json.JsonWriter::WriteRawValue(System.String) */, L_2, L_3);
+		VirtualActionInvoker1< String_t* >::Invoke(25 /* System.Void Newtonsoft.Json.JsonWriter::WriteRawValue(System.String) */, L_2, L_3);
 		JsonWriter_InternalWriteValue_m7E8EC6F2C19FDF8EEE42F5B33931C55AC01088F6(__this, ((int32_t)12), NULL);
 		return;
 	}
@@ -11189,11 +11189,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TraceJsonWriter_WriteRaw_m2D39EE6E19B111
 		JsonTextWriter_t8A730143EFDFE2A07F31B3C4DB82061A883A60F4* L_0 = __this->____textWriter_15;
 		String_t* L_1 = ___0_json;
 		NullCheck(L_0);
-		VirtualActionInvoker1< String_t* >::Invoke(23 /* System.Void Newtonsoft.Json.JsonWriter::WriteRaw(System.String) */, L_0, L_1);
+		VirtualActionInvoker1< String_t* >::Invoke(24 /* System.Void Newtonsoft.Json.JsonWriter::WriteRaw(System.String) */, L_0, L_1);
 		JsonWriter_t1750495CE81BD2D7BF7335A8468E2F960CA3ABC3* L_2 = __this->____innerWriter_14;
 		String_t* L_3 = ___0_json;
 		NullCheck(L_2);
-		VirtualActionInvoker1< String_t* >::Invoke(23 /* System.Void Newtonsoft.Json.JsonWriter::WriteRaw(System.String) */, L_2, L_3);
+		VirtualActionInvoker1< String_t* >::Invoke(24 /* System.Void Newtonsoft.Json.JsonWriter::WriteRaw(System.String) */, L_2, L_3);
 		String_t* L_4 = ___0_json;
 		JsonWriter_WriteRaw_m63875F6A8D37055645EB0515229DBDB124E7EC69(__this, L_4, NULL);
 		return;
@@ -11205,11 +11205,24 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TraceJsonWriter_Close_m9D548ECEF35BB5A78
 	{
 		JsonTextWriter_t8A730143EFDFE2A07F31B3C4DB82061A883A60F4* L_0 = __this->____textWriter_15;
 		NullCheck(L_0);
-		VirtualActionInvoker0::Invoke(6 /* System.Void Newtonsoft.Json.JsonWriter::Close() */, L_0);
+		VirtualActionInvoker0::Invoke(7 /* System.Void Newtonsoft.Json.JsonWriter::Close() */, L_0);
 		JsonWriter_t1750495CE81BD2D7BF7335A8468E2F960CA3ABC3* L_1 = __this->____innerWriter_14;
 		NullCheck(L_1);
-		VirtualActionInvoker0::Invoke(6 /* System.Void Newtonsoft.Json.JsonWriter::Close() */, L_1);
+		VirtualActionInvoker0::Invoke(7 /* System.Void Newtonsoft.Json.JsonWriter::Close() */, L_1);
 		JsonWriter_Close_m550789FF5D483AA86A99B5301B375F5BFB08C523(__this, NULL);
+		return;
+	}
+}
+// System.Void Newtonsoft.Json.Serialization.TraceJsonWriter::Flush()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TraceJsonWriter_Flush_m6C2C91F465D5280140B5F0015C1949EECC2D51E6 (TraceJsonWriter_t8594E0A375EC85B5EA9AF763114C4E39B8258FCE* __this, const RuntimeMethod* method) 
+{
+	{
+		JsonTextWriter_t8A730143EFDFE2A07F31B3C4DB82061A883A60F4* L_0 = __this->____textWriter_15;
+		NullCheck(L_0);
+		VirtualActionInvoker0::Invoke(6 /* System.Void Newtonsoft.Json.JsonWriter::Flush() */, L_0);
+		JsonWriter_t1750495CE81BD2D7BF7335A8468E2F960CA3ABC3* L_1 = __this->____innerWriter_14;
+		NullCheck(L_1);
+		VirtualActionInvoker0::Invoke(6 /* System.Void Newtonsoft.Json.JsonWriter::Flush() */, L_1);
 		return;
 	}
 }
@@ -11538,7 +11551,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void JArray_WriteTo_m2D922281767C17A5AB3C171B
 	{
 		JsonWriter_t1750495CE81BD2D7BF7335A8468E2F960CA3ABC3* L_0 = ___0_writer;
 		NullCheck(L_0);
-		VirtualActionInvoker0::Invoke(9 /* System.Void Newtonsoft.Json.JsonWriter::WriteStartArray() */, L_0);
+		VirtualActionInvoker0::Invoke(10 /* System.Void Newtonsoft.Json.JsonWriter::WriteStartArray() */, L_0);
 		V_0 = 0;
 		goto IL_0021;
 	}
@@ -11573,7 +11586,7 @@ IL_0021:
 	{
 		JsonWriter_t1750495CE81BD2D7BF7335A8468E2F960CA3ABC3* L_10 = ___0_writer;
 		NullCheck(L_10);
-		VirtualActionInvoker0::Invoke(10 /* System.Void Newtonsoft.Json.JsonWriter::WriteEndArray() */, L_10);
+		VirtualActionInvoker0::Invoke(11 /* System.Void Newtonsoft.Json.JsonWriter::WriteEndArray() */, L_10);
 		return;
 	}
 }
@@ -12037,7 +12050,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void JConstructor_WriteTo_mC844D568EC8CD00E71
 		JsonWriter_t1750495CE81BD2D7BF7335A8468E2F960CA3ABC3* L_0 = ___0_writer;
 		String_t* L_1 = __this->____name_18;
 		NullCheck(L_0);
-		VirtualActionInvoker1< String_t* >::Invoke(11 /* System.Void Newtonsoft.Json.JsonWriter::WriteStartConstructor(System.String) */, L_0, L_1);
+		VirtualActionInvoker1< String_t* >::Invoke(12 /* System.Void Newtonsoft.Json.JsonWriter::WriteStartConstructor(System.String) */, L_0, L_1);
 		List_1_t58901670B7FA44803364AA3059A3F981A991011A* L_2 = __this->____values_19;
 		NullCheck(L_2);
 		int32_t L_3;
@@ -12074,7 +12087,7 @@ IL_0033:
 	{
 		JsonWriter_t1750495CE81BD2D7BF7335A8468E2F960CA3ABC3* L_12 = ___0_writer;
 		NullCheck(L_12);
-		VirtualActionInvoker0::Invoke(12 /* System.Void Newtonsoft.Json.JsonWriter::WriteEndConstructor() */, L_12);
+		VirtualActionInvoker0::Invoke(13 /* System.Void Newtonsoft.Json.JsonWriter::WriteEndConstructor() */, L_12);
 		return;
 	}
 }
@@ -16674,7 +16687,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void JObject_WriteTo_m39BCD00E12DCDFCB9446B22
 	{
 		JsonWriter_t1750495CE81BD2D7BF7335A8468E2F960CA3ABC3* L_0 = ___0_writer;
 		NullCheck(L_0);
-		VirtualActionInvoker0::Invoke(7 /* System.Void Newtonsoft.Json.JsonWriter::WriteStartObject() */, L_0);
+		VirtualActionInvoker0::Invoke(8 /* System.Void Newtonsoft.Json.JsonWriter::WriteStartObject() */, L_0);
 		V_0 = 0;
 		goto IL_0021;
 	}
@@ -16709,7 +16722,7 @@ IL_0021:
 	{
 		JsonWriter_t1750495CE81BD2D7BF7335A8468E2F960CA3ABC3* L_10 = ___0_writer;
 		NullCheck(L_10);
-		VirtualActionInvoker0::Invoke(8 /* System.Void Newtonsoft.Json.JsonWriter::WriteEndObject() */, L_10);
+		VirtualActionInvoker0::Invoke(9 /* System.Void Newtonsoft.Json.JsonWriter::WriteEndObject() */, L_10);
 		return;
 	}
 }
@@ -18386,7 +18399,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void JProperty_WriteTo_mC777E5E99153D4F02B757
 		JsonWriter_t1750495CE81BD2D7BF7335A8468E2F960CA3ABC3* L_0 = ___0_writer;
 		String_t* L_1 = __this->____name_19;
 		NullCheck(L_0);
-		VirtualActionInvoker1< String_t* >::Invoke(13 /* System.Void Newtonsoft.Json.JsonWriter::WritePropertyName(System.String) */, L_0, L_1);
+		VirtualActionInvoker1< String_t* >::Invoke(14 /* System.Void Newtonsoft.Json.JsonWriter::WritePropertyName(System.String) */, L_0, L_1);
 		JToken_tFD7D9015F3F97A09AD93E439ACE894D12C06E8B3* L_2;
 		L_2 = JProperty_get_Value_m1D20FFEA7909BF0B835848D5FE9FCA2B08EF07F9(__this, NULL);
 		V_0 = L_2;
@@ -18409,7 +18422,7 @@ IL_001f:
 	{
 		JsonWriter_t1750495CE81BD2D7BF7335A8468E2F960CA3ABC3* L_7 = ___0_writer;
 		NullCheck(L_7);
-		VirtualActionInvoker0::Invoke(21 /* System.Void Newtonsoft.Json.JsonWriter::WriteNull() */, L_7);
+		VirtualActionInvoker0::Invoke(22 /* System.Void Newtonsoft.Json.JsonWriter::WriteNull() */, L_7);
 		return;
 	}
 }
@@ -28198,6 +28211,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void JTokenWriter__ctor_mDF6283CC2ADCE49961F3
 		return;
 	}
 }
+// System.Void Newtonsoft.Json.Linq.JTokenWriter::Flush()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void JTokenWriter_Flush_m5730150609C1A40F845593C8006F20965F94445A (JTokenWriter_t42960EDB1C9B939AF4D476149F6C12E3BA79405C* __this, const RuntimeMethod* method) 
+{
+	{
+		return;
+	}
+}
 // System.Void Newtonsoft.Json.Linq.JTokenWriter::Close()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void JTokenWriter_Close_m6A9ED7E0B68686B48CFBFB1586E4F39721E2C671 (JTokenWriter_t42960EDB1C9B939AF4D476149F6C12E3BA79405C* __this, const RuntimeMethod* method) 
 {
@@ -32091,7 +32111,7 @@ IL_0097:
 IL_009c:
 	{
 		NullCheck(G_B11_1);
-		VirtualActionInvoker1< String_t* >::Invoke(63 /* System.Void Newtonsoft.Json.JsonWriter::WriteComment(System.String) */, G_B11_1, G_B11_0);
+		VirtualActionInvoker1< String_t* >::Invoke(64 /* System.Void Newtonsoft.Json.JsonWriter::WriteComment(System.String) */, G_B11_1, G_B11_0);
 		return;
 	}
 
@@ -32127,7 +32147,7 @@ IL_00b0:
 IL_00b5:
 	{
 		NullCheck(G_B15_1);
-		VirtualActionInvoker1< String_t* >::Invoke(24 /* System.Void Newtonsoft.Json.JsonWriter::WriteRawValue(System.String) */, G_B15_1, G_B15_0);
+		VirtualActionInvoker1< String_t* >::Invoke(25 /* System.Void Newtonsoft.Json.JsonWriter::WriteRawValue(System.String) */, G_B15_1, G_B15_0);
 		return;
 	}
 
@@ -32135,7 +32155,7 @@ IL_00bb:
 	{
 		JsonWriter_t1750495CE81BD2D7BF7335A8468E2F960CA3ABC3* L_24 = ___0_writer;
 		NullCheck(L_24);
-		VirtualActionInvoker0::Invoke(21 /* System.Void Newtonsoft.Json.JsonWriter::WriteNull() */, L_24);
+		VirtualActionInvoker0::Invoke(22 /* System.Void Newtonsoft.Json.JsonWriter::WriteNull() */, L_24);
 		return;
 	}
 
@@ -32143,7 +32163,7 @@ IL_00c2:
 	{
 		JsonWriter_t1750495CE81BD2D7BF7335A8468E2F960CA3ABC3* L_25 = ___0_writer;
 		NullCheck(L_25);
-		VirtualActionInvoker0::Invoke(22 /* System.Void Newtonsoft.Json.JsonWriter::WriteUndefined() */, L_25);
+		VirtualActionInvoker0::Invoke(23 /* System.Void Newtonsoft.Json.JsonWriter::WriteUndefined() */, L_25);
 		return;
 	}
 
@@ -32163,7 +32183,7 @@ IL_00c9:
 		JsonWriter_t1750495CE81BD2D7BF7335A8468E2F960CA3ABC3* L_29 = ___0_writer;
 		int32_t L_30 = V_1;
 		NullCheck(L_29);
-		VirtualActionInvoker1< int32_t >::Invoke(26 /* System.Void Newtonsoft.Json.JsonWriter::WriteValue(System.Int32) */, L_29, L_30);
+		VirtualActionInvoker1< int32_t >::Invoke(27 /* System.Void Newtonsoft.Json.JsonWriter::WriteValue(System.Int32) */, L_29, L_30);
 		return;
 	}
 
@@ -32183,7 +32203,7 @@ IL_00ea:
 		JsonWriter_t1750495CE81BD2D7BF7335A8468E2F960CA3ABC3* L_34 = ___0_writer;
 		int64_t L_35 = V_6;
 		NullCheck(L_34);
-		VirtualActionInvoker1< int64_t >::Invoke(28 /* System.Void Newtonsoft.Json.JsonWriter::WriteValue(System.Int64) */, L_34, L_35);
+		VirtualActionInvoker1< int64_t >::Invoke(29 /* System.Void Newtonsoft.Json.JsonWriter::WriteValue(System.Int64) */, L_34, L_35);
 		return;
 	}
 
@@ -32203,7 +32223,7 @@ IL_010d:
 		JsonWriter_t1750495CE81BD2D7BF7335A8468E2F960CA3ABC3* L_39 = ___0_writer;
 		uint64_t L_40 = V_7;
 		NullCheck(L_39);
-		VirtualActionInvoker1< uint64_t >::Invoke(29 /* System.Void Newtonsoft.Json.JsonWriter::WriteValue(System.UInt64) */, L_39, L_40);
+		VirtualActionInvoker1< uint64_t >::Invoke(30 /* System.Void Newtonsoft.Json.JsonWriter::WriteValue(System.UInt64) */, L_39, L_40);
 		return;
 	}
 
@@ -32225,7 +32245,7 @@ IL_0130:
 		BigInteger_tF7779A0AA6D6B9BE0E0C1C293E7708765DEF7D0F L_46 = L_45;
 		RuntimeObject* L_47 = Box(BigInteger_tF7779A0AA6D6B9BE0E0C1C293E7708765DEF7D0F_il2cpp_TypeInfo_var, &L_46);
 		NullCheck(L_44);
-		VirtualActionInvoker1< RuntimeObject* >::Invoke(62 /* System.Void Newtonsoft.Json.JsonWriter::WriteValue(System.Object) */, L_44, L_47);
+		VirtualActionInvoker1< RuntimeObject* >::Invoke(63 /* System.Void Newtonsoft.Json.JsonWriter::WriteValue(System.Object) */, L_44, L_47);
 		return;
 	}
 
@@ -32240,7 +32260,7 @@ IL_0158:
 		int64_t L_51;
 		L_51 = Convert_ToInt64_m6CA00ABB70FAD8242C62ED9913F7D7C3B811FC31(L_49, L_50, NULL);
 		NullCheck(L_48);
-		VirtualActionInvoker1< int64_t >::Invoke(28 /* System.Void Newtonsoft.Json.JsonWriter::WriteValue(System.Int64) */, L_48, L_51);
+		VirtualActionInvoker1< int64_t >::Invoke(29 /* System.Void Newtonsoft.Json.JsonWriter::WriteValue(System.Int64) */, L_48, L_51);
 		return;
 	}
 
@@ -32260,7 +32280,7 @@ IL_016f:
 		JsonWriter_t1750495CE81BD2D7BF7335A8468E2F960CA3ABC3* L_55 = ___0_writer;
 		Decimal_tDA6C877282B2D789CF97C0949661CC11D643969F L_56 = V_2;
 		NullCheck(L_55);
-		VirtualActionInvoker1< Decimal_tDA6C877282B2D789CF97C0949661CC11D643969F >::Invoke(38 /* System.Void Newtonsoft.Json.JsonWriter::WriteValue(System.Decimal) */, L_55, L_56);
+		VirtualActionInvoker1< Decimal_tDA6C877282B2D789CF97C0949661CC11D643969F >::Invoke(39 /* System.Void Newtonsoft.Json.JsonWriter::WriteValue(System.Decimal) */, L_55, L_56);
 		return;
 	}
 
@@ -32280,7 +32300,7 @@ IL_0190:
 		JsonWriter_t1750495CE81BD2D7BF7335A8468E2F960CA3ABC3* L_60 = ___0_writer;
 		double L_61 = V_9;
 		NullCheck(L_60);
-		VirtualActionInvoker1< double >::Invoke(31 /* System.Void Newtonsoft.Json.JsonWriter::WriteValue(System.Double) */, L_60, L_61);
+		VirtualActionInvoker1< double >::Invoke(32 /* System.Void Newtonsoft.Json.JsonWriter::WriteValue(System.Double) */, L_60, L_61);
 		return;
 	}
 
@@ -32300,7 +32320,7 @@ IL_01b3:
 		JsonWriter_t1750495CE81BD2D7BF7335A8468E2F960CA3ABC3* L_65 = ___0_writer;
 		float L_66 = V_10;
 		NullCheck(L_65);
-		VirtualActionInvoker1< float >::Invoke(30 /* System.Void Newtonsoft.Json.JsonWriter::WriteValue(System.Single) */, L_65, L_66);
+		VirtualActionInvoker1< float >::Invoke(31 /* System.Void Newtonsoft.Json.JsonWriter::WriteValue(System.Single) */, L_65, L_66);
 		return;
 	}
 
@@ -32315,7 +32335,7 @@ IL_01d6:
 		double L_70;
 		L_70 = Convert_ToDouble_m8DED60F2E0251A3D389F1DD22AA5AF9CD440ABE8(L_68, L_69, NULL);
 		NullCheck(L_67);
-		VirtualActionInvoker1< double >::Invoke(31 /* System.Void Newtonsoft.Json.JsonWriter::WriteValue(System.Double) */, L_67, L_70);
+		VirtualActionInvoker1< double >::Invoke(32 /* System.Void Newtonsoft.Json.JsonWriter::WriteValue(System.Double) */, L_67, L_70);
 		return;
 	}
 
@@ -32351,7 +32371,7 @@ IL_01fb:
 IL_0200:
 	{
 		NullCheck(G_B37_1);
-		VirtualActionInvoker1< String_t* >::Invoke(25 /* System.Void Newtonsoft.Json.JsonWriter::WriteValue(System.String) */, G_B37_1, G_B37_0);
+		VirtualActionInvoker1< String_t* >::Invoke(26 /* System.Void Newtonsoft.Json.JsonWriter::WriteValue(System.String) */, G_B37_1, G_B37_0);
 		return;
 	}
 
@@ -32366,7 +32386,7 @@ IL_0206:
 		bool L_78;
 		L_78 = Convert_ToBoolean_m0E8AE169ABC127B0A317EE6312A04BC1F8AB4C63(L_76, L_77, NULL);
 		NullCheck(L_75);
-		VirtualActionInvoker1< bool >::Invoke(32 /* System.Void Newtonsoft.Json.JsonWriter::WriteValue(System.Boolean) */, L_75, L_78);
+		VirtualActionInvoker1< bool >::Invoke(33 /* System.Void Newtonsoft.Json.JsonWriter::WriteValue(System.Boolean) */, L_75, L_78);
 		return;
 	}
 
@@ -32386,7 +32406,7 @@ IL_021d:
 		JsonWriter_t1750495CE81BD2D7BF7335A8468E2F960CA3ABC3* L_82 = ___0_writer;
 		DateTimeOffset_t4EE701FE2F386D6F932FAC9B11E4B74A5B30F0A4 L_83 = V_3;
 		NullCheck(L_82);
-		VirtualActionInvoker1< DateTimeOffset_t4EE701FE2F386D6F932FAC9B11E4B74A5B30F0A4 >::Invoke(40 /* System.Void Newtonsoft.Json.JsonWriter::WriteValue(System.DateTimeOffset) */, L_82, L_83);
+		VirtualActionInvoker1< DateTimeOffset_t4EE701FE2F386D6F932FAC9B11E4B74A5B30F0A4 >::Invoke(41 /* System.Void Newtonsoft.Json.JsonWriter::WriteValue(System.DateTimeOffset) */, L_82, L_83);
 		return;
 	}
 
@@ -32401,7 +32421,7 @@ IL_023e:
 		DateTime_t66193957C73913903DDAD89FEDC46139BCA5802D L_87;
 		L_87 = Convert_ToDateTime_m773A330A58097085E94630181F3A77B9F0963327(L_85, L_86, NULL);
 		NullCheck(L_84);
-		VirtualActionInvoker1< DateTime_t66193957C73913903DDAD89FEDC46139BCA5802D >::Invoke(39 /* System.Void Newtonsoft.Json.JsonWriter::WriteValue(System.DateTime) */, L_84, L_87);
+		VirtualActionInvoker1< DateTime_t66193957C73913903DDAD89FEDC46139BCA5802D >::Invoke(40 /* System.Void Newtonsoft.Json.JsonWriter::WriteValue(System.DateTime) */, L_84, L_87);
 		return;
 	}
 
@@ -32410,7 +32430,7 @@ IL_0255:
 		JsonWriter_t1750495CE81BD2D7BF7335A8468E2F960CA3ABC3* L_88 = ___0_writer;
 		RuntimeObject* L_89 = __this->____value_15;
 		NullCheck(L_88);
-		VirtualActionInvoker1< ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* >::Invoke(60 /* System.Void Newtonsoft.Json.JsonWriter::WriteValue(System.Byte[]) */, L_88, ((ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*)Castclass((RuntimeObject*)L_89, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031_il2cpp_TypeInfo_var)));
+		VirtualActionInvoker1< ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* >::Invoke(61 /* System.Void Newtonsoft.Json.JsonWriter::WriteValue(System.Byte[]) */, L_88, ((ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*)Castclass((RuntimeObject*)L_89, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031_il2cpp_TypeInfo_var)));
 		return;
 	}
 
@@ -32444,7 +32464,7 @@ IL_027c:
 IL_0287:
 	{
 		NullCheck(G_B46_1);
-		VirtualActionInvoker1< Nullable_1_t0ECB838EB0C9A81655750B26970F21CF9A83A5F7 >::Invoke(58 /* System.Void Newtonsoft.Json.JsonWriter::WriteValue(System.Nullable`1<System.Guid>) */, G_B46_1, G_B46_0);
+		VirtualActionInvoker1< Nullable_1_t0ECB838EB0C9A81655750B26970F21CF9A83A5F7 >::Invoke(59 /* System.Void Newtonsoft.Json.JsonWriter::WriteValue(System.Nullable`1<System.Guid>) */, G_B46_1, G_B46_0);
 		return;
 	}
 
@@ -32478,7 +32498,7 @@ IL_02a2:
 IL_02ad:
 	{
 		NullCheck(G_B50_1);
-		VirtualActionInvoker1< Nullable_1_tE151CE1F6892804B41C4004C95CB57020ABB3272 >::Invoke(59 /* System.Void Newtonsoft.Json.JsonWriter::WriteValue(System.Nullable`1<System.TimeSpan>) */, G_B50_1, G_B50_0);
+		VirtualActionInvoker1< Nullable_1_tE151CE1F6892804B41C4004C95CB57020ABB3272 >::Invoke(60 /* System.Void Newtonsoft.Json.JsonWriter::WriteValue(System.Nullable`1<System.TimeSpan>) */, G_B50_1, G_B50_0);
 		return;
 	}
 
@@ -32487,7 +32507,7 @@ IL_02b3:
 		JsonWriter_t1750495CE81BD2D7BF7335A8468E2F960CA3ABC3* L_100 = ___0_writer;
 		RuntimeObject* L_101 = __this->____value_15;
 		NullCheck(L_100);
-		VirtualActionInvoker1< Uri_t1500A52B5F71A04F5D05C0852D0F2A0941842A0E* >::Invoke(61 /* System.Void Newtonsoft.Json.JsonWriter::WriteValue(System.Uri) */, L_100, ((Uri_t1500A52B5F71A04F5D05C0852D0F2A0941842A0E*)CastclassClass((RuntimeObject*)L_101, Uri_t1500A52B5F71A04F5D05C0852D0F2A0941842A0E_il2cpp_TypeInfo_var)));
+		VirtualActionInvoker1< Uri_t1500A52B5F71A04F5D05C0852D0F2A0941842A0E* >::Invoke(62 /* System.Void Newtonsoft.Json.JsonWriter::WriteValue(System.Uri) */, L_100, ((Uri_t1500A52B5F71A04F5D05C0852D0F2A0941842A0E*)CastclassClass((RuntimeObject*)L_101, Uri_t1500A52B5F71A04F5D05C0852D0F2A0941842A0E_il2cpp_TypeInfo_var)));
 		return;
 	}
 
