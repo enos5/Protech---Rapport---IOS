@@ -2225,28 +2225,32 @@ struct ServiceClient_t07C84893BDB4121BAF09BDF559688F4714F9541D  : public Runtime
 	String_t* ___nomFichier_0;
 	// System.String ServiceClient::id_service
 	String_t* ___id_service_1;
+	// System.Int32 ServiceClient::cache_employee_id
+	int32_t ___cache_employee_id_2;
+	// System.String ServiceClient::cache_account_scope
+	String_t* ___cache_account_scope_3;
 	// System.Int32 ServiceClient::num_appel
-	int32_t ___num_appel_2;
+	int32_t ___num_appel_4;
 	// System.Boolean ServiceClient::bon_libre
-	bool ___bon_libre_3;
+	bool ___bon_libre_5;
 	// System.String ServiceClient::infos_batiment
-	String_t* ___infos_batiment_4;
+	String_t* ___infos_batiment_6;
 	// System.String ServiceClient::statut_tech
-	String_t* ___statut_tech_5;
+	String_t* ___statut_tech_7;
 	// StepStatut[] ServiceClient::statut_list
-	StepStatutU5BU5D_t133984FF9C47C41B87DC144BE984A5CE12456683* ___statut_list_6;
+	StepStatutU5BU5D_t133984FF9C47C41B87DC144BE984A5CE12456683* ___statut_list_8;
 	// System.String ServiceClient::abrevstatut_tech
-	String_t* ___abrevstatut_tech_7;
+	String_t* ___abrevstatut_tech_9;
 	// Client ServiceClient::client
-	Client_t733365C872686A6CDE2EAF9FF1A2570997083D7E* ___client_8;
+	Client_t733365C872686A6CDE2EAF9FF1A2570997083D7E* ___client_10;
 	// Rapport[] ServiceClient::rapports
-	RapportU5BU5D_t389AE0AA323AC3F97640FE49A24D144C010203AF* ___rapports_9;
+	RapportU5BU5D_t389AE0AA323AC3F97640FE49A24D144C010203AF* ___rapports_11;
 	// System.Collections.Generic.List`1<System.String> ServiceClient::techniciens
-	List_1_tF470A3BE5C1B5B68E1325EF3F109D172E60BD7CD* ___techniciens_10;
+	List_1_tF470A3BE5C1B5B68E1325EF3F109D172E60BD7CD* ___techniciens_12;
 	// TypeDonnee[] ServiceClient::typesDonnee
-	TypeDonneeU5BU5D_tBF3B32E833D9758572726C60E98D201997645984* ___typesDonnee_11;
+	TypeDonneeU5BU5D_tBF3B32E833D9758572726C60E98D201997645984* ___typesDonnee_13;
 	// System.Collections.Generic.List`1<PieceJointe> ServiceClient::pieces_jointes
-	List_1_t6B044BFC37E7D96FFC21BE32B6296D34238AE7C7* ___pieces_jointes_12;
+	List_1_t6B044BFC37E7D96FFC21BE32B6296D34238AE7C7* ___pieces_jointes_14;
 };
 
 // TMPro.ShaderUtilities
@@ -2393,8 +2397,10 @@ struct StorageContext_t22CFB67551BA58343FC3DBC947482031F6936D9F  : public Runtim
 	String_t* ___Identity_1;
 	// System.String AttachmentJournal/StorageContext::ConflictIdentity
 	String_t* ___ConflictIdentity_2;
+	// System.Int32 AttachmentJournal/StorageContext::EmployeeId
+	int32_t ___EmployeeId_3;
 	// System.Collections.Generic.List`1<System.Collections.Generic.KeyValuePair`2<System.String,System.String>> AttachmentJournal/StorageContext::Notices
-	List_1_t87A1ED4D78ECE907C8318C622227761AB2DBF981* ___Notices_3;
+	List_1_t87A1ED4D78ECE907C8318C622227761AB2DBF981* ___Notices_4;
 };
 
 // TMPro.Examples.Benchmark01/<Start>d__10
@@ -16455,10 +16461,10 @@ IL_0071:
 		ServiceClient_t07C84893BDB4121BAF09BDF559688F4714F9541D* L_28 = L_25;
 		ServiceClient_t07C84893BDB4121BAF09BDF559688F4714F9541D* L_29 = ___0_service;
 		NullCheck(L_29);
-		String_t* L_30 = L_29->___infos_batiment_4;
+		String_t* L_30 = L_29->___infos_batiment_6;
 		NullCheck(L_28);
-		L_28->___infos_batiment_4 = L_30;
-		Il2CppCodeGenWriteBarrier((void**)(&L_28->___infos_batiment_4), (void*)L_30);
+		L_28->___infos_batiment_6 = L_30;
+		Il2CppCodeGenWriteBarrier((void**)(&L_28->___infos_batiment_6), (void*)L_30);
 		NullCheck(L_23);
 		L_23->___metadata_1 = L_28;
 		Il2CppCodeGenWriteBarrier((void**)(&L_23->___metadata_1), (void*)L_28);
@@ -19597,7 +19603,7 @@ IL_051b:
 		JObject_t22BBBA7A90517B7E66E8C9D8D16DE84CB5054DE1* L_240 = L_236;
 		ServiceClient_t07C84893BDB4121BAF09BDF559688F4714F9541D* L_241 = ___0_service;
 		NullCheck(L_241);
-		String_t* L_242 = L_241->___infos_batiment_4;
+		String_t* L_242 = L_241->___infos_batiment_6;
 		String_t* L_243 = L_242;
 		G_B67_0 = L_243;
 		G_B67_1 = _stringLiteralE0F301CB41F14286D7C114361DBA1561EE68D114;
@@ -23372,7 +23378,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Utils_ShowNextService_m5D37B3C0B472C3673
 			// string[] dates = nextService.client.titre_visite_fr.Split(" du ");
 			ServiceClient_t07C84893BDB4121BAF09BDF559688F4714F9541D* L_3 = V_0;
 			NullCheck(L_3);
-			Client_t733365C872686A6CDE2EAF9FF1A2570997083D7E* L_4 = L_3->___client_8;
+			Client_t733365C872686A6CDE2EAF9FF1A2570997083D7E* L_4 = L_3->___client_10;
 			NullCheck(L_4);
 			String_t* L_5 = L_4->___titre_visite_fr_4;
 			NullCheck(L_5);
@@ -23410,7 +23416,7 @@ IL_004d_1:
 			// date_finale = nextService.client.titre_visite_fr;
 			ServiceClient_t07C84893BDB4121BAF09BDF559688F4714F9541D* L_15 = V_0;
 			NullCheck(L_15);
-			Client_t733365C872686A6CDE2EAF9FF1A2570997083D7E* L_16 = L_15->___client_8;
+			Client_t733365C872686A6CDE2EAF9FF1A2570997083D7E* L_16 = L_15->___client_10;
 			NullCheck(L_16);
 			String_t* L_17 = L_16->___titre_visite_fr_4;
 			V_2 = L_17;
@@ -23432,7 +23438,7 @@ IL_0059_1:
 			L_22 = UQueryExtensions_Q_TisLabel_tC160668F9119CE0F5567021FB208E64A5B1C5B70_m8F4BED0AE8A46A7D6F84F222B4154231ED2DAC9F(L_21, _stringLiteralD37CD76B89ECE8D949977471F42AFA42727FFF78, (String_t*)NULL, UQueryExtensions_Q_TisLabel_tC160668F9119CE0F5567021FB208E64A5B1C5B70_m8F4BED0AE8A46A7D6F84F222B4154231ED2DAC9F_RuntimeMethod_var);
 			ServiceClient_t07C84893BDB4121BAF09BDF559688F4714F9541D* L_23 = V_0;
 			NullCheck(L_23);
-			int32_t* L_24 = (int32_t*)(&L_23->___num_appel_2);
+			int32_t* L_24 = (int32_t*)(&L_23->___num_appel_4);
 			String_t* L_25;
 			L_25 = Int32_ToString_m030E01C24E294D6762FB0B6F37CB541581F55CA5(L_24, NULL);
 			NullCheck(L_22);
@@ -23443,7 +23449,7 @@ IL_0059_1:
 			L_27 = UQueryExtensions_Q_TisLabel_tC160668F9119CE0F5567021FB208E64A5B1C5B70_m8F4BED0AE8A46A7D6F84F222B4154231ED2DAC9F(L_26, _stringLiteral67D8EB95EB597CE305AB9EB9A03B9843F0A94687, (String_t*)NULL, UQueryExtensions_Q_TisLabel_tC160668F9119CE0F5567021FB208E64A5B1C5B70_m8F4BED0AE8A46A7D6F84F222B4154231ED2DAC9F_RuntimeMethod_var);
 			ServiceClient_t07C84893BDB4121BAF09BDF559688F4714F9541D* L_28 = V_0;
 			NullCheck(L_28);
-			Client_t733365C872686A6CDE2EAF9FF1A2570997083D7E* L_29 = L_28->___client_8;
+			Client_t733365C872686A6CDE2EAF9FF1A2570997083D7E* L_29 = L_28->___client_10;
 			NullCheck(L_29);
 			String_t* L_30 = L_29->___nom_entreprise_1;
 			NullCheck(L_27);
@@ -24258,7 +24264,7 @@ IL_001c_1:
 				L_4 = Enumerator_get_Current_mC5C63A81E498B2CE908B701864DA66FC001ABFF1_inline((&V_0), Enumerator_get_Current_mC5C63A81E498B2CE908B701864DA66FC001ABFF1_RuntimeMethod_var);
 				// foreach (Rapport rp in service.rapports)
 				NullCheck(L_4);
-				RapportU5BU5D_t389AE0AA323AC3F97640FE49A24D144C010203AF* L_5 = L_4->___rapports_9;
+				RapportU5BU5D_t389AE0AA323AC3F97640FE49A24D144C010203AF* L_5 = L_4->___rapports_11;
 				V_1 = L_5;
 				V_2 = 0;
 				goto IL_0043_1;
@@ -24400,7 +24406,7 @@ IL_001c_1:
 				// foreach (Rapport rp in service.rapports)
 				ServiceClient_t07C84893BDB4121BAF09BDF559688F4714F9541D* L_5 = V_1;
 				NullCheck(L_5);
-				RapportU5BU5D_t389AE0AA323AC3F97640FE49A24D144C010203AF* L_6 = L_5->___rapports_9;
+				RapportU5BU5D_t389AE0AA323AC3F97640FE49A24D144C010203AF* L_6 = L_5->___rapports_11;
 				V_2 = L_6;
 				V_3 = 0;
 				goto IL_0043_1;
@@ -24619,7 +24625,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Rapport_t0DED00B7690FCCDE651FB02E35DD4AFF93E9
 		ServiceClient_t07C84893BDB4121BAF09BDF559688F4714F9541D* L_6;
 		L_6 = List_1_get_Item_m39EDDFB4EF7DA1D70754CA9E59200E1F55D17014(L_3, L_5, List_1_get_Item_m39EDDFB4EF7DA1D70754CA9E59200E1F55D17014_RuntimeMethod_var);
 		NullCheck(L_6);
-		RapportU5BU5D_t389AE0AA323AC3F97640FE49A24D144C010203AF* L_7 = L_6->___rapports_9;
+		RapportU5BU5D_t389AE0AA323AC3F97640FE49A24D144C010203AF* L_7 = L_6->___rapports_11;
 		MainScript_tE5DA41EF9F6C72F24338683BF923785400FDC5FF* L_8 = V_0;
 		NullCheck(L_8);
 		int32_t L_9 = L_8->___rapportSelectionne_20;
@@ -25195,7 +25201,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Utils_canTerminateService_m4A9C280B9B6F3
 		// foreach (StepStatut st in sc.statut_list)
 		ServiceClient_t07C84893BDB4121BAF09BDF559688F4714F9541D* L_4 = ___0_sc;
 		NullCheck(L_4);
-		StepStatutU5BU5D_t133984FF9C47C41B87DC144BE984A5CE12456683* L_5 = L_4->___statut_list_6;
+		StepStatutU5BU5D_t133984FF9C47C41B87DC144BE984A5CE12456683* L_5 = L_4->___statut_list_8;
 		V_2 = L_5;
 		V_3 = 0;
 		goto IL_0068;
@@ -25285,7 +25291,7 @@ IL_0068:
 		// foreach (Rapport rp in sc.rapports)
 		ServiceClient_t07C84893BDB4121BAF09BDF559688F4714F9541D* L_29 = ___0_sc;
 		NullCheck(L_29);
-		RapportU5BU5D_t389AE0AA323AC3F97640FE49A24D144C010203AF* L_30 = L_29->___rapports_9;
+		RapportU5BU5D_t389AE0AA323AC3F97640FE49A24D144C010203AF* L_30 = L_29->___rapports_11;
 		V_8 = L_30;
 		V_3 = 0;
 		goto IL_009e;
@@ -25547,7 +25553,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool U3CU3Ec__DisplayClass9_0_U3CGetNextServi
 		// ServiceClient nextService = lstRC.Where(item => DateTime.Parse(item.client.date_visite) >= today).OrderBy(item => item.client.date_visite).FirstOrDefault() as ServiceClient;
 		ServiceClient_t07C84893BDB4121BAF09BDF559688F4714F9541D* L_0 = ___0_item;
 		NullCheck(L_0);
-		Client_t733365C872686A6CDE2EAF9FF1A2570997083D7E* L_1 = L_0->___client_8;
+		Client_t733365C872686A6CDE2EAF9FF1A2570997083D7E* L_1 = L_0->___client_10;
 		NullCheck(L_1);
 		String_t* L_2 = L_1->___date_visite_5;
 		il2cpp_codegen_runtime_class_init_inline(DateTime_t66193957C73913903DDAD89FEDC46139BCA5802D_il2cpp_TypeInfo_var);
@@ -25600,7 +25606,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool U3CU3Ec_U3CGetNextServiceU3Eb__9_0_m0F8E
 		// List<ServiceClient> lstRC = GameObject.Find("Script").GetComponent<MainScript>().listeServices.Where(item => item.bon_libre == false).ToList();
 		ServiceClient_t07C84893BDB4121BAF09BDF559688F4714F9541D* L_0 = ___0_item;
 		NullCheck(L_0);
-		bool L_1 = L_0->___bon_libre_3;
+		bool L_1 = L_0->___bon_libre_5;
 		return (bool)((((int32_t)L_1) == ((int32_t)0))? 1 : 0);
 	}
 }
@@ -25611,7 +25617,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* U3CU3Ec_U3CGetNextServiceU3Eb__9_2_
 		// ServiceClient nextService = lstRC.Where(item => DateTime.Parse(item.client.date_visite) >= today).OrderBy(item => item.client.date_visite).FirstOrDefault() as ServiceClient;
 		ServiceClient_t07C84893BDB4121BAF09BDF559688F4714F9541D* L_0 = ___0_item;
 		NullCheck(L_0);
-		Client_t733365C872686A6CDE2EAF9FF1A2570997083D7E* L_1 = L_0->___client_8;
+		Client_t733365C872686A6CDE2EAF9FF1A2570997083D7E* L_1 = L_0->___client_10;
 		NullCheck(L_1);
 		String_t* L_2 = L_1->___date_visite_5;
 		return L_2;

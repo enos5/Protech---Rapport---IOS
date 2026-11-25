@@ -2149,28 +2149,32 @@ struct ServiceClient_t07C84893BDB4121BAF09BDF559688F4714F9541D  : public Runtime
 	String_t* ___nomFichier_0;
 	// System.String ServiceClient::id_service
 	String_t* ___id_service_1;
+	// System.Int32 ServiceClient::cache_employee_id
+	int32_t ___cache_employee_id_2;
+	// System.String ServiceClient::cache_account_scope
+	String_t* ___cache_account_scope_3;
 	// System.Int32 ServiceClient::num_appel
-	int32_t ___num_appel_2;
+	int32_t ___num_appel_4;
 	// System.Boolean ServiceClient::bon_libre
-	bool ___bon_libre_3;
+	bool ___bon_libre_5;
 	// System.String ServiceClient::infos_batiment
-	String_t* ___infos_batiment_4;
+	String_t* ___infos_batiment_6;
 	// System.String ServiceClient::statut_tech
-	String_t* ___statut_tech_5;
+	String_t* ___statut_tech_7;
 	// StepStatut[] ServiceClient::statut_list
-	StepStatutU5BU5D_t133984FF9C47C41B87DC144BE984A5CE12456683* ___statut_list_6;
+	StepStatutU5BU5D_t133984FF9C47C41B87DC144BE984A5CE12456683* ___statut_list_8;
 	// System.String ServiceClient::abrevstatut_tech
-	String_t* ___abrevstatut_tech_7;
+	String_t* ___abrevstatut_tech_9;
 	// Client ServiceClient::client
-	Client_t733365C872686A6CDE2EAF9FF1A2570997083D7E* ___client_8;
+	Client_t733365C872686A6CDE2EAF9FF1A2570997083D7E* ___client_10;
 	// Rapport[] ServiceClient::rapports
-	RapportU5BU5D_t389AE0AA323AC3F97640FE49A24D144C010203AF* ___rapports_9;
+	RapportU5BU5D_t389AE0AA323AC3F97640FE49A24D144C010203AF* ___rapports_11;
 	// System.Collections.Generic.List`1<System.String> ServiceClient::techniciens
-	List_1_tF470A3BE5C1B5B68E1325EF3F109D172E60BD7CD* ___techniciens_10;
+	List_1_tF470A3BE5C1B5B68E1325EF3F109D172E60BD7CD* ___techniciens_12;
 	// TypeDonnee[] ServiceClient::typesDonnee
-	TypeDonneeU5BU5D_tBF3B32E833D9758572726C60E98D201997645984* ___typesDonnee_11;
+	TypeDonneeU5BU5D_tBF3B32E833D9758572726C60E98D201997645984* ___typesDonnee_13;
 	// System.Collections.Generic.List`1<PieceJointe> ServiceClient::pieces_jointes
-	List_1_t6B044BFC37E7D96FFC21BE32B6296D34238AE7C7* ___pieces_jointes_12;
+	List_1_t6B044BFC37E7D96FFC21BE32B6296D34238AE7C7* ___pieces_jointes_14;
 };
 
 // Statut
@@ -10256,7 +10260,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CU3Ec_U3CConflictsU3Eb__4_0_
 		// return owner.listeServices.SelectMany(service => service.rapports ?? new Rapport[0]).Where(report => report.sync_state == "conflict");
 		ServiceClient_t07C84893BDB4121BAF09BDF559688F4714F9541D* L_0 = ___0_service;
 		NullCheck(L_0);
-		RapportU5BU5D_t389AE0AA323AC3F97640FE49A24D144C010203AF* L_1 = L_0->___rapports_9;
+		RapportU5BU5D_t389AE0AA323AC3F97640FE49A24D144C010203AF* L_1 = L_0->___rapports_11;
 		RapportU5BU5D_t389AE0AA323AC3F97640FE49A24D144C010203AF* L_2 = L_1;
 		G_B1_0 = L_2;
 		if (L_2)
@@ -12393,7 +12397,7 @@ IL_0013:
 		NullCheck(L_25);
 		ServiceClient_t07C84893BDB4121BAF09BDF559688F4714F9541D* L_26 = L_25->___snapshot_4;
 		NullCheck(L_26);
-		RapportU5BU5D_t389AE0AA323AC3F97640FE49A24D144C010203AF* L_27 = L_26->___rapports_9;
+		RapportU5BU5D_t389AE0AA323AC3F97640FE49A24D144C010203AF* L_27 = L_26->___rapports_11;
 		U3CU3Ec__DisplayClass24_0_t5D44D70BE065433392629BDCC777728B1D233698* L_28 = __this->___U3CU3E8__1_5;
 		Func_2_tF22CD0FB78512AECD92F1F08994A826ABCEB8118* L_29 = (Func_2_tF22CD0FB78512AECD92F1F08994A826ABCEB8118*)il2cpp_codegen_object_new(Func_2_tF22CD0FB78512AECD92F1F08994A826ABCEB8118_il2cpp_TypeInfo_var);
 		NullCheck(L_29);
@@ -12885,7 +12889,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool U3CU3Ec__DisplayClass35_0_U3CCacheMediaI
 	{
 		ServiceClient_t07C84893BDB4121BAF09BDF559688F4714F9541D* L_12 = __this->___service_2;
 		NullCheck(L_12);
-		RapportU5BU5D_t389AE0AA323AC3F97640FE49A24D144C010203AF* L_13 = L_12->___rapports_9;
+		RapportU5BU5D_t389AE0AA323AC3F97640FE49A24D144C010203AF* L_13 = L_12->___rapports_11;
 		Rapport_t0DED00B7690FCCDE651FB02E35DD4AFF93E927D2* L_14 = __this->___report_3;
 		bool L_15;
 		L_15 = Enumerable_Contains_TisRapport_t0DED00B7690FCCDE651FB02E35DD4AFF93E927D2_m71246EABF54AAF2524E862162183D67016D0EC96((RuntimeObject*)L_13, L_14, Enumerable_Contains_TisRapport_t0DED00B7690FCCDE651FB02E35DD4AFF93E927D2_m71246EABF54AAF2524E862162183D67016D0EC96_RuntimeMethod_var);
@@ -13175,7 +13179,7 @@ IL_00d5_1:
 				NullCheck(L_31);
 				ServiceClient_t07C84893BDB4121BAF09BDF559688F4714F9541D* L_32 = L_31->___service_2;
 				NullCheck(L_32);
-				RapportU5BU5D_t389AE0AA323AC3F97640FE49A24D144C010203AF* L_33 = L_32->___rapports_9;
+				RapportU5BU5D_t389AE0AA323AC3F97640FE49A24D144C010203AF* L_33 = L_32->___rapports_11;
 				U3CU3Ec__DisplayClass35_0_t87B45CC6E44AD156BEFD07EECDCDBFD9F4897743* L_34 = __this->___U3CU3E8__1_6;
 				NullCheck(L_34);
 				Rapport_t0DED00B7690FCCDE651FB02E35DD4AFF93E927D2* L_35 = L_34->___report_3;
@@ -14196,7 +14200,7 @@ IL_03ae_1:
 				// remote.pieces_jointes.Single(piece => piece.id == (int)file["id"]).downloaded_file = "pj/conflicts/" + Path.GetFileName(destination);
 				ServiceClient_t07C84893BDB4121BAF09BDF559688F4714F9541D* L_108 = __this->___U3CremoteU3E5__3_11;
 				NullCheck(L_108);
-				List_1_t6B044BFC37E7D96FFC21BE32B6296D34238AE7C7* L_109 = L_108->___pieces_jointes_12;
+				List_1_t6B044BFC37E7D96FFC21BE32B6296D34238AE7C7* L_109 = L_108->___pieces_jointes_14;
 				U3CU3Ec__DisplayClass36_1_tA9714D7E062A5F75A3B51C397ED50C9838CF85E4* L_110 = __this->___U3CU3E8__2_9;
 				Func_2_t18C6EC1224520311ABB6B27CBECB5C97C30A3AA3* L_111 = (Func_2_t18C6EC1224520311ABB6B27CBECB5C97C30A3AA3*)il2cpp_codegen_object_new(Func_2_t18C6EC1224520311ABB6B27CBECB5C97C30A3AA3_il2cpp_TypeInfo_var);
 				NullCheck(L_111);
@@ -14302,7 +14306,7 @@ IL_049c_1:
 				// var target = remote.rapports[0];
 				ServiceClient_t07C84893BDB4121BAF09BDF559688F4714F9541D* L_143 = __this->___U3CremoteU3E5__3_11;
 				NullCheck(L_143);
-				RapportU5BU5D_t389AE0AA323AC3F97640FE49A24D144C010203AF* L_144 = L_143->___rapports_9;
+				RapportU5BU5D_t389AE0AA323AC3F97640FE49A24D144C010203AF* L_144 = L_143->___rapports_11;
 				NullCheck(L_144);
 				int32_t L_145 = 0;
 				Rapport_t0DED00B7690FCCDE651FB02E35DD4AFF93E927D2* L_146 = (L_144)->GetAt(static_cast<il2cpp_array_size_t>(L_145));
@@ -15213,7 +15217,7 @@ IL_001b:
 		NullCheck(L_11);
 		ServiceClient_t07C84893BDB4121BAF09BDF559688F4714F9541D* L_12 = L_11->___source_1;
 		NullCheck(L_12);
-		RapportU5BU5D_t389AE0AA323AC3F97640FE49A24D144C010203AF* L_13 = L_12->___rapports_9;
+		RapportU5BU5D_t389AE0AA323AC3F97640FE49A24D144C010203AF* L_13 = L_12->___rapports_11;
 		U3CU3Ec__DisplayClass39_0_tE1CDA032FC07944D9891D30209D68D1F6B5BDD20* L_14 = __this->___U3CU3E8__1_7;
 		Func_2_tF22CD0FB78512AECD92F1F08994A826ABCEB8118* L_15 = (Func_2_tF22CD0FB78512AECD92F1F08994A826ABCEB8118*)il2cpp_codegen_object_new(Func_2_tF22CD0FB78512AECD92F1F08994A826ABCEB8118_il2cpp_TypeInfo_var);
 		NullCheck(L_15);
@@ -16440,7 +16444,7 @@ IL_001b:
 		NullCheck(L_11);
 		ServiceClient_t07C84893BDB4121BAF09BDF559688F4714F9541D* L_12 = L_11->___snapshot_1;
 		NullCheck(L_12);
-		RapportU5BU5D_t389AE0AA323AC3F97640FE49A24D144C010203AF* L_13 = L_12->___rapports_9;
+		RapportU5BU5D_t389AE0AA323AC3F97640FE49A24D144C010203AF* L_13 = L_12->___rapports_11;
 		U3CU3Ec__DisplayClass52_0_tA21E3EB5EFFB67523388026C1144334DE7D4D61A* L_14 = __this->___U3CU3E8__1_6;
 		Func_2_tF22CD0FB78512AECD92F1F08994A826ABCEB8118* L_15 = (Func_2_tF22CD0FB78512AECD92F1F08994A826ABCEB8118*)il2cpp_codegen_object_new(Func_2_tF22CD0FB78512AECD92F1F08994A826ABCEB8118_il2cpp_TypeInfo_var);
 		NullCheck(L_15);
@@ -17670,7 +17674,7 @@ IL_03ae_1:
 				// remote.pieces_jointes.Single(piece => piece.id == (int)file["id"]).downloaded_file = "pj/conflicts/" + Path.GetFileName(destination);
 				ServiceClient_t07C84893BDB4121BAF09BDF559688F4714F9541D* L_112 = __this->___U3CremoteU3E5__3_11;
 				NullCheck(L_112);
-				List_1_t6B044BFC37E7D96FFC21BE32B6296D34238AE7C7* L_113 = L_112->___pieces_jointes_12;
+				List_1_t6B044BFC37E7D96FFC21BE32B6296D34238AE7C7* L_113 = L_112->___pieces_jointes_14;
 				U3CU3Ec__DisplayClass55_2_t0FAA993F591C87F73074188743CC122EBA17AF79* L_114 = __this->___U3CU3E8__2_8;
 				Func_2_t18C6EC1224520311ABB6B27CBECB5C97C30A3AA3* L_115 = (Func_2_t18C6EC1224520311ABB6B27CBECB5C97C30A3AA3*)il2cpp_codegen_object_new(Func_2_t18C6EC1224520311ABB6B27CBECB5C97C30A3AA3_il2cpp_TypeInfo_var);
 				NullCheck(L_115);
@@ -17776,7 +17780,7 @@ IL_049c_1:
 				// var target = remote.rapports[0];
 				ServiceClient_t07C84893BDB4121BAF09BDF559688F4714F9541D* L_147 = __this->___U3CremoteU3E5__3_11;
 				NullCheck(L_147);
-				RapportU5BU5D_t389AE0AA323AC3F97640FE49A24D144C010203AF* L_148 = L_147->___rapports_9;
+				RapportU5BU5D_t389AE0AA323AC3F97640FE49A24D144C010203AF* L_148 = L_147->___rapports_11;
 				NullCheck(L_148);
 				int32_t L_149 = 0;
 				Rapport_t0DED00B7690FCCDE651FB02E35DD4AFF93E927D2* L_150 = (L_148)->GetAt(static_cast<il2cpp_array_size_t>(L_149));
@@ -20005,7 +20009,7 @@ IL_00f9:
 		int32_t L_52 = L_51->___rapportSelectionne_20;
 		ServiceClient_t07C84893BDB4121BAF09BDF559688F4714F9541D* L_53 = V_3;
 		NullCheck(L_53);
-		RapportU5BU5D_t389AE0AA323AC3F97640FE49A24D144C010203AF* L_54 = L_53->___rapports_9;
+		RapportU5BU5D_t389AE0AA323AC3F97640FE49A24D144C010203AF* L_54 = L_53->___rapports_11;
 		RapportU5BU5D_t389AE0AA323AC3F97640FE49A24D144C010203AF* L_55 = L_54;
 		G_B17_0 = L_55;
 		G_B17_1 = L_52;
@@ -20046,7 +20050,7 @@ IL_0166:
 		// openReportId = openService.rapports[owner.rapportSelectionne].id_service_rapport;
 		ServiceClient_t07C84893BDB4121BAF09BDF559688F4714F9541D* L_58 = V_3;
 		NullCheck(L_58);
-		RapportU5BU5D_t389AE0AA323AC3F97640FE49A24D144C010203AF* L_59 = L_58->___rapports_9;
+		RapportU5BU5D_t389AE0AA323AC3F97640FE49A24D144C010203AF* L_59 = L_58->___rapports_11;
 		MainScript_tE5DA41EF9F6C72F24338683BF923785400FDC5FF* L_60 = ___0_owner;
 		NullCheck(L_60);
 		int32_t L_61 = L_60->___rapportSelectionne_20;
@@ -20761,7 +20765,7 @@ IL_0033:
 		// foreach (var report in service.rapports ?? new Rapport[0]) {
 		ServiceClient_t07C84893BDB4121BAF09BDF559688F4714F9541D* L_11 = V_3;
 		NullCheck(L_11);
-		RapportU5BU5D_t389AE0AA323AC3F97640FE49A24D144C010203AF* L_12 = L_11->___rapports_9;
+		RapportU5BU5D_t389AE0AA323AC3F97640FE49A24D144C010203AF* L_12 = L_11->___rapports_11;
 		RapportU5BU5D_t389AE0AA323AC3F97640FE49A24D144C010203AF* L_13 = L_12;
 		G_B4_0 = L_13;
 		if (L_13)
@@ -20951,7 +20955,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Session_LockOpenConflictedReport_mFF9FD1
 		ServiceClient_t07C84893BDB4121BAF09BDF559688F4714F9541D* L_12;
 		L_12 = List_1_get_Item_m39EDDFB4EF7DA1D70754CA9E59200E1F55D17014(L_10, L_11, List_1_get_Item_m39EDDFB4EF7DA1D70754CA9E59200E1F55D17014_RuntimeMethod_var);
 		NullCheck(L_12);
-		RapportU5BU5D_t389AE0AA323AC3F97640FE49A24D144C010203AF* L_13 = L_12->___rapports_9;
+		RapportU5BU5D_t389AE0AA323AC3F97640FE49A24D144C010203AF* L_13 = L_12->___rapports_11;
 		if (!L_13)
 		{
 			goto IL_0066;
@@ -20974,7 +20978,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Session_LockOpenConflictedReport_mFF9FD1
 		ServiceClient_t07C84893BDB4121BAF09BDF559688F4714F9541D* L_19;
 		L_19 = List_1_get_Item_m39EDDFB4EF7DA1D70754CA9E59200E1F55D17014(L_17, L_18, List_1_get_Item_m39EDDFB4EF7DA1D70754CA9E59200E1F55D17014_RuntimeMethod_var);
 		NullCheck(L_19);
-		RapportU5BU5D_t389AE0AA323AC3F97640FE49A24D144C010203AF* L_20 = L_19->___rapports_9;
+		RapportU5BU5D_t389AE0AA323AC3F97640FE49A24D144C010203AF* L_20 = L_19->___rapports_11;
 		NullCheck(L_20);
 		if ((((int32_t)L_15) < ((int32_t)((int32_t)(((RuntimeArray*)L_20)->max_length)))))
 		{
@@ -20999,7 +21003,7 @@ IL_0067:
 		ServiceClient_t07C84893BDB4121BAF09BDF559688F4714F9541D* L_24;
 		L_24 = List_1_get_Item_m39EDDFB4EF7DA1D70754CA9E59200E1F55D17014(L_22, L_23, List_1_get_Item_m39EDDFB4EF7DA1D70754CA9E59200E1F55D17014_RuntimeMethod_var);
 		NullCheck(L_24);
-		RapportU5BU5D_t389AE0AA323AC3F97640FE49A24D144C010203AF* L_25 = L_24->___rapports_9;
+		RapportU5BU5D_t389AE0AA323AC3F97640FE49A24D144C010203AF* L_25 = L_24->___rapports_11;
 		int32_t L_26 = V_1;
 		NullCheck(L_25);
 		int32_t L_27 = L_26;
@@ -21986,7 +21990,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Session_ConflictCard_m851E77B1365DBD50CF
 		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_73 = L_72;
 		ServiceClient_t07C84893BDB4121BAF09BDF559688F4714F9541D* L_74 = ___0_service;
 		NullCheck(L_74);
-		int32_t* L_75 = (int32_t*)(&L_74->___num_appel_2);
+		int32_t* L_75 = (int32_t*)(&L_74->___num_appel_4);
 		String_t* L_76;
 		L_76 = Int32_ToString_m030E01C24E294D6762FB0B6F37CB541581F55CA5(L_75, NULL);
 		NullCheck(L_73);
@@ -23920,7 +23924,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* Session_LocalSignature_m7E321328217
 		// return Newtonsoft.Json.JsonConvert.SerializeObject(new { building = service.infos_batiment, report = report });
 		ServiceClient_t07C84893BDB4121BAF09BDF559688F4714F9541D* L_0 = ___0_service;
 		NullCheck(L_0);
-		String_t* L_1 = L_0->___infos_batiment_4;
+		String_t* L_1 = L_0->___infos_batiment_6;
 		Rapport_t0DED00B7690FCCDE651FB02E35DD4AFF93E927D2* L_2 = ___1_report;
 		U3CU3Ef__AnonymousType2_2_t545CF70B5449BE89ED33FAAE110BBBA1224684EE* L_3 = (U3CU3Ef__AnonymousType2_2_t545CF70B5449BE89ED33FAAE110BBBA1224684EE*)il2cpp_codegen_object_new(U3CU3Ef__AnonymousType2_2_t545CF70B5449BE89ED33FAAE110BBBA1224684EE_il2cpp_TypeInfo_var);
 		NullCheck(L_3);
@@ -24202,7 +24206,7 @@ IL_0065:
 		ServiceClient_t07C84893BDB4121BAF09BDF559688F4714F9541D* L_32;
 		L_32 = List_1_get_Item_m39EDDFB4EF7DA1D70754CA9E59200E1F55D17014(L_30, L_31, List_1_get_Item_m39EDDFB4EF7DA1D70754CA9E59200E1F55D17014_RuntimeMethod_var);
 		NullCheck(L_32);
-		RapportU5BU5D_t389AE0AA323AC3F97640FE49A24D144C010203AF* L_33 = L_32->___rapports_9;
+		RapportU5BU5D_t389AE0AA323AC3F97640FE49A24D144C010203AF* L_33 = L_32->___rapports_11;
 		if (!L_33)
 		{
 			goto IL_012f;
@@ -24225,7 +24229,7 @@ IL_0065:
 		ServiceClient_t07C84893BDB4121BAF09BDF559688F4714F9541D* L_39;
 		L_39 = List_1_get_Item_m39EDDFB4EF7DA1D70754CA9E59200E1F55D17014(L_37, L_38, List_1_get_Item_m39EDDFB4EF7DA1D70754CA9E59200E1F55D17014_RuntimeMethod_var);
 		NullCheck(L_39);
-		RapportU5BU5D_t389AE0AA323AC3F97640FE49A24D144C010203AF* L_40 = L_39->___rapports_9;
+		RapportU5BU5D_t389AE0AA323AC3F97640FE49A24D144C010203AF* L_40 = L_39->___rapports_11;
 		NullCheck(L_40);
 		if ((((int32_t)L_35) >= ((int32_t)((int32_t)(((RuntimeArray*)L_40)->max_length)))))
 		{
@@ -24241,7 +24245,7 @@ IL_0065:
 		ServiceClient_t07C84893BDB4121BAF09BDF559688F4714F9541D* L_44;
 		L_44 = List_1_get_Item_m39EDDFB4EF7DA1D70754CA9E59200E1F55D17014(L_42, L_43, List_1_get_Item_m39EDDFB4EF7DA1D70754CA9E59200E1F55D17014_RuntimeMethod_var);
 		NullCheck(L_44);
-		RapportU5BU5D_t389AE0AA323AC3F97640FE49A24D144C010203AF* L_45 = L_44->___rapports_9;
+		RapportU5BU5D_t389AE0AA323AC3F97640FE49A24D144C010203AF* L_45 = L_44->___rapports_11;
 		int32_t L_46 = V_2;
 		NullCheck(L_45);
 		int32_t L_47 = L_46;
@@ -25049,7 +25053,7 @@ IL_007d_1:
 			// report=service.rapports.FirstOrDefault(item=>item.id_service_rapport==report.id_service_rapport) ?? report;
 			ServiceClient_t07C84893BDB4121BAF09BDF559688F4714F9541D* L_19 = __this->___service_1;
 			NullCheck(L_19);
-			RapportU5BU5D_t389AE0AA323AC3F97640FE49A24D144C010203AF* L_20 = L_19->___rapports_9;
+			RapportU5BU5D_t389AE0AA323AC3F97640FE49A24D144C010203AF* L_20 = L_19->___rapports_11;
 			Func_2_tF22CD0FB78512AECD92F1F08994A826ABCEB8118* L_21 = __this->___U3CU3E9__3_5;
 			Func_2_tF22CD0FB78512AECD92F1F08994A826ABCEB8118* L_22 = L_21;
 			G_B8_0 = L_22;
@@ -27154,7 +27158,7 @@ IL_0062_1:
 			// report=service.rapports.FirstOrDefault(item=>item.id_service_rapport==report.id_service_rapport) ?? report;
 			ServiceClient_t07C84893BDB4121BAF09BDF559688F4714F9541D* L_17 = __this->___service_1;
 			NullCheck(L_17);
-			RapportU5BU5D_t389AE0AA323AC3F97640FE49A24D144C010203AF* L_18 = L_17->___rapports_9;
+			RapportU5BU5D_t389AE0AA323AC3F97640FE49A24D144C010203AF* L_18 = L_17->___rapports_11;
 			Func_2_tF22CD0FB78512AECD92F1F08994A826ABCEB8118* L_19 = __this->___U3CU3E9__8_6;
 			Func_2_tF22CD0FB78512AECD92F1F08994A826ABCEB8118* L_20 = L_19;
 			G_B6_0 = L_20;
@@ -27797,7 +27801,7 @@ IL_00c0_1:
 IL_0182_1:
 			{
 				NullCheck(G_B6_0);
-				RapportU5BU5D_t389AE0AA323AC3F97640FE49A24D144C010203AF* L_50 = G_B6_0->___rapports_9;
+				RapportU5BU5D_t389AE0AA323AC3F97640FE49A24D144C010203AF* L_50 = G_B6_0->___rapports_11;
 				RapportU5BU5D_t389AE0AA323AC3F97640FE49A24D144C010203AF* L_51 = L_50;
 				G_B7_0 = L_51;
 				G_B7_1 = G_B6_1;
@@ -28211,7 +28215,7 @@ IL_04d5_1:
 			{
 				ServiceClient_t07C84893BDB4121BAF09BDF559688F4714F9541D* L_178 = V_7;
 				NullCheck(L_178);
-				RapportU5BU5D_t389AE0AA323AC3F97640FE49A24D144C010203AF* L_179 = L_178->___rapports_9;
+				RapportU5BU5D_t389AE0AA323AC3F97640FE49A24D144C010203AF* L_179 = L_178->___rapports_11;
 				RapportU5BU5D_t389AE0AA323AC3F97640FE49A24D144C010203AF* L_180 = L_179;
 				G_B24_0 = L_180;
 				if (L_180)

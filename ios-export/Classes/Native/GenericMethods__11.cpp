@@ -3153,8 +3153,10 @@ struct StorageContext_t22CFB67551BA58343FC3DBC947482031F6936D9F  : public Runtim
 	String_t* ___Identity_1;
 	// System.String AttachmentJournal/StorageContext::ConflictIdentity
 	String_t* ___ConflictIdentity_2;
+	// System.Int32 AttachmentJournal/StorageContext::EmployeeId
+	int32_t ___EmployeeId_3;
 	// System.Collections.Generic.List`1<System.Collections.Generic.KeyValuePair`2<System.String,System.String>> AttachmentJournal/StorageContext::Notices
-	List_1_t87A1ED4D78ECE907C8318C622227761AB2DBF981* ___Notices_3;
+	List_1_t87A1ED4D78ECE907C8318C622227761AB2DBF981* ___Notices_4;
 };
 
 // System.Linq.Buffer`1<UnityEngine.Color>
