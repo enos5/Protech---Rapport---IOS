@@ -9730,6 +9730,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MainScript_AssignMatchingProperties_mA1D
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool FieldInfo_op_Inequality_m95789A98E646494987E66A9E4188DCA86185066B (FieldInfo_t* ___0_left, FieldInfo_t* ___1_right, const RuntimeMethod* method) ;
 // System.Void System.Reflection.FieldInfo::SetValue(System.Object,System.Object)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FieldInfo_SetValue_mD8C0DA3A1A0CFF073F971622BBDBAAB6688B4B6C (FieldInfo_t* __this, RuntimeObject* ___0_obj, RuntimeObject* ___1_value, const RuntimeMethod* method) ;
+// System.Void SyncConflictCore::StopMediaQueue(MainScript)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SyncConflictCore_StopMediaQueue_m27F88C369FEA637F8F8CB3F29742F9F70E2BC775 (MainScript_tE5DA41EF9F6C72F24338683BF923785400FDC5FF* ___0_owner, const RuntimeMethod* method) ;
 // T UnityEngine.Component::GetComponent<EnregistrementVocal>()
 inline EnregistrementVocal_t05B757193376249D9AEE88A410FB4EED9040539B* Component_GetComponent_TisEnregistrementVocal_t05B757193376249D9AEE88A410FB4EED9040539B_m479BF580067E589ADB4B54B4B043D7F46475A055 (Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3* __this, const RuntimeMethod* method)
 {
@@ -21715,10 +21717,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MainScript_OnDisable_m493FD01D61D4C91397
 	{
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Component_GetComponent_TisEnregistrementVocal_t05B757193376249D9AEE88A410FB4EED9040539B_m479BF580067E589ADB4B54B4B043D7F46475A055_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&SyncConflictCore_t523DF51143DA377F1FCF6FF462D1D10139FE77F3_il2cpp_TypeInfo_var);
 		s_Il2CppMethodInitialized = true;
 	}
 	EnregistrementVocal_t05B757193376249D9AEE88A410FB4EED9040539B* V_0 = NULL;
 	{
+		// SyncConflictCore.StopMediaQueue(this);
+		il2cpp_codegen_runtime_class_init_inline(SyncConflictCore_t523DF51143DA377F1FCF6FF462D1D10139FE77F3_il2cpp_TypeInfo_var);
+		SyncConflictCore_StopMediaQueue_m27F88C369FEA637F8F8CB3F29742F9F70E2BC775(__this, NULL);
 		// var recorder = GetComponent<EnregistrementVocal>();
 		EnregistrementVocal_t05B757193376249D9AEE88A410FB4EED9040539B* L_0;
 		L_0 = Component_GetComponent_TisEnregistrementVocal_t05B757193376249D9AEE88A410FB4EED9040539B_m479BF580067E589ADB4B54B4B043D7F46475A055(__this, Component_GetComponent_TisEnregistrementVocal_t05B757193376249D9AEE88A410FB4EED9040539B_m479BF580067E589ADB4B54B4B043D7F46475A055_RuntimeMethod_var);
@@ -21730,7 +21736,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MainScript_OnDisable_m493FD01D61D4C91397
 		L_2 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_1, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
 		if (!L_2)
 		{
-			goto IL_0016;
+			goto IL_001c;
 		}
 	}
 	{
@@ -21740,7 +21746,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MainScript_OnDisable_m493FD01D61D4C91397
 		EnregistrementVocal_StopRecording_m27800F3D6DBBD368123BB0B36886694DF759065D(L_3, NULL);
 	}
 
-IL_0016:
+IL_001c:
 	{
 		// if (recorder != null && recorder.audioSource != null && recorder.audioSource.isPlaying)
 		EnregistrementVocal_t05B757193376249D9AEE88A410FB4EED9040539B* L_4 = V_0;
@@ -21749,7 +21755,7 @@ IL_0016:
 		L_5 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_4, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
 		if (!L_5)
 		{
-			goto IL_0045;
+			goto IL_004b;
 		}
 	}
 	{
@@ -21761,7 +21767,7 @@ IL_0016:
 		L_8 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_7, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
 		if (!L_8)
 		{
-			goto IL_0045;
+			goto IL_004b;
 		}
 	}
 	{
@@ -21773,7 +21779,7 @@ IL_0016:
 		L_11 = AudioSource_get_isPlaying_mC203303F2F7146B2C056CB47B9391463FDF408FC(L_10, NULL);
 		if (!L_11)
 		{
-			goto IL_0045;
+			goto IL_004b;
 		}
 	}
 	{
@@ -21785,7 +21791,7 @@ IL_0016:
 		AudioSource_Stop_m318F17F17A147C77FF6E0A5A7A6BE057DB90F537(L_13, NULL);
 	}
 
-IL_0045:
+IL_004b:
 	{
 		// }
 		return;

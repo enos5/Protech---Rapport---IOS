@@ -907,6 +907,8 @@ struct U3CSendAvailableReportU3Ed__26_t473742376BB806FB19C98C745DB553E09ECACC82;
 struct U3CSendBatchU3Ed__24_tF33234D0F0635ACF3E0D26B129A84B50C6E840C7;
 // TabletSyncClient/<SendReport>d__28
 struct U3CSendReportU3Ed__28_t86CAB21E7C3F48E198CCA3691A08D695A960581C;
+// TabletSyncContract/CompletionExpectation
+struct CompletionExpectation_t375C23FE0695393A04E23238F5F7AAC0D2270B5C;
 // TabletSyncContract/PreparedPayload
 struct PreparedPayload_t3422CCA2875CFFDEF0EB6369A236E08EC4F78A21;
 // System.Threading.Tasks.Task/ContingentProperties
@@ -1253,7 +1255,6 @@ IL2CPP_EXTERN_C String_t* _stringLiteralB7C95357E7B682FF50CB3EB532EC22EE04F83744
 IL2CPP_EXTERN_C String_t* _stringLiteralB9BE182DA98494368BFD32B465D044C805C12073;
 IL2CPP_EXTERN_C String_t* _stringLiteralB9D3D73187778AF6D06AB846BD78D488ADBFB70E;
 IL2CPP_EXTERN_C String_t* _stringLiteralBE2B170CA1CA1C38D8FB52EDF05F4682F00A8394;
-IL2CPP_EXTERN_C String_t* _stringLiteralC04E60A077B2B8D0B1743F56BF9589414DB7F39B;
 IL2CPP_EXTERN_C String_t* _stringLiteralC0ED981623FDF9CE16A978E49FD525F3B2350E4A;
 IL2CPP_EXTERN_C String_t* _stringLiteralC155BB799ACB208133F2EAFA6308C9C4B6350626;
 IL2CPP_EXTERN_C String_t* _stringLiteralC2046C3EB904C9E036BA25F3F8D9A1E8BB15E4C5;
@@ -3418,8 +3419,8 @@ struct U3CSendReportU3Ed__28_t86CAB21E7C3F48E198CCA3691A08D695A960581C  : public
 	U3CU3Ec__DisplayClass28_4_t61242D03CA6D13D2E4E3C919CEF61D8022A4B0B1* ___U3CU3E8__5_12;
 	// System.String TabletSyncClient/<SendReport>d__28::<logicalHash>5__2
 	String_t* ___U3ClogicalHashU3E5__2_13;
-	// Newtonsoft.Json.Linq.JObject TabletSyncClient/<SendReport>d__28::<payload>5__3
-	JObject_t22BBBA7A90517B7E66E8C9D8D16DE84CB5054DE1* ___U3CpayloadU3E5__3_14;
+	// TabletSyncContract/CompletionExpectation TabletSyncClient/<SendReport>d__28::<completion>5__3
+	CompletionExpectation_t375C23FE0695393A04E23238F5F7AAC0D2270B5C* ___U3CcompletionU3E5__3_14;
 	// System.String TabletSyncClient/<SendReport>d__28::<payloadHash>5__4
 	String_t* ___U3CpayloadHashU3E5__4_15;
 	// System.String TabletSyncClient/<SendReport>d__28::<acknowledgedPayload>5__5
@@ -3440,6 +3441,17 @@ struct U3CSendReportU3Ed__28_t86CAB21E7C3F48E198CCA3691A08D695A960581C  : public
 	RuntimeObject* ___U3CU3E7__wrap11_23;
 	// Newtonsoft.Json.Linq.JObject TabletSyncClient/<SendReport>d__28::<file>5__13
 	JObject_t22BBBA7A90517B7E66E8C9D8D16DE84CB5054DE1* ___U3CfileU3E5__13_24;
+};
+
+// TabletSyncContract/CompletionExpectation
+struct CompletionExpectation_t375C23FE0695393A04E23238F5F7AAC0D2270B5C  : public RuntimeObject
+{
+	// Newtonsoft.Json.Linq.JArray TabletSyncContract/CompletionExpectation::Files
+	JArray_t1FFDF36566B9E8C56F36AB22701C1BA9DC2CBFF8* ___Files_0;
+	// System.Int32 TabletSyncContract/CompletionExpectation::DesiredStatus
+	int32_t ___DesiredStatus_1;
+	// System.String TabletSyncContract/CompletionExpectation::RowChangeId
+	String_t* ___RowChangeId_2;
 };
 
 // TabletSyncContract/PreparedPayload
@@ -7465,6 +7477,10 @@ struct U3CU3Ec_t25B727230B1C22DA129710FAC8A64C22E065C340_StaticFields
 
 // TabletSyncClient/<SendReport>d__28
 
+// TabletSyncContract/CompletionExpectation
+
+// TabletSyncContract/CompletionExpectation
+
 // TabletSyncContract/PreparedPayload
 
 // TabletSyncContract/PreparedPayload
@@ -10445,8 +10461,8 @@ inline bool Enumerator_MoveNext_m6096A4A06C95B18044A650D3E9AE2AA3D2ECA568 (Enume
 {
 	return ((  bool (*) (Enumerator_t3787AC8C42D500C005E2D239B9F7650C1E44A58D*, const RuntimeMethod*))Enumerator_MoveNext_mE921CC8F29FBBDE7CC3209A0ED0D921D58D00BCB_gshared)(__this, method);
 }
-// System.Void SyncConflictCore::QueueMediaCache(MainScript,System.String,ServiceClient,Rapport,Newtonsoft.Json.Linq.JObject)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SyncConflictCore_QueueMediaCache_mA5E5FD0E8E5419998A1B433C4DE4D23AA77AA618 (MainScript_tE5DA41EF9F6C72F24338683BF923785400FDC5FF* ___0_owner, String_t* ___1_token, ServiceClient_t07C84893BDB4121BAF09BDF559688F4714F9541D* ___2_service, Rapport_t0DED00B7690FCCDE651FB02E35DD4AFF93E927D2* ___3_report, JObject_t22BBBA7A90517B7E66E8C9D8D16DE84CB5054DE1* ___4_review, const RuntimeMethod* method) ;
+// System.Void SyncConflictCore::QueueMediaCache(MainScript,System.String,ServiceClient,Rapport)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SyncConflictCore_QueueMediaCache_mC2C5E4F81B69DFA31CDF76439677B5CDD1DE67CA (MainScript_tE5DA41EF9F6C72F24338683BF923785400FDC5FF* ___0_owner, String_t* ___1_token, ServiceClient_t07C84893BDB4121BAF09BDF559688F4714F9541D* ___2_service, Rapport_t0DED00B7690FCCDE651FB02E35DD4AFF93E927D2* ___3_report, const RuntimeMethod* method) ;
 // System.Void TabletSyncClient/<>c__DisplayClass25_0::.ctor()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__DisplayClass25_0__ctor_m22287B53A85A9A451399594C38E49619FF3F6181 (U3CU3Ec__DisplayClass25_0_tF00259A5E1C696558972FAE9C78870EA5D74134D* __this, const RuntimeMethod* method) ;
 // System.Void System.Action`1<Newtonsoft.Json.Linq.JObject>::.ctor(System.Object,System.IntPtr)
@@ -10509,14 +10525,16 @@ inline void Action_2__ctor_m05841951721686F30CCA38812B6430010466343C (Action_2_t
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* TabletSyncClient_Request_mA5F35D6B3E374156956C660E1685C878331998F3 (MainScript_tE5DA41EF9F6C72F24338683BF923785400FDC5FF* ___0_owner, UnityWebRequest_t6233B8E22992FC2364A831C1ACB033EF3260C39F* ___1_request, Action_2_t3880D255137BC000C14FEB45EE4BCFAA4901ECAB* ___2_callback, const RuntimeMethod* method) ;
 // System.Void TabletSyncContract::CheckAcknowledgement(Newtonsoft.Json.Linq.JObject,System.String,System.Int32,System.String)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TabletSyncContract_CheckAcknowledgement_mDE0E9F1C3E572A2886145F6BA8BA3CC7EE7075DF (JObject_t22BBBA7A90517B7E66E8C9D8D16DE84CB5054DE1* ___0_acknowledgement, String_t* ___1_saveId, int32_t ___2_reportId, String_t* ___3_payloadHash, const RuntimeMethod* method) ;
-// System.Void TabletSyncContract::CheckComplete(Newtonsoft.Json.Linq.JObject,Newtonsoft.Json.Linq.JObject)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TabletSyncContract_CheckComplete_m9188B92640C85D9D6D2E6136C6560C6A4A46034B (JObject_t22BBBA7A90517B7E66E8C9D8D16DE84CB5054DE1* ___0_acknowledgement, JObject_t22BBBA7A90517B7E66E8C9D8D16DE84CB5054DE1* ___1_payload, const RuntimeMethod* method) ;
+// TabletSyncContract/CompletionExpectation TabletSyncContract::ReadCompletionExpectation(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR CompletionExpectation_t375C23FE0695393A04E23238F5F7AAC0D2270B5C* TabletSyncContract_ReadCompletionExpectation_mC7A6B741826E6508B106AF505EAAFC9E27AC5A3F (String_t* ___0_json, const RuntimeMethod* method) ;
+// System.Void TabletSyncContract::CheckComplete(Newtonsoft.Json.Linq.JObject,Newtonsoft.Json.Linq.JArray,System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TabletSyncContract_CheckComplete_mF165C71379D442B85B1B43365C980D24DA2C97BC (JObject_t22BBBA7A90517B7E66E8C9D8D16DE84CB5054DE1* ___0_acknowledgement, JArray_t1FFDF36566B9E8C56F36AB22701C1BA9DC2CBFF8* ___1_expected, int32_t ___2_desiredStatus, const RuntimeMethod* method) ;
 // System.Boolean TabletSyncContract::IsVersion(System.String)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool TabletSyncContract_IsVersion_m458C36E447D16DED5F4067F444C3CDB8FD603B93 (String_t* ___0_value, const RuntimeMethod* method) ;
 // System.Void System.IO.InvalidDataException::.ctor(System.String)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InvalidDataException__ctor_m514879053D89E3C8229A01AA8970237FA5409532 (InvalidDataException_t9D62CAAA10DD31CCD9C0F92AA5729A05282F18A1* __this, String_t* ___0_message, const RuntimeMethod* method) ;
-// System.Void TabletSyncContract::MergeReceiptRows(Rapport,Newtonsoft.Json.Linq.JObject,Newtonsoft.Json.Linq.JArray)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TabletSyncContract_MergeReceiptRows_m4EFFA61B3032028D35B5946CC0D67A93C5B9EB26 (Rapport_t0DED00B7690FCCDE651FB02E35DD4AFF93E927D2* ___0_report, JObject_t22BBBA7A90517B7E66E8C9D8D16DE84CB5054DE1* ___1_previous, JArray_t1FFDF36566B9E8C56F36AB22701C1BA9DC2CBFF8* ___2_rows, const RuntimeMethod* method) ;
+// System.Void TabletSyncContract::MergeReceiptRows(Rapport,System.String,Newtonsoft.Json.Linq.JArray,Newtonsoft.Json.Linq.JArray)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TabletSyncContract_MergeReceiptRows_m4F34E5C670F6F2F4C9B274C30862BCA23EE3043D (Rapport_t0DED00B7690FCCDE651FB02E35DD4AFF93E927D2* ___0_report, String_t* ___1_previousRowChangeId, JArray_t1FFDF36566B9E8C56F36AB22701C1BA9DC2CBFF8* ___2_previousFiles, JArray_t1FFDF36566B9E8C56F36AB22701C1BA9DC2CBFF8* ___3_rows, const RuntimeMethod* method) ;
 // System.Void TabletSyncContract::PrepareJsonUpload(System.String,System.String,System.String,System.Threading.CancellationToken)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TabletSyncContract_PrepareJsonUpload_m9FC16CAEE4D3AAFE3085AE48FE7B288F634F60A3 (String_t* ___0_payload, String_t* ___1_syncId, String_t* ___2_destination, CancellationToken_t51142D9C6D7C02D314DA34A6A7988C528992FFED ___3_cancellation, const RuntimeMethod* method) ;
 // System.Void TabletSyncContract::PrepareUpload(System.String,System.String,System.String,System.String,System.String,System.String,System.Threading.CancellationToken)
@@ -29451,14 +29469,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__DisplayClass25_0_U3CPrefetchCon
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		// mediaJobs.Add(() => SyncConflictCore.QueueMediaCache(owner, token, service, report, review));
+		// mediaJobs.Add(() => SyncConflictCore.QueueMediaCache(owner, token, service, report));
 		MainScript_tE5DA41EF9F6C72F24338683BF923785400FDC5FF* L_0 = __this->___owner_1;
 		String_t* L_1 = __this->___token_2;
 		ServiceClient_t07C84893BDB4121BAF09BDF559688F4714F9541D* L_2 = __this->___service_3;
 		Rapport_t0DED00B7690FCCDE651FB02E35DD4AFF93E927D2* L_3 = __this->___report_4;
-		JObject_t22BBBA7A90517B7E66E8C9D8D16DE84CB5054DE1* L_4 = __this->___review_0;
 		il2cpp_codegen_runtime_class_init_inline(SyncConflictCore_t523DF51143DA377F1FCF6FF462D1D10139FE77F3_il2cpp_TypeInfo_var);
-		SyncConflictCore_QueueMediaCache_mA5E5FD0E8E5419998A1B433C4DE4D23AA77AA618(L_0, L_1, L_2, L_3, L_4, NULL);
+		SyncConflictCore_QueueMediaCache_mC2C5E4F81B69DFA31CDF76439677B5CDD1DE67CA(L_0, L_1, L_2, L_3, NULL);
 		return;
 	}
 }
@@ -29697,7 +29714,7 @@ IL_0189:
 IL_01c9:
 	{
 		__this->___U3CU3E1__state_0 = (-1);
-		// mediaJobs.Add(() => SyncConflictCore.QueueMediaCache(owner, token, service, report, review));
+		// mediaJobs.Add(() => SyncConflictCore.QueueMediaCache(owner, token, service, report));
 		List_1_tDB72209F35D56F62A287633F9450978E90B90987* L_61 = __this->___mediaJobs_7;
 		U3CU3Ec__DisplayClass25_0_tF00259A5E1C696558972FAE9C78870EA5D74134D* L_62 = __this->___U3CU3E8__1_6;
 		Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* L_63 = (Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07*)il2cpp_codegen_object_new(Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07_il2cpp_TypeInfo_var);
@@ -30569,12 +30586,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool U3CResumeAcceptedBaselineU3Ed__27_MoveNe
 	WWWForm_t0DAE123504AB1B2BC17C18714741B92AB3B3B045* V_2 = NULL;
 	String_t* V_3 = NULL;
 	String_t* V_4 = NULL;
-	JArray_t1FFDF36566B9E8C56F36AB22701C1BA9DC2CBFF8* V_5 = NULL;
+	CompletionExpectation_t375C23FE0695393A04E23238F5F7AAC0D2270B5C* V_5 = NULL;
+	JArray_t1FFDF36566B9E8C56F36AB22701C1BA9DC2CBFF8* V_6 = NULL;
 	{
 		auto __finallyBlock = il2cpp::utils::Fault([&]
 		{
 
-FAULT_031d:
+FAULT_032b:
 			{// begin fault (depth: 1)
 				U3CResumeAcceptedBaselineU3Ed__27_System_IDisposable_Dispose_m93866CD5B160D7CCBA80DBC8003863F32EE80AFA(__this, NULL);
 				return;
@@ -30600,7 +30618,7 @@ FAULT_031d:
 			}
 			{
 				V_0 = (bool)0;
-				goto IL_0324;
+				goto IL_0332;
 			}
 
 IL_0018_1:
@@ -30638,7 +30656,7 @@ IL_004e_1:
 			{
 				// if(string.IsNullOrEmpty(report.sync_id)||string.IsNullOrEmpty(report.sync_payload))yield break;
 				V_0 = (bool)0;
-				goto IL_0324;
+				goto IL_0332;
 			}
 
 IL_0055_1:
@@ -30735,7 +30753,7 @@ IL_0055_1:
 				Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CU3E2__current_1), (void*)L_42);
 				__this->___U3CU3E1__state_0 = 1;
 				V_0 = (bool)1;
-				goto IL_0324;
+				goto IL_0332;
 			}
 
 IL_017d_1:
@@ -30806,155 +30824,164 @@ IL_01ba_1:
 			{
 				// if(state=="not_found")yield break;
 				V_0 = (bool)0;
-				goto IL_0324;
+				goto IL_0332;
 			}
 
 IL_0218_1:
 			{
+				// var completion=TabletSyncContract.ReadCompletionExpectation(report.sync_payload);
+				Rapport_t0DED00B7690FCCDE651FB02E35DD4AFF93E927D2* L_62 = __this->___report_2;
+				NullCheck(L_62);
+				String_t* L_63 = L_62->___sync_payload_16;
+				CompletionExpectation_t375C23FE0695393A04E23238F5F7AAC0D2270B5C* L_64;
+				L_64 = TabletSyncContract_ReadCompletionExpectation_mC7A6B741826E6508B106AF505EAAFC9E27AC5A3F(L_63, NULL);
+				V_5 = L_64;
 				// if(state=="complete"){
-				String_t* L_62 = V_3;
-				bool L_63;
-				L_63 = String_op_Equality_m030E1B219352228970A076136E455C4E568C02C1(L_62, _stringLiteralFCA001B0ACD7E9D57F0E0B7CB87A4B810138F72E, NULL);
-				if (!L_63)
+				String_t* L_65 = V_3;
+				bool L_66;
+				L_66 = String_op_Equality_m030E1B219352228970A076136E455C4E568C02C1(L_65, _stringLiteralFCA001B0ACD7E9D57F0E0B7CB87A4B810138F72E, NULL);
+				if (!L_66)
 				{
-					goto IL_0263_1;
+					goto IL_0273_1;
 				}
 			}
 			{
-				// TabletSyncContract.CheckComplete(receipt,JObject.Parse(report.sync_payload));version=(string)receipt["base_version"];
-				U3CU3Ec__DisplayClass27_0_tE54C3D49DE48F52AF7598691FB07D69F5617CDC7* L_64 = __this->___U3CU3E8__1_6;
-				NullCheck(L_64);
-				JObject_t22BBBA7A90517B7E66E8C9D8D16DE84CB5054DE1* L_65 = L_64->___receipt_0;
-				Rapport_t0DED00B7690FCCDE651FB02E35DD4AFF93E927D2* L_66 = __this->___report_2;
-				NullCheck(L_66);
-				String_t* L_67 = L_66->___sync_payload_16;
-				JObject_t22BBBA7A90517B7E66E8C9D8D16DE84CB5054DE1* L_68;
-				L_68 = JObject_Parse_mBC884661DD2708BA92BCE45E8C104924542A2D43(L_67, NULL);
-				TabletSyncContract_CheckComplete_m9188B92640C85D9D6D2E6136C6560C6A4A46034B(L_65, L_68, NULL);
-				// TabletSyncContract.CheckComplete(receipt,JObject.Parse(report.sync_payload));version=(string)receipt["base_version"];
-				U3CU3Ec__DisplayClass27_0_tE54C3D49DE48F52AF7598691FB07D69F5617CDC7* L_69 = __this->___U3CU3E8__1_6;
+				// TabletSyncContract.CheckComplete(receipt,completion.Files,completion.DesiredStatus);version=(string)receipt["base_version"];
+				U3CU3Ec__DisplayClass27_0_tE54C3D49DE48F52AF7598691FB07D69F5617CDC7* L_67 = __this->___U3CU3E8__1_6;
+				NullCheck(L_67);
+				JObject_t22BBBA7A90517B7E66E8C9D8D16DE84CB5054DE1* L_68 = L_67->___receipt_0;
+				CompletionExpectation_t375C23FE0695393A04E23238F5F7AAC0D2270B5C* L_69 = V_5;
 				NullCheck(L_69);
-				JObject_t22BBBA7A90517B7E66E8C9D8D16DE84CB5054DE1* L_70 = L_69->___receipt_0;
-				NullCheck(L_70);
-				JToken_tFD7D9015F3F97A09AD93E439ACE894D12C06E8B3* L_71;
-				L_71 = JObject_get_Item_m889A29E8FCEA531AF829407F208DD05F0108C50B(L_70, _stringLiteralB51803CE2E48A11B142F76A7B50A4284C7FED887, NULL);
+				JArray_t1FFDF36566B9E8C56F36AB22701C1BA9DC2CBFF8* L_70 = L_69->___Files_0;
+				CompletionExpectation_t375C23FE0695393A04E23238F5F7AAC0D2270B5C* L_71 = V_5;
+				NullCheck(L_71);
+				int32_t L_72 = L_71->___DesiredStatus_1;
+				TabletSyncContract_CheckComplete_mF165C71379D442B85B1B43365C980D24DA2C97BC(L_68, L_70, L_72, NULL);
+				// TabletSyncContract.CheckComplete(receipt,completion.Files,completion.DesiredStatus);version=(string)receipt["base_version"];
+				U3CU3Ec__DisplayClass27_0_tE54C3D49DE48F52AF7598691FB07D69F5617CDC7* L_73 = __this->___U3CU3E8__1_6;
+				NullCheck(L_73);
+				JObject_t22BBBA7A90517B7E66E8C9D8D16DE84CB5054DE1* L_74 = L_73->___receipt_0;
+				NullCheck(L_74);
+				JToken_tFD7D9015F3F97A09AD93E439ACE894D12C06E8B3* L_75;
+				L_75 = JObject_get_Item_m889A29E8FCEA531AF829407F208DD05F0108C50B(L_74, _stringLiteralB51803CE2E48A11B142F76A7B50A4284C7FED887, NULL);
 				il2cpp_codegen_runtime_class_init_inline(JToken_tFD7D9015F3F97A09AD93E439ACE894D12C06E8B3_il2cpp_TypeInfo_var);
-				String_t* L_72;
-				L_72 = JToken_op_Explicit_mA435B5A6C389220DF41F02E1CAE6AEA4EEFBCFF3(L_71, NULL);
-				V_4 = L_72;
-				goto IL_028c_1;
+				String_t* L_76;
+				L_76 = JToken_op_Explicit_mA435B5A6C389220DF41F02E1CAE6AEA4EEFBCFF3(L_75, NULL);
+				V_4 = L_76;
+				goto IL_029c_1;
 			}
 
-IL_0263_1:
+IL_0273_1:
 			{
 				// }else if(state=="content_accepted")version=(string)receipt["accepted_version"];
-				String_t* L_73 = V_3;
-				bool L_74;
-				L_74 = String_op_Equality_m030E1B219352228970A076136E455C4E568C02C1(L_73, _stringLiteralF59D661AA391F0C8419E94F1DC827F9B67A63D3D, NULL);
-				if (!L_74)
+				String_t* L_77 = V_3;
+				bool L_78;
+				L_78 = String_op_Equality_m030E1B219352228970A076136E455C4E568C02C1(L_77, _stringLiteralF59D661AA391F0C8419E94F1DC827F9B67A63D3D, NULL);
+				if (!L_78)
 				{
-					goto IL_028c_1;
+					goto IL_029c_1;
 				}
 			}
 			{
 				// }else if(state=="content_accepted")version=(string)receipt["accepted_version"];
-				U3CU3Ec__DisplayClass27_0_tE54C3D49DE48F52AF7598691FB07D69F5617CDC7* L_75 = __this->___U3CU3E8__1_6;
-				NullCheck(L_75);
-				JObject_t22BBBA7A90517B7E66E8C9D8D16DE84CB5054DE1* L_76 = L_75->___receipt_0;
-				NullCheck(L_76);
-				JToken_tFD7D9015F3F97A09AD93E439ACE894D12C06E8B3* L_77;
-				L_77 = JObject_get_Item_m889A29E8FCEA531AF829407F208DD05F0108C50B(L_76, _stringLiteral3DD792C69011436E50D88D5EE9B8FE8141C68DAF, NULL);
+				U3CU3Ec__DisplayClass27_0_tE54C3D49DE48F52AF7598691FB07D69F5617CDC7* L_79 = __this->___U3CU3E8__1_6;
+				NullCheck(L_79);
+				JObject_t22BBBA7A90517B7E66E8C9D8D16DE84CB5054DE1* L_80 = L_79->___receipt_0;
+				NullCheck(L_80);
+				JToken_tFD7D9015F3F97A09AD93E439ACE894D12C06E8B3* L_81;
+				L_81 = JObject_get_Item_m889A29E8FCEA531AF829407F208DD05F0108C50B(L_80, _stringLiteral3DD792C69011436E50D88D5EE9B8FE8141C68DAF, NULL);
 				il2cpp_codegen_runtime_class_init_inline(JToken_tFD7D9015F3F97A09AD93E439ACE894D12C06E8B3_il2cpp_TypeInfo_var);
-				String_t* L_78;
-				L_78 = JToken_op_Explicit_mA435B5A6C389220DF41F02E1CAE6AEA4EEFBCFF3(L_77, NULL);
-				V_4 = L_78;
+				String_t* L_82;
+				L_82 = JToken_op_Explicit_mA435B5A6C389220DF41F02E1CAE6AEA4EEFBCFF3(L_81, NULL);
+				V_4 = L_82;
 			}
 
-IL_028c_1:
+IL_029c_1:
 			{
 				// if(!TabletSyncContract.IsVersion(version))throw new InvalidDataException("Le serveur doit ?tre mis ? jour pour v?rifier cet envoi incomplet sans cr?er de conflit.");
-				String_t* L_79 = V_4;
-				bool L_80;
-				L_80 = TabletSyncContract_IsVersion_m458C36E447D16DED5F4067F444C3CDB8FD603B93(L_79, NULL);
-				if (L_80)
+				String_t* L_83 = V_4;
+				bool L_84;
+				L_84 = TabletSyncContract_IsVersion_m458C36E447D16DED5F4067F444C3CDB8FD603B93(L_83, NULL);
+				if (L_84)
 				{
-					goto IL_02a0_1;
+					goto IL_02b0_1;
 				}
 			}
 			{
 				// if(!TabletSyncContract.IsVersion(version))throw new InvalidDataException("Le serveur doit ?tre mis ? jour pour v?rifier cet envoi incomplet sans cr?er de conflit.");
-				InvalidDataException_t9D62CAAA10DD31CCD9C0F92AA5729A05282F18A1* L_81 = (InvalidDataException_t9D62CAAA10DD31CCD9C0F92AA5729A05282F18A1*)il2cpp_codegen_object_new(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&InvalidDataException_t9D62CAAA10DD31CCD9C0F92AA5729A05282F18A1_il2cpp_TypeInfo_var)));
-				NullCheck(L_81);
-				InvalidDataException__ctor_m514879053D89E3C8229A01AA8970237FA5409532(L_81, ((String_t*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&_stringLiteralACDF081AD8149EE17DC82DAB77A39839EE9C6BC0)), NULL);
-				IL2CPP_RAISE_MANAGED_EXCEPTION(L_81, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&U3CResumeAcceptedBaselineU3Ed__27_MoveNext_mC265E84DFF5CA147290FD8027DC30F07F376C2F1_RuntimeMethod_var)));
+				InvalidDataException_t9D62CAAA10DD31CCD9C0F92AA5729A05282F18A1* L_85 = (InvalidDataException_t9D62CAAA10DD31CCD9C0F92AA5729A05282F18A1*)il2cpp_codegen_object_new(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&InvalidDataException_t9D62CAAA10DD31CCD9C0F92AA5729A05282F18A1_il2cpp_TypeInfo_var)));
+				NullCheck(L_85);
+				InvalidDataException__ctor_m514879053D89E3C8229A01AA8970237FA5409532(L_85, ((String_t*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&_stringLiteralACDF081AD8149EE17DC82DAB77A39839EE9C6BC0)), NULL);
+				IL2CPP_RAISE_MANAGED_EXCEPTION(L_85, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&U3CResumeAcceptedBaselineU3Ed__27_MoveNext_mC265E84DFF5CA147290FD8027DC30F07F376C2F1_RuntimeMethod_var)));
 			}
 
-IL_02a0_1:
+IL_02b0_1:
 			{
 				// if(!(receipt["pj_tableau"] is JArray rows))throw new InvalidDataException("Les associations des fichiers d?j? re?us ne sont pas confirm?es par le serveur.");
-				U3CU3Ec__DisplayClass27_0_tE54C3D49DE48F52AF7598691FB07D69F5617CDC7* L_82 = __this->___U3CU3E8__1_6;
-				NullCheck(L_82);
-				JObject_t22BBBA7A90517B7E66E8C9D8D16DE84CB5054DE1* L_83 = L_82->___receipt_0;
-				NullCheck(L_83);
-				JToken_tFD7D9015F3F97A09AD93E439ACE894D12C06E8B3* L_84;
-				L_84 = JObject_get_Item_m889A29E8FCEA531AF829407F208DD05F0108C50B(L_83, _stringLiteral7F6D352C4617140DC7AFED88A6F1FACE04DACC40, NULL);
-				V_5 = ((JArray_t1FFDF36566B9E8C56F36AB22701C1BA9DC2CBFF8*)IsInstClass((RuntimeObject*)L_84, JArray_t1FFDF36566B9E8C56F36AB22701C1BA9DC2CBFF8_il2cpp_TypeInfo_var));
-				JArray_t1FFDF36566B9E8C56F36AB22701C1BA9DC2CBFF8* L_85 = V_5;
-				if (L_85)
-				{
-					goto IL_02cb_1;
-				}
-			}
-			{
-				// if(!(receipt["pj_tableau"] is JArray rows))throw new InvalidDataException("Les associations des fichiers d?j? re?us ne sont pas confirm?es par le serveur.");
-				InvalidDataException_t9D62CAAA10DD31CCD9C0F92AA5729A05282F18A1* L_86 = (InvalidDataException_t9D62CAAA10DD31CCD9C0F92AA5729A05282F18A1*)il2cpp_codegen_object_new(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&InvalidDataException_t9D62CAAA10DD31CCD9C0F92AA5729A05282F18A1_il2cpp_TypeInfo_var)));
+				U3CU3Ec__DisplayClass27_0_tE54C3D49DE48F52AF7598691FB07D69F5617CDC7* L_86 = __this->___U3CU3E8__1_6;
 				NullCheck(L_86);
-				InvalidDataException__ctor_m514879053D89E3C8229A01AA8970237FA5409532(L_86, ((String_t*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&_stringLiteralAC1C3D747E8C4169A67CAF29C30E17273B910E47)), NULL);
-				IL2CPP_RAISE_MANAGED_EXCEPTION(L_86, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&U3CResumeAcceptedBaselineU3Ed__27_MoveNext_mC265E84DFF5CA147290FD8027DC30F07F376C2F1_RuntimeMethod_var)));
-			}
-
-IL_02cb_1:
-			{
-				// TabletSyncContract.MergeReceiptRows(report,JObject.Parse(report.sync_payload),rows);
-				Rapport_t0DED00B7690FCCDE651FB02E35DD4AFF93E927D2* L_87 = __this->___report_2;
-				Rapport_t0DED00B7690FCCDE651FB02E35DD4AFF93E927D2* L_88 = __this->___report_2;
-				NullCheck(L_88);
-				String_t* L_89 = L_88->___sync_payload_16;
-				JObject_t22BBBA7A90517B7E66E8C9D8D16DE84CB5054DE1* L_90;
-				L_90 = JObject_Parse_mBC884661DD2708BA92BCE45E8C104924542A2D43(L_89, NULL);
-				JArray_t1FFDF36566B9E8C56F36AB22701C1BA9DC2CBFF8* L_91 = V_5;
-				TabletSyncContract_MergeReceiptRows_m4EFFA61B3032028D35B5946CC0D67A93C5B9EB26(L_87, L_90, L_91, NULL);
-				// report.sync_base_version=version;
-				Rapport_t0DED00B7690FCCDE651FB02E35DD4AFF93E927D2* L_92 = __this->___report_2;
-				String_t* L_93 = V_4;
-				NullCheck(L_92);
-				L_92->___sync_base_version_5 = L_93;
-				Il2CppCodeGenWriteBarrier((void**)(&L_92->___sync_base_version_5), (void*)L_93);
-				// if(report.sync_resolution=="keep_local")report.sync_resolution_version=version;
-				Rapport_t0DED00B7690FCCDE651FB02E35DD4AFF93E927D2* L_94 = __this->___report_2;
-				NullCheck(L_94);
-				String_t* L_95 = L_94->___sync_resolution_8;
-				bool L_96;
-				L_96 = String_op_Equality_m030E1B219352228970A076136E455C4E568C02C1(L_95, _stringLiteral4E80E10CDF822945C43B919EA2BE84C8E32F6ECD, NULL);
-				if (!L_96)
+				JObject_t22BBBA7A90517B7E66E8C9D8D16DE84CB5054DE1* L_87 = L_86->___receipt_0;
+				NullCheck(L_87);
+				JToken_tFD7D9015F3F97A09AD93E439ACE894D12C06E8B3* L_88;
+				L_88 = JObject_get_Item_m889A29E8FCEA531AF829407F208DD05F0108C50B(L_87, _stringLiteral7F6D352C4617140DC7AFED88A6F1FACE04DACC40, NULL);
+				V_6 = ((JArray_t1FFDF36566B9E8C56F36AB22701C1BA9DC2CBFF8*)IsInstClass((RuntimeObject*)L_88, JArray_t1FFDF36566B9E8C56F36AB22701C1BA9DC2CBFF8_il2cpp_TypeInfo_var));
+				JArray_t1FFDF36566B9E8C56F36AB22701C1BA9DC2CBFF8* L_89 = V_6;
+				if (L_89)
 				{
-					goto IL_0319_1;
+					goto IL_02db_1;
 				}
 			}
 			{
-				// if(report.sync_resolution=="keep_local")report.sync_resolution_version=version;
+				// if(!(receipt["pj_tableau"] is JArray rows))throw new InvalidDataException("Les associations des fichiers d?j? re?us ne sont pas confirm?es par le serveur.");
+				InvalidDataException_t9D62CAAA10DD31CCD9C0F92AA5729A05282F18A1* L_90 = (InvalidDataException_t9D62CAAA10DD31CCD9C0F92AA5729A05282F18A1*)il2cpp_codegen_object_new(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&InvalidDataException_t9D62CAAA10DD31CCD9C0F92AA5729A05282F18A1_il2cpp_TypeInfo_var)));
+				NullCheck(L_90);
+				InvalidDataException__ctor_m514879053D89E3C8229A01AA8970237FA5409532(L_90, ((String_t*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&_stringLiteralAC1C3D747E8C4169A67CAF29C30E17273B910E47)), NULL);
+				IL2CPP_RAISE_MANAGED_EXCEPTION(L_90, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&U3CResumeAcceptedBaselineU3Ed__27_MoveNext_mC265E84DFF5CA147290FD8027DC30F07F376C2F1_RuntimeMethod_var)));
+			}
+
+IL_02db_1:
+			{
+				// TabletSyncContract.MergeReceiptRows(report,completion.RowChangeId,completion.Files,rows);
+				Rapport_t0DED00B7690FCCDE651FB02E35DD4AFF93E927D2* L_91 = __this->___report_2;
+				CompletionExpectation_t375C23FE0695393A04E23238F5F7AAC0D2270B5C* L_92 = V_5;
+				NullCheck(L_92);
+				String_t* L_93 = L_92->___RowChangeId_2;
+				CompletionExpectation_t375C23FE0695393A04E23238F5F7AAC0D2270B5C* L_94 = V_5;
+				NullCheck(L_94);
+				JArray_t1FFDF36566B9E8C56F36AB22701C1BA9DC2CBFF8* L_95 = L_94->___Files_0;
+				JArray_t1FFDF36566B9E8C56F36AB22701C1BA9DC2CBFF8* L_96 = V_6;
+				TabletSyncContract_MergeReceiptRows_m4F34E5C670F6F2F4C9B274C30862BCA23EE3043D(L_91, L_93, L_95, L_96, NULL);
+				// report.sync_base_version=version;
 				Rapport_t0DED00B7690FCCDE651FB02E35DD4AFF93E927D2* L_97 = __this->___report_2;
 				String_t* L_98 = V_4;
 				NullCheck(L_97);
-				L_97->___sync_resolution_version_9 = L_98;
-				Il2CppCodeGenWriteBarrier((void**)(&L_97->___sync_resolution_version_9), (void*)L_98);
+				L_97->___sync_base_version_5 = L_98;
+				Il2CppCodeGenWriteBarrier((void**)(&L_97->___sync_base_version_5), (void*)L_98);
+				// if(report.sync_resolution=="keep_local")report.sync_resolution_version=version;
+				Rapport_t0DED00B7690FCCDE651FB02E35DD4AFF93E927D2* L_99 = __this->___report_2;
+				NullCheck(L_99);
+				String_t* L_100 = L_99->___sync_resolution_8;
+				bool L_101;
+				L_101 = String_op_Equality_m030E1B219352228970A076136E455C4E568C02C1(L_100, _stringLiteral4E80E10CDF822945C43B919EA2BE84C8E32F6ECD, NULL);
+				if (!L_101)
+				{
+					goto IL_0327_1;
+				}
+			}
+			{
+				// if(report.sync_resolution=="keep_local")report.sync_resolution_version=version;
+				Rapport_t0DED00B7690FCCDE651FB02E35DD4AFF93E927D2* L_102 = __this->___report_2;
+				String_t* L_103 = V_4;
+				NullCheck(L_102);
+				L_102->___sync_resolution_version_9 = L_103;
+				Il2CppCodeGenWriteBarrier((void**)(&L_102->___sync_resolution_version_9), (void*)L_103);
 			}
 
-IL_0319_1:
+IL_0327_1:
 			{
 				// }
 				V_0 = (bool)0;
-				goto IL_0324;
+				goto IL_0332;
 			}
 		}// end try (depth: 1)
 		catch(Il2CppExceptionWrapper& e)
@@ -30963,10 +30990,10 @@ IL_0319_1:
 		}
 	}
 
-IL_0324:
+IL_0332:
 	{
-		bool L_99 = V_0;
-		return L_99;
+		bool L_104 = V_0;
+		return L_104;
 	}
 }
 // System.Void TabletSyncClient/<ResumeAcceptedBaseline>d__27::<>m__Finally1()
@@ -31828,7 +31855,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool U3CSendReportU3Ed__28_MoveNext_m5083E012
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralAD889540912D5FF598C207A390898417E04EDE23);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralB43BFB64521047C6E3F32E9D794EE3D8DC5033DE);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralB51803CE2E48A11B142F76A7B50A4284C7FED887);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralC04E60A077B2B8D0B1743F56BF9589414DB7F39B);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralC2DA60AE96E2C9EF3EAF20897A5AA957AFDF64EC);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralCA0AA89382EC9FBF76CB9BBEAB1872B5A701BEAA);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralCC12A33FEE0711DD751A8FB2B920B95F88FBEB40);
@@ -31895,7 +31921,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool U3CSendReportU3Ed__28_MoveNext_m5083E012
 		auto __finallyBlock = il2cpp::utils::Fault([&]
 		{
 
-FAULT_1710:
+FAULT_170c:
 			{// begin fault (depth: 1)
 				U3CSendReportU3Ed__28_System_IDisposable_Dispose_mA617D79EDFE04F72DB25141DB31B0FB77CD0CDC3(__this, NULL);
 				return;
@@ -31951,37 +31977,37 @@ FAULT_1710:
 					}
 					case 10:
 					{
-						goto IL_0df7_1;
+						goto IL_0de3_1;
 					}
 					case 11:
 					{
-						goto IL_0ef3_1;
+						goto IL_0edf_1;
 					}
 					case 12:
 					{
-						goto IL_0fdf_1;
+						goto IL_0fcb_1;
 					}
 					case 13:
 					{
-						goto IL_10fd_1;
+						goto IL_10e9_1;
 					}
 					case 14:
 					{
-						goto IL_12ab_1;
+						goto IL_12a7_1;
 					}
 					case 15:
 					{
-						goto IL_15af_1;
+						goto IL_15ab_1;
 					}
 					case 16:
 					{
-						goto IL_165b_1;
+						goto IL_1657_1;
 					}
 				}
 			}
 			{
 				V_0 = (bool)0;
-				goto IL_1717;
+				goto IL_1713;
 			}
 
 IL_0058_1:
@@ -32049,7 +32075,7 @@ IL_0058_1:
 				Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CU3E2__current_1), (void*)L_22);
 				__this->___U3CU3E1__state_0 = 1;
 				V_0 = (bool)1;
-				goto IL_1717;
+				goto IL_1713;
 			}
 
 IL_011c_1:
@@ -32093,7 +32119,7 @@ IL_011c_1:
 				Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CU3E2__current_1), (void*)L_38);
 				__this->___U3CU3E1__state_0 = 2;
 				V_0 = (bool)1;
-				goto IL_1717;
+				goto IL_1713;
 			}
 
 IL_01a8_1:
@@ -32210,7 +32236,7 @@ IL_0209_1:
 				Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CU3E2__current_1), (void*)L_75);
 				__this->___U3CU3E1__state_0 = 3;
 				V_0 = (bool)1;
-				goto IL_1717;
+				goto IL_1713;
 			}
 
 IL_02cd_1:
@@ -32254,7 +32280,7 @@ IL_02cd_1:
 				Action_1_Invoke_m4D4A492C5CAE2C99C954643AD0A158091D7A6C59_inline(L_76, L_87, NULL);
 				// yield break;
 				V_0 = (bool)0;
-				goto IL_1717;
+				goto IL_1713;
 			}
 
 IL_0334_1:
@@ -32334,7 +32360,7 @@ IL_0334_1:
 				Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CU3E2__current_1), (void*)L_114);
 				__this->___U3CU3E1__state_0 = 4;
 				V_0 = (bool)1;
-				goto IL_1717;
+				goto IL_1713;
 			}
 
 IL_03fd_1:
@@ -32454,7 +32480,7 @@ IL_0409_1:
 				Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CU3E2__current_1), (void*)L_149);
 				__this->___U3CU3E1__state_0 = 5;
 				V_0 = (bool)1;
-				goto IL_1717;
+				goto IL_1713;
 			}
 
 IL_0535_1:
@@ -32524,7 +32550,7 @@ IL_0556_1:
 				Action_1_Invoke_m4D4A492C5CAE2C99C954643AD0A158091D7A6C59_inline(L_154, L_166, NULL);
 				// yield break;
 				V_0 = (bool)0;
-				goto IL_1717;
+				goto IL_1713;
 			}
 
 IL_05cd_1:
@@ -32611,7 +32637,7 @@ IL_05db_1:
 				Action_1_Invoke_m4D4A492C5CAE2C99C954643AD0A158091D7A6C59_inline(L_179, L_190, NULL);
 				// yield break;
 				V_0 = (bool)0;
-				goto IL_1717;
+				goto IL_1713;
 			}
 
 IL_067d_1:
@@ -32653,7 +32679,7 @@ IL_067d_1:
 				Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CU3E2__current_1), (void*)L_205);
 				__this->___U3CU3E1__state_0 = 6;
 				V_0 = (bool)1;
-				goto IL_1717;
+				goto IL_1713;
 			}
 
 IL_06fc_1:
@@ -32779,7 +32805,7 @@ IL_075e_1:
 				Action_1_Invoke_m4D4A492C5CAE2C99C954643AD0A158091D7A6C59_inline(L_231, L_243, NULL);
 				// yield break;
 				V_0 = (bool)0;
-				goto IL_1717;
+				goto IL_1713;
 			}
 
 IL_0808_1:
@@ -32896,22 +32922,22 @@ IL_08bf_1:
 				Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CU3E2__current_1), (void*)L_276);
 				__this->___U3CU3E1__state_0 = 7;
 				V_0 = (bool)1;
-				goto IL_1717;
+				goto IL_1713;
 			}
 
 IL_0907_1:
 			{
 				__this->___U3CU3E1__state_0 = (-1);
-				// JObject payload = JObject.Parse(report.sync_payload);
+				// var completion=TabletSyncContract.ReadCompletionExpectation(report.sync_payload);
 				U3CU3Ec__DisplayClass28_0_t31208A80E819265E1170205F0BF1FDAB8E1D239E* L_277 = __this->___U3CU3E8__2_6;
 				NullCheck(L_277);
 				Rapport_t0DED00B7690FCCDE651FB02E35DD4AFF93E927D2* L_278 = L_277->___report_2;
 				NullCheck(L_278);
 				String_t* L_279 = L_278->___sync_payload_16;
-				JObject_t22BBBA7A90517B7E66E8C9D8D16DE84CB5054DE1* L_280;
-				L_280 = JObject_Parse_mBC884661DD2708BA92BCE45E8C104924542A2D43(L_279, NULL);
-				__this->___U3CpayloadU3E5__3_14 = L_280;
-				Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CpayloadU3E5__3_14), (void*)L_280);
+				CompletionExpectation_t375C23FE0695393A04E23238F5F7AAC0D2270B5C* L_280;
+				L_280 = TabletSyncContract_ReadCompletionExpectation_mC7A6B741826E6508B106AF505EAAFC9E27AC5A3F(L_279, NULL);
+				__this->___U3CcompletionU3E5__3_14 = L_280;
+				Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CcompletionU3E5__3_14), (void*)L_280);
 				// string payloadHash = TabletSyncContract.Hash(report.sync_payload);
 				U3CU3Ec__DisplayClass28_0_t31208A80E819265E1170205F0BF1FDAB8E1D239E* L_281 = __this->___U3CU3E8__2_6;
 				NullCheck(L_281);
@@ -33008,7 +33034,7 @@ IL_09e6_1:
 				Il2CppCodeGenWriteBarrier((void**)(&G_B35_3->___U3CU3E2__current_1), (void*)L_304);
 				__this->___U3CU3E1__state_0 = 8;
 				V_0 = (bool)1;
-				goto IL_1717;
+				goto IL_1713;
 			}
 
 IL_0a0f_1:
@@ -33069,7 +33095,7 @@ IL_0a0f_1:
 				Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CU3E2__current_1), (void*)L_324);
 				__this->___U3CU3E1__state_0 = ((int32_t)9);
 				V_0 = (bool)1;
-				goto IL_1717;
+				goto IL_1713;
 			}
 
 IL_0adc_1:
@@ -33133,7 +33159,7 @@ IL_0b15_1:
 				L_343 = String_op_Inequality_m8C940F3CFC42866709D7CA931B3D77B4BE94BCB6(L_342, _stringLiteralFCA001B0ACD7E9D57F0E0B7CB87A4B810138F72E, NULL);
 				if (!L_343)
 				{
-					goto IL_1130_1;
+					goto IL_111c_1;
 				}
 			}
 			{
@@ -33166,23 +33192,22 @@ IL_0ba5_1:
 			{
 				// int fileNumber = 0;
 				__this->___U3CfileNumberU3E5__11_22 = 0;
-				// foreach (JObject file in (JArray)payload["files"])
-				JObject_t22BBBA7A90517B7E66E8C9D8D16DE84CB5054DE1* L_350 = __this->___U3CpayloadU3E5__3_14;
+				// foreach (JObject file in completion.Files)
+				CompletionExpectation_t375C23FE0695393A04E23238F5F7AAC0D2270B5C* L_350 = __this->___U3CcompletionU3E5__3_14;
 				NullCheck(L_350);
-				JToken_tFD7D9015F3F97A09AD93E439ACE894D12C06E8B3* L_351;
-				L_351 = JObject_get_Item_m889A29E8FCEA531AF829407F208DD05F0108C50B(L_350, _stringLiteralC04E60A077B2B8D0B1743F56BF9589414DB7F39B, NULL);
-				NullCheck(((JArray_t1FFDF36566B9E8C56F36AB22701C1BA9DC2CBFF8*)CastclassClass((RuntimeObject*)L_351, JArray_t1FFDF36566B9E8C56F36AB22701C1BA9DC2CBFF8_il2cpp_TypeInfo_var)));
+				JArray_t1FFDF36566B9E8C56F36AB22701C1BA9DC2CBFF8* L_351 = L_350->___Files_0;
+				NullCheck(L_351);
 				RuntimeObject* L_352;
-				L_352 = JArray_GetEnumerator_m3A0A8116C13003EA3883AB9D5F2A9E8069192A4F(((JArray_t1FFDF36566B9E8C56F36AB22701C1BA9DC2CBFF8*)CastclassClass((RuntimeObject*)L_351, JArray_t1FFDF36566B9E8C56F36AB22701C1BA9DC2CBFF8_il2cpp_TypeInfo_var)), NULL);
+				L_352 = JArray_GetEnumerator_m3A0A8116C13003EA3883AB9D5F2A9E8069192A4F(L_351, NULL);
 				__this->___U3CU3E7__wrap11_23 = L_352;
 				Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CU3E7__wrap11_23), (void*)L_352);
 				__this->___U3CU3E1__state_0 = ((int32_t)-6);
-				goto IL_0ff5_1;
+				goto IL_0fe1_1;
 			}
 
-IL_0bd9_1:
+IL_0bcf_1:
 			{
-				// foreach (JObject file in (JArray)payload["files"])
+				// foreach (JObject file in completion.Files)
 				RuntimeObject* L_353 = __this->___U3CU3E7__wrap11_23;
 				NullCheck(L_353);
 				JToken_tFD7D9015F3F97A09AD93E439ACE894D12C06E8B3* L_354;
@@ -33194,7 +33219,7 @@ IL_0bd9_1:
 				U3CU3Ec__DisplayClass28_3__ctor_m8A576AF248916F1369832A3F99F8A7ADA7919030(L_355, NULL);
 				__this->___U3CU3E8__4_10 = L_355;
 				Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CU3E8__4_10), (void*)L_355);
-				// UpdateProgress("Envoi des pi?ces jointes (" + (++fileNumber) + "/" + ((JArray)payload["files"]).Count + ") - " + report.titre_fr);
+				// UpdateProgress("Envoi des pi?ces jointes (" + (++fileNumber) + "/" + completion.Files.Count + ") - " + report.titre_fr);
 				StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_356 = (StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248*)(StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248*)SZArrayNew(StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248_il2cpp_TypeInfo_var, (uint32_t)6);
 				StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_357 = L_356;
 				NullCheck(L_357);
@@ -33215,13 +33240,12 @@ IL_0bd9_1:
 				ArrayElementTypeCheck (L_362, _stringLiteral86BBAACC00198DBB3046818AD3FC2AA10AE48DE1);
 				(L_362)->SetAt(static_cast<il2cpp_array_size_t>(2), (String_t*)_stringLiteral86BBAACC00198DBB3046818AD3FC2AA10AE48DE1);
 				StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_363 = L_362;
-				JObject_t22BBBA7A90517B7E66E8C9D8D16DE84CB5054DE1* L_364 = __this->___U3CpayloadU3E5__3_14;
+				CompletionExpectation_t375C23FE0695393A04E23238F5F7AAC0D2270B5C* L_364 = __this->___U3CcompletionU3E5__3_14;
 				NullCheck(L_364);
-				JToken_tFD7D9015F3F97A09AD93E439ACE894D12C06E8B3* L_365;
-				L_365 = JObject_get_Item_m889A29E8FCEA531AF829407F208DD05F0108C50B(L_364, _stringLiteralC04E60A077B2B8D0B1743F56BF9589414DB7F39B, NULL);
-				NullCheck(((JArray_t1FFDF36566B9E8C56F36AB22701C1BA9DC2CBFF8*)CastclassClass((RuntimeObject*)L_365, JArray_t1FFDF36566B9E8C56F36AB22701C1BA9DC2CBFF8_il2cpp_TypeInfo_var)));
+				JArray_t1FFDF36566B9E8C56F36AB22701C1BA9DC2CBFF8* L_365 = L_364->___Files_0;
+				NullCheck(L_365);
 				int32_t L_366;
-				L_366 = JContainer_get_Count_m04A0A7677BE3AA56AA02859848A96590BCE17D86(((JArray_t1FFDF36566B9E8C56F36AB22701C1BA9DC2CBFF8*)CastclassClass((RuntimeObject*)L_365, JArray_t1FFDF36566B9E8C56F36AB22701C1BA9DC2CBFF8_il2cpp_TypeInfo_var)), NULL);
+				L_366 = JContainer_get_Count_m04A0A7677BE3AA56AA02859848A96590BCE17D86(L_365, NULL);
 				V_7 = L_366;
 				String_t* L_367;
 				L_367 = Int32_ToString_m030E01C24E294D6762FB0B6F37CB541581F55CA5((&V_7), NULL);
@@ -33350,7 +33374,7 @@ IL_0bd9_1:
 					G_B45_1 = L_405;
 					G_B45_2 = _stringLiteral376DB6FA7F581EC4318A4EB7EEEDBA8E95505D30;
 					G_B45_3 = __this;
-					goto IL_0dae_1;
+					goto IL_0d9a_1;
 				}
 			}
 			{
@@ -33368,7 +33392,7 @@ IL_0bd9_1:
 				G_B45_3 = G_B44_3;
 			}
 
-IL_0dae_1:
+IL_0d9a_1:
 			{
 				U3CU3Ec__DisplayClass28_0_t31208A80E819265E1170205F0BF1FDAB8E1D239E* L_411 = __this->___U3CU3E8__2_6;
 				NullCheck(L_411);
@@ -33386,7 +33410,7 @@ IL_0dae_1:
 					G_B47_2 = G_B45_1;
 					G_B47_3 = G_B45_2;
 					G_B47_4 = G_B45_3;
-					goto IL_0dde_1;
+					goto IL_0dca_1;
 				}
 			}
 			{
@@ -33408,7 +33432,7 @@ IL_0dae_1:
 				G_B47_4 = G_B46_4;
 			}
 
-IL_0dde_1:
+IL_0dca_1:
 			{
 				il2cpp_codegen_runtime_class_init_inline(TabletBackground_t4A66F2CEB006E1BBF0777E9BD79F73B0DD0BFB24_il2cpp_TypeInfo_var);
 				RuntimeObject* L_419;
@@ -33418,10 +33442,10 @@ IL_0dde_1:
 				Il2CppCodeGenWriteBarrier((void**)(&G_B47_4->___U3CU3E2__current_1), (void*)L_419);
 				__this->___U3CU3E1__state_0 = ((int32_t)10);
 				V_0 = (bool)1;
-				goto IL_1717;
+				goto IL_1713;
 			}
 
-IL_0df7_1:
+IL_0de3_1:
 			{
 				__this->___U3CU3E1__state_0 = ((int32_t)-7);
 				// using(var request=new UnityWebRequest(owner.apiurl+"services","POST",new DownloadHandlerBuffer(),new UploadHandlerFile(spool))){
@@ -33486,7 +33510,7 @@ IL_0df7_1:
 					G_B50_1 = L_439;
 					G_B50_2 = L_438;
 					G_B50_3 = __this;
-					goto IL_0eda_1;
+					goto IL_0ec6_1;
 				}
 			}
 			{
@@ -33507,7 +33531,7 @@ IL_0df7_1:
 				G_B50_3 = G_B49_3;
 			}
 
-IL_0eda_1:
+IL_0ec6_1:
 			{
 				il2cpp_codegen_runtime_class_init_inline(TabletSyncClient_t9AE1DDE720D7B8AACC16664561491E16F6291F7D_il2cpp_TypeInfo_var);
 				RuntimeObject* L_448;
@@ -33517,10 +33541,10 @@ IL_0eda_1:
 				Il2CppCodeGenWriteBarrier((void**)(&G_B50_3->___U3CU3E2__current_1), (void*)L_448);
 				__this->___U3CU3E1__state_0 = ((int32_t)11);
 				V_0 = (bool)1;
-				goto IL_1717;
+				goto IL_1713;
 			}
 
-IL_0ef3_1:
+IL_0edf_1:
 			{
 				__this->___U3CU3E1__state_0 = ((int32_t)-8);
 				// }
@@ -33535,7 +33559,7 @@ IL_0ef3_1:
 				String_t* L_450 = L_449->___error_5;
 				if (!L_450)
 				{
-					goto IL_0f2c_1;
+					goto IL_0f18_1;
 				}
 			}
 			{
@@ -33549,7 +33573,7 @@ IL_0ef3_1:
 				IL2CPP_RAISE_MANAGED_EXCEPTION(L_453, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&U3CSendReportU3Ed__28_MoveNext_m5083E01275A9E2D440180AE06A5514AF6923BC6B_RuntimeMethod_var)));
 			}
 
-IL_0f2c_1:
+IL_0f18_1:
 			{
 				// TabletSyncContract.CheckAcknowledgement(acknowledgement, report.sync_id, report.id_service_rapport, payloadHash);
 				U3CU3Ec__DisplayClass28_0_t31208A80E819265E1170205F0BF1FDAB8E1D239E* L_454 = __this->___U3CU3E8__2_6;
@@ -33582,7 +33606,7 @@ IL_0f2c_1:
 				L_468 = JObject_get_Item_m889A29E8FCEA531AF829407F208DD05F0108C50B(L_467, _stringLiteral7F6D352C4617140DC7AFED88A6F1FACE04DACC40, NULL);
 				if (!((JArray_t1FFDF36566B9E8C56F36AB22701C1BA9DC2CBFF8*)IsInstClass((RuntimeObject*)L_468, JArray_t1FFDF36566B9E8C56F36AB22701C1BA9DC2CBFF8_il2cpp_TypeInfo_var)))
 				{
-					goto IL_0fbe_1;
+					goto IL_0faa_1;
 				}
 			}
 			{
@@ -33604,7 +33628,7 @@ IL_0f2c_1:
 				Il2CppCodeGenWriteBarrier((void**)(&L_470->___pj_tableau_39), (void*)L_474);
 			}
 
-IL_0fbe_1:
+IL_0faa_1:
 			{
 				// yield return PersistAsync(service);
 				ServiceClient_t07C84893BDB4121BAF09BDF559688F4714F9541D* L_475 = __this->___service_4;
@@ -33615,10 +33639,10 @@ IL_0fbe_1:
 				Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CU3E2__current_1), (void*)L_476);
 				__this->___U3CU3E1__state_0 = ((int32_t)12);
 				V_0 = (bool)1;
-				goto IL_1717;
+				goto IL_1713;
 			}
 
-IL_0fdf_1:
+IL_0fcb_1:
 			{
 				__this->___U3CU3E1__state_0 = ((int32_t)-6);
 				// }
@@ -33628,16 +33652,16 @@ IL_0fdf_1:
 				Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CfileU3E5__13_24), (void*)(JObject_t22BBBA7A90517B7E66E8C9D8D16DE84CB5054DE1*)NULL);
 			}
 
-IL_0ff5_1:
+IL_0fe1_1:
 			{
-				// foreach (JObject file in (JArray)payload["files"])
+				// foreach (JObject file in completion.Files)
 				RuntimeObject* L_477 = __this->___U3CU3E7__wrap11_23;
 				NullCheck(L_477);
 				bool L_478;
 				L_478 = InterfaceFuncInvoker0< bool >::Invoke(0 /* System.Boolean System.Collections.IEnumerator::MoveNext() */, IEnumerator_t7B609C2FFA6EB5167D9C62A0C32A21DE2F666DAA_il2cpp_TypeInfo_var, L_477);
 				if (L_478)
 				{
-					goto IL_0bd9_1;
+					goto IL_0bcf_1;
 				}
 			}
 			{
@@ -33712,10 +33736,10 @@ IL_0ff5_1:
 				Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CU3E2__current_1), (void*)L_504);
 				__this->___U3CU3E1__state_0 = ((int32_t)13);
 				V_0 = (bool)1;
-				goto IL_1717;
+				goto IL_1713;
 			}
 
-IL_10fd_1:
+IL_10e9_1:
 			{
 				__this->___U3CU3E1__state_0 = ((int32_t)-9);
 				// }
@@ -33728,7 +33752,7 @@ IL_10fd_1:
 				String_t* L_506 = L_505->___error_5;
 				if (!L_506)
 				{
-					goto IL_1130_1;
+					goto IL_111c_1;
 				}
 			}
 			{
@@ -33742,7 +33766,7 @@ IL_10fd_1:
 				IL2CPP_RAISE_MANAGED_EXCEPTION(L_509, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&U3CSendReportU3Ed__28_MoveNext_m5083E01275A9E2D440180AE06A5514AF6923BC6B_RuntimeMethod_var)));
 			}
 
-IL_1130_1:
+IL_111c_1:
 			{
 				// TabletSyncContract.CheckAcknowledgement(acknowledgement, report.sync_id, report.id_service_rapport, payloadHash);
 				U3CU3Ec__DisplayClass28_0_t31208A80E819265E1170205F0BF1FDAB8E1D239E* L_510 = __this->___U3CU3E8__2_6;
@@ -33760,476 +33784,481 @@ IL_1130_1:
 				int32_t L_517 = L_516->___id_service_rapport_37;
 				String_t* L_518 = __this->___U3CpayloadHashU3E5__4_15;
 				TabletSyncContract_CheckAcknowledgement_mDE0E9F1C3E572A2886145F6BA8BA3CC7EE7075DF(L_511, L_514, L_517, L_518, NULL);
-				// TabletSyncContract.CheckComplete(acknowledgement, payload);
+				// TabletSyncContract.CheckComplete(acknowledgement,completion.Files,completion.DesiredStatus);
 				U3CU3Ec__DisplayClass28_0_t31208A80E819265E1170205F0BF1FDAB8E1D239E* L_519 = __this->___U3CU3E8__2_6;
 				NullCheck(L_519);
 				JObject_t22BBBA7A90517B7E66E8C9D8D16DE84CB5054DE1* L_520 = L_519->___acknowledgement_4;
-				JObject_t22BBBA7A90517B7E66E8C9D8D16DE84CB5054DE1* L_521 = __this->___U3CpayloadU3E5__3_14;
-				TabletSyncContract_CheckComplete_m9188B92640C85D9D6D2E6136C6560C6A4A46034B(L_520, L_521, NULL);
-				// statusConfirmed((int)acknowledgement["id_statut"]);
-				Action_1_tD69A6DC9FBE94131E52F5A73B2A9D4AB51EEC404* L_522 = __this->___statusConfirmed_11;
-				U3CU3Ec__DisplayClass28_0_t31208A80E819265E1170205F0BF1FDAB8E1D239E* L_523 = __this->___U3CU3E8__2_6;
+				CompletionExpectation_t375C23FE0695393A04E23238F5F7AAC0D2270B5C* L_521 = __this->___U3CcompletionU3E5__3_14;
+				NullCheck(L_521);
+				JArray_t1FFDF36566B9E8C56F36AB22701C1BA9DC2CBFF8* L_522 = L_521->___Files_0;
+				CompletionExpectation_t375C23FE0695393A04E23238F5F7AAC0D2270B5C* L_523 = __this->___U3CcompletionU3E5__3_14;
 				NullCheck(L_523);
-				JObject_t22BBBA7A90517B7E66E8C9D8D16DE84CB5054DE1* L_524 = L_523->___acknowledgement_4;
-				NullCheck(L_524);
-				JToken_tFD7D9015F3F97A09AD93E439ACE894D12C06E8B3* L_525;
-				L_525 = JObject_get_Item_m889A29E8FCEA531AF829407F208DD05F0108C50B(L_524, _stringLiteral470A89E5312790918702327A53B21F508C0FD6BC, NULL);
-				il2cpp_codegen_runtime_class_init_inline(JToken_tFD7D9015F3F97A09AD93E439ACE894D12C06E8B3_il2cpp_TypeInfo_var);
-				int32_t L_526;
-				L_526 = JToken_op_Explicit_m623DADB50226D4E8CA01390A029E152BCD82F667(L_525, NULL);
-				NullCheck(L_522);
-				Action_1_Invoke_mAC3C34BA1905AB5B79E483CD9BB082B7D667F703_inline(L_522, L_526, NULL);
-				// report.id_service_statut=(int)acknowledgement["id_statut"];
-				U3CU3Ec__DisplayClass28_0_t31208A80E819265E1170205F0BF1FDAB8E1D239E* L_527 = __this->___U3CU3E8__2_6;
+				int32_t L_524 = L_523->___DesiredStatus_1;
+				TabletSyncContract_CheckComplete_mF165C71379D442B85B1B43365C980D24DA2C97BC(L_520, L_522, L_524, NULL);
+				// statusConfirmed((int)acknowledgement["id_statut"]);
+				Action_1_tD69A6DC9FBE94131E52F5A73B2A9D4AB51EEC404* L_525 = __this->___statusConfirmed_11;
+				U3CU3Ec__DisplayClass28_0_t31208A80E819265E1170205F0BF1FDAB8E1D239E* L_526 = __this->___U3CU3E8__2_6;
+				NullCheck(L_526);
+				JObject_t22BBBA7A90517B7E66E8C9D8D16DE84CB5054DE1* L_527 = L_526->___acknowledgement_4;
 				NullCheck(L_527);
-				Rapport_t0DED00B7690FCCDE651FB02E35DD4AFF93E927D2* L_528 = L_527->___report_2;
-				U3CU3Ec__DisplayClass28_0_t31208A80E819265E1170205F0BF1FDAB8E1D239E* L_529 = __this->___U3CU3E8__2_6;
-				NullCheck(L_529);
-				JObject_t22BBBA7A90517B7E66E8C9D8D16DE84CB5054DE1* L_530 = L_529->___acknowledgement_4;
+				JToken_tFD7D9015F3F97A09AD93E439ACE894D12C06E8B3* L_528;
+				L_528 = JObject_get_Item_m889A29E8FCEA531AF829407F208DD05F0108C50B(L_527, _stringLiteral470A89E5312790918702327A53B21F508C0FD6BC, NULL);
+				il2cpp_codegen_runtime_class_init_inline(JToken_tFD7D9015F3F97A09AD93E439ACE894D12C06E8B3_il2cpp_TypeInfo_var);
+				int32_t L_529;
+				L_529 = JToken_op_Explicit_m623DADB50226D4E8CA01390A029E152BCD82F667(L_528, NULL);
+				NullCheck(L_525);
+				Action_1_Invoke_mAC3C34BA1905AB5B79E483CD9BB082B7D667F703_inline(L_525, L_529, NULL);
+				// report.id_service_statut=(int)acknowledgement["id_statut"];
+				U3CU3Ec__DisplayClass28_0_t31208A80E819265E1170205F0BF1FDAB8E1D239E* L_530 = __this->___U3CU3E8__2_6;
 				NullCheck(L_530);
-				JToken_tFD7D9015F3F97A09AD93E439ACE894D12C06E8B3* L_531;
-				L_531 = JObject_get_Item_m889A29E8FCEA531AF829407F208DD05F0108C50B(L_530, _stringLiteral470A89E5312790918702327A53B21F508C0FD6BC, NULL);
-				int32_t L_532;
-				L_532 = JToken_op_Explicit_m623DADB50226D4E8CA01390A029E152BCD82F667(L_531, NULL);
-				NullCheck(L_528);
-				L_528->___id_service_statut_28 = L_532;
-				// report.id_service_statut_previous=report.id_service_statut;
-				U3CU3Ec__DisplayClass28_0_t31208A80E819265E1170205F0BF1FDAB8E1D239E* L_533 = __this->___U3CU3E8__2_6;
+				Rapport_t0DED00B7690FCCDE651FB02E35DD4AFF93E927D2* L_531 = L_530->___report_2;
+				U3CU3Ec__DisplayClass28_0_t31208A80E819265E1170205F0BF1FDAB8E1D239E* L_532 = __this->___U3CU3E8__2_6;
+				NullCheck(L_532);
+				JObject_t22BBBA7A90517B7E66E8C9D8D16DE84CB5054DE1* L_533 = L_532->___acknowledgement_4;
 				NullCheck(L_533);
-				Rapport_t0DED00B7690FCCDE651FB02E35DD4AFF93E927D2* L_534 = L_533->___report_2;
-				U3CU3Ec__DisplayClass28_0_t31208A80E819265E1170205F0BF1FDAB8E1D239E* L_535 = __this->___U3CU3E8__2_6;
-				NullCheck(L_535);
-				Rapport_t0DED00B7690FCCDE651FB02E35DD4AFF93E927D2* L_536 = L_535->___report_2;
+				JToken_tFD7D9015F3F97A09AD93E439ACE894D12C06E8B3* L_534;
+				L_534 = JObject_get_Item_m889A29E8FCEA531AF829407F208DD05F0108C50B(L_533, _stringLiteral470A89E5312790918702327A53B21F508C0FD6BC, NULL);
+				int32_t L_535;
+				L_535 = JToken_op_Explicit_m623DADB50226D4E8CA01390A029E152BCD82F667(L_534, NULL);
+				NullCheck(L_531);
+				L_531->___id_service_statut_28 = L_535;
+				// report.id_service_statut_previous=report.id_service_statut;
+				U3CU3Ec__DisplayClass28_0_t31208A80E819265E1170205F0BF1FDAB8E1D239E* L_536 = __this->___U3CU3E8__2_6;
 				NullCheck(L_536);
-				int32_t L_537 = L_536->___id_service_statut_28;
-				NullCheck(L_534);
-				L_534->___id_service_statut_previous_29 = L_537;
-				// report.statut=(string)acknowledgement["statut"];
+				Rapport_t0DED00B7690FCCDE651FB02E35DD4AFF93E927D2* L_537 = L_536->___report_2;
 				U3CU3Ec__DisplayClass28_0_t31208A80E819265E1170205F0BF1FDAB8E1D239E* L_538 = __this->___U3CU3E8__2_6;
 				NullCheck(L_538);
 				Rapport_t0DED00B7690FCCDE651FB02E35DD4AFF93E927D2* L_539 = L_538->___report_2;
-				U3CU3Ec__DisplayClass28_0_t31208A80E819265E1170205F0BF1FDAB8E1D239E* L_540 = __this->___U3CU3E8__2_6;
-				NullCheck(L_540);
-				JObject_t22BBBA7A90517B7E66E8C9D8D16DE84CB5054DE1* L_541 = L_540->___acknowledgement_4;
-				NullCheck(L_541);
-				JToken_tFD7D9015F3F97A09AD93E439ACE894D12C06E8B3* L_542;
-				L_542 = JObject_get_Item_m889A29E8FCEA531AF829407F208DD05F0108C50B(L_541, _stringLiteralA1EE2BB42122A4080595B7F5DF3BC158A2B48BF5, NULL);
-				String_t* L_543;
-				L_543 = JToken_op_Explicit_mA435B5A6C389220DF41F02E1CAE6AEA4EEFBCFF3(L_542, NULL);
 				NullCheck(L_539);
-				L_539->___statut_33 = L_543;
-				Il2CppCodeGenWriteBarrier((void**)(&L_539->___statut_33), (void*)L_543);
-				// report.abrevstatut=(string)acknowledgement["abrevstatut"];
-				U3CU3Ec__DisplayClass28_0_t31208A80E819265E1170205F0BF1FDAB8E1D239E* L_544 = __this->___U3CU3E8__2_6;
+				int32_t L_540 = L_539->___id_service_statut_28;
+				NullCheck(L_537);
+				L_537->___id_service_statut_previous_29 = L_540;
+				// report.statut=(string)acknowledgement["statut"];
+				U3CU3Ec__DisplayClass28_0_t31208A80E819265E1170205F0BF1FDAB8E1D239E* L_541 = __this->___U3CU3E8__2_6;
+				NullCheck(L_541);
+				Rapport_t0DED00B7690FCCDE651FB02E35DD4AFF93E927D2* L_542 = L_541->___report_2;
+				U3CU3Ec__DisplayClass28_0_t31208A80E819265E1170205F0BF1FDAB8E1D239E* L_543 = __this->___U3CU3E8__2_6;
+				NullCheck(L_543);
+				JObject_t22BBBA7A90517B7E66E8C9D8D16DE84CB5054DE1* L_544 = L_543->___acknowledgement_4;
 				NullCheck(L_544);
-				Rapport_t0DED00B7690FCCDE651FB02E35DD4AFF93E927D2* L_545 = L_544->___report_2;
-				U3CU3Ec__DisplayClass28_0_t31208A80E819265E1170205F0BF1FDAB8E1D239E* L_546 = __this->___U3CU3E8__2_6;
-				NullCheck(L_546);
-				JObject_t22BBBA7A90517B7E66E8C9D8D16DE84CB5054DE1* L_547 = L_546->___acknowledgement_4;
+				JToken_tFD7D9015F3F97A09AD93E439ACE894D12C06E8B3* L_545;
+				L_545 = JObject_get_Item_m889A29E8FCEA531AF829407F208DD05F0108C50B(L_544, _stringLiteralA1EE2BB42122A4080595B7F5DF3BC158A2B48BF5, NULL);
+				String_t* L_546;
+				L_546 = JToken_op_Explicit_mA435B5A6C389220DF41F02E1CAE6AEA4EEFBCFF3(L_545, NULL);
+				NullCheck(L_542);
+				L_542->___statut_33 = L_546;
+				Il2CppCodeGenWriteBarrier((void**)(&L_542->___statut_33), (void*)L_546);
+				// report.abrevstatut=(string)acknowledgement["abrevstatut"];
+				U3CU3Ec__DisplayClass28_0_t31208A80E819265E1170205F0BF1FDAB8E1D239E* L_547 = __this->___U3CU3E8__2_6;
 				NullCheck(L_547);
-				JToken_tFD7D9015F3F97A09AD93E439ACE894D12C06E8B3* L_548;
-				L_548 = JObject_get_Item_m889A29E8FCEA531AF829407F208DD05F0108C50B(L_547, _stringLiteralFD34DDB6D4B1C57BE3FC5C9163AE5C49737C03BF, NULL);
-				String_t* L_549;
-				L_549 = JToken_op_Explicit_mA435B5A6C389220DF41F02E1CAE6AEA4EEFBCFF3(L_548, NULL);
-				NullCheck(L_545);
-				L_545->___abrevstatut_34 = L_549;
-				Il2CppCodeGenWriteBarrier((void**)(&L_545->___abrevstatut_34), (void*)L_549);
-				// report.sync_remote_confirmed = true;
-				U3CU3Ec__DisplayClass28_0_t31208A80E819265E1170205F0BF1FDAB8E1D239E* L_550 = __this->___U3CU3E8__2_6;
+				Rapport_t0DED00B7690FCCDE651FB02E35DD4AFF93E927D2* L_548 = L_547->___report_2;
+				U3CU3Ec__DisplayClass28_0_t31208A80E819265E1170205F0BF1FDAB8E1D239E* L_549 = __this->___U3CU3E8__2_6;
+				NullCheck(L_549);
+				JObject_t22BBBA7A90517B7E66E8C9D8D16DE84CB5054DE1* L_550 = L_549->___acknowledgement_4;
 				NullCheck(L_550);
-				Rapport_t0DED00B7690FCCDE651FB02E35DD4AFF93E927D2* L_551 = L_550->___report_2;
-				NullCheck(L_551);
-				L_551->___sync_remote_confirmed_18 = (bool)1;
-				// TabletSyncContract.PreparedPayload finalSnapshot = null;
-				U3CU3Ec__DisplayClass28_0_t31208A80E819265E1170205F0BF1FDAB8E1D239E* L_552 = __this->___U3CU3E8__2_6;
-				NullCheck(L_552);
-				L_552->___finalSnapshot_6 = (PreparedPayload_t3422CCA2875CFFDEF0EB6369A236E08EC4F78A21*)NULL;
-				Il2CppCodeGenWriteBarrier((void**)(&L_552->___finalSnapshot_6), (void*)(PreparedPayload_t3422CCA2875CFFDEF0EB6369A236E08EC4F78A21*)NULL);
-				// yield return TabletSyncContract.PreparePayload(service, report, value => finalSnapshot=value, () => owner.SyncCancelRequested, false, false);
-				ServiceClient_t07C84893BDB4121BAF09BDF559688F4714F9541D* L_553 = __this->___service_4;
-				U3CU3Ec__DisplayClass28_0_t31208A80E819265E1170205F0BF1FDAB8E1D239E* L_554 = __this->___U3CU3E8__2_6;
+				JToken_tFD7D9015F3F97A09AD93E439ACE894D12C06E8B3* L_551;
+				L_551 = JObject_get_Item_m889A29E8FCEA531AF829407F208DD05F0108C50B(L_550, _stringLiteralFD34DDB6D4B1C57BE3FC5C9163AE5C49737C03BF, NULL);
+				String_t* L_552;
+				L_552 = JToken_op_Explicit_mA435B5A6C389220DF41F02E1CAE6AEA4EEFBCFF3(L_551, NULL);
+				NullCheck(L_548);
+				L_548->___abrevstatut_34 = L_552;
+				Il2CppCodeGenWriteBarrier((void**)(&L_548->___abrevstatut_34), (void*)L_552);
+				// report.sync_remote_confirmed = true;
+				U3CU3Ec__DisplayClass28_0_t31208A80E819265E1170205F0BF1FDAB8E1D239E* L_553 = __this->___U3CU3E8__2_6;
+				NullCheck(L_553);
+				Rapport_t0DED00B7690FCCDE651FB02E35DD4AFF93E927D2* L_554 = L_553->___report_2;
 				NullCheck(L_554);
-				Rapport_t0DED00B7690FCCDE651FB02E35DD4AFF93E927D2* L_555 = L_554->___report_2;
-				U3CU3Ec__DisplayClass28_0_t31208A80E819265E1170205F0BF1FDAB8E1D239E* L_556 = __this->___U3CU3E8__2_6;
-				Action_1_t412314F8914AA588E0FDDB6CEF1353949508B087* L_557 = (Action_1_t412314F8914AA588E0FDDB6CEF1353949508B087*)il2cpp_codegen_object_new(Action_1_t412314F8914AA588E0FDDB6CEF1353949508B087_il2cpp_TypeInfo_var);
+				L_554->___sync_remote_confirmed_18 = (bool)1;
+				// TabletSyncContract.PreparedPayload finalSnapshot = null;
+				U3CU3Ec__DisplayClass28_0_t31208A80E819265E1170205F0BF1FDAB8E1D239E* L_555 = __this->___U3CU3E8__2_6;
+				NullCheck(L_555);
+				L_555->___finalSnapshot_6 = (PreparedPayload_t3422CCA2875CFFDEF0EB6369A236E08EC4F78A21*)NULL;
+				Il2CppCodeGenWriteBarrier((void**)(&L_555->___finalSnapshot_6), (void*)(PreparedPayload_t3422CCA2875CFFDEF0EB6369A236E08EC4F78A21*)NULL);
+				// yield return TabletSyncContract.PreparePayload(service, report, value => finalSnapshot=value, () => owner.SyncCancelRequested, false, false);
+				ServiceClient_t07C84893BDB4121BAF09BDF559688F4714F9541D* L_556 = __this->___service_4;
+				U3CU3Ec__DisplayClass28_0_t31208A80E819265E1170205F0BF1FDAB8E1D239E* L_557 = __this->___U3CU3E8__2_6;
 				NullCheck(L_557);
-				Action_1__ctor_m4965CD624AF0B24636463A4A9C2DF969997FBA4F(L_557, L_556, (intptr_t)((void*)U3CU3Ec__DisplayClass28_0_U3CSendReportU3Eb__5_mECA58202B357FB7AE41A9810030491C5C87B0FBC_RuntimeMethod_var), NULL);
-				U3CU3Ec__DisplayClass28_0_t31208A80E819265E1170205F0BF1FDAB8E1D239E* L_558 = __this->___U3CU3E8__2_6;
-				Func_1_t2BE7F58348C9CC544A8973B3A9E55541DE43C457* L_559 = (Func_1_t2BE7F58348C9CC544A8973B3A9E55541DE43C457*)il2cpp_codegen_object_new(Func_1_t2BE7F58348C9CC544A8973B3A9E55541DE43C457_il2cpp_TypeInfo_var);
-				NullCheck(L_559);
-				Func_1__ctor_mDFFAE9C73346372438B5B04C4558AC42F1A3DA22(L_559, L_558, (intptr_t)((void*)U3CU3Ec__DisplayClass28_0_U3CSendReportU3Eb__6_mC34E504546B94232A38FB1CEFCB7BEBB92F0F6DB_RuntimeMethod_var), NULL);
-				RuntimeObject* L_560;
-				L_560 = TabletSyncContract_PreparePayload_m344DAD64CB161FFB3B96E689ADA80E4D43FFE0F6(L_553, L_555, L_557, L_559, (bool)0, (bool)0, NULL);
-				__this->___U3CU3E2__current_1 = L_560;
-				Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CU3E2__current_1), (void*)L_560);
+				Rapport_t0DED00B7690FCCDE651FB02E35DD4AFF93E927D2* L_558 = L_557->___report_2;
+				U3CU3Ec__DisplayClass28_0_t31208A80E819265E1170205F0BF1FDAB8E1D239E* L_559 = __this->___U3CU3E8__2_6;
+				Action_1_t412314F8914AA588E0FDDB6CEF1353949508B087* L_560 = (Action_1_t412314F8914AA588E0FDDB6CEF1353949508B087*)il2cpp_codegen_object_new(Action_1_t412314F8914AA588E0FDDB6CEF1353949508B087_il2cpp_TypeInfo_var);
+				NullCheck(L_560);
+				Action_1__ctor_m4965CD624AF0B24636463A4A9C2DF969997FBA4F(L_560, L_559, (intptr_t)((void*)U3CU3Ec__DisplayClass28_0_U3CSendReportU3Eb__5_mECA58202B357FB7AE41A9810030491C5C87B0FBC_RuntimeMethod_var), NULL);
+				U3CU3Ec__DisplayClass28_0_t31208A80E819265E1170205F0BF1FDAB8E1D239E* L_561 = __this->___U3CU3E8__2_6;
+				Func_1_t2BE7F58348C9CC544A8973B3A9E55541DE43C457* L_562 = (Func_1_t2BE7F58348C9CC544A8973B3A9E55541DE43C457*)il2cpp_codegen_object_new(Func_1_t2BE7F58348C9CC544A8973B3A9E55541DE43C457_il2cpp_TypeInfo_var);
+				NullCheck(L_562);
+				Func_1__ctor_mDFFAE9C73346372438B5B04C4558AC42F1A3DA22(L_562, L_561, (intptr_t)((void*)U3CU3Ec__DisplayClass28_0_U3CSendReportU3Eb__6_mC34E504546B94232A38FB1CEFCB7BEBB92F0F6DB_RuntimeMethod_var), NULL);
+				RuntimeObject* L_563;
+				L_563 = TabletSyncContract_PreparePayload_m344DAD64CB161FFB3B96E689ADA80E4D43FFE0F6(L_556, L_558, L_560, L_562, (bool)0, (bool)0, NULL);
+				__this->___U3CU3E2__current_1 = L_563;
+				Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CU3E2__current_1), (void*)L_563);
 				__this->___U3CU3E1__state_0 = ((int32_t)14);
 				V_0 = (bool)1;
-				goto IL_1717;
+				goto IL_1713;
 			}
 
-IL_12ab_1:
+IL_12a7_1:
 			{
 				__this->___U3CU3E1__state_0 = (-1);
 				// if (finalSnapshot.LogicalHash != logicalHash)
-				U3CU3Ec__DisplayClass28_0_t31208A80E819265E1170205F0BF1FDAB8E1D239E* L_561 = __this->___U3CU3E8__2_6;
-				NullCheck(L_561);
-				PreparedPayload_t3422CCA2875CFFDEF0EB6369A236E08EC4F78A21* L_562 = L_561->___finalSnapshot_6;
-				NullCheck(L_562);
-				String_t* L_563 = L_562->___LogicalHash_0;
-				String_t* L_564 = __this->___U3ClogicalHashU3E5__2_13;
-				bool L_565;
-				L_565 = String_op_Inequality_m8C940F3CFC42866709D7CA931B3D77B4BE94BCB6(L_563, L_564, NULL);
-				if (!L_565)
+				U3CU3Ec__DisplayClass28_0_t31208A80E819265E1170205F0BF1FDAB8E1D239E* L_564 = __this->___U3CU3E8__2_6;
+				NullCheck(L_564);
+				PreparedPayload_t3422CCA2875CFFDEF0EB6369A236E08EC4F78A21* L_565 = L_564->___finalSnapshot_6;
+				NullCheck(L_565);
+				String_t* L_566 = L_565->___LogicalHash_0;
+				String_t* L_567 = __this->___U3ClogicalHashU3E5__2_13;
+				bool L_568;
+				L_568 = String_op_Inequality_m8C940F3CFC42866709D7CA931B3D77B4BE94BCB6(L_566, L_567, NULL);
+				if (!L_568)
 				{
-					goto IL_12da_1;
+					goto IL_12d6_1;
 				}
 			}
 			{
 				// throw new InvalidDataException("La version envoy?e est confirm?e, mais des modifications plus r?centes restent ? synchroniser.");
-				InvalidDataException_t9D62CAAA10DD31CCD9C0F92AA5729A05282F18A1* L_566 = (InvalidDataException_t9D62CAAA10DD31CCD9C0F92AA5729A05282F18A1*)il2cpp_codegen_object_new(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&InvalidDataException_t9D62CAAA10DD31CCD9C0F92AA5729A05282F18A1_il2cpp_TypeInfo_var)));
-				NullCheck(L_566);
-				InvalidDataException__ctor_m514879053D89E3C8229A01AA8970237FA5409532(L_566, ((String_t*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&_stringLiteralC481FDC80DEB5D474449A7EE1CAE4844461355A8)), NULL);
-				IL2CPP_RAISE_MANAGED_EXCEPTION(L_566, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&U3CSendReportU3Ed__28_MoveNext_m5083E01275A9E2D440180AE06A5514AF6923BC6B_RuntimeMethod_var)));
+				InvalidDataException_t9D62CAAA10DD31CCD9C0F92AA5729A05282F18A1* L_569 = (InvalidDataException_t9D62CAAA10DD31CCD9C0F92AA5729A05282F18A1*)il2cpp_codegen_object_new(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&InvalidDataException_t9D62CAAA10DD31CCD9C0F92AA5729A05282F18A1_il2cpp_TypeInfo_var)));
+				NullCheck(L_569);
+				InvalidDataException__ctor_m514879053D89E3C8229A01AA8970237FA5409532(L_569, ((String_t*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&_stringLiteralC481FDC80DEB5D474449A7EE1CAE4844461355A8)), NULL);
+				IL2CPP_RAISE_MANAGED_EXCEPTION(L_569, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&U3CSendReportU3Ed__28_MoveNext_m5083E01275A9E2D440180AE06A5514AF6923BC6B_RuntimeMethod_var)));
 			}
 
-IL_12da_1:
+IL_12d6_1:
 			{
 				// report.last_mod = (long)acknowledgement["last_mod_unix"];
-				U3CU3Ec__DisplayClass28_0_t31208A80E819265E1170205F0BF1FDAB8E1D239E* L_567 = __this->___U3CU3E8__2_6;
-				NullCheck(L_567);
-				Rapport_t0DED00B7690FCCDE651FB02E35DD4AFF93E927D2* L_568 = L_567->___report_2;
-				U3CU3Ec__DisplayClass28_0_t31208A80E819265E1170205F0BF1FDAB8E1D239E* L_569 = __this->___U3CU3E8__2_6;
-				NullCheck(L_569);
-				JObject_t22BBBA7A90517B7E66E8C9D8D16DE84CB5054DE1* L_570 = L_569->___acknowledgement_4;
+				U3CU3Ec__DisplayClass28_0_t31208A80E819265E1170205F0BF1FDAB8E1D239E* L_570 = __this->___U3CU3E8__2_6;
 				NullCheck(L_570);
-				JToken_tFD7D9015F3F97A09AD93E439ACE894D12C06E8B3* L_571;
-				L_571 = JObject_get_Item_m889A29E8FCEA531AF829407F208DD05F0108C50B(L_570, _stringLiteralECAAAA05D84204FD2A24AE3AAF29D78E6FF8C20C, NULL);
-				il2cpp_codegen_runtime_class_init_inline(JToken_tFD7D9015F3F97A09AD93E439ACE894D12C06E8B3_il2cpp_TypeInfo_var);
-				int64_t L_572;
-				L_572 = JToken_op_Explicit_mCF04EDB5165001707270AFB4EDDC618D44659123(L_571, NULL);
-				NullCheck(L_568);
-				L_568->___last_mod_32 = L_572;
-				// report.derniere_modification = (string)acknowledgement["last_mod"];
-				U3CU3Ec__DisplayClass28_0_t31208A80E819265E1170205F0BF1FDAB8E1D239E* L_573 = __this->___U3CU3E8__2_6;
+				Rapport_t0DED00B7690FCCDE651FB02E35DD4AFF93E927D2* L_571 = L_570->___report_2;
+				U3CU3Ec__DisplayClass28_0_t31208A80E819265E1170205F0BF1FDAB8E1D239E* L_572 = __this->___U3CU3E8__2_6;
+				NullCheck(L_572);
+				JObject_t22BBBA7A90517B7E66E8C9D8D16DE84CB5054DE1* L_573 = L_572->___acknowledgement_4;
 				NullCheck(L_573);
-				Rapport_t0DED00B7690FCCDE651FB02E35DD4AFF93E927D2* L_574 = L_573->___report_2;
-				U3CU3Ec__DisplayClass28_0_t31208A80E819265E1170205F0BF1FDAB8E1D239E* L_575 = __this->___U3CU3E8__2_6;
-				NullCheck(L_575);
-				JObject_t22BBBA7A90517B7E66E8C9D8D16DE84CB5054DE1* L_576 = L_575->___acknowledgement_4;
+				JToken_tFD7D9015F3F97A09AD93E439ACE894D12C06E8B3* L_574;
+				L_574 = JObject_get_Item_m889A29E8FCEA531AF829407F208DD05F0108C50B(L_573, _stringLiteralECAAAA05D84204FD2A24AE3AAF29D78E6FF8C20C, NULL);
+				il2cpp_codegen_runtime_class_init_inline(JToken_tFD7D9015F3F97A09AD93E439ACE894D12C06E8B3_il2cpp_TypeInfo_var);
+				int64_t L_575;
+				L_575 = JToken_op_Explicit_mCF04EDB5165001707270AFB4EDDC618D44659123(L_574, NULL);
+				NullCheck(L_571);
+				L_571->___last_mod_32 = L_575;
+				// report.derniere_modification = (string)acknowledgement["last_mod"];
+				U3CU3Ec__DisplayClass28_0_t31208A80E819265E1170205F0BF1FDAB8E1D239E* L_576 = __this->___U3CU3E8__2_6;
 				NullCheck(L_576);
-				JToken_tFD7D9015F3F97A09AD93E439ACE894D12C06E8B3* L_577;
-				L_577 = JObject_get_Item_m889A29E8FCEA531AF829407F208DD05F0108C50B(L_576, _stringLiteralAD889540912D5FF598C207A390898417E04EDE23, NULL);
-				String_t* L_578;
-				L_578 = JToken_op_Explicit_mA435B5A6C389220DF41F02E1CAE6AEA4EEFBCFF3(L_577, NULL);
-				NullCheck(L_574);
-				L_574->___derniere_modification_26 = L_578;
-				Il2CppCodeGenWriteBarrier((void**)(&L_574->___derniere_modification_26), (void*)L_578);
-				// report.id_service_statut = (int)acknowledgement["id_statut"];
-				U3CU3Ec__DisplayClass28_0_t31208A80E819265E1170205F0BF1FDAB8E1D239E* L_579 = __this->___U3CU3E8__2_6;
+				Rapport_t0DED00B7690FCCDE651FB02E35DD4AFF93E927D2* L_577 = L_576->___report_2;
+				U3CU3Ec__DisplayClass28_0_t31208A80E819265E1170205F0BF1FDAB8E1D239E* L_578 = __this->___U3CU3E8__2_6;
+				NullCheck(L_578);
+				JObject_t22BBBA7A90517B7E66E8C9D8D16DE84CB5054DE1* L_579 = L_578->___acknowledgement_4;
 				NullCheck(L_579);
-				Rapport_t0DED00B7690FCCDE651FB02E35DD4AFF93E927D2* L_580 = L_579->___report_2;
-				U3CU3Ec__DisplayClass28_0_t31208A80E819265E1170205F0BF1FDAB8E1D239E* L_581 = __this->___U3CU3E8__2_6;
-				NullCheck(L_581);
-				JObject_t22BBBA7A90517B7E66E8C9D8D16DE84CB5054DE1* L_582 = L_581->___acknowledgement_4;
+				JToken_tFD7D9015F3F97A09AD93E439ACE894D12C06E8B3* L_580;
+				L_580 = JObject_get_Item_m889A29E8FCEA531AF829407F208DD05F0108C50B(L_579, _stringLiteralAD889540912D5FF598C207A390898417E04EDE23, NULL);
+				String_t* L_581;
+				L_581 = JToken_op_Explicit_mA435B5A6C389220DF41F02E1CAE6AEA4EEFBCFF3(L_580, NULL);
+				NullCheck(L_577);
+				L_577->___derniere_modification_26 = L_581;
+				Il2CppCodeGenWriteBarrier((void**)(&L_577->___derniere_modification_26), (void*)L_581);
+				// report.id_service_statut = (int)acknowledgement["id_statut"];
+				U3CU3Ec__DisplayClass28_0_t31208A80E819265E1170205F0BF1FDAB8E1D239E* L_582 = __this->___U3CU3E8__2_6;
 				NullCheck(L_582);
-				JToken_tFD7D9015F3F97A09AD93E439ACE894D12C06E8B3* L_583;
-				L_583 = JObject_get_Item_m889A29E8FCEA531AF829407F208DD05F0108C50B(L_582, _stringLiteral470A89E5312790918702327A53B21F508C0FD6BC, NULL);
-				int32_t L_584;
-				L_584 = JToken_op_Explicit_m623DADB50226D4E8CA01390A029E152BCD82F667(L_583, NULL);
-				NullCheck(L_580);
-				L_580->___id_service_statut_28 = L_584;
-				// report.id_service_statut_previous = report.id_service_statut;
-				U3CU3Ec__DisplayClass28_0_t31208A80E819265E1170205F0BF1FDAB8E1D239E* L_585 = __this->___U3CU3E8__2_6;
+				Rapport_t0DED00B7690FCCDE651FB02E35DD4AFF93E927D2* L_583 = L_582->___report_2;
+				U3CU3Ec__DisplayClass28_0_t31208A80E819265E1170205F0BF1FDAB8E1D239E* L_584 = __this->___U3CU3E8__2_6;
+				NullCheck(L_584);
+				JObject_t22BBBA7A90517B7E66E8C9D8D16DE84CB5054DE1* L_585 = L_584->___acknowledgement_4;
 				NullCheck(L_585);
-				Rapport_t0DED00B7690FCCDE651FB02E35DD4AFF93E927D2* L_586 = L_585->___report_2;
-				U3CU3Ec__DisplayClass28_0_t31208A80E819265E1170205F0BF1FDAB8E1D239E* L_587 = __this->___U3CU3E8__2_6;
-				NullCheck(L_587);
-				Rapport_t0DED00B7690FCCDE651FB02E35DD4AFF93E927D2* L_588 = L_587->___report_2;
+				JToken_tFD7D9015F3F97A09AD93E439ACE894D12C06E8B3* L_586;
+				L_586 = JObject_get_Item_m889A29E8FCEA531AF829407F208DD05F0108C50B(L_585, _stringLiteral470A89E5312790918702327A53B21F508C0FD6BC, NULL);
+				int32_t L_587;
+				L_587 = JToken_op_Explicit_m623DADB50226D4E8CA01390A029E152BCD82F667(L_586, NULL);
+				NullCheck(L_583);
+				L_583->___id_service_statut_28 = L_587;
+				// report.id_service_statut_previous = report.id_service_statut;
+				U3CU3Ec__DisplayClass28_0_t31208A80E819265E1170205F0BF1FDAB8E1D239E* L_588 = __this->___U3CU3E8__2_6;
 				NullCheck(L_588);
-				int32_t L_589 = L_588->___id_service_statut_28;
-				NullCheck(L_586);
-				L_586->___id_service_statut_previous_29 = L_589;
-				// report.statut = (string)acknowledgement["statut"];
+				Rapport_t0DED00B7690FCCDE651FB02E35DD4AFF93E927D2* L_589 = L_588->___report_2;
 				U3CU3Ec__DisplayClass28_0_t31208A80E819265E1170205F0BF1FDAB8E1D239E* L_590 = __this->___U3CU3E8__2_6;
 				NullCheck(L_590);
 				Rapport_t0DED00B7690FCCDE651FB02E35DD4AFF93E927D2* L_591 = L_590->___report_2;
-				U3CU3Ec__DisplayClass28_0_t31208A80E819265E1170205F0BF1FDAB8E1D239E* L_592 = __this->___U3CU3E8__2_6;
-				NullCheck(L_592);
-				JObject_t22BBBA7A90517B7E66E8C9D8D16DE84CB5054DE1* L_593 = L_592->___acknowledgement_4;
-				NullCheck(L_593);
-				JToken_tFD7D9015F3F97A09AD93E439ACE894D12C06E8B3* L_594;
-				L_594 = JObject_get_Item_m889A29E8FCEA531AF829407F208DD05F0108C50B(L_593, _stringLiteralA1EE2BB42122A4080595B7F5DF3BC158A2B48BF5, NULL);
-				String_t* L_595;
-				L_595 = JToken_op_Explicit_mA435B5A6C389220DF41F02E1CAE6AEA4EEFBCFF3(L_594, NULL);
 				NullCheck(L_591);
-				L_591->___statut_33 = L_595;
-				Il2CppCodeGenWriteBarrier((void**)(&L_591->___statut_33), (void*)L_595);
-				// report.abrevstatut = (string)acknowledgement["abrevstatut"];
-				U3CU3Ec__DisplayClass28_0_t31208A80E819265E1170205F0BF1FDAB8E1D239E* L_596 = __this->___U3CU3E8__2_6;
+				int32_t L_592 = L_591->___id_service_statut_28;
+				NullCheck(L_589);
+				L_589->___id_service_statut_previous_29 = L_592;
+				// report.statut = (string)acknowledgement["statut"];
+				U3CU3Ec__DisplayClass28_0_t31208A80E819265E1170205F0BF1FDAB8E1D239E* L_593 = __this->___U3CU3E8__2_6;
+				NullCheck(L_593);
+				Rapport_t0DED00B7690FCCDE651FB02E35DD4AFF93E927D2* L_594 = L_593->___report_2;
+				U3CU3Ec__DisplayClass28_0_t31208A80E819265E1170205F0BF1FDAB8E1D239E* L_595 = __this->___U3CU3E8__2_6;
+				NullCheck(L_595);
+				JObject_t22BBBA7A90517B7E66E8C9D8D16DE84CB5054DE1* L_596 = L_595->___acknowledgement_4;
 				NullCheck(L_596);
-				Rapport_t0DED00B7690FCCDE651FB02E35DD4AFF93E927D2* L_597 = L_596->___report_2;
-				U3CU3Ec__DisplayClass28_0_t31208A80E819265E1170205F0BF1FDAB8E1D239E* L_598 = __this->___U3CU3E8__2_6;
-				NullCheck(L_598);
-				JObject_t22BBBA7A90517B7E66E8C9D8D16DE84CB5054DE1* L_599 = L_598->___acknowledgement_4;
+				JToken_tFD7D9015F3F97A09AD93E439ACE894D12C06E8B3* L_597;
+				L_597 = JObject_get_Item_m889A29E8FCEA531AF829407F208DD05F0108C50B(L_596, _stringLiteralA1EE2BB42122A4080595B7F5DF3BC158A2B48BF5, NULL);
+				String_t* L_598;
+				L_598 = JToken_op_Explicit_mA435B5A6C389220DF41F02E1CAE6AEA4EEFBCFF3(L_597, NULL);
+				NullCheck(L_594);
+				L_594->___statut_33 = L_598;
+				Il2CppCodeGenWriteBarrier((void**)(&L_594->___statut_33), (void*)L_598);
+				// report.abrevstatut = (string)acknowledgement["abrevstatut"];
+				U3CU3Ec__DisplayClass28_0_t31208A80E819265E1170205F0BF1FDAB8E1D239E* L_599 = __this->___U3CU3E8__2_6;
 				NullCheck(L_599);
-				JToken_tFD7D9015F3F97A09AD93E439ACE894D12C06E8B3* L_600;
-				L_600 = JObject_get_Item_m889A29E8FCEA531AF829407F208DD05F0108C50B(L_599, _stringLiteralFD34DDB6D4B1C57BE3FC5C9163AE5C49737C03BF, NULL);
-				String_t* L_601;
-				L_601 = JToken_op_Explicit_mA435B5A6C389220DF41F02E1CAE6AEA4EEFBCFF3(L_600, NULL);
-				NullCheck(L_597);
-				L_597->___abrevstatut_34 = L_601;
-				Il2CppCodeGenWriteBarrier((void**)(&L_597->___abrevstatut_34), (void*)L_601);
-				// report.en_utilisation = (int)acknowledgement["en_utilisation"];
-				U3CU3Ec__DisplayClass28_0_t31208A80E819265E1170205F0BF1FDAB8E1D239E* L_602 = __this->___U3CU3E8__2_6;
+				Rapport_t0DED00B7690FCCDE651FB02E35DD4AFF93E927D2* L_600 = L_599->___report_2;
+				U3CU3Ec__DisplayClass28_0_t31208A80E819265E1170205F0BF1FDAB8E1D239E* L_601 = __this->___U3CU3E8__2_6;
+				NullCheck(L_601);
+				JObject_t22BBBA7A90517B7E66E8C9D8D16DE84CB5054DE1* L_602 = L_601->___acknowledgement_4;
 				NullCheck(L_602);
-				Rapport_t0DED00B7690FCCDE651FB02E35DD4AFF93E927D2* L_603 = L_602->___report_2;
-				U3CU3Ec__DisplayClass28_0_t31208A80E819265E1170205F0BF1FDAB8E1D239E* L_604 = __this->___U3CU3E8__2_6;
-				NullCheck(L_604);
-				JObject_t22BBBA7A90517B7E66E8C9D8D16DE84CB5054DE1* L_605 = L_604->___acknowledgement_4;
+				JToken_tFD7D9015F3F97A09AD93E439ACE894D12C06E8B3* L_603;
+				L_603 = JObject_get_Item_m889A29E8FCEA531AF829407F208DD05F0108C50B(L_602, _stringLiteralFD34DDB6D4B1C57BE3FC5C9163AE5C49737C03BF, NULL);
+				String_t* L_604;
+				L_604 = JToken_op_Explicit_mA435B5A6C389220DF41F02E1CAE6AEA4EEFBCFF3(L_603, NULL);
+				NullCheck(L_600);
+				L_600->___abrevstatut_34 = L_604;
+				Il2CppCodeGenWriteBarrier((void**)(&L_600->___abrevstatut_34), (void*)L_604);
+				// report.en_utilisation = (int)acknowledgement["en_utilisation"];
+				U3CU3Ec__DisplayClass28_0_t31208A80E819265E1170205F0BF1FDAB8E1D239E* L_605 = __this->___U3CU3E8__2_6;
 				NullCheck(L_605);
-				JToken_tFD7D9015F3F97A09AD93E439ACE894D12C06E8B3* L_606;
-				L_606 = JObject_get_Item_m889A29E8FCEA531AF829407F208DD05F0108C50B(L_605, _stringLiteral1901A0FA1C46E01D80306F396F6CF250F2476943, NULL);
-				int32_t L_607;
-				L_607 = JToken_op_Explicit_m623DADB50226D4E8CA01390A029E152BCD82F667(L_606, NULL);
-				NullCheck(L_603);
-				L_603->___en_utilisation_35 = L_607;
-				// report.modifie_par_id = (int)acknowledgement["modifie_par_id"];
-				U3CU3Ec__DisplayClass28_0_t31208A80E819265E1170205F0BF1FDAB8E1D239E* L_608 = __this->___U3CU3E8__2_6;
+				Rapport_t0DED00B7690FCCDE651FB02E35DD4AFF93E927D2* L_606 = L_605->___report_2;
+				U3CU3Ec__DisplayClass28_0_t31208A80E819265E1170205F0BF1FDAB8E1D239E* L_607 = __this->___U3CU3E8__2_6;
+				NullCheck(L_607);
+				JObject_t22BBBA7A90517B7E66E8C9D8D16DE84CB5054DE1* L_608 = L_607->___acknowledgement_4;
 				NullCheck(L_608);
-				Rapport_t0DED00B7690FCCDE651FB02E35DD4AFF93E927D2* L_609 = L_608->___report_2;
-				U3CU3Ec__DisplayClass28_0_t31208A80E819265E1170205F0BF1FDAB8E1D239E* L_610 = __this->___U3CU3E8__2_6;
-				NullCheck(L_610);
-				JObject_t22BBBA7A90517B7E66E8C9D8D16DE84CB5054DE1* L_611 = L_610->___acknowledgement_4;
+				JToken_tFD7D9015F3F97A09AD93E439ACE894D12C06E8B3* L_609;
+				L_609 = JObject_get_Item_m889A29E8FCEA531AF829407F208DD05F0108C50B(L_608, _stringLiteral1901A0FA1C46E01D80306F396F6CF250F2476943, NULL);
+				int32_t L_610;
+				L_610 = JToken_op_Explicit_m623DADB50226D4E8CA01390A029E152BCD82F667(L_609, NULL);
+				NullCheck(L_606);
+				L_606->___en_utilisation_35 = L_610;
+				// report.modifie_par_id = (int)acknowledgement["modifie_par_id"];
+				U3CU3Ec__DisplayClass28_0_t31208A80E819265E1170205F0BF1FDAB8E1D239E* L_611 = __this->___U3CU3E8__2_6;
 				NullCheck(L_611);
-				JToken_tFD7D9015F3F97A09AD93E439ACE894D12C06E8B3* L_612;
-				L_612 = JObject_get_Item_m889A29E8FCEA531AF829407F208DD05F0108C50B(L_611, _stringLiteralD92283C044A0CDD99AEF4D92F60543EF4BFB56DD, NULL);
-				int32_t L_613;
-				L_613 = JToken_op_Explicit_m623DADB50226D4E8CA01390A029E152BCD82F667(L_612, NULL);
-				NullCheck(L_609);
-				L_609->___modifie_par_id_30 = L_613;
-				// report.modifie_par = (string)acknowledgement["modifie_par"];
-				U3CU3Ec__DisplayClass28_0_t31208A80E819265E1170205F0BF1FDAB8E1D239E* L_614 = __this->___U3CU3E8__2_6;
+				Rapport_t0DED00B7690FCCDE651FB02E35DD4AFF93E927D2* L_612 = L_611->___report_2;
+				U3CU3Ec__DisplayClass28_0_t31208A80E819265E1170205F0BF1FDAB8E1D239E* L_613 = __this->___U3CU3E8__2_6;
+				NullCheck(L_613);
+				JObject_t22BBBA7A90517B7E66E8C9D8D16DE84CB5054DE1* L_614 = L_613->___acknowledgement_4;
 				NullCheck(L_614);
-				Rapport_t0DED00B7690FCCDE651FB02E35DD4AFF93E927D2* L_615 = L_614->___report_2;
-				U3CU3Ec__DisplayClass28_0_t31208A80E819265E1170205F0BF1FDAB8E1D239E* L_616 = __this->___U3CU3E8__2_6;
-				NullCheck(L_616);
-				JObject_t22BBBA7A90517B7E66E8C9D8D16DE84CB5054DE1* L_617 = L_616->___acknowledgement_4;
+				JToken_tFD7D9015F3F97A09AD93E439ACE894D12C06E8B3* L_615;
+				L_615 = JObject_get_Item_m889A29E8FCEA531AF829407F208DD05F0108C50B(L_614, _stringLiteralD92283C044A0CDD99AEF4D92F60543EF4BFB56DD, NULL);
+				int32_t L_616;
+				L_616 = JToken_op_Explicit_m623DADB50226D4E8CA01390A029E152BCD82F667(L_615, NULL);
+				NullCheck(L_612);
+				L_612->___modifie_par_id_30 = L_616;
+				// report.modifie_par = (string)acknowledgement["modifie_par"];
+				U3CU3Ec__DisplayClass28_0_t31208A80E819265E1170205F0BF1FDAB8E1D239E* L_617 = __this->___U3CU3E8__2_6;
 				NullCheck(L_617);
-				JToken_tFD7D9015F3F97A09AD93E439ACE894D12C06E8B3* L_618;
-				L_618 = JObject_get_Item_m889A29E8FCEA531AF829407F208DD05F0108C50B(L_617, _stringLiteral443251AF0BF1853D0BB94EFC1DE797D313A19C71, NULL);
-				String_t* L_619;
-				L_619 = JToken_op_Explicit_mA435B5A6C389220DF41F02E1CAE6AEA4EEFBCFF3(L_618, NULL);
-				NullCheck(L_615);
-				L_615->___modifie_par_27 = L_619;
-				Il2CppCodeGenWriteBarrier((void**)(&L_615->___modifie_par_27), (void*)L_619);
-				// report.step = (int)acknowledgement["step"];
-				U3CU3Ec__DisplayClass28_0_t31208A80E819265E1170205F0BF1FDAB8E1D239E* L_620 = __this->___U3CU3E8__2_6;
+				Rapport_t0DED00B7690FCCDE651FB02E35DD4AFF93E927D2* L_618 = L_617->___report_2;
+				U3CU3Ec__DisplayClass28_0_t31208A80E819265E1170205F0BF1FDAB8E1D239E* L_619 = __this->___U3CU3E8__2_6;
+				NullCheck(L_619);
+				JObject_t22BBBA7A90517B7E66E8C9D8D16DE84CB5054DE1* L_620 = L_619->___acknowledgement_4;
 				NullCheck(L_620);
-				Rapport_t0DED00B7690FCCDE651FB02E35DD4AFF93E927D2* L_621 = L_620->___report_2;
-				U3CU3Ec__DisplayClass28_0_t31208A80E819265E1170205F0BF1FDAB8E1D239E* L_622 = __this->___U3CU3E8__2_6;
-				NullCheck(L_622);
-				JObject_t22BBBA7A90517B7E66E8C9D8D16DE84CB5054DE1* L_623 = L_622->___acknowledgement_4;
+				JToken_tFD7D9015F3F97A09AD93E439ACE894D12C06E8B3* L_621;
+				L_621 = JObject_get_Item_m889A29E8FCEA531AF829407F208DD05F0108C50B(L_620, _stringLiteral443251AF0BF1853D0BB94EFC1DE797D313A19C71, NULL);
+				String_t* L_622;
+				L_622 = JToken_op_Explicit_mA435B5A6C389220DF41F02E1CAE6AEA4EEFBCFF3(L_621, NULL);
+				NullCheck(L_618);
+				L_618->___modifie_par_27 = L_622;
+				Il2CppCodeGenWriteBarrier((void**)(&L_618->___modifie_par_27), (void*)L_622);
+				// report.step = (int)acknowledgement["step"];
+				U3CU3Ec__DisplayClass28_0_t31208A80E819265E1170205F0BF1FDAB8E1D239E* L_623 = __this->___U3CU3E8__2_6;
 				NullCheck(L_623);
-				JToken_tFD7D9015F3F97A09AD93E439ACE894D12C06E8B3* L_624;
-				L_624 = JObject_get_Item_m889A29E8FCEA531AF829407F208DD05F0108C50B(L_623, _stringLiteralA3624EE238A5278BC2F6CF42F8D45EA11C9C3048, NULL);
-				int32_t L_625;
-				L_625 = JToken_op_Explicit_m623DADB50226D4E8CA01390A029E152BCD82F667(L_624, NULL);
-				NullCheck(L_621);
-				L_621->___step_31 = L_625;
-				// report.pj_tableau = acknowledgement["pj_tableau"].ToObject<List<PjTableau>>();
-				U3CU3Ec__DisplayClass28_0_t31208A80E819265E1170205F0BF1FDAB8E1D239E* L_626 = __this->___U3CU3E8__2_6;
+				Rapport_t0DED00B7690FCCDE651FB02E35DD4AFF93E927D2* L_624 = L_623->___report_2;
+				U3CU3Ec__DisplayClass28_0_t31208A80E819265E1170205F0BF1FDAB8E1D239E* L_625 = __this->___U3CU3E8__2_6;
+				NullCheck(L_625);
+				JObject_t22BBBA7A90517B7E66E8C9D8D16DE84CB5054DE1* L_626 = L_625->___acknowledgement_4;
 				NullCheck(L_626);
-				Rapport_t0DED00B7690FCCDE651FB02E35DD4AFF93E927D2* L_627 = L_626->___report_2;
-				U3CU3Ec__DisplayClass28_0_t31208A80E819265E1170205F0BF1FDAB8E1D239E* L_628 = __this->___U3CU3E8__2_6;
-				NullCheck(L_628);
-				JObject_t22BBBA7A90517B7E66E8C9D8D16DE84CB5054DE1* L_629 = L_628->___acknowledgement_4;
+				JToken_tFD7D9015F3F97A09AD93E439ACE894D12C06E8B3* L_627;
+				L_627 = JObject_get_Item_m889A29E8FCEA531AF829407F208DD05F0108C50B(L_626, _stringLiteralA3624EE238A5278BC2F6CF42F8D45EA11C9C3048, NULL);
+				int32_t L_628;
+				L_628 = JToken_op_Explicit_m623DADB50226D4E8CA01390A029E152BCD82F667(L_627, NULL);
+				NullCheck(L_624);
+				L_624->___step_31 = L_628;
+				// report.pj_tableau = acknowledgement["pj_tableau"].ToObject<List<PjTableau>>();
+				U3CU3Ec__DisplayClass28_0_t31208A80E819265E1170205F0BF1FDAB8E1D239E* L_629 = __this->___U3CU3E8__2_6;
 				NullCheck(L_629);
-				JToken_tFD7D9015F3F97A09AD93E439ACE894D12C06E8B3* L_630;
-				L_630 = JObject_get_Item_m889A29E8FCEA531AF829407F208DD05F0108C50B(L_629, _stringLiteral7F6D352C4617140DC7AFED88A6F1FACE04DACC40, NULL);
-				NullCheck(L_630);
-				List_1_t2A2B96598027F86C18DFF15D1EDC6FA185C1FDDF* L_631;
-				L_631 = JToken_ToObject_TisList_1_t2A2B96598027F86C18DFF15D1EDC6FA185C1FDDF_mE6EF48AEC557DC319F89EEC748B46BAEFE8B466F(L_630, JToken_ToObject_TisList_1_t2A2B96598027F86C18DFF15D1EDC6FA185C1FDDF_mE6EF48AEC557DC319F89EEC748B46BAEFE8B466F_RuntimeMethod_var);
-				NullCheck(L_627);
-				L_627->___pj_tableau_39 = L_631;
-				Il2CppCodeGenWriteBarrier((void**)(&L_627->___pj_tableau_39), (void*)L_631);
-				// report.sync_pending_status = 0;
-				U3CU3Ec__DisplayClass28_0_t31208A80E819265E1170205F0BF1FDAB8E1D239E* L_632 = __this->___U3CU3E8__2_6;
+				Rapport_t0DED00B7690FCCDE651FB02E35DD4AFF93E927D2* L_630 = L_629->___report_2;
+				U3CU3Ec__DisplayClass28_0_t31208A80E819265E1170205F0BF1FDAB8E1D239E* L_631 = __this->___U3CU3E8__2_6;
+				NullCheck(L_631);
+				JObject_t22BBBA7A90517B7E66E8C9D8D16DE84CB5054DE1* L_632 = L_631->___acknowledgement_4;
 				NullCheck(L_632);
-				Rapport_t0DED00B7690FCCDE651FB02E35DD4AFF93E927D2* L_633 = L_632->___report_2;
+				JToken_tFD7D9015F3F97A09AD93E439ACE894D12C06E8B3* L_633;
+				L_633 = JObject_get_Item_m889A29E8FCEA531AF829407F208DD05F0108C50B(L_632, _stringLiteral7F6D352C4617140DC7AFED88A6F1FACE04DACC40, NULL);
 				NullCheck(L_633);
-				L_633->___sync_pending_status_20 = 0;
-				// report.sync_pending = false;
-				U3CU3Ec__DisplayClass28_0_t31208A80E819265E1170205F0BF1FDAB8E1D239E* L_634 = __this->___U3CU3E8__2_6;
-				NullCheck(L_634);
-				Rapport_t0DED00B7690FCCDE651FB02E35DD4AFF93E927D2* L_635 = L_634->___report_2;
+				List_1_t2A2B96598027F86C18DFF15D1EDC6FA185C1FDDF* L_634;
+				L_634 = JToken_ToObject_TisList_1_t2A2B96598027F86C18DFF15D1EDC6FA185C1FDDF_mE6EF48AEC557DC319F89EEC748B46BAEFE8B466F(L_633, JToken_ToObject_TisList_1_t2A2B96598027F86C18DFF15D1EDC6FA185C1FDDF_mE6EF48AEC557DC319F89EEC748B46BAEFE8B466F_RuntimeMethod_var);
+				NullCheck(L_630);
+				L_630->___pj_tableau_39 = L_634;
+				Il2CppCodeGenWriteBarrier((void**)(&L_630->___pj_tableau_39), (void*)L_634);
+				// report.sync_pending_status = 0;
+				U3CU3Ec__DisplayClass28_0_t31208A80E819265E1170205F0BF1FDAB8E1D239E* L_635 = __this->___U3CU3E8__2_6;
 				NullCheck(L_635);
-				L_635->___sync_pending_12 = (bool)0;
-				// report.sync_state = "synced";
-				U3CU3Ec__DisplayClass28_0_t31208A80E819265E1170205F0BF1FDAB8E1D239E* L_636 = __this->___U3CU3E8__2_6;
+				Rapport_t0DED00B7690FCCDE651FB02E35DD4AFF93E927D2* L_636 = L_635->___report_2;
 				NullCheck(L_636);
-				Rapport_t0DED00B7690FCCDE651FB02E35DD4AFF93E927D2* L_637 = L_636->___report_2;
+				L_636->___sync_pending_status_20 = 0;
+				// report.sync_pending = false;
+				U3CU3Ec__DisplayClass28_0_t31208A80E819265E1170205F0BF1FDAB8E1D239E* L_637 = __this->___U3CU3E8__2_6;
 				NullCheck(L_637);
-				L_637->___sync_state_13 = _stringLiteralA9EBA475A1F21B97B695B1323314710E397AAC10;
-				Il2CppCodeGenWriteBarrier((void**)(&L_637->___sync_state_13), (void*)_stringLiteralA9EBA475A1F21B97B695B1323314710E397AAC10);
-				// report.sync_error = null;
-				U3CU3Ec__DisplayClass28_0_t31208A80E819265E1170205F0BF1FDAB8E1D239E* L_638 = __this->___U3CU3E8__2_6;
+				Rapport_t0DED00B7690FCCDE651FB02E35DD4AFF93E927D2* L_638 = L_637->___report_2;
 				NullCheck(L_638);
-				Rapport_t0DED00B7690FCCDE651FB02E35DD4AFF93E927D2* L_639 = L_638->___report_2;
+				L_638->___sync_pending_12 = (bool)0;
+				// report.sync_state = "synced";
+				U3CU3Ec__DisplayClass28_0_t31208A80E819265E1170205F0BF1FDAB8E1D239E* L_639 = __this->___U3CU3E8__2_6;
 				NullCheck(L_639);
-				L_639->___sync_error_14 = (String_t*)NULL;
-				Il2CppCodeGenWriteBarrier((void**)(&L_639->___sync_error_14), (void*)(String_t*)NULL);
-				// report.sync_conflict = null;
-				U3CU3Ec__DisplayClass28_0_t31208A80E819265E1170205F0BF1FDAB8E1D239E* L_640 = __this->___U3CU3E8__2_6;
+				Rapport_t0DED00B7690FCCDE651FB02E35DD4AFF93E927D2* L_640 = L_639->___report_2;
 				NullCheck(L_640);
-				Rapport_t0DED00B7690FCCDE651FB02E35DD4AFF93E927D2* L_641 = L_640->___report_2;
+				L_640->___sync_state_13 = _stringLiteralA9EBA475A1F21B97B695B1323314710E397AAC10;
+				Il2CppCodeGenWriteBarrier((void**)(&L_640->___sync_state_13), (void*)_stringLiteralA9EBA475A1F21B97B695B1323314710E397AAC10);
+				// report.sync_error = null;
+				U3CU3Ec__DisplayClass28_0_t31208A80E819265E1170205F0BF1FDAB8E1D239E* L_641 = __this->___U3CU3E8__2_6;
 				NullCheck(L_641);
-				L_641->___sync_conflict_7 = (String_t*)NULL;
-				Il2CppCodeGenWriteBarrier((void**)(&L_641->___sync_conflict_7), (void*)(String_t*)NULL);
-				// report.sync_resolution = null;
-				U3CU3Ec__DisplayClass28_0_t31208A80E819265E1170205F0BF1FDAB8E1D239E* L_642 = __this->___U3CU3E8__2_6;
+				Rapport_t0DED00B7690FCCDE651FB02E35DD4AFF93E927D2* L_642 = L_641->___report_2;
 				NullCheck(L_642);
-				Rapport_t0DED00B7690FCCDE651FB02E35DD4AFF93E927D2* L_643 = L_642->___report_2;
+				L_642->___sync_error_14 = (String_t*)NULL;
+				Il2CppCodeGenWriteBarrier((void**)(&L_642->___sync_error_14), (void*)(String_t*)NULL);
+				// report.sync_conflict = null;
+				U3CU3Ec__DisplayClass28_0_t31208A80E819265E1170205F0BF1FDAB8E1D239E* L_643 = __this->___U3CU3E8__2_6;
 				NullCheck(L_643);
-				L_643->___sync_resolution_8 = (String_t*)NULL;
-				Il2CppCodeGenWriteBarrier((void**)(&L_643->___sync_resolution_8), (void*)(String_t*)NULL);
-				// report.sync_resolution_version = null;
-				U3CU3Ec__DisplayClass28_0_t31208A80E819265E1170205F0BF1FDAB8E1D239E* L_644 = __this->___U3CU3E8__2_6;
+				Rapport_t0DED00B7690FCCDE651FB02E35DD4AFF93E927D2* L_644 = L_643->___report_2;
 				NullCheck(L_644);
-				Rapport_t0DED00B7690FCCDE651FB02E35DD4AFF93E927D2* L_645 = L_644->___report_2;
+				L_644->___sync_conflict_7 = (String_t*)NULL;
+				Il2CppCodeGenWriteBarrier((void**)(&L_644->___sync_conflict_7), (void*)(String_t*)NULL);
+				// report.sync_resolution = null;
+				U3CU3Ec__DisplayClass28_0_t31208A80E819265E1170205F0BF1FDAB8E1D239E* L_645 = __this->___U3CU3E8__2_6;
 				NullCheck(L_645);
-				L_645->___sync_resolution_version_9 = (String_t*)NULL;
-				Il2CppCodeGenWriteBarrier((void**)(&L_645->___sync_resolution_version_9), (void*)(String_t*)NULL);
-				// report.sync_resolution_hash = null;
-				U3CU3Ec__DisplayClass28_0_t31208A80E819265E1170205F0BF1FDAB8E1D239E* L_646 = __this->___U3CU3E8__2_6;
+				Rapport_t0DED00B7690FCCDE651FB02E35DD4AFF93E927D2* L_646 = L_645->___report_2;
 				NullCheck(L_646);
-				Rapport_t0DED00B7690FCCDE651FB02E35DD4AFF93E927D2* L_647 = L_646->___report_2;
+				L_646->___sync_resolution_8 = (String_t*)NULL;
+				Il2CppCodeGenWriteBarrier((void**)(&L_646->___sync_resolution_8), (void*)(String_t*)NULL);
+				// report.sync_resolution_version = null;
+				U3CU3Ec__DisplayClass28_0_t31208A80E819265E1170205F0BF1FDAB8E1D239E* L_647 = __this->___U3CU3E8__2_6;
 				NullCheck(L_647);
-				L_647->___sync_resolution_hash_10 = (String_t*)NULL;
-				Il2CppCodeGenWriteBarrier((void**)(&L_647->___sync_resolution_hash_10), (void*)(String_t*)NULL);
-				// report.sync_base_version = (string)acknowledgement["base_version"];
-				U3CU3Ec__DisplayClass28_0_t31208A80E819265E1170205F0BF1FDAB8E1D239E* L_648 = __this->___U3CU3E8__2_6;
+				Rapport_t0DED00B7690FCCDE651FB02E35DD4AFF93E927D2* L_648 = L_647->___report_2;
 				NullCheck(L_648);
-				Rapport_t0DED00B7690FCCDE651FB02E35DD4AFF93E927D2* L_649 = L_648->___report_2;
-				U3CU3Ec__DisplayClass28_0_t31208A80E819265E1170205F0BF1FDAB8E1D239E* L_650 = __this->___U3CU3E8__2_6;
-				NullCheck(L_650);
-				JObject_t22BBBA7A90517B7E66E8C9D8D16DE84CB5054DE1* L_651 = L_650->___acknowledgement_4;
-				NullCheck(L_651);
-				JToken_tFD7D9015F3F97A09AD93E439ACE894D12C06E8B3* L_652;
-				L_652 = JObject_get_Item_m889A29E8FCEA531AF829407F208DD05F0108C50B(L_651, _stringLiteralB51803CE2E48A11B142F76A7B50A4284C7FED887, NULL);
-				String_t* L_653;
-				L_653 = JToken_op_Explicit_mA435B5A6C389220DF41F02E1CAE6AEA4EEFBCFF3(L_652, NULL);
+				L_648->___sync_resolution_version_9 = (String_t*)NULL;
+				Il2CppCodeGenWriteBarrier((void**)(&L_648->___sync_resolution_version_9), (void*)(String_t*)NULL);
+				// report.sync_resolution_hash = null;
+				U3CU3Ec__DisplayClass28_0_t31208A80E819265E1170205F0BF1FDAB8E1D239E* L_649 = __this->___U3CU3E8__2_6;
 				NullCheck(L_649);
-				L_649->___sync_base_version_5 = L_653;
-				Il2CppCodeGenWriteBarrier((void**)(&L_649->___sync_base_version_5), (void*)L_653);
-				// TabletSyncContract.PreparedPayload completedSnapshot = null;
-				U3CU3Ec__DisplayClass28_0_t31208A80E819265E1170205F0BF1FDAB8E1D239E* L_654 = __this->___U3CU3E8__2_6;
+				Rapport_t0DED00B7690FCCDE651FB02E35DD4AFF93E927D2* L_650 = L_649->___report_2;
+				NullCheck(L_650);
+				L_650->___sync_resolution_hash_10 = (String_t*)NULL;
+				Il2CppCodeGenWriteBarrier((void**)(&L_650->___sync_resolution_hash_10), (void*)(String_t*)NULL);
+				// report.sync_base_version = (string)acknowledgement["base_version"];
+				U3CU3Ec__DisplayClass28_0_t31208A80E819265E1170205F0BF1FDAB8E1D239E* L_651 = __this->___U3CU3E8__2_6;
+				NullCheck(L_651);
+				Rapport_t0DED00B7690FCCDE651FB02E35DD4AFF93E927D2* L_652 = L_651->___report_2;
+				U3CU3Ec__DisplayClass28_0_t31208A80E819265E1170205F0BF1FDAB8E1D239E* L_653 = __this->___U3CU3E8__2_6;
+				NullCheck(L_653);
+				JObject_t22BBBA7A90517B7E66E8C9D8D16DE84CB5054DE1* L_654 = L_653->___acknowledgement_4;
 				NullCheck(L_654);
-				L_654->___completedSnapshot_7 = (PreparedPayload_t3422CCA2875CFFDEF0EB6369A236E08EC4F78A21*)NULL;
-				Il2CppCodeGenWriteBarrier((void**)(&L_654->___completedSnapshot_7), (void*)(PreparedPayload_t3422CCA2875CFFDEF0EB6369A236E08EC4F78A21*)NULL);
+				JToken_tFD7D9015F3F97A09AD93E439ACE894D12C06E8B3* L_655;
+				L_655 = JObject_get_Item_m889A29E8FCEA531AF829407F208DD05F0108C50B(L_654, _stringLiteralB51803CE2E48A11B142F76A7B50A4284C7FED887, NULL);
+				String_t* L_656;
+				L_656 = JToken_op_Explicit_mA435B5A6C389220DF41F02E1CAE6AEA4EEFBCFF3(L_655, NULL);
+				NullCheck(L_652);
+				L_652->___sync_base_version_5 = L_656;
+				Il2CppCodeGenWriteBarrier((void**)(&L_652->___sync_base_version_5), (void*)L_656);
+				// TabletSyncContract.PreparedPayload completedSnapshot = null;
+				U3CU3Ec__DisplayClass28_0_t31208A80E819265E1170205F0BF1FDAB8E1D239E* L_657 = __this->___U3CU3E8__2_6;
+				NullCheck(L_657);
+				L_657->___completedSnapshot_7 = (PreparedPayload_t3422CCA2875CFFDEF0EB6369A236E08EC4F78A21*)NULL;
+				Il2CppCodeGenWriteBarrier((void**)(&L_657->___completedSnapshot_7), (void*)(PreparedPayload_t3422CCA2875CFFDEF0EB6369A236E08EC4F78A21*)NULL);
 				// yield return TabletSyncContract.PreparePayload(service, report, value => completedSnapshot=value, () => owner.SyncCancelRequested, false, false);
-				ServiceClient_t07C84893BDB4121BAF09BDF559688F4714F9541D* L_655 = __this->___service_4;
-				U3CU3Ec__DisplayClass28_0_t31208A80E819265E1170205F0BF1FDAB8E1D239E* L_656 = __this->___U3CU3E8__2_6;
-				NullCheck(L_656);
-				Rapport_t0DED00B7690FCCDE651FB02E35DD4AFF93E927D2* L_657 = L_656->___report_2;
-				U3CU3Ec__DisplayClass28_0_t31208A80E819265E1170205F0BF1FDAB8E1D239E* L_658 = __this->___U3CU3E8__2_6;
-				Action_1_t412314F8914AA588E0FDDB6CEF1353949508B087* L_659 = (Action_1_t412314F8914AA588E0FDDB6CEF1353949508B087*)il2cpp_codegen_object_new(Action_1_t412314F8914AA588E0FDDB6CEF1353949508B087_il2cpp_TypeInfo_var);
+				ServiceClient_t07C84893BDB4121BAF09BDF559688F4714F9541D* L_658 = __this->___service_4;
+				U3CU3Ec__DisplayClass28_0_t31208A80E819265E1170205F0BF1FDAB8E1D239E* L_659 = __this->___U3CU3E8__2_6;
 				NullCheck(L_659);
-				Action_1__ctor_m4965CD624AF0B24636463A4A9C2DF969997FBA4F(L_659, L_658, (intptr_t)((void*)U3CU3Ec__DisplayClass28_0_U3CSendReportU3Eb__7_m93910E5B8057F2D57B7BE4B76442F5EADA5F87E2_RuntimeMethod_var), NULL);
-				U3CU3Ec__DisplayClass28_0_t31208A80E819265E1170205F0BF1FDAB8E1D239E* L_660 = __this->___U3CU3E8__2_6;
-				Func_1_t2BE7F58348C9CC544A8973B3A9E55541DE43C457* L_661 = (Func_1_t2BE7F58348C9CC544A8973B3A9E55541DE43C457*)il2cpp_codegen_object_new(Func_1_t2BE7F58348C9CC544A8973B3A9E55541DE43C457_il2cpp_TypeInfo_var);
-				NullCheck(L_661);
-				Func_1__ctor_mDFFAE9C73346372438B5B04C4558AC42F1A3DA22(L_661, L_660, (intptr_t)((void*)U3CU3Ec__DisplayClass28_0_U3CSendReportU3Eb__8_mF897F0EFFFCA0EDEBA554212A4217477A2B458F1_RuntimeMethod_var), NULL);
-				RuntimeObject* L_662;
-				L_662 = TabletSyncContract_PreparePayload_m344DAD64CB161FFB3B96E689ADA80E4D43FFE0F6(L_655, L_657, L_659, L_661, (bool)0, (bool)0, NULL);
-				__this->___U3CU3E2__current_1 = L_662;
-				Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CU3E2__current_1), (void*)L_662);
+				Rapport_t0DED00B7690FCCDE651FB02E35DD4AFF93E927D2* L_660 = L_659->___report_2;
+				U3CU3Ec__DisplayClass28_0_t31208A80E819265E1170205F0BF1FDAB8E1D239E* L_661 = __this->___U3CU3E8__2_6;
+				Action_1_t412314F8914AA588E0FDDB6CEF1353949508B087* L_662 = (Action_1_t412314F8914AA588E0FDDB6CEF1353949508B087*)il2cpp_codegen_object_new(Action_1_t412314F8914AA588E0FDDB6CEF1353949508B087_il2cpp_TypeInfo_var);
+				NullCheck(L_662);
+				Action_1__ctor_m4965CD624AF0B24636463A4A9C2DF969997FBA4F(L_662, L_661, (intptr_t)((void*)U3CU3Ec__DisplayClass28_0_U3CSendReportU3Eb__7_m93910E5B8057F2D57B7BE4B76442F5EADA5F87E2_RuntimeMethod_var), NULL);
+				U3CU3Ec__DisplayClass28_0_t31208A80E819265E1170205F0BF1FDAB8E1D239E* L_663 = __this->___U3CU3E8__2_6;
+				Func_1_t2BE7F58348C9CC544A8973B3A9E55541DE43C457* L_664 = (Func_1_t2BE7F58348C9CC544A8973B3A9E55541DE43C457*)il2cpp_codegen_object_new(Func_1_t2BE7F58348C9CC544A8973B3A9E55541DE43C457_il2cpp_TypeInfo_var);
+				NullCheck(L_664);
+				Func_1__ctor_mDFFAE9C73346372438B5B04C4558AC42F1A3DA22(L_664, L_663, (intptr_t)((void*)U3CU3Ec__DisplayClass28_0_U3CSendReportU3Eb__8_mF897F0EFFFCA0EDEBA554212A4217477A2B458F1_RuntimeMethod_var), NULL);
+				RuntimeObject* L_665;
+				L_665 = TabletSyncContract_PreparePayload_m344DAD64CB161FFB3B96E689ADA80E4D43FFE0F6(L_658, L_660, L_662, L_664, (bool)0, (bool)0, NULL);
+				__this->___U3CU3E2__current_1 = L_665;
+				Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CU3E2__current_1), (void*)L_665);
 				__this->___U3CU3E1__state_0 = ((int32_t)15);
 				V_0 = (bool)1;
-				goto IL_1717;
+				goto IL_1713;
 			}
 
-IL_15af_1:
+IL_15ab_1:
 			{
 				__this->___U3CU3E1__state_0 = (-1);
 				// report.sync_local_hash = completedSnapshot.LogicalHash;
-				U3CU3Ec__DisplayClass28_0_t31208A80E819265E1170205F0BF1FDAB8E1D239E* L_663 = __this->___U3CU3E8__2_6;
-				NullCheck(L_663);
-				Rapport_t0DED00B7690FCCDE651FB02E35DD4AFF93E927D2* L_664 = L_663->___report_2;
-				U3CU3Ec__DisplayClass28_0_t31208A80E819265E1170205F0BF1FDAB8E1D239E* L_665 = __this->___U3CU3E8__2_6;
-				NullCheck(L_665);
-				PreparedPayload_t3422CCA2875CFFDEF0EB6369A236E08EC4F78A21* L_666 = L_665->___completedSnapshot_7;
+				U3CU3Ec__DisplayClass28_0_t31208A80E819265E1170205F0BF1FDAB8E1D239E* L_666 = __this->___U3CU3E8__2_6;
 				NullCheck(L_666);
-				String_t* L_667 = L_666->___LogicalHash_0;
-				NullCheck(L_664);
-				L_664->___sync_local_hash_17 = L_667;
-				Il2CppCodeGenWriteBarrier((void**)(&L_664->___sync_local_hash_17), (void*)L_667);
-				// string acknowledgedPayload=report.sync_payload;
+				Rapport_t0DED00B7690FCCDE651FB02E35DD4AFF93E927D2* L_667 = L_666->___report_2;
 				U3CU3Ec__DisplayClass28_0_t31208A80E819265E1170205F0BF1FDAB8E1D239E* L_668 = __this->___U3CU3E8__2_6;
 				NullCheck(L_668);
-				Rapport_t0DED00B7690FCCDE651FB02E35DD4AFF93E927D2* L_669 = L_668->___report_2;
+				PreparedPayload_t3422CCA2875CFFDEF0EB6369A236E08EC4F78A21* L_669 = L_668->___completedSnapshot_7;
 				NullCheck(L_669);
-				String_t* L_670 = L_669->___sync_payload_16;
-				__this->___U3CacknowledgedPayloadU3E5__5_16 = L_670;
-				Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CacknowledgedPayloadU3E5__5_16), (void*)L_670);
-				// report.sync_payload = null;
+				String_t* L_670 = L_669->___LogicalHash_0;
+				NullCheck(L_667);
+				L_667->___sync_local_hash_17 = L_670;
+				Il2CppCodeGenWriteBarrier((void**)(&L_667->___sync_local_hash_17), (void*)L_670);
+				// string acknowledgedPayload=report.sync_payload;
 				U3CU3Ec__DisplayClass28_0_t31208A80E819265E1170205F0BF1FDAB8E1D239E* L_671 = __this->___U3CU3E8__2_6;
 				NullCheck(L_671);
 				Rapport_t0DED00B7690FCCDE651FB02E35DD4AFF93E927D2* L_672 = L_671->___report_2;
 				NullCheck(L_672);
-				L_672->___sync_payload_16 = (String_t*)NULL;
-				Il2CppCodeGenWriteBarrier((void**)(&L_672->___sync_payload_16), (void*)(String_t*)NULL);
+				String_t* L_673 = L_672->___sync_payload_16;
+				__this->___U3CacknowledgedPayloadU3E5__5_16 = L_673;
+				Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CacknowledgedPayloadU3E5__5_16), (void*)L_673);
+				// report.sync_payload = null;
+				U3CU3Ec__DisplayClass28_0_t31208A80E819265E1170205F0BF1FDAB8E1D239E* L_674 = __this->___U3CU3E8__2_6;
+				NullCheck(L_674);
+				Rapport_t0DED00B7690FCCDE651FB02E35DD4AFF93E927D2* L_675 = L_674->___report_2;
+				NullCheck(L_675);
+				L_675->___sync_payload_16 = (String_t*)NULL;
+				Il2CppCodeGenWriteBarrier((void**)(&L_675->___sync_payload_16), (void*)(String_t*)NULL);
 				// bool completedSave=false;
 				__this->___U3CcompletedSaveU3E5__6_17 = (bool)0;
 				__this->___U3CU3E1__state_0 = ((int32_t)-10);
-				U3CU3Ec__DisplayClass28_4_t61242D03CA6D13D2E4E3C919CEF61D8022A4B0B1* L_673 = (U3CU3Ec__DisplayClass28_4_t61242D03CA6D13D2E4E3C919CEF61D8022A4B0B1*)il2cpp_codegen_object_new(U3CU3Ec__DisplayClass28_4_t61242D03CA6D13D2E4E3C919CEF61D8022A4B0B1_il2cpp_TypeInfo_var);
-				NullCheck(L_673);
-				U3CU3Ec__DisplayClass28_4__ctor_m7C4E45D507CBA42F0939F4030E80367AFD725BD0(L_673, NULL);
-				__this->___U3CU3E8__5_12 = L_673;
-				Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CU3E8__5_12), (void*)L_673);
+				U3CU3Ec__DisplayClass28_4_t61242D03CA6D13D2E4E3C919CEF61D8022A4B0B1* L_676 = (U3CU3Ec__DisplayClass28_4_t61242D03CA6D13D2E4E3C919CEF61D8022A4B0B1*)il2cpp_codegen_object_new(U3CU3Ec__DisplayClass28_4_t61242D03CA6D13D2E4E3C919CEF61D8022A4B0B1_il2cpp_TypeInfo_var);
+				NullCheck(L_676);
+				U3CU3Ec__DisplayClass28_4__ctor_m7C4E45D507CBA42F0939F4030E80367AFD725BD0(L_676, NULL);
+				__this->___U3CU3E8__5_12 = L_676;
+				Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CU3E8__5_12), (void*)L_676);
 				// Exception completionSaveFailure=null;
-				U3CU3Ec__DisplayClass28_4_t61242D03CA6D13D2E4E3C919CEF61D8022A4B0B1* L_674 = __this->___U3CU3E8__5_12;
-				NullCheck(L_674);
-				L_674->___completionSaveFailure_0 = (Exception_t*)NULL;
-				Il2CppCodeGenWriteBarrier((void**)(&L_674->___completionSaveFailure_0), (void*)(Exception_t*)NULL);
-				// yield return Guard(PersistAsync(service),error=>completionSaveFailure=error);
-				ServiceClient_t07C84893BDB4121BAF09BDF559688F4714F9541D* L_675 = __this->___service_4;
-				il2cpp_codegen_runtime_class_init_inline(TabletSyncClient_t9AE1DDE720D7B8AACC16664561491E16F6291F7D_il2cpp_TypeInfo_var);
-				RuntimeObject* L_676;
-				L_676 = TabletSyncClient_PersistAsync_mA673D89229ADCBBFA6445AC3ECA224183F34BFD6(L_675, (bool)0, NULL);
 				U3CU3Ec__DisplayClass28_4_t61242D03CA6D13D2E4E3C919CEF61D8022A4B0B1* L_677 = __this->___U3CU3E8__5_12;
-				Action_1_tAFBD759E01ADE1CCF9C2015D5EFB3E69A9F26F04* L_678 = (Action_1_tAFBD759E01ADE1CCF9C2015D5EFB3E69A9F26F04*)il2cpp_codegen_object_new(Action_1_tAFBD759E01ADE1CCF9C2015D5EFB3E69A9F26F04_il2cpp_TypeInfo_var);
-				NullCheck(L_678);
-				Action_1__ctor_m55F05090D04B2CE985AB61F6DB2C073AECD12A2E(L_678, L_677, (intptr_t)((void*)U3CU3Ec__DisplayClass28_4_U3CSendReportU3Eb__19_m5F877A606C6B4FFB0403B8AB6659264DB0391972_RuntimeMethod_var), NULL);
+				NullCheck(L_677);
+				L_677->___completionSaveFailure_0 = (Exception_t*)NULL;
+				Il2CppCodeGenWriteBarrier((void**)(&L_677->___completionSaveFailure_0), (void*)(Exception_t*)NULL);
+				// yield return Guard(PersistAsync(service),error=>completionSaveFailure=error);
+				ServiceClient_t07C84893BDB4121BAF09BDF559688F4714F9541D* L_678 = __this->___service_4;
+				il2cpp_codegen_runtime_class_init_inline(TabletSyncClient_t9AE1DDE720D7B8AACC16664561491E16F6291F7D_il2cpp_TypeInfo_var);
 				RuntimeObject* L_679;
-				L_679 = TabletSyncClient_Guard_mD0667F882870D7E3B8BDBA3AD3F8E37476109978(L_676, L_678, (Func_1_t2BE7F58348C9CC544A8973B3A9E55541DE43C457*)NULL, NULL);
-				__this->___U3CU3E2__current_1 = L_679;
-				Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CU3E2__current_1), (void*)L_679);
+				L_679 = TabletSyncClient_PersistAsync_mA673D89229ADCBBFA6445AC3ECA224183F34BFD6(L_678, (bool)0, NULL);
+				U3CU3Ec__DisplayClass28_4_t61242D03CA6D13D2E4E3C919CEF61D8022A4B0B1* L_680 = __this->___U3CU3E8__5_12;
+				Action_1_tAFBD759E01ADE1CCF9C2015D5EFB3E69A9F26F04* L_681 = (Action_1_tAFBD759E01ADE1CCF9C2015D5EFB3E69A9F26F04*)il2cpp_codegen_object_new(Action_1_tAFBD759E01ADE1CCF9C2015D5EFB3E69A9F26F04_il2cpp_TypeInfo_var);
+				NullCheck(L_681);
+				Action_1__ctor_m55F05090D04B2CE985AB61F6DB2C073AECD12A2E(L_681, L_680, (intptr_t)((void*)U3CU3Ec__DisplayClass28_4_U3CSendReportU3Eb__19_m5F877A606C6B4FFB0403B8AB6659264DB0391972_RuntimeMethod_var), NULL);
+				RuntimeObject* L_682;
+				L_682 = TabletSyncClient_Guard_mD0667F882870D7E3B8BDBA3AD3F8E37476109978(L_679, L_681, (Func_1_t2BE7F58348C9CC544A8973B3A9E55541DE43C457*)NULL, NULL);
+				__this->___U3CU3E2__current_1 = L_682;
+				Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CU3E2__current_1), (void*)L_682);
 				__this->___U3CU3E1__state_0 = ((int32_t)16);
 				V_0 = (bool)1;
-				goto IL_1717;
+				goto IL_1713;
 			}
 
-IL_165b_1:
+IL_1657_1:
 			{
 				__this->___U3CU3E1__state_0 = ((int32_t)-10);
 				// if(completionSaveFailure!=null)throw completionSaveFailure;
-				U3CU3Ec__DisplayClass28_4_t61242D03CA6D13D2E4E3C919CEF61D8022A4B0B1* L_680 = __this->___U3CU3E8__5_12;
-				NullCheck(L_680);
-				Exception_t* L_681 = L_680->___completionSaveFailure_0;
-				if (!L_681)
+				U3CU3Ec__DisplayClass28_4_t61242D03CA6D13D2E4E3C919CEF61D8022A4B0B1* L_683 = __this->___U3CU3E8__5_12;
+				NullCheck(L_683);
+				Exception_t* L_684 = L_683->___completionSaveFailure_0;
+				if (!L_684)
 				{
-					goto IL_167c_1;
+					goto IL_1678_1;
 				}
 			}
 			{
 				// if(completionSaveFailure!=null)throw completionSaveFailure;
-				U3CU3Ec__DisplayClass28_4_t61242D03CA6D13D2E4E3C919CEF61D8022A4B0B1* L_682 = __this->___U3CU3E8__5_12;
-				NullCheck(L_682);
-				Exception_t* L_683 = L_682->___completionSaveFailure_0;
-				IL2CPP_RAISE_MANAGED_EXCEPTION(L_683, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&U3CSendReportU3Ed__28_MoveNext_m5083E01275A9E2D440180AE06A5514AF6923BC6B_RuntimeMethod_var)));
+				U3CU3Ec__DisplayClass28_4_t61242D03CA6D13D2E4E3C919CEF61D8022A4B0B1* L_685 = __this->___U3CU3E8__5_12;
+				NullCheck(L_685);
+				Exception_t* L_686 = L_685->___completionSaveFailure_0;
+				IL2CPP_RAISE_MANAGED_EXCEPTION(L_686, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&U3CSendReportU3Ed__28_MoveNext_m5083E01275A9E2D440180AE06A5514AF6923BC6B_RuntimeMethod_var)));
 			}
 
-IL_167c_1:
+IL_1678_1:
 			{
 				// completedSave=true;
 				__this->___U3CcompletedSaveU3E5__6_17 = (bool)1;
@@ -34242,54 +34271,54 @@ IL_167c_1:
 				Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CacknowledgedPayloadU3E5__5_16), (void*)(String_t*)NULL);
 				// callback(new ReportSyncResult { ReportId=report.id_service_rapport, Title=report.titre_fr, Success=true, RemoteComplete=true,ConfirmedStatusId=(int)acknowledgement["id_statut"],
 				//     Message="Contenu, pi?ces jointes et statut confirm?s par le serveur." });
-				Action_1_tA1EC1C85A758F528167F8850DCA99AC3D1E2D5F7* L_684 = __this->___callback_8;
-				ReportSyncResult_t7AAFDABA3111498A424BA60577311CB99DF27F43* L_685 = (ReportSyncResult_t7AAFDABA3111498A424BA60577311CB99DF27F43*)il2cpp_codegen_object_new(ReportSyncResult_t7AAFDABA3111498A424BA60577311CB99DF27F43_il2cpp_TypeInfo_var);
-				NullCheck(L_685);
-				ReportSyncResult__ctor_mAE23CABC56273E38436BADEF56AA4B63399C8BC9(L_685, NULL);
-				ReportSyncResult_t7AAFDABA3111498A424BA60577311CB99DF27F43* L_686 = L_685;
-				U3CU3Ec__DisplayClass28_0_t31208A80E819265E1170205F0BF1FDAB8E1D239E* L_687 = __this->___U3CU3E8__2_6;
-				NullCheck(L_687);
-				Rapport_t0DED00B7690FCCDE651FB02E35DD4AFF93E927D2* L_688 = L_687->___report_2;
+				Action_1_tA1EC1C85A758F528167F8850DCA99AC3D1E2D5F7* L_687 = __this->___callback_8;
+				ReportSyncResult_t7AAFDABA3111498A424BA60577311CB99DF27F43* L_688 = (ReportSyncResult_t7AAFDABA3111498A424BA60577311CB99DF27F43*)il2cpp_codegen_object_new(ReportSyncResult_t7AAFDABA3111498A424BA60577311CB99DF27F43_il2cpp_TypeInfo_var);
 				NullCheck(L_688);
-				int32_t L_689 = L_688->___id_service_rapport_37;
-				NullCheck(L_686);
-				L_686->___ReportId_0 = L_689;
-				ReportSyncResult_t7AAFDABA3111498A424BA60577311CB99DF27F43* L_690 = L_686;
-				U3CU3Ec__DisplayClass28_0_t31208A80E819265E1170205F0BF1FDAB8E1D239E* L_691 = __this->___U3CU3E8__2_6;
-				NullCheck(L_691);
-				Rapport_t0DED00B7690FCCDE651FB02E35DD4AFF93E927D2* L_692 = L_691->___report_2;
-				NullCheck(L_692);
-				String_t* L_693 = L_692->___titre_fr_22;
+				ReportSyncResult__ctor_mAE23CABC56273E38436BADEF56AA4B63399C8BC9(L_688, NULL);
+				ReportSyncResult_t7AAFDABA3111498A424BA60577311CB99DF27F43* L_689 = L_688;
+				U3CU3Ec__DisplayClass28_0_t31208A80E819265E1170205F0BF1FDAB8E1D239E* L_690 = __this->___U3CU3E8__2_6;
 				NullCheck(L_690);
-				L_690->___Title_1 = L_693;
-				Il2CppCodeGenWriteBarrier((void**)(&L_690->___Title_1), (void*)L_693);
-				ReportSyncResult_t7AAFDABA3111498A424BA60577311CB99DF27F43* L_694 = L_690;
+				Rapport_t0DED00B7690FCCDE651FB02E35DD4AFF93E927D2* L_691 = L_690->___report_2;
+				NullCheck(L_691);
+				int32_t L_692 = L_691->___id_service_rapport_37;
+				NullCheck(L_689);
+				L_689->___ReportId_0 = L_692;
+				ReportSyncResult_t7AAFDABA3111498A424BA60577311CB99DF27F43* L_693 = L_689;
+				U3CU3Ec__DisplayClass28_0_t31208A80E819265E1170205F0BF1FDAB8E1D239E* L_694 = __this->___U3CU3E8__2_6;
 				NullCheck(L_694);
-				L_694->___Success_2 = (bool)1;
-				ReportSyncResult_t7AAFDABA3111498A424BA60577311CB99DF27F43* L_695 = L_694;
+				Rapport_t0DED00B7690FCCDE651FB02E35DD4AFF93E927D2* L_695 = L_694->___report_2;
 				NullCheck(L_695);
-				L_695->___RemoteComplete_3 = (bool)1;
-				ReportSyncResult_t7AAFDABA3111498A424BA60577311CB99DF27F43* L_696 = L_695;
-				U3CU3Ec__DisplayClass28_0_t31208A80E819265E1170205F0BF1FDAB8E1D239E* L_697 = __this->___U3CU3E8__2_6;
+				String_t* L_696 = L_695->___titre_fr_22;
+				NullCheck(L_693);
+				L_693->___Title_1 = L_696;
+				Il2CppCodeGenWriteBarrier((void**)(&L_693->___Title_1), (void*)L_696);
+				ReportSyncResult_t7AAFDABA3111498A424BA60577311CB99DF27F43* L_697 = L_693;
 				NullCheck(L_697);
-				JObject_t22BBBA7A90517B7E66E8C9D8D16DE84CB5054DE1* L_698 = L_697->___acknowledgement_4;
+				L_697->___Success_2 = (bool)1;
+				ReportSyncResult_t7AAFDABA3111498A424BA60577311CB99DF27F43* L_698 = L_697;
 				NullCheck(L_698);
-				JToken_tFD7D9015F3F97A09AD93E439ACE894D12C06E8B3* L_699;
-				L_699 = JObject_get_Item_m889A29E8FCEA531AF829407F208DD05F0108C50B(L_698, _stringLiteral470A89E5312790918702327A53B21F508C0FD6BC, NULL);
-				il2cpp_codegen_runtime_class_init_inline(JToken_tFD7D9015F3F97A09AD93E439ACE894D12C06E8B3_il2cpp_TypeInfo_var);
-				int32_t L_700;
-				L_700 = JToken_op_Explicit_m623DADB50226D4E8CA01390A029E152BCD82F667(L_699, NULL);
-				NullCheck(L_696);
-				L_696->___ConfirmedStatusId_6 = L_700;
-				ReportSyncResult_t7AAFDABA3111498A424BA60577311CB99DF27F43* L_701 = L_696;
+				L_698->___RemoteComplete_3 = (bool)1;
+				ReportSyncResult_t7AAFDABA3111498A424BA60577311CB99DF27F43* L_699 = L_698;
+				U3CU3Ec__DisplayClass28_0_t31208A80E819265E1170205F0BF1FDAB8E1D239E* L_700 = __this->___U3CU3E8__2_6;
+				NullCheck(L_700);
+				JObject_t22BBBA7A90517B7E66E8C9D8D16DE84CB5054DE1* L_701 = L_700->___acknowledgement_4;
 				NullCheck(L_701);
-				L_701->___Message_4 = _stringLiteralD00C5BDD2CFF0756F2A6508FD887819281F2CA8B;
-				Il2CppCodeGenWriteBarrier((void**)(&L_701->___Message_4), (void*)_stringLiteralD00C5BDD2CFF0756F2A6508FD887819281F2CA8B);
-				NullCheck(L_684);
-				Action_1_Invoke_m4D4A492C5CAE2C99C954643AD0A158091D7A6C59_inline(L_684, L_701, NULL);
+				JToken_tFD7D9015F3F97A09AD93E439ACE894D12C06E8B3* L_702;
+				L_702 = JObject_get_Item_m889A29E8FCEA531AF829407F208DD05F0108C50B(L_701, _stringLiteral470A89E5312790918702327A53B21F508C0FD6BC, NULL);
+				il2cpp_codegen_runtime_class_init_inline(JToken_tFD7D9015F3F97A09AD93E439ACE894D12C06E8B3_il2cpp_TypeInfo_var);
+				int32_t L_703;
+				L_703 = JToken_op_Explicit_m623DADB50226D4E8CA01390A029E152BCD82F667(L_702, NULL);
+				NullCheck(L_699);
+				L_699->___ConfirmedStatusId_6 = L_703;
+				ReportSyncResult_t7AAFDABA3111498A424BA60577311CB99DF27F43* L_704 = L_699;
+				NullCheck(L_704);
+				L_704->___Message_4 = _stringLiteralD00C5BDD2CFF0756F2A6508FD887819281F2CA8B;
+				Il2CppCodeGenWriteBarrier((void**)(&L_704->___Message_4), (void*)_stringLiteralD00C5BDD2CFF0756F2A6508FD887819281F2CA8B);
+				NullCheck(L_687);
+				Action_1_Invoke_m4D4A492C5CAE2C99C954643AD0A158091D7A6C59_inline(L_687, L_704, NULL);
 				// }
 				V_0 = (bool)0;
-				goto IL_1717;
+				goto IL_1713;
 			}
 		}// end try (depth: 1)
 		catch(Il2CppExceptionWrapper& e)
@@ -34298,10 +34327,10 @@ IL_167c_1:
 		}
 	}
 
-IL_1717:
+IL_1713:
 	{
-		bool L_702 = V_0;
-		return L_702;
+		bool L_705 = V_0;
+		return L_705;
 	}
 }
 // System.Void TabletSyncClient/<SendReport>d__28::<>m__Finally1()

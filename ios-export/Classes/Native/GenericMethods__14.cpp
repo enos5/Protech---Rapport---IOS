@@ -423,6 +423,8 @@ struct ObjectPool_1_t048E004E7532AED8FD10569876C6065B7527D2AE;
 struct Predicate_1_t8342C85FF4E41CD1F7024AC0CDC3E5312A32CB12;
 // System.Predicate`1<System.Threading.Tasks.Task>
 struct Predicate_1_t7F48518B008C1472339EEEBABA3DE203FE1F26ED;
+// System.Collections.Generic.Queue`1<SyncConflictCore/ConflictMediaJob>
+struct Queue_1_tEDC9BD3FD75E6EC891C923C3A319462E423D0638;
 // System.Collections.Generic.Queue`1<TabletBackground/Timing>
 struct Queue_1_t03AA1802679EA556B51E73DBF357FEFE76C19025;
 // UnityEngine.UIElements.StyleDataRef`1/RefCounted<UnityEngine.UIElements.InheritedData>
@@ -949,6 +951,8 @@ struct LambdaExpression_tD26FB6AEAD01B2EBB668CDEAFAAFA4948697300E;
 struct LayoutElement_tB1F24CC11AF4AA87015C8D8EE06D22349C5BF40A;
 // System.Threading.Lock
 struct Lock_t529C04C831C120E5FFD6039EC3CB76F9956BCDD7;
+// MainScript
+struct MainScript_tE5DA41EF9F6C72F24338683BF923785400FDC5FF;
 // System.Threading.ManualResetEvent
 struct ManualResetEvent_t63959486AA41A113A4353D0BF4A68E77EBA0A158;
 // UnityEngine.Material
@@ -15924,6 +15928,16 @@ struct SyncConflictCore_t523DF51143DA377F1FCF6FF462D1D10139FE77F3_StaticFields
 {
 	// System.Collections.Generic.HashSet`1<System.String> SyncConflictCore::mediaJobs
 	HashSet_1_tEFC6605F7DE53F71946C33FD371E53C3100F2178* ___mediaJobs_0;
+	// System.Collections.Generic.Queue`1<SyncConflictCore/ConflictMediaJob> SyncConflictCore::mediaQueue
+	Queue_1_tEDC9BD3FD75E6EC891C923C3A319462E423D0638* ___mediaQueue_1;
+	// System.Boolean SyncConflictCore::mediaQueueRunning
+	bool ___mediaQueueRunning_2;
+	// MainScript SyncConflictCore::mediaQueueOwner
+	MainScript_tE5DA41EF9F6C72F24338683BF923785400FDC5FF* ___mediaQueueOwner_3;
+	// UnityEngine.Coroutine SyncConflictCore::mediaQueueCoroutine
+	Coroutine_t85EA685566A254C23F3FD77AB5BDFFFF8799596B* ___mediaQueueCoroutine_4;
+	// System.Collections.IEnumerator SyncConflictCore::mediaQueueRoutine
+	RuntimeObject* ___mediaQueueRoutine_5;
 };
 
 // SyncConflictCore
