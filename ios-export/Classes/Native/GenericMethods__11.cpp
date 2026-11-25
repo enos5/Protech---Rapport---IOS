@@ -11468,12 +11468,14 @@ struct AttachmentJournal_t7811DD6C25F46001608874B672A127EE396D55CD_StaticFields
 	HashSet_1_tEFC6605F7DE53F71946C33FD371E53C3100F2178* ___legacyOwnershipNotices_6;
 	// System.Collections.Generic.HashSet`1<System.String> AttachmentJournal::checkedUnscopedRecords
 	HashSet_1_tEFC6605F7DE53F71946C33FD371E53C3100F2178* ___checkedUnscopedRecords_7;
+	// System.Collections.Generic.HashSet`1<System.String> AttachmentJournal::unverifiedLegacyJournalPaths
+	HashSet_1_tEFC6605F7DE53F71946C33FD371E53C3100F2178* ___unverifiedLegacyJournalPaths_8;
 	// System.Collections.Generic.HashSet`1<System.String> AttachmentJournal::checkedUnscopedConflicts
-	HashSet_1_tEFC6605F7DE53F71946C33FD371E53C3100F2178* ___checkedUnscopedConflicts_8;
+	HashSet_1_tEFC6605F7DE53F71946C33FD371E53C3100F2178* ___checkedUnscopedConflicts_9;
 	// System.Int64 AttachmentJournal::storageGeneration
-	int64_t ___storageGeneration_9;
+	int64_t ___storageGeneration_10;
 	// System.String[] AttachmentJournal::mediaFolders
-	StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* ___mediaFolders_10;
+	StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* ___mediaFolders_11;
 };
 
 // AttachmentJournal

@@ -44,7 +44,7 @@ static Il2CppMethodPointer s_methodPointers[9] =
 };
 static const int32_t s_InvokerIndices[9] = 
 {
-	8575,
+	8576,
 	7906,
 	2852,
 	2852,
@@ -52,7 +52,7 @@ static const int32_t s_InvokerIndices[9] =
 	6400,
 	6275,
 	6275,
-	9260,
+	9261,
 };
 IL2CPP_EXTERN_C const Il2CppCodeGenModule g_UnityEngine_UnityWebRequestAudioModule_CodeGenModule;
 const Il2CppCodeGenModule g_UnityEngine_UnityWebRequestAudioModule_CodeGenModule = 
