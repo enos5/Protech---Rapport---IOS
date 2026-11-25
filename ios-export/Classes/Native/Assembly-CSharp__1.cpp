@@ -4628,58 +4628,62 @@ struct MainScript_tE5DA41EF9F6C72F24338683BF923785400FDC5FF  : public MonoBehavi
 	String_t* ___loadedCacheIdentity_4;
 	// System.Boolean MainScript::dashboardServiceCommit
 	bool ___dashboardServiceCommit_5;
+	// System.Boolean MainScript::dashboardRefreshActive
+	bool ___dashboardRefreshActive_6;
 	// System.Int32 MainScript::activeServicePersistenceBatches
-	int32_t ___activeServicePersistenceBatches_6;
+	int32_t ___activeServicePersistenceBatches_7;
 	// System.Int32 MainScript::activeAttachmentDownloaders
-	int32_t ___activeAttachmentDownloaders_7;
+	int32_t ___activeAttachmentDownloaders_8;
+	// System.Int64 MainScript::serviceGraphGeneration
+	int64_t ___serviceGraphGeneration_9;
 	// UnityEngine.GameObject MainScript::goAlerte
-	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___goAlerte_8;
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___goAlerte_10;
 	// UnityEngine.GameObject MainScript::goChargement
-	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___goChargement_9;
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___goChargement_11;
 	// System.Collections.Generic.List`1<ServiceClient> MainScript::listeServices
-	List_1_t44AE1E098C20DCB6502FBFF0DC2FCB3A908D8F53* ___listeServices_10;
+	List_1_t44AE1E098C20DCB6502FBFF0DC2FCB3A908D8F53* ___listeServices_12;
 	// System.Collections.Generic.SortedList`2<System.Int32,System.String> MainScript::lstTypesSystemes
-	SortedList_2_t04C82F5C32B9BF01784646A86D3645CE27ADBF7B* ___lstTypesSystemes_11;
+	SortedList_2_t04C82F5C32B9BF01784646A86D3645CE27ADBF7B* ___lstTypesSystemes_13;
 	// System.Collections.Generic.SortedList`2<System.Int32,System.String> MainScript::lstRapportsPossibles
-	SortedList_2_t04C82F5C32B9BF01784646A86D3645CE27ADBF7B* ___lstRapportsPossibles_12;
+	SortedList_2_t04C82F5C32B9BF01784646A86D3645CE27ADBF7B* ___lstRapportsPossibles_14;
 	// System.String MainScript::token
-	String_t* ___token_13;
+	String_t* ___token_15;
 	// System.String MainScript::pwdapi
-	String_t* ___pwdapi_14;
+	String_t* ___pwdapi_16;
 	// System.String MainScript::apiurl
-	String_t* ___apiurl_15;
+	String_t* ___apiurl_17;
 	// System.String MainScript::userapi
-	String_t* ___userapi_16;
+	String_t* ___userapi_18;
 	// UnityEngine.Color MainScript::themeColor
-	Color_tD001788D726C3A7F1379BEED0260B9591F440C1F ___themeColor_17;
+	Color_tD001788D726C3A7F1379BEED0260B9591F440C1F ___themeColor_19;
 	// System.String MainScript::pageActuelle
-	String_t* ___pageActuelle_18;
+	String_t* ___pageActuelle_20;
 	// System.Boolean MainScript::chargerIcones
-	bool ___chargerIcones_19;
+	bool ___chargerIcones_21;
 	// System.Int32 MainScript::clientSelectionne
-	int32_t ___clientSelectionne_20;
+	int32_t ___clientSelectionne_22;
 	// System.Boolean MainScript::<SyncInProgress>k__BackingField
-	bool ___U3CSyncInProgressU3Ek__BackingField_21;
+	bool ___U3CSyncInProgressU3Ek__BackingField_23;
 	// System.Boolean MainScript::<SyncCancelRequested>k__BackingField
-	bool ___U3CSyncCancelRequestedU3Ek__BackingField_22;
+	bool ___U3CSyncCancelRequestedU3Ek__BackingField_24;
 	// System.Int32 MainScript::rapportSelectionne
-	int32_t ___rapportSelectionne_23;
+	int32_t ___rapportSelectionne_25;
 	// Utilisateur MainScript::utilisateurConnecte
-	Utilisateur_t399C56C6363780D4DA5137388DCAEB935ACB902E* ___utilisateurConnecte_24;
+	Utilisateur_t399C56C6363780D4DA5137388DCAEB935ACB902E* ___utilisateurConnecte_26;
 	// System.Int32 MainScript::bonTravailSelectionne
-	int32_t ___bonTravailSelectionne_25;
+	int32_t ___bonTravailSelectionne_27;
 	// System.Boolean MainScript::chargerListeRapports
-	bool ___chargerListeRapports_26;
+	bool ___chargerListeRapports_28;
 	// System.Int32 MainScript::loadingItems
-	int32_t ___loadingItems_27;
+	int32_t ___loadingItems_29;
 	// System.Collections.Generic.List`1<IconeDessin> MainScript::iconesDessin
-	List_1_tB4085072474C8F65C8A07B19DF716B18531F6B83* ___iconesDessin_28;
+	List_1_tB4085072474C8F65C8A07B19DF716B18531F6B83* ___iconesDessin_30;
 	// System.Boolean MainScript::debug
-	bool ___debug_29;
+	bool ___debug_31;
 	// System.Boolean MainScript::debug_internet
-	bool ___debug_internet_30;
+	bool ___debug_internet_32;
 	// System.Collections.Generic.List`1<EnvironmentSettings> MainScript::config
-	List_1_tCE83489DED8CE3A1BC7813AA1DD2916C78D7C6AC* ___config_31;
+	List_1_tCE83489DED8CE3A1BC7813AA1DD2916C78D7C6AC* ___config_33;
 };
 
 // NotesManager
@@ -8430,7 +8434,7 @@ IL_000e:
 		// if (mainScript.clientSelectionne >= 0 && mainScript.clientSelectionne < mainScript.listeServices.Count) {
 		MainScript_tE5DA41EF9F6C72F24338683BF923785400FDC5FF* L_1 = ((AppManager_tD5155B839026DE8E1F63F8868048F9CF8B26ED0C*)__this)->___mainScript_10;
 		NullCheck(L_1);
-		int32_t L_2 = L_1->___clientSelectionne_20;
+		int32_t L_2 = L_1->___clientSelectionne_22;
 		if ((((int32_t)L_2) < ((int32_t)0)))
 		{
 			goto IL_00e7;
@@ -8439,10 +8443,10 @@ IL_000e:
 	{
 		MainScript_tE5DA41EF9F6C72F24338683BF923785400FDC5FF* L_3 = ((AppManager_tD5155B839026DE8E1F63F8868048F9CF8B26ED0C*)__this)->___mainScript_10;
 		NullCheck(L_3);
-		int32_t L_4 = L_3->___clientSelectionne_20;
+		int32_t L_4 = L_3->___clientSelectionne_22;
 		MainScript_tE5DA41EF9F6C72F24338683BF923785400FDC5FF* L_5 = ((AppManager_tD5155B839026DE8E1F63F8868048F9CF8B26ED0C*)__this)->___mainScript_10;
 		NullCheck(L_5);
-		List_1_t44AE1E098C20DCB6502FBFF0DC2FCB3A908D8F53* L_6 = L_5->___listeServices_10;
+		List_1_t44AE1E098C20DCB6502FBFF0DC2FCB3A908D8F53* L_6 = L_5->___listeServices_12;
 		NullCheck(L_6);
 		int32_t L_7;
 		L_7 = List_1_get_Count_m897DC6B3EACC9FDF8B89F43E1BD2AA8B7F144883_inline(L_6, List_1_get_Count_m897DC6B3EACC9FDF8B89F43E1BD2AA8B7F144883_RuntimeMethod_var);
@@ -8455,10 +8459,10 @@ IL_000e:
 		// var service = mainScript.listeServices[mainScript.clientSelectionne];
 		MainScript_tE5DA41EF9F6C72F24338683BF923785400FDC5FF* L_8 = ((AppManager_tD5155B839026DE8E1F63F8868048F9CF8B26ED0C*)__this)->___mainScript_10;
 		NullCheck(L_8);
-		List_1_t44AE1E098C20DCB6502FBFF0DC2FCB3A908D8F53* L_9 = L_8->___listeServices_10;
+		List_1_t44AE1E098C20DCB6502FBFF0DC2FCB3A908D8F53* L_9 = L_8->___listeServices_12;
 		MainScript_tE5DA41EF9F6C72F24338683BF923785400FDC5FF* L_10 = ((AppManager_tD5155B839026DE8E1F63F8868048F9CF8B26ED0C*)__this)->___mainScript_10;
 		NullCheck(L_10);
-		int32_t L_11 = L_10->___clientSelectionne_20;
+		int32_t L_11 = L_10->___clientSelectionne_22;
 		NullCheck(L_9);
 		ServiceClient_t07C84893BDB4121BAF09BDF559688F4714F9541D* L_12;
 		L_12 = List_1_get_Item_m39EDDFB4EF7DA1D70754CA9E59200E1F55D17014(L_9, L_11, List_1_get_Item_m39EDDFB4EF7DA1D70754CA9E59200E1F55D17014_RuntimeMethod_var);
@@ -8652,7 +8656,7 @@ IL_010b:
 		MainScript_tE5DA41EF9F6C72F24338683BF923785400FDC5FF* L_61 = ((AppManager_tD5155B839026DE8E1F63F8868048F9CF8B26ED0C*)__this)->___mainScript_10;
 		int32_t L_62 = ___1_report_index;
 		NullCheck(L_61);
-		L_61->___rapportSelectionne_23 = L_62;
+		L_61->___rapportSelectionne_25 = L_62;
 		// this._report_container.Clear();
 		VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_63 = __this->____report_container_58;
 		NullCheck(L_63);
@@ -8858,10 +8862,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Rapport_t0DED00B7690FCCDE651FB02E35DD4AFF93E9
 		// return mainScript.listeServices[mainScript.clientSelectionne].rapports[mainScript.rapportSelectionne];
 		MainScript_tE5DA41EF9F6C72F24338683BF923785400FDC5FF* L_0 = ((AppManager_tD5155B839026DE8E1F63F8868048F9CF8B26ED0C*)__this)->___mainScript_10;
 		NullCheck(L_0);
-		List_1_t44AE1E098C20DCB6502FBFF0DC2FCB3A908D8F53* L_1 = L_0->___listeServices_10;
+		List_1_t44AE1E098C20DCB6502FBFF0DC2FCB3A908D8F53* L_1 = L_0->___listeServices_12;
 		MainScript_tE5DA41EF9F6C72F24338683BF923785400FDC5FF* L_2 = ((AppManager_tD5155B839026DE8E1F63F8868048F9CF8B26ED0C*)__this)->___mainScript_10;
 		NullCheck(L_2);
-		int32_t L_3 = L_2->___clientSelectionne_20;
+		int32_t L_3 = L_2->___clientSelectionne_22;
 		NullCheck(L_1);
 		ServiceClient_t07C84893BDB4121BAF09BDF559688F4714F9541D* L_4;
 		L_4 = List_1_get_Item_m39EDDFB4EF7DA1D70754CA9E59200E1F55D17014(L_1, L_3, List_1_get_Item_m39EDDFB4EF7DA1D70754CA9E59200E1F55D17014_RuntimeMethod_var);
@@ -8869,7 +8873,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Rapport_t0DED00B7690FCCDE651FB02E35DD4AFF93E9
 		RapportU5BU5D_t389AE0AA323AC3F97640FE49A24D144C010203AF* L_5 = L_4->___rapports_12;
 		MainScript_tE5DA41EF9F6C72F24338683BF923785400FDC5FF* L_6 = ((AppManager_tD5155B839026DE8E1F63F8868048F9CF8B26ED0C*)__this)->___mainScript_10;
 		NullCheck(L_6);
-		int32_t L_7 = L_6->___rapportSelectionne_23;
+		int32_t L_7 = L_6->___rapportSelectionne_25;
 		NullCheck(L_5);
 		int32_t L_8 = L_7;
 		Rapport_t0DED00B7690FCCDE651FB02E35DD4AFF93E927D2* L_9 = (L_5)->GetAt(static_cast<il2cpp_array_size_t>(L_8));
@@ -8889,10 +8893,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ServiceClient_t07C84893BDB4121BAF09BDF559688F
 		// return mainScript.listeServices[mainScript.clientSelectionne];
 		MainScript_tE5DA41EF9F6C72F24338683BF923785400FDC5FF* L_0 = ((AppManager_tD5155B839026DE8E1F63F8868048F9CF8B26ED0C*)__this)->___mainScript_10;
 		NullCheck(L_0);
-		List_1_t44AE1E098C20DCB6502FBFF0DC2FCB3A908D8F53* L_1 = L_0->___listeServices_10;
+		List_1_t44AE1E098C20DCB6502FBFF0DC2FCB3A908D8F53* L_1 = L_0->___listeServices_12;
 		MainScript_tE5DA41EF9F6C72F24338683BF923785400FDC5FF* L_2 = ((AppManager_tD5155B839026DE8E1F63F8868048F9CF8B26ED0C*)__this)->___mainScript_10;
 		NullCheck(L_2);
-		int32_t L_3 = L_2->___clientSelectionne_20;
+		int32_t L_3 = L_2->___clientSelectionne_22;
 		NullCheck(L_1);
 		ServiceClient_t07C84893BDB4121BAF09BDF559688F4714F9541D* L_4;
 		L_4 = List_1_get_Item_m39EDDFB4EF7DA1D70754CA9E59200E1F55D17014(L_1, L_3, List_1_get_Item_m39EDDFB4EF7DA1D70754CA9E59200E1F55D17014_RuntimeMethod_var);
@@ -8929,10 +8933,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ContenuRapportManager_SetOnUsage_m31AA00
 		U3CU3Ec__DisplayClass64_0_t2003EC9D93A75CE9F548E01AEA0BD087CD7ED7C5* L_2 = V_0;
 		MainScript_tE5DA41EF9F6C72F24338683BF923785400FDC5FF* L_3 = ((AppManager_tD5155B839026DE8E1F63F8868048F9CF8B26ED0C*)__this)->___mainScript_10;
 		NullCheck(L_3);
-		List_1_t44AE1E098C20DCB6502FBFF0DC2FCB3A908D8F53* L_4 = L_3->___listeServices_10;
+		List_1_t44AE1E098C20DCB6502FBFF0DC2FCB3A908D8F53* L_4 = L_3->___listeServices_12;
 		MainScript_tE5DA41EF9F6C72F24338683BF923785400FDC5FF* L_5 = ((AppManager_tD5155B839026DE8E1F63F8868048F9CF8B26ED0C*)__this)->___mainScript_10;
 		NullCheck(L_5);
-		int32_t L_6 = L_5->___clientSelectionne_20;
+		int32_t L_6 = L_5->___clientSelectionne_22;
 		NullCheck(L_4);
 		ServiceClient_t07C84893BDB4121BAF09BDF559688F4714F9541D* L_7;
 		L_7 = List_1_get_Item_m39EDDFB4EF7DA1D70754CA9E59200E1F55D17014(L_4, L_6, List_1_get_Item_m39EDDFB4EF7DA1D70754CA9E59200E1F55D17014_RuntimeMethod_var);
@@ -8940,7 +8944,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ContenuRapportManager_SetOnUsage_m31AA00
 		RapportU5BU5D_t389AE0AA323AC3F97640FE49A24D144C010203AF* L_8 = L_7->___rapports_12;
 		MainScript_tE5DA41EF9F6C72F24338683BF923785400FDC5FF* L_9 = ((AppManager_tD5155B839026DE8E1F63F8868048F9CF8B26ED0C*)__this)->___mainScript_10;
 		NullCheck(L_9);
-		int32_t L_10 = L_9->___rapportSelectionne_23;
+		int32_t L_10 = L_9->___rapportSelectionne_25;
 		NullCheck(L_8);
 		int32_t L_11 = L_10;
 		Rapport_t0DED00B7690FCCDE651FB02E35DD4AFF93E927D2* L_12 = (L_8)->GetAt(static_cast<il2cpp_array_size_t>(L_11));
@@ -8955,7 +8959,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ContenuRapportManager_SetOnUsage_m31AA00
 		int32_t L_15 = L_14->___modifie_par_id_30;
 		MainScript_tE5DA41EF9F6C72F24338683BF923785400FDC5FF* L_16 = ((AppManager_tD5155B839026DE8E1F63F8868048F9CF8B26ED0C*)__this)->___mainScript_10;
 		NullCheck(L_16);
-		Utilisateur_t399C56C6363780D4DA5137388DCAEB935ACB902E* L_17 = L_16->___utilisateurConnecte_24;
+		Utilisateur_t399C56C6363780D4DA5137388DCAEB935ACB902E* L_17 = L_16->___utilisateurConnecte_26;
 		NullCheck(L_17);
 		int32_t L_18 = L_17->___id_0;
 		if ((!(((uint32_t)L_15) == ((uint32_t)L_18))))
@@ -8983,7 +8987,7 @@ IL_006d:
 		Rapport_t0DED00B7690FCCDE651FB02E35DD4AFF93E927D2* L_23 = L_22->___rapportSelectionne_0;
 		MainScript_tE5DA41EF9F6C72F24338683BF923785400FDC5FF* L_24 = ((AppManager_tD5155B839026DE8E1F63F8868048F9CF8B26ED0C*)__this)->___mainScript_10;
 		NullCheck(L_24);
-		Utilisateur_t399C56C6363780D4DA5137388DCAEB935ACB902E* L_25 = L_24->___utilisateurConnecte_24;
+		Utilisateur_t399C56C6363780D4DA5137388DCAEB935ACB902E* L_25 = L_24->___utilisateurConnecte_26;
 		NullCheck(L_25);
 		int32_t L_26 = L_25->___id_0;
 		NullCheck(L_23);
@@ -13617,10 +13621,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR List_1_t6AC2A2EEF7243A7458635C3EE29AE3FCB637C
 		List_1_t6AC2A2EEF7243A7458635C3EE29AE3FCB637CC6D* L_1 = L_0;
 		MainScript_tE5DA41EF9F6C72F24338683BF923785400FDC5FF* L_2 = ((AppManager_tD5155B839026DE8E1F63F8868048F9CF8B26ED0C*)__this)->___mainScript_10;
 		NullCheck(L_2);
-		List_1_t44AE1E098C20DCB6502FBFF0DC2FCB3A908D8F53* L_3 = L_2->___listeServices_10;
+		List_1_t44AE1E098C20DCB6502FBFF0DC2FCB3A908D8F53* L_3 = L_2->___listeServices_12;
 		MainScript_tE5DA41EF9F6C72F24338683BF923785400FDC5FF* L_4 = ((AppManager_tD5155B839026DE8E1F63F8868048F9CF8B26ED0C*)__this)->___mainScript_10;
 		NullCheck(L_4);
-		int32_t L_5 = L_4->___clientSelectionne_20;
+		int32_t L_5 = L_4->___clientSelectionne_22;
 		NullCheck(L_3);
 		ServiceClient_t07C84893BDB4121BAF09BDF559688F4714F9541D* L_6;
 		L_6 = List_1_get_Item_m39EDDFB4EF7DA1D70754CA9E59200E1F55D17014(L_3, L_5, List_1_get_Item_m39EDDFB4EF7DA1D70754CA9E59200E1F55D17014_RuntimeMethod_var);
@@ -13638,10 +13642,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR List_1_t6AC2A2EEF7243A7458635C3EE29AE3FCB637C
 		List_1_t6AC2A2EEF7243A7458635C3EE29AE3FCB637CC6D* L_11 = L_1;
 		MainScript_tE5DA41EF9F6C72F24338683BF923785400FDC5FF* L_12 = ((AppManager_tD5155B839026DE8E1F63F8868048F9CF8B26ED0C*)__this)->___mainScript_10;
 		NullCheck(L_12);
-		List_1_t44AE1E098C20DCB6502FBFF0DC2FCB3A908D8F53* L_13 = L_12->___listeServices_10;
+		List_1_t44AE1E098C20DCB6502FBFF0DC2FCB3A908D8F53* L_13 = L_12->___listeServices_12;
 		MainScript_tE5DA41EF9F6C72F24338683BF923785400FDC5FF* L_14 = ((AppManager_tD5155B839026DE8E1F63F8868048F9CF8B26ED0C*)__this)->___mainScript_10;
 		NullCheck(L_14);
-		int32_t L_15 = L_14->___clientSelectionne_20;
+		int32_t L_15 = L_14->___clientSelectionne_22;
 		NullCheck(L_13);
 		ServiceClient_t07C84893BDB4121BAF09BDF559688F4714F9541D* L_16;
 		L_16 = List_1_get_Item_m39EDDFB4EF7DA1D70754CA9E59200E1F55D17014(L_13, L_15, List_1_get_Item_m39EDDFB4EF7DA1D70754CA9E59200E1F55D17014_RuntimeMethod_var);
@@ -14019,7 +14023,7 @@ IL_0038:
 		// valueChamp = mainScript.utilisateurConnecte.nom_complet;
 		MainScript_tE5DA41EF9F6C72F24338683BF923785400FDC5FF* L_15 = ((AppManager_tD5155B839026DE8E1F63F8868048F9CF8B26ED0C*)__this)->___mainScript_10;
 		NullCheck(L_15);
-		Utilisateur_t399C56C6363780D4DA5137388DCAEB935ACB902E* L_16 = L_15->___utilisateurConnecte_24;
+		Utilisateur_t399C56C6363780D4DA5137388DCAEB935ACB902E* L_16 = L_15->___utilisateurConnecte_26;
 		NullCheck(L_16);
 		String_t* L_17 = L_16->___nom_complet_2;
 		V_1 = L_17;
@@ -14792,10 +14796,10 @@ IL_003c:
 		// List<string> lst_emp = mainScript.listeServices[mainScript.clientSelectionne].techniciens;
 		MainScript_tE5DA41EF9F6C72F24338683BF923785400FDC5FF* L_12 = ((AppManager_tD5155B839026DE8E1F63F8868048F9CF8B26ED0C*)__this)->___mainScript_10;
 		NullCheck(L_12);
-		List_1_t44AE1E098C20DCB6502FBFF0DC2FCB3A908D8F53* L_13 = L_12->___listeServices_10;
+		List_1_t44AE1E098C20DCB6502FBFF0DC2FCB3A908D8F53* L_13 = L_12->___listeServices_12;
 		MainScript_tE5DA41EF9F6C72F24338683BF923785400FDC5FF* L_14 = ((AppManager_tD5155B839026DE8E1F63F8868048F9CF8B26ED0C*)__this)->___mainScript_10;
 		NullCheck(L_14);
-		int32_t L_15 = L_14->___clientSelectionne_20;
+		int32_t L_15 = L_14->___clientSelectionne_22;
 		NullCheck(L_13);
 		ServiceClient_t07C84893BDB4121BAF09BDF559688F4714F9541D* L_16;
 		L_16 = List_1_get_Item_m39EDDFB4EF7DA1D70754CA9E59200E1F55D17014(L_13, L_15, List_1_get_Item_m39EDDFB4EF7DA1D70754CA9E59200E1F55D17014_RuntimeMethod_var);
@@ -15276,6 +15280,7 @@ IL_0156_1:
 			//     champ.parametres.associated_file = 0;
 			// 
 			//     mainScript.listeServices[mainScript.clientSelectionne].pieces_jointes.RemoveAll(e => e.id_entite == champ.id && e.id_parent == GetReport().id_service_rapport);
+			//     mainScript.MarkServiceGraphChanged();
 			// 
 			//     ReportAttachmentStore.SaveCurrent(mainScript);
 			//     this.has_changes = true;
@@ -15454,10 +15459,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ContenuRapportManager_setImageBG_m9566A3
 		// PieceJointe pj = mainScript.listeServices[mainScript.clientSelectionne].pieces_jointes.FirstOrDefault<PieceJointe>(e => e.id == champ.parametres.associated_file);
 		MainScript_tE5DA41EF9F6C72F24338683BF923785400FDC5FF* L_8 = ((AppManager_tD5155B839026DE8E1F63F8868048F9CF8B26ED0C*)__this)->___mainScript_10;
 		NullCheck(L_8);
-		List_1_t44AE1E098C20DCB6502FBFF0DC2FCB3A908D8F53* L_9 = L_8->___listeServices_10;
+		List_1_t44AE1E098C20DCB6502FBFF0DC2FCB3A908D8F53* L_9 = L_8->___listeServices_12;
 		MainScript_tE5DA41EF9F6C72F24338683BF923785400FDC5FF* L_10 = ((AppManager_tD5155B839026DE8E1F63F8868048F9CF8B26ED0C*)__this)->___mainScript_10;
 		NullCheck(L_10);
-		int32_t L_11 = L_10->___clientSelectionne_20;
+		int32_t L_11 = L_10->___clientSelectionne_22;
 		NullCheck(L_9);
 		ServiceClient_t07C84893BDB4121BAF09BDF559688F4714F9541D* L_12;
 		L_12 = List_1_get_Item_m39EDDFB4EF7DA1D70754CA9E59200E1F55D17014(L_9, L_11, List_1_get_Item_m39EDDFB4EF7DA1D70754CA9E59200E1F55D17014_RuntimeMethod_var);
@@ -15594,10 +15599,10 @@ IL_00df:
 		// PieceJointe pj = mainScript.listeServices[mainScript.clientSelectionne].pieces_jointes.FirstOrDefault<PieceJointe>(e => e.id_entite == champ.id && e.id_parent == GetReport().id_service_rapport);
 		MainScript_tE5DA41EF9F6C72F24338683BF923785400FDC5FF* L_46 = ((AppManager_tD5155B839026DE8E1F63F8868048F9CF8B26ED0C*)__this)->___mainScript_10;
 		NullCheck(L_46);
-		List_1_t44AE1E098C20DCB6502FBFF0DC2FCB3A908D8F53* L_47 = L_46->___listeServices_10;
+		List_1_t44AE1E098C20DCB6502FBFF0DC2FCB3A908D8F53* L_47 = L_46->___listeServices_12;
 		MainScript_tE5DA41EF9F6C72F24338683BF923785400FDC5FF* L_48 = ((AppManager_tD5155B839026DE8E1F63F8868048F9CF8B26ED0C*)__this)->___mainScript_10;
 		NullCheck(L_48);
-		int32_t L_49 = L_48->___clientSelectionne_20;
+		int32_t L_49 = L_48->___clientSelectionne_22;
 		NullCheck(L_47);
 		ServiceClient_t07C84893BDB4121BAF09BDF559688F4714F9541D* L_50;
 		L_50 = List_1_get_Item_m39EDDFB4EF7DA1D70754CA9E59200E1F55D17014(L_47, L_49, List_1_get_Item_m39EDDFB4EF7DA1D70754CA9E59200E1F55D17014_RuntimeMethod_var);
@@ -16051,10 +16056,10 @@ IL_0067:
 		// TypeDonnee[] typesDonnee = mainScript.listeServices[mainScript.clientSelectionne].typesDonnee;
 		MainScript_tE5DA41EF9F6C72F24338683BF923785400FDC5FF* L_23 = ((AppManager_tD5155B839026DE8E1F63F8868048F9CF8B26ED0C*)__this)->___mainScript_10;
 		NullCheck(L_23);
-		List_1_t44AE1E098C20DCB6502FBFF0DC2FCB3A908D8F53* L_24 = L_23->___listeServices_10;
+		List_1_t44AE1E098C20DCB6502FBFF0DC2FCB3A908D8F53* L_24 = L_23->___listeServices_12;
 		MainScript_tE5DA41EF9F6C72F24338683BF923785400FDC5FF* L_25 = ((AppManager_tD5155B839026DE8E1F63F8868048F9CF8B26ED0C*)__this)->___mainScript_10;
 		NullCheck(L_25);
-		int32_t L_26 = L_25->___clientSelectionne_20;
+		int32_t L_26 = L_25->___clientSelectionne_22;
 		NullCheck(L_24);
 		ServiceClient_t07C84893BDB4121BAF09BDF559688F4714F9541D* L_27;
 		L_27 = List_1_get_Item_m39EDDFB4EF7DA1D70754CA9E59200E1F55D17014(L_24, L_26, List_1_get_Item_m39EDDFB4EF7DA1D70754CA9E59200E1F55D17014_RuntimeMethod_var);
@@ -21171,7 +21176,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ContenuRapportManager_ShowSignature_m6DB
 		L_3 = Component_GetComponent_TisListeRapportsManager_tE7026E2C6CEE4A97B8BE8742A4F7C2D2315738E3_mC45656EC63F797AFB5A45198FF1F4173CF0EA80B(__this, Component_GetComponent_TisListeRapportsManager_tE7026E2C6CEE4A97B8BE8742A4F7C2D2315738E3_mC45656EC63F797AFB5A45198FF1F4173CF0EA80B_RuntimeMethod_var);
 		MainScript_tE5DA41EF9F6C72F24338683BF923785400FDC5FF* L_4 = ((AppManager_tD5155B839026DE8E1F63F8868048F9CF8B26ED0C*)__this)->___mainScript_10;
 		NullCheck(L_4);
-		int32_t L_5 = L_4->___rapportSelectionne_23;
+		int32_t L_5 = L_4->___rapportSelectionne_25;
 		NullCheck(L_3);
 		L_3->___prev_index_report_20 = L_5;
 		// GetComponent<ListeRapportsManager>().prev_index_client = mainScript.clientSelectionne;
@@ -21179,7 +21184,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ContenuRapportManager_ShowSignature_m6DB
 		L_6 = Component_GetComponent_TisListeRapportsManager_tE7026E2C6CEE4A97B8BE8742A4F7C2D2315738E3_mC45656EC63F797AFB5A45198FF1F4173CF0EA80B(__this, Component_GetComponent_TisListeRapportsManager_tE7026E2C6CEE4A97B8BE8742A4F7C2D2315738E3_mC45656EC63F797AFB5A45198FF1F4173CF0EA80B_RuntimeMethod_var);
 		MainScript_tE5DA41EF9F6C72F24338683BF923785400FDC5FF* L_7 = ((AppManager_tD5155B839026DE8E1F63F8868048F9CF8B26ED0C*)__this)->___mainScript_10;
 		NullCheck(L_7);
-		int32_t L_8 = L_7->___clientSelectionne_20;
+		int32_t L_8 = L_7->___clientSelectionne_22;
 		NullCheck(L_6);
 		L_6->___prev_index_client_21 = L_8;
 		// setOldScroll();
@@ -21192,7 +21197,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ContenuRapportManager_ShowSignature_m6DB
 		L_10 = GameObject_GetComponent_TisRapportManager_t2629F591BD0F53BB238268E996B5C2770A07DA0F_m93C15BEE53D1E5BCB2035502CDA3A17FB835C64F(L_9, GameObject_GetComponent_TisRapportManager_t2629F591BD0F53BB238268E996B5C2770A07DA0F_m93C15BEE53D1E5BCB2035502CDA3A17FB835C64F_RuntimeMethod_var);
 		MainScript_tE5DA41EF9F6C72F24338683BF923785400FDC5FF* L_11 = ((AppManager_tD5155B839026DE8E1F63F8868048F9CF8B26ED0C*)__this)->___mainScript_10;
 		NullCheck(L_11);
-		int32_t L_12 = L_11->___clientSelectionne_20;
+		int32_t L_12 = L_11->___clientSelectionne_22;
 		String_t* L_13 = __this->___container_name_60;
 		NullCheck(L_10);
 		RapportManager_SauvegarderTemporaire_m023ACF5BABDF642B3EC7BD64FB8A4FA41E6911B5(L_10, L_12, L_13, (bool)0, NULL);
@@ -21259,10 +21264,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ContenuRapportManager_ShowSignature_m6DB
 		// PieceJointe pj = mainScript.listeServices[mainScript.clientSelectionne].pieces_jointes.FirstOrDefault<PieceJointe>(e => e.id == fct_params.champ.parametres.associated_file);
 		MainScript_tE5DA41EF9F6C72F24338683BF923785400FDC5FF* L_35 = ((AppManager_tD5155B839026DE8E1F63F8868048F9CF8B26ED0C*)__this)->___mainScript_10;
 		NullCheck(L_35);
-		List_1_t44AE1E098C20DCB6502FBFF0DC2FCB3A908D8F53* L_36 = L_35->___listeServices_10;
+		List_1_t44AE1E098C20DCB6502FBFF0DC2FCB3A908D8F53* L_36 = L_35->___listeServices_12;
 		MainScript_tE5DA41EF9F6C72F24338683BF923785400FDC5FF* L_37 = ((AppManager_tD5155B839026DE8E1F63F8868048F9CF8B26ED0C*)__this)->___mainScript_10;
 		NullCheck(L_37);
-		int32_t L_38 = L_37->___clientSelectionne_20;
+		int32_t L_38 = L_37->___clientSelectionne_22;
 		NullCheck(L_36);
 		ServiceClient_t07C84893BDB4121BAF09BDF559688F4714F9541D* L_39;
 		L_39 = List_1_get_Item_m39EDDFB4EF7DA1D70754CA9E59200E1F55D17014(L_36, L_38, List_1_get_Item_m39EDDFB4EF7DA1D70754CA9E59200E1F55D17014_RuntimeMethod_var);
@@ -21900,10 +21905,10 @@ IL_01c8:
 		// valueChamp = mainScript.listeServices[mainScript.clientSelectionne].infos_batiment;
 		MainScript_tE5DA41EF9F6C72F24338683BF923785400FDC5FF* L_84 = ((AppManager_tD5155B839026DE8E1F63F8868048F9CF8B26ED0C*)__this)->___mainScript_10;
 		NullCheck(L_84);
-		List_1_t44AE1E098C20DCB6502FBFF0DC2FCB3A908D8F53* L_85 = L_84->___listeServices_10;
+		List_1_t44AE1E098C20DCB6502FBFF0DC2FCB3A908D8F53* L_85 = L_84->___listeServices_12;
 		MainScript_tE5DA41EF9F6C72F24338683BF923785400FDC5FF* L_86 = ((AppManager_tD5155B839026DE8E1F63F8868048F9CF8B26ED0C*)__this)->___mainScript_10;
 		NullCheck(L_86);
-		int32_t L_87 = L_86->___clientSelectionne_20;
+		int32_t L_87 = L_86->___clientSelectionne_22;
 		NullCheck(L_85);
 		ServiceClient_t07C84893BDB4121BAF09BDF559688F4714F9541D* L_88;
 		L_88 = List_1_get_Item_m39EDDFB4EF7DA1D70754CA9E59200E1F55D17014(L_85, L_87, List_1_get_Item_m39EDDFB4EF7DA1D70754CA9E59200E1F55D17014_RuntimeMethod_var);
@@ -23683,11 +23688,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ContenuRapportManager_EndReportCompletio
 		L_1 = GameObject_GetComponent_TisRapportManager_t2629F591BD0F53BB238268E996B5C2770A07DA0F_m93C15BEE53D1E5BCB2035502CDA3A17FB835C64F(L_0, GameObject_GetComponent_TisRapportManager_t2629F591BD0F53BB238268E996B5C2770A07DA0F_m93C15BEE53D1E5BCB2035502CDA3A17FB835C64F_RuntimeMethod_var);
 		MainScript_tE5DA41EF9F6C72F24338683BF923785400FDC5FF* L_2 = ((AppManager_tD5155B839026DE8E1F63F8868048F9CF8B26ED0C*)__this)->___mainScript_10;
 		NullCheck(L_2);
-		int32_t L_3 = L_2->___clientSelectionne_20;
+		int32_t L_3 = L_2->___clientSelectionne_22;
 		String_t* L_4 = __this->___container_name_60;
 		MainScript_tE5DA41EF9F6C72F24338683BF923785400FDC5FF* L_5 = ((AppManager_tD5155B839026DE8E1F63F8868048F9CF8B26ED0C*)__this)->___mainScript_10;
 		NullCheck(L_5);
-		int32_t L_6 = L_5->___rapportSelectionne_23;
+		int32_t L_6 = L_5->___rapportSelectionne_25;
 		Statut_t94B09B516A050666C15171FD74BE65CDBC5EFEB7* L_7 = ___0_stat;
 		NullCheck(L_1);
 		RapportManager_SauvegarderRapport_m7F10FE89FF625348CDDA60687151E1DFD631CE14(L_1, L_3, (bool)1, L_4, L_6, L_7, NULL);
@@ -24410,10 +24415,10 @@ IL_005b:
 		// var sectionTrouveeN = mainScript.listeServices[mainScript.clientSelectionne].rapports[mainScript.rapportSelectionne].sections.SingleOrDefault(item => item.id == Utils.getIntVal(handlerParams.idSection));
 		MainScript_tE5DA41EF9F6C72F24338683BF923785400FDC5FF* L_25 = ((AppManager_tD5155B839026DE8E1F63F8868048F9CF8B26ED0C*)__this)->___mainScript_10;
 		NullCheck(L_25);
-		List_1_t44AE1E098C20DCB6502FBFF0DC2FCB3A908D8F53* L_26 = L_25->___listeServices_10;
+		List_1_t44AE1E098C20DCB6502FBFF0DC2FCB3A908D8F53* L_26 = L_25->___listeServices_12;
 		MainScript_tE5DA41EF9F6C72F24338683BF923785400FDC5FF* L_27 = ((AppManager_tD5155B839026DE8E1F63F8868048F9CF8B26ED0C*)__this)->___mainScript_10;
 		NullCheck(L_27);
-		int32_t L_28 = L_27->___clientSelectionne_20;
+		int32_t L_28 = L_27->___clientSelectionne_22;
 		NullCheck(L_26);
 		ServiceClient_t07C84893BDB4121BAF09BDF559688F4714F9541D* L_29;
 		L_29 = List_1_get_Item_m39EDDFB4EF7DA1D70754CA9E59200E1F55D17014(L_26, L_28, List_1_get_Item_m39EDDFB4EF7DA1D70754CA9E59200E1F55D17014_RuntimeMethod_var);
@@ -24421,7 +24426,7 @@ IL_005b:
 		RapportU5BU5D_t389AE0AA323AC3F97640FE49A24D144C010203AF* L_30 = L_29->___rapports_12;
 		MainScript_tE5DA41EF9F6C72F24338683BF923785400FDC5FF* L_31 = ((AppManager_tD5155B839026DE8E1F63F8868048F9CF8B26ED0C*)__this)->___mainScript_10;
 		NullCheck(L_31);
-		int32_t L_32 = L_31->___rapportSelectionne_23;
+		int32_t L_32 = L_31->___rapportSelectionne_25;
 		NullCheck(L_30);
 		int32_t L_33 = L_32;
 		Rapport_t0DED00B7690FCCDE651FB02E35DD4AFF93E927D2* L_34 = (L_30)->GetAt(static_cast<il2cpp_array_size_t>(L_33));
@@ -26769,7 +26774,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ContenuRapportManager_PersistTableChange
 			L_6 = GameObject_GetComponent_TisRapportManager_t2629F591BD0F53BB238268E996B5C2770A07DA0F_m93C15BEE53D1E5BCB2035502CDA3A17FB835C64F(L_5, GameObject_GetComponent_TisRapportManager_t2629F591BD0F53BB238268E996B5C2770A07DA0F_m93C15BEE53D1E5BCB2035502CDA3A17FB835C64F_RuntimeMethod_var);
 			MainScript_tE5DA41EF9F6C72F24338683BF923785400FDC5FF* L_7 = ((AppManager_tD5155B839026DE8E1F63F8868048F9CF8B26ED0C*)__this)->___mainScript_10;
 			NullCheck(L_7);
-			int32_t L_8 = L_7->___clientSelectionne_20;
+			int32_t L_8 = L_7->___clientSelectionne_22;
 			String_t* L_9 = __this->___container_name_60;
 			NullCheck(L_6);
 			RapportManager_SauvegarderTemporaire_m023ACF5BABDF642B3EC7BD64FB8A4FA41E6911B5(L_6, L_8, L_9, (bool)0, NULL);
@@ -29251,7 +29256,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ContenuRapportManager_U3Cfct_btnPhotoU3E
 		L_1 = GameObject_GetComponent_TisRapportManager_t2629F591BD0F53BB238268E996B5C2770A07DA0F_m93C15BEE53D1E5BCB2035502CDA3A17FB835C64F(L_0, GameObject_GetComponent_TisRapportManager_t2629F591BD0F53BB238268E996B5C2770A07DA0F_m93C15BEE53D1E5BCB2035502CDA3A17FB835C64F_RuntimeMethod_var);
 		MainScript_tE5DA41EF9F6C72F24338683BF923785400FDC5FF* L_2 = ((AppManager_tD5155B839026DE8E1F63F8868048F9CF8B26ED0C*)__this)->___mainScript_10;
 		NullCheck(L_2);
-		int32_t L_3 = L_2->___clientSelectionne_20;
+		int32_t L_3 = L_2->___clientSelectionne_22;
 		String_t* L_4 = __this->___container_name_60;
 		NullCheck(L_1);
 		RapportManager_SauvegarderTemporaire_m023ACF5BABDF642B3EC7BD64FB8A4FA41E6911B5(L_1, L_3, L_4, (bool)0, NULL);
@@ -29277,7 +29282,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ContenuRapportManager_U3Cfct_btnVideoU3E
 		L_1 = GameObject_GetComponent_TisRapportManager_t2629F591BD0F53BB238268E996B5C2770A07DA0F_m93C15BEE53D1E5BCB2035502CDA3A17FB835C64F(L_0, GameObject_GetComponent_TisRapportManager_t2629F591BD0F53BB238268E996B5C2770A07DA0F_m93C15BEE53D1E5BCB2035502CDA3A17FB835C64F_RuntimeMethod_var);
 		MainScript_tE5DA41EF9F6C72F24338683BF923785400FDC5FF* L_2 = ((AppManager_tD5155B839026DE8E1F63F8868048F9CF8B26ED0C*)__this)->___mainScript_10;
 		NullCheck(L_2);
-		int32_t L_3 = L_2->___clientSelectionne_20;
+		int32_t L_3 = L_2->___clientSelectionne_22;
 		String_t* L_4 = __this->___container_name_60;
 		NullCheck(L_1);
 		RapportManager_SauvegarderTemporaire_m023ACF5BABDF642B3EC7BD64FB8A4FA41E6911B5(L_1, L_3, L_4, (bool)0, NULL);

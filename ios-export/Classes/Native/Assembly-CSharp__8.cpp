@@ -5623,58 +5623,62 @@ struct MainScript_tE5DA41EF9F6C72F24338683BF923785400FDC5FF  : public MonoBehavi
 	String_t* ___loadedCacheIdentity_4;
 	// System.Boolean MainScript::dashboardServiceCommit
 	bool ___dashboardServiceCommit_5;
+	// System.Boolean MainScript::dashboardRefreshActive
+	bool ___dashboardRefreshActive_6;
 	// System.Int32 MainScript::activeServicePersistenceBatches
-	int32_t ___activeServicePersistenceBatches_6;
+	int32_t ___activeServicePersistenceBatches_7;
 	// System.Int32 MainScript::activeAttachmentDownloaders
-	int32_t ___activeAttachmentDownloaders_7;
+	int32_t ___activeAttachmentDownloaders_8;
+	// System.Int64 MainScript::serviceGraphGeneration
+	int64_t ___serviceGraphGeneration_9;
 	// UnityEngine.GameObject MainScript::goAlerte
-	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___goAlerte_8;
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___goAlerte_10;
 	// UnityEngine.GameObject MainScript::goChargement
-	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___goChargement_9;
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___goChargement_11;
 	// System.Collections.Generic.List`1<ServiceClient> MainScript::listeServices
-	List_1_t44AE1E098C20DCB6502FBFF0DC2FCB3A908D8F53* ___listeServices_10;
+	List_1_t44AE1E098C20DCB6502FBFF0DC2FCB3A908D8F53* ___listeServices_12;
 	// System.Collections.Generic.SortedList`2<System.Int32,System.String> MainScript::lstTypesSystemes
-	SortedList_2_t04C82F5C32B9BF01784646A86D3645CE27ADBF7B* ___lstTypesSystemes_11;
+	SortedList_2_t04C82F5C32B9BF01784646A86D3645CE27ADBF7B* ___lstTypesSystemes_13;
 	// System.Collections.Generic.SortedList`2<System.Int32,System.String> MainScript::lstRapportsPossibles
-	SortedList_2_t04C82F5C32B9BF01784646A86D3645CE27ADBF7B* ___lstRapportsPossibles_12;
+	SortedList_2_t04C82F5C32B9BF01784646A86D3645CE27ADBF7B* ___lstRapportsPossibles_14;
 	// System.String MainScript::token
-	String_t* ___token_13;
+	String_t* ___token_15;
 	// System.String MainScript::pwdapi
-	String_t* ___pwdapi_14;
+	String_t* ___pwdapi_16;
 	// System.String MainScript::apiurl
-	String_t* ___apiurl_15;
+	String_t* ___apiurl_17;
 	// System.String MainScript::userapi
-	String_t* ___userapi_16;
+	String_t* ___userapi_18;
 	// UnityEngine.Color MainScript::themeColor
-	Color_tD001788D726C3A7F1379BEED0260B9591F440C1F ___themeColor_17;
+	Color_tD001788D726C3A7F1379BEED0260B9591F440C1F ___themeColor_19;
 	// System.String MainScript::pageActuelle
-	String_t* ___pageActuelle_18;
+	String_t* ___pageActuelle_20;
 	// System.Boolean MainScript::chargerIcones
-	bool ___chargerIcones_19;
+	bool ___chargerIcones_21;
 	// System.Int32 MainScript::clientSelectionne
-	int32_t ___clientSelectionne_20;
+	int32_t ___clientSelectionne_22;
 	// System.Boolean MainScript::<SyncInProgress>k__BackingField
-	bool ___U3CSyncInProgressU3Ek__BackingField_21;
+	bool ___U3CSyncInProgressU3Ek__BackingField_23;
 	// System.Boolean MainScript::<SyncCancelRequested>k__BackingField
-	bool ___U3CSyncCancelRequestedU3Ek__BackingField_22;
+	bool ___U3CSyncCancelRequestedU3Ek__BackingField_24;
 	// System.Int32 MainScript::rapportSelectionne
-	int32_t ___rapportSelectionne_23;
+	int32_t ___rapportSelectionne_25;
 	// Utilisateur MainScript::utilisateurConnecte
-	Utilisateur_t399C56C6363780D4DA5137388DCAEB935ACB902E* ___utilisateurConnecte_24;
+	Utilisateur_t399C56C6363780D4DA5137388DCAEB935ACB902E* ___utilisateurConnecte_26;
 	// System.Int32 MainScript::bonTravailSelectionne
-	int32_t ___bonTravailSelectionne_25;
+	int32_t ___bonTravailSelectionne_27;
 	// System.Boolean MainScript::chargerListeRapports
-	bool ___chargerListeRapports_26;
+	bool ___chargerListeRapports_28;
 	// System.Int32 MainScript::loadingItems
-	int32_t ___loadingItems_27;
+	int32_t ___loadingItems_29;
 	// System.Collections.Generic.List`1<IconeDessin> MainScript::iconesDessin
-	List_1_tB4085072474C8F65C8A07B19DF716B18531F6B83* ___iconesDessin_28;
+	List_1_tB4085072474C8F65C8A07B19DF716B18531F6B83* ___iconesDessin_30;
 	// System.Boolean MainScript::debug
-	bool ___debug_29;
+	bool ___debug_31;
 	// System.Boolean MainScript::debug_internet
-	bool ___debug_internet_30;
+	bool ___debug_internet_32;
 	// System.Collections.Generic.List`1<EnvironmentSettings> MainScript::config
-	List_1_tCE83489DED8CE3A1BC7813AA1DD2916C78D7C6AC* ___config_31;
+	List_1_tCE83489DED8CE3A1BC7813AA1DD2916C78D7C6AC* ___config_33;
 };
 
 // MissingAttachmentsException
@@ -10776,7 +10780,7 @@ IL_0055_1:
 				// using(var request=UnityWebRequest.Post(owner.apiurl+"services",form)){
 				MainScript_tE5DA41EF9F6C72F24338683BF923785400FDC5FF* L_29 = __this->___owner_4;
 				NullCheck(L_29);
-				String_t* L_30 = L_29->___apiurl_15;
+				String_t* L_30 = L_29->___apiurl_17;
 				String_t* L_31;
 				L_31 = String_Concat_m9E3155FB84015C823606188F53B47CB44C444991(L_30, _stringLiteral97BA52F16D6634F698F0059CBBC07D3302FFD843, NULL);
 				WWWForm_t0DAE123504AB1B2BC17C18714741B92AB3B3B045* L_32 = V_2;
@@ -12707,7 +12711,7 @@ IL_067d_1:
 				NullCheck(L_193);
 				MainScript_tE5DA41EF9F6C72F24338683BF923785400FDC5FF* L_194 = L_193->___owner_0;
 				NullCheck(L_194);
-				Utilisateur_t399C56C6363780D4DA5137388DCAEB935ACB902E* L_195 = L_194->___utilisateurConnecte_24;
+				Utilisateur_t399C56C6363780D4DA5137388DCAEB935ACB902E* L_195 = L_194->___utilisateurConnecte_26;
 				NullCheck(L_195);
 				int32_t L_196 = L_195->___id_0;
 				NullCheck(L_192);
@@ -13103,7 +13107,7 @@ IL_0a0f_1:
 				NullCheck(L_305);
 				MainScript_tE5DA41EF9F6C72F24338683BF923785400FDC5FF* L_306 = L_305->___owner_0;
 				NullCheck(L_306);
-				String_t* L_307 = L_306->___apiurl_15;
+				String_t* L_307 = L_306->___apiurl_17;
 				String_t* L_308;
 				L_308 = String_Concat_m9E3155FB84015C823606188F53B47CB44C444991(L_307, _stringLiteral97BA52F16D6634F698F0059CBBC07D3302FFD843, NULL);
 				DownloadHandlerBuffer_t34C626F6513FA9A44FDDDEE85455CF2CD9DA5974* L_309 = (DownloadHandlerBuffer_t34C626F6513FA9A44FDDDEE85455CF2CD9DA5974*)il2cpp_codegen_object_new(DownloadHandlerBuffer_t34C626F6513FA9A44FDDDEE85455CF2CD9DA5974_il2cpp_TypeInfo_var);
@@ -13510,7 +13514,7 @@ IL_0de3_1:
 				NullCheck(L_420);
 				MainScript_tE5DA41EF9F6C72F24338683BF923785400FDC5FF* L_421 = L_420->___owner_0;
 				NullCheck(L_421);
-				String_t* L_422 = L_421->___apiurl_15;
+				String_t* L_422 = L_421->___apiurl_17;
 				String_t* L_423;
 				L_423 = String_Concat_m9E3155FB84015C823606188F53B47CB44C444991(L_422, _stringLiteral97BA52F16D6634F698F0059CBBC07D3302FFD843, NULL);
 				DownloadHandlerBuffer_t34C626F6513FA9A44FDDDEE85455CF2CD9DA5974* L_424 = (DownloadHandlerBuffer_t34C626F6513FA9A44FDDDEE85455CF2CD9DA5974*)il2cpp_codegen_object_new(DownloadHandlerBuffer_t34C626F6513FA9A44FDDDEE85455CF2CD9DA5974_il2cpp_TypeInfo_var);
@@ -13758,7 +13762,7 @@ IL_0fe1_1:
 				NullCheck(L_489);
 				MainScript_tE5DA41EF9F6C72F24338683BF923785400FDC5FF* L_490 = L_489->___owner_0;
 				NullCheck(L_490);
-				String_t* L_491 = L_490->___apiurl_15;
+				String_t* L_491 = L_490->___apiurl_17;
 				String_t* L_492;
 				L_492 = String_Concat_m9E3155FB84015C823606188F53B47CB44C444991(L_491, _stringLiteral97BA52F16D6634F698F0059CBBC07D3302FFD843, NULL);
 				WWWForm_t0DAE123504AB1B2BC17C18714741B92AB3B3B045* L_493 = V_5;
@@ -24506,7 +24510,7 @@ IL_001d:
 	{
 		MainScript_tE5DA41EF9F6C72F24338683BF923785400FDC5FF* L_9 = V_1;
 		NullCheck(L_9);
-		Utilisateur_t399C56C6363780D4DA5137388DCAEB935ACB902E* L_10 = L_9->___utilisateurConnecte_24;
+		Utilisateur_t399C56C6363780D4DA5137388DCAEB935ACB902E* L_10 = L_9->___utilisateurConnecte_26;
 		if (!L_10)
 		{
 			goto IL_0038;
@@ -24555,8 +24559,8 @@ IL_004e:
 		String_t* L_19;
 		L_19 = Object_get_name_mAC2F6B897CF1303BA4249B4CB55271AFACBB6392(L_18, NULL);
 		NullCheck(L_17);
-		L_17->___pageActuelle_18 = L_19;
-		Il2CppCodeGenWriteBarrier((void**)(&L_17->___pageActuelle_18), (void*)L_19);
+		L_17->___pageActuelle_20 = L_19;
+		Il2CppCodeGenWriteBarrier((void**)(&L_17->___pageActuelle_20), (void*)L_19);
 		// prochaineFenetre.SetActive(true);
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_20 = ___1_prochaineFenetre;
 		NullCheck(L_20);
@@ -24637,7 +24641,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Utils_EstConnecteInternet_mF46DC41936496
 		MainScript_tE5DA41EF9F6C72F24338683BF923785400FDC5FF* L_1;
 		L_1 = GameObject_GetComponent_TisMainScript_tE5DA41EF9F6C72F24338683BF923785400FDC5FF_m305B2730E271E73DDF27A138CAEFBF3240A147E9(L_0, GameObject_GetComponent_TisMainScript_tE5DA41EF9F6C72F24338683BF923785400FDC5FF_m305B2730E271E73DDF27A138CAEFBF3240A147E9_RuntimeMethod_var);
 		NullCheck(L_1);
-		bool L_2 = L_1->___debug_29;
+		bool L_2 = L_1->___debug_31;
 		if (!L_2)
 		{
 			goto IL_002b;
@@ -24651,7 +24655,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Utils_EstConnecteInternet_mF46DC41936496
 		MainScript_tE5DA41EF9F6C72F24338683BF923785400FDC5FF* L_4;
 		L_4 = GameObject_GetComponent_TisMainScript_tE5DA41EF9F6C72F24338683BF923785400FDC5FF_m305B2730E271E73DDF27A138CAEFBF3240A147E9(L_3, GameObject_GetComponent_TisMainScript_tE5DA41EF9F6C72F24338683BF923785400FDC5FF_m305B2730E271E73DDF27A138CAEFBF3240A147E9_RuntimeMethod_var);
 		NullCheck(L_4);
-		bool L_5 = L_4->___debug_internet_30;
+		bool L_5 = L_4->___debug_internet_32;
 		return L_5;
 	}
 
@@ -25069,7 +25073,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ServiceClient_t07C84893BDB4121BAF09BDF559688F
 		MainScript_tE5DA41EF9F6C72F24338683BF923785400FDC5FF* L_2;
 		L_2 = GameObject_GetComponent_TisMainScript_tE5DA41EF9F6C72F24338683BF923785400FDC5FF_m305B2730E271E73DDF27A138CAEFBF3240A147E9(L_1, GameObject_GetComponent_TisMainScript_tE5DA41EF9F6C72F24338683BF923785400FDC5FF_m305B2730E271E73DDF27A138CAEFBF3240A147E9_RuntimeMethod_var);
 		NullCheck(L_2);
-		List_1_t44AE1E098C20DCB6502FBFF0DC2FCB3A908D8F53* L_3 = L_2->___listeServices_10;
+		List_1_t44AE1E098C20DCB6502FBFF0DC2FCB3A908D8F53* L_3 = L_2->___listeServices_12;
 		il2cpp_codegen_runtime_class_init_inline(U3CU3Ec_tE96A6AE87CD1E512454DC3E46644DE5ED7425E1D_il2cpp_TypeInfo_var);
 		Func_2_t24CA17142A117001A1FE4F9268D2B09D6284A203* L_4 = ((U3CU3Ec_tE96A6AE87CD1E512454DC3E46644DE5ED7425E1D_StaticFields*)il2cpp_codegen_static_fields_for(U3CU3Ec_tE96A6AE87CD1E512454DC3E46644DE5ED7425E1D_il2cpp_TypeInfo_var))->___U3CU3E9__9_0_1;
 		Func_2_t24CA17142A117001A1FE4F9268D2B09D6284A203* L_5 = L_4;
@@ -26060,7 +26064,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Rapport_t0DED00B7690FCCDE651FB02E35DD4AFF93E9
 		MainScript_tE5DA41EF9F6C72F24338683BF923785400FDC5FF* L_1;
 		L_1 = GameObject_GetComponent_TisMainScript_tE5DA41EF9F6C72F24338683BF923785400FDC5FF_m305B2730E271E73DDF27A138CAEFBF3240A147E9(L_0, GameObject_GetComponent_TisMainScript_tE5DA41EF9F6C72F24338683BF923785400FDC5FF_m305B2730E271E73DDF27A138CAEFBF3240A147E9_RuntimeMethod_var);
 		NullCheck(L_1);
-		List_1_t44AE1E098C20DCB6502FBFF0DC2FCB3A908D8F53* L_2 = L_1->___listeServices_10;
+		List_1_t44AE1E098C20DCB6502FBFF0DC2FCB3A908D8F53* L_2 = L_1->___listeServices_12;
 		NullCheck(L_2);
 		Enumerator_tFE08FB86C64F8D309D09087C39A613749EF75958 L_3;
 		L_3 = List_1_GetEnumerator_mC6328BE8CD0867379AB4D462E915BA8ADAD6AF46(L_2, List_1_GetEnumerator_mC6328BE8CD0867379AB4D462E915BA8ADAD6AF46_RuntimeMethod_var);
@@ -26200,7 +26204,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ServiceClient_t07C84893BDB4121BAF09BDF559688F
 		MainScript_tE5DA41EF9F6C72F24338683BF923785400FDC5FF* L_1;
 		L_1 = GameObject_GetComponent_TisMainScript_tE5DA41EF9F6C72F24338683BF923785400FDC5FF_m305B2730E271E73DDF27A138CAEFBF3240A147E9(L_0, GameObject_GetComponent_TisMainScript_tE5DA41EF9F6C72F24338683BF923785400FDC5FF_m305B2730E271E73DDF27A138CAEFBF3240A147E9_RuntimeMethod_var);
 		NullCheck(L_1);
-		List_1_t44AE1E098C20DCB6502FBFF0DC2FCB3A908D8F53* L_2 = L_1->___listeServices_10;
+		List_1_t44AE1E098C20DCB6502FBFF0DC2FCB3A908D8F53* L_2 = L_1->___listeServices_12;
 		NullCheck(L_2);
 		Enumerator_tFE08FB86C64F8D309D09087C39A613749EF75958 L_3;
 		L_3 = List_1_GetEnumerator_mC6328BE8CD0867379AB4D462E915BA8ADAD6AF46(L_2, List_1_GetEnumerator_mC6328BE8CD0867379AB4D462E915BA8ADAD6AF46_RuntimeMethod_var);
@@ -26338,7 +26342,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ServiceClient_t07C84893BDB4121BAF09BDF559688F
 		MainScript_tE5DA41EF9F6C72F24338683BF923785400FDC5FF* L_1;
 		L_1 = GameObject_GetComponent_TisMainScript_tE5DA41EF9F6C72F24338683BF923785400FDC5FF_m305B2730E271E73DDF27A138CAEFBF3240A147E9(L_0, GameObject_GetComponent_TisMainScript_tE5DA41EF9F6C72F24338683BF923785400FDC5FF_m305B2730E271E73DDF27A138CAEFBF3240A147E9_RuntimeMethod_var);
 		NullCheck(L_1);
-		List_1_t44AE1E098C20DCB6502FBFF0DC2FCB3A908D8F53* L_2 = L_1->___listeServices_10;
+		List_1_t44AE1E098C20DCB6502FBFF0DC2FCB3A908D8F53* L_2 = L_1->___listeServices_12;
 		NullCheck(L_2);
 		Enumerator_tFE08FB86C64F8D309D09087C39A613749EF75958 L_3;
 		L_3 = List_1_GetEnumerator_mC6328BE8CD0867379AB4D462E915BA8ADAD6AF46(L_2, List_1_GetEnumerator_mC6328BE8CD0867379AB4D462E915BA8ADAD6AF46_RuntimeMethod_var);
@@ -26442,10 +26446,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Rapport_t0DED00B7690FCCDE651FB02E35DD4AFF93E9
 		// return mainScript.listeServices[mainScript.clientSelectionne].rapports[mainScript.rapportSelectionne];
 		MainScript_tE5DA41EF9F6C72F24338683BF923785400FDC5FF* L_2 = V_0;
 		NullCheck(L_2);
-		List_1_t44AE1E098C20DCB6502FBFF0DC2FCB3A908D8F53* L_3 = L_2->___listeServices_10;
+		List_1_t44AE1E098C20DCB6502FBFF0DC2FCB3A908D8F53* L_3 = L_2->___listeServices_12;
 		MainScript_tE5DA41EF9F6C72F24338683BF923785400FDC5FF* L_4 = V_0;
 		NullCheck(L_4);
-		int32_t L_5 = L_4->___clientSelectionne_20;
+		int32_t L_5 = L_4->___clientSelectionne_22;
 		NullCheck(L_3);
 		ServiceClient_t07C84893BDB4121BAF09BDF559688F4714F9541D* L_6;
 		L_6 = List_1_get_Item_m39EDDFB4EF7DA1D70754CA9E59200E1F55D17014(L_3, L_5, List_1_get_Item_m39EDDFB4EF7DA1D70754CA9E59200E1F55D17014_RuntimeMethod_var);
@@ -26453,7 +26457,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Rapport_t0DED00B7690FCCDE651FB02E35DD4AFF93E9
 		RapportU5BU5D_t389AE0AA323AC3F97640FE49A24D144C010203AF* L_7 = L_6->___rapports_12;
 		MainScript_tE5DA41EF9F6C72F24338683BF923785400FDC5FF* L_8 = V_0;
 		NullCheck(L_8);
-		int32_t L_9 = L_8->___rapportSelectionne_23;
+		int32_t L_9 = L_8->___rapportSelectionne_25;
 		NullCheck(L_7);
 		int32_t L_10 = L_9;
 		Rapport_t0DED00B7690FCCDE651FB02E35DD4AFF93E927D2* L_11 = (L_7)->GetAt(static_cast<il2cpp_array_size_t>(L_10));
@@ -26483,10 +26487,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ServiceClient_t07C84893BDB4121BAF09BDF559688F
 		// return mainScript.listeServices[mainScript.clientSelectionne];
 		MainScript_tE5DA41EF9F6C72F24338683BF923785400FDC5FF* L_2 = V_0;
 		NullCheck(L_2);
-		List_1_t44AE1E098C20DCB6502FBFF0DC2FCB3A908D8F53* L_3 = L_2->___listeServices_10;
+		List_1_t44AE1E098C20DCB6502FBFF0DC2FCB3A908D8F53* L_3 = L_2->___listeServices_12;
 		MainScript_tE5DA41EF9F6C72F24338683BF923785400FDC5FF* L_4 = V_0;
 		NullCheck(L_4);
-		int32_t L_5 = L_4->___clientSelectionne_20;
+		int32_t L_5 = L_4->___clientSelectionne_22;
 		NullCheck(L_3);
 		ServiceClient_t07C84893BDB4121BAF09BDF559688F4714F9541D* L_6;
 		L_6 = List_1_get_Item_m39EDDFB4EF7DA1D70754CA9E59200E1F55D17014(L_3, L_5, List_1_get_Item_m39EDDFB4EF7DA1D70754CA9E59200E1F55D17014_RuntimeMethod_var);
@@ -31028,7 +31032,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR bool MainScript_get_SyncCancelReq
 {
 	{
 		// public bool SyncCancelRequested { get; set; }
-		bool L_0 = __this->___U3CSyncCancelRequestedU3Ek__BackingField_22;
+		bool L_0 = __this->___U3CSyncCancelRequestedU3Ek__BackingField_24;
 		return L_0;
 	}
 }
@@ -31093,7 +31097,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR bool MainScript_get_SyncInProgres
 {
 	{
 		// public bool SyncInProgress { get; set; }
-		bool L_0 = __this->___U3CSyncInProgressU3Ek__BackingField_21;
+		bool L_0 = __this->___U3CSyncInProgressU3Ek__BackingField_23;
 		return L_0;
 	}
 }

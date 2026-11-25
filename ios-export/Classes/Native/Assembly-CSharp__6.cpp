@@ -6097,58 +6097,62 @@ struct MainScript_tE5DA41EF9F6C72F24338683BF923785400FDC5FF  : public MonoBehavi
 	String_t* ___loadedCacheIdentity_4;
 	// System.Boolean MainScript::dashboardServiceCommit
 	bool ___dashboardServiceCommit_5;
+	// System.Boolean MainScript::dashboardRefreshActive
+	bool ___dashboardRefreshActive_6;
 	// System.Int32 MainScript::activeServicePersistenceBatches
-	int32_t ___activeServicePersistenceBatches_6;
+	int32_t ___activeServicePersistenceBatches_7;
 	// System.Int32 MainScript::activeAttachmentDownloaders
-	int32_t ___activeAttachmentDownloaders_7;
+	int32_t ___activeAttachmentDownloaders_8;
+	// System.Int64 MainScript::serviceGraphGeneration
+	int64_t ___serviceGraphGeneration_9;
 	// UnityEngine.GameObject MainScript::goAlerte
-	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___goAlerte_8;
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___goAlerte_10;
 	// UnityEngine.GameObject MainScript::goChargement
-	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___goChargement_9;
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___goChargement_11;
 	// System.Collections.Generic.List`1<ServiceClient> MainScript::listeServices
-	List_1_t44AE1E098C20DCB6502FBFF0DC2FCB3A908D8F53* ___listeServices_10;
+	List_1_t44AE1E098C20DCB6502FBFF0DC2FCB3A908D8F53* ___listeServices_12;
 	// System.Collections.Generic.SortedList`2<System.Int32,System.String> MainScript::lstTypesSystemes
-	SortedList_2_t04C82F5C32B9BF01784646A86D3645CE27ADBF7B* ___lstTypesSystemes_11;
+	SortedList_2_t04C82F5C32B9BF01784646A86D3645CE27ADBF7B* ___lstTypesSystemes_13;
 	// System.Collections.Generic.SortedList`2<System.Int32,System.String> MainScript::lstRapportsPossibles
-	SortedList_2_t04C82F5C32B9BF01784646A86D3645CE27ADBF7B* ___lstRapportsPossibles_12;
+	SortedList_2_t04C82F5C32B9BF01784646A86D3645CE27ADBF7B* ___lstRapportsPossibles_14;
 	// System.String MainScript::token
-	String_t* ___token_13;
+	String_t* ___token_15;
 	// System.String MainScript::pwdapi
-	String_t* ___pwdapi_14;
+	String_t* ___pwdapi_16;
 	// System.String MainScript::apiurl
-	String_t* ___apiurl_15;
+	String_t* ___apiurl_17;
 	// System.String MainScript::userapi
-	String_t* ___userapi_16;
+	String_t* ___userapi_18;
 	// UnityEngine.Color MainScript::themeColor
-	Color_tD001788D726C3A7F1379BEED0260B9591F440C1F ___themeColor_17;
+	Color_tD001788D726C3A7F1379BEED0260B9591F440C1F ___themeColor_19;
 	// System.String MainScript::pageActuelle
-	String_t* ___pageActuelle_18;
+	String_t* ___pageActuelle_20;
 	// System.Boolean MainScript::chargerIcones
-	bool ___chargerIcones_19;
+	bool ___chargerIcones_21;
 	// System.Int32 MainScript::clientSelectionne
-	int32_t ___clientSelectionne_20;
+	int32_t ___clientSelectionne_22;
 	// System.Boolean MainScript::<SyncInProgress>k__BackingField
-	bool ___U3CSyncInProgressU3Ek__BackingField_21;
+	bool ___U3CSyncInProgressU3Ek__BackingField_23;
 	// System.Boolean MainScript::<SyncCancelRequested>k__BackingField
-	bool ___U3CSyncCancelRequestedU3Ek__BackingField_22;
+	bool ___U3CSyncCancelRequestedU3Ek__BackingField_24;
 	// System.Int32 MainScript::rapportSelectionne
-	int32_t ___rapportSelectionne_23;
+	int32_t ___rapportSelectionne_25;
 	// Utilisateur MainScript::utilisateurConnecte
-	Utilisateur_t399C56C6363780D4DA5137388DCAEB935ACB902E* ___utilisateurConnecte_24;
+	Utilisateur_t399C56C6363780D4DA5137388DCAEB935ACB902E* ___utilisateurConnecte_26;
 	// System.Int32 MainScript::bonTravailSelectionne
-	int32_t ___bonTravailSelectionne_25;
+	int32_t ___bonTravailSelectionne_27;
 	// System.Boolean MainScript::chargerListeRapports
-	bool ___chargerListeRapports_26;
+	bool ___chargerListeRapports_28;
 	// System.Int32 MainScript::loadingItems
-	int32_t ___loadingItems_27;
+	int32_t ___loadingItems_29;
 	// System.Collections.Generic.List`1<IconeDessin> MainScript::iconesDessin
-	List_1_tB4085072474C8F65C8A07B19DF716B18531F6B83* ___iconesDessin_28;
+	List_1_tB4085072474C8F65C8A07B19DF716B18531F6B83* ___iconesDessin_30;
 	// System.Boolean MainScript::debug
-	bool ___debug_29;
+	bool ___debug_31;
 	// System.Boolean MainScript::debug_internet
-	bool ___debug_internet_30;
+	bool ___debug_internet_32;
 	// System.Collections.Generic.List`1<EnvironmentSettings> MainScript::config
-	List_1_tCE83489DED8CE3A1BC7813AA1DD2916C78D7C6AC* ___config_31;
+	List_1_tCE83489DED8CE3A1BC7813AA1DD2916C78D7C6AC* ___config_33;
 };
 
 // RapportManager
@@ -6463,20 +6467,22 @@ struct TableauDeBordManager_tA7AD82080208885B2C8D75E6A3AC224247F736AA  : public 
 	bool ___refreshNeedsReconcile_24;
 	// System.Boolean TableauDeBordManager::reconciliationInProgress
 	bool ___reconciliationInProgress_25;
+	// System.Boolean TableauDeBordManager::dashboardRefreshLockHeld
+	bool ___dashboardRefreshLockHeld_26;
 	// System.Int32 TableauDeBordManager::refreshActor
-	int32_t ___refreshActor_26;
+	int32_t ___refreshActor_27;
 	// System.String TableauDeBordManager::refreshApi
-	String_t* ___refreshApi_27;
+	String_t* ___refreshApi_28;
 	// System.String TableauDeBordManager::refreshStagingDirectory
-	String_t* ___refreshStagingDirectory_28;
+	String_t* ___refreshStagingDirectory_29;
 	// UnityEngine.UIElements.VisualElement TableauDeBordManager::refreshPanel
-	VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* ___refreshPanel_29;
+	VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* ___refreshPanel_30;
 	// UnityEngine.UIElements.Label TableauDeBordManager::refreshLabel
-	Label_tC160668F9119CE0F5567021FB208E64A5B1C5B70* ___refreshLabel_30;
+	Label_tC160668F9119CE0F5567021FB208E64A5B1C5B70* ___refreshLabel_31;
 	// UnityEngine.UIElements.Button TableauDeBordManager::refreshCancelButton
-	Button_t8EC3B431665F84C0B637C11B0EA29236828646C2* ___refreshCancelButton_31;
+	Button_t8EC3B431665F84C0B637C11B0EA29236828646C2* ___refreshCancelButton_32;
 	// UnityEngine.UIElements.VisualTreeAsset TableauDeBordManager::myTreeAssetMember
-	VisualTreeAsset_tFB5BF81F0780A412AE5A7C2C552B3EEA64EA2EEB* ___myTreeAssetMember_32;
+	VisualTreeAsset_tFB5BF81F0780A412AE5A7C2C552B3EEA64EA2EEB* ___myTreeAssetMember_33;
 };
 
 // UnityEngine.UIElements.TextElement
@@ -9309,6 +9315,8 @@ inline void List_1_set_Item_mF472AC68A9072411E5EC988BD0FD3D11C590E0D1 (List_1_t4
 {
 	((  void (*) (List_1_t44AE1E098C20DCB6502FBFF0DC2FCB3A908D8F53*, int32_t, ServiceClient_t07C84893BDB4121BAF09BDF559688F4714F9541D*, const RuntimeMethod*))List_1_set_Item_m3C58DBC69A321AF2826595584FF3E9F43C07EA56_gshared)(__this, ___0_index, ___1_value, method);
 }
+// System.Void MainScript::MarkServiceGraphChanged()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MainScript_MarkServiceGraphChanged_m883C902A4EF3711FF3CCE2D0C4AE2CCB2230B548 (MainScript_tE5DA41EF9F6C72F24338683BF923785400FDC5FF* __this, const RuntimeMethod* method) ;
 // System.Void SyncConflictCore/<UseRemote>d__65::<>m__Finally1()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CUseRemoteU3Ed__65_U3CU3Em__Finally1_mE6DBACEF0BD389EF82ECA2F4C2BA2DEE2E17C22F (U3CUseRemoteU3Ed__65_t163FCB73FF5CF97118128E62E19CE0B6EC8568B1* __this, const RuntimeMethod* method) ;
 // System.Void SyncConflictCore/<UseRemote>d__65::<>m__Finally2()
@@ -12383,7 +12391,7 @@ IL_00a0_1:
 				// using (var request = UnityWebRequest.Post(owner.apiurl + "services", form)) {
 				MainScript_tE5DA41EF9F6C72F24338683BF923785400FDC5FF* L_23 = __this->___owner_8;
 				NullCheck(L_23);
-				String_t* L_24 = L_23->___apiurl_15;
+				String_t* L_24 = L_23->___apiurl_17;
 				String_t* L_25;
 				L_25 = String_Concat_m9E3155FB84015C823606188F53B47CB44C444991(L_24, _stringLiteral97BA52F16D6634F698F0059CBBC07D3302FFD843, NULL);
 				WWWForm_t0DAE123504AB1B2BC17C18714741B92AB3B3B045* L_26 = V_2;
@@ -14257,7 +14265,7 @@ IL_010a_1:
 			{
 				MainScript_tE5DA41EF9F6C72F24338683BF923785400FDC5FF* L_48 = __this->___U3CownerU3E5__4_5;
 				NullCheck(L_48);
-				List_1_t44AE1E098C20DCB6502FBFF0DC2FCB3A908D8F53* L_49 = L_48->___listeServices_10;
+				List_1_t44AE1E098C20DCB6502FBFF0DC2FCB3A908D8F53* L_49 = L_48->___listeServices_12;
 				ConflictMediaJob_t94035A58B8134ED3A27617CA093EA56B20E87A64* L_50 = __this->___U3CactiveU3E5__2_3;
 				NullCheck(L_50);
 				ServiceClient_t07C84893BDB4121BAF09BDF559688F4714F9541D* L_51 = L_50->___Service_5;
@@ -14627,7 +14635,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool U3CU3Ec__DisplayClass43_0_U3CCacheMediaI
 	{
 		MainScript_tE5DA41EF9F6C72F24338683BF923785400FDC5FF* L_12 = __this->___owner_0;
 		NullCheck(L_12);
-		List_1_t44AE1E098C20DCB6502FBFF0DC2FCB3A908D8F53* L_13 = L_12->___listeServices_10;
+		List_1_t44AE1E098C20DCB6502FBFF0DC2FCB3A908D8F53* L_13 = L_12->___listeServices_12;
 		ServiceClient_t07C84893BDB4121BAF09BDF559688F4714F9541D* L_14 = __this->___service_2;
 		NullCheck(L_13);
 		bool L_15;
@@ -14943,7 +14951,7 @@ IL_00d5_1:
 				NullCheck(L_31);
 				MainScript_tE5DA41EF9F6C72F24338683BF923785400FDC5FF* L_32 = L_31->___owner_0;
 				NullCheck(L_32);
-				List_1_t44AE1E098C20DCB6502FBFF0DC2FCB3A908D8F53* L_33 = L_32->___listeServices_10;
+				List_1_t44AE1E098C20DCB6502FBFF0DC2FCB3A908D8F53* L_33 = L_32->___listeServices_12;
 				U3CU3Ec__DisplayClass43_0_tDF8BCE926FD3C39EA0A938BB920E5E1FCB71B991* L_34 = __this->___U3CU3E8__1_6;
 				NullCheck(L_34);
 				ServiceClient_t07C84893BDB4121BAF09BDF559688F4714F9541D* L_35 = L_34->___service_2;
@@ -15721,7 +15729,7 @@ IL_0122_1:
 				NullCheck(L_27);
 				MainScript_tE5DA41EF9F6C72F24338683BF923785400FDC5FF* L_28 = L_27->___owner_0;
 				NullCheck(L_28);
-				String_t* L_29 = L_28->___apiurl_15;
+				String_t* L_29 = L_28->___apiurl_17;
 				Uri_t1500A52B5F71A04F5D05C0852D0F2A0941842A0E* L_30 = (Uri_t1500A52B5F71A04F5D05C0852D0F2A0941842A0E*)il2cpp_codegen_object_new(Uri_t1500A52B5F71A04F5D05C0852D0F2A0941842A0E_il2cpp_TypeInfo_var);
 				NullCheck(L_30);
 				Uri__ctor_m6CA436E6AD2768A121FA851CBEEFA3623E849D3A(L_30, L_29, NULL);
@@ -15867,7 +15875,7 @@ IL_0191_1:
 				NullCheck(L_74);
 				MainScript_tE5DA41EF9F6C72F24338683BF923785400FDC5FF* L_75 = L_74->___owner_0;
 				NullCheck(L_75);
-				bool L_76 = L_75->___debug_29;
+				bool L_76 = L_75->___debug_31;
 				if (!L_76)
 				{
 					goto IL_0289_1;
@@ -17512,7 +17520,7 @@ IL_001b:
 		NullCheck(L_30);
 		MainScript_tE5DA41EF9F6C72F24338683BF923785400FDC5FF* L_31 = L_30->___owner_9;
 		NullCheck(L_31);
-		Utilisateur_t399C56C6363780D4DA5137388DCAEB935ACB902E* L_32 = L_31->___utilisateurConnecte_24;
+		Utilisateur_t399C56C6363780D4DA5137388DCAEB935ACB902E* L_32 = L_31->___utilisateurConnecte_26;
 		NullCheck(L_32);
 		int32_t L_33 = L_32->___id_0;
 		NullCheck(L_29);
@@ -17983,7 +17991,7 @@ IL_008d:
 	{
 		MainScript_tE5DA41EF9F6C72F24338683BF923785400FDC5FF* L_25 = __this->___owner_2;
 		NullCheck(L_25);
-		List_1_t44AE1E098C20DCB6502FBFF0DC2FCB3A908D8F53* L_26 = L_25->___listeServices_10;
+		List_1_t44AE1E098C20DCB6502FBFF0DC2FCB3A908D8F53* L_26 = L_25->___listeServices_12;
 		ServiceClient_t07C84893BDB4121BAF09BDF559688F4714F9541D* L_27 = __this->___local_3;
 		NullCheck(L_26);
 		bool L_28;
@@ -18731,7 +18739,7 @@ IL_001b:
 		NullCheck(L_27);
 		MainScript_tE5DA41EF9F6C72F24338683BF923785400FDC5FF* L_28 = L_27->___owner_7;
 		NullCheck(L_28);
-		Utilisateur_t399C56C6363780D4DA5137388DCAEB935ACB902E* L_29 = L_28->___utilisateurConnecte_24;
+		Utilisateur_t399C56C6363780D4DA5137388DCAEB935ACB902E* L_29 = L_28->___utilisateurConnecte_26;
 		NullCheck(L_29);
 		int32_t L_30 = L_29->___id_0;
 		NullCheck(L_26);
@@ -18930,7 +18938,7 @@ IL_0010:
 		// int index=owner.listeServices.IndexOf(previous);string identity=Identity(owner);
 		MainScript_tE5DA41EF9F6C72F24338683BF923785400FDC5FF* L_3 = __this->___owner_2;
 		NullCheck(L_3);
-		List_1_t44AE1E098C20DCB6502FBFF0DC2FCB3A908D8F53* L_4 = L_3->___listeServices_10;
+		List_1_t44AE1E098C20DCB6502FBFF0DC2FCB3A908D8F53* L_4 = L_3->___listeServices_12;
 		ServiceClient_t07C84893BDB4121BAF09BDF559688F4714F9541D* L_5 = __this->___previous_3;
 		NullCheck(L_4);
 		int32_t L_6;
@@ -18990,7 +18998,7 @@ IL_0073:
 	{
 		MainScript_tE5DA41EF9F6C72F24338683BF923785400FDC5FF* L_17 = __this->___owner_2;
 		NullCheck(L_17);
-		List_1_t44AE1E098C20DCB6502FBFF0DC2FCB3A908D8F53* L_18 = L_17->___listeServices_10;
+		List_1_t44AE1E098C20DCB6502FBFF0DC2FCB3A908D8F53* L_18 = L_17->___listeServices_12;
 		ServiceClient_t07C84893BDB4121BAF09BDF559688F4714F9541D* L_19 = __this->___previous_3;
 		NullCheck(L_18);
 		int32_t L_20;
@@ -19016,11 +19024,15 @@ IL_00bb:
 		// owner.listeServices[index]=replacement;
 		MainScript_tE5DA41EF9F6C72F24338683BF923785400FDC5FF* L_23 = __this->___owner_2;
 		NullCheck(L_23);
-		List_1_t44AE1E098C20DCB6502FBFF0DC2FCB3A908D8F53* L_24 = L_23->___listeServices_10;
+		List_1_t44AE1E098C20DCB6502FBFF0DC2FCB3A908D8F53* L_24 = L_23->___listeServices_12;
 		int32_t L_25 = __this->___U3CindexU3E5__2_5;
 		ServiceClient_t07C84893BDB4121BAF09BDF559688F4714F9541D* L_26 = __this->___replacement_4;
 		NullCheck(L_24);
 		List_1_set_Item_mF472AC68A9072411E5EC988BD0FD3D11C590E0D1(L_24, L_25, L_26, List_1_set_Item_mF472AC68A9072411E5EC988BD0FD3D11C590E0D1_RuntimeMethod_var);
+		// owner.MarkServiceGraphChanged();
+		MainScript_tE5DA41EF9F6C72F24338683BF923785400FDC5FF* L_27 = __this->___owner_2;
+		NullCheck(L_27);
+		MainScript_MarkServiceGraphChanged_m883C902A4EF3711FF3CCE2D0C4AE2CCB2230B548(L_27, NULL);
 		// }
 		return (bool)0;
 	}
@@ -19587,7 +19599,7 @@ IL_013b_1:
 				NullCheck(L_30);
 				MainScript_tE5DA41EF9F6C72F24338683BF923785400FDC5FF* L_31 = L_30->___owner_0;
 				NullCheck(L_31);
-				String_t* L_32 = L_31->___apiurl_15;
+				String_t* L_32 = L_31->___apiurl_17;
 				Uri_t1500A52B5F71A04F5D05C0852D0F2A0941842A0E* L_33 = (Uri_t1500A52B5F71A04F5D05C0852D0F2A0941842A0E*)il2cpp_codegen_object_new(Uri_t1500A52B5F71A04F5D05C0852D0F2A0941842A0E_il2cpp_TypeInfo_var);
 				NullCheck(L_33);
 				Uri__ctor_m6CA436E6AD2768A121FA851CBEEFA3623E849D3A(L_33, L_32, NULL);
@@ -19733,7 +19745,7 @@ IL_01a3_1:
 				NullCheck(L_77);
 				MainScript_tE5DA41EF9F6C72F24338683BF923785400FDC5FF* L_78 = L_77->___owner_0;
 				NullCheck(L_78);
-				bool L_79 = L_78->___debug_29;
+				bool L_79 = L_78->___debug_31;
 				if (!L_79)
 				{
 					goto IL_0299_1;
@@ -20402,7 +20414,7 @@ IL_06c9_1:
 				NullCheck(L_241);
 				MainScript_tE5DA41EF9F6C72F24338683BF923785400FDC5FF* L_242 = L_241->___owner_0;
 				NullCheck(L_242);
-				List_1_t44AE1E098C20DCB6502FBFF0DC2FCB3A908D8F53* L_243 = L_242->___listeServices_10;
+				List_1_t44AE1E098C20DCB6502FBFF0DC2FCB3A908D8F53* L_243 = L_242->___listeServices_12;
 				ServiceClient_t07C84893BDB4121BAF09BDF559688F4714F9541D* L_244 = __this->___local_3;
 				NullCheck(L_243);
 				bool L_245;
@@ -21811,7 +21823,7 @@ IL_009a:
 		NullCheck(L_31);
 		MainScript_tE5DA41EF9F6C72F24338683BF923785400FDC5FF* L_32 = L_31->___owner_0;
 		NullCheck(L_32);
-		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_33 = L_32->___goAlerte_8;
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_33 = L_32->___goAlerte_10;
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_34 = L_33;
 		G_B9_0 = L_34;
 		if (L_34)
@@ -22070,14 +22082,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Session__ctor_m8DF72B474D7AA810AC45171B4
 		// actor = owner.utilisateurConnecte.id; server = owner.apiurl;
 		MainScript_tE5DA41EF9F6C72F24338683BF923785400FDC5FF* L_13 = ___0_owner;
 		NullCheck(L_13);
-		Utilisateur_t399C56C6363780D4DA5137388DCAEB935ACB902E* L_14 = L_13->___utilisateurConnecte_24;
+		Utilisateur_t399C56C6363780D4DA5137388DCAEB935ACB902E* L_14 = L_13->___utilisateurConnecte_26;
 		NullCheck(L_14);
 		int32_t L_15 = L_14->___id_0;
 		__this->___actor_23 = L_15;
 		// actor = owner.utilisateurConnecte.id; server = owner.apiurl;
 		MainScript_tE5DA41EF9F6C72F24338683BF923785400FDC5FF* L_16 = ___0_owner;
 		NullCheck(L_16);
-		String_t* L_17 = L_16->___apiurl_15;
+		String_t* L_17 = L_16->___apiurl_17;
 		__this->___server_24 = L_17;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___server_24), (void*)L_17);
 		// var openEditor = GameObject.Find("UIListeRapports")?.GetComponent<ContenuRapportManager>();
@@ -22206,7 +22218,7 @@ IL_00f9:
 	{
 		MainScript_tE5DA41EF9F6C72F24338683BF923785400FDC5FF* L_37 = ___0_owner;
 		NullCheck(L_37);
-		int32_t L_38 = L_37->___clientSelectionne_20;
+		int32_t L_38 = L_37->___clientSelectionne_22;
 		if ((((int32_t)L_38) < ((int32_t)0)))
 		{
 			goto IL_01ad;
@@ -22215,10 +22227,10 @@ IL_00f9:
 	{
 		MainScript_tE5DA41EF9F6C72F24338683BF923785400FDC5FF* L_39 = ___0_owner;
 		NullCheck(L_39);
-		int32_t L_40 = L_39->___clientSelectionne_20;
+		int32_t L_40 = L_39->___clientSelectionne_22;
 		MainScript_tE5DA41EF9F6C72F24338683BF923785400FDC5FF* L_41 = ___0_owner;
 		NullCheck(L_41);
-		List_1_t44AE1E098C20DCB6502FBFF0DC2FCB3A908D8F53* L_42 = L_41->___listeServices_10;
+		List_1_t44AE1E098C20DCB6502FBFF0DC2FCB3A908D8F53* L_42 = L_41->___listeServices_12;
 		NullCheck(L_42);
 		int32_t L_43;
 		L_43 = List_1_get_Count_m897DC6B3EACC9FDF8B89F43E1BD2AA8B7F144883_inline(L_42, List_1_get_Count_m897DC6B3EACC9FDF8B89F43E1BD2AA8B7F144883_RuntimeMethod_var);
@@ -22231,10 +22243,10 @@ IL_00f9:
 		// var openService = owner.listeServices[owner.clientSelectionne];
 		MainScript_tE5DA41EF9F6C72F24338683BF923785400FDC5FF* L_44 = ___0_owner;
 		NullCheck(L_44);
-		List_1_t44AE1E098C20DCB6502FBFF0DC2FCB3A908D8F53* L_45 = L_44->___listeServices_10;
+		List_1_t44AE1E098C20DCB6502FBFF0DC2FCB3A908D8F53* L_45 = L_44->___listeServices_12;
 		MainScript_tE5DA41EF9F6C72F24338683BF923785400FDC5FF* L_46 = ___0_owner;
 		NullCheck(L_46);
-		int32_t L_47 = L_46->___clientSelectionne_20;
+		int32_t L_47 = L_46->___clientSelectionne_22;
 		NullCheck(L_45);
 		ServiceClient_t07C84893BDB4121BAF09BDF559688F4714F9541D* L_48;
 		L_48 = List_1_get_Item_m39EDDFB4EF7DA1D70754CA9E59200E1F55D17014(L_45, L_47, List_1_get_Item_m39EDDFB4EF7DA1D70754CA9E59200E1F55D17014_RuntimeMethod_var);
@@ -22242,7 +22254,7 @@ IL_00f9:
 		// if (owner.rapportSelectionne >= 0 && owner.rapportSelectionne < (openService.rapports?.Length ?? 0)) {
 		MainScript_tE5DA41EF9F6C72F24338683BF923785400FDC5FF* L_49 = ___0_owner;
 		NullCheck(L_49);
-		int32_t L_50 = L_49->___rapportSelectionne_23;
+		int32_t L_50 = L_49->___rapportSelectionne_25;
 		if ((((int32_t)L_50) < ((int32_t)0)))
 		{
 			goto IL_01ad;
@@ -22251,7 +22263,7 @@ IL_00f9:
 	{
 		MainScript_tE5DA41EF9F6C72F24338683BF923785400FDC5FF* L_51 = ___0_owner;
 		NullCheck(L_51);
-		int32_t L_52 = L_51->___rapportSelectionne_23;
+		int32_t L_52 = L_51->___rapportSelectionne_25;
 		ServiceClient_t07C84893BDB4121BAF09BDF559688F4714F9541D* L_53 = V_3;
 		NullCheck(L_53);
 		RapportU5BU5D_t389AE0AA323AC3F97640FE49A24D144C010203AF* L_54 = L_53->___rapports_12;
@@ -22298,7 +22310,7 @@ IL_0166:
 		RapportU5BU5D_t389AE0AA323AC3F97640FE49A24D144C010203AF* L_59 = L_58->___rapports_12;
 		MainScript_tE5DA41EF9F6C72F24338683BF923785400FDC5FF* L_60 = ___0_owner;
 		NullCheck(L_60);
-		int32_t L_61 = L_60->___rapportSelectionne_23;
+		int32_t L_61 = L_60->___rapportSelectionne_25;
 		NullCheck(L_59);
 		int32_t L_62 = L_61;
 		Rapport_t0DED00B7690FCCDE651FB02E35DD4AFF93E927D2* L_63 = (L_59)->GetAt(static_cast<il2cpp_array_size_t>(L_62));
@@ -22971,7 +22983,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR List_1_t3AEA68A4CD63279EC54D81D76B2603AE09087
 		// foreach (var service in owner.listeServices.ToArray()) {
 		MainScript_tE5DA41EF9F6C72F24338683BF923785400FDC5FF* L_1 = __this->___owner_0;
 		NullCheck(L_1);
-		List_1_t44AE1E098C20DCB6502FBFF0DC2FCB3A908D8F53* L_2 = L_1->___listeServices_10;
+		List_1_t44AE1E098C20DCB6502FBFF0DC2FCB3A908D8F53* L_2 = L_1->___listeServices_12;
 		NullCheck(L_2);
 		ServiceClientU5BU5D_t21FEE7F4B5E38F0914100C63547BF0BA909D6249* L_3;
 		L_3 = List_1_ToArray_mB3D5478E1AF017BE3CC26576036090A1239C43D8(L_2, List_1_ToArray_mB3D5478E1AF017BE3CC26576036090A1239C43D8_RuntimeMethod_var);
@@ -23164,12 +23176,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Session_LockOpenConflictedReport_mFF9FD1
 		// int client = owner.clientSelectionne;
 		MainScript_tE5DA41EF9F6C72F24338683BF923785400FDC5FF* L_0 = __this->___owner_0;
 		NullCheck(L_0);
-		int32_t L_1 = L_0->___clientSelectionne_20;
+		int32_t L_1 = L_0->___clientSelectionne_22;
 		V_0 = L_1;
 		// int index = owner.rapportSelectionne;
 		MainScript_tE5DA41EF9F6C72F24338683BF923785400FDC5FF* L_2 = __this->___owner_0;
 		NullCheck(L_2);
-		int32_t L_3 = L_2->___rapportSelectionne_23;
+		int32_t L_3 = L_2->___rapportSelectionne_25;
 		V_1 = L_3;
 		// if (client < 0 || client >= owner.listeServices.Count || owner.listeServices[client].rapports == null || index < 0 || index >= owner.listeServices[client].rapports.Length) return;
 		int32_t L_4 = V_0;
@@ -23182,7 +23194,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Session_LockOpenConflictedReport_mFF9FD1
 		int32_t L_5 = V_0;
 		MainScript_tE5DA41EF9F6C72F24338683BF923785400FDC5FF* L_6 = __this->___owner_0;
 		NullCheck(L_6);
-		List_1_t44AE1E098C20DCB6502FBFF0DC2FCB3A908D8F53* L_7 = L_6->___listeServices_10;
+		List_1_t44AE1E098C20DCB6502FBFF0DC2FCB3A908D8F53* L_7 = L_6->___listeServices_12;
 		NullCheck(L_7);
 		int32_t L_8;
 		L_8 = List_1_get_Count_m897DC6B3EACC9FDF8B89F43E1BD2AA8B7F144883_inline(L_7, List_1_get_Count_m897DC6B3EACC9FDF8B89F43E1BD2AA8B7F144883_RuntimeMethod_var);
@@ -23194,7 +23206,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Session_LockOpenConflictedReport_mFF9FD1
 	{
 		MainScript_tE5DA41EF9F6C72F24338683BF923785400FDC5FF* L_9 = __this->___owner_0;
 		NullCheck(L_9);
-		List_1_t44AE1E098C20DCB6502FBFF0DC2FCB3A908D8F53* L_10 = L_9->___listeServices_10;
+		List_1_t44AE1E098C20DCB6502FBFF0DC2FCB3A908D8F53* L_10 = L_9->___listeServices_12;
 		int32_t L_11 = V_0;
 		NullCheck(L_10);
 		ServiceClient_t07C84893BDB4121BAF09BDF559688F4714F9541D* L_12;
@@ -23217,7 +23229,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Session_LockOpenConflictedReport_mFF9FD1
 		int32_t L_15 = V_1;
 		MainScript_tE5DA41EF9F6C72F24338683BF923785400FDC5FF* L_16 = __this->___owner_0;
 		NullCheck(L_16);
-		List_1_t44AE1E098C20DCB6502FBFF0DC2FCB3A908D8F53* L_17 = L_16->___listeServices_10;
+		List_1_t44AE1E098C20DCB6502FBFF0DC2FCB3A908D8F53* L_17 = L_16->___listeServices_12;
 		int32_t L_18 = V_0;
 		NullCheck(L_17);
 		ServiceClient_t07C84893BDB4121BAF09BDF559688F4714F9541D* L_19;
@@ -23242,7 +23254,7 @@ IL_0067:
 		// var openReport = owner.listeServices[client].rapports[index];
 		MainScript_tE5DA41EF9F6C72F24338683BF923785400FDC5FF* L_21 = __this->___owner_0;
 		NullCheck(L_21);
-		List_1_t44AE1E098C20DCB6502FBFF0DC2FCB3A908D8F53* L_22 = L_21->___listeServices_10;
+		List_1_t44AE1E098C20DCB6502FBFF0DC2FCB3A908D8F53* L_22 = L_21->___listeServices_12;
 		int32_t L_23 = V_0;
 		NullCheck(L_22);
 		ServiceClient_t07C84893BDB4121BAF09BDF559688F4714F9541D* L_24;
@@ -26069,7 +26081,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Session_CheckLocal_m4A3FC448E78197D07D31
 		//     snapshot != LocalSignature(service, report))
 		MainScript_tE5DA41EF9F6C72F24338683BF923785400FDC5FF* L_3 = __this->___owner_0;
 		NullCheck(L_3);
-		Utilisateur_t399C56C6363780D4DA5137388DCAEB935ACB902E* L_4 = L_3->___utilisateurConnecte_24;
+		Utilisateur_t399C56C6363780D4DA5137388DCAEB935ACB902E* L_4 = L_3->___utilisateurConnecte_26;
 		NullCheck(L_4);
 		int32_t L_5 = L_4->___id_0;
 		int32_t L_6 = __this->___actor_23;
@@ -26081,7 +26093,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Session_CheckLocal_m4A3FC448E78197D07D31
 	{
 		MainScript_tE5DA41EF9F6C72F24338683BF923785400FDC5FF* L_7 = __this->___owner_0;
 		NullCheck(L_7);
-		String_t* L_8 = L_7->___apiurl_15;
+		String_t* L_8 = L_7->___apiurl_17;
 		String_t* L_9 = __this->___server_24;
 		bool L_10;
 		L_10 = String_op_Inequality_m8C940F3CFC42866709D7CA931B3D77B4BE94BCB6(L_8, L_9, NULL);
@@ -26115,7 +26127,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Session_CheckLocal_m4A3FC448E78197D07D31
 	{
 		MainScript_tE5DA41EF9F6C72F24338683BF923785400FDC5FF* L_17 = __this->___owner_0;
 		NullCheck(L_17);
-		List_1_t44AE1E098C20DCB6502FBFF0DC2FCB3A908D8F53* L_18 = L_17->___listeServices_10;
+		List_1_t44AE1E098C20DCB6502FBFF0DC2FCB3A908D8F53* L_18 = L_17->___listeServices_12;
 		ServiceClient_t07C84893BDB4121BAF09BDF559688F4714F9541D* L_19 = ___0_service;
 		NullCheck(L_18);
 		bool L_20;
@@ -26414,12 +26426,12 @@ IL_0065:
 		// int clientIndex = owner.clientSelectionne;
 		MainScript_tE5DA41EF9F6C72F24338683BF923785400FDC5FF* L_20 = __this->___owner_0;
 		NullCheck(L_20);
-		int32_t L_21 = L_20->___clientSelectionne_20;
+		int32_t L_21 = L_20->___clientSelectionne_22;
 		V_1 = L_21;
 		// int reportIndex = owner.rapportSelectionne;
 		MainScript_tE5DA41EF9F6C72F24338683BF923785400FDC5FF* L_22 = __this->___owner_0;
 		NullCheck(L_22);
-		int32_t L_23 = L_22->___rapportSelectionne_23;
+		int32_t L_23 = L_22->___rapportSelectionne_25;
 		V_2 = L_23;
 		// if (clientIndex >= 0 && clientIndex < owner.listeServices.Count && owner.listeServices[clientIndex].rapports != null &&
 		//     reportIndex >= 0 && reportIndex < owner.listeServices[clientIndex].rapports.Length && owner.listeServices[clientIndex].rapports[reportIndex].sync_state != "conflict") {
@@ -26433,7 +26445,7 @@ IL_0065:
 		int32_t L_25 = V_1;
 		MainScript_tE5DA41EF9F6C72F24338683BF923785400FDC5FF* L_26 = __this->___owner_0;
 		NullCheck(L_26);
-		List_1_t44AE1E098C20DCB6502FBFF0DC2FCB3A908D8F53* L_27 = L_26->___listeServices_10;
+		List_1_t44AE1E098C20DCB6502FBFF0DC2FCB3A908D8F53* L_27 = L_26->___listeServices_12;
 		NullCheck(L_27);
 		int32_t L_28;
 		L_28 = List_1_get_Count_m897DC6B3EACC9FDF8B89F43E1BD2AA8B7F144883_inline(L_27, List_1_get_Count_m897DC6B3EACC9FDF8B89F43E1BD2AA8B7F144883_RuntimeMethod_var);
@@ -26445,7 +26457,7 @@ IL_0065:
 	{
 		MainScript_tE5DA41EF9F6C72F24338683BF923785400FDC5FF* L_29 = __this->___owner_0;
 		NullCheck(L_29);
-		List_1_t44AE1E098C20DCB6502FBFF0DC2FCB3A908D8F53* L_30 = L_29->___listeServices_10;
+		List_1_t44AE1E098C20DCB6502FBFF0DC2FCB3A908D8F53* L_30 = L_29->___listeServices_12;
 		int32_t L_31 = V_1;
 		NullCheck(L_30);
 		ServiceClient_t07C84893BDB4121BAF09BDF559688F4714F9541D* L_32;
@@ -26468,7 +26480,7 @@ IL_0065:
 		int32_t L_35 = V_2;
 		MainScript_tE5DA41EF9F6C72F24338683BF923785400FDC5FF* L_36 = __this->___owner_0;
 		NullCheck(L_36);
-		List_1_t44AE1E098C20DCB6502FBFF0DC2FCB3A908D8F53* L_37 = L_36->___listeServices_10;
+		List_1_t44AE1E098C20DCB6502FBFF0DC2FCB3A908D8F53* L_37 = L_36->___listeServices_12;
 		int32_t L_38 = V_1;
 		NullCheck(L_37);
 		ServiceClient_t07C84893BDB4121BAF09BDF559688F4714F9541D* L_39;
@@ -26484,7 +26496,7 @@ IL_0065:
 	{
 		MainScript_tE5DA41EF9F6C72F24338683BF923785400FDC5FF* L_41 = __this->___owner_0;
 		NullCheck(L_41);
-		List_1_t44AE1E098C20DCB6502FBFF0DC2FCB3A908D8F53* L_42 = L_41->___listeServices_10;
+		List_1_t44AE1E098C20DCB6502FBFF0DC2FCB3A908D8F53* L_42 = L_41->___listeServices_12;
 		int32_t L_43 = V_1;
 		NullCheck(L_42);
 		ServiceClient_t07C84893BDB4121BAF09BDF559688F4714F9541D* L_44;
@@ -26603,7 +26615,7 @@ IL_012f:
 		// owner.rapportSelectionne = -1;
 		MainScript_tE5DA41EF9F6C72F24338683BF923785400FDC5FF* L_61 = __this->___owner_0;
 		NullCheck(L_61);
-		L_61->___rapportSelectionne_23 = (-1);
+		L_61->___rapportSelectionne_25 = (-1);
 		// var editor = window.GetComponent<ContenuRapportManager>();
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_62 = V_0;
 		NullCheck(L_62);
@@ -27242,7 +27254,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__DisplayClass43_0_U3CRunU3Eb__0_
 			NullCheck(L_8);
 			MainScript_tE5DA41EF9F6C72F24338683BF923785400FDC5FF* L_9 = L_8->___owner_0;
 			NullCheck(L_9);
-			List_1_t44AE1E098C20DCB6502FBFF0DC2FCB3A908D8F53* L_10 = L_9->___listeServices_10;
+			List_1_t44AE1E098C20DCB6502FBFF0DC2FCB3A908D8F53* L_10 = L_9->___listeServices_12;
 			Func_2_t24CA17142A117001A1FE4F9268D2B09D6284A203* L_11 = __this->___U3CU3E9__2_4;
 			Func_2_t24CA17142A117001A1FE4F9268D2B09D6284A203* L_12 = L_11;
 			G_B4_0 = L_12;
@@ -27703,7 +27715,7 @@ IL_002b_1:
 				NullCheck(L_16);
 				MainScript_tE5DA41EF9F6C72F24338683BF923785400FDC5FF* L_17 = L_16->___owner_0;
 				NullCheck(L_17);
-				GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_18 = L_17->___goChargement_9;
+				GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_18 = L_17->___goChargement_11;
 				NullCheck(L_15);
 				L_15->___loadingWindow_19 = L_18;
 				Il2CppCodeGenWriteBarrier((void**)(&L_15->___loadingWindow_19), (void*)L_18);
@@ -29347,7 +29359,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__DisplayClass49_2_U3CApplySelect
 			NullCheck(L_6);
 			MainScript_tE5DA41EF9F6C72F24338683BF923785400FDC5FF* L_7 = L_6->___owner_0;
 			NullCheck(L_7);
-			List_1_t44AE1E098C20DCB6502FBFF0DC2FCB3A908D8F53* L_8 = L_7->___listeServices_10;
+			List_1_t44AE1E098C20DCB6502FBFF0DC2FCB3A908D8F53* L_8 = L_7->___listeServices_12;
 			Func_2_t24CA17142A117001A1FE4F9268D2B09D6284A203* L_9 = __this->___U3CU3E9__7_5;
 			Func_2_t24CA17142A117001A1FE4F9268D2B09D6284A203* L_10 = L_9;
 			G_B2_0 = L_10;
@@ -30010,7 +30022,7 @@ IL_00c0_1:
 				NullCheck(L_39);
 				MainScript_tE5DA41EF9F6C72F24338683BF923785400FDC5FF* L_40 = L_39->___owner_0;
 				NullCheck(L_40);
-				List_1_t44AE1E098C20DCB6502FBFF0DC2FCB3A908D8F53* L_41 = L_40->___listeServices_10;
+				List_1_t44AE1E098C20DCB6502FBFF0DC2FCB3A908D8F53* L_41 = L_40->___listeServices_12;
 				U3CU3Ec__DisplayClass49_2_t376C6486CB38577BFDDC422323C801821AA16EC9* L_42 = __this->___U3CU3E8__2_4;
 				NullCheck(L_42);
 				U3CU3Ec__DisplayClass49_1_tCB7D88326575730A0771D3B0C4ECB91929303C2B* L_43 = L_42->___CSU24U3CU3E8__locals2_4;
@@ -30436,7 +30448,7 @@ IL_04ab_1:
 				NullCheck(L_171);
 				MainScript_tE5DA41EF9F6C72F24338683BF923785400FDC5FF* L_172 = L_171->___owner_0;
 				NullCheck(L_172);
-				List_1_t44AE1E098C20DCB6502FBFF0DC2FCB3A908D8F53* L_173 = L_172->___listeServices_10;
+				List_1_t44AE1E098C20DCB6502FBFF0DC2FCB3A908D8F53* L_173 = L_172->___listeServices_12;
 				U3CU3Ec__DisplayClass49_2_t376C6486CB38577BFDDC422323C801821AA16EC9* L_174 = __this->___U3CU3E8__2_4;
 				Func_2_t24CA17142A117001A1FE4F9268D2B09D6284A203* L_175 = (Func_2_t24CA17142A117001A1FE4F9268D2B09D6284A203*)il2cpp_codegen_object_new(Func_2_t24CA17142A117001A1FE4F9268D2B09D6284A203_il2cpp_TypeInfo_var);
 				NullCheck(L_175);
@@ -31222,7 +31234,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR bool MainScript_get_SyncCancelReq
 {
 	{
 		// public bool SyncCancelRequested { get; set; }
-		bool L_0 = __this->___U3CSyncCancelRequestedU3Ek__BackingField_22;
+		bool L_0 = __this->___U3CSyncCancelRequestedU3Ek__BackingField_24;
 		return L_0;
 	}
 }
@@ -31230,7 +31242,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR bool MainScript_get_SyncInProgres
 {
 	{
 		// public bool SyncInProgress { get; set; }
-		bool L_0 = __this->___U3CSyncInProgressU3Ek__BackingField_21;
+		bool L_0 = __this->___U3CSyncInProgressU3Ek__BackingField_23;
 		return L_0;
 	}
 }
@@ -31257,7 +31269,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void MainScript_set_SyncCancelReq
 	{
 		// public bool SyncCancelRequested { get; set; }
 		bool L_0 = ___0_value;
-		__this->___U3CSyncCancelRequestedU3Ek__BackingField_22 = L_0;
+		__this->___U3CSyncCancelRequestedU3Ek__BackingField_24 = L_0;
 		return;
 	}
 }
@@ -31280,7 +31292,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void MainScript_set_SyncInProgres
 	{
 		// public bool SyncInProgress { get; set; }
 		bool L_0 = ___0_value;
-		__this->___U3CSyncInProgressU3Ek__BackingField_21 = L_0;
+		__this->___U3CSyncInProgressU3Ek__BackingField_23 = L_0;
 		return;
 	}
 }
